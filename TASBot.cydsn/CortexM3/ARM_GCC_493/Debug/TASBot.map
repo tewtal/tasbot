@@ -1,0 +1,1598 @@
+Archive member included because of file (symbol)
+
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (cyfitter_cfg)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o) (CyDelayCycles)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (CyHalt)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o) (CyPmReadStatus)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (P1_EnableInt)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (P1_IRQ_Start)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (USBUART_Start)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (USBUART_CDC_Init)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o) (USBUART_lastPacketSize)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o) (USBUART_EP_1_ISR)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o) (USBUART_DP_ISR)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o) (USBUART_ConfigReg)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o) (USBUART_HandleVendorRqst)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o) (USBUART_Dp_ClearInterrupt)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (WinTimer_IRQ_Start)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (WinTimer_WritePeriod)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o) (CySpcStart)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o) (USBUART_DispatchClassRqst)
+.\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o) (USBUART_idSerialNumberStringDescriptor)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+USBUART_lastPacketSize
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_device      0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_transferByteCount
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_transferState
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_interfaceSettingLast
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_linesChanged
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+USBUART_currentTD   0xc               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+input               0x8000            .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_cdcDataInEp
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+input_ptr           0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_idSerialNumberStringDescriptor
+                    0x22              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+USBUART_cdcCommInInterruptEp
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+USBUART_cdcDataOutEp
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+USBUART_interfaceNumber
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_interfaceClass
+                    0x4               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_configurationChanged
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_ep0Mode     0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_deviceAddress
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_configuration
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_serialStateBitmap
+                    0x4               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+USBUART_ep0Count    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_linesControlBitmap
+                    0x4               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+USBUART_deviceStatus
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_EP          0x6c              .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_interfaceSetting
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+USBUART_ep0Toggle   0x1               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+dieTemperature      0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+USBUART_interfaceStatus
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .text          0x00000000       0x74 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .data          0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text._exit    0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .bss           0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyUSB_PowerOnCheck
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyBusClk_Internal_SetDivider
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyPLL_OUT_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIMO_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIMO_EnableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIMO_DisableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyMasterClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyMasterClk_SetDivider
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_Start100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_Stop100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x00000000       0x78 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIMO_Start
+                0x00000000       0x60 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_Start
+                0x00000000       0xac .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0x60 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00000000       0xcc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIMO_SetSource
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyDelay  0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0x84 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0x84 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyFlushCache
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .bss           0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00000000      0x1dc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x00000000       0xd4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHviLviSaveDisable
+                0x00000000       0xa0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHibSaveSet
+                0x00000000       0x8c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHviLviRestore
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHibRestore
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x00000000      0x218 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmRestoreClocks
+                0x00000000      0x24c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000       0x6c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmSleep
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHibernateEx
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmReadStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text.CyPmFtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .rodata        0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .text.P1_DisableInt
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .text.P1_Stop  0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .text.P1_GetFIFOStatus
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .text.P1_GetIntStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .text.P1_ReadRegValue
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .text.P1_IRQ_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .text.P1_IRQ_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .text.P1_IRQ_GetState
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .text.P1_IRQ_StartEx
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .text.P1_IRQ_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .text.P1_IRQ_ClearPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_Stop
+                0x00000000       0x94 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_CheckActivity
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_GetInterfaceSetting
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_DisableOutEP
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_Force
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_GetEPAckState
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_SetPowerStatus
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_RWUEnabled
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_GetDeviceAddress
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_EnableSofInt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text.USBUART_DisableSofInt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_StrLen
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_PutData
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_PutString
+                0x00000000       0x9c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_PutCRLF
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetCount
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetData
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetChar
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_IsLineChanged
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetDTERate
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetCharFormat
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetParityType
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetDataBits
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetLineControl
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_SendSerialState
+                0x00000000       0x64 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetSerialState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_NotificationIsReady
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_SetComPort
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text.USBUART_GetComPort
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .rodata        0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .bss           0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .text.USBUART_SaveConfig
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .text.USBUART_RestoreConfig
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .text.USBUART_Suspend
+                0x00000000       0xc8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .text.USBUART_Resume
+                0x00000000       0xbc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .text.USBUART_EpStateInit
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .text.USBUART_TerminateEP
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .text.USBUART_Dp_Write
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .text.USBUART_Dp_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .text.USBUART_Dp_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .text.USBUART_Dp_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .text.USBUART_Dp_SetInterruptMode
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text.WinTimer_IRQ_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text.WinTimer_IRQ_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text.WinTimer_IRQ_GetState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text.WinTimer_IRQ_StartEx
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text.WinTimer_IRQ_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text.WinTimer_IRQ_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text.WinTimer_IRQ_ClearPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .text.WinTimer_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .text.WinTimer_SoftwareCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .text.WinTimer_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .text.WinTimer_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .text.WinTimer_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .text.WinTimer_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .bss           0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyFlashGetSpcAlgorithm
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CySetTempInt
+                0x00000000       0x60 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CySetTemp
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyWriteRowFull
+                0x00000000       0xf8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyFlash_SetWaitCycles
+                0x00000000       0x7c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyEEPROM_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ COMMON         0x00000000        0x2 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .bss           0x00000000        0x8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcStart
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcReadData
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000       0x78 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcLoadRowFull
+                0x00000000       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcWriteRow
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x3c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcGetTemp
+                0x00000000       0x3c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcLock
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcUnlock
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text.CySpcGetAlgorithm
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text.__errno  0x00000000        0xc c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x00000000       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata.str1.1
+                0x00000000        0x2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_493\Debug\main.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\TASBot.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x20000270                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x10000))
+                0x20007800                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((0x40000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                0x00000000                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000     0x1ef6
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x18 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000028       0x5c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .text.main     0x00000084      0x25c .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x00000084                main
+ .text.IntDefaultHandler
+                0x000002e0        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x000002e0                IntDefaultHandler
+ .text.Start_c  0x000002e4       0x4c .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x000002e4                Start_c
+ .text.initialize_psoc
+                0x00000330       0x74 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000330                initialize_psoc
+ .text.CyClockStartupError
+                0x000003a4        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .text.cfg_write_bytes32
+                0x000003a8       0x34 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .text.AnalogSetDefault
+                0x000003dc       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .text.CYMEMZERO
+                0x00000404        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .text.ClockSetup
+                0x00000410       0xc4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPY
+                0x000004d4        0x8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .text.cyfitter_cfg
+                0x000004dc      0x100 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+                0x000004dc                cyfitter_cfg
+ *fill*         0x000005dc        0x4 
+ .text          0x000005e0       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+                0x000005e0                CyDelayCycles
+                0x000005f0                CyEnterCriticalSection
+                0x000005f8                CyExitCriticalSection
+ .text.CyHalt   0x00000600        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                0x00000600                CyHalt
+ .text.CyDelayUs
+                0x00000604       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                0x00000604                CyDelayUs
+ .text.CyIntSetVector
+                0x00000618       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                0x00000618                CyIntSetVector
+ .text.CyIntSetPriority
+                0x00000640       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                0x00000640                CyIntSetPriority
+ .text.CyGetUniqueId
+                0x00000670       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                0x00000670                CyGetUniqueId
+ .text.P1_EnableInt
+                0x000006e0       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                0x000006e0                P1_EnableInt
+ .text.P1_Enable
+                0x000006fc       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                0x000006fc                P1_Enable
+ .text.P1_SetIntMode
+                0x00000714       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                0x00000714                P1_SetIntMode
+ .text.P1_Init  0x00000730        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                0x00000730                P1_Init
+ .text.P1_Start
+                0x0000073c       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                0x0000073c                P1_Start
+ .text.P1_WriteRegValue
+                0x00000758        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                0x00000758                P1_WriteRegValue
+ .text.P1_IRQ_Interrupt
+                0x00000764       0x68 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                0x00000764                P1_IRQ_Interrupt
+ .text.P1_IRQ_SetVector
+                0x000007cc        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                0x000007cc                P1_IRQ_SetVector
+ .text.P1_IRQ_SetPriority
+                0x000007d8       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                0x000007d8                P1_IRQ_SetPriority
+ .text.P1_IRQ_Enable
+                0x000007e8        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                0x000007e8                P1_IRQ_Enable
+ .text.P1_IRQ_Disable
+                0x000007f4        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                0x000007f4                P1_IRQ_Disable
+ .text.P1_IRQ_Start
+                0x00000800       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                0x00000800                P1_IRQ_Start
+ .text.P1_IRQ_Stop
+                0x0000081c       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                0x0000081c                P1_IRQ_Stop
+ .text.USBUART_Init
+                0x00000830      0x140 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000830                USBUART_Init
+ .text.USBUART_InitComponent
+                0x00000970       0xb8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000970                USBUART_InitComponent
+ .text.USBUART_Start
+                0x00000a28       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000a28                USBUART_Start
+ .text.USBUART_ReInitComponent
+                0x00000a4c       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000a4c                USBUART_ReInitComponent
+ .text.USBUART_GetConfiguration
+                0x00000a98        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000a98                USBUART_GetConfiguration
+ .text.USBUART_IsConfigurationChanged
+                0x00000aa4       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000aa4                USBUART_IsConfigurationChanged
+ .text.USBUART_GetEPState
+                0x00000ac4       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000ac4                USBUART_GetEPState
+ .text.USBUART_GetEPCount
+                0x00000ad8       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000ad8                USBUART_GetEPCount
+ .text.USBUART_LoadInEP
+                0x00000b00       0x94 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000b00                USBUART_LoadInEP
+ .text.USBUART_EnableOutEP
+                0x00000b94       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000b94                USBUART_EnableOutEP
+ .text.USBUART_ReadOutEP
+                0x00000bc0       0x50 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x00000bc0                USBUART_ReadOutEP
+ .text.USBUART_GetInterfaceComPort
+                0x00000c10       0x3c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000c10                USBUART_GetInterfaceComPort
+ .text.USBUART_DispatchCDCClassRqst
+                0x00000c4c       0x98 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000c4c                USBUART_DispatchCDCClassRqst
+ .text.USBUART_CDC_Init
+                0x00000ce4       0x98 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000ce4                USBUART_CDC_Init
+ .text.USBUART_PutChar
+                0x00000d7c       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000d7c                USBUART_PutChar
+ .text.USBUART_DataIsReady
+                0x00000da4       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000da4                USBUART_DataIsReady
+ .text.USBUART_CDCIsReady
+                0x00000dbc       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000dbc                USBUART_CDCIsReady
+ .text.USBUART_GetAll
+                0x00000dd4       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000dd4                USBUART_GetAll
+ .text.USBUART_Cdc_EpInit
+                0x00000e04       0x50 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x00000e04                USBUART_Cdc_EpInit
+ .text.USBUART_LoadEP0
+                0x00000e54       0x94 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00000e54                USBUART_LoadEP0
+ .text.USBUART_InitZeroLengthControlTransfer
+                0x00000ee8       0x34 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00000ee8                USBUART_InitZeroLengthControlTransfer
+ .text.USBUART_ControlReadDataStage
+                0x00000f1c        0x8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00000f1c                USBUART_ControlReadDataStage
+ .text.USBUART_ControlWriteDataStage
+                0x00000f24       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00000f24                USBUART_ControlWriteDataStage
+ .text.USBUART_InitNoDataControlTransfer
+                0x00000fa4       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00000fa4                USBUART_InitNoDataControlTransfer
+ .text.USBUART_UpdateStatusBlock
+                0x00000fd0       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00000fd0                USBUART_UpdateStatusBlock
+ .text.USBUART_HandleSetup
+                0x00000ff4       0x5c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00000ff4                USBUART_HandleSetup
+ .text.USBUART_ControlReadStatusStage
+                0x00001050       0x34 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00001050                USBUART_ControlReadStatusStage
+ .text.USBUART_HandleOUT
+                0x00001084       0x38 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00001084                USBUART_HandleOUT
+ .text.USBUART_ControlWriteStatusStage
+                0x000010bc       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x000010bc                USBUART_ControlWriteStatusStage
+ .text.USBUART_NoDataControlStatusStage
+                0x000010dc       0x40 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x000010dc                USBUART_NoDataControlStatusStage
+ .text.USBUART_HandleIN
+                0x0000111c       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x0000111c                USBUART_HandleIN
+ .text.USBUART_EP_0_ISR
+                0x00001148       0xb8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00001148                USBUART_EP_0_ISR
+ .text.USBUART_InitializeStatusBlock
+                0x00001200       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00001200                USBUART_InitializeStatusBlock
+ .text.USBUART_InitControlRead
+                0x00001224       0x50 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00001224                USBUART_InitControlRead
+ .text.USBUART_InitControlWrite
+                0x00001274       0x48 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x00001274                USBUART_InitControlWrite
+ .text.USBUART_EP_1_ISR
+                0x000012bc       0x38 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+                0x000012bc                USBUART_EP_1_ISR
+ .text.USBUART_EP_2_ISR
+                0x000012f4       0x3c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+                0x000012f4                USBUART_EP_2_ISR
+ .text.USBUART_EP_3_ISR
+                0x00001330       0x44 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+                0x00001330                USBUART_EP_3_ISR
+ .text.USBUART_SOF_ISR
+                0x00001374        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+                0x00001374                USBUART_SOF_ISR
+ .text.USBUART_BUS_RESET_ISR
+                0x00001378        0x8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+                0x00001378                USBUART_BUS_RESET_ISR
+ .text.USBUART_DP_ISR
+                0x00001380        0x8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+                0x00001380                USBUART_DP_ISR
+ .text.USBUART_ReadDieID
+                0x00001388       0x6c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x00001388                USBUART_ReadDieID
+ .text.USBUART_ConfigReg
+                0x000013f4       0xa4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x000013f4                USBUART_ConfigReg
+ .text.USBUART_GetConfigTablePtr
+                0x00001498       0x28 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x00001498                USBUART_GetConfigTablePtr
+ .text.USBUART_ConfigAltChanged
+                0x000014c0      0x11c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x000014c0                USBUART_ConfigAltChanged
+ .text.USBUART_GetDeviceTablePtr
+                0x000015dc       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x000015dc                USBUART_GetDeviceTablePtr
+ .text.USBUART_GetInterfaceClassTablePtr
+                0x000015f4       0x24 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x000015f4                USBUART_GetInterfaceClassTablePtr
+ .text.USBUART_Config
+                0x00001618      0x1e4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x00001618                USBUART_Config
+ .text.USBUART_SetEndpointHalt
+                0x000017fc       0x64 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x000017fc                USBUART_SetEndpointHalt
+ .text.USBUART_ClearEndpointHalt
+                0x00001860       0xa8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x00001860                USBUART_ClearEndpointHalt
+ .text.USBUART_ValidateAlternateSetting
+                0x00001908       0x4c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x00001908                USBUART_ValidateAlternateSetting
+ .text.USBUART_HandleStandardRqst
+                0x00001954      0x350 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                0x00001954                USBUART_HandleStandardRqst
+ .text.USBUART_HandleVendorRqst
+                0x00001ca4       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+                0x00001ca4                USBUART_HandleVendorRqst
+ .text.USBUART_Dp_ClearInterrupt
+                0x00001cbc       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+                0x00001cbc                USBUART_Dp_ClearInterrupt
+ .text.WinTimer_IRQ_Interrupt
+                0x00001ccc       0x60 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                0x00001ccc                WinTimer_IRQ_Interrupt
+ .text.WinTimer_IRQ_SetVector
+                0x00001d2c        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                0x00001d2c                WinTimer_IRQ_SetVector
+ .text.WinTimer_IRQ_SetPriority
+                0x00001d38       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                0x00001d38                WinTimer_IRQ_SetPriority
+ .text.WinTimer_IRQ_Enable
+                0x00001d48        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                0x00001d48                WinTimer_IRQ_Enable
+ .text.WinTimer_IRQ_Disable
+                0x00001d54        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                0x00001d54                WinTimer_IRQ_Disable
+ .text.WinTimer_IRQ_Start
+                0x00001d60       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                0x00001d60                WinTimer_IRQ_Start
+ .text.WinTimer_Enable
+                0x00001d7c       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001d7c                WinTimer_Enable
+ .text.WinTimer_SetInterruptMode
+                0x00001d8c        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001d8c                WinTimer_SetInterruptMode
+ .text.WinTimer_ReadStatusRegister
+                0x00001d98        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001d98                WinTimer_ReadStatusRegister
+ .text.WinTimer_WritePeriod
+                0x00001da4        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001da4                WinTimer_WritePeriod
+ .text.WinTimer_ReadCapture
+                0x00001db0        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001db0                WinTimer_ReadCapture
+ .text.WinTimer_WriteCounter
+                0x00001dbc        0xc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001dbc                WinTimer_WriteCounter
+ .text.WinTimer_ClearFIFO
+                0x00001dc8       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001dc8                WinTimer_ClearFIFO
+ .text.WinTimer_Init
+                0x00001ddc       0x34 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001ddc                WinTimer_Init
+ .text.WinTimer_Start
+                0x00001e10       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x00001e10                WinTimer_Start
+ .text.USBUART_DispatchClassRqst
+                0x00001e2c       0x58 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+                0x00001e2c                USBUART_DispatchClassRqst
+ .text.__libc_init_array
+                0x00001e84       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00001e84                __libc_init_array
+ .text.memcpy   0x00001ed0       0x16 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                0x00001ed0                memcpy
+ .text.memset   0x00001ee6       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00001ee6                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00001ef8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00001ef8        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00001ef8        0x4
+ *(.eh_frame)
+ .eh_frame      0x00001ef8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .eh_frame      0x00001ef8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+                0x00001efc                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00001efc                __exidx_end = .
+
+.rodata         0x00001efc      0x1d4
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00001efc       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .rodata.str1.4
+                0x00001f28       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .rodata        0x00001f3c      0x160 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+                0x00001f3c                USBUART_TABLE
+                0x00001f44                USBUART_DEVICE0_TABLE
+                0x00001f5c                USBUART_DEVICE0_CONFIGURATION0_TABLE
+                0x00001f84                USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+                0x00001f88                USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+                0x00001fa0                USBUART_SN_STRING_DESCRIPTOR
+                0x00001fa4                USBUART_STRING_DESCRIPTORS
+                0x00002044                USBUART_DEVICE0_CONFIGURATION0_DESCR
+                0x00002088                USBUART_DEVICE0_DESCR
+                0x0000209c                . = ALIGN (0x4)
+ *(.init)
+ .init          0x0000209c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x0000209c                _init
+ .init          0x000020a0        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x000020a8                . = ALIGN (0x4)
+                0x000020a8                __preinit_array_start = .
+ *(.preinit_array)
+                0x000020a8                __preinit_array_end = .
+                0x000020a8                . = ALIGN (0x4)
+                0x000020a8                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x000020a8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .init_array    0x000020ac        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x000020b0                __init_array_end = .
+                0x000020b0                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x000020b0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x000020b0                _fini
+ .fini          0x000020b4        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x000020bc                . = ALIGN (0x4)
+                0x000020bc                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x000020bc        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x000020c0                __fini_array_end = .
+                0x000020c0                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x000020c0                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x000020c0                . = ALIGN (0x4)
+                0x000020c0                __cy_regions = .
+                0x000020c0        0x4 LONG 0x20d0 __cy_region_init_ram
+                0x000020c4        0x4 LONG 0x1fff8108 __cy_region_start_data
+                0x000020c8        0x4 LONG 0x30 __cy_region_init_size_ram
+                0x000020cc        0x4 LONG 0x8138 __cy_region_zero_size_ram
+                0x000020d0                __cy_regions_end = .
+                0x000020d0                . = ALIGN (0x8)
+                0x000020d0                _etext = .
+
+.cy_checksum_exclude
+                0x000020d0        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000      0x100
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000      0x100 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff8100        0x5
+ *(.noinit)
+ .noinit        0x1fff8100        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .noinit        0x1fff8104        0x1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                0x1fff8104                CyResetStatus
+
+.data           0x1fff8108       0x30 load address 0x000020d0
+                0x1fff8108                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff8108        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .jcr           0x1fff8108        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff810c       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                0x1fff810c                cydelay_32k_ms
+                0x1fff8110                cydelay_freq_khz
+                0x1fff8114                cydelay_freq_mhz
+                0x1fff8118                cydelay_freq_hz
+ .data          0x1fff811c       0x1c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x1fff811c                USBUART_linesCoding
+                0x1fff8138                . = ALIGN (0x8)
+ *(.ram)
+                0x1fff8138                _edata = .
+
+.igot.plt       0x1fff8138        0x0 load address 0x00002100
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.bss            0x1fff8138     0x8138 load address 0x00002100
+                0x1fff8138                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8138       0x1c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .bss           0x1fff8154       0x34 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x1fff8154                playing
+                0x1fff8158                request
+                0x1fff815c                buf_ptr
+                0x1fff8160                bytes
+                0x1fff8164                count
+                0x1fff8168                databits
+                0x1fff816c                controllers
+                0x1fff8170                use_timer
+                0x1fff8174                sent
+                0x1fff8178                data
+                0x1fff817c                timer_ready
+                0x1fff8180                ready
+                0x1fff8184                disable_timer
+ .bss           0x1fff8188        0x1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                0x1fff8188                P1_initVar
+ .bss           0x1fff8189        0x1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                0x1fff8189                USBUART_initVar
+ .bss           0x1fff818a        0x1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ *fill*         0x1fff818b        0x1 
+ .bss           0x1fff818c        0x4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .bss           0x1fff8190        0x1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                0x1fff8190                WinTimer_initVar
+ *(COMMON)
+ *fill*         0x1fff8191        0x3 
+ COMMON         0x1fff8194     0x8004 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x1fff8194                input
+                0x20000194                input_ptr
+ COMMON         0x20000198       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                0x20000198                USBUART_linesChanged
+                0x2000019c                USBUART_cdcDataInEp
+                0x200001a0                USBUART_cdcCommInInterruptEp
+                0x200001a4                USBUART_cdcDataOutEp
+                0x200001a8                USBUART_serialStateBitmap
+                0x200001ac                USBUART_linesControlBitmap
+ COMMON         0x200001b0       0x9a .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                0x200001b0                USBUART_lastPacketSize
+                0x200001b1                USBUART_device
+                0x200001b2                USBUART_transferByteCount
+                0x200001b4                USBUART_transferState
+                0x200001b8                USBUART_interfaceSettingLast
+                0x200001bc                USBUART_currentTD
+                0x200001c8                USBUART_interfaceNumber
+                0x200001cc                USBUART_interfaceClass
+                0x200001d0                USBUART_configurationChanged
+                0x200001d1                USBUART_ep0Mode
+                0x200001d2                USBUART_deviceAddress
+                0x200001d3                USBUART_configuration
+                0x200001d4                USBUART_ep0Count
+                0x200001d5                USBUART_deviceStatus
+                0x200001d8                USBUART_EP
+                0x20000244                USBUART_interfaceSetting
+                0x20000246                USBUART_ep0Toggle
+                0x20000248                USBUART_interfaceStatus
+ *fill*         0x2000024a        0x2 
+ COMMON         0x2000024c       0x22 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+                0x2000024c                USBUART_idSerialNumberStringDescriptor
+                0x20000270                . = ALIGN (0x8)
+ *fill*         0x2000026e        0x2 
+ *(.ram.b)
+                0x20000270                _end = .
+                0x20000270                __end = .
+                0x20000270                PROVIDE (end, .)
+                0x20000270                PROVIDE (__bss_end__, .)
+                0x000020d0                __cy_region_init_ram = LOADADDR (.data)
+                0x00000030                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00008138                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x20000270       0x80 load address 0x00002100
+                0x20000270                . = _end
+                0x200002f0                . = (. + 0x80)
+ *fill*         0x20000270       0x80 
+                0x200002f0                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000      0x2d0
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000      0x2d0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00002100        0x0 load address 0x9050000c
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xb08
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_aranges
+                0x00000020       0x18 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_aranges
+                0x00000038       0x48 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_aranges
+                0x00000080       0x58 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x000000d8       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x000000f8      0x298 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .debug_aranges
+                0x00000390       0x98 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .debug_aranges
+                0x00000428       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .debug_aranges
+                0x00000498       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .debug_aranges
+                0x00000518       0xc8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .debug_aranges
+                0x000005e0       0xe8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .debug_aranges
+                0x000006c8       0x98 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .debug_aranges
+                0x00000760       0x40 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .debug_aranges
+                0x000007a0       0x40 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .debug_aranges
+                0x000007e0       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .debug_aranges
+                0x00000860       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .debug_aranges
+                0x00000880       0x48 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .debug_aranges
+                0x000008c8       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .debug_aranges
+                0x00000948       0x90 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .debug_aranges
+                0x000009d8       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .debug_aranges
+                0x00000a58       0x78 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .debug_aranges
+                0x00000ad0       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .debug_aranges
+                0x00000af0       0x18 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x772e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x495 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00000495      0x13b .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x000005d0      0x39f .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_info    0x0000096f      0x4f8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .debug_info    0x00000e67       0x8b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+ .debug_info    0x00000ef2     0x136f .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .debug_info    0x00002261      0xa57 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .debug_info    0x00002cb8      0x2b6 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .debug_info    0x00002f6e      0x3e9 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .debug_info    0x00003357      0x9ac .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .debug_info    0x00003d03      0xb16 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .debug_info    0x00004819      0x649 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .debug_info    0x00004e62      0x244 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .debug_info    0x000050a6      0x2ef .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .debug_info    0x00005395      0xb35 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .debug_info    0x00005eca       0xe6 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .debug_info    0x00005fb0      0x174 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .debug_info    0x00006124      0x3ce .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .debug_info    0x000064f2      0x2eb .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .debug_info    0x000067dd      0x608 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .debug_info    0x00006de5      0x4ea .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .debug_info    0x000072cf      0x1d2 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .debug_info    0x000074a1      0x28d .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+
+.debug_abbrev   0x00000000     0x223f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x191 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x00000191       0x66 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x000001f7      0x200 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_abbrev  0x000003f7      0x203 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000005fa       0x14 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x0000060e      0x296 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .debug_abbrev  0x000008a4      0x1ed .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .debug_abbrev  0x00000a91      0x16d .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .debug_abbrev  0x00000bfe      0x1bd .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .debug_abbrev  0x00000dbb      0x25e .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .debug_abbrev  0x00001019      0x28b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .debug_abbrev  0x000012a4      0x18b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .debug_abbrev  0x0000142f      0x11b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .debug_abbrev  0x0000154a      0x146 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .debug_abbrev  0x00001690      0x23d .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .debug_abbrev  0x000018cd       0x9b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .debug_abbrev  0x00001968       0x90 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .debug_abbrev  0x000019f8      0x1bd .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .debug_abbrev  0x00001bb5      0x145 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .debug_abbrev  0x00001cfa      0x1ed .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .debug_abbrev  0x00001ee7      0x1c1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .debug_abbrev  0x000020a8       0xe3 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .debug_abbrev  0x0000218b       0xb4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+
+.debug_line     0x00000000     0x2e8c
+ *(.debug_line)
+ .debug_line    0x00000000      0x2b2 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_line    0x000002b2       0x53 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x00000305      0x249 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_line    0x0000054e      0x1e0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .debug_line    0x0000072e       0x68 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+ .debug_line    0x00000796      0x806 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .debug_line    0x00000f9c      0x366 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .debug_line    0x00001302      0x12f .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .debug_line    0x00001431      0x26c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .debug_line    0x0000169d      0x2ca .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .debug_line    0x00001967      0x2f4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .debug_line    0x00001c5b      0x223 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .debug_line    0x00001e7e       0xe8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .debug_line    0x00001f66      0x110 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .debug_line    0x00002076      0x3e4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .debug_line    0x0000245a       0x75 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .debug_line    0x000024cf       0xbd .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .debug_line    0x0000258c      0x26a .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .debug_line    0x000027f6      0x175 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .debug_line    0x0000296b      0x1ec .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .debug_line    0x00002b57      0x23e .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .debug_line    0x00002d95       0x94 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .debug_line    0x00002e29       0x63 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+
+.debug_frame    0x00000000     0x1be8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x00000030       0xac .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_frame   0x000000dc       0xe4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .debug_frame   0x000001c0      0x728 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .debug_frame   0x000008e8      0x1f8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .debug_frame   0x00000ae0      0x114 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .debug_frame   0x00000bf4      0x110 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .debug_frame   0x00000d04      0x1dc .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .debug_frame   0x00000ee0      0x278 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .debug_frame   0x00001158      0x194 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .debug_frame   0x000012ec       0x6c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .debug_frame   0x00001358       0xa0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .debug_frame   0x000013f8      0x17c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .debug_frame   0x00001574       0x20 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .debug_frame   0x00001594       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .debug_frame   0x00001604      0x104 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .debug_frame   0x00001708      0x124 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .debug_frame   0x0000182c      0x174 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .debug_frame   0x000019a0      0x160 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .debug_frame   0x00001b00       0x2c .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .debug_frame   0x00001b2c       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00001b4c       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00001b74       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001ba0       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00001bc8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x2958
+ *(.debug_str)
+ .debug_str     0x00000000      0x2ee .\CortexM3\ARM_GCC_493\Debug\main.o
+                                0x340 (size before relaxing)
+ .debug_str     0x000002ee       0x77 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                                0x1e5 (size before relaxing)
+ .debug_str     0x00000365      0x166 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                                0x2f9 (size before relaxing)
+ .debug_str     0x000004cb      0x156 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+                                0x2fe (size before relaxing)
+ .debug_str     0x00000621      0x82f .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+                                0xa1e (size before relaxing)
+ .debug_str     0x00000e50      0x35b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+                                0x716 (size before relaxing)
+ .debug_str     0x000011ab       0xb8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+                                0x29b (size before relaxing)
+ .debug_str     0x00001263       0xdd .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+                                0x32e (size before relaxing)
+ .debug_str     0x00001340      0x3e4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+                                0x64c (size before relaxing)
+ .debug_str     0x00001724      0x4d1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+                                0x7c0 (size before relaxing)
+ .debug_str     0x00001bf5      0x293 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+                                0x637 (size before relaxing)
+ .debug_str     0x00001e88       0x82 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+                                0x2ce (size before relaxing)
+ .debug_str     0x00001f0a       0xee .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+                                0x2e6 (size before relaxing)
+ .debug_str     0x00001ff8      0x25b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+                                0x7a6 (size before relaxing)
+ .debug_str     0x00002253       0x27 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+                                0x1dc (size before relaxing)
+ .debug_str     0x0000227a       0xa6 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+                                0x23c (size before relaxing)
+ .debug_str     0x00002320      0x137 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+                                0x371 (size before relaxing)
+ .debug_str     0x00002457      0x18f .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+                                0x360 (size before relaxing)
+ .debug_str     0x000025e6      0x197 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+                                0x390 (size before relaxing)
+ .debug_str     0x0000277d       0xae .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+                                0x319 (size before relaxing)
+ .debug_str     0x0000282b       0x27 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+                                0x29b (size before relaxing)
+ .debug_str     0x00002852      0x106 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+                                0x348 (size before relaxing)
+
+.debug_loc      0x00000000     0x308a
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x195 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_loc     0x00000195      0x144 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_loc     0x000002d9      0x1d7 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .debug_loc     0x000004b0      0xa11 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .debug_loc     0x00000ec1      0x1e4 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .debug_loc     0x000010a5       0xec .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .debug_loc     0x00001191       0x56 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .debug_loc     0x000011e7      0x3e1 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .debug_loc     0x000015c8      0x56b .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .debug_loc     0x00001b33      0x171 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .debug_loc     0x00001ca4       0x26 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .debug_loc     0x00001cca      0x93f .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .debug_loc     0x00002609       0x84 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .debug_loc     0x0000268d       0x56 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .debug_loc     0x000026e3       0x13 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .debug_loc     0x000026f6      0x300 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .debug_loc     0x000029f6      0x64d .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .debug_loc     0x00003043       0x47 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x990
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x00000010       0x38 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_ranges  0x00000048       0x48 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000090      0x288 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .debug_ranges  0x00000318       0x88 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .debug_ranges  0x000003a0       0x60 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .debug_ranges  0x00000400       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .debug_ranges  0x00000470       0xd0 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .debug_ranges  0x00000540       0xd8 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .debug_ranges  0x00000618       0x88 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .debug_ranges  0x000006a0       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .debug_ranges  0x000006d0       0x30 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .debug_ranges  0x00000700       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .debug_ranges  0x00000770       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .debug_ranges  0x00000780       0x38 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .debug_ranges  0x000007b8       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .debug_ranges  0x00000828       0x80 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .debug_ranges  0x000008a8       0x70 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .debug_ranges  0x00000918       0x68 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .debug_ranges  0x00000980       0x10 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000cb       0x33 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .ARM.attributes
+                0x000000fe       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x00000131       0x21 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000152       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyLib.o)
+ .ARM.attributes
+                0x00000185       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(cyPm.o)
+ .ARM.attributes
+                0x000001b8       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1.o)
+ .ARM.attributes
+                0x000001eb       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(P1_IRQ.o)
+ .ARM.attributes
+                0x0000021e       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART.o)
+ .ARM.attributes
+                0x00000251       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cdc.o)
+ .ARM.attributes
+                0x00000284       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_drv.o)
+ .ARM.attributes
+                0x000002b7       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_episr.o)
+ .ARM.attributes
+                0x000002ea       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_pm.o)
+ .ARM.attributes
+                0x0000031d       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_std.o)
+ .ARM.attributes
+                0x00000350       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_vnd.o)
+ .ARM.attributes
+                0x00000383       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_Dp.o)
+ .ARM.attributes
+                0x000003b6       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer_IRQ.o)
+ .ARM.attributes
+                0x000003e9       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(WinTimer.o)
+ .ARM.attributes
+                0x0000041c       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CyFlash.o)
+ .ARM.attributes
+                0x0000044f       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(CySpc.o)
+ .ARM.attributes
+                0x00000482       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_cls.o)
+ .ARM.attributes
+                0x000004b5       0x33 .\CortexM3\ARM_GCC_493\Debug\TASBot.a(USBUART_descr.o)
+ .ARM.attributes
+                0x000004e8       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000515       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000542       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000056f       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000059c       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000005c9       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000005f6       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .ARM.attributes
+                0x00000623       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM3\ARM_GCC_493\Debug\TASBot.elf elf32-littlearm)

@@ -1,0 +1,261 @@
+#***************************************************************************
+
+#sjplacer
+
+#Version:            1.1
+
+#Build Date:         Apr 25 2016 12:55:34
+
+#File Generated:     Oct 13 2016 17:14:55
+
+#Purpose:            
+
+#Copyright (C) 2010-2011 by Softjin Technologies Pvt Ltd. All rights reserved.
+
+#***************************************************************************
+
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\bin/sjplacer.exe --proj-name TASBot --netlist-vh2 TASBot_p.vh2 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/arch/p35_udb4x6.ark --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file TASBot_p.lib --sdc-file TASBot.sdc --io-pcf TASBot.pci --outdir .
+
+		Softjin Techologies Placer, Version 1.1
+
+Build Date : Apr 25 2016	12:53:53
+
+D2004: Option and Settings Summary
+=============================================================
+Netlist vh2 file          - TASBot_p.vh2
+Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/arch/p35_udb4x6.ark
+Package                   - 
+Defparam file             - 
+SDC file                  - TASBot.sdc
+Output directory          - .
+Timing library            - TASBot_p.lib
+IO Placement file         - TASBot.pci
+
+D2050: Starting reading inputs for placer
+=============================================================
+D2065: Reading netlist file : "TASBot_p.vh2"
+D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/arch/p35_udb4x6.ark"
+D2051: Reading of inputs for placer completed successfully
+
+D2053: Starting placement of the design
+=============================================================
+
+Phase 2
+Phase 3
+
+Design Statistics after Packing
+    Number of Combinational MCs 	:	10
+    Number of Sequential MCs    	:	18
+    Number of DPs               	:	16
+    Number of Controls          	:	10
+    Number of Status            	:	8
+    Number of SyncCells         	:	0
+    Number of count7cells       	:	0
+
+Device Utilization Summary after Packing
+    Macrocells                  :	28/192
+    UDBS                        :	16/24
+    IOs                         :	12/72
+
+
+D2088: Phase 3, elapsed time : 0.0 (sec)
+
+Phase 4
+D2088: Phase 4, elapsed time : 0.0 (sec)
+
+Phase 5
+D2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+
+######################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+======================================================================
+
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 9
+Clock: ConsolePort_1_Clock_1 | Frequency:  57.8 MHz | Target:   6.0 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:  63.2 MHz | Target:  24.0 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:  57.8 MHz | Target:   6.0 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:  57.3 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+
+D2088: Phase 6, elapsed time : 0.0 (sec)
+
+Phase 7
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 9
+Clock: ConsolePort_1_Clock_1 | Frequency:  57.8 MHz | Target:   6.0 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:  58.4 MHz | Target:  24.0 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:  57.8 MHz | Target:   6.0 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:  58.4 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+D2088: Phase 7, elapsed time : 0.2 (sec)
+
+Final Design Statistics
+    Number of Combinational MCs 	:	10
+    Number of Sequential MCs    	:	18
+    Number of DPs               	:	16
+    Number of Controls          	:	10
+    Number of Status            	:	8
+    Number of SyncCells         	:	0
+    Number of count7cells       	:	0
+    Number of IOs       	:	12
+
+Device Utilization Summary
+    Macrocells                  :	28/192
+    IOs                         :	12/72
+
+
+
+######################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+======================================================================
+
+
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 9
+Clock: ConsolePort_1_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: CyBUS_CLK            | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+
+Phase 6
+
+######################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+======================================================================
+
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 9
+Clock: ConsolePort_1_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: CyBUS_CLK            | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+
+D2088: Phase 6, elapsed time : 0.0 (sec)
+
+Phase 7
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 9
+Clock: ConsolePort_1_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: CyBUS_CLK            | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+D2088: Phase 7, elapsed time : 0.4 (sec)
+
+Final Design Statistics
+    Number of Combinational MCs 	:	10
+    Number of Sequential MCs    	:	18
+    Number of DPs               	:	16
+    Number of Controls          	:	10
+    Number of Status            	:	8
+    Number of SyncCells         	:	0
+    Number of count7cells       	:	0
+    Number of IOs       	:	12
+
+Device Utilization Summary
+    Macrocells                  :	28/192
+    IOs                         :	12/72
+
+
+
+######################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+======================================================================
+
+
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 9
+Clock: ConsolePort_1_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:   1.5 MHz | Target:   6.6 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:   1.5 MHz | Target:  26.3 MHz
+Clock: CyBUS_CLK            | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+
+Phase 8
+D2088: Phase 8, elapsed time : 0.0 (sec)
+
+D2054: Placement of the design completed successfully
+
+I2076: Total run-time: 1.2 sec.
+

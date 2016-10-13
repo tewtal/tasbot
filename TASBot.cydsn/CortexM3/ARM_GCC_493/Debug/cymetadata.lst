@@ -1,0 +1,1252 @@
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 720
+  27              	cy_meta_configecc:
+  28 0000 01       		.byte	1
+  29 0001 45       		.byte	69
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 03       		.byte	3
+  33 0005 52       		.byte	82
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 01       		.byte	1
+  37 0009 65       		.byte	101
+  38 000a 00       		.byte	0
+  39 000b 40       		.byte	64
+  40 000c 01       		.byte	1
+  41 000d 03       		.byte	3
+  42 000e 01       		.byte	1
+  43 000f 40       		.byte	64
+  44 0010 01       		.byte	1
+  45 0011 05       		.byte	5
+  46 0012 01       		.byte	1
+  47 0013 40       		.byte	64
+  48 0014 3C       		.byte	60
+  49 0015 06       		.byte	6
+  50 0016 01       		.byte	1
+  51 0017 40       		.byte	64
+  52 0018 17       		.byte	23
+  53 0019 07       		.byte	7
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 01       		.byte	1
+  57 001d 09       		.byte	9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 01       		.byte	1
+  61 0021 0B       		.byte	11
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 01       		.byte	1
+  65 0025 0D       		.byte	13
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 01       		.byte	1
+  69 0029 15       		.byte	21
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 04       		.byte	4
+  73 002d 17       		.byte	23
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 54       		.byte	84
+  77 0031 18       		.byte	24
+  78 0032 01       		.byte	1
+  79 0033 40       		.byte	64
+  80 0034 2D       		.byte	45
+  81 0035 19       		.byte	25
+  82 0036 01       		.byte	1
+  83 0037 40       		.byte	64
+  84 0038 02       		.byte	2
+  85 0039 1B       		.byte	27
+  86 003a 01       		.byte	1
+  87 003b 40       		.byte	64
+  88 003c 07       		.byte	7
+  89 003d 40       		.byte	64
+  90 003e 01       		.byte	1
+  91 003f 40       		.byte	64
+  92 0040 06       		.byte	6
+  93 0041 41       		.byte	65
+  94 0042 01       		.byte	1
+  95 0043 40       		.byte	64
+  96 0044 08       		.byte	8
+  97 0045 42       		.byte	66
+  98 0046 01       		.byte	1
+  99 0047 40       		.byte	64
+ 100 0048 06       		.byte	6
+ 101 0049 43       		.byte	67
+ 102 004a 01       		.byte	1
+ 103 004b 40       		.byte	64
+ 104 004c 02       		.byte	2
+ 105 004d 45       		.byte	69
+ 106 004e 01       		.byte	1
+ 107 004f 40       		.byte	64
+ 108 0050 02       		.byte	2
+ 109 0051 46       		.byte	70
+ 110 0052 01       		.byte	1
+ 111 0053 40       		.byte	64
+ 112 0054 05       		.byte	5
+ 113 0055 47       		.byte	71
+ 114 0056 01       		.byte	1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 3
+
+
+ 115 0057 40       		.byte	64
+ 116 0058 07       		.byte	7
+ 117 0059 48       		.byte	72
+ 118 005a 01       		.byte	1
+ 119 005b 40       		.byte	64
+ 120 005c 04       		.byte	4
+ 121 005d 4C       		.byte	76
+ 122 005e 01       		.byte	1
+ 123 005f 40       		.byte	64
+ 124 0060 04       		.byte	4
+ 125 0061 4D       		.byte	77
+ 126 0062 01       		.byte	1
+ 127 0063 40       		.byte	64
+ 128 0064 04       		.byte	4
+ 129 0065 50       		.byte	80
+ 130 0066 01       		.byte	1
+ 131 0067 40       		.byte	64
+ 132 0068 02       		.byte	2
+ 133 0069 51       		.byte	81
+ 134 006a 01       		.byte	1
+ 135 006b 40       		.byte	64
+ 136 006c 7E       		.byte	126
+ 137 006d 02       		.byte	2
+ 138 006e 60       		.byte	96
+ 139 006f 04       		.byte	4
+ 140 0070 61       		.byte	97
+ 141 0071 04       		.byte	4
+ 142 0072 7C       		.byte	124
+ 143 0073 40       		.byte	64
+ 144 0074 89       		.byte	-119
+ 145 0075 0D       		.byte	13
+ 146 0076 EA       		.byte	-22
+ 147 0077 04       		.byte	4
+ 148 0078 E2       		.byte	-30
+ 149 0079 04       		.byte	4
+ 150 007a 0D       		.byte	13
+ 151 007b 01       		.byte	1
+ 152 007c 31       		.byte	49
+ 153 007d 01       		.byte	1
+ 154 007e 3F       		.byte	63
+ 155 007f 01       		.byte	1
+ 156 0080 41       		.byte	65
+ 157 0081 04       		.byte	4
+ 158 0082 46       		.byte	70
+ 159 0083 0B       		.byte	11
+ 160 0084 48       		.byte	72
+ 161 0085 04       		.byte	4
+ 162 0086 49       		.byte	73
+ 163 0087 FF       		.byte	-1
+ 164 0088 4A       		.byte	74
+ 165 0089 FF       		.byte	-1
+ 166 008a 4B       		.byte	75
+ 167 008b FF       		.byte	-1
+ 168 008c 4C       		.byte	76
+ 169 008d EF       		.byte	-17
+ 170 008e 4D       		.byte	77
+ 171 008f 55       		.byte	85
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 4
+
+
+ 172 0090 4E       		.byte	78
+ 173 0091 70       		.byte	112
+ 174 0092 4F       		.byte	79
+ 175 0093 48       		.byte	72
+ 176 0094 50       		.byte	80
+ 177 0095 1C       		.byte	28
+ 178 0096 56       		.byte	86
+ 179 0097 08       		.byte	8
+ 180 0098 59       		.byte	89
+ 181 0099 04       		.byte	4
+ 182 009a 5A       		.byte	90
+ 183 009b 08       		.byte	8
+ 184 009c 5B       		.byte	91
+ 185 009d 04       		.byte	4
+ 186 009e 5D       		.byte	93
+ 187 009f 99       		.byte	-103
+ 188 00a0 5F       		.byte	95
+ 189 00a1 01       		.byte	1
+ 190 00a2 61       		.byte	97
+ 191 00a3 08       		.byte	8
+ 192 00a4 63       		.byte	99
+ 193 00a5 08       		.byte	8
+ 194 00a6 65       		.byte	101
+ 195 00a7 08       		.byte	8
+ 196 00a8 67       		.byte	103
+ 197 00a9 08       		.byte	8
+ 198 00aa 68       		.byte	104
+ 199 00ab 50       		.byte	80
+ 200 00ac 69       		.byte	105
+ 201 00ad 0A       		.byte	10
+ 202 00ae 6A       		.byte	106
+ 203 00af 40       		.byte	64
+ 204 00b0 6B       		.byte	107
+ 205 00b1 A8       		.byte	-88
+ 206 00b2 6C       		.byte	108
+ 207 00b3 C0       		.byte	-64
+ 208 00b4 6E       		.byte	110
+ 209 00b5 40       		.byte	64
+ 210 00b6 6F       		.byte	111
+ 211 00b7 A8       		.byte	-88
+ 212 00b8 C1       		.byte	-63
+ 213 00b9 05       		.byte	5
+ 214 00ba C5       		.byte	-59
+ 215 00bb C0       		.byte	-64
+ 216 00bc C6       		.byte	-58
+ 217 00bd DE       		.byte	-34
+ 218 00be C7       		.byte	-57
+ 219 00bf 0F       		.byte	15
+ 220 00c0 C8       		.byte	-56
+ 221 00c1 1E       		.byte	30
+ 222 00c2 C9       		.byte	-55
+ 223 00c3 FF       		.byte	-1
+ 224 00c4 CA       		.byte	-54
+ 225 00c5 FF       		.byte	-1
+ 226 00c6 CB       		.byte	-53
+ 227 00c7 FF       		.byte	-1
+ 228 00c8 CC       		.byte	-52
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 5
+
+
+ 229 00c9 EA       		.byte	-22
+ 230 00ca CD       		.byte	-51
+ 231 00cb 55       		.byte	85
+ 232 00cc CE       		.byte	-50
+ 233 00cd F2       		.byte	-14
+ 234 00ce CF       		.byte	-49
+ 235 00cf 48       		.byte	72
+ 236 00d0 D0       		.byte	-48
+ 237 00d1 1C       		.byte	28
+ 238 00d2 D2       		.byte	-46
+ 239 00d3 01       		.byte	1
+ 240 00d4 DA       		.byte	-38
+ 241 00d5 0B       		.byte	11
+ 242 00d6 DB       		.byte	-37
+ 243 00d7 0B       		.byte	11
+ 244 00d8 DD       		.byte	-35
+ 245 00d9 99       		.byte	-103
+ 246 00da DF       		.byte	-33
+ 247 00db 01       		.byte	1
+ 248 00dc E1       		.byte	-31
+ 249 00dd 08       		.byte	8
+ 250 00de E3       		.byte	-29
+ 251 00df 08       		.byte	8
+ 252 00e0 E5       		.byte	-27
+ 253 00e1 08       		.byte	8
+ 254 00e2 E7       		.byte	-25
+ 255 00e3 08       		.byte	8
+ 256 00e4 E8       		.byte	-24
+ 257 00e5 50       		.byte	80
+ 258 00e6 E9       		.byte	-23
+ 259 00e7 0A       		.byte	10
+ 260 00e8 EA       		.byte	-22
+ 261 00e9 40       		.byte	64
+ 262 00ea EB       		.byte	-21
+ 263 00eb A8       		.byte	-88
+ 264 00ec EC       		.byte	-20
+ 265 00ed C0       		.byte	-64
+ 266 00ee EE       		.byte	-18
+ 267 00ef 40       		.byte	64
+ 268 00f0 EF       		.byte	-17
+ 269 00f1 A8       		.byte	-88
+ 270 00f2 27       		.byte	39
+ 271 00f3 40       		.byte	64
+ 272 00f4 3F       		.byte	63
+ 273 00f5 80       		.byte	-128
+ 274 00f6 47       		.byte	71
+ 275 00f7 02       		.byte	2
+ 276 00f8 48       		.byte	72
+ 277 00f9 01       		.byte	1
+ 278 00fa 49       		.byte	73
+ 279 00fb 01       		.byte	1
+ 280 00fc 51       		.byte	81
+ 281 00fd A8       		.byte	-88
+ 282 00fe 57       		.byte	87
+ 283 00ff 40       		.byte	64
+ 284 0100 59       		.byte	89
+ 285 0101 01       		.byte	1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 6
+
+
+ 286 0102 5C       		.byte	92
+ 287 0103 40       		.byte	64
+ 288 0104 61       		.byte	97
+ 289 0105 A8       		.byte	-88
+ 290 0106 64       		.byte	100
+ 291 0107 01       		.byte	1
+ 292 0108 67       		.byte	103
+ 293 0109 02       		.byte	2
+ 294 010a 68       		.byte	104
+ 295 010b 01       		.byte	1
+ 296 010c 6B       		.byte	107
+ 297 010d 02       		.byte	2
+ 298 010e 78       		.byte	120
+ 299 010f 01       		.byte	1
+ 300 0110 7F       		.byte	127
+ 301 0111 01       		.byte	1
+ 302 0112 CE       		.byte	-50
+ 303 0113 10       		.byte	16
+ 304 0114 D0       		.byte	-48
+ 305 0115 80       		.byte	-128
+ 306 0116 D2       		.byte	-46
+ 307 0117 08       		.byte	8
+ 308 0118 D6       		.byte	-42
+ 309 0119 11       		.byte	17
+ 310 011a D8       		.byte	-40
+ 311 011b 1E       		.byte	30
+ 312 011c DE       		.byte	-34
+ 313 011d 11       		.byte	17
+ 314 011e E2       		.byte	-30
+ 315 011f 04       		.byte	4
+ 316 0120 80       		.byte	-128
+ 317 0121 04       		.byte	4
+ 318 0122 E2       		.byte	-30
+ 319 0123 04       		.byte	4
+ 320 0124 EA       		.byte	-22
+ 321 0125 04       		.byte	4
+ 322 0126 B4       		.byte	-76
+ 323 0127 40       		.byte	64
+ 324 0128 94       		.byte	-108
+ 325 0129 40       		.byte	64
+ 326 012a AB       		.byte	-85
+ 327 012b 40       		.byte	64
+ 328 012c E2       		.byte	-30
+ 329 012d 04       		.byte	4
+ 330 012e EA       		.byte	-22
+ 331 012f 02       		.byte	2
+ 332 0130 09       		.byte	9
+ 333 0131 1F       		.byte	31
+ 334 0132 0D       		.byte	13
+ 335 0133 08       		.byte	8
+ 336 0134 0F       		.byte	15
+ 337 0135 01       		.byte	1
+ 338 0136 11       		.byte	17
+ 339 0137 10       		.byte	16
+ 340 0138 13       		.byte	19
+ 341 0139 01       		.byte	1
+ 342 013a 15       		.byte	21
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 7
+
+
+ 343 013b 1C       		.byte	28
+ 344 013c 17       		.byte	23
+ 345 013d 02       		.byte	2
+ 346 013e 19       		.byte	25
+ 347 013f 04       		.byte	4
+ 348 0140 1B       		.byte	27
+ 349 0141 01       		.byte	1
+ 350 0142 2F       		.byte	47
+ 351 0143 3C       		.byte	60
+ 352 0144 33       		.byte	51
+ 353 0145 1C       		.byte	28
+ 354 0146 35       		.byte	53
+ 355 0147 03       		.byte	3
+ 356 0148 37       		.byte	55
+ 357 0149 20       		.byte	32
+ 358 014a 40       		.byte	64
+ 359 014b 25       		.byte	37
+ 360 014c 41       		.byte	65
+ 361 014d 06       		.byte	6
+ 362 014e 49       		.byte	73
+ 363 014f FF       		.byte	-1
+ 364 0150 4A       		.byte	74
+ 365 0151 FF       		.byte	-1
+ 366 0152 4B       		.byte	75
+ 367 0153 FF       		.byte	-1
+ 368 0154 4F       		.byte	79
+ 369 0155 01       		.byte	1
+ 370 0156 50       		.byte	80
+ 371 0157 18       		.byte	24
+ 372 0158 52       		.byte	82
+ 373 0159 80       		.byte	-128
+ 374 015a 59       		.byte	89
+ 375 015b 04       		.byte	4
+ 376 015c 5A       		.byte	90
+ 377 015d 04       		.byte	4
+ 378 015e 5B       		.byte	91
+ 379 015f 04       		.byte	4
+ 380 0160 5C       		.byte	92
+ 381 0161 10       		.byte	16
+ 382 0162 5D       		.byte	93
+ 383 0163 11       		.byte	17
+ 384 0164 5F       		.byte	95
+ 385 0165 01       		.byte	1
+ 386 0166 60       		.byte	96
+ 387 0167 40       		.byte	64
+ 388 0168 62       		.byte	98
+ 389 0169 40       		.byte	64
+ 390 016a 64       		.byte	100
+ 391 016b 40       		.byte	64
+ 392 016c 65       		.byte	101
+ 393 016d 40       		.byte	64
+ 394 016e 66       		.byte	102
+ 395 016f 80       		.byte	-128
+ 396 0170 68       		.byte	104
+ 397 0171 80       		.byte	-128
+ 398 0172 6A       		.byte	106
+ 399 0173 80       		.byte	-128
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 8
+
+
+ 400 0174 6C       		.byte	108
+ 401 0175 80       		.byte	-128
+ 402 0176 6E       		.byte	110
+ 403 0177 80       		.byte	-128
+ 404 0178 80       		.byte	-128
+ 405 0179 01       		.byte	1
+ 406 017a 82       		.byte	-126
+ 407 017b 0A       		.byte	10
+ 408 017c 84       		.byte	-124
+ 409 017d 02       		.byte	2
+ 410 017e 86       		.byte	-122
+ 411 017f 01       		.byte	1
+ 412 0180 93       		.byte	-109
+ 413 0181 01       		.byte	1
+ 414 0182 94       		.byte	-108
+ 415 0183 01       		.byte	1
+ 416 0184 96       		.byte	-106
+ 417 0185 02       		.byte	2
+ 418 0186 9C       		.byte	-100
+ 419 0187 01       		.byte	1
+ 420 0188 9E       		.byte	-98
+ 421 0189 06       		.byte	6
+ 422 018a 9F       		.byte	-97
+ 423 018b 01       		.byte	1
+ 424 018c AC       		.byte	-84
+ 425 018d 01       		.byte	1
+ 426 018e AE       		.byte	-82
+ 427 018f 12       		.byte	18
+ 428 0190 B0       		.byte	-80
+ 429 0191 10       		.byte	16
+ 430 0192 B2       		.byte	-78
+ 431 0193 04       		.byte	4
+ 432 0194 B4       		.byte	-76
+ 433 0195 03       		.byte	3
+ 434 0196 B6       		.byte	-74
+ 435 0197 08       		.byte	8
+ 436 0198 B7       		.byte	-73
+ 437 0199 01       		.byte	1
+ 438 019a BA       		.byte	-70
+ 439 019b 20       		.byte	32
+ 440 019c BF       		.byte	-65
+ 441 019d 40       		.byte	64
+ 442 019e C0       		.byte	-64
+ 443 019f 35       		.byte	53
+ 444 01a0 C1       		.byte	-63
+ 445 01a1 02       		.byte	2
+ 446 01a2 C5       		.byte	-59
+ 447 01a3 EC       		.byte	-20
+ 448 01a4 C7       		.byte	-57
+ 449 01a5 20       		.byte	32
+ 450 01a6 C8       		.byte	-56
+ 451 01a7 23       		.byte	35
+ 452 01a8 C9       		.byte	-55
+ 453 01a9 FF       		.byte	-1
+ 454 01aa CA       		.byte	-54
+ 455 01ab FF       		.byte	-1
+ 456 01ac CB       		.byte	-53
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 9
+
+
+ 457 01ad FF       		.byte	-1
+ 458 01ae CD       		.byte	-51
+ 459 01af 83       		.byte	-125
+ 460 01b0 CE       		.byte	-50
+ 461 01b1 03       		.byte	3
+ 462 01b2 CF       		.byte	-49
+ 463 01b3 01       		.byte	1
+ 464 01b4 D0       		.byte	-48
+ 465 01b5 18       		.byte	24
+ 466 01b6 D4       		.byte	-44
+ 467 01b7 01       		.byte	1
+ 468 01b8 D6       		.byte	-42
+ 469 01b9 04       		.byte	4
+ 470 01ba D8       		.byte	-40
+ 471 01bb 04       		.byte	4
+ 472 01bc D9       		.byte	-39
+ 473 01bd 04       		.byte	4
+ 474 01be DA       		.byte	-38
+ 475 01bf 04       		.byte	4
+ 476 01c0 DB       		.byte	-37
+ 477 01c1 04       		.byte	4
+ 478 01c2 DD       		.byte	-35
+ 479 01c3 11       		.byte	17
+ 480 01c4 DF       		.byte	-33
+ 481 01c5 05       		.byte	5
+ 482 01c6 E0       		.byte	-32
+ 483 01c7 40       		.byte	64
+ 484 01c8 E2       		.byte	-30
+ 485 01c9 40       		.byte	64
+ 486 01ca E4       		.byte	-28
+ 487 01cb 40       		.byte	64
+ 488 01cc E5       		.byte	-27
+ 489 01cd 40       		.byte	64
+ 490 01ce E6       		.byte	-26
+ 491 01cf 80       		.byte	-128
+ 492 01d0 E8       		.byte	-24
+ 493 01d1 80       		.byte	-128
+ 494 01d2 EA       		.byte	-22
+ 495 01d3 80       		.byte	-128
+ 496 01d4 EC       		.byte	-20
+ 497 01d5 80       		.byte	-128
+ 498 01d6 EE       		.byte	-18
+ 499 01d7 80       		.byte	-128
+ 500 01d8 00       		.byte	0
+ 501 01d9 04       		.byte	4
+ 502 01da 01       		.byte	1
+ 503 01db 02       		.byte	2
+ 504 01dc 0A       		.byte	10
+ 505 01dd 11       		.byte	17
+ 506 01de 10       		.byte	16
+ 507 01df 02       		.byte	2
+ 508 01e0 18       		.byte	24
+ 509 01e1 04       		.byte	4
+ 510 01e2 19       		.byte	25
+ 511 01e3 02       		.byte	2
+ 512 01e4 1A       		.byte	26
+ 513 01e5 11       		.byte	17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 10
+
+
+ 514 01e6 1B       		.byte	27
+ 515 01e7 10       		.byte	16
+ 516 01e8 22       		.byte	34
+ 517 01e9 40       		.byte	64
+ 518 01ea 25       		.byte	37
+ 519 01eb C8       		.byte	-56
+ 520 01ec 27       		.byte	39
+ 521 01ed 28       		.byte	40
+ 522 01ee 2E       		.byte	46
+ 523 01ef 80       		.byte	-128
+ 524 01f0 31       		.byte	49
+ 525 01f1 80       		.byte	-128
+ 526 01f2 32       		.byte	50
+ 527 01f3 02       		.byte	2
+ 528 01f4 36       		.byte	54
+ 529 01f5 02       		.byte	2
+ 530 01f6 37       		.byte	55
+ 531 01f7 28       		.byte	40
+ 532 01f8 3D       		.byte	61
+ 533 01f9 80       		.byte	-128
+ 534 01fa 3F       		.byte	63
+ 535 01fb 20       		.byte	32
+ 536 01fc 40       		.byte	64
+ 537 01fd 04       		.byte	4
+ 538 01fe 41       		.byte	65
+ 539 01ff 08       		.byte	8
+ 540 0200 47       		.byte	71
+ 541 0201 20       		.byte	32
+ 542 0202 49       		.byte	73
+ 543 0203 05       		.byte	5
+ 544 0204 4A       		.byte	74
+ 545 0205 02       		.byte	2
+ 546 0206 4E       		.byte	78
+ 547 0207 02       		.byte	2
+ 548 0208 4F       		.byte	79
+ 549 0209 20       		.byte	32
+ 550 020a 52       		.byte	82
+ 551 020b 02       		.byte	2
+ 552 020c 59       		.byte	89
+ 553 020d 05       		.byte	5
+ 554 020e 5A       		.byte	90
+ 555 020f 80       		.byte	-128
+ 556 0210 63       		.byte	99
+ 557 0211 80       		.byte	-128
+ 558 0212 76       		.byte	118
+ 559 0213 80       		.byte	-128
+ 560 0214 7B       		.byte	123
+ 561 0215 10       		.byte	16
+ 562 0216 83       		.byte	-125
+ 563 0217 40       		.byte	64
+ 564 0218 94       		.byte	-108
+ 565 0219 04       		.byte	4
+ 566 021a C0       		.byte	-64
+ 567 021b 0C       		.byte	12
+ 568 021c C2       		.byte	-62
+ 569 021d 05       		.byte	5
+ 570 021e C4       		.byte	-60
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 11
+
+
+ 571 021f 01       		.byte	1
+ 572 0220 CA       		.byte	-54
+ 573 0221 10       		.byte	16
+ 574 0222 CC       		.byte	-52
+ 575 0223 E9       		.byte	-23
+ 576 0224 CE       		.byte	-50
+ 577 0225 30       		.byte	48
+ 578 0226 D0       		.byte	-48
+ 579 0227 26       		.byte	38
+ 580 0228 D2       		.byte	-46
+ 581 0229 38       		.byte	56
+ 582 022a D6       		.byte	-42
+ 583 022b 0B       		.byte	11
+ 584 022c D8       		.byte	-40
+ 585 022d 01       		.byte	1
+ 586 022e DE       		.byte	-34
+ 587 022f 02       		.byte	2
+ 588 0230 EA       		.byte	-22
+ 589 0231 02       		.byte	2
+ 590 0232 B0       		.byte	-80
+ 591 0233 02       		.byte	2
+ 592 0234 EA       		.byte	-22
+ 593 0235 40       		.byte	64
+ 594 0236 30       		.byte	48
+ 595 0237 80       		.byte	-128
+ 596 0238 33       		.byte	51
+ 597 0239 01       		.byte	1
+ 598 023a 35       		.byte	53
+ 599 023b 80       		.byte	-128
+ 600 023c 36       		.byte	54
+ 601 023d 08       		.byte	8
+ 602 023e 38       		.byte	56
+ 603 023f 20       		.byte	32
+ 604 0240 CC       		.byte	-52
+ 605 0241 F0       		.byte	-16
+ 606 0242 CE       		.byte	-50
+ 607 0243 10       		.byte	16
+ 608 0244 94       		.byte	-108
+ 609 0245 20       		.byte	32
+ 610 0246 9D       		.byte	-99
+ 611 0247 80       		.byte	-128
+ 612 0248 9F       		.byte	-97
+ 613 0249 01       		.byte	1
+ 614 024a A4       		.byte	-92
+ 615 024b 80       		.byte	-128
+ 616 024c AA       		.byte	-86
+ 617 024d 08       		.byte	8
+ 618 024e EA       		.byte	-22
+ 619 024f 20       		.byte	32
+ 620 0250 57       		.byte	87
+ 621 0251 10       		.byte	16
+ 622 0252 80       		.byte	-128
+ 623 0253 10       		.byte	16
+ 624 0254 94       		.byte	-108
+ 625 0255 20       		.byte	32
+ 626 0256 9D       		.byte	-99
+ 627 0257 80       		.byte	-128
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 12
+
+
+ 628 0258 9F       		.byte	-97
+ 629 0259 01       		.byte	1
+ 630 025a A4       		.byte	-92
+ 631 025b 80       		.byte	-128
+ 632 025c D4       		.byte	-44
+ 633 025d 40       		.byte	64
+ 634 025e E2       		.byte	-30
+ 635 025f 20       		.byte	32
+ 636 0260 80       		.byte	-128
+ 637 0261 80       		.byte	-128
+ 638 0262 9D       		.byte	-99
+ 639 0263 80       		.byte	-128
+ 640 0264 9F       		.byte	-97
+ 641 0265 01       		.byte	1
+ 642 0266 A4       		.byte	-92
+ 643 0267 80       		.byte	-128
+ 644 0268 A7       		.byte	-89
+ 645 0269 10       		.byte	16
+ 646 026a E2       		.byte	-30
+ 647 026b 20       		.byte	32
+ 648 026c A7       		.byte	-89
+ 649 026d 40       		.byte	64
+ 650 026e AB       		.byte	-85
+ 651 026f 40       		.byte	64
+ 652 0270 81       		.byte	-127
+ 653 0271 20       		.byte	32
+ 654 0272 A7       		.byte	-89
+ 655 0273 40       		.byte	64
+ 656 0274 09       		.byte	9
+ 657 0275 28       		.byte	40
+ 658 0276 0F       		.byte	15
+ 659 0277 80       		.byte	-128
+ 660 0278 A5       		.byte	-91
+ 661 0279 20       		.byte	32
+ 662 027a A7       		.byte	-89
+ 663 027b 40       		.byte	64
+ 664 027c C2       		.byte	-62
+ 665 027d 0E       		.byte	14
+ 666 027e 81       		.byte	-127
+ 667 027f 80       		.byte	-128
+ 668 0280 9D       		.byte	-99
+ 669 0281 80       		.byte	-128
+ 670 0282 AB       		.byte	-85
+ 671 0283 10       		.byte	16
+ 672 0284 AF       		.byte	-81
+ 673 0285 01       		.byte	1
+ 674 0286 E2       		.byte	-30
+ 675 0287 20       		.byte	32
+ 676 0288 EA       		.byte	-22
+ 677 0289 40       		.byte	64
+ 678 028a EE       		.byte	-18
+ 679 028b 80       		.byte	-128
+ 680 028c 0B       		.byte	11
+ 681 028d 02       		.byte	2
+ 682 028e 0F       		.byte	15
+ 683 028f 10       		.byte	16
+ 684 0290 AD       		.byte	-83
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 13
+
+
+ 685 0291 08       		.byte	8
+ 686 0292 C2       		.byte	-62
+ 687 0293 06       		.byte	6
+ 688 0294 B3       		.byte	-77
+ 689 0295 10       		.byte	16
+ 690 0296 B7       		.byte	-73
+ 691 0297 01       		.byte	1
+ 692 0298 EA       		.byte	-22
+ 693 0299 02       		.byte	2
+ 694 029a EE       		.byte	-18
+ 695 029b 01       		.byte	1
+ 696 029c 01       		.byte	1
+ 697 029d 01       		.byte	1
+ 698 029e 0B       		.byte	11
+ 699 029f 01       		.byte	1
+ 700 02a0 10       		.byte	16
+ 701 02a1 03       		.byte	3
+ 702 02a2 1C       		.byte	28
+ 703 02a3 03       		.byte	3
+ 704 02a4 00       		.byte	0
+ 705 02a5 AF       		.byte	-81
+ 706 02a6 01       		.byte	1
+ 707 02a7 02       		.byte	2
+ 708 02a8 04       		.byte	4
+ 709 02a9 00       		.byte	0
+ 710 02aa 04       		.byte	4
+ 711 02ab 04       		.byte	4
+ 712 02ac 04       		.byte	4
+ 713 02ad 00       		.byte	0
+ 714 02ae 04       		.byte	4
+ 715 02af 00       		.byte	0
+ 716 02b0 00       		.byte	0
+ 717 02b1 04       		.byte	4
+ 718 02b2 00       		.byte	0
+ 719 02b3 00       		.byte	0
+ 720 02b4 00       		.byte	0
+ 721 02b5 08       		.byte	8
+ 722 02b6 00       		.byte	0
+ 723 02b7 00       		.byte	0
+ 724 02b8 00       		.byte	0
+ 725 02b9 00       		.byte	0
+ 726 02ba 00       		.byte	0
+ 727 02bb 00       		.byte	0
+ 728 02bc 40       		.byte	64
+ 729 02bd 00       		.byte	0
+ 730 02be 00       		.byte	0
+ 731 02bf 00       		.byte	0
+ 732 02c0 00       		.byte	0
+ 733 02c1 00       		.byte	0
+ 734 02c2 00       		.byte	0
+ 735 02c3 00       		.byte	0
+ 736 02c4 C0       		.byte	-64
+ 737 02c5 00       		.byte	0
+ 738 02c6 00       		.byte	0
+ 739 02c7 00       		.byte	0
+ 740 02c8 60       		.byte	96
+ 741 02c9 00       		.byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 14
+
+
+ 742 02ca 00       		.byte	0
+ 743 02cb 00       		.byte	0
+ 744 02cc 00       		.byte	0
+ 745 02cd 00       		.byte	0
+ 746 02ce 00       		.byte	0
+ 747 02cf 00       		.byte	0
+ 748              		.section	.cywolatch,"a",%progbits
+ 749              		.align	2
+ 750              		.type	cy_meta_wonvl, %object
+ 751              		.size	cy_meta_wonvl, 4
+ 752              	cy_meta_wonvl:
+ 753 0000 BC       		.byte	-68
+ 754 0001 90       		.byte	-112
+ 755 0002 AC       		.byte	-84
+ 756 0003 AF       		.byte	-81
+ 757              		.section	.cycustnvl,"a",%progbits
+ 758              		.align	2
+ 759              		.type	cy_meta_custnvl, %object
+ 760              		.size	cy_meta_custnvl, 4
+ 761              	cy_meta_custnvl:
+ 762 0000 00       		.byte	0
+ 763 0001 00       		.byte	0
+ 764 0002 40       		.byte	64
+ 765 0003 05       		.byte	5
+ 766              		.section	.cymeta,"a",%progbits
+ 767              		.align	2
+ 768              		.type	cy_metadata, %object
+ 769              		.size	cy_metadata, 12
+ 770              	cy_metadata:
+ 771 0000 00       		.byte	0
+ 772 0001 01       		.byte	1
+ 773 0002 2E       		.byte	46
+ 774 0003 16       		.byte	22
+ 775 0004 10       		.byte	16
+ 776 0005 69       		.byte	105
+ 777 0006 00       		.byte	0
+ 778 0007 01       		.byte	1
+ 779 0008 00       		.byte	0
+ 780 0009 00       		.byte	0
+ 781 000a 00       		.byte	0
+ 782 000b 00       		.byte	0
+ 783              		.section	.cyflashprotect,"a",%progbits
+ 784              		.align	2
+ 785              		.type	cy_meta_flashprotect, %object
+ 786              		.size	cy_meta_flashprotect, 256
+ 787              	cy_meta_flashprotect:
+ 788 0000 00000000 		.space	256
+ 788      00000000 
+ 788      00000000 
+ 788      00000000 
+ 788      00000000 
+ 789              		.text
+ 790              	.Letext0:
+ 791              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 792              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 793              		.section	.debug_info,"",%progbits
+ 794              	.Ldebug_info0:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 15
+
+
+ 795 0000 37010000 		.4byte	0x137
+ 796 0004 0400     		.2byte	0x4
+ 797 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 798 000a 04       		.byte	0x4
+ 799 000b 01       		.uleb128 0x1
+ 800 000c CF000000 		.4byte	.LASF18
+ 801 0010 01       		.byte	0x1
+ 802 0011 00000000 		.4byte	.LASF19
+ 803 0015 72000000 		.4byte	.LASF20
+ 804 0019 00000000 		.4byte	.Ldebug_line0
+ 805 001d 02       		.uleb128 0x2
+ 806 001e 01       		.byte	0x1
+ 807 001f 06       		.byte	0x6
+ 808 0020 D9010000 		.4byte	.LASF0
+ 809 0024 02       		.uleb128 0x2
+ 810 0025 01       		.byte	0x1
+ 811 0026 08       		.byte	0x8
+ 812 0027 38000000 		.4byte	.LASF1
+ 813 002b 02       		.uleb128 0x2
+ 814 002c 02       		.byte	0x2
+ 815 002d 05       		.byte	0x5
+ 816 002e C0010000 		.4byte	.LASF2
+ 817 0032 02       		.uleb128 0x2
+ 818 0033 02       		.byte	0x2
+ 819 0034 07       		.byte	0x7
+ 820 0035 58000000 		.4byte	.LASF3
+ 821 0039 02       		.uleb128 0x2
+ 822 003a 04       		.byte	0x4
+ 823 003b 05       		.byte	0x5
+ 824 003c D0010000 		.4byte	.LASF4
+ 825 0040 02       		.uleb128 0x2
+ 826 0041 04       		.byte	0x4
+ 827 0042 07       		.byte	0x7
+ 828 0043 46000000 		.4byte	.LASF5
+ 829 0047 02       		.uleb128 0x2
+ 830 0048 08       		.byte	0x8
+ 831 0049 05       		.byte	0x5
+ 832 004a AD010000 		.4byte	.LASF6
+ 833 004e 02       		.uleb128 0x2
+ 834 004f 08       		.byte	0x8
+ 835 0050 07       		.byte	0x7
+ 836 0051 6A010000 		.4byte	.LASF7
+ 837 0055 03       		.uleb128 0x3
+ 838 0056 04       		.byte	0x4
+ 839 0057 05       		.byte	0x5
+ 840 0058 696E7400 		.ascii	"int\000"
+ 841 005c 02       		.uleb128 0x2
+ 842 005d 04       		.byte	0x4
+ 843 005e 07       		.byte	0x7
+ 844 005f 5D010000 		.4byte	.LASF8
+ 845 0063 04       		.uleb128 0x4
+ 846 0064 CA010000 		.4byte	.LASF21
+ 847 0068 02       		.byte	0x2
+ 848 0069 9201     		.2byte	0x192
+ 849 006b 24000000 		.4byte	0x24
+ 850 006f 02       		.uleb128 0x2
+ 851 0070 04       		.byte	0x4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 16
+
+
+ 852 0071 04       		.byte	0x4
+ 853 0072 32000000 		.4byte	.LASF9
+ 854 0076 02       		.uleb128 0x2
+ 855 0077 08       		.byte	0x8
+ 856 0078 04       		.byte	0x4
+ 857 0079 6B000000 		.4byte	.LASF10
+ 858 007d 02       		.uleb128 0x2
+ 859 007e 01       		.byte	0x1
+ 860 007f 08       		.byte	0x8
+ 861 0080 BB010000 		.4byte	.LASF11
+ 862 0084 05       		.uleb128 0x5
+ 863 0085 63000000 		.4byte	0x63
+ 864 0089 95000000 		.4byte	0x95
+ 865 008d 06       		.uleb128 0x6
+ 866 008e 95000000 		.4byte	0x95
+ 867 0092 CF02     		.2byte	0x2cf
+ 868 0094 00       		.byte	0
+ 869 0095 02       		.uleb128 0x2
+ 870 0096 04       		.byte	0x4
+ 871 0097 07       		.byte	0x7
+ 872 0098 A4010000 		.4byte	.LASF12
+ 873 009c 07       		.uleb128 0x7
+ 874 009d BD000000 		.4byte	.LASF13
+ 875 00a1 01       		.byte	0x1
+ 876 00a2 1F       		.byte	0x1f
+ 877 00a3 AD000000 		.4byte	0xad
+ 878 00a7 05       		.uleb128 0x5
+ 879 00a8 03       		.byte	0x3
+ 880 00a9 00000000 		.4byte	cy_meta_configecc
+ 881 00ad 08       		.uleb128 0x8
+ 882 00ae 84000000 		.4byte	0x84
+ 883 00b2 05       		.uleb128 0x5
+ 884 00b3 63000000 		.4byte	0x63
+ 885 00b7 C2000000 		.4byte	0xc2
+ 886 00bb 09       		.uleb128 0x9
+ 887 00bc 95000000 		.4byte	0x95
+ 888 00c0 03       		.byte	0x3
+ 889 00c1 00       		.byte	0
+ 890 00c2 07       		.uleb128 0x7
+ 891 00c3 AD000000 		.4byte	.LASF14
+ 892 00c7 01       		.byte	0x1
+ 893 00c8 86       		.byte	0x86
+ 894 00c9 D3000000 		.4byte	0xd3
+ 895 00cd 05       		.uleb128 0x5
+ 896 00ce 03       		.byte	0x3
+ 897 00cf 00000000 		.4byte	cy_meta_custnvl
+ 898 00d3 08       		.uleb128 0x8
+ 899 00d4 B2000000 		.4byte	0xb2
+ 900 00d8 07       		.uleb128 0x7
+ 901 00d9 96010000 		.4byte	.LASF15
+ 902 00dd 01       		.byte	0x1
+ 903 00de 94       		.byte	0x94
+ 904 00df E9000000 		.4byte	0xe9
+ 905 00e3 05       		.uleb128 0x5
+ 906 00e4 03       		.byte	0x3
+ 907 00e5 00000000 		.4byte	cy_meta_wonvl
+ 908 00e9 08       		.uleb128 0x8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 17
+
+
+ 909 00ea B2000000 		.4byte	0xb2
+ 910 00ee 05       		.uleb128 0x5
+ 911 00ef 63000000 		.4byte	0x63
+ 912 00f3 FE000000 		.4byte	0xfe
+ 913 00f7 09       		.uleb128 0x9
+ 914 00f8 95000000 		.4byte	0x95
+ 915 00fc FF       		.byte	0xff
+ 916 00fd 00       		.byte	0
+ 917 00fe 07       		.uleb128 0x7
+ 918 00ff 81010000 		.4byte	.LASF16
+ 919 0103 01       		.byte	0x1
+ 920 0104 A2       		.byte	0xa2
+ 921 0105 0F010000 		.4byte	0x10f
+ 922 0109 05       		.uleb128 0x5
+ 923 010a 03       		.byte	0x3
+ 924 010b 00000000 		.4byte	cy_meta_flashprotect
+ 925 010f 08       		.uleb128 0x8
+ 926 0110 EE000000 		.4byte	0xee
+ 927 0114 05       		.uleb128 0x5
+ 928 0115 63000000 		.4byte	0x63
+ 929 0119 24010000 		.4byte	0x124
+ 930 011d 09       		.uleb128 0x9
+ 931 011e 95000000 		.4byte	0x95
+ 932 0122 0B       		.byte	0xb
+ 933 0123 00       		.byte	0
+ 934 0124 07       		.uleb128 0x7
+ 935 0125 26000000 		.4byte	.LASF17
+ 936 0129 01       		.byte	0x1
+ 937 012a CF       		.byte	0xcf
+ 938 012b 35010000 		.4byte	0x135
+ 939 012f 05       		.uleb128 0x5
+ 940 0130 03       		.byte	0x3
+ 941 0131 00000000 		.4byte	cy_metadata
+ 942 0135 08       		.uleb128 0x8
+ 943 0136 14010000 		.4byte	0x114
+ 944 013a 00       		.byte	0
+ 945              		.section	.debug_abbrev,"",%progbits
+ 946              	.Ldebug_abbrev0:
+ 947 0000 01       		.uleb128 0x1
+ 948 0001 11       		.uleb128 0x11
+ 949 0002 01       		.byte	0x1
+ 950 0003 25       		.uleb128 0x25
+ 951 0004 0E       		.uleb128 0xe
+ 952 0005 13       		.uleb128 0x13
+ 953 0006 0B       		.uleb128 0xb
+ 954 0007 03       		.uleb128 0x3
+ 955 0008 0E       		.uleb128 0xe
+ 956 0009 1B       		.uleb128 0x1b
+ 957 000a 0E       		.uleb128 0xe
+ 958 000b 10       		.uleb128 0x10
+ 959 000c 17       		.uleb128 0x17
+ 960 000d 00       		.byte	0
+ 961 000e 00       		.byte	0
+ 962 000f 02       		.uleb128 0x2
+ 963 0010 24       		.uleb128 0x24
+ 964 0011 00       		.byte	0
+ 965 0012 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 18
+
+
+ 966 0013 0B       		.uleb128 0xb
+ 967 0014 3E       		.uleb128 0x3e
+ 968 0015 0B       		.uleb128 0xb
+ 969 0016 03       		.uleb128 0x3
+ 970 0017 0E       		.uleb128 0xe
+ 971 0018 00       		.byte	0
+ 972 0019 00       		.byte	0
+ 973 001a 03       		.uleb128 0x3
+ 974 001b 24       		.uleb128 0x24
+ 975 001c 00       		.byte	0
+ 976 001d 0B       		.uleb128 0xb
+ 977 001e 0B       		.uleb128 0xb
+ 978 001f 3E       		.uleb128 0x3e
+ 979 0020 0B       		.uleb128 0xb
+ 980 0021 03       		.uleb128 0x3
+ 981 0022 08       		.uleb128 0x8
+ 982 0023 00       		.byte	0
+ 983 0024 00       		.byte	0
+ 984 0025 04       		.uleb128 0x4
+ 985 0026 16       		.uleb128 0x16
+ 986 0027 00       		.byte	0
+ 987 0028 03       		.uleb128 0x3
+ 988 0029 0E       		.uleb128 0xe
+ 989 002a 3A       		.uleb128 0x3a
+ 990 002b 0B       		.uleb128 0xb
+ 991 002c 3B       		.uleb128 0x3b
+ 992 002d 05       		.uleb128 0x5
+ 993 002e 49       		.uleb128 0x49
+ 994 002f 13       		.uleb128 0x13
+ 995 0030 00       		.byte	0
+ 996 0031 00       		.byte	0
+ 997 0032 05       		.uleb128 0x5
+ 998 0033 01       		.uleb128 0x1
+ 999 0034 01       		.byte	0x1
+ 1000 0035 49       		.uleb128 0x49
+ 1001 0036 13       		.uleb128 0x13
+ 1002 0037 01       		.uleb128 0x1
+ 1003 0038 13       		.uleb128 0x13
+ 1004 0039 00       		.byte	0
+ 1005 003a 00       		.byte	0
+ 1006 003b 06       		.uleb128 0x6
+ 1007 003c 21       		.uleb128 0x21
+ 1008 003d 00       		.byte	0
+ 1009 003e 49       		.uleb128 0x49
+ 1010 003f 13       		.uleb128 0x13
+ 1011 0040 2F       		.uleb128 0x2f
+ 1012 0041 05       		.uleb128 0x5
+ 1013 0042 00       		.byte	0
+ 1014 0043 00       		.byte	0
+ 1015 0044 07       		.uleb128 0x7
+ 1016 0045 34       		.uleb128 0x34
+ 1017 0046 00       		.byte	0
+ 1018 0047 03       		.uleb128 0x3
+ 1019 0048 0E       		.uleb128 0xe
+ 1020 0049 3A       		.uleb128 0x3a
+ 1021 004a 0B       		.uleb128 0xb
+ 1022 004b 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 19
+
+
+ 1023 004c 0B       		.uleb128 0xb
+ 1024 004d 49       		.uleb128 0x49
+ 1025 004e 13       		.uleb128 0x13
+ 1026 004f 3F       		.uleb128 0x3f
+ 1027 0050 19       		.uleb128 0x19
+ 1028 0051 02       		.uleb128 0x2
+ 1029 0052 18       		.uleb128 0x18
+ 1030 0053 00       		.byte	0
+ 1031 0054 00       		.byte	0
+ 1032 0055 08       		.uleb128 0x8
+ 1033 0056 26       		.uleb128 0x26
+ 1034 0057 00       		.byte	0
+ 1035 0058 49       		.uleb128 0x49
+ 1036 0059 13       		.uleb128 0x13
+ 1037 005a 00       		.byte	0
+ 1038 005b 00       		.byte	0
+ 1039 005c 09       		.uleb128 0x9
+ 1040 005d 21       		.uleb128 0x21
+ 1041 005e 00       		.byte	0
+ 1042 005f 49       		.uleb128 0x49
+ 1043 0060 13       		.uleb128 0x13
+ 1044 0061 2F       		.uleb128 0x2f
+ 1045 0062 0B       		.uleb128 0xb
+ 1046 0063 00       		.byte	0
+ 1047 0064 00       		.byte	0
+ 1048 0065 00       		.byte	0
+ 1049              		.section	.debug_aranges,"",%progbits
+ 1050 0000 14000000 		.4byte	0x14
+ 1051 0004 0200     		.2byte	0x2
+ 1052 0006 00000000 		.4byte	.Ldebug_info0
+ 1053 000a 04       		.byte	0x4
+ 1054 000b 00       		.byte	0
+ 1055 000c 0000     		.2byte	0
+ 1056 000e 0000     		.2byte	0
+ 1057 0010 00000000 		.4byte	0
+ 1058 0014 00000000 		.4byte	0
+ 1059              		.section	.debug_line,"",%progbits
+ 1060              	.Ldebug_line0:
+ 1061 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 1061      02004900 
+ 1061      00000201 
+ 1061      FB0E0D00 
+ 1061      01010101 
+ 1062              	.LASF19:
+ 1063 0000 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1063      6E657261 
+ 1063      7465645F 
+ 1063      536F7572 
+ 1063      63655C50 
+ 1064              	.LASF17:
+ 1065 0026 63795F6D 		.ascii	"cy_metadata\000"
+ 1065      65746164 
+ 1065      61746100 
+ 1066              	.LASF9:
+ 1067 0032 666C6F61 		.ascii	"float\000"
+ 1067      7400
+ 1068              	.LASF1:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 20
+
+
+ 1069 0038 756E7369 		.ascii	"unsigned char\000"
+ 1069      676E6564 
+ 1069      20636861 
+ 1069      7200
+ 1070              	.LASF5:
+ 1071 0046 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1071      20756E73 
+ 1071      69676E65 
+ 1071      6420696E 
+ 1071      7400
+ 1072              	.LASF3:
+ 1073 0058 73686F72 		.ascii	"short unsigned int\000"
+ 1073      7420756E 
+ 1073      7369676E 
+ 1073      65642069 
+ 1073      6E7400
+ 1074              	.LASF10:
+ 1075 006b 646F7562 		.ascii	"double\000"
+ 1075      6C6500
+ 1076              	.LASF20:
+ 1077 0072 433A5C55 		.ascii	"C:\\Users\\Thomas\\Documents\\PSoC Creator\\TASBot\\"
+ 1077      73657273 
+ 1077      5C54686F 
+ 1077      6D61735C 
+ 1077      446F6375 
+ 1078 00a0 54415342 		.ascii	"TASBot.cydsn\000"
+ 1078      6F742E63 
+ 1078      7964736E 
+ 1078      00
+ 1079              	.LASF14:
+ 1080 00ad 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 1080      6574615F 
+ 1080      63757374 
+ 1080      6E766C00 
+ 1081              	.LASF13:
+ 1082 00bd 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1082      6574615F 
+ 1082      636F6E66 
+ 1082      69676563 
+ 1082      6300
+ 1083              	.LASF18:
+ 1084 00cf 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1084      4320342E 
+ 1084      392E3320 
+ 1084      32303135 
+ 1084      30333033 
+ 1085 0102 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1085      20726576 
+ 1085      6973696F 
+ 1085      6E203232 
+ 1085      31323230 
+ 1086 0135 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1086      66756E63 
+ 1086      74696F6E 
+ 1086      2D736563 
+ 1086      74696F6E 
+ 1087              	.LASF8:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccBF4mpe.s 			page 21
+
+
+ 1088 015d 756E7369 		.ascii	"unsigned int\000"
+ 1088      676E6564 
+ 1088      20696E74 
+ 1088      00
+ 1089              	.LASF7:
+ 1090 016a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1090      206C6F6E 
+ 1090      6720756E 
+ 1090      7369676E 
+ 1090      65642069 
+ 1091              	.LASF16:
+ 1092 0181 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1092      6574615F 
+ 1092      666C6173 
+ 1092      6870726F 
+ 1092      74656374 
+ 1093              	.LASF15:
+ 1094 0196 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1094      6574615F 
+ 1094      776F6E76 
+ 1094      6C00
+ 1095              	.LASF12:
+ 1096 01a4 73697A65 		.ascii	"sizetype\000"
+ 1096      74797065 
+ 1096      00
+ 1097              	.LASF6:
+ 1098 01ad 6C6F6E67 		.ascii	"long long int\000"
+ 1098      206C6F6E 
+ 1098      6720696E 
+ 1098      7400
+ 1099              	.LASF11:
+ 1100 01bb 63686172 		.ascii	"char\000"
+ 1100      00
+ 1101              	.LASF2:
+ 1102 01c0 73686F72 		.ascii	"short int\000"
+ 1102      7420696E 
+ 1102      7400
+ 1103              	.LASF21:
+ 1104 01ca 75696E74 		.ascii	"uint8\000"
+ 1104      3800
+ 1105              	.LASF4:
+ 1106 01d0 6C6F6E67 		.ascii	"long int\000"
+ 1106      20696E74 
+ 1106      00
+ 1107              	.LASF0:
+ 1108 01d9 7369676E 		.ascii	"signed char\000"
+ 1108      65642063 
+ 1108      68617200 
+ 1109              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

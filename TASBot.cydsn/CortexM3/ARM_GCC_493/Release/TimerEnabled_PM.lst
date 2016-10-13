@@ -1,0 +1,1594 @@
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"TimerEnabled_PM.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.section	.gnu.lto_.profile.bdc41d20,"",%progbits
+  18 0000 789C6366 		.ascii	"x\234cf```a\200\000F\006\001\036\000\000\240\000%"
+  18      60606061 
+  18      80004606 
+  18      011E0000 
+  18      A00025
+  19              		.text
+  20              		.section	.gnu.lto_.jmpfuncs.bdc41d20,"",%progbits
+  21 0000 789C6366 		.ascii	"x\234cf\300\016\370\2404\013\0203100CX\000\002]\000"
+  21      C00EF8A0 
+  21      340B1033 
+  21      31303043 
+  21      5800025D 
+  22 0015 1F       		.ascii	"\037"
+  23              		.text
+  24              		.section	.gnu.lto_.inline.bdc41d20,"",%progbits
+  25 0000 789C6366 		.ascii	"x\234cf\300\016\374\2404\013\003\003+\013#\003\023\313"
+  25      C00EFCA0 
+  25      340B0303 
+  25      2B0B2303 
+  25      13CB
+  26 0012 027906B6 		.ascii	"\002y\006\266\005\362L 1&L!fL!\026L!\006\000\022\360"
+  26      05F24C20 
+  26      31264C21 
+  26      664C2116 
+  26      4C210600 
+  27 0028 06B7     		.ascii	"\006\267"
+  28              		.text
+  29              		.section	.gnu.lto_.pureconst.bdc41d20,"",%progbits
+  30 0000 789C6366 		.ascii	"x\234cf``\340d\200\000\026\006)&)f)\026)\000\002\321"
+  30      6060E064 
+  30      80001606 
+  30      29262966 
+  30      29162900 
+  31 0016 0082     		.ascii	"\000\202"
+  32              		.text
+  33              		.section	.gnu.lto_TimerEnabled_SaveConfig.bdc41d20,"",%progbits
+  34 0000 789C654F 		.ascii	"x\234eO1KBa\024\275\347>\025\301\206h\364\0178\204n"
+  34      314B4261 
+  34      14BDE73E 
+  34      15C18668 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 2
+
+
+  34      F40F3884 
+  35 0015 415B4344 		.ascii	"A[CDS \330(\204\331\033\202R\220\032\303\357\311\023"
+  35      5320D828 
+  35      84D91B82 
+  35      52901AC3 
+  35      EFC913
+  36 0028 A2A1A421 		.ascii	"\242\241\244!\2022h\210,\255\240\241\326W4\024A\021"
+  36      82326888 
+  36      2CADA0A1 
+  36      D6573414 
+  36      4111
+  37 003a 4181432D 		.ascii	"A\201C-\006\005\015\231Q<\302\354~\272\004}\360q\277"
+  37      06050D99 
+  37      513CC2EC 
+  37      7EBA047D 
+  37      F071BF
+  38 004d 7BCFF9CE 		.ascii	"{\317\371\316\271\307\240\377'(w\000Da\2510\010\\\270"
+  38      B9C7A0FF 
+  38      27287700 
+  38      4461A930 
+  38      085CB8
+  39 0060 22B2FC0C 		.ascii	"\"\262\374\014\350\007\201\262\214,^\270\316(8\345\325"
+  39      E80781B2 
+  39      8C2C5EB8 
+  39      CE2838E5 
+  39      D5
+  40 0071 40684B29 		.ascii	"@hK)\365\226\273\264\242\016\\&jpG\007\333\010\221\220"
+  40      F596BBB4 
+  40      A20E5C26 
+  40      6A704707 
+  40      DB089190 
+  41 0085 EA76F33E 		.ascii	"\352v\363>\340\263\205\324\335\301P\202O\364\351\240"
+  41      E0B385D4 
+  41      DDC15082 
+  41      4FF4E9A0 
+  42 0095 C751AD56 		.ascii	"\307Q\255V\243rr\004\017\223\3132\253\011\256]\236\230"
+  42      A3727204 
+  42      0F93CB32 
+  42      AB09AE5D 
+  42      9E98
+  43 00a7 7535AA38 		.ascii	"u5\2528\375\\\270\313\007\364\227/\326\226\027\352\365"
+  43      FD5CB8CB 
+  43      07F4972F 
+  43      D69617EA 
+  43      F5
+  44 00b8 ACEB995D 		.ascii	"\254\353\231]\346\217sKy\264\301c\355\372\306\337\036"
+  44      E68F734B 
+  44      79B4C163 
+  44      EDFAC6DF 
+  44      1E
+  45 00c9 916EF3F7 		.ascii	"\221n\363\367+-\243\2105\313\226u\014\354 \210]H(\224"
+  45      2B2DA388 
+  45      35CB9675 
+  45      0CEC2088 
+  45      5D482894 
+  46 00dd 51045591 		.ascii	"Q\004U\221[\336\014i=\241n\334.\356\363\334\267\232"
+  46      5BDE0C69 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 3
+
+
+  46      3DA16EDC 
+  46      2EEEF3DC 
+  46      B79A
+  47 00ef 577E973D 		.ascii	"W~\227=M\275\334_=O\273-Y\366:\264\236\322,/*\230\303"
+  47      4DBDDC5F 
+  47      3D4FBB2D 
+  47      59F63AB4 
+  47      9ED22C2F 
+  48 0106 9E1614EC 		.ascii	"\236\026\024\354\247\262t\350\013\227%\233\323\357\262"
+  48      A7B274E8 
+  48      0B97259B 
+  48      D3EFB2
+  49 0115 0FFB427C 		.ascii	"\017\373B|o\347\307\001\302\2621=\300r\216\275\332O"
+  49      6FE7C701 
+  49      C2B2313D 
+  49      C0728EBD 
+  49      DA4F
+  50 0127 4F6B1252 		.ascii	"Ok\022Rr\011\2437\022\0376Sf&1cN\214\305\322\263\231"
+  50      7209A337 
+  50      121F3653 
+  50      66263163 
+  50      4E8CC5D2 
+  51 013d A4198FC6 		.ascii	"\244\031\217\306\322\203}\361\321\311i33\224J\214O\011"
+  51      D2837DF1 
+  51      D1C96933 
+  51      33944A8C 
+  51      4F09
+  52 014f 121D8924 		.ascii	"\022\035\211$\351\027\266P\202\363"
+  52      E917B650 
+  52      82F3
+  53              		.text
+  54              		.section	.gnu.lto_TimerEnabled_RestoreConfig.bdc41d20,"",%progbits
+  55 0000 789C658F 		.ascii	"x\234e\217?HBQ\024\306\357w\236>\004\033\242Qhv\020"
+  55      3F484251 
+  55      14C6EF77 
+  55      9E3E041B 
+  55      A2516876 
+  56 0015 DD9A1AA3 		.ascii	"\335\232\032\243\232\002\301F!\314\036\024\224\202\324"
+  56      9A02C146 
+  56      21CC1E14 
+  56      9482D4
+  57 0024 28DE172F 		.ascii	"(\336\027/h*k\210\240?[di\012\005\255\276\242\241\226"
+  57      682A6B88 
+  57      A03F5B64 
+  57      690A05AD 
+  57      BEA2A196 
+  58 0038 A41A0487 		.ascii	"\244\032\004\207\"0(h\310\012\342\021f\347>\247\350"
+  58      22302868 
+  58      C80AE211 
+  58      66E73EA7 
+  58      E8
+  59 0049 C2E5DE7B 		.ascii	"\302\345\336{\276\357~\277s4\361\177\005x\017B\2100"
+  59      BEEF7EBF 
+  59      7334F17F 
+  59      05780F42 
+  59      8830
+  60 005b 9FD00428 		.ascii	"\237\320\004(\177-\204\351#@]\004D\216\220\303\013\265"
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 4
+
+
+  60      7F2D84E9 
+  60      23405D04 
+  60      448E90C3 
+  60      0BB5
+  61 006d 0879BBB8 		.ascii	"\010y\273\270\351\017\356I)\337nkf\324\206CB|P7\007"
+  61      E90FEE49 
+  61      29DF6E6B 
+  61      66D48643 
+  61      427C5037 
+  62 0082 FB080A36 		.ascii	"\373\010\0126\265\254v\335\257[l\352\355j(@\347|Q\351"
+  62      B5AC76DD 
+  62      AF5B6CEA 
+  62      ED6A2840 
+  62      E77C51E9 
+  63 0096 B365A773 		.ascii	"\263e\247sR=\313\353\036\022\016q\255\311\272\242<\021"
+  63      523DCBEB 
+  63      1E120E71 
+  63      ADC9BAA2 
+  63      3C11
+  64 00a8 A9536B60 		.ascii	"\251Sk`\361\264U\235V?\276H\021w\357V\312\224\375\226"
+  64      F1B4559D 
+  64      563FBE48 
+  64      1177EF56 
+  64      CA94FD96 
+  65 00bc CBD2E710 		.ascii	"\313\322\347\020\265U\034W\037\232\265\033\3373q\305"
+  65      B5551C57 
+  65      1F9AB51B 
+  65      DF3371C5 
+  66 00cc 7D164C6B 		.ascii	"}\026Lk\033;\3302\245ri8@\026\207\010\270\332Oi\365"
+  66      1B3BD832 
+  66      A5726938 
+  66      40168708 
+  66      B8DA4F69 
+  67 00e1 580F871C 		.ascii	"X\017\207\034\362\240\310\236w\267Y\224\020\026\015"
+  67      F2A0C89E 
+  67      77B75994 
+  67      10160D
+  68 00f0 9CAF3FF6 		.ascii	"\234\257?\366+\024\333\256\344\353E\217J\364~^\232\322"
+  68      2B14DBAE 
+  68      E4EB458F 
+  68      4AF47E5E 
+  68      9AD2
+  69 0102 F307E275 		.ascii	"\363\007\342u\203\226\352\033\035MA,\323\326\035\322"
+  69      8396EA1B 
+  69      1D4D412C 
+  69      D3D61DD2 
+  70 0112 718400CA 		.ascii	"q\204\000\312\212\202\012\007s\273\342\036\246\2756"
+  70      8A820A07 
+  70      73BBE21E 
+  70      A6BD36
+  71 0121 A21215A4 		.ascii	"\242\022\025\244\311\003\362L\014\014E\342\243F\312"
+  71      C903F24C 
+  71      0C0C45E2 
+  71      A346CA
+  72 0130 C824E68D 		.ascii	"\310$\346\215\251\211Xz!\2234\342\321Xzh >>3gd\206S"
+  72      A989587A 
+  72      219334E2 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 5
+
+
+  72      D1587A68 
+  72      203E3E33 
+  73 0148 89C95956 		.ascii	"\211\311YV\242c\221\244\370\005\366\247\201}"
+  73      A26391A4 
+  73      F805F6A7 
+  73      817D
+  74              		.text
+  75              		.section	.gnu.lto_TimerEnabled_Sleep.bdc41d20,"",%progbits
+  76 0000 789C6590 		.ascii	"x\234e\220\313+\304Q\024\307\317\367\374\306\257\251"
+  76      CB2BC451 
+  76      14C7CFF7 
+  76      FCC6AFA9 
+  77 0010 B19095E6 		.ascii	"\261\220\225\346\037\260\230\306N\331\013+R,\2474\306"
+  77      1FB098C6 
+  77      4ED90B2B 
+  77      522CA734 
+  77      C6
+  78 0021 6FA13C6A 		.ascii	"o\241<j\260\224\373\323(YxL\026\212\021J\20613\206\354"
+  78      B094FBD3 
+  78      2859784C 
+  78      168A114A 
+  78      86313386 
+  79 0036 27C96343 		.ascii	"'\311cC\022\223Y\260\031EYxE\277\344q\356\330x\334\272"
+  79      129359B0 
+  79      19455978 
+  79      45BFE471 
+  79      EED878DC 
+  80 004b DDC7F9DC 		.ascii	"\335\307\371\334\317\271\347\030\364\177xe\366\201\310"
+  80      CFB9E718 
+  80      F47F7865 
+  80      F681C8
+  81 005a 2F2B0C02 		.ascii	"/+\014\002O\036\021\331n\006\364\206@C\214!\334\362"
+  81      4F1E11D9 
+  81      6E06F486 
+  81      40438C21 
+  81      DCF2
+  82 006c 0363329B 		.ascii	"\003c2\233\230\361T.+\245\356\243\333\025#\025\016\023"
+  82      98F1542E 
+  82      2BA5EEA3 
+  82      DB152315 
+  82      0E13
+  83 007e 3DF1B706 		.ascii	"=\361\267\006+\250$a\036\"\3579\217\031\021\246\354"
+  83      2BA82461 
+  83      1E22EF39 
+  83      8F1911A6 
+  83      EC
+  84 008f 3B86384C 		.ascii	";\2068L\321S\272<\253>?\267\316\246F}p\031\344\260\\"
+  84      D153BA3C 
+  84      AB3E3FB7 
+  84      CEA6467D 
+  84      7019E4B0 
+  85 00a4 1604D059 		.ascii	"\026\004\320Y\256\231\365j\344\261\3632v>\342\371\345"
+  85      AE99F56A 
+  85      E4B1F332 
+  85      763EE2F9 
+  85      E5
+  86 00b5 C9E6F6B8 		.ascii	"\311\346\366\270hy\222'\1772`\025\246\244X\203\371\312"
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 6
+
+
+  86      68799227 
+  86      7F326015 
+  86      A6A45883 
+  86      F9CA
+  87 00c7 86C40ED5 		.ascii	"\206\304\016\325\335n\351\015;\314\317\007\266ri\374"
+  87      DD6EE90D 
+  87      3BCCCF07 
+  87      B67269FC 
+  88 00d7 AA707CE2 		.ascii	"\252p|\342.^\221>.,-\356\0331\314\332\323\266\333a\003"
+  88      2E5E913E 
+  88      2E2C2DEE 
+  88      1B31CCDA 
+  88      D3B6DB61 
+  89 00ec 0978B10E 		.ascii	"\011x\261\016i\002\222\210\201\362\030\216f\222M\332"
+  89      69029288 
+  89      81F2188E 
+  89      66924DDA 
+  90 00fc 28F0FCE9 		.ascii	"(\360\374\351x\212\007\337\324\250\022\326\365\256\313"
+  90      788A07DF 
+  90      D4A812D6 
+  90      F5AECB
+  91 010b F9697415 		.ascii	"\371it\025\217q;2\007mT\232*A\012\203Hk\243\304>\326"
+  91      8F713B32 
+  91      076D549A 
+  91      2A410A83 
+  91      486BA3C4 
+  92 0121 27364D7F 		.ascii	"'6M\177BWQ\343\260\211\015\001\037ES\37472\360\313\267"
+  92      425751E3 
+  92      B0890D01 
+  92      1F4553FC 
+  92      3732F0CB 
+  93 0136 E91276F6 		.ascii	"\351\022v\366\242^W\250\033Y\220*\245\027\002\371\252"
+  93      A25E57A8 
+  93      1B59902A 
+  93      A51702F9 
+  93      AA
+  94 0147 020D568F 		.ascii	"\002\015V\217\025\016\366[\035m-\275\003\341\220\025"
+  94      150EF65B 
+  94      1D6D2DBD 
+  94      03E19015 
+  95 0157 686EE9AD 		.ascii	"hn\351\255\255\016\264vv[\341\272\236`{\227D\232\033"
+  95      AD0EB476 
+  95      765BE1BA 
+  95      9E607B97 
+  95      449A1B
+  96 016a AB42F405 		.ascii	"\253B\364\005\343\314\225\302"
+  96      E3CC95C2 
+  97              		.text
+  98              		.section	.gnu.lto_TimerEnabled_Wakeup.bdc41d20,"",%progbits
+  99 0000 789C6590 		.ascii	"x\234e\220\313KBA\024\306\347;W/\202-\242\225\010\255"
+  99      CB4B4241 
+  99      14C6E73B 
+  99      572F822D 
+  99      A29508AD 
+ 100 0014 5B84EEEA 		.ascii	"[\204\356\352\037\210p\025\010\266\024\242\307\205\202"
+ 100      1F887015 
+ 100      08B614A2 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 7
+
+
+ 100      C78582
+ 101 0023 1E60B514 		.ascii	"\036`\265\024\347\206\201\253\262h\021\364\016\"K\323"
+ 101      E78681AB 
+ 101      B26811F4 
+ 101      0E224BD3 
+ 102 0033 1E10B44A 		.ascii	"\036\020\264J\"\2506=\027\201\213\036`T\320\"+\010\211"
+ 102      22A8363D 
+ 102      17818B1E 
+ 102      6054D022 
+ 102      2B0889
+ 103 0046 B233D795 		.ascii	"\2623\327\22550\234\231s\276\363\375\346\214&\376/7"
+ 103      35309C99 
+ 103      73BEF3FD 
+ 103      E68C26FE 
+ 103      2F37
+ 104 0058 EF4108E1 		.ascii	"\357A\010\341\341\010M\200\342\247B\230\016\002\324"
+ 104      E1084D80 
+ 104      E2A74298 
+ 104      0E02D4
+ 105 0067 41404408 		.ascii	"A@D\010\021<S\201\020\317&\247\235u+R\312\327\313=\327"
+ 105      113C5381 
+ 105      10CF26A7 
+ 105      9D752B52 
+ 105      CAD7CB3D 
+ 106 007c A8AB4842 		.ascii	"\250\253HB\274S\331\006\253\250\023\254)D\277\257\235"
+ 106      BC53D906 
+ 106      ABA813AC 
+ 106      2944BFAF 
+ 106      9D
+ 107 008d 7A9435D5 		.ascii	"z\2245\325\345\032\022\320\331^dj\262\262T\332y\234"
+ 107      E51A12D0 
+ 107      D95E646A 
+ 107      B2B254DA 
+ 107      799C
+ 108 009f 8835C2A6 		.ascii	"\2105\302\246\211\"q2\317\002Ey RQ\313ad\267\260\337"
+ 108      89227132 
+ 108      CF024579 
+ 108      205251CB 
+ 108      6164B7B0 
+ 109 00b4 5D61935D 		.ascii	"]a\223]8\"\313\344\235;\376\000\260\006\235\011\353"
+ 109      3822CBE4 
+ 109      9D3BFE00 
+ 109      B0069D09 
+ 109      EB
+ 110 00c5 D03F49E3 		.ascii	"\320?I\343\332\374\325X\232\302_2&\035E\242o\205\347"
+ 110      DAFCD558 
+ 110      9AC25F32 
+ 110      261D45A2 
+ 110      6F85E7
+ 111 00d8 EC6DFEEC 		.ascii	"\354m\376\354\302\361D\234\261\256\0113:\2139\314\230"
+ 111      C2F1449C 
+ 111      B1AE0933 
+ 111      3A8B39CC 
+ 111      98
+ 112 00e9 52A93424 		.ascii	"R\2514$\021F\012n\253\366\223\032\337\326=I6\277+\235"
+ 112      11460A6E 
+ 112      ABF6931A 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 8
+
+
+ 112      DFD63D49 
+ 112      36BF2B9D 
+ 113 00fd A348366C 		.ascii	"\243H6l\260\364\215\033-\024\322\360\210\034\016&\357"
+ 113      B0F48D1B 
+ 113      2D14D2F0 
+ 113      881C0E26 
+ 113      EF
+ 114 010e 6B15941B 		.ascii	"k\025\224\033N\344\313a\225\362\266\177\034\233\322"
+ 114      4EE4CB61 
+ 114      95F2B67F 
+ 114      1C9BD2
+ 115 011d 5681B35B 		.ascii	"V\201\263[\226\213\313KG\232\302M\231\214\323\221\201"
+ 115      968BCB4B 
+ 115      479AC24D 
+ 115      998CD391 
+ 115      81
+ 116 012e 1B9B0A87 		.ascii	"\033\233\012\207-\266\346w\213\033\230\331-\237\032"
+ 116      2DB6E677 
+ 116      8B1B98D9 
+ 116      2D9F1A
+ 117 013d 517D649E 		.ascii	"Q}d\236\307\344\277`d\2757\3503\372\215P\373\220\321"
+ 117      C7E4BF60 
+ 117      64BD37E8 
+ 117      33FA8D50 
+ 117      FB90D1
+ 118 0150 D5161818 		.ascii	"\325\026\030\030\016u\032A\177`\240\251!\330\332\323"
+ 118      0E751A41 
+ 118      7F60A0A9 
+ 118      21D8DAD3 
+ 119 0160 67849AFB 		.ascii	"g\204\232\373\333;z\271\342o\361v\212_5\177\226\270"
+ 119      DB3B7AB9 
+ 119      E26FF176 
+ 119      8A5F357F 
+ 119      96B8
+ 120              		.text
+ 121              		.section	.gnu.lto_.symbol_nodes.bdc41d20,"",%progbits
+ 122 0000 789C55C8 		.ascii	"x\234U\310A\015\000 \020\304\300\336\036$XC\325Z@\001"
+ 122      410D0020 
+ 122      10C4C0DE 
+ 122      1E245843 
+ 122      D55A4001 
+ 123 0014 41119AF8 		.ascii	"A\021\232\370\360\200\376\246\011tn\012\303\330`3W\243"
+ 123      F080FEA6 
+ 123      09746E0A 
+ 123      C3D86033 
+ 123      57A3
+ 124 0026 C2925372 		.ascii	"\302\222Sr\274[i}.\316\327\034\222.\022\022"
+ 124      BC5B697D 
+ 124      2ECED71C 
+ 124      922E1212 
+ 125              		.text
+ 126              		.section	.gnu.lto_.refs.bdc41d20,"",%progbits
+ 127 0000 789C6366 		.ascii	"x\234cf``\020e\200\000F\006FF&F& \311\310\014b\261\000"
+ 127      60601065 
+ 127      80004606 
+ 127      46462646 
+ 127      2620C9C8 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 9
+
+
+ 128 0018 590C0003 		.ascii	"Y\014\000\003\357\0002"
+ 128      EF0032
+ 129              		.text
+ 130              		.section	.gnu.lto_.decls.bdc41d20,"",%progbits
+ 131 0000 789C9553 		.ascii	"x\234\225SmHSQ\030>\357=S\327\355\266\"Ac\277DA\372"
+ 131      6D485351 
+ 131      183EEF3D 
+ 131      53D7EDB6 
+ 131      224163BF 
+ 132 0017 1089A0E8 		.ascii	"\020\211\240\350_\326\210~D1R\351GB\255u+\3216[3\210"
+ 132      5FD6887E 
+ 132      443152E9 
+ 132      4742AD75 
+ 132      2BD1365B 
+ 133 002d FE9C6691 		.ascii	"\376\234f\221\231\364Ee\011\305\242\2504\233\323L\323"
+ 133      99F44565 
+ 133      09C5A2A8 
+ 133      349BD34C 
+ 133      D3
+ 134 003e 59532B9D 		.ascii	"YS+\235\210\326\017\223\254(+\202\376\265 \372\240\217"
+ 134      88D60F93 
+ 134      AC282B82 
+ 134      FEB520FA 
+ 134      A08F
+ 135 0050 DB7BCEEE 		.ascii	"\333{\316\356\332n5\250\003\357=\367\234\363<\317\373"
+ 135      DA6E35A8 
+ 135      03EF3DF7 
+ 135      9CF33CCF 
+ 135      FB
+ 136 0061 DCF73D97 		.ascii	"\334\367=\227\022B6\001!\032\216\205&Br\361=\015\367"
+ 136      12423601 
+ 136      211A8E85 
+ 136      264272F1 
+ 136      3D0DF7
+ 137 0074 EC243170 		.ascii	"\354$1p\233\264`\0040\202\030\355\030\010#\375\3048"
+ 137      9BB46004 
+ 137      308218ED 
+ 137      180823FD 
+ 137      C438
+ 138 0086 382643E7 		.ascii	"8&C\347fa\014b\334\303\030\302\270\203\321\245\363B"
+ 138      66610C62 
+ 138      DCC318C2 
+ 138      B883D1A5 
+ 138      F342
+ 139 0098 FADC9242 		.ascii	"\372\334\222B'\360\233N2?\256\231\254\023H\241\023\374"
+ 139      27F09B4E 
+ 139      323FAE99 
+ 139      AC1348A1 
+ 139      13FC
+ 140 00aa 0F3F928E 		.ascii	"\017?\222\216O\345\251\375?<I:>\225\257\367\022t\007"
+ 140      4FE5A9FD 
+ 140      3F3C493A 
+ 140      3E95AFF7 
+ 140      127407
+ 141 00bd 3E8C4E7F 		.ascii	">\214N\177+\201E\316\341\313\236\023\2213\351\270Td"
+ 141      2B8145CE 
+ 141      E1CB9E13 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 10
+
+
+ 141      9133E9B8 
+ 141      5464
+ 142 00cf 135F86BE 		.ascii	"\023_\206\276\276\0327e\237b8\216\325\260Y&\260g\301"
+ 142      BE1A3765 
+ 142      9F62388E 
+ 142      D5B05926 
+ 142      B067C1
+ 143 00e2 15B0C255 		.ascii	"\025\260\302U\260\242b\023d\343s\203)\246t\266\276\367"
+ 143      B0A26213 
+ 143      64E37383 
+ 143      29A674B6 
+ 143      BEF7
+ 144 00f4 BB854AC0 		.ascii	"\273\205J\300\337/\236y9.\0274#\255\226\365=\244\211"
+ 144      DF2F9E79 
+ 144      392E1734 
+ 144      23AD96F5 
+ 144      3DA489
+ 145 0107 744F7AEA 		.ascii	"tOz\352\257\316\3149\317\246\202\321\341\340\244\302"
+ 145      AFCECC39 
+ 145      CFA682D1 
+ 145      E1E0A4C2 
+ 146 0117 22AC4FD3 		.ascii	"\"\254O\323\302\014\204\0304\003\205kP\300\261\374]"
+ 146      C20C8418 
+ 146      3403856B 
+ 146      50C0B1FC 
+ 146      5D
+ 147 0128 90A00572 		.ascii	"\220\240\005r\2208rhlL\246k\204\372\271\301\311\021"
+ 147      90387268 
+ 147      6C4CA66B 
+ 147      84FAB9C1 
+ 147      C911
+ 148 013a 8B10F17F 		.ascii	"\213\020\361\177ogE\373\3317M\2531\013\205\353I\012"
+ 148      6F6745FB 
+ 148      D9374DAB 
+ 148      310B85EB 
+ 148      490A
+ 149 014c D7E30A01 		.ascii	"\327\343\012\001\241\340\273\361\346V\006\335.\024B"
+ 149      A1E0BBF1 
+ 149      E65606DD 
+ 149      2E1442
+ 150 015b BEAE670A 		.ascii	"\276\256g\012*\370\203\376\246\213\351\302\3042\301"
+ 150      2AF883FE 
+ 150      A68BE9C2 
+ 150      C432C1
+ 151 016a 6F4DE2B7 		.ascii	"oM\342\267\306\371A\301\377\374d\237f\241{\005\377\321"
+ 151      C6F941C1 
+ 151      FFFC649F 
+ 151      66A17B05 
+ 151      FFD1
+ 152 017c 63AD498A 		.ascii	"c\255I\212\361G\015\374\266$~[\234\337.\370G;\216\371"
+ 152      F1470DFC 
+ 152      B6247E5B 
+ 152      9CDF2EF8 
+ 152      473B8EF9 
+ 153 0190 D3E85110 		.ascii	"\323\350Q\020\002\023\341\203\007\315\2649\266\330w"
+ 153      0213E183 
+ 153      07CDB439 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 11
+
+
+ 153      B6D877
+ 154 019f 39549F81 		.ascii	"9T\237\201E\317\222E\215\216\2144\366S\261\324\370\261"
+ 154      45CF9245 
+ 154      8D8E8C34 
+ 154      F653B1D4 
+ 154      F8B1
+ 155 01b1 343979F2 		.ascii	"49y\362\013\0059\277\2261\037\213\236`t\016\201\002"
+ 155      0B0539BF 
+ 155      96311F8B 
+ 155      9E60740E 
+ 155      8102
+ 156 01c3 2BCCB312 		.ascii	"+\314\263\022\270\005\371\010\023\031\341&\366\245\023"
+ 156      B805F908 
+ 156      1319E126 
+ 156      F6A513
+ 157 01d2 FB7209AB 		.ascii	"\373r\011\253\036}{\277yu\015+\202.\220\241\343\227"
+ 157      1E7D7BBF 
+ 157      79750D2B 
+ 157      822E90A1 
+ 157      E397
+ 158 01e4 279141EF 		.ascii	"'\221A\357D\2436\321a\241\343\302\001=\371\343[\320"
+ 158      44A336D1 
+ 158      61A1E3C2 
+ 158      013DF9E3 
+ 158      5BD0
+ 159 01f6 0299B9F9 		.ascii	"\002\231\271\371\307y\253\243>V\2643\236\203@\017dr"
+ 159      C779ABA3 
+ 159      3E56B433 
+ 159      9E83400F 
+ 159      6472
+ 160 0208 3EF462B2 		.ascii	">\364b\262\020\344\012\001?z\211\016\017=\230\321\300"
+ 160      10E40A01 
+ 160      3F7A890E 
+ 160      0F3D98D1 
+ 160      C0
+ 161 0219 A6FA40A4 		.ascii	"\246\372@\244\351\3064\034\252[\233\313\251\363\361"
+ 161      E9C6341C 
+ 161      AA5B9BCB 
+ 161      A9F3F1
+ 162 0228 210C4DF5 		.ascii	"!\014M\365.2\363S\022\257N\334\207\364t\340c\253\002"
+ 162      2E32F353 
+ 162      12AF4EDC 
+ 162      87F474E0 
+ 162      63AB02
+ 163 023b F9990215 		.ascii	"\371\231\002\025I\007\270\203\0327\022\2269I\214?\255"
+ 163      4907B883 
+ 163      1A371296 
+ 163      39498C3F 
+ 163      AD
+ 164 024c C16D74F4 		.ascii	"\301mt\3647w\374^\277\370\024\246\264.v\035Y\344u\233"
+ 164      3777FC5E 
+ 164      BFF814A6 
+ 164      B42E761D 
+ 164      59E4759B 
+ 165 0260 BCA483D5 		.ascii	"\274\244\203\325\372\315B\036q\274\\\374\250\277\363"
+ 165      FACD421E 
+ 165      71BC5CFC 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 12
+
+
+ 165      A8BFF3
+ 166 026f F49825EF 		.ascii	"\364\230%\357\002c\376\350\360\363\240\324\300\374>"
+ 166      0263FEE8 
+ 166      F0F3A0D4 
+ 166      C0FC3E
+ 167 027e C6783705 		.ascii	"\306x7\0050\034\363\361\253\024a\336R\350\203%\004\372"
+ 167      301CF3F1 
+ 167      AB1461DE 
+ 167      52E88325 
+ 167      04FA
+ 168 0290 218F2B37 		.ascii	"!\217+7\034\276d\246\347cin~\254\353\236!c\233j\376"
+ 168      1CBE64A6 
+ 168      E763696E 
+ 168      7EACEB9E 
+ 168      21639B6A 
+ 169 02a5 A14DF8E9 		.ascii	"\241M\370\351\343cu\023\323b\215\375\235q?ec\017\204"
+ 169      E3637513 
+ 169      D3628DFD 
+ 169      9D713F65 
+ 169      630F84
+ 170 02b8 9561C6CC 		.ascii	"\225a\306\314p\017K>\220(\323]H\264\366\320\253\306"
+ 170      700F4B3E 
+ 170      9028D35D 
+ 170      48B4F6D0 
+ 170      ABC6
+ 171 02ca 5145A9E3 		.ascii	"QE\251\343\327\005\377\332i\021\213\000'\376\333AP\304"
+ 171      D705FFDA 
+ 171      69118B00 
+ 171      27FEDB41 
+ 171      50C4
+ 172 02dc BDC419D1 		.ascii	"\275\304\031\321\247B\023\357\250\001\315\277<\201\036"
+ 172      A74213EF 
+ 172      A801CDBF 
+ 172      3C811E
+ 173 02eb D2D17CCE 		.ascii	"\322\321|\316.)\337\241zV\272\034\233+\325-\033\213"
+ 173      2E29DFA1 
+ 173      7A56BA1C 
+ 173      9B2BD52D 
+ 173      1B8B
+ 174 02fd 1DBB559B 		.ascii	"\035\273U\233\333\265\265|[\372\252\265\24596\262\240"
+ 174      DBB5B57C 
+ 174      5BFAAAB5 
+ 174      A53936B2 
+ 174      A0
+ 175 030e B06C95EA 		.ascii	"\260l\225\352R=\016/?uW{\234j\231\275\330m[\\f\340\331"
+ 175      523D0E2F 
+ 175      3F75577B 
+ 175      9C6A99BD 
+ 175      D86D5B5C 
+ 176 0325 D7143A89 		.ascii	"\327\024:\211\325\260\265N\335\345u{t\265\331\306,\225"
+ 176      D5B0B54E 
+ 176      DDE5757B 
+ 176      74B5D9C6 
+ 176      2C95
+ 177 0337 AA5A9569 		.ascii	"\252Z\225i\330Z\357\250P\253\253\214\012+\226\333V\227"
+ 177      D85AEFA8 
+ 177      50ABAB8C 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 13
+
+
+ 177      0A2B96DB 
+ 177      5697
+ 178 0349 DA371697 		.ascii	"\3327\026\227\254+\265\225\244U\227\273\274K\363R\332"
+ 178      AC2BB595 
+ 178      A45597BB 
+ 178      BC4BF352 
+ 178      DA
+ 179 035a 71EEF1EE 		.ascii	"q\356\361\356\251Rw\025n'\212\323\355\362z\334\225\305"
+ 179      A9527715 
+ 179      6E278AD3 
+ 179      EDF27ADC 
+ 179      95C5
+ 180 036c 5E44CDFD 		.ascii	"^D\315\375'\377\3102\332\331\354pVTW\231<\352\266\245"
+ 180      27FFC832 
+ 180      DAD9EC70 
+ 180      56545799 
+ 180      3CEAB6A5 
+ 181 0380 3F012E89 		.ascii	"?\001.\211\313\245"
+ 181      CBA5
+ 182              		.text
+ 183              		.section	.gnu.lto_.symtab.bdc41d20,"",%progbits
+ 184 0000 54696D65 		.ascii	"TimerEnabled_SaveConfig\000\000\000\000\000\000\000"
+ 184      72456E61 
+ 184      626C6564 
+ 184      5F536176 
+ 184      65436F6E 
+ 185 001e 00000000 		.ascii	"\000\000\000\000\000\254\000\000\000TimerEnabled_Re"
+ 185      00AC0000 
+ 185      0054696D 
+ 185      6572456E 
+ 185      61626C65 
+ 186 0036 73746F72 		.ascii	"storeConfig\000\000\000\000\000\000\000\000\000\000"
+ 186      65436F6E 
+ 186      66696700 
+ 186      00000000 
+ 186      00000000 
+ 187 004b 0000AE00 		.ascii	"\000\000\256\000\000\000TimerEnabled_Sleep\000\000\000"
+ 187      00005469 
+ 187      6D657245 
+ 187      6E61626C 
+ 187      65645F53 
+ 188 0066 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\260\000\000\000"
+ 188      00000000 
+ 188      00B00000 
+ 188      00
+ 189 0073 54696D65 		.ascii	"TimerEnabled_Wakeup\000\000\000\000\000\000\000\000"
+ 189      72456E61 
+ 189      626C6564 
+ 189      5F57616B 
+ 189      65757000 
+ 190 008e 00000000 		.ascii	"\000\000\000\000\262\000\000\000"
+ 190      B2000000 
+ 191              		.text
+ 192              		.section	.gnu.lto_.opts,"",%progbits
+ 193 0000 272D666E 		.ascii	"'-fno-trapv' '-mcpu=cortex-m3' '-mthumb' '-g' '-O3'"
+ 193      6F2D7472 
+ 193      61707627 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 14
+
+
+ 193      20272D6D 
+ 193      6370753D 
+ 194 0033 20272D66 		.ascii	" '-ffunction-sections' '-finline-functions' '-flto'"
+ 194      66756E63 
+ 194      74696F6E 
+ 194      2D736563 
+ 194      74696F6E 
+ 195 0066 20272D66 		.ascii	" '-ffat-lto-objects'\000"
+ 195      6661742D 
+ 195      6C746F2D 
+ 195      6F626A65 
+ 195      63747327 
+ 196              		.text
+ 197              		.cfi_sections	.debug_frame
+ 198              		.section	.text.TimerEnabled_SaveConfig,"ax",%progbits
+ 199              		.align	2
+ 200              		.global	TimerEnabled_SaveConfig
+ 201              		.thumb
+ 202              		.thumb_func
+ 203              		.type	TimerEnabled_SaveConfig, %function
+ 204              	TimerEnabled_SaveConfig:
+ 205              	.LFB0:
+ 206              		.file 1 ".\\Generated_Source\\PSoC5\\TimerEnabled_PM.c"
+   1:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * File Name: TimerEnabled_PM.c
+   3:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Version 1.80
+   4:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+   5:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Description:
+   6:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  This file contains the setup, control, and status commands to support 
+   7:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  the component operation in the low power mode. 
+   8:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+   9:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Note:
+  10:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  11:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** ********************************************************************************
+  12:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Copyright 2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * the software package with which this file was provided.
+  16:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *******************************************************************************/
+  17:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  18:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** #include "TimerEnabled.h"
+  19:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  20:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** /* Check for removal by optimization */
+  21:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** #if !defined(TimerEnabled_Sync_ctrl_reg__REMOVED)
+  22:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  23:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** static TimerEnabled_BACKUP_STRUCT  TimerEnabled_backup = {0u};
+  24:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  25:.\Generated_Source\PSoC5/TimerEnabled_PM.c ****     
+  26:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** /*******************************************************************************
+  27:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Function Name: TimerEnabled_SaveConfig
+  28:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** ********************************************************************************
+  29:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  30:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Summary:
+  31:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  Saves the control register value.
+  32:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  33:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Parameters:
+  34:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 15
+
+
+  35:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  36:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Return:
+  37:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+  38:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  39:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *******************************************************************************/
+  40:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** void TimerEnabled_SaveConfig(void) 
+  41:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** {
+ 207              		.loc 1 41 0
+ 208              		.cfi_startproc
+ 209              		@ args = 0, pretend = 0, frame = 0
+ 210              		@ frame_needed = 0, uses_anonymous_args = 0
+ 211              		@ link register save eliminated.
+  42:.\Generated_Source\PSoC5/TimerEnabled_PM.c ****     TimerEnabled_backup.controlState = TimerEnabled_Control;
+ 212              		.loc 1 42 0
+ 213 0000 024A     		ldr	r2, .L2
+ 214 0002 034B     		ldr	r3, .L2+4
+ 215 0004 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 216 0006 1A70     		strb	r2, [r3]
+ 217 0008 7047     		bx	lr
+ 218              	.L3:
+ 219 000a 00BF     		.align	2
+ 220              	.L2:
+ 221 000c 74640040 		.word	1073767540
+ 222 0010 00000000 		.word	.LANCHOR0
+ 223              		.cfi_endproc
+ 224              	.LFE0:
+ 225              		.size	TimerEnabled_SaveConfig, .-TimerEnabled_SaveConfig
+ 226              		.section	.text.TimerEnabled_RestoreConfig,"ax",%progbits
+ 227              		.align	2
+ 228              		.global	TimerEnabled_RestoreConfig
+ 229              		.thumb
+ 230              		.thumb_func
+ 231              		.type	TimerEnabled_RestoreConfig, %function
+ 232              	TimerEnabled_RestoreConfig:
+ 233              	.LFB1:
+  43:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** }
+  44:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  45:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  46:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** /*******************************************************************************
+  47:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Function Name: TimerEnabled_RestoreConfig
+  48:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** ********************************************************************************
+  49:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  50:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Summary:
+  51:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  Restores the control register value.
+  52:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  53:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Parameters:
+  54:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+  55:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  56:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Return:
+  57:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+  58:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  59:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  60:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *******************************************************************************/
+  61:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** void TimerEnabled_RestoreConfig(void) 
+  62:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** {
+ 234              		.loc 1 62 0
+ 235              		.cfi_startproc
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 16
+
+
+ 236              		@ args = 0, pretend = 0, frame = 0
+ 237              		@ frame_needed = 0, uses_anonymous_args = 0
+ 238              		@ link register save eliminated.
+  63:.\Generated_Source\PSoC5/TimerEnabled_PM.c ****      TimerEnabled_Control = TimerEnabled_backup.controlState;
+ 239              		.loc 1 63 0
+ 240 0000 024A     		ldr	r2, .L5
+ 241 0002 034B     		ldr	r3, .L5+4
+ 242 0004 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 243 0006 1A70     		strb	r2, [r3]
+ 244 0008 7047     		bx	lr
+ 245              	.L6:
+ 246 000a 00BF     		.align	2
+ 247              	.L5:
+ 248 000c 00000000 		.word	.LANCHOR0
+ 249 0010 74640040 		.word	1073767540
+ 250              		.cfi_endproc
+ 251              	.LFE1:
+ 252              		.size	TimerEnabled_RestoreConfig, .-TimerEnabled_RestoreConfig
+ 253              		.section	.text.TimerEnabled_Sleep,"ax",%progbits
+ 254              		.align	2
+ 255              		.global	TimerEnabled_Sleep
+ 256              		.thumb
+ 257              		.thumb_func
+ 258              		.type	TimerEnabled_Sleep, %function
+ 259              	TimerEnabled_Sleep:
+ 260              	.LFB2:
+  64:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** }
+  65:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  66:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  67:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** /*******************************************************************************
+  68:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Function Name: TimerEnabled_Sleep
+  69:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** ********************************************************************************
+  70:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  71:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Summary:
+  72:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  Prepares the component for entering the low power mode.
+  73:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  74:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Parameters:
+  75:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+  76:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  77:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Return:
+  78:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+  79:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  80:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *******************************************************************************/
+  81:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** void TimerEnabled_Sleep(void) 
+  82:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** {
+ 261              		.loc 1 82 0
+ 262              		.cfi_startproc
+ 263              		@ args = 0, pretend = 0, frame = 0
+ 264              		@ frame_needed = 0, uses_anonymous_args = 0
+ 265              		@ link register save eliminated.
+ 266              	.LBB6:
+ 267              	.LBB7:
+  42:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** }
+ 268              		.loc 1 42 0
+ 269 0000 024A     		ldr	r2, .L8
+ 270 0002 034B     		ldr	r3, .L8+4
+ 271 0004 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 17
+
+
+ 272 0006 1A70     		strb	r2, [r3]
+ 273 0008 7047     		bx	lr
+ 274              	.L9:
+ 275 000a 00BF     		.align	2
+ 276              	.L8:
+ 277 000c 74640040 		.word	1073767540
+ 278 0010 00000000 		.word	.LANCHOR0
+ 279              	.LBE7:
+ 280              	.LBE6:
+ 281              		.cfi_endproc
+ 282              	.LFE2:
+ 283              		.size	TimerEnabled_Sleep, .-TimerEnabled_Sleep
+ 284              		.section	.text.TimerEnabled_Wakeup,"ax",%progbits
+ 285              		.align	2
+ 286              		.global	TimerEnabled_Wakeup
+ 287              		.thumb
+ 288              		.thumb_func
+ 289              		.type	TimerEnabled_Wakeup, %function
+ 290              	TimerEnabled_Wakeup:
+ 291              	.LFB3:
+  83:.\Generated_Source\PSoC5/TimerEnabled_PM.c ****     TimerEnabled_SaveConfig();
+  84:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** }
+  85:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  86:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** 
+  87:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** /*******************************************************************************
+  88:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Function Name: TimerEnabled_Wakeup
+  89:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** ********************************************************************************
+  90:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  91:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Summary:
+  92:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  Restores the component after waking up from the low power mode.
+  93:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  94:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Parameters:
+  95:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+  96:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+  97:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** * Return:
+  98:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *  None
+  99:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *
+ 100:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** *******************************************************************************/
+ 101:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** void TimerEnabled_Wakeup(void)  
+ 102:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** {
+ 292              		.loc 1 102 0
+ 293              		.cfi_startproc
+ 294              		@ args = 0, pretend = 0, frame = 0
+ 295              		@ frame_needed = 0, uses_anonymous_args = 0
+ 296              		@ link register save eliminated.
+ 297              	.LBB8:
+ 298              	.LBB9:
+  63:.\Generated_Source\PSoC5/TimerEnabled_PM.c **** }
+ 299              		.loc 1 63 0
+ 300 0000 024A     		ldr	r2, .L11
+ 301 0002 034B     		ldr	r3, .L11+4
+ 302 0004 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 303 0006 1A70     		strb	r2, [r3]
+ 304 0008 7047     		bx	lr
+ 305              	.L12:
+ 306 000a 00BF     		.align	2
+ 307              	.L11:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 18
+
+
+ 308 000c 00000000 		.word	.LANCHOR0
+ 309 0010 74640040 		.word	1073767540
+ 310              	.LBE9:
+ 311              	.LBE8:
+ 312              		.cfi_endproc
+ 313              	.LFE3:
+ 314              		.size	TimerEnabled_Wakeup, .-TimerEnabled_Wakeup
+ 315              		.bss
+ 316              		.align	2
+ 317              		.set	.LANCHOR0,. + 0
+ 318              		.type	TimerEnabled_backup, %object
+ 319              		.size	TimerEnabled_backup, 1
+ 320              	TimerEnabled_backup:
+ 321 0000 00       		.space	1
+ 322 0001 000000   		.text
+ 323              	.Letext0:
+ 324              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 325              		.file 3 ".\\Generated_Source\\PSoC5\\TimerEnabled.h"
+ 326              		.section	.debug_info,"",%progbits
+ 327              	.Ldebug_info0:
+ 328 0000 43010000 		.4byte	0x143
+ 329 0004 0400     		.2byte	0x4
+ 330 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 331 000a 04       		.byte	0x4
+ 332 000b 01       		.uleb128 0x1
+ 333 000c 5B010000 		.4byte	.LASF19
+ 334 0010 01       		.byte	0x1
+ 335 0011 00000000 		.4byte	.LASF20
+ 336 0015 BF000000 		.4byte	.LASF21
+ 337 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 338 001d 00000000 		.4byte	0
+ 339 0021 00000000 		.4byte	.Ldebug_line0
+ 340 0025 02       		.uleb128 0x2
+ 341 0026 01       		.byte	0x1
+ 342 0027 06       		.byte	0x6
+ 343 0028 38020000 		.4byte	.LASF0
+ 344 002c 02       		.uleb128 0x2
+ 345 002d 01       		.byte	0x1
+ 346 002e 08       		.byte	0x8
+ 347 002f 44000000 		.4byte	.LASF1
+ 348 0033 02       		.uleb128 0x2
+ 349 0034 02       		.byte	0x2
+ 350 0035 05       		.byte	0x5
+ 351 0036 07020000 		.4byte	.LASF2
+ 352 003a 02       		.uleb128 0x2
+ 353 003b 02       		.byte	0x2
+ 354 003c 07       		.byte	0x7
+ 355 003d 84000000 		.4byte	.LASF3
+ 356 0041 02       		.uleb128 0x2
+ 357 0042 04       		.byte	0x4
+ 358 0043 05       		.byte	0x5
+ 359 0044 17020000 		.4byte	.LASF4
+ 360 0048 02       		.uleb128 0x2
+ 361 0049 04       		.byte	0x4
+ 362 004a 07       		.byte	0x7
+ 363 004b 72000000 		.4byte	.LASF5
+ 364 004f 02       		.uleb128 0x2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 19
+
+
+ 365 0050 08       		.byte	0x8
+ 366 0051 05       		.byte	0x5
+ 367 0052 4D010000 		.4byte	.LASF6
+ 368 0056 02       		.uleb128 0x2
+ 369 0057 08       		.byte	0x8
+ 370 0058 07       		.byte	0x7
+ 371 0059 36010000 		.4byte	.LASF7
+ 372 005d 03       		.uleb128 0x3
+ 373 005e 04       		.byte	0x4
+ 374 005f 05       		.byte	0x5
+ 375 0060 696E7400 		.ascii	"int\000"
+ 376 0064 02       		.uleb128 0x2
+ 377 0065 04       		.byte	0x4
+ 378 0066 07       		.byte	0x7
+ 379 0067 29010000 		.4byte	.LASF8
+ 380 006b 04       		.uleb128 0x4
+ 381 006c 11020000 		.4byte	.LASF12
+ 382 0070 02       		.byte	0x2
+ 383 0071 9201     		.2byte	0x192
+ 384 0073 2C000000 		.4byte	0x2c
+ 385 0077 02       		.uleb128 0x2
+ 386 0078 04       		.byte	0x4
+ 387 0079 04       		.byte	0x4
+ 388 007a 2B000000 		.4byte	.LASF9
+ 389 007e 02       		.uleb128 0x2
+ 390 007f 08       		.byte	0x8
+ 391 0080 04       		.byte	0x4
+ 392 0081 B8000000 		.4byte	.LASF10
+ 393 0085 02       		.uleb128 0x2
+ 394 0086 01       		.byte	0x1
+ 395 0087 08       		.byte	0x8
+ 396 0088 02020000 		.4byte	.LASF11
+ 397 008c 04       		.uleb128 0x4
+ 398 008d 6D000000 		.4byte	.LASF13
+ 399 0091 02       		.byte	0x2
+ 400 0092 3C02     		.2byte	0x23c
+ 401 0094 98000000 		.4byte	0x98
+ 402 0098 05       		.uleb128 0x5
+ 403 0099 6B000000 		.4byte	0x6b
+ 404 009d 06       		.uleb128 0x6
+ 405 009e 01       		.byte	0x1
+ 406 009f 03       		.byte	0x3
+ 407 00a0 1C       		.byte	0x1c
+ 408 00a1 B2000000 		.4byte	0xb2
+ 409 00a5 07       		.uleb128 0x7
+ 410 00a6 97000000 		.4byte	.LASF22
+ 411 00aa 03       		.byte	0x3
+ 412 00ab 1E       		.byte	0x1e
+ 413 00ac 6B000000 		.4byte	0x6b
+ 414 00b0 00       		.byte	0
+ 415 00b1 00       		.byte	0
+ 416 00b2 08       		.uleb128 0x8
+ 417 00b3 52000000 		.4byte	.LASF14
+ 418 00b7 03       		.byte	0x3
+ 419 00b8 20       		.byte	0x20
+ 420 00b9 9D000000 		.4byte	0x9d
+ 421 00bd 09       		.uleb128 0x9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 20
+
+
+ 422 00be 20020000 		.4byte	.LASF15
+ 423 00c2 01       		.byte	0x1
+ 424 00c3 28       		.byte	0x28
+ 425 00c4 01       		.byte	0x1
+ 426 00c5 09       		.uleb128 0x9
+ 427 00c6 FA000000 		.4byte	.LASF16
+ 428 00ca 01       		.byte	0x1
+ 429 00cb 3D       		.byte	0x3d
+ 430 00cc 01       		.byte	0x1
+ 431 00cd 0A       		.uleb128 0xa
+ 432 00ce BD000000 		.4byte	0xbd
+ 433 00d2 00000000 		.4byte	.LFB0
+ 434 00d6 14000000 		.4byte	.LFE0-.LFB0
+ 435 00da 01       		.uleb128 0x1
+ 436 00db 9C       		.byte	0x9c
+ 437 00dc 0A       		.uleb128 0xa
+ 438 00dd C5000000 		.4byte	0xc5
+ 439 00e1 00000000 		.4byte	.LFB1
+ 440 00e5 14000000 		.4byte	.LFE1-.LFB1
+ 441 00e9 01       		.uleb128 0x1
+ 442 00ea 9C       		.byte	0x9c
+ 443 00eb 0B       		.uleb128 0xb
+ 444 00ec 31000000 		.4byte	.LASF17
+ 445 00f0 01       		.byte	0x1
+ 446 00f1 51       		.byte	0x51
+ 447 00f2 00000000 		.4byte	.LFB2
+ 448 00f6 14000000 		.4byte	.LFE2-.LFB2
+ 449 00fa 01       		.uleb128 0x1
+ 450 00fb 9C       		.byte	0x9c
+ 451 00fc 10010000 		.4byte	0x110
+ 452 0100 0C       		.uleb128 0xc
+ 453 0101 BD000000 		.4byte	0xbd
+ 454 0105 00000000 		.4byte	.LBB6
+ 455 0109 14000000 		.4byte	.LBE6-.LBB6
+ 456 010d 01       		.byte	0x1
+ 457 010e 53       		.byte	0x53
+ 458 010f 00       		.byte	0
+ 459 0110 0B       		.uleb128 0xb
+ 460 0111 15010000 		.4byte	.LASF18
+ 461 0115 01       		.byte	0x1
+ 462 0116 65       		.byte	0x65
+ 463 0117 00000000 		.4byte	.LFB3
+ 464 011b 14000000 		.4byte	.LFE3-.LFB3
+ 465 011f 01       		.uleb128 0x1
+ 466 0120 9C       		.byte	0x9c
+ 467 0121 35010000 		.4byte	0x135
+ 468 0125 0C       		.uleb128 0xc
+ 469 0126 C5000000 		.4byte	0xc5
+ 470 012a 00000000 		.4byte	.LBB8
+ 471 012e 14000000 		.4byte	.LBE8-.LBB8
+ 472 0132 01       		.byte	0x1
+ 473 0133 67       		.byte	0x67
+ 474 0134 00       		.byte	0
+ 475 0135 0D       		.uleb128 0xd
+ 476 0136 A4000000 		.4byte	.LASF23
+ 477 013a 01       		.byte	0x1
+ 478 013b 17       		.byte	0x17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 21
+
+
+ 479 013c B2000000 		.4byte	0xb2
+ 480 0140 05       		.uleb128 0x5
+ 481 0141 03       		.byte	0x3
+ 482 0142 00000000 		.4byte	TimerEnabled_backup
+ 483 0146 00       		.byte	0
+ 484              		.section	.debug_abbrev,"",%progbits
+ 485              	.Ldebug_abbrev0:
+ 486 0000 01       		.uleb128 0x1
+ 487 0001 11       		.uleb128 0x11
+ 488 0002 01       		.byte	0x1
+ 489 0003 25       		.uleb128 0x25
+ 490 0004 0E       		.uleb128 0xe
+ 491 0005 13       		.uleb128 0x13
+ 492 0006 0B       		.uleb128 0xb
+ 493 0007 03       		.uleb128 0x3
+ 494 0008 0E       		.uleb128 0xe
+ 495 0009 1B       		.uleb128 0x1b
+ 496 000a 0E       		.uleb128 0xe
+ 497 000b 55       		.uleb128 0x55
+ 498 000c 17       		.uleb128 0x17
+ 499 000d 11       		.uleb128 0x11
+ 500 000e 01       		.uleb128 0x1
+ 501 000f 10       		.uleb128 0x10
+ 502 0010 17       		.uleb128 0x17
+ 503 0011 00       		.byte	0
+ 504 0012 00       		.byte	0
+ 505 0013 02       		.uleb128 0x2
+ 506 0014 24       		.uleb128 0x24
+ 507 0015 00       		.byte	0
+ 508 0016 0B       		.uleb128 0xb
+ 509 0017 0B       		.uleb128 0xb
+ 510 0018 3E       		.uleb128 0x3e
+ 511 0019 0B       		.uleb128 0xb
+ 512 001a 03       		.uleb128 0x3
+ 513 001b 0E       		.uleb128 0xe
+ 514 001c 00       		.byte	0
+ 515 001d 00       		.byte	0
+ 516 001e 03       		.uleb128 0x3
+ 517 001f 24       		.uleb128 0x24
+ 518 0020 00       		.byte	0
+ 519 0021 0B       		.uleb128 0xb
+ 520 0022 0B       		.uleb128 0xb
+ 521 0023 3E       		.uleb128 0x3e
+ 522 0024 0B       		.uleb128 0xb
+ 523 0025 03       		.uleb128 0x3
+ 524 0026 08       		.uleb128 0x8
+ 525 0027 00       		.byte	0
+ 526 0028 00       		.byte	0
+ 527 0029 04       		.uleb128 0x4
+ 528 002a 16       		.uleb128 0x16
+ 529 002b 00       		.byte	0
+ 530 002c 03       		.uleb128 0x3
+ 531 002d 0E       		.uleb128 0xe
+ 532 002e 3A       		.uleb128 0x3a
+ 533 002f 0B       		.uleb128 0xb
+ 534 0030 3B       		.uleb128 0x3b
+ 535 0031 05       		.uleb128 0x5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 22
+
+
+ 536 0032 49       		.uleb128 0x49
+ 537 0033 13       		.uleb128 0x13
+ 538 0034 00       		.byte	0
+ 539 0035 00       		.byte	0
+ 540 0036 05       		.uleb128 0x5
+ 541 0037 35       		.uleb128 0x35
+ 542 0038 00       		.byte	0
+ 543 0039 49       		.uleb128 0x49
+ 544 003a 13       		.uleb128 0x13
+ 545 003b 00       		.byte	0
+ 546 003c 00       		.byte	0
+ 547 003d 06       		.uleb128 0x6
+ 548 003e 13       		.uleb128 0x13
+ 549 003f 01       		.byte	0x1
+ 550 0040 0B       		.uleb128 0xb
+ 551 0041 0B       		.uleb128 0xb
+ 552 0042 3A       		.uleb128 0x3a
+ 553 0043 0B       		.uleb128 0xb
+ 554 0044 3B       		.uleb128 0x3b
+ 555 0045 0B       		.uleb128 0xb
+ 556 0046 01       		.uleb128 0x1
+ 557 0047 13       		.uleb128 0x13
+ 558 0048 00       		.byte	0
+ 559 0049 00       		.byte	0
+ 560 004a 07       		.uleb128 0x7
+ 561 004b 0D       		.uleb128 0xd
+ 562 004c 00       		.byte	0
+ 563 004d 03       		.uleb128 0x3
+ 564 004e 0E       		.uleb128 0xe
+ 565 004f 3A       		.uleb128 0x3a
+ 566 0050 0B       		.uleb128 0xb
+ 567 0051 3B       		.uleb128 0x3b
+ 568 0052 0B       		.uleb128 0xb
+ 569 0053 49       		.uleb128 0x49
+ 570 0054 13       		.uleb128 0x13
+ 571 0055 38       		.uleb128 0x38
+ 572 0056 0B       		.uleb128 0xb
+ 573 0057 00       		.byte	0
+ 574 0058 00       		.byte	0
+ 575 0059 08       		.uleb128 0x8
+ 576 005a 16       		.uleb128 0x16
+ 577 005b 00       		.byte	0
+ 578 005c 03       		.uleb128 0x3
+ 579 005d 0E       		.uleb128 0xe
+ 580 005e 3A       		.uleb128 0x3a
+ 581 005f 0B       		.uleb128 0xb
+ 582 0060 3B       		.uleb128 0x3b
+ 583 0061 0B       		.uleb128 0xb
+ 584 0062 49       		.uleb128 0x49
+ 585 0063 13       		.uleb128 0x13
+ 586 0064 00       		.byte	0
+ 587 0065 00       		.byte	0
+ 588 0066 09       		.uleb128 0x9
+ 589 0067 2E       		.uleb128 0x2e
+ 590 0068 00       		.byte	0
+ 591 0069 3F       		.uleb128 0x3f
+ 592 006a 19       		.uleb128 0x19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 23
+
+
+ 593 006b 03       		.uleb128 0x3
+ 594 006c 0E       		.uleb128 0xe
+ 595 006d 3A       		.uleb128 0x3a
+ 596 006e 0B       		.uleb128 0xb
+ 597 006f 3B       		.uleb128 0x3b
+ 598 0070 0B       		.uleb128 0xb
+ 599 0071 27       		.uleb128 0x27
+ 600 0072 19       		.uleb128 0x19
+ 601 0073 20       		.uleb128 0x20
+ 602 0074 0B       		.uleb128 0xb
+ 603 0075 00       		.byte	0
+ 604 0076 00       		.byte	0
+ 605 0077 0A       		.uleb128 0xa
+ 606 0078 2E       		.uleb128 0x2e
+ 607 0079 00       		.byte	0
+ 608 007a 31       		.uleb128 0x31
+ 609 007b 13       		.uleb128 0x13
+ 610 007c 11       		.uleb128 0x11
+ 611 007d 01       		.uleb128 0x1
+ 612 007e 12       		.uleb128 0x12
+ 613 007f 06       		.uleb128 0x6
+ 614 0080 40       		.uleb128 0x40
+ 615 0081 18       		.uleb128 0x18
+ 616 0082 9742     		.uleb128 0x2117
+ 617 0084 19       		.uleb128 0x19
+ 618 0085 00       		.byte	0
+ 619 0086 00       		.byte	0
+ 620 0087 0B       		.uleb128 0xb
+ 621 0088 2E       		.uleb128 0x2e
+ 622 0089 01       		.byte	0x1
+ 623 008a 3F       		.uleb128 0x3f
+ 624 008b 19       		.uleb128 0x19
+ 625 008c 03       		.uleb128 0x3
+ 626 008d 0E       		.uleb128 0xe
+ 627 008e 3A       		.uleb128 0x3a
+ 628 008f 0B       		.uleb128 0xb
+ 629 0090 3B       		.uleb128 0x3b
+ 630 0091 0B       		.uleb128 0xb
+ 631 0092 27       		.uleb128 0x27
+ 632 0093 19       		.uleb128 0x19
+ 633 0094 11       		.uleb128 0x11
+ 634 0095 01       		.uleb128 0x1
+ 635 0096 12       		.uleb128 0x12
+ 636 0097 06       		.uleb128 0x6
+ 637 0098 40       		.uleb128 0x40
+ 638 0099 18       		.uleb128 0x18
+ 639 009a 9742     		.uleb128 0x2117
+ 640 009c 19       		.uleb128 0x19
+ 641 009d 01       		.uleb128 0x1
+ 642 009e 13       		.uleb128 0x13
+ 643 009f 00       		.byte	0
+ 644 00a0 00       		.byte	0
+ 645 00a1 0C       		.uleb128 0xc
+ 646 00a2 1D       		.uleb128 0x1d
+ 647 00a3 00       		.byte	0
+ 648 00a4 31       		.uleb128 0x31
+ 649 00a5 13       		.uleb128 0x13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 24
+
+
+ 650 00a6 11       		.uleb128 0x11
+ 651 00a7 01       		.uleb128 0x1
+ 652 00a8 12       		.uleb128 0x12
+ 653 00a9 06       		.uleb128 0x6
+ 654 00aa 58       		.uleb128 0x58
+ 655 00ab 0B       		.uleb128 0xb
+ 656 00ac 59       		.uleb128 0x59
+ 657 00ad 0B       		.uleb128 0xb
+ 658 00ae 00       		.byte	0
+ 659 00af 00       		.byte	0
+ 660 00b0 0D       		.uleb128 0xd
+ 661 00b1 34       		.uleb128 0x34
+ 662 00b2 00       		.byte	0
+ 663 00b3 03       		.uleb128 0x3
+ 664 00b4 0E       		.uleb128 0xe
+ 665 00b5 3A       		.uleb128 0x3a
+ 666 00b6 0B       		.uleb128 0xb
+ 667 00b7 3B       		.uleb128 0x3b
+ 668 00b8 0B       		.uleb128 0xb
+ 669 00b9 49       		.uleb128 0x49
+ 670 00ba 13       		.uleb128 0x13
+ 671 00bb 02       		.uleb128 0x2
+ 672 00bc 18       		.uleb128 0x18
+ 673 00bd 00       		.byte	0
+ 674 00be 00       		.byte	0
+ 675 00bf 00       		.byte	0
+ 676              		.section	.debug_aranges,"",%progbits
+ 677 0000 34000000 		.4byte	0x34
+ 678 0004 0200     		.2byte	0x2
+ 679 0006 00000000 		.4byte	.Ldebug_info0
+ 680 000a 04       		.byte	0x4
+ 681 000b 00       		.byte	0
+ 682 000c 0000     		.2byte	0
+ 683 000e 0000     		.2byte	0
+ 684 0010 00000000 		.4byte	.LFB0
+ 685 0014 14000000 		.4byte	.LFE0-.LFB0
+ 686 0018 00000000 		.4byte	.LFB1
+ 687 001c 14000000 		.4byte	.LFE1-.LFB1
+ 688 0020 00000000 		.4byte	.LFB2
+ 689 0024 14000000 		.4byte	.LFE2-.LFB2
+ 690 0028 00000000 		.4byte	.LFB3
+ 691 002c 14000000 		.4byte	.LFE3-.LFB3
+ 692 0030 00000000 		.4byte	0
+ 693 0034 00000000 		.4byte	0
+ 694              		.section	.debug_ranges,"",%progbits
+ 695              	.Ldebug_ranges0:
+ 696 0000 00000000 		.4byte	.LFB0
+ 697 0004 14000000 		.4byte	.LFE0
+ 698 0008 00000000 		.4byte	.LFB1
+ 699 000c 14000000 		.4byte	.LFE1
+ 700 0010 00000000 		.4byte	.LFB2
+ 701 0014 14000000 		.4byte	.LFE2
+ 702 0018 00000000 		.4byte	.LFB3
+ 703 001c 14000000 		.4byte	.LFE3
+ 704 0020 00000000 		.4byte	0
+ 705 0024 00000000 		.4byte	0
+ 706              		.section	.debug_line,"",%progbits
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 25
+
+
+ 707              	.Ldebug_line0:
+ 708 0000 AC000000 		.section	.debug_str,"MS",%progbits,1
+ 708      02006000 
+ 708      00000201 
+ 708      FB0E0D00 
+ 708      01010101 
+ 709              	.LASF20:
+ 710 0000 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\TimerEnabled_PM.c\000"
+ 710      6E657261 
+ 710      7465645F 
+ 710      536F7572 
+ 710      63655C50 
+ 711              	.LASF9:
+ 712 002b 666C6F61 		.ascii	"float\000"
+ 712      7400
+ 713              	.LASF17:
+ 714 0031 54696D65 		.ascii	"TimerEnabled_Sleep\000"
+ 714      72456E61 
+ 714      626C6564 
+ 714      5F536C65 
+ 714      657000
+ 715              	.LASF1:
+ 716 0044 756E7369 		.ascii	"unsigned char\000"
+ 716      676E6564 
+ 716      20636861 
+ 716      7200
+ 717              	.LASF14:
+ 718 0052 54696D65 		.ascii	"TimerEnabled_BACKUP_STRUCT\000"
+ 718      72456E61 
+ 718      626C6564 
+ 718      5F424143 
+ 718      4B55505F 
+ 719              	.LASF13:
+ 720 006d 72656738 		.ascii	"reg8\000"
+ 720      00
+ 721              	.LASF5:
+ 722 0072 6C6F6E67 		.ascii	"long unsigned int\000"
+ 722      20756E73 
+ 722      69676E65 
+ 722      6420696E 
+ 722      7400
+ 723              	.LASF3:
+ 724 0084 73686F72 		.ascii	"short unsigned int\000"
+ 724      7420756E 
+ 724      7369676E 
+ 724      65642069 
+ 724      6E7400
+ 725              	.LASF22:
+ 726 0097 636F6E74 		.ascii	"controlState\000"
+ 726      726F6C53 
+ 726      74617465 
+ 726      00
+ 727              	.LASF23:
+ 728 00a4 54696D65 		.ascii	"TimerEnabled_backup\000"
+ 728      72456E61 
+ 728      626C6564 
+ 728      5F626163 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 26
+
+
+ 728      6B757000 
+ 729              	.LASF10:
+ 730 00b8 646F7562 		.ascii	"double\000"
+ 730      6C6500
+ 731              	.LASF21:
+ 732 00bf 433A5C55 		.ascii	"C:\\Users\\Thomas\\Documents\\PSoC Creator\\TASBot\\"
+ 732      73657273 
+ 732      5C54686F 
+ 732      6D61735C 
+ 732      446F6375 
+ 733 00ed 54415342 		.ascii	"TASBot.cydsn\000"
+ 733      6F742E63 
+ 733      7964736E 
+ 733      00
+ 734              	.LASF16:
+ 735 00fa 54696D65 		.ascii	"TimerEnabled_RestoreConfig\000"
+ 735      72456E61 
+ 735      626C6564 
+ 735      5F526573 
+ 735      746F7265 
+ 736              	.LASF18:
+ 737 0115 54696D65 		.ascii	"TimerEnabled_Wakeup\000"
+ 737      72456E61 
+ 737      626C6564 
+ 737      5F57616B 
+ 737      65757000 
+ 738              	.LASF8:
+ 739 0129 756E7369 		.ascii	"unsigned int\000"
+ 739      676E6564 
+ 739      20696E74 
+ 739      00
+ 740              	.LASF7:
+ 741 0136 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 741      206C6F6E 
+ 741      6720756E 
+ 741      7369676E 
+ 741      65642069 
+ 742              	.LASF6:
+ 743 014d 6C6F6E67 		.ascii	"long long int\000"
+ 743      206C6F6E 
+ 743      6720696E 
+ 743      7400
+ 744              	.LASF19:
+ 745 015b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 745      4320342E 
+ 745      392E3320 
+ 745      32303135 
+ 745      30333033 
+ 746 018e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 746      20726576 
+ 746      6973696F 
+ 746      6E203232 
+ 746      31323230 
+ 747 01c1 33202D66 		.ascii	"3 -ffunction-sections -finline-functions -flto -ffa"
+ 747      66756E63 
+ 747      74696F6E 
+ 747      2D736563 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccNktZIM.s 			page 27
+
+
+ 747      74696F6E 
+ 748 01f4 742D6C74 		.ascii	"t-lto-objects\000"
+ 748      6F2D6F62 
+ 748      6A656374 
+ 748      7300
+ 749              	.LASF11:
+ 750 0202 63686172 		.ascii	"char\000"
+ 750      00
+ 751              	.LASF2:
+ 752 0207 73686F72 		.ascii	"short int\000"
+ 752      7420696E 
+ 752      7400
+ 753              	.LASF12:
+ 754 0211 75696E74 		.ascii	"uint8\000"
+ 754      3800
+ 755              	.LASF4:
+ 756 0217 6C6F6E67 		.ascii	"long int\000"
+ 756      20696E74 
+ 756      00
+ 757              	.LASF15:
+ 758 0220 54696D65 		.ascii	"TimerEnabled_SaveConfig\000"
+ 758      72456E61 
+ 758      626C6564 
+ 758      5F536176 
+ 758      65436F6E 
+ 759              	.LASF0:
+ 760 0238 7369676E 		.ascii	"signed char\000"
+ 760      65642063 
+ 760      68617200 
+ 761              		.comm	__gnu_lto_v1,1,1
+ 762              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

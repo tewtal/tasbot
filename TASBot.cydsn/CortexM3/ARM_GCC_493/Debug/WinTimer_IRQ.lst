@@ -1,0 +1,2223 @@
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"WinTimer_IRQ.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.WinTimer_IRQ_Interrupt,"ax",%progbits
+  19              		.align	2
+  20              		.global	WinTimer_IRQ_Interrupt
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	WinTimer_IRQ_Interrupt, %function
+  24              	WinTimer_IRQ_Interrupt:
+  25              	.LFB66:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\WinTimer_IRQ.c"
+   1:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * File Name: WinTimer_IRQ.c  
+   3:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Version 1.70
+   4:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+   5:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  Description:
+   6:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   API for controlling the state of an interrupt.
+   7:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+   8:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+   9:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  Note:
+  10:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+  11:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+  12:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * the software package with which this file was provided.
+  16:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+  17:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  18:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  19:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #include <cydevice_trm.h>
+  20:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #include <CyLib.h>
+  21:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #include <WinTimer_IRQ.h>
+  22:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #include "cyapicallbacks.h"
+  23:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  24:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #if !defined(WinTimer_IRQ__REMOVED) /* Check for removal by optimization */
+  25:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  26:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+  27:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  Place your includes, defines and code here 
+  28:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************/
+  29:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /* `#START WinTimer_IRQ_intc` */
+  30:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #include <main.h>
+  31:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /* `#END` */
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  33:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #ifndef CYINT_IRQ_BASE
+  34:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #define CYINT_IRQ_BASE      16
+  35:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #endif /* CYINT_IRQ_BASE */
+  36:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #ifndef CYINT_VECT_TABLE
+  37:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #define CYINT_VECT_TABLE    ((cyisraddress **) CYREG_NVIC_VECT_OFFSET)
+  38:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** #endif /* CYINT_VECT_TABLE */
+  39:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  40:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /* Declared in startup, used to set unused interrupts to. */
+  41:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** CY_ISR_PROTO(IntDefaultHandler);
+  42:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  43:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  44:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+  45:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_Start
+  46:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+  47:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+  48:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+  49:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  Set up the interrupt and enable it. This function disables the interrupt, 
+  50:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  sets the default interrupt vector, sets the priority from the value in the
+  51:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  Design Wide Resources Interrupt Editor, then enables the interrupt to the 
+  52:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  interrupt controller.
+  53:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+  54:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:  
+  55:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+  56:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+  57:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+  58:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+  59:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+  60:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+  61:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_Start(void)
+  62:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+  63:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* For all we know the interrupt is active. */
+  64:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_Disable();
+  65:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  66:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Set the ISR to point to the WinTimer_IRQ Interrupt. */
+  67:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_SetVector(&WinTimer_IRQ_Interrupt);
+  68:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  69:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Set the priority. */
+  70:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_SetPriority((uint8)WinTimer_IRQ_INTC_PRIOR_NUMBER);
+  71:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  72:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Enable it. */
+  73:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_Enable();
+  74:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+  75:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  76:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+  77:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+  78:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_StartEx
+  79:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+  80:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+  81:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+  82:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  Sets up the interrupt and enables it. This function disables the interrupt,
+  83:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  sets the interrupt vector based on the address passed in, sets the priority 
+  84:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  from the value in the Design Wide Resources Interrupt Editor, then enables 
+  85:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  the interrupt to the interrupt controller.
+  86:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  
+  87:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+  88:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  used to provide consistent definition across compilers:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 3
+
+
+  89:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  
+  90:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *  Function definition example:
+  91:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   CY_ISR(MyISR)
+  92:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   {
+  93:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   }
+  94:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Function prototype example:
+  95:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   CY_ISR_PROTO(MyISR);
+  96:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+  97:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:  
+  98:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   address: Address of the ISR to set in the interrupt vector table.
+  99:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 100:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 101:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 102:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 103:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 104:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_StartEx(cyisraddress address)
+ 105:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 106:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* For all we know the interrupt is active. */
+ 107:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_Disable();
+ 108:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 109:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Set the ISR to point to the WinTimer_IRQ Interrupt. */
+ 110:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_SetVector(address);
+ 111:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 112:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Set the priority. */
+ 113:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_SetPriority((uint8)WinTimer_IRQ_INTC_PRIOR_NUMBER);
+ 114:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 115:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Enable it. */
+ 116:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_Enable();
+ 117:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 118:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 119:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 120:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 121:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_Stop
+ 122:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 123:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 124:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 125:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Disables and removes the interrupt.
+ 126:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 127:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:  
+ 128:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 129:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 130:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 131:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 132:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 133:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 134:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_Stop(void)
+ 135:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 136:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Disable this interrupt. */
+ 137:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_Disable();
+ 138:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 139:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Set the ISR to point to the passive one. */
+ 140:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     WinTimer_IRQ_SetVector(&IntDefaultHandler);
+ 141:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 142:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 143:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 144:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 145:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_Interrupt
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 4
+
+
+ 146:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 147:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 148:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 149:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   The default Interrupt Service Routine for WinTimer_IRQ.
+ 150:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 151:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Add custom code between the coments to keep the next version of this file
+ 152:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   from over writting your code.
+ 153:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 154:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:  
+ 155:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 156:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 157:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 158:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 159:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 160:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** CY_ISR(WinTimer_IRQ_Interrupt)
+ 161:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+  27              		.loc 1 161 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+ 162:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     #ifdef WinTimer_IRQ_INTERRUPT_INTERRUPT_CALLBACK
+ 163:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****         WinTimer_IRQ_Interrupt_InterruptCallback();
+ 164:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     #endif /* WinTimer_IRQ_INTERRUPT_INTERRUPT_CALLBACK */ 
+ 165:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 166:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /*  Place your Interrupt code here. */
+ 167:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* `#START WinTimer_IRQ_Interrupt` */
+ 168:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     if(use_timer)
+  32              		.loc 1 168 0
+  33 0000 114B     		ldr	r3, .L4
+  34 0002 1B68     		ldr	r3, [r3]
+  35 0004 F3B1     		cbz	r3, .L1
+ 169:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     {
+ 170:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****         input_ptr = (input_ptr+1)%INPUT_BUF_SIZE;
+  36              		.loc 1 170 0
+  37 0006 114B     		ldr	r3, .L4+4
+  38 0008 1A68     		ldr	r2, [r3]
+  39 000a 0132     		adds	r2, r2, #1
+  40 000c 104B     		ldr	r3, .L4+8
+  41 000e 1340     		ands	r3, r3, r2
+  42 0010 002B     		cmp	r3, #0
+  43 0012 05DA     		bge	.L3
+  44 0014 013B     		subs	r3, r3, #1
+  45 0016 6FEAC343 		mvn	r3, r3, lsl #19
+  46 001a 6FEAD343 		mvn	r3, r3, lsr #19
+  47 001e 0133     		adds	r3, r3, #1
+  48              	.L3:
+  49 0020 0A4A     		ldr	r2, .L4+4
+  50 0022 1360     		str	r3, [r2]
+ 171:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****         data = input[0][input_ptr];
+  51              		.loc 1 171 0
+  52 0024 1268     		ldr	r2, [r2]
+  53 0026 0B4B     		ldr	r3, .L4+12
+  54 0028 33F81230 		ldrh	r3, [r3, r2, lsl #1]
+  55 002c 9BB2     		uxth	r3, r3
+  56 002e 0A4A     		ldr	r2, .L4+16
+  57 0030 1380     		strh	r3, [r2]	@ movhi
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 5
+
+
+ 172:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****         if(disable_timer == 1)
+  58              		.loc 1 172 0
+  59 0032 0A4B     		ldr	r3, .L4+20
+  60 0034 1B68     		ldr	r3, [r3]
+  61 0036 012B     		cmp	r3, #1
+  62 0038 04D1     		bne	.L1
+ 173:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****         {
+ 174:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****             use_timer = 0;
+  63              		.loc 1 174 0
+  64 003a 0023     		movs	r3, #0
+  65 003c 024A     		ldr	r2, .L4
+  66 003e 1360     		str	r3, [r2]
+ 175:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****             disable_timer = 0;
+  67              		.loc 1 175 0
+  68 0040 064A     		ldr	r2, .L4+20
+  69 0042 1360     		str	r3, [r2]
+  70              	.L1:
+  71 0044 7047     		bx	lr
+  72              	.L5:
+  73 0046 00BF     		.align	2
+  74              	.L4:
+  75 0048 00000000 		.word	use_timer
+  76 004c 00000000 		.word	input_ptr
+  77 0050 FF1F0080 		.word	-2147475457
+  78 0054 00000000 		.word	input
+  79 0058 00000000 		.word	data
+  80 005c 00000000 		.word	disable_timer
+  81              		.cfi_endproc
+  82              	.LFE66:
+  83              		.size	WinTimer_IRQ_Interrupt, .-WinTimer_IRQ_Interrupt
+  84              		.section	.text.WinTimer_IRQ_SetVector,"ax",%progbits
+  85              		.align	2
+  86              		.global	WinTimer_IRQ_SetVector
+  87              		.thumb
+  88              		.thumb_func
+  89              		.type	WinTimer_IRQ_SetVector, %function
+  90              	WinTimer_IRQ_SetVector:
+  91              	.LFB67:
+ 176:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****         }
+ 177:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     }
+ 178:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* `#END` */
+ 179:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 180:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 181:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 182:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 183:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_SetVector
+ 184:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 185:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 186:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 187:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Change the ISR vector for the Interrupt. Note calling WinTimer_IRQ_Start
+ 188:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   will override any effect this method would have had. To set the vector 
+ 189:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   before the component has been started use WinTimer_IRQ_StartEx instead.
+ 190:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * 
+ 191:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+ 192:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   used to provide consistent definition across compilers:
+ 193:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 194:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Function definition example:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 6
+
+
+ 195:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   CY_ISR(MyISR)
+ 196:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   {
+ 197:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   }
+ 198:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 199:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Function prototype example:
+ 200:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *     CY_ISR_PROTO(MyISR);
+ 201:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 202:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 203:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 204:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 205:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 206:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 207:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 208:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 209:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_SetVector(cyisraddress address)
+ 210:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+  92              		.loc 1 210 0
+  93              		.cfi_startproc
+  94              		@ args = 0, pretend = 0, frame = 0
+  95              		@ frame_needed = 0, uses_anonymous_args = 0
+  96              		@ link register save eliminated.
+  97              	.LVL0:
+ 211:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     cyisraddress * ramVectorTable;
+ 212:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 213:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
+  98              		.loc 1 213 0
+  99 0000 014B     		ldr	r3, .L7
+ 100 0002 1B68     		ldr	r3, [r3]
+ 101              	.LVL1:
+ 214:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 215:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     ramVectorTable[CYINT_IRQ_BASE + (uint32)WinTimer_IRQ__INTC_NUMBER] = address;
+ 102              		.loc 1 215 0
+ 103 0004 5864     		str	r0, [r3, #68]
+ 104 0006 7047     		bx	lr
+ 105              	.L8:
+ 106              		.align	2
+ 107              	.L7:
+ 108 0008 08ED00E0 		.word	-536810232
+ 109              		.cfi_endproc
+ 110              	.LFE67:
+ 111              		.size	WinTimer_IRQ_SetVector, .-WinTimer_IRQ_SetVector
+ 112              		.section	.text.WinTimer_IRQ_GetVector,"ax",%progbits
+ 113              		.align	2
+ 114              		.global	WinTimer_IRQ_GetVector
+ 115              		.thumb
+ 116              		.thumb_func
+ 117              		.type	WinTimer_IRQ_GetVector, %function
+ 118              	WinTimer_IRQ_GetVector:
+ 119              	.LFB68:
+ 216:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 217:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 218:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 219:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 220:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_GetVector
+ 221:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 222:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 223:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 7
+
+
+ 224:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
+ 225:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 226:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 227:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 228:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 229:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 230:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Address of the ISR in the interrupt vector table.
+ 231:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 232:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 233:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** cyisraddress WinTimer_IRQ_GetVector(void)
+ 234:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 120              		.loc 1 234 0
+ 121              		.cfi_startproc
+ 122              		@ args = 0, pretend = 0, frame = 0
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		@ link register save eliminated.
+ 235:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     cyisraddress * ramVectorTable;
+ 236:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 237:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
+ 125              		.loc 1 237 0
+ 126 0000 014B     		ldr	r3, .L10
+ 127 0002 1B68     		ldr	r3, [r3]
+ 128              	.LVL2:
+ 238:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 239:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     return ramVectorTable[CYINT_IRQ_BASE + (uint32)WinTimer_IRQ__INTC_NUMBER];
+ 240:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 129              		.loc 1 240 0
+ 130 0004 586C     		ldr	r0, [r3, #68]
+ 131 0006 7047     		bx	lr
+ 132              	.L11:
+ 133              		.align	2
+ 134              	.L10:
+ 135 0008 08ED00E0 		.word	-536810232
+ 136              		.cfi_endproc
+ 137              	.LFE68:
+ 138              		.size	WinTimer_IRQ_GetVector, .-WinTimer_IRQ_GetVector
+ 139              		.section	.text.WinTimer_IRQ_SetPriority,"ax",%progbits
+ 140              		.align	2
+ 141              		.global	WinTimer_IRQ_SetPriority
+ 142              		.thumb
+ 143              		.thumb_func
+ 144              		.type	WinTimer_IRQ_SetPriority, %function
+ 145              	WinTimer_IRQ_SetPriority:
+ 146              	.LFB69:
+ 241:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 242:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 243:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 244:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_SetPriority
+ 245:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 246:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 247:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 248:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Sets the Priority of the Interrupt. 
+ 249:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 250:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Note calling WinTimer_IRQ_Start or WinTimer_IRQ_StartEx will 
+ 251:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   override any effect this API would have had. This API should only be called
+ 252:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   after WinTimer_IRQ_Start or WinTimer_IRQ_StartEx has been called. 
+ 253:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   To set the initial priority for the component, use the Design-Wide Resources
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 8
+
+
+ 254:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Interrupt Editor.
+ 255:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 256:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
+ 257:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 258:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 259:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   priority: Priority of the interrupt, 0 being the highest priority
+ 260:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 261:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *             PSoC 4: Priority is from 0 to 3.
+ 262:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 263:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 264:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 265:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 266:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 267:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_SetPriority(uint8 priority)
+ 268:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 147              		.loc 1 268 0
+ 148              		.cfi_startproc
+ 149              		@ args = 0, pretend = 0, frame = 0
+ 150              		@ frame_needed = 0, uses_anonymous_args = 0
+ 151              		@ link register save eliminated.
+ 152              	.LVL3:
+ 269:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     *WinTimer_IRQ_INTC_PRIOR = priority << 5;
+ 153              		.loc 1 269 0
+ 154 0000 4001     		lsls	r0, r0, #5
+ 155              	.LVL4:
+ 156 0002 C0B2     		uxtb	r0, r0
+ 157 0004 014B     		ldr	r3, .L13
+ 158 0006 1870     		strb	r0, [r3]
+ 159 0008 7047     		bx	lr
+ 160              	.L14:
+ 161 000a 00BF     		.align	2
+ 162              	.L13:
+ 163 000c 01E400E0 		.word	-536812543
+ 164              		.cfi_endproc
+ 165              	.LFE69:
+ 166              		.size	WinTimer_IRQ_SetPriority, .-WinTimer_IRQ_SetPriority
+ 167              		.section	.text.WinTimer_IRQ_GetPriority,"ax",%progbits
+ 168              		.align	2
+ 169              		.global	WinTimer_IRQ_GetPriority
+ 170              		.thumb
+ 171              		.thumb_func
+ 172              		.type	WinTimer_IRQ_GetPriority, %function
+ 173              	WinTimer_IRQ_GetPriority:
+ 174              	.LFB70:
+ 270:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 271:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 272:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 273:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 274:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_GetPriority
+ 275:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 276:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 277:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 278:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Gets the Priority of the Interrupt.
+ 279:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 280:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 281:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 282:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 9
+
+
+ 283:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 284:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Priority of the interrupt, 0 being the highest priority
+ 285:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 286:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *    PSoC 4: Priority is from 0 to 3.
+ 287:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 288:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 289:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** uint8 WinTimer_IRQ_GetPriority(void)
+ 290:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 175              		.loc 1 290 0
+ 176              		.cfi_startproc
+ 177              		@ args = 0, pretend = 0, frame = 0
+ 178              		@ frame_needed = 0, uses_anonymous_args = 0
+ 179              		@ link register save eliminated.
+ 291:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     uint8 priority;
+ 292:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 293:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 294:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     priority = *WinTimer_IRQ_INTC_PRIOR >> 5;
+ 180              		.loc 1 294 0
+ 181 0000 014B     		ldr	r3, .L16
+ 182 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 183              	.LVL5:
+ 295:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 296:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     return priority;
+ 297:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 184              		.loc 1 297 0
+ 185 0004 4009     		lsrs	r0, r0, #5
+ 186              	.LVL6:
+ 187 0006 7047     		bx	lr
+ 188              	.L17:
+ 189              		.align	2
+ 190              	.L16:
+ 191 0008 01E400E0 		.word	-536812543
+ 192              		.cfi_endproc
+ 193              	.LFE70:
+ 194              		.size	WinTimer_IRQ_GetPriority, .-WinTimer_IRQ_GetPriority
+ 195              		.section	.text.WinTimer_IRQ_Enable,"ax",%progbits
+ 196              		.align	2
+ 197              		.global	WinTimer_IRQ_Enable
+ 198              		.thumb
+ 199              		.thumb_func
+ 200              		.type	WinTimer_IRQ_Enable, %function
+ 201              	WinTimer_IRQ_Enable:
+ 202              	.LFB71:
+ 298:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 299:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 300:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 301:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_Enable
+ 302:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 303:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 304:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 305:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
+ 306:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
+ 307:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   function, which sets the vector and the priority, has been called.
+ 308:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 309:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 310:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 311:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 10
+
+
+ 312:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 313:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 314:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 315:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 316:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_Enable(void)
+ 317:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 203              		.loc 1 317 0
+ 204              		.cfi_startproc
+ 205              		@ args = 0, pretend = 0, frame = 0
+ 206              		@ frame_needed = 0, uses_anonymous_args = 0
+ 207              		@ link register save eliminated.
+ 318:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Enable the general interrupt. */
+ 319:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     *WinTimer_IRQ_INTC_SET_EN = WinTimer_IRQ__INTC_MASK;
+ 208              		.loc 1 319 0
+ 209 0000 0222     		movs	r2, #2
+ 210 0002 014B     		ldr	r3, .L19
+ 211 0004 1A60     		str	r2, [r3]
+ 212 0006 7047     		bx	lr
+ 213              	.L20:
+ 214              		.align	2
+ 215              	.L19:
+ 216 0008 00E100E0 		.word	-536813312
+ 217              		.cfi_endproc
+ 218              	.LFE71:
+ 219              		.size	WinTimer_IRQ_Enable, .-WinTimer_IRQ_Enable
+ 220              		.section	.text.WinTimer_IRQ_GetState,"ax",%progbits
+ 221              		.align	2
+ 222              		.global	WinTimer_IRQ_GetState
+ 223              		.thumb
+ 224              		.thumb_func
+ 225              		.type	WinTimer_IRQ_GetState, %function
+ 226              	WinTimer_IRQ_GetState:
+ 227              	.LFB72:
+ 320:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 321:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 322:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 323:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 324:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_GetState
+ 325:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 326:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 327:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 328:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Gets the state (enabled, disabled) of the Interrupt.
+ 329:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 330:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 331:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 332:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 333:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 334:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   1 if enabled, 0 if disabled.
+ 335:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 336:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 337:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** uint8 WinTimer_IRQ_GetState(void)
+ 338:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 228              		.loc 1 338 0
+ 229              		.cfi_startproc
+ 230              		@ args = 0, pretend = 0, frame = 0
+ 231              		@ frame_needed = 0, uses_anonymous_args = 0
+ 232              		@ link register save eliminated.
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 11
+
+
+ 339:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Get the state of the general interrupt. */
+ 340:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     return ((*WinTimer_IRQ_INTC_SET_EN & (uint32)WinTimer_IRQ__INTC_MASK) != 0u) ? 1u:0u;
+ 233              		.loc 1 340 0
+ 234 0000 044B     		ldr	r3, .L24
+ 235 0002 1B68     		ldr	r3, [r3]
+ 236 0004 13F0020F 		tst	r3, #2
+ 237 0008 01D0     		beq	.L23
+ 238 000a 0120     		movs	r0, #1
+ 239 000c 7047     		bx	lr
+ 240              	.L23:
+ 241 000e 0020     		movs	r0, #0
+ 341:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 242              		.loc 1 341 0
+ 243 0010 7047     		bx	lr
+ 244              	.L25:
+ 245 0012 00BF     		.align	2
+ 246              	.L24:
+ 247 0014 00E100E0 		.word	-536813312
+ 248              		.cfi_endproc
+ 249              	.LFE72:
+ 250              		.size	WinTimer_IRQ_GetState, .-WinTimer_IRQ_GetState
+ 251              		.section	.text.WinTimer_IRQ_Disable,"ax",%progbits
+ 252              		.align	2
+ 253              		.global	WinTimer_IRQ_Disable
+ 254              		.thumb
+ 255              		.thumb_func
+ 256              		.type	WinTimer_IRQ_Disable, %function
+ 257              	WinTimer_IRQ_Disable:
+ 258              	.LFB73:
+ 342:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 343:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 344:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 345:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_Disable
+ 346:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 347:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 348:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 349:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Disables the Interrupt in the interrupt controller.
+ 350:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 351:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 352:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 353:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 354:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 355:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 356:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 357:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 358:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_Disable(void)
+ 359:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 259              		.loc 1 359 0
+ 260              		.cfi_startproc
+ 261              		@ args = 0, pretend = 0, frame = 0
+ 262              		@ frame_needed = 0, uses_anonymous_args = 0
+ 263              		@ link register save eliminated.
+ 360:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Disable the general interrupt. */
+ 361:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     *WinTimer_IRQ_INTC_CLR_EN = WinTimer_IRQ__INTC_MASK;
+ 264              		.loc 1 361 0
+ 265 0000 0222     		movs	r2, #2
+ 266 0002 014B     		ldr	r3, .L27
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 12
+
+
+ 267 0004 1A60     		str	r2, [r3]
+ 268 0006 7047     		bx	lr
+ 269              	.L28:
+ 270              		.align	2
+ 271              	.L27:
+ 272 0008 80E100E0 		.word	-536813184
+ 273              		.cfi_endproc
+ 274              	.LFE73:
+ 275              		.size	WinTimer_IRQ_Disable, .-WinTimer_IRQ_Disable
+ 276              		.section	.text.WinTimer_IRQ_Start,"ax",%progbits
+ 277              		.align	2
+ 278              		.global	WinTimer_IRQ_Start
+ 279              		.thumb
+ 280              		.thumb_func
+ 281              		.type	WinTimer_IRQ_Start, %function
+ 282              	WinTimer_IRQ_Start:
+ 283              	.LFB63:
+  62:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* For all we know the interrupt is active. */
+ 284              		.loc 1 62 0
+ 285              		.cfi_startproc
+ 286              		@ args = 0, pretend = 0, frame = 0
+ 287              		@ frame_needed = 0, uses_anonymous_args = 0
+ 288 0000 08B5     		push	{r3, lr}
+ 289              		.cfi_def_cfa_offset 8
+ 290              		.cfi_offset 3, -8
+ 291              		.cfi_offset 14, -4
+  64:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 292              		.loc 1 64 0
+ 293 0002 FFF7FEFF 		bl	WinTimer_IRQ_Disable
+ 294              	.LVL7:
+  67:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 295              		.loc 1 67 0
+ 296 0006 0448     		ldr	r0, .L31
+ 297 0008 FFF7FEFF 		bl	WinTimer_IRQ_SetVector
+ 298              	.LVL8:
+  70:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 299              		.loc 1 70 0
+ 300 000c 0120     		movs	r0, #1
+ 301 000e FFF7FEFF 		bl	WinTimer_IRQ_SetPriority
+ 302              	.LVL9:
+  73:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 303              		.loc 1 73 0
+ 304 0012 FFF7FEFF 		bl	WinTimer_IRQ_Enable
+ 305              	.LVL10:
+ 306 0016 08BD     		pop	{r3, pc}
+ 307              	.L32:
+ 308              		.align	2
+ 309              	.L31:
+ 310 0018 00000000 		.word	WinTimer_IRQ_Interrupt
+ 311              		.cfi_endproc
+ 312              	.LFE63:
+ 313              		.size	WinTimer_IRQ_Start, .-WinTimer_IRQ_Start
+ 314              		.section	.text.WinTimer_IRQ_StartEx,"ax",%progbits
+ 315              		.align	2
+ 316              		.global	WinTimer_IRQ_StartEx
+ 317              		.thumb
+ 318              		.thumb_func
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 13
+
+
+ 319              		.type	WinTimer_IRQ_StartEx, %function
+ 320              	WinTimer_IRQ_StartEx:
+ 321              	.LFB64:
+ 105:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* For all we know the interrupt is active. */
+ 322              		.loc 1 105 0
+ 323              		.cfi_startproc
+ 324              		@ args = 0, pretend = 0, frame = 0
+ 325              		@ frame_needed = 0, uses_anonymous_args = 0
+ 326              	.LVL11:
+ 327 0000 10B5     		push	{r4, lr}
+ 328              		.cfi_def_cfa_offset 8
+ 329              		.cfi_offset 4, -8
+ 330              		.cfi_offset 14, -4
+ 331 0002 0446     		mov	r4, r0
+ 107:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 332              		.loc 1 107 0
+ 333 0004 FFF7FEFF 		bl	WinTimer_IRQ_Disable
+ 334              	.LVL12:
+ 110:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 335              		.loc 1 110 0
+ 336 0008 2046     		mov	r0, r4
+ 337 000a FFF7FEFF 		bl	WinTimer_IRQ_SetVector
+ 338              	.LVL13:
+ 113:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 339              		.loc 1 113 0
+ 340 000e 0120     		movs	r0, #1
+ 341 0010 FFF7FEFF 		bl	WinTimer_IRQ_SetPriority
+ 342              	.LVL14:
+ 116:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 343              		.loc 1 116 0
+ 344 0014 FFF7FEFF 		bl	WinTimer_IRQ_Enable
+ 345              	.LVL15:
+ 346 0018 10BD     		pop	{r4, pc}
+ 347              		.cfi_endproc
+ 348              	.LFE64:
+ 349              		.size	WinTimer_IRQ_StartEx, .-WinTimer_IRQ_StartEx
+ 350 001a 00BF     		.section	.text.WinTimer_IRQ_Stop,"ax",%progbits
+ 351              		.align	2
+ 352              		.global	WinTimer_IRQ_Stop
+ 353              		.thumb
+ 354              		.thumb_func
+ 355              		.type	WinTimer_IRQ_Stop, %function
+ 356              	WinTimer_IRQ_Stop:
+ 357              	.LFB65:
+ 135:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     /* Disable this interrupt. */
+ 358              		.loc 1 135 0
+ 359              		.cfi_startproc
+ 360              		@ args = 0, pretend = 0, frame = 0
+ 361              		@ frame_needed = 0, uses_anonymous_args = 0
+ 362 0000 08B5     		push	{r3, lr}
+ 363              		.cfi_def_cfa_offset 8
+ 364              		.cfi_offset 3, -8
+ 365              		.cfi_offset 14, -4
+ 137:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 366              		.loc 1 137 0
+ 367 0002 FFF7FEFF 		bl	WinTimer_IRQ_Disable
+ 368              	.LVL16:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 14
+
+
+ 140:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 369              		.loc 1 140 0
+ 370 0006 0248     		ldr	r0, .L37
+ 371 0008 FFF7FEFF 		bl	WinTimer_IRQ_SetVector
+ 372              	.LVL17:
+ 373 000c 08BD     		pop	{r3, pc}
+ 374              	.L38:
+ 375 000e 00BF     		.align	2
+ 376              	.L37:
+ 377 0010 00000000 		.word	IntDefaultHandler
+ 378              		.cfi_endproc
+ 379              	.LFE65:
+ 380              		.size	WinTimer_IRQ_Stop, .-WinTimer_IRQ_Stop
+ 381              		.section	.text.WinTimer_IRQ_SetPending,"ax",%progbits
+ 382              		.align	2
+ 383              		.global	WinTimer_IRQ_SetPending
+ 384              		.thumb
+ 385              		.thumb_func
+ 386              		.type	WinTimer_IRQ_SetPending, %function
+ 387              	WinTimer_IRQ_SetPending:
+ 388              	.LFB74:
+ 362:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 363:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 364:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 365:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 366:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_SetPending
+ 367:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 368:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 369:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 370:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Causes the Interrupt to enter the pending state, a software method of
+ 371:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   generating the interrupt.
+ 372:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 373:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 374:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 375:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 376:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 377:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 378:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 379:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Side Effects:
+ 380:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
+ 381:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   entered (depending on the priority of this interrupt and other pending 
+ 382:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   interrupts).
+ 383:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 384:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 385:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_SetPending(void)
+ 386:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 389              		.loc 1 386 0
+ 390              		.cfi_startproc
+ 391              		@ args = 0, pretend = 0, frame = 0
+ 392              		@ frame_needed = 0, uses_anonymous_args = 0
+ 393              		@ link register save eliminated.
+ 387:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     *WinTimer_IRQ_INTC_SET_PD = WinTimer_IRQ__INTC_MASK;
+ 394              		.loc 1 387 0
+ 395 0000 0222     		movs	r2, #2
+ 396 0002 014B     		ldr	r3, .L40
+ 397 0004 1A60     		str	r2, [r3]
+ 398 0006 7047     		bx	lr
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 15
+
+
+ 399              	.L41:
+ 400              		.align	2
+ 401              	.L40:
+ 402 0008 00E200E0 		.word	-536813056
+ 403              		.cfi_endproc
+ 404              	.LFE74:
+ 405              		.size	WinTimer_IRQ_SetPending, .-WinTimer_IRQ_SetPending
+ 406              		.section	.text.WinTimer_IRQ_ClearPending,"ax",%progbits
+ 407              		.align	2
+ 408              		.global	WinTimer_IRQ_ClearPending
+ 409              		.thumb
+ 410              		.thumb_func
+ 411              		.type	WinTimer_IRQ_ClearPending, %function
+ 412              	WinTimer_IRQ_ClearPending:
+ 413              	.LFB75:
+ 388:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** }
+ 389:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 390:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** 
+ 391:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** /*******************************************************************************
+ 392:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Function Name: WinTimer_IRQ_ClearPending
+ 393:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** ********************************************************************************
+ 394:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 395:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Summary:
+ 396:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Clears a pending interrupt in the interrupt controller.
+ 397:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 398:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   Note Some interrupt sources are clear-on-read and require the block 
+ 399:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
+ 400:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
+ 401:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   pending state even though the interrupt itself is cleared using this API.
+ 402:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 403:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Parameters:
+ 404:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 405:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 406:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** * Return:
+ 407:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *   None
+ 408:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *
+ 409:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** *******************************************************************************/
+ 410:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** void WinTimer_IRQ_ClearPending(void)
+ 411:.\Generated_Source\PSoC5/WinTimer_IRQ.c **** {
+ 414              		.loc 1 411 0
+ 415              		.cfi_startproc
+ 416              		@ args = 0, pretend = 0, frame = 0
+ 417              		@ frame_needed = 0, uses_anonymous_args = 0
+ 418              		@ link register save eliminated.
+ 412:.\Generated_Source\PSoC5/WinTimer_IRQ.c ****     *WinTimer_IRQ_INTC_CLR_PD = WinTimer_IRQ__INTC_MASK;
+ 419              		.loc 1 412 0
+ 420 0000 0222     		movs	r2, #2
+ 421 0002 014B     		ldr	r3, .L43
+ 422 0004 1A60     		str	r2, [r3]
+ 423 0006 7047     		bx	lr
+ 424              	.L44:
+ 425              		.align	2
+ 426              	.L43:
+ 427 0008 80E200E0 		.word	-536812928
+ 428              		.cfi_endproc
+ 429              	.LFE75:
+ 430              		.size	WinTimer_IRQ_ClearPending, .-WinTimer_IRQ_ClearPending
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 16
+
+
+ 431              		.comm	disable_timer,4,4
+ 432              		.comm	use_timer,4,4
+ 433              		.comm	timer_ready,4,4
+ 434              		.comm	ready,4,4
+ 435              		.comm	input,32768,4
+ 436              		.comm	data,2,2
+ 437              		.comm	buf_ptr,4,4
+ 438              		.comm	input_ptr,4,4
+ 439              		.comm	playing,4,4
+ 440              		.comm	sent,4,4
+ 441              		.text
+ 442              	.Letext0:
+ 443              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 444              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 445              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 446              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 447              		.file 6 "./main.h"
+ 448              		.section	.debug_info,"",%progbits
+ 449              	.Ldebug_info0:
+ 450 0000 CA030000 		.4byte	0x3ca
+ 451 0004 0400     		.2byte	0x4
+ 452 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 453 000a 04       		.byte	0x4
+ 454 000b 01       		.uleb128 0x1
+ 455 000c A2010000 		.4byte	.LASF47
+ 456 0010 01       		.byte	0x1
+ 457 0011 16010000 		.4byte	.LASF48
+ 458 0015 50010000 		.4byte	.LASF49
+ 459 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 460 001d 00000000 		.4byte	0
+ 461 0021 00000000 		.4byte	.Ldebug_line0
+ 462 0025 02       		.uleb128 0x2
+ 463 0026 04       		.byte	0x4
+ 464 0027 05       		.byte	0x5
+ 465 0028 696E7400 		.ascii	"int\000"
+ 466 002c 03       		.uleb128 0x3
+ 467 002d 04       		.byte	0x4
+ 468 002e 07       		.byte	0x7
+ 469 002f 30020000 		.4byte	.LASF0
+ 470 0033 03       		.uleb128 0x3
+ 471 0034 01       		.byte	0x1
+ 472 0035 06       		.byte	0x6
+ 473 0036 5D030000 		.4byte	.LASF1
+ 474 003a 03       		.uleb128 0x3
+ 475 003b 01       		.byte	0x1
+ 476 003c 08       		.byte	0x8
+ 477 003d 9C000000 		.4byte	.LASF2
+ 478 0041 03       		.uleb128 0x3
+ 479 0042 02       		.byte	0x2
+ 480 0043 05       		.byte	0x5
+ 481 0044 0A030000 		.4byte	.LASF3
+ 482 0048 03       		.uleb128 0x3
+ 483 0049 02       		.byte	0x2
+ 484 004a 07       		.byte	0x7
+ 485 004b DD000000 		.4byte	.LASF4
+ 486 004f 04       		.uleb128 0x4
+ 487 0050 14000000 		.4byte	.LASF11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 17
+
+
+ 488 0054 02       		.byte	0x2
+ 489 0055 3F       		.byte	0x3f
+ 490 0056 5A000000 		.4byte	0x5a
+ 491 005a 03       		.uleb128 0x3
+ 492 005b 04       		.byte	0x4
+ 493 005c 05       		.byte	0x5
+ 494 005d 40030000 		.4byte	.LASF5
+ 495 0061 03       		.uleb128 0x3
+ 496 0062 04       		.byte	0x4
+ 497 0063 07       		.byte	0x7
+ 498 0064 3E010000 		.4byte	.LASF6
+ 499 0068 03       		.uleb128 0x3
+ 500 0069 08       		.byte	0x8
+ 501 006a 05       		.byte	0x5
+ 502 006b 8F020000 		.4byte	.LASF7
+ 503 006f 03       		.uleb128 0x3
+ 504 0070 08       		.byte	0x8
+ 505 0071 07       		.byte	0x7
+ 506 0072 55020000 		.4byte	.LASF8
+ 507 0076 03       		.uleb128 0x3
+ 508 0077 04       		.byte	0x4
+ 509 0078 07       		.byte	0x7
+ 510 0079 81020000 		.4byte	.LASF9
+ 511 007d 05       		.uleb128 0x5
+ 512 007e 04       		.byte	0x4
+ 513 007f 83000000 		.4byte	0x83
+ 514 0083 06       		.uleb128 0x6
+ 515 0084 03       		.uleb128 0x3
+ 516 0085 01       		.byte	0x1
+ 517 0086 08       		.byte	0x8
+ 518 0087 B7020000 		.4byte	.LASF10
+ 519 008b 04       		.uleb128 0x4
+ 520 008c 79020000 		.4byte	.LASF12
+ 521 0090 03       		.byte	0x3
+ 522 0091 2C       		.byte	0x2c
+ 523 0092 4F000000 		.4byte	0x4f
+ 524 0096 07       		.uleb128 0x7
+ 525 0097 14030000 		.4byte	.LASF13
+ 526 009b 04       		.byte	0x4
+ 527 009c 9201     		.2byte	0x192
+ 528 009e 3A000000 		.4byte	0x3a
+ 529 00a2 07       		.uleb128 0x7
+ 530 00a3 94010000 		.4byte	.LASF14
+ 531 00a7 04       		.byte	0x4
+ 532 00a8 9301     		.2byte	0x193
+ 533 00aa 48000000 		.4byte	0x48
+ 534 00ae 07       		.uleb128 0x7
+ 535 00af 9B010000 		.4byte	.LASF15
+ 536 00b3 04       		.byte	0x4
+ 537 00b4 9401     		.2byte	0x194
+ 538 00b6 61000000 		.4byte	0x61
+ 539 00ba 03       		.uleb128 0x3
+ 540 00bb 04       		.byte	0x4
+ 541 00bc 04       		.byte	0x4
+ 542 00bd 91000000 		.4byte	.LASF16
+ 543 00c1 03       		.uleb128 0x3
+ 544 00c2 08       		.byte	0x8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 18
+
+
+ 545 00c3 04       		.byte	0x4
+ 546 00c4 33000000 		.4byte	.LASF17
+ 547 00c8 07       		.uleb128 0x7
+ 548 00c9 B0000000 		.4byte	.LASF18
+ 549 00cd 04       		.byte	0x4
+ 550 00ce 3C02     		.2byte	0x23c
+ 551 00d0 D4000000 		.4byte	0xd4
+ 552 00d4 08       		.uleb128 0x8
+ 553 00d5 96000000 		.4byte	0x96
+ 554 00d9 08       		.uleb128 0x8
+ 555 00da A2000000 		.4byte	0xa2
+ 556 00de 07       		.uleb128 0x7
+ 557 00df 0E000000 		.4byte	.LASF19
+ 558 00e3 04       		.byte	0x4
+ 559 00e4 3E02     		.2byte	0x23e
+ 560 00e6 EA000000 		.4byte	0xea
+ 561 00ea 08       		.uleb128 0x8
+ 562 00eb AE000000 		.4byte	0xae
+ 563 00ef 07       		.uleb128 0x7
+ 564 00f0 6C020000 		.4byte	.LASF20
+ 565 00f4 04       		.byte	0x4
+ 566 00f5 4E02     		.2byte	0x24e
+ 567 00f7 7D000000 		.4byte	0x7d
+ 568 00fb 09       		.uleb128 0x9
+ 569 00fc 7A000000 		.4byte	.LASF28
+ 570 0100 01       		.byte	0x1
+ 571 0101 A0       		.byte	0xa0
+ 572 0102 00000000 		.4byte	.LFB66
+ 573 0106 60000000 		.4byte	.LFE66-.LFB66
+ 574 010a 01       		.uleb128 0x1
+ 575 010b 9C       		.byte	0x9c
+ 576 010c 0A       		.uleb128 0xa
+ 577 010d 29030000 		.4byte	.LASF22
+ 578 0111 01       		.byte	0x1
+ 579 0112 D1       		.byte	0xd1
+ 580 0113 00000000 		.4byte	.LFB67
+ 581 0117 0C000000 		.4byte	.LFE67-.LFB67
+ 582 011b 01       		.uleb128 0x1
+ 583 011c 9C       		.byte	0x9c
+ 584 011d 3C010000 		.4byte	0x13c
+ 585 0121 0B       		.uleb128 0xb
+ 586 0122 CF000000 		.4byte	.LASF24
+ 587 0126 01       		.byte	0x1
+ 588 0127 D1       		.byte	0xd1
+ 589 0128 EF000000 		.4byte	0xef
+ 590 012c 01       		.uleb128 0x1
+ 591 012d 50       		.byte	0x50
+ 592 012e 0C       		.uleb128 0xc
+ 593 012f 1A030000 		.4byte	.LASF21
+ 594 0133 01       		.byte	0x1
+ 595 0134 D3       		.byte	0xd3
+ 596 0135 3C010000 		.4byte	0x13c
+ 597 0139 01       		.uleb128 0x1
+ 598 013a 53       		.byte	0x53
+ 599 013b 00       		.byte	0
+ 600 013c 05       		.uleb128 0x5
+ 601 013d 04       		.byte	0x4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 19
+
+
+ 602 013e EF000000 		.4byte	0xef
+ 603 0142 0D       		.uleb128 0xd
+ 604 0143 3A000000 		.4byte	.LASF26
+ 605 0147 01       		.byte	0x1
+ 606 0148 E9       		.byte	0xe9
+ 607 0149 EF000000 		.4byte	0xef
+ 608 014d 00000000 		.4byte	.LFB68
+ 609 0151 0C000000 		.4byte	.LFE68-.LFB68
+ 610 0155 01       		.uleb128 0x1
+ 611 0156 9C       		.byte	0x9c
+ 612 0157 69010000 		.4byte	0x169
+ 613 015b 0C       		.uleb128 0xc
+ 614 015c 1A030000 		.4byte	.LASF21
+ 615 0160 01       		.byte	0x1
+ 616 0161 EB       		.byte	0xeb
+ 617 0162 3C010000 		.4byte	0x13c
+ 618 0166 01       		.uleb128 0x1
+ 619 0167 53       		.byte	0x53
+ 620 0168 00       		.byte	0
+ 621 0169 0E       		.uleb128 0xe
+ 622 016a F1020000 		.4byte	.LASF23
+ 623 016e 01       		.byte	0x1
+ 624 016f 0B01     		.2byte	0x10b
+ 625 0171 00000000 		.4byte	.LFB69
+ 626 0175 10000000 		.4byte	.LFE69-.LFB69
+ 627 0179 01       		.uleb128 0x1
+ 628 017a 9C       		.byte	0x9c
+ 629 017b 90010000 		.4byte	0x190
+ 630 017f 0F       		.uleb128 0xf
+ 631 0180 8B010000 		.4byte	.LASF25
+ 632 0184 01       		.byte	0x1
+ 633 0185 0B01     		.2byte	0x10b
+ 634 0187 96000000 		.4byte	0x96
+ 635 018b 00000000 		.4byte	.LLST0
+ 636 018f 00       		.byte	0
+ 637 0190 10       		.uleb128 0x10
+ 638 0191 FD000000 		.4byte	.LASF27
+ 639 0195 01       		.byte	0x1
+ 640 0196 2101     		.2byte	0x121
+ 641 0198 96000000 		.4byte	0x96
+ 642 019c 00000000 		.4byte	.LFB70
+ 643 01a0 0C000000 		.4byte	.LFE70-.LFB70
+ 644 01a4 01       		.uleb128 0x1
+ 645 01a5 9C       		.byte	0x9c
+ 646 01a6 BB010000 		.4byte	0x1bb
+ 647 01aa 11       		.uleb128 0x11
+ 648 01ab 8B010000 		.4byte	.LASF25
+ 649 01af 01       		.byte	0x1
+ 650 01b0 2301     		.2byte	0x123
+ 651 01b2 96000000 		.4byte	0x96
+ 652 01b6 21000000 		.4byte	.LLST1
+ 653 01ba 00       		.byte	0
+ 654 01bb 12       		.uleb128 0x12
+ 655 01bc 51000000 		.4byte	.LASF29
+ 656 01c0 01       		.byte	0x1
+ 657 01c1 3C01     		.2byte	0x13c
+ 658 01c3 00000000 		.4byte	.LFB71
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 20
+
+
+ 659 01c7 0C000000 		.4byte	.LFE71-.LFB71
+ 660 01cb 01       		.uleb128 0x1
+ 661 01cc 9C       		.byte	0x9c
+ 662 01cd 13       		.uleb128 0x13
+ 663 01ce DB020000 		.4byte	.LASF50
+ 664 01d2 01       		.byte	0x1
+ 665 01d3 5101     		.2byte	0x151
+ 666 01d5 96000000 		.4byte	0x96
+ 667 01d9 00000000 		.4byte	.LFB72
+ 668 01dd 18000000 		.4byte	.LFE72-.LFB72
+ 669 01e1 01       		.uleb128 0x1
+ 670 01e2 9C       		.byte	0x9c
+ 671 01e3 12       		.uleb128 0x12
+ 672 01e4 65000000 		.4byte	.LASF30
+ 673 01e8 01       		.byte	0x1
+ 674 01e9 6601     		.2byte	0x166
+ 675 01eb 00000000 		.4byte	.LFB73
+ 676 01ef 0C000000 		.4byte	.LFE73-.LFB73
+ 677 01f3 01       		.uleb128 0x1
+ 678 01f4 9C       		.byte	0x9c
+ 679 01f5 0A       		.uleb128 0xa
+ 680 01f6 BC020000 		.4byte	.LASF31
+ 681 01fa 01       		.byte	0x1
+ 682 01fb 3D       		.byte	0x3d
+ 683 01fc 00000000 		.4byte	.LFB63
+ 684 0200 1C000000 		.4byte	.LFE63-.LFB63
+ 685 0204 01       		.uleb128 0x1
+ 686 0205 9C       		.byte	0x9c
+ 687 0206 47020000 		.4byte	0x247
+ 688 020a 14       		.uleb128 0x14
+ 689 020b 06000000 		.4byte	.LVL7
+ 690 020f E3010000 		.4byte	0x1e3
+ 691 0213 15       		.uleb128 0x15
+ 692 0214 0C000000 		.4byte	.LVL8
+ 693 0218 0C010000 		.4byte	0x10c
+ 694 021c 2A020000 		.4byte	0x22a
+ 695 0220 16       		.uleb128 0x16
+ 696 0221 01       		.uleb128 0x1
+ 697 0222 50       		.byte	0x50
+ 698 0223 05       		.uleb128 0x5
+ 699 0224 03       		.byte	0x3
+ 700 0225 00000000 		.4byte	WinTimer_IRQ_Interrupt
+ 701 0229 00       		.byte	0
+ 702 022a 15       		.uleb128 0x15
+ 703 022b 12000000 		.4byte	.LVL9
+ 704 022f 69010000 		.4byte	0x169
+ 705 0233 3D020000 		.4byte	0x23d
+ 706 0237 16       		.uleb128 0x16
+ 707 0238 01       		.uleb128 0x1
+ 708 0239 50       		.byte	0x50
+ 709 023a 01       		.uleb128 0x1
+ 710 023b 31       		.byte	0x31
+ 711 023c 00       		.byte	0
+ 712 023d 14       		.uleb128 0x14
+ 713 023e 16000000 		.4byte	.LVL10
+ 714 0242 BB010000 		.4byte	0x1bb
+ 715 0246 00       		.byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 21
+
+
+ 716 0247 0A       		.uleb128 0xa
+ 717 0248 1E000000 		.4byte	.LASF32
+ 718 024c 01       		.byte	0x1
+ 719 024d 68       		.byte	0x68
+ 720 024e 00000000 		.4byte	.LFB64
+ 721 0252 1A000000 		.4byte	.LFE64-.LFB64
+ 722 0256 01       		.uleb128 0x1
+ 723 0257 9C       		.byte	0x9c
+ 724 0258 A5020000 		.4byte	0x2a5
+ 725 025c 17       		.uleb128 0x17
+ 726 025d CF000000 		.4byte	.LASF24
+ 727 0261 01       		.byte	0x1
+ 728 0262 68       		.byte	0x68
+ 729 0263 EF000000 		.4byte	0xef
+ 730 0267 38000000 		.4byte	.LLST2
+ 731 026b 14       		.uleb128 0x14
+ 732 026c 08000000 		.4byte	.LVL12
+ 733 0270 E3010000 		.4byte	0x1e3
+ 734 0274 15       		.uleb128 0x15
+ 735 0275 0E000000 		.4byte	.LVL13
+ 736 0279 0C010000 		.4byte	0x10c
+ 737 027d 88020000 		.4byte	0x288
+ 738 0281 16       		.uleb128 0x16
+ 739 0282 01       		.uleb128 0x1
+ 740 0283 50       		.byte	0x50
+ 741 0284 02       		.uleb128 0x2
+ 742 0285 74       		.byte	0x74
+ 743 0286 00       		.sleb128 0
+ 744 0287 00       		.byte	0
+ 745 0288 15       		.uleb128 0x15
+ 746 0289 14000000 		.4byte	.LVL14
+ 747 028d 69010000 		.4byte	0x169
+ 748 0291 9B020000 		.4byte	0x29b
+ 749 0295 16       		.uleb128 0x16
+ 750 0296 01       		.uleb128 0x1
+ 751 0297 50       		.byte	0x50
+ 752 0298 01       		.uleb128 0x1
+ 753 0299 31       		.byte	0x31
+ 754 029a 00       		.byte	0
+ 755 029b 14       		.uleb128 0x14
+ 756 029c 18000000 		.4byte	.LVL15
+ 757 02a0 BB010000 		.4byte	0x1bb
+ 758 02a4 00       		.byte	0
+ 759 02a5 0A       		.uleb128 0xa
+ 760 02a6 9D020000 		.4byte	.LASF33
+ 761 02aa 01       		.byte	0x1
+ 762 02ab 86       		.byte	0x86
+ 763 02ac 00000000 		.4byte	.LFB65
+ 764 02b0 14000000 		.4byte	.LFE65-.LFB65
+ 765 02b4 01       		.uleb128 0x1
+ 766 02b5 9C       		.byte	0x9c
+ 767 02b6 CD020000 		.4byte	0x2cd
+ 768 02ba 14       		.uleb128 0x14
+ 769 02bb 06000000 		.4byte	.LVL16
+ 770 02bf E3010000 		.4byte	0x1e3
+ 771 02c3 14       		.uleb128 0x14
+ 772 02c4 0C000000 		.4byte	.LVL17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 22
+
+
+ 773 02c8 0C010000 		.4byte	0x10c
+ 774 02cc 00       		.byte	0
+ 775 02cd 12       		.uleb128 0x12
+ 776 02ce 3D020000 		.4byte	.LASF34
+ 777 02d2 01       		.byte	0x1
+ 778 02d3 8101     		.2byte	0x181
+ 779 02d5 00000000 		.4byte	.LFB74
+ 780 02d9 0C000000 		.4byte	.LFE74-.LFB74
+ 781 02dd 01       		.uleb128 0x1
+ 782 02de 9C       		.byte	0x9c
+ 783 02df 12       		.uleb128 0x12
+ 784 02e0 B5000000 		.4byte	.LASF35
+ 785 02e4 01       		.byte	0x1
+ 786 02e5 9A01     		.2byte	0x19a
+ 787 02e7 00000000 		.4byte	.LFB75
+ 788 02eb 0C000000 		.4byte	.LFE75-.LFB75
+ 789 02ef 01       		.uleb128 0x1
+ 790 02f0 9C       		.byte	0x9c
+ 791 02f1 18       		.uleb128 0x18
+ 792 02f2 F0000000 		.4byte	.LASF36
+ 793 02f6 05       		.byte	0x5
+ 794 02f7 9606     		.2byte	0x696
+ 795 02f9 FD020000 		.4byte	0x2fd
+ 796 02fd 08       		.uleb128 0x8
+ 797 02fe 8B000000 		.4byte	0x8b
+ 798 0302 19       		.uleb128 0x19
+ 799 0303 8A020000 		.4byte	.LASF37
+ 800 0307 06       		.byte	0x6
+ 801 0308 10       		.byte	0x10
+ 802 0309 13030000 		.4byte	0x313
+ 803 030d 05       		.uleb128 0x5
+ 804 030e 03       		.byte	0x3
+ 805 030f 00000000 		.4byte	sent
+ 806 0313 08       		.uleb128 0x8
+ 807 0314 25000000 		.4byte	0x25
+ 808 0318 19       		.uleb128 0x19
+ 809 0319 69030000 		.4byte	.LASF38
+ 810 031d 06       		.byte	0x6
+ 811 031e 11       		.byte	0x11
+ 812 031f 13030000 		.4byte	0x313
+ 813 0323 05       		.uleb128 0x5
+ 814 0324 03       		.byte	0x3
+ 815 0325 00000000 		.4byte	playing
+ 816 0329 19       		.uleb128 0x19
+ 817 032a 53030000 		.4byte	.LASF39
+ 818 032e 06       		.byte	0x6
+ 819 032f 12       		.byte	0x12
+ 820 0330 13030000 		.4byte	0x313
+ 821 0334 05       		.uleb128 0x5
+ 822 0335 03       		.byte	0x3
+ 823 0336 00000000 		.4byte	input_ptr
+ 824 033a 19       		.uleb128 0x19
+ 825 033b AF020000 		.4byte	.LASF40
+ 826 033f 06       		.byte	0x6
+ 827 0340 13       		.byte	0x13
+ 828 0341 13030000 		.4byte	0x313
+ 829 0345 05       		.uleb128 0x5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 23
+
+
+ 830 0346 03       		.byte	0x3
+ 831 0347 00000000 		.4byte	buf_ptr
+ 832 034b 19       		.uleb128 0x19
+ 833 034c 97000000 		.4byte	.LASF41
+ 834 0350 06       		.byte	0x6
+ 835 0351 14       		.byte	0x14
+ 836 0352 D9000000 		.4byte	0xd9
+ 837 0356 05       		.uleb128 0x5
+ 838 0357 03       		.byte	0x3
+ 839 0358 00000000 		.4byte	data
+ 840 035c 1A       		.uleb128 0x1a
+ 841 035d A2000000 		.4byte	0xa2
+ 842 0361 73030000 		.4byte	0x373
+ 843 0365 1B       		.uleb128 0x1b
+ 844 0366 76000000 		.4byte	0x76
+ 845 036a 01       		.byte	0x1
+ 846 036b 1C       		.uleb128 0x1c
+ 847 036c 76000000 		.4byte	0x76
+ 848 0370 FF1F     		.2byte	0x1fff
+ 849 0372 00       		.byte	0
+ 850 0373 19       		.uleb128 0x19
+ 851 0374 AA000000 		.4byte	.LASF42
+ 852 0378 06       		.byte	0x6
+ 853 0379 15       		.byte	0x15
+ 854 037a 84030000 		.4byte	0x384
+ 855 037e 05       		.uleb128 0x5
+ 856 037f 03       		.byte	0x3
+ 857 0380 00000000 		.4byte	input
+ 858 0384 08       		.uleb128 0x8
+ 859 0385 5C030000 		.4byte	0x35c
+ 860 0389 19       		.uleb128 0x19
+ 861 038a D7000000 		.4byte	.LASF43
+ 862 038e 06       		.byte	0x6
+ 863 038f 16       		.byte	0x16
+ 864 0390 13030000 		.4byte	0x313
+ 865 0394 05       		.uleb128 0x5
+ 866 0395 03       		.byte	0x3
+ 867 0396 00000000 		.4byte	ready
+ 868 039a 19       		.uleb128 0x19
+ 869 039b CF020000 		.4byte	.LASF44
+ 870 039f 06       		.byte	0x6
+ 871 03a0 17       		.byte	0x17
+ 872 03a1 13030000 		.4byte	0x313
+ 873 03a5 05       		.uleb128 0x5
+ 874 03a6 03       		.byte	0x3
+ 875 03a7 00000000 		.4byte	timer_ready
+ 876 03ab 19       		.uleb128 0x19
+ 877 03ac 49030000 		.4byte	.LASF45
+ 878 03b0 06       		.byte	0x6
+ 879 03b1 18       		.byte	0x18
+ 880 03b2 13030000 		.4byte	0x313
+ 881 03b6 05       		.uleb128 0x5
+ 882 03b7 03       		.byte	0x3
+ 883 03b8 00000000 		.4byte	use_timer
+ 884 03bc 19       		.uleb128 0x19
+ 885 03bd 00000000 		.4byte	.LASF46
+ 886 03c1 06       		.byte	0x6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 24
+
+
+ 887 03c2 19       		.byte	0x19
+ 888 03c3 13030000 		.4byte	0x313
+ 889 03c7 05       		.uleb128 0x5
+ 890 03c8 03       		.byte	0x3
+ 891 03c9 00000000 		.4byte	disable_timer
+ 892 03cd 00       		.byte	0
+ 893              		.section	.debug_abbrev,"",%progbits
+ 894              	.Ldebug_abbrev0:
+ 895 0000 01       		.uleb128 0x1
+ 896 0001 11       		.uleb128 0x11
+ 897 0002 01       		.byte	0x1
+ 898 0003 25       		.uleb128 0x25
+ 899 0004 0E       		.uleb128 0xe
+ 900 0005 13       		.uleb128 0x13
+ 901 0006 0B       		.uleb128 0xb
+ 902 0007 03       		.uleb128 0x3
+ 903 0008 0E       		.uleb128 0xe
+ 904 0009 1B       		.uleb128 0x1b
+ 905 000a 0E       		.uleb128 0xe
+ 906 000b 55       		.uleb128 0x55
+ 907 000c 17       		.uleb128 0x17
+ 908 000d 11       		.uleb128 0x11
+ 909 000e 01       		.uleb128 0x1
+ 910 000f 10       		.uleb128 0x10
+ 911 0010 17       		.uleb128 0x17
+ 912 0011 00       		.byte	0
+ 913 0012 00       		.byte	0
+ 914 0013 02       		.uleb128 0x2
+ 915 0014 24       		.uleb128 0x24
+ 916 0015 00       		.byte	0
+ 917 0016 0B       		.uleb128 0xb
+ 918 0017 0B       		.uleb128 0xb
+ 919 0018 3E       		.uleb128 0x3e
+ 920 0019 0B       		.uleb128 0xb
+ 921 001a 03       		.uleb128 0x3
+ 922 001b 08       		.uleb128 0x8
+ 923 001c 00       		.byte	0
+ 924 001d 00       		.byte	0
+ 925 001e 03       		.uleb128 0x3
+ 926 001f 24       		.uleb128 0x24
+ 927 0020 00       		.byte	0
+ 928 0021 0B       		.uleb128 0xb
+ 929 0022 0B       		.uleb128 0xb
+ 930 0023 3E       		.uleb128 0x3e
+ 931 0024 0B       		.uleb128 0xb
+ 932 0025 03       		.uleb128 0x3
+ 933 0026 0E       		.uleb128 0xe
+ 934 0027 00       		.byte	0
+ 935 0028 00       		.byte	0
+ 936 0029 04       		.uleb128 0x4
+ 937 002a 16       		.uleb128 0x16
+ 938 002b 00       		.byte	0
+ 939 002c 03       		.uleb128 0x3
+ 940 002d 0E       		.uleb128 0xe
+ 941 002e 3A       		.uleb128 0x3a
+ 942 002f 0B       		.uleb128 0xb
+ 943 0030 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 25
+
+
+ 944 0031 0B       		.uleb128 0xb
+ 945 0032 49       		.uleb128 0x49
+ 946 0033 13       		.uleb128 0x13
+ 947 0034 00       		.byte	0
+ 948 0035 00       		.byte	0
+ 949 0036 05       		.uleb128 0x5
+ 950 0037 0F       		.uleb128 0xf
+ 951 0038 00       		.byte	0
+ 952 0039 0B       		.uleb128 0xb
+ 953 003a 0B       		.uleb128 0xb
+ 954 003b 49       		.uleb128 0x49
+ 955 003c 13       		.uleb128 0x13
+ 956 003d 00       		.byte	0
+ 957 003e 00       		.byte	0
+ 958 003f 06       		.uleb128 0x6
+ 959 0040 15       		.uleb128 0x15
+ 960 0041 00       		.byte	0
+ 961 0042 27       		.uleb128 0x27
+ 962 0043 19       		.uleb128 0x19
+ 963 0044 00       		.byte	0
+ 964 0045 00       		.byte	0
+ 965 0046 07       		.uleb128 0x7
+ 966 0047 16       		.uleb128 0x16
+ 967 0048 00       		.byte	0
+ 968 0049 03       		.uleb128 0x3
+ 969 004a 0E       		.uleb128 0xe
+ 970 004b 3A       		.uleb128 0x3a
+ 971 004c 0B       		.uleb128 0xb
+ 972 004d 3B       		.uleb128 0x3b
+ 973 004e 05       		.uleb128 0x5
+ 974 004f 49       		.uleb128 0x49
+ 975 0050 13       		.uleb128 0x13
+ 976 0051 00       		.byte	0
+ 977 0052 00       		.byte	0
+ 978 0053 08       		.uleb128 0x8
+ 979 0054 35       		.uleb128 0x35
+ 980 0055 00       		.byte	0
+ 981 0056 49       		.uleb128 0x49
+ 982 0057 13       		.uleb128 0x13
+ 983 0058 00       		.byte	0
+ 984 0059 00       		.byte	0
+ 985 005a 09       		.uleb128 0x9
+ 986 005b 2E       		.uleb128 0x2e
+ 987 005c 00       		.byte	0
+ 988 005d 3F       		.uleb128 0x3f
+ 989 005e 19       		.uleb128 0x19
+ 990 005f 03       		.uleb128 0x3
+ 991 0060 0E       		.uleb128 0xe
+ 992 0061 3A       		.uleb128 0x3a
+ 993 0062 0B       		.uleb128 0xb
+ 994 0063 3B       		.uleb128 0x3b
+ 995 0064 0B       		.uleb128 0xb
+ 996 0065 27       		.uleb128 0x27
+ 997 0066 19       		.uleb128 0x19
+ 998 0067 11       		.uleb128 0x11
+ 999 0068 01       		.uleb128 0x1
+ 1000 0069 12       		.uleb128 0x12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 26
+
+
+ 1001 006a 06       		.uleb128 0x6
+ 1002 006b 40       		.uleb128 0x40
+ 1003 006c 18       		.uleb128 0x18
+ 1004 006d 9742     		.uleb128 0x2117
+ 1005 006f 19       		.uleb128 0x19
+ 1006 0070 00       		.byte	0
+ 1007 0071 00       		.byte	0
+ 1008 0072 0A       		.uleb128 0xa
+ 1009 0073 2E       		.uleb128 0x2e
+ 1010 0074 01       		.byte	0x1
+ 1011 0075 3F       		.uleb128 0x3f
+ 1012 0076 19       		.uleb128 0x19
+ 1013 0077 03       		.uleb128 0x3
+ 1014 0078 0E       		.uleb128 0xe
+ 1015 0079 3A       		.uleb128 0x3a
+ 1016 007a 0B       		.uleb128 0xb
+ 1017 007b 3B       		.uleb128 0x3b
+ 1018 007c 0B       		.uleb128 0xb
+ 1019 007d 27       		.uleb128 0x27
+ 1020 007e 19       		.uleb128 0x19
+ 1021 007f 11       		.uleb128 0x11
+ 1022 0080 01       		.uleb128 0x1
+ 1023 0081 12       		.uleb128 0x12
+ 1024 0082 06       		.uleb128 0x6
+ 1025 0083 40       		.uleb128 0x40
+ 1026 0084 18       		.uleb128 0x18
+ 1027 0085 9742     		.uleb128 0x2117
+ 1028 0087 19       		.uleb128 0x19
+ 1029 0088 01       		.uleb128 0x1
+ 1030 0089 13       		.uleb128 0x13
+ 1031 008a 00       		.byte	0
+ 1032 008b 00       		.byte	0
+ 1033 008c 0B       		.uleb128 0xb
+ 1034 008d 05       		.uleb128 0x5
+ 1035 008e 00       		.byte	0
+ 1036 008f 03       		.uleb128 0x3
+ 1037 0090 0E       		.uleb128 0xe
+ 1038 0091 3A       		.uleb128 0x3a
+ 1039 0092 0B       		.uleb128 0xb
+ 1040 0093 3B       		.uleb128 0x3b
+ 1041 0094 0B       		.uleb128 0xb
+ 1042 0095 49       		.uleb128 0x49
+ 1043 0096 13       		.uleb128 0x13
+ 1044 0097 02       		.uleb128 0x2
+ 1045 0098 18       		.uleb128 0x18
+ 1046 0099 00       		.byte	0
+ 1047 009a 00       		.byte	0
+ 1048 009b 0C       		.uleb128 0xc
+ 1049 009c 34       		.uleb128 0x34
+ 1050 009d 00       		.byte	0
+ 1051 009e 03       		.uleb128 0x3
+ 1052 009f 0E       		.uleb128 0xe
+ 1053 00a0 3A       		.uleb128 0x3a
+ 1054 00a1 0B       		.uleb128 0xb
+ 1055 00a2 3B       		.uleb128 0x3b
+ 1056 00a3 0B       		.uleb128 0xb
+ 1057 00a4 49       		.uleb128 0x49
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 27
+
+
+ 1058 00a5 13       		.uleb128 0x13
+ 1059 00a6 02       		.uleb128 0x2
+ 1060 00a7 18       		.uleb128 0x18
+ 1061 00a8 00       		.byte	0
+ 1062 00a9 00       		.byte	0
+ 1063 00aa 0D       		.uleb128 0xd
+ 1064 00ab 2E       		.uleb128 0x2e
+ 1065 00ac 01       		.byte	0x1
+ 1066 00ad 3F       		.uleb128 0x3f
+ 1067 00ae 19       		.uleb128 0x19
+ 1068 00af 03       		.uleb128 0x3
+ 1069 00b0 0E       		.uleb128 0xe
+ 1070 00b1 3A       		.uleb128 0x3a
+ 1071 00b2 0B       		.uleb128 0xb
+ 1072 00b3 3B       		.uleb128 0x3b
+ 1073 00b4 0B       		.uleb128 0xb
+ 1074 00b5 27       		.uleb128 0x27
+ 1075 00b6 19       		.uleb128 0x19
+ 1076 00b7 49       		.uleb128 0x49
+ 1077 00b8 13       		.uleb128 0x13
+ 1078 00b9 11       		.uleb128 0x11
+ 1079 00ba 01       		.uleb128 0x1
+ 1080 00bb 12       		.uleb128 0x12
+ 1081 00bc 06       		.uleb128 0x6
+ 1082 00bd 40       		.uleb128 0x40
+ 1083 00be 18       		.uleb128 0x18
+ 1084 00bf 9742     		.uleb128 0x2117
+ 1085 00c1 19       		.uleb128 0x19
+ 1086 00c2 01       		.uleb128 0x1
+ 1087 00c3 13       		.uleb128 0x13
+ 1088 00c4 00       		.byte	0
+ 1089 00c5 00       		.byte	0
+ 1090 00c6 0E       		.uleb128 0xe
+ 1091 00c7 2E       		.uleb128 0x2e
+ 1092 00c8 01       		.byte	0x1
+ 1093 00c9 3F       		.uleb128 0x3f
+ 1094 00ca 19       		.uleb128 0x19
+ 1095 00cb 03       		.uleb128 0x3
+ 1096 00cc 0E       		.uleb128 0xe
+ 1097 00cd 3A       		.uleb128 0x3a
+ 1098 00ce 0B       		.uleb128 0xb
+ 1099 00cf 3B       		.uleb128 0x3b
+ 1100 00d0 05       		.uleb128 0x5
+ 1101 00d1 27       		.uleb128 0x27
+ 1102 00d2 19       		.uleb128 0x19
+ 1103 00d3 11       		.uleb128 0x11
+ 1104 00d4 01       		.uleb128 0x1
+ 1105 00d5 12       		.uleb128 0x12
+ 1106 00d6 06       		.uleb128 0x6
+ 1107 00d7 40       		.uleb128 0x40
+ 1108 00d8 18       		.uleb128 0x18
+ 1109 00d9 9742     		.uleb128 0x2117
+ 1110 00db 19       		.uleb128 0x19
+ 1111 00dc 01       		.uleb128 0x1
+ 1112 00dd 13       		.uleb128 0x13
+ 1113 00de 00       		.byte	0
+ 1114 00df 00       		.byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 28
+
+
+ 1115 00e0 0F       		.uleb128 0xf
+ 1116 00e1 05       		.uleb128 0x5
+ 1117 00e2 00       		.byte	0
+ 1118 00e3 03       		.uleb128 0x3
+ 1119 00e4 0E       		.uleb128 0xe
+ 1120 00e5 3A       		.uleb128 0x3a
+ 1121 00e6 0B       		.uleb128 0xb
+ 1122 00e7 3B       		.uleb128 0x3b
+ 1123 00e8 05       		.uleb128 0x5
+ 1124 00e9 49       		.uleb128 0x49
+ 1125 00ea 13       		.uleb128 0x13
+ 1126 00eb 02       		.uleb128 0x2
+ 1127 00ec 17       		.uleb128 0x17
+ 1128 00ed 00       		.byte	0
+ 1129 00ee 00       		.byte	0
+ 1130 00ef 10       		.uleb128 0x10
+ 1131 00f0 2E       		.uleb128 0x2e
+ 1132 00f1 01       		.byte	0x1
+ 1133 00f2 3F       		.uleb128 0x3f
+ 1134 00f3 19       		.uleb128 0x19
+ 1135 00f4 03       		.uleb128 0x3
+ 1136 00f5 0E       		.uleb128 0xe
+ 1137 00f6 3A       		.uleb128 0x3a
+ 1138 00f7 0B       		.uleb128 0xb
+ 1139 00f8 3B       		.uleb128 0x3b
+ 1140 00f9 05       		.uleb128 0x5
+ 1141 00fa 27       		.uleb128 0x27
+ 1142 00fb 19       		.uleb128 0x19
+ 1143 00fc 49       		.uleb128 0x49
+ 1144 00fd 13       		.uleb128 0x13
+ 1145 00fe 11       		.uleb128 0x11
+ 1146 00ff 01       		.uleb128 0x1
+ 1147 0100 12       		.uleb128 0x12
+ 1148 0101 06       		.uleb128 0x6
+ 1149 0102 40       		.uleb128 0x40
+ 1150 0103 18       		.uleb128 0x18
+ 1151 0104 9742     		.uleb128 0x2117
+ 1152 0106 19       		.uleb128 0x19
+ 1153 0107 01       		.uleb128 0x1
+ 1154 0108 13       		.uleb128 0x13
+ 1155 0109 00       		.byte	0
+ 1156 010a 00       		.byte	0
+ 1157 010b 11       		.uleb128 0x11
+ 1158 010c 34       		.uleb128 0x34
+ 1159 010d 00       		.byte	0
+ 1160 010e 03       		.uleb128 0x3
+ 1161 010f 0E       		.uleb128 0xe
+ 1162 0110 3A       		.uleb128 0x3a
+ 1163 0111 0B       		.uleb128 0xb
+ 1164 0112 3B       		.uleb128 0x3b
+ 1165 0113 05       		.uleb128 0x5
+ 1166 0114 49       		.uleb128 0x49
+ 1167 0115 13       		.uleb128 0x13
+ 1168 0116 02       		.uleb128 0x2
+ 1169 0117 17       		.uleb128 0x17
+ 1170 0118 00       		.byte	0
+ 1171 0119 00       		.byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 29
+
+
+ 1172 011a 12       		.uleb128 0x12
+ 1173 011b 2E       		.uleb128 0x2e
+ 1174 011c 00       		.byte	0
+ 1175 011d 3F       		.uleb128 0x3f
+ 1176 011e 19       		.uleb128 0x19
+ 1177 011f 03       		.uleb128 0x3
+ 1178 0120 0E       		.uleb128 0xe
+ 1179 0121 3A       		.uleb128 0x3a
+ 1180 0122 0B       		.uleb128 0xb
+ 1181 0123 3B       		.uleb128 0x3b
+ 1182 0124 05       		.uleb128 0x5
+ 1183 0125 27       		.uleb128 0x27
+ 1184 0126 19       		.uleb128 0x19
+ 1185 0127 11       		.uleb128 0x11
+ 1186 0128 01       		.uleb128 0x1
+ 1187 0129 12       		.uleb128 0x12
+ 1188 012a 06       		.uleb128 0x6
+ 1189 012b 40       		.uleb128 0x40
+ 1190 012c 18       		.uleb128 0x18
+ 1191 012d 9742     		.uleb128 0x2117
+ 1192 012f 19       		.uleb128 0x19
+ 1193 0130 00       		.byte	0
+ 1194 0131 00       		.byte	0
+ 1195 0132 13       		.uleb128 0x13
+ 1196 0133 2E       		.uleb128 0x2e
+ 1197 0134 00       		.byte	0
+ 1198 0135 3F       		.uleb128 0x3f
+ 1199 0136 19       		.uleb128 0x19
+ 1200 0137 03       		.uleb128 0x3
+ 1201 0138 0E       		.uleb128 0xe
+ 1202 0139 3A       		.uleb128 0x3a
+ 1203 013a 0B       		.uleb128 0xb
+ 1204 013b 3B       		.uleb128 0x3b
+ 1205 013c 05       		.uleb128 0x5
+ 1206 013d 27       		.uleb128 0x27
+ 1207 013e 19       		.uleb128 0x19
+ 1208 013f 49       		.uleb128 0x49
+ 1209 0140 13       		.uleb128 0x13
+ 1210 0141 11       		.uleb128 0x11
+ 1211 0142 01       		.uleb128 0x1
+ 1212 0143 12       		.uleb128 0x12
+ 1213 0144 06       		.uleb128 0x6
+ 1214 0145 40       		.uleb128 0x40
+ 1215 0146 18       		.uleb128 0x18
+ 1216 0147 9742     		.uleb128 0x2117
+ 1217 0149 19       		.uleb128 0x19
+ 1218 014a 00       		.byte	0
+ 1219 014b 00       		.byte	0
+ 1220 014c 14       		.uleb128 0x14
+ 1221 014d 898201   		.uleb128 0x4109
+ 1222 0150 00       		.byte	0
+ 1223 0151 11       		.uleb128 0x11
+ 1224 0152 01       		.uleb128 0x1
+ 1225 0153 31       		.uleb128 0x31
+ 1226 0154 13       		.uleb128 0x13
+ 1227 0155 00       		.byte	0
+ 1228 0156 00       		.byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 30
+
+
+ 1229 0157 15       		.uleb128 0x15
+ 1230 0158 898201   		.uleb128 0x4109
+ 1231 015b 01       		.byte	0x1
+ 1232 015c 11       		.uleb128 0x11
+ 1233 015d 01       		.uleb128 0x1
+ 1234 015e 31       		.uleb128 0x31
+ 1235 015f 13       		.uleb128 0x13
+ 1236 0160 01       		.uleb128 0x1
+ 1237 0161 13       		.uleb128 0x13
+ 1238 0162 00       		.byte	0
+ 1239 0163 00       		.byte	0
+ 1240 0164 16       		.uleb128 0x16
+ 1241 0165 8A8201   		.uleb128 0x410a
+ 1242 0168 00       		.byte	0
+ 1243 0169 02       		.uleb128 0x2
+ 1244 016a 18       		.uleb128 0x18
+ 1245 016b 9142     		.uleb128 0x2111
+ 1246 016d 18       		.uleb128 0x18
+ 1247 016e 00       		.byte	0
+ 1248 016f 00       		.byte	0
+ 1249 0170 17       		.uleb128 0x17
+ 1250 0171 05       		.uleb128 0x5
+ 1251 0172 00       		.byte	0
+ 1252 0173 03       		.uleb128 0x3
+ 1253 0174 0E       		.uleb128 0xe
+ 1254 0175 3A       		.uleb128 0x3a
+ 1255 0176 0B       		.uleb128 0xb
+ 1256 0177 3B       		.uleb128 0x3b
+ 1257 0178 0B       		.uleb128 0xb
+ 1258 0179 49       		.uleb128 0x49
+ 1259 017a 13       		.uleb128 0x13
+ 1260 017b 02       		.uleb128 0x2
+ 1261 017c 17       		.uleb128 0x17
+ 1262 017d 00       		.byte	0
+ 1263 017e 00       		.byte	0
+ 1264 017f 18       		.uleb128 0x18
+ 1265 0180 34       		.uleb128 0x34
+ 1266 0181 00       		.byte	0
+ 1267 0182 03       		.uleb128 0x3
+ 1268 0183 0E       		.uleb128 0xe
+ 1269 0184 3A       		.uleb128 0x3a
+ 1270 0185 0B       		.uleb128 0xb
+ 1271 0186 3B       		.uleb128 0x3b
+ 1272 0187 05       		.uleb128 0x5
+ 1273 0188 49       		.uleb128 0x49
+ 1274 0189 13       		.uleb128 0x13
+ 1275 018a 3F       		.uleb128 0x3f
+ 1276 018b 19       		.uleb128 0x19
+ 1277 018c 3C       		.uleb128 0x3c
+ 1278 018d 19       		.uleb128 0x19
+ 1279 018e 00       		.byte	0
+ 1280 018f 00       		.byte	0
+ 1281 0190 19       		.uleb128 0x19
+ 1282 0191 34       		.uleb128 0x34
+ 1283 0192 00       		.byte	0
+ 1284 0193 03       		.uleb128 0x3
+ 1285 0194 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 31
+
+
+ 1286 0195 3A       		.uleb128 0x3a
+ 1287 0196 0B       		.uleb128 0xb
+ 1288 0197 3B       		.uleb128 0x3b
+ 1289 0198 0B       		.uleb128 0xb
+ 1290 0199 49       		.uleb128 0x49
+ 1291 019a 13       		.uleb128 0x13
+ 1292 019b 3F       		.uleb128 0x3f
+ 1293 019c 19       		.uleb128 0x19
+ 1294 019d 02       		.uleb128 0x2
+ 1295 019e 18       		.uleb128 0x18
+ 1296 019f 00       		.byte	0
+ 1297 01a0 00       		.byte	0
+ 1298 01a1 1A       		.uleb128 0x1a
+ 1299 01a2 01       		.uleb128 0x1
+ 1300 01a3 01       		.byte	0x1
+ 1301 01a4 49       		.uleb128 0x49
+ 1302 01a5 13       		.uleb128 0x13
+ 1303 01a6 01       		.uleb128 0x1
+ 1304 01a7 13       		.uleb128 0x13
+ 1305 01a8 00       		.byte	0
+ 1306 01a9 00       		.byte	0
+ 1307 01aa 1B       		.uleb128 0x1b
+ 1308 01ab 21       		.uleb128 0x21
+ 1309 01ac 00       		.byte	0
+ 1310 01ad 49       		.uleb128 0x49
+ 1311 01ae 13       		.uleb128 0x13
+ 1312 01af 2F       		.uleb128 0x2f
+ 1313 01b0 0B       		.uleb128 0xb
+ 1314 01b1 00       		.byte	0
+ 1315 01b2 00       		.byte	0
+ 1316 01b3 1C       		.uleb128 0x1c
+ 1317 01b4 21       		.uleb128 0x21
+ 1318 01b5 00       		.byte	0
+ 1319 01b6 49       		.uleb128 0x49
+ 1320 01b7 13       		.uleb128 0x13
+ 1321 01b8 2F       		.uleb128 0x2f
+ 1322 01b9 05       		.uleb128 0x5
+ 1323 01ba 00       		.byte	0
+ 1324 01bb 00       		.byte	0
+ 1325 01bc 00       		.byte	0
+ 1326              		.section	.debug_loc,"",%progbits
+ 1327              	.Ldebug_loc0:
+ 1328              	.LLST0:
+ 1329 0000 00000000 		.4byte	.LVL3
+ 1330 0004 02000000 		.4byte	.LVL4
+ 1331 0008 0100     		.2byte	0x1
+ 1332 000a 50       		.byte	0x50
+ 1333 000b 02000000 		.4byte	.LVL4
+ 1334 000f 10000000 		.4byte	.LFE69
+ 1335 0013 0400     		.2byte	0x4
+ 1336 0015 F3       		.byte	0xf3
+ 1337 0016 01       		.uleb128 0x1
+ 1338 0017 50       		.byte	0x50
+ 1339 0018 9F       		.byte	0x9f
+ 1340 0019 00000000 		.4byte	0
+ 1341 001d 00000000 		.4byte	0
+ 1342              	.LLST1:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 32
+
+
+ 1343 0021 04000000 		.4byte	.LVL5
+ 1344 0025 06000000 		.4byte	.LVL6
+ 1345 0029 0500     		.2byte	0x5
+ 1346 002b 70       		.byte	0x70
+ 1347 002c 00       		.sleb128 0
+ 1348 002d 35       		.byte	0x35
+ 1349 002e 25       		.byte	0x25
+ 1350 002f 9F       		.byte	0x9f
+ 1351 0030 00000000 		.4byte	0
+ 1352 0034 00000000 		.4byte	0
+ 1353              	.LLST2:
+ 1354 0038 00000000 		.4byte	.LVL11
+ 1355 003c 07000000 		.4byte	.LVL12-1
+ 1356 0040 0100     		.2byte	0x1
+ 1357 0042 50       		.byte	0x50
+ 1358 0043 07000000 		.4byte	.LVL12-1
+ 1359 0047 1A000000 		.4byte	.LFE64
+ 1360 004b 0100     		.2byte	0x1
+ 1361 004d 54       		.byte	0x54
+ 1362 004e 00000000 		.4byte	0
+ 1363 0052 00000000 		.4byte	0
+ 1364              		.section	.debug_aranges,"",%progbits
+ 1365 0000 7C000000 		.4byte	0x7c
+ 1366 0004 0200     		.2byte	0x2
+ 1367 0006 00000000 		.4byte	.Ldebug_info0
+ 1368 000a 04       		.byte	0x4
+ 1369 000b 00       		.byte	0
+ 1370 000c 0000     		.2byte	0
+ 1371 000e 0000     		.2byte	0
+ 1372 0010 00000000 		.4byte	.LFB66
+ 1373 0014 60000000 		.4byte	.LFE66-.LFB66
+ 1374 0018 00000000 		.4byte	.LFB67
+ 1375 001c 0C000000 		.4byte	.LFE67-.LFB67
+ 1376 0020 00000000 		.4byte	.LFB68
+ 1377 0024 0C000000 		.4byte	.LFE68-.LFB68
+ 1378 0028 00000000 		.4byte	.LFB69
+ 1379 002c 10000000 		.4byte	.LFE69-.LFB69
+ 1380 0030 00000000 		.4byte	.LFB70
+ 1381 0034 0C000000 		.4byte	.LFE70-.LFB70
+ 1382 0038 00000000 		.4byte	.LFB71
+ 1383 003c 0C000000 		.4byte	.LFE71-.LFB71
+ 1384 0040 00000000 		.4byte	.LFB72
+ 1385 0044 18000000 		.4byte	.LFE72-.LFB72
+ 1386 0048 00000000 		.4byte	.LFB73
+ 1387 004c 0C000000 		.4byte	.LFE73-.LFB73
+ 1388 0050 00000000 		.4byte	.LFB63
+ 1389 0054 1C000000 		.4byte	.LFE63-.LFB63
+ 1390 0058 00000000 		.4byte	.LFB64
+ 1391 005c 1A000000 		.4byte	.LFE64-.LFB64
+ 1392 0060 00000000 		.4byte	.LFB65
+ 1393 0064 14000000 		.4byte	.LFE65-.LFB65
+ 1394 0068 00000000 		.4byte	.LFB74
+ 1395 006c 0C000000 		.4byte	.LFE74-.LFB74
+ 1396 0070 00000000 		.4byte	.LFB75
+ 1397 0074 0C000000 		.4byte	.LFE75-.LFB75
+ 1398 0078 00000000 		.4byte	0
+ 1399 007c 00000000 		.4byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 33
+
+
+ 1400              		.section	.debug_ranges,"",%progbits
+ 1401              	.Ldebug_ranges0:
+ 1402 0000 00000000 		.4byte	.LFB66
+ 1403 0004 60000000 		.4byte	.LFE66
+ 1404 0008 00000000 		.4byte	.LFB67
+ 1405 000c 0C000000 		.4byte	.LFE67
+ 1406 0010 00000000 		.4byte	.LFB68
+ 1407 0014 0C000000 		.4byte	.LFE68
+ 1408 0018 00000000 		.4byte	.LFB69
+ 1409 001c 10000000 		.4byte	.LFE69
+ 1410 0020 00000000 		.4byte	.LFB70
+ 1411 0024 0C000000 		.4byte	.LFE70
+ 1412 0028 00000000 		.4byte	.LFB71
+ 1413 002c 0C000000 		.4byte	.LFE71
+ 1414 0030 00000000 		.4byte	.LFB72
+ 1415 0034 18000000 		.4byte	.LFE72
+ 1416 0038 00000000 		.4byte	.LFB73
+ 1417 003c 0C000000 		.4byte	.LFE73
+ 1418 0040 00000000 		.4byte	.LFB63
+ 1419 0044 1C000000 		.4byte	.LFE63
+ 1420 0048 00000000 		.4byte	.LFB64
+ 1421 004c 1A000000 		.4byte	.LFE64
+ 1422 0050 00000000 		.4byte	.LFB65
+ 1423 0054 14000000 		.4byte	.LFE65
+ 1424 0058 00000000 		.4byte	.LFB74
+ 1425 005c 0C000000 		.4byte	.LFE74
+ 1426 0060 00000000 		.4byte	.LFB75
+ 1427 0064 0C000000 		.4byte	.LFE75
+ 1428 0068 00000000 		.4byte	0
+ 1429 006c 00000000 		.4byte	0
+ 1430              		.section	.debug_line,"",%progbits
+ 1431              	.Ldebug_line0:
+ 1432 0000 66020000 		.section	.debug_str,"MS",%progbits,1
+ 1432      02007401 
+ 1432      00000201 
+ 1432      FB0E0D00 
+ 1432      01010101 
+ 1433              	.LASF46:
+ 1434 0000 64697361 		.ascii	"disable_timer\000"
+ 1434      626C655F 
+ 1434      74696D65 
+ 1434      7200
+ 1435              	.LASF19:
+ 1436 000e 72656733 		.ascii	"reg32\000"
+ 1436      3200
+ 1437              	.LASF11:
+ 1438 0014 5F5F696E 		.ascii	"__int32_t\000"
+ 1438      7433325F 
+ 1438      7400
+ 1439              	.LASF32:
+ 1440 001e 57696E54 		.ascii	"WinTimer_IRQ_StartEx\000"
+ 1440      696D6572 
+ 1440      5F495251 
+ 1440      5F537461 
+ 1440      72744578 
+ 1441              	.LASF17:
+ 1442 0033 646F7562 		.ascii	"double\000"
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 34
+
+
+ 1442      6C6500
+ 1443              	.LASF26:
+ 1444 003a 57696E54 		.ascii	"WinTimer_IRQ_GetVector\000"
+ 1444      696D6572 
+ 1444      5F495251 
+ 1444      5F476574 
+ 1444      56656374 
+ 1445              	.LASF29:
+ 1446 0051 57696E54 		.ascii	"WinTimer_IRQ_Enable\000"
+ 1446      696D6572 
+ 1446      5F495251 
+ 1446      5F456E61 
+ 1446      626C6500 
+ 1447              	.LASF30:
+ 1448 0065 57696E54 		.ascii	"WinTimer_IRQ_Disable\000"
+ 1448      696D6572 
+ 1448      5F495251 
+ 1448      5F446973 
+ 1448      61626C65 
+ 1449              	.LASF28:
+ 1450 007a 57696E54 		.ascii	"WinTimer_IRQ_Interrupt\000"
+ 1450      696D6572 
+ 1450      5F495251 
+ 1450      5F496E74 
+ 1450      65727275 
+ 1451              	.LASF16:
+ 1452 0091 666C6F61 		.ascii	"float\000"
+ 1452      7400
+ 1453              	.LASF41:
+ 1454 0097 64617461 		.ascii	"data\000"
+ 1454      00
+ 1455              	.LASF2:
+ 1456 009c 756E7369 		.ascii	"unsigned char\000"
+ 1456      676E6564 
+ 1456      20636861 
+ 1456      7200
+ 1457              	.LASF42:
+ 1458 00aa 696E7075 		.ascii	"input\000"
+ 1458      7400
+ 1459              	.LASF18:
+ 1460 00b0 72656738 		.ascii	"reg8\000"
+ 1460      00
+ 1461              	.LASF35:
+ 1462 00b5 57696E54 		.ascii	"WinTimer_IRQ_ClearPending\000"
+ 1462      696D6572 
+ 1462      5F495251 
+ 1462      5F436C65 
+ 1462      61725065 
+ 1463              	.LASF24:
+ 1464 00cf 61646472 		.ascii	"address\000"
+ 1464      65737300 
+ 1465              	.LASF43:
+ 1466 00d7 72656164 		.ascii	"ready\000"
+ 1466      7900
+ 1467              	.LASF4:
+ 1468 00dd 73686F72 		.ascii	"short unsigned int\000"
+ 1468      7420756E 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 35
+
+
+ 1468      7369676E 
+ 1468      65642069 
+ 1468      6E7400
+ 1469              	.LASF36:
+ 1470 00f0 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1470      52784275 
+ 1470      66666572 
+ 1470      00
+ 1471              	.LASF27:
+ 1472 00fd 57696E54 		.ascii	"WinTimer_IRQ_GetPriority\000"
+ 1472      696D6572 
+ 1472      5F495251 
+ 1472      5F476574 
+ 1472      5072696F 
+ 1473              	.LASF48:
+ 1474 0116 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\WinTimer_IRQ.c\000"
+ 1474      6E657261 
+ 1474      7465645F 
+ 1474      536F7572 
+ 1474      63655C50 
+ 1475              	.LASF6:
+ 1476 013e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1476      20756E73 
+ 1476      69676E65 
+ 1476      6420696E 
+ 1476      7400
+ 1477              	.LASF49:
+ 1478 0150 433A5C55 		.ascii	"C:\\Users\\Thomas\\Documents\\PSoC Creator\\TASBot\\"
+ 1478      73657273 
+ 1478      5C54686F 
+ 1478      6D61735C 
+ 1478      446F6375 
+ 1479 017e 54415342 		.ascii	"TASBot.cydsn\000"
+ 1479      6F742E63 
+ 1479      7964736E 
+ 1479      00
+ 1480              	.LASF25:
+ 1481 018b 7072696F 		.ascii	"priority\000"
+ 1481      72697479 
+ 1481      00
+ 1482              	.LASF14:
+ 1483 0194 75696E74 		.ascii	"uint16\000"
+ 1483      313600
+ 1484              	.LASF15:
+ 1485 019b 75696E74 		.ascii	"uint32\000"
+ 1485      333200
+ 1486              	.LASF47:
+ 1487 01a2 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1487      4320342E 
+ 1487      392E3320 
+ 1487      32303135 
+ 1487      30333033 
+ 1488 01d5 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1488      20726576 
+ 1488      6973696F 
+ 1488      6E203232 
+ 1488      31323230 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 36
+
+
+ 1489 0208 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1489      66756E63 
+ 1489      74696F6E 
+ 1489      2D736563 
+ 1489      74696F6E 
+ 1490              	.LASF0:
+ 1491 0230 756E7369 		.ascii	"unsigned int\000"
+ 1491      676E6564 
+ 1491      20696E74 
+ 1491      00
+ 1492              	.LASF34:
+ 1493 023d 57696E54 		.ascii	"WinTimer_IRQ_SetPending\000"
+ 1493      696D6572 
+ 1493      5F495251 
+ 1493      5F536574 
+ 1493      50656E64 
+ 1494              	.LASF8:
+ 1495 0255 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1495      206C6F6E 
+ 1495      6720756E 
+ 1495      7369676E 
+ 1495      65642069 
+ 1496              	.LASF20:
+ 1497 026c 63796973 		.ascii	"cyisraddress\000"
+ 1497      72616464 
+ 1497      72657373 
+ 1497      00
+ 1498              	.LASF12:
+ 1499 0279 696E7433 		.ascii	"int32_t\000"
+ 1499      325F7400 
+ 1500              	.LASF9:
+ 1501 0281 73697A65 		.ascii	"sizetype\000"
+ 1501      74797065 
+ 1501      00
+ 1502              	.LASF37:
+ 1503 028a 73656E74 		.ascii	"sent\000"
+ 1503      00
+ 1504              	.LASF7:
+ 1505 028f 6C6F6E67 		.ascii	"long long int\000"
+ 1505      206C6F6E 
+ 1505      6720696E 
+ 1505      7400
+ 1506              	.LASF33:
+ 1507 029d 57696E54 		.ascii	"WinTimer_IRQ_Stop\000"
+ 1507      696D6572 
+ 1507      5F495251 
+ 1507      5F53746F 
+ 1507      7000
+ 1508              	.LASF40:
+ 1509 02af 6275665F 		.ascii	"buf_ptr\000"
+ 1509      70747200 
+ 1510              	.LASF10:
+ 1511 02b7 63686172 		.ascii	"char\000"
+ 1511      00
+ 1512              	.LASF31:
+ 1513 02bc 57696E54 		.ascii	"WinTimer_IRQ_Start\000"
+ 1513      696D6572 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 37
+
+
+ 1513      5F495251 
+ 1513      5F537461 
+ 1513      727400
+ 1514              	.LASF44:
+ 1515 02cf 74696D65 		.ascii	"timer_ready\000"
+ 1515      725F7265 
+ 1515      61647900 
+ 1516              	.LASF50:
+ 1517 02db 57696E54 		.ascii	"WinTimer_IRQ_GetState\000"
+ 1517      696D6572 
+ 1517      5F495251 
+ 1517      5F476574 
+ 1517      53746174 
+ 1518              	.LASF23:
+ 1519 02f1 57696E54 		.ascii	"WinTimer_IRQ_SetPriority\000"
+ 1519      696D6572 
+ 1519      5F495251 
+ 1519      5F536574 
+ 1519      5072696F 
+ 1520              	.LASF3:
+ 1521 030a 73686F72 		.ascii	"short int\000"
+ 1521      7420696E 
+ 1521      7400
+ 1522              	.LASF13:
+ 1523 0314 75696E74 		.ascii	"uint8\000"
+ 1523      3800
+ 1524              	.LASF21:
+ 1525 031a 72616D56 		.ascii	"ramVectorTable\000"
+ 1525      6563746F 
+ 1525      72546162 
+ 1525      6C6500
+ 1526              	.LASF22:
+ 1527 0329 57696E54 		.ascii	"WinTimer_IRQ_SetVector\000"
+ 1527      696D6572 
+ 1527      5F495251 
+ 1527      5F536574 
+ 1527      56656374 
+ 1528              	.LASF5:
+ 1529 0340 6C6F6E67 		.ascii	"long int\000"
+ 1529      20696E74 
+ 1529      00
+ 1530              	.LASF45:
+ 1531 0349 7573655F 		.ascii	"use_timer\000"
+ 1531      74696D65 
+ 1531      7200
+ 1532              	.LASF39:
+ 1533 0353 696E7075 		.ascii	"input_ptr\000"
+ 1533      745F7074 
+ 1533      7200
+ 1534              	.LASF1:
+ 1535 035d 7369676E 		.ascii	"signed char\000"
+ 1535      65642063 
+ 1535      68617200 
+ 1536              	.LASF38:
+ 1537 0369 706C6179 		.ascii	"playing\000"
+ 1537      696E6700 
+ 1538              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccRZX1Ar.s 			page 38
+
+

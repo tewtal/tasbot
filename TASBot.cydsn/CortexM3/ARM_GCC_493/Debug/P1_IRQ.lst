@@ -1,0 +1,2241 @@
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"P1_IRQ.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.P1_IRQ_Interrupt,"ax",%progbits
+  19              		.align	2
+  20              		.global	P1_IRQ_Interrupt
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	P1_IRQ_Interrupt, %function
+  24              	P1_IRQ_Interrupt:
+  25              	.LFB66:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\P1_IRQ.c"
+   1:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/P1_IRQ.c **** * File Name: P1_IRQ.c  
+   3:.\Generated_Source\PSoC5/P1_IRQ.c **** * Version 1.70
+   4:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+   5:.\Generated_Source\PSoC5/P1_IRQ.c **** *  Description:
+   6:.\Generated_Source\PSoC5/P1_IRQ.c **** *   API for controlling the state of an interrupt.
+   7:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+   8:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+   9:.\Generated_Source\PSoC5/P1_IRQ.c **** *  Note:
+  10:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+  11:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+  12:.\Generated_Source\PSoC5/P1_IRQ.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:.\Generated_Source\PSoC5/P1_IRQ.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:.\Generated_Source\PSoC5/P1_IRQ.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:.\Generated_Source\PSoC5/P1_IRQ.c **** * the software package with which this file was provided.
+  16:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+  17:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  18:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  19:.\Generated_Source\PSoC5/P1_IRQ.c **** #include <cydevice_trm.h>
+  20:.\Generated_Source\PSoC5/P1_IRQ.c **** #include <CyLib.h>
+  21:.\Generated_Source\PSoC5/P1_IRQ.c **** #include <P1_IRQ.h>
+  22:.\Generated_Source\PSoC5/P1_IRQ.c **** #include "cyapicallbacks.h"
+  23:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  24:.\Generated_Source\PSoC5/P1_IRQ.c **** #if !defined(P1_IRQ__REMOVED) /* Check for removal by optimization */
+  25:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  26:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+  27:.\Generated_Source\PSoC5/P1_IRQ.c **** *  Place your includes, defines and code here 
+  28:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************/
+  29:.\Generated_Source\PSoC5/P1_IRQ.c **** /* `#START P1_IRQ_intc` */
+  30:.\Generated_Source\PSoC5/P1_IRQ.c **** #include <P1.h>
+  31:.\Generated_Source\PSoC5/P1_IRQ.c **** #include <main.h>
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/P1_IRQ.c **** /* `#END` */
+  33:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  34:.\Generated_Source\PSoC5/P1_IRQ.c **** #ifndef CYINT_IRQ_BASE
+  35:.\Generated_Source\PSoC5/P1_IRQ.c **** #define CYINT_IRQ_BASE      16
+  36:.\Generated_Source\PSoC5/P1_IRQ.c **** #endif /* CYINT_IRQ_BASE */
+  37:.\Generated_Source\PSoC5/P1_IRQ.c **** #ifndef CYINT_VECT_TABLE
+  38:.\Generated_Source\PSoC5/P1_IRQ.c **** #define CYINT_VECT_TABLE    ((cyisraddress **) CYREG_NVIC_VECT_OFFSET)
+  39:.\Generated_Source\PSoC5/P1_IRQ.c **** #endif /* CYINT_VECT_TABLE */
+  40:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  41:.\Generated_Source\PSoC5/P1_IRQ.c **** /* Declared in startup, used to set unused interrupts to. */
+  42:.\Generated_Source\PSoC5/P1_IRQ.c **** CY_ISR_PROTO(IntDefaultHandler);
+  43:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  44:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  45:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+  46:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_Start
+  47:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+  48:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+  49:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+  50:.\Generated_Source\PSoC5/P1_IRQ.c **** *  Set up the interrupt and enable it. This function disables the interrupt, 
+  51:.\Generated_Source\PSoC5/P1_IRQ.c **** *  sets the default interrupt vector, sets the priority from the value in the
+  52:.\Generated_Source\PSoC5/P1_IRQ.c **** *  Design Wide Resources Interrupt Editor, then enables the interrupt to the 
+  53:.\Generated_Source\PSoC5/P1_IRQ.c **** *  interrupt controller.
+  54:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+  55:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:  
+  56:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+  57:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+  58:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+  59:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+  60:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+  61:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+  62:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_Start(void)
+  63:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+  64:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* For all we know the interrupt is active. */
+  65:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_Disable();
+  66:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  67:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Set the ISR to point to the P1_IRQ Interrupt. */
+  68:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_SetVector(&P1_IRQ_Interrupt);
+  69:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  70:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Set the priority. */
+  71:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_SetPriority((uint8)P1_IRQ_INTC_PRIOR_NUMBER);
+  72:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  73:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Enable it. */
+  74:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_Enable();
+  75:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+  76:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  77:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+  78:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+  79:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_StartEx
+  80:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+  81:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+  82:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+  83:.\Generated_Source\PSoC5/P1_IRQ.c **** *  Sets up the interrupt and enables it. This function disables the interrupt,
+  84:.\Generated_Source\PSoC5/P1_IRQ.c **** *  sets the interrupt vector based on the address passed in, sets the priority 
+  85:.\Generated_Source\PSoC5/P1_IRQ.c **** *  from the value in the Design Wide Resources Interrupt Editor, then enables 
+  86:.\Generated_Source\PSoC5/P1_IRQ.c **** *  the interrupt to the interrupt controller.
+  87:.\Generated_Source\PSoC5/P1_IRQ.c **** *  
+  88:.\Generated_Source\PSoC5/P1_IRQ.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 3
+
+
+  89:.\Generated_Source\PSoC5/P1_IRQ.c **** *  used to provide consistent definition across compilers:
+  90:.\Generated_Source\PSoC5/P1_IRQ.c **** *  
+  91:.\Generated_Source\PSoC5/P1_IRQ.c **** *  Function definition example:
+  92:.\Generated_Source\PSoC5/P1_IRQ.c **** *   CY_ISR(MyISR)
+  93:.\Generated_Source\PSoC5/P1_IRQ.c **** *   {
+  94:.\Generated_Source\PSoC5/P1_IRQ.c **** *   }
+  95:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Function prototype example:
+  96:.\Generated_Source\PSoC5/P1_IRQ.c **** *   CY_ISR_PROTO(MyISR);
+  97:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+  98:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:  
+  99:.\Generated_Source\PSoC5/P1_IRQ.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 100:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 101:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 102:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 103:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 104:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 105:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_StartEx(cyisraddress address)
+ 106:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 107:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* For all we know the interrupt is active. */
+ 108:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_Disable();
+ 109:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 110:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Set the ISR to point to the P1_IRQ Interrupt. */
+ 111:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_SetVector(address);
+ 112:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 113:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Set the priority. */
+ 114:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_SetPriority((uint8)P1_IRQ_INTC_PRIOR_NUMBER);
+ 115:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 116:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Enable it. */
+ 117:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_Enable();
+ 118:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 119:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 120:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 121:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 122:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_Stop
+ 123:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 124:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 125:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 126:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Disables and removes the interrupt.
+ 127:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 128:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:  
+ 129:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 130:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 131:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 132:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 133:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 134:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 135:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_Stop(void)
+ 136:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 137:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Disable this interrupt. */
+ 138:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_Disable();
+ 139:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 140:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Set the ISR to point to the passive one. */
+ 141:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_IRQ_SetVector(&IntDefaultHandler);
+ 142:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 143:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 144:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 145:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 4
+
+
+ 146:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_Interrupt
+ 147:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 148:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 149:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 150:.\Generated_Source\PSoC5/P1_IRQ.c **** *   The default Interrupt Service Routine for P1_IRQ.
+ 151:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 152:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Add custom code between the coments to keep the next version of this file
+ 153:.\Generated_Source\PSoC5/P1_IRQ.c **** *   from over writting your code.
+ 154:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 155:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:  
+ 156:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 157:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 158:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 159:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 160:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 161:.\Generated_Source\PSoC5/P1_IRQ.c **** CY_ISR(P1_IRQ_Interrupt)
+ 162:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+  27              		.loc 1 162 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 3, -8
+  34              		.cfi_offset 14, -4
+ 163:.\Generated_Source\PSoC5/P1_IRQ.c ****     #ifdef P1_IRQ_INTERRUPT_INTERRUPT_CALLBACK
+ 164:.\Generated_Source\PSoC5/P1_IRQ.c ****         P1_IRQ_Interrupt_InterruptCallback();
+ 165:.\Generated_Source\PSoC5/P1_IRQ.c ****     #endif /* P1_IRQ_INTERRUPT_INTERRUPT_CALLBACK */ 
+ 166:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 167:.\Generated_Source\PSoC5/P1_IRQ.c ****     /*  Place your Interrupt code here. */
+ 168:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* `#START P1_IRQ_Interrupt` */
+ 169:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 170:.\Generated_Source\PSoC5/P1_IRQ.c ****     P1_WriteRegValue(data);
+  35              		.loc 1 170 0
+  36 0002 124B     		ldr	r3, .L6
+  37 0004 1888     		ldrh	r0, [r3]
+  38 0006 80B2     		uxth	r0, r0
+  39 0008 FFF7FEFF 		bl	P1_WriteRegValue
+  40              	.LVL0:
+ 171:.\Generated_Source\PSoC5/P1_IRQ.c ****     
+ 172:.\Generated_Source\PSoC5/P1_IRQ.c ****     if(playing)
+  41              		.loc 1 172 0
+  42 000c 104B     		ldr	r3, .L6+4
+  43 000e 1B68     		ldr	r3, [r3]
+  44 0010 DBB1     		cbz	r3, .L1
+ 173:.\Generated_Source\PSoC5/P1_IRQ.c ****     {
+ 174:.\Generated_Source\PSoC5/P1_IRQ.c ****         if(!use_timer)
+  45              		.loc 1 174 0
+  46 0012 104B     		ldr	r3, .L6+8
+  47 0014 1B68     		ldr	r3, [r3]
+  48 0016 ABB9     		cbnz	r3, .L3
+ 175:.\Generated_Source\PSoC5/P1_IRQ.c ****         {
+ 176:.\Generated_Source\PSoC5/P1_IRQ.c ****             input_ptr = (input_ptr+1)%INPUT_BUF_SIZE;
+  49              		.loc 1 176 0
+  50 0018 0F4B     		ldr	r3, .L6+12
+  51 001a 1A68     		ldr	r2, [r3]
+  52 001c 0132     		adds	r2, r2, #1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 5
+
+
+  53 001e 0F4B     		ldr	r3, .L6+16
+  54 0020 1340     		ands	r3, r3, r2
+  55 0022 002B     		cmp	r3, #0
+  56 0024 05DA     		bge	.L4
+  57 0026 013B     		subs	r3, r3, #1
+  58 0028 6FEAC343 		mvn	r3, r3, lsl #19
+  59 002c 6FEAD343 		mvn	r3, r3, lsr #19
+  60 0030 0133     		adds	r3, r3, #1
+  61              	.L4:
+  62 0032 094A     		ldr	r2, .L6+12
+  63 0034 1360     		str	r3, [r2]
+ 177:.\Generated_Source\PSoC5/P1_IRQ.c ****             data = input[0][input_ptr];
+  64              		.loc 1 177 0
+  65 0036 1268     		ldr	r2, [r2]
+  66 0038 094B     		ldr	r3, .L6+20
+  67 003a 33F81230 		ldrh	r3, [r3, r2, lsl #1]
+  68 003e 9BB2     		uxth	r3, r3
+  69 0040 024A     		ldr	r2, .L6
+  70 0042 1380     		strh	r3, [r2]	@ movhi
+  71              	.L3:
+ 178:.\Generated_Source\PSoC5/P1_IRQ.c ****         }
+ 179:.\Generated_Source\PSoC5/P1_IRQ.c ****         sent = 1;
+  72              		.loc 1 179 0
+  73 0044 0122     		movs	r2, #1
+  74 0046 074B     		ldr	r3, .L6+24
+  75 0048 1A60     		str	r2, [r3]
+  76              	.L1:
+  77 004a 08BD     		pop	{r3, pc}
+  78              	.L7:
+  79              		.align	2
+  80              	.L6:
+  81 004c 00000000 		.word	data
+  82 0050 00000000 		.word	playing
+  83 0054 00000000 		.word	use_timer
+  84 0058 00000000 		.word	input_ptr
+  85 005c FF1F0080 		.word	-2147475457
+  86 0060 00000000 		.word	input
+  87 0064 00000000 		.word	sent
+  88              		.cfi_endproc
+  89              	.LFE66:
+  90              		.size	P1_IRQ_Interrupt, .-P1_IRQ_Interrupt
+  91              		.section	.text.P1_IRQ_SetVector,"ax",%progbits
+  92              		.align	2
+  93              		.global	P1_IRQ_SetVector
+  94              		.thumb
+  95              		.thumb_func
+  96              		.type	P1_IRQ_SetVector, %function
+  97              	P1_IRQ_SetVector:
+  98              	.LFB67:
+ 180:.\Generated_Source\PSoC5/P1_IRQ.c ****     }
+ 181:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* `#END` */
+ 182:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 183:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 184:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 185:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 186:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_SetVector
+ 187:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 6
+
+
+ 188:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 189:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 190:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Change the ISR vector for the Interrupt. Note calling P1_IRQ_Start
+ 191:.\Generated_Source\PSoC5/P1_IRQ.c **** *   will override any effect this method would have had. To set the vector 
+ 192:.\Generated_Source\PSoC5/P1_IRQ.c **** *   before the component has been started use P1_IRQ_StartEx instead.
+ 193:.\Generated_Source\PSoC5/P1_IRQ.c **** * 
+ 194:.\Generated_Source\PSoC5/P1_IRQ.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+ 195:.\Generated_Source\PSoC5/P1_IRQ.c **** *   used to provide consistent definition across compilers:
+ 196:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 197:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Function definition example:
+ 198:.\Generated_Source\PSoC5/P1_IRQ.c **** *   CY_ISR(MyISR)
+ 199:.\Generated_Source\PSoC5/P1_IRQ.c **** *   {
+ 200:.\Generated_Source\PSoC5/P1_IRQ.c **** *   }
+ 201:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 202:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Function prototype example:
+ 203:.\Generated_Source\PSoC5/P1_IRQ.c **** *     CY_ISR_PROTO(MyISR);
+ 204:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 205:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 206:.\Generated_Source\PSoC5/P1_IRQ.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 207:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 208:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 209:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 210:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 211:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 212:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_SetVector(cyisraddress address)
+ 213:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+  99              		.loc 1 213 0
+ 100              		.cfi_startproc
+ 101              		@ args = 0, pretend = 0, frame = 0
+ 102              		@ frame_needed = 0, uses_anonymous_args = 0
+ 103              		@ link register save eliminated.
+ 104              	.LVL1:
+ 214:.\Generated_Source\PSoC5/P1_IRQ.c ****     cyisraddress * ramVectorTable;
+ 215:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 216:.\Generated_Source\PSoC5/P1_IRQ.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
+ 105              		.loc 1 216 0
+ 106 0000 014B     		ldr	r3, .L9
+ 107 0002 1B68     		ldr	r3, [r3]
+ 108              	.LVL2:
+ 217:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 218:.\Generated_Source\PSoC5/P1_IRQ.c ****     ramVectorTable[CYINT_IRQ_BASE + (uint32)P1_IRQ__INTC_NUMBER] = address;
+ 109              		.loc 1 218 0
+ 110 0004 1864     		str	r0, [r3, #64]
+ 111 0006 7047     		bx	lr
+ 112              	.L10:
+ 113              		.align	2
+ 114              	.L9:
+ 115 0008 08ED00E0 		.word	-536810232
+ 116              		.cfi_endproc
+ 117              	.LFE67:
+ 118              		.size	P1_IRQ_SetVector, .-P1_IRQ_SetVector
+ 119              		.section	.text.P1_IRQ_GetVector,"ax",%progbits
+ 120              		.align	2
+ 121              		.global	P1_IRQ_GetVector
+ 122              		.thumb
+ 123              		.thumb_func
+ 124              		.type	P1_IRQ_GetVector, %function
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 7
+
+
+ 125              	P1_IRQ_GetVector:
+ 126              	.LFB68:
+ 219:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 220:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 221:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 222:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 223:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_GetVector
+ 224:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 225:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 226:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 227:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
+ 228:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 229:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 230:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 231:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 232:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 233:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Address of the ISR in the interrupt vector table.
+ 234:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 235:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 236:.\Generated_Source\PSoC5/P1_IRQ.c **** cyisraddress P1_IRQ_GetVector(void)
+ 237:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 127              		.loc 1 237 0
+ 128              		.cfi_startproc
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131              		@ link register save eliminated.
+ 238:.\Generated_Source\PSoC5/P1_IRQ.c ****     cyisraddress * ramVectorTable;
+ 239:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 240:.\Generated_Source\PSoC5/P1_IRQ.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
+ 132              		.loc 1 240 0
+ 133 0000 014B     		ldr	r3, .L12
+ 134 0002 1B68     		ldr	r3, [r3]
+ 135              	.LVL3:
+ 241:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 242:.\Generated_Source\PSoC5/P1_IRQ.c ****     return ramVectorTable[CYINT_IRQ_BASE + (uint32)P1_IRQ__INTC_NUMBER];
+ 243:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 136              		.loc 1 243 0
+ 137 0004 186C     		ldr	r0, [r3, #64]
+ 138 0006 7047     		bx	lr
+ 139              	.L13:
+ 140              		.align	2
+ 141              	.L12:
+ 142 0008 08ED00E0 		.word	-536810232
+ 143              		.cfi_endproc
+ 144              	.LFE68:
+ 145              		.size	P1_IRQ_GetVector, .-P1_IRQ_GetVector
+ 146              		.section	.text.P1_IRQ_SetPriority,"ax",%progbits
+ 147              		.align	2
+ 148              		.global	P1_IRQ_SetPriority
+ 149              		.thumb
+ 150              		.thumb_func
+ 151              		.type	P1_IRQ_SetPriority, %function
+ 152              	P1_IRQ_SetPriority:
+ 153              	.LFB69:
+ 244:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 245:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 246:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 8
+
+
+ 247:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_SetPriority
+ 248:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 249:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 250:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 251:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Sets the Priority of the Interrupt. 
+ 252:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 253:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Note calling P1_IRQ_Start or P1_IRQ_StartEx will 
+ 254:.\Generated_Source\PSoC5/P1_IRQ.c **** *   override any effect this API would have had. This API should only be called
+ 255:.\Generated_Source\PSoC5/P1_IRQ.c **** *   after P1_IRQ_Start or P1_IRQ_StartEx has been called. 
+ 256:.\Generated_Source\PSoC5/P1_IRQ.c **** *   To set the initial priority for the component, use the Design-Wide Resources
+ 257:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Interrupt Editor.
+ 258:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 259:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
+ 260:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 261:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 262:.\Generated_Source\PSoC5/P1_IRQ.c **** *   priority: Priority of the interrupt, 0 being the highest priority
+ 263:.\Generated_Source\PSoC5/P1_IRQ.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 264:.\Generated_Source\PSoC5/P1_IRQ.c **** *             PSoC 4: Priority is from 0 to 3.
+ 265:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 266:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 267:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 268:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 269:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 270:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_SetPriority(uint8 priority)
+ 271:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 154              		.loc 1 271 0
+ 155              		.cfi_startproc
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158              		@ link register save eliminated.
+ 159              	.LVL4:
+ 272:.\Generated_Source\PSoC5/P1_IRQ.c ****     *P1_IRQ_INTC_PRIOR = priority << 5;
+ 160              		.loc 1 272 0
+ 161 0000 4001     		lsls	r0, r0, #5
+ 162              	.LVL5:
+ 163 0002 C0B2     		uxtb	r0, r0
+ 164 0004 014B     		ldr	r3, .L15
+ 165 0006 1870     		strb	r0, [r3]
+ 166 0008 7047     		bx	lr
+ 167              	.L16:
+ 168 000a 00BF     		.align	2
+ 169              	.L15:
+ 170 000c 00E400E0 		.word	-536812544
+ 171              		.cfi_endproc
+ 172              	.LFE69:
+ 173              		.size	P1_IRQ_SetPriority, .-P1_IRQ_SetPriority
+ 174              		.section	.text.P1_IRQ_GetPriority,"ax",%progbits
+ 175              		.align	2
+ 176              		.global	P1_IRQ_GetPriority
+ 177              		.thumb
+ 178              		.thumb_func
+ 179              		.type	P1_IRQ_GetPriority, %function
+ 180              	P1_IRQ_GetPriority:
+ 181              	.LFB70:
+ 273:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 274:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 275:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 9
+
+
+ 276:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 277:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_GetPriority
+ 278:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 279:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 280:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 281:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Gets the Priority of the Interrupt.
+ 282:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 283:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 284:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 285:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 286:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 287:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Priority of the interrupt, 0 being the highest priority
+ 288:.\Generated_Source\PSoC5/P1_IRQ.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 289:.\Generated_Source\PSoC5/P1_IRQ.c **** *    PSoC 4: Priority is from 0 to 3.
+ 290:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 291:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 292:.\Generated_Source\PSoC5/P1_IRQ.c **** uint8 P1_IRQ_GetPriority(void)
+ 293:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 182              		.loc 1 293 0
+ 183              		.cfi_startproc
+ 184              		@ args = 0, pretend = 0, frame = 0
+ 185              		@ frame_needed = 0, uses_anonymous_args = 0
+ 186              		@ link register save eliminated.
+ 294:.\Generated_Source\PSoC5/P1_IRQ.c ****     uint8 priority;
+ 295:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 296:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 297:.\Generated_Source\PSoC5/P1_IRQ.c ****     priority = *P1_IRQ_INTC_PRIOR >> 5;
+ 187              		.loc 1 297 0
+ 188 0000 014B     		ldr	r3, .L18
+ 189 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 190              	.LVL6:
+ 298:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 299:.\Generated_Source\PSoC5/P1_IRQ.c ****     return priority;
+ 300:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 191              		.loc 1 300 0
+ 192 0004 4009     		lsrs	r0, r0, #5
+ 193              	.LVL7:
+ 194 0006 7047     		bx	lr
+ 195              	.L19:
+ 196              		.align	2
+ 197              	.L18:
+ 198 0008 00E400E0 		.word	-536812544
+ 199              		.cfi_endproc
+ 200              	.LFE70:
+ 201              		.size	P1_IRQ_GetPriority, .-P1_IRQ_GetPriority
+ 202              		.section	.text.P1_IRQ_Enable,"ax",%progbits
+ 203              		.align	2
+ 204              		.global	P1_IRQ_Enable
+ 205              		.thumb
+ 206              		.thumb_func
+ 207              		.type	P1_IRQ_Enable, %function
+ 208              	P1_IRQ_Enable:
+ 209              	.LFB71:
+ 301:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 302:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 303:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 304:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_Enable
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 10
+
+
+ 305:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 306:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 307:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 308:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
+ 309:.\Generated_Source\PSoC5/P1_IRQ.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
+ 310:.\Generated_Source\PSoC5/P1_IRQ.c **** *   function, which sets the vector and the priority, has been called.
+ 311:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 312:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 313:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 314:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 315:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 316:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 317:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 318:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 319:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_Enable(void)
+ 320:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 210              		.loc 1 320 0
+ 211              		.cfi_startproc
+ 212              		@ args = 0, pretend = 0, frame = 0
+ 213              		@ frame_needed = 0, uses_anonymous_args = 0
+ 214              		@ link register save eliminated.
+ 321:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Enable the general interrupt. */
+ 322:.\Generated_Source\PSoC5/P1_IRQ.c ****     *P1_IRQ_INTC_SET_EN = P1_IRQ__INTC_MASK;
+ 215              		.loc 1 322 0
+ 216 0000 0122     		movs	r2, #1
+ 217 0002 014B     		ldr	r3, .L21
+ 218 0004 1A60     		str	r2, [r3]
+ 219 0006 7047     		bx	lr
+ 220              	.L22:
+ 221              		.align	2
+ 222              	.L21:
+ 223 0008 00E100E0 		.word	-536813312
+ 224              		.cfi_endproc
+ 225              	.LFE71:
+ 226              		.size	P1_IRQ_Enable, .-P1_IRQ_Enable
+ 227              		.section	.text.P1_IRQ_GetState,"ax",%progbits
+ 228              		.align	2
+ 229              		.global	P1_IRQ_GetState
+ 230              		.thumb
+ 231              		.thumb_func
+ 232              		.type	P1_IRQ_GetState, %function
+ 233              	P1_IRQ_GetState:
+ 234              	.LFB72:
+ 323:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 324:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 325:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 326:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 327:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_GetState
+ 328:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 329:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 330:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 331:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Gets the state (enabled, disabled) of the Interrupt.
+ 332:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 333:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 334:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 335:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 336:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 11
+
+
+ 337:.\Generated_Source\PSoC5/P1_IRQ.c **** *   1 if enabled, 0 if disabled.
+ 338:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 339:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 340:.\Generated_Source\PSoC5/P1_IRQ.c **** uint8 P1_IRQ_GetState(void)
+ 341:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 235              		.loc 1 341 0
+ 236              		.cfi_startproc
+ 237              		@ args = 0, pretend = 0, frame = 0
+ 238              		@ frame_needed = 0, uses_anonymous_args = 0
+ 239              		@ link register save eliminated.
+ 342:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Get the state of the general interrupt. */
+ 343:.\Generated_Source\PSoC5/P1_IRQ.c ****     return ((*P1_IRQ_INTC_SET_EN & (uint32)P1_IRQ__INTC_MASK) != 0u) ? 1u:0u;
+ 240              		.loc 1 343 0
+ 241 0000 024B     		ldr	r3, .L24
+ 242 0002 1868     		ldr	r0, [r3]
+ 344:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 243              		.loc 1 344 0
+ 244 0004 00F00100 		and	r0, r0, #1
+ 245 0008 7047     		bx	lr
+ 246              	.L25:
+ 247 000a 00BF     		.align	2
+ 248              	.L24:
+ 249 000c 00E100E0 		.word	-536813312
+ 250              		.cfi_endproc
+ 251              	.LFE72:
+ 252              		.size	P1_IRQ_GetState, .-P1_IRQ_GetState
+ 253              		.section	.text.P1_IRQ_Disable,"ax",%progbits
+ 254              		.align	2
+ 255              		.global	P1_IRQ_Disable
+ 256              		.thumb
+ 257              		.thumb_func
+ 258              		.type	P1_IRQ_Disable, %function
+ 259              	P1_IRQ_Disable:
+ 260              	.LFB73:
+ 345:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 346:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 347:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 348:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_Disable
+ 349:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 350:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 351:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 352:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Disables the Interrupt in the interrupt controller.
+ 353:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 354:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 355:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 356:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 357:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 358:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 359:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 360:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 361:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_Disable(void)
+ 362:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 261              		.loc 1 362 0
+ 262              		.cfi_startproc
+ 263              		@ args = 0, pretend = 0, frame = 0
+ 264              		@ frame_needed = 0, uses_anonymous_args = 0
+ 265              		@ link register save eliminated.
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 12
+
+
+ 363:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Disable the general interrupt. */
+ 364:.\Generated_Source\PSoC5/P1_IRQ.c ****     *P1_IRQ_INTC_CLR_EN = P1_IRQ__INTC_MASK;
+ 266              		.loc 1 364 0
+ 267 0000 0122     		movs	r2, #1
+ 268 0002 014B     		ldr	r3, .L27
+ 269 0004 1A60     		str	r2, [r3]
+ 270 0006 7047     		bx	lr
+ 271              	.L28:
+ 272              		.align	2
+ 273              	.L27:
+ 274 0008 80E100E0 		.word	-536813184
+ 275              		.cfi_endproc
+ 276              	.LFE73:
+ 277              		.size	P1_IRQ_Disable, .-P1_IRQ_Disable
+ 278              		.section	.text.P1_IRQ_Start,"ax",%progbits
+ 279              		.align	2
+ 280              		.global	P1_IRQ_Start
+ 281              		.thumb
+ 282              		.thumb_func
+ 283              		.type	P1_IRQ_Start, %function
+ 284              	P1_IRQ_Start:
+ 285              	.LFB63:
+  63:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* For all we know the interrupt is active. */
+ 286              		.loc 1 63 0
+ 287              		.cfi_startproc
+ 288              		@ args = 0, pretend = 0, frame = 0
+ 289              		@ frame_needed = 0, uses_anonymous_args = 0
+ 290 0000 08B5     		push	{r3, lr}
+ 291              		.cfi_def_cfa_offset 8
+ 292              		.cfi_offset 3, -8
+ 293              		.cfi_offset 14, -4
+  65:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 294              		.loc 1 65 0
+ 295 0002 FFF7FEFF 		bl	P1_IRQ_Disable
+ 296              	.LVL8:
+  68:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 297              		.loc 1 68 0
+ 298 0006 0448     		ldr	r0, .L31
+ 299 0008 FFF7FEFF 		bl	P1_IRQ_SetVector
+ 300              	.LVL9:
+  71:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 301              		.loc 1 71 0
+ 302 000c 0020     		movs	r0, #0
+ 303 000e FFF7FEFF 		bl	P1_IRQ_SetPriority
+ 304              	.LVL10:
+  74:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 305              		.loc 1 74 0
+ 306 0012 FFF7FEFF 		bl	P1_IRQ_Enable
+ 307              	.LVL11:
+ 308 0016 08BD     		pop	{r3, pc}
+ 309              	.L32:
+ 310              		.align	2
+ 311              	.L31:
+ 312 0018 00000000 		.word	P1_IRQ_Interrupt
+ 313              		.cfi_endproc
+ 314              	.LFE63:
+ 315              		.size	P1_IRQ_Start, .-P1_IRQ_Start
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 13
+
+
+ 316              		.section	.text.P1_IRQ_StartEx,"ax",%progbits
+ 317              		.align	2
+ 318              		.global	P1_IRQ_StartEx
+ 319              		.thumb
+ 320              		.thumb_func
+ 321              		.type	P1_IRQ_StartEx, %function
+ 322              	P1_IRQ_StartEx:
+ 323              	.LFB64:
+ 106:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* For all we know the interrupt is active. */
+ 324              		.loc 1 106 0
+ 325              		.cfi_startproc
+ 326              		@ args = 0, pretend = 0, frame = 0
+ 327              		@ frame_needed = 0, uses_anonymous_args = 0
+ 328              	.LVL12:
+ 329 0000 10B5     		push	{r4, lr}
+ 330              		.cfi_def_cfa_offset 8
+ 331              		.cfi_offset 4, -8
+ 332              		.cfi_offset 14, -4
+ 333 0002 0446     		mov	r4, r0
+ 108:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 334              		.loc 1 108 0
+ 335 0004 FFF7FEFF 		bl	P1_IRQ_Disable
+ 336              	.LVL13:
+ 111:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 337              		.loc 1 111 0
+ 338 0008 2046     		mov	r0, r4
+ 339 000a FFF7FEFF 		bl	P1_IRQ_SetVector
+ 340              	.LVL14:
+ 114:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 341              		.loc 1 114 0
+ 342 000e 0020     		movs	r0, #0
+ 343 0010 FFF7FEFF 		bl	P1_IRQ_SetPriority
+ 344              	.LVL15:
+ 117:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 345              		.loc 1 117 0
+ 346 0014 FFF7FEFF 		bl	P1_IRQ_Enable
+ 347              	.LVL16:
+ 348 0018 10BD     		pop	{r4, pc}
+ 349              		.cfi_endproc
+ 350              	.LFE64:
+ 351              		.size	P1_IRQ_StartEx, .-P1_IRQ_StartEx
+ 352 001a 00BF     		.section	.text.P1_IRQ_Stop,"ax",%progbits
+ 353              		.align	2
+ 354              		.global	P1_IRQ_Stop
+ 355              		.thumb
+ 356              		.thumb_func
+ 357              		.type	P1_IRQ_Stop, %function
+ 358              	P1_IRQ_Stop:
+ 359              	.LFB65:
+ 136:.\Generated_Source\PSoC5/P1_IRQ.c ****     /* Disable this interrupt. */
+ 360              		.loc 1 136 0
+ 361              		.cfi_startproc
+ 362              		@ args = 0, pretend = 0, frame = 0
+ 363              		@ frame_needed = 0, uses_anonymous_args = 0
+ 364 0000 08B5     		push	{r3, lr}
+ 365              		.cfi_def_cfa_offset 8
+ 366              		.cfi_offset 3, -8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 14
+
+
+ 367              		.cfi_offset 14, -4
+ 138:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 368              		.loc 1 138 0
+ 369 0002 FFF7FEFF 		bl	P1_IRQ_Disable
+ 370              	.LVL17:
+ 141:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 371              		.loc 1 141 0
+ 372 0006 0248     		ldr	r0, .L37
+ 373 0008 FFF7FEFF 		bl	P1_IRQ_SetVector
+ 374              	.LVL18:
+ 375 000c 08BD     		pop	{r3, pc}
+ 376              	.L38:
+ 377 000e 00BF     		.align	2
+ 378              	.L37:
+ 379 0010 00000000 		.word	IntDefaultHandler
+ 380              		.cfi_endproc
+ 381              	.LFE65:
+ 382              		.size	P1_IRQ_Stop, .-P1_IRQ_Stop
+ 383              		.section	.text.P1_IRQ_SetPending,"ax",%progbits
+ 384              		.align	2
+ 385              		.global	P1_IRQ_SetPending
+ 386              		.thumb
+ 387              		.thumb_func
+ 388              		.type	P1_IRQ_SetPending, %function
+ 389              	P1_IRQ_SetPending:
+ 390              	.LFB74:
+ 365:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 366:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 367:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 368:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 369:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_SetPending
+ 370:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 371:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 372:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 373:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Causes the Interrupt to enter the pending state, a software method of
+ 374:.\Generated_Source\PSoC5/P1_IRQ.c **** *   generating the interrupt.
+ 375:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 376:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 377:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 378:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 379:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 380:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 381:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 382:.\Generated_Source\PSoC5/P1_IRQ.c **** * Side Effects:
+ 383:.\Generated_Source\PSoC5/P1_IRQ.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
+ 384:.\Generated_Source\PSoC5/P1_IRQ.c **** *   entered (depending on the priority of this interrupt and other pending 
+ 385:.\Generated_Source\PSoC5/P1_IRQ.c **** *   interrupts).
+ 386:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 387:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 388:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_SetPending(void)
+ 389:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 391              		.loc 1 389 0
+ 392              		.cfi_startproc
+ 393              		@ args = 0, pretend = 0, frame = 0
+ 394              		@ frame_needed = 0, uses_anonymous_args = 0
+ 395              		@ link register save eliminated.
+ 390:.\Generated_Source\PSoC5/P1_IRQ.c ****     *P1_IRQ_INTC_SET_PD = P1_IRQ__INTC_MASK;
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 15
+
+
+ 396              		.loc 1 390 0
+ 397 0000 0122     		movs	r2, #1
+ 398 0002 014B     		ldr	r3, .L40
+ 399 0004 1A60     		str	r2, [r3]
+ 400 0006 7047     		bx	lr
+ 401              	.L41:
+ 402              		.align	2
+ 403              	.L40:
+ 404 0008 00E200E0 		.word	-536813056
+ 405              		.cfi_endproc
+ 406              	.LFE74:
+ 407              		.size	P1_IRQ_SetPending, .-P1_IRQ_SetPending
+ 408              		.section	.text.P1_IRQ_ClearPending,"ax",%progbits
+ 409              		.align	2
+ 410              		.global	P1_IRQ_ClearPending
+ 411              		.thumb
+ 412              		.thumb_func
+ 413              		.type	P1_IRQ_ClearPending, %function
+ 414              	P1_IRQ_ClearPending:
+ 415              	.LFB75:
+ 391:.\Generated_Source\PSoC5/P1_IRQ.c **** }
+ 392:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 393:.\Generated_Source\PSoC5/P1_IRQ.c **** 
+ 394:.\Generated_Source\PSoC5/P1_IRQ.c **** /*******************************************************************************
+ 395:.\Generated_Source\PSoC5/P1_IRQ.c **** * Function Name: P1_IRQ_ClearPending
+ 396:.\Generated_Source\PSoC5/P1_IRQ.c **** ********************************************************************************
+ 397:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 398:.\Generated_Source\PSoC5/P1_IRQ.c **** * Summary:
+ 399:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Clears a pending interrupt in the interrupt controller.
+ 400:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 401:.\Generated_Source\PSoC5/P1_IRQ.c **** *   Note Some interrupt sources are clear-on-read and require the block 
+ 402:.\Generated_Source\PSoC5/P1_IRQ.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
+ 403:.\Generated_Source\PSoC5/P1_IRQ.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
+ 404:.\Generated_Source\PSoC5/P1_IRQ.c **** *   pending state even though the interrupt itself is cleared using this API.
+ 405:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 406:.\Generated_Source\PSoC5/P1_IRQ.c **** * Parameters:
+ 407:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 408:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 409:.\Generated_Source\PSoC5/P1_IRQ.c **** * Return:
+ 410:.\Generated_Source\PSoC5/P1_IRQ.c **** *   None
+ 411:.\Generated_Source\PSoC5/P1_IRQ.c **** *
+ 412:.\Generated_Source\PSoC5/P1_IRQ.c **** *******************************************************************************/
+ 413:.\Generated_Source\PSoC5/P1_IRQ.c **** void P1_IRQ_ClearPending(void)
+ 414:.\Generated_Source\PSoC5/P1_IRQ.c **** {
+ 416              		.loc 1 414 0
+ 417              		.cfi_startproc
+ 418              		@ args = 0, pretend = 0, frame = 0
+ 419              		@ frame_needed = 0, uses_anonymous_args = 0
+ 420              		@ link register save eliminated.
+ 415:.\Generated_Source\PSoC5/P1_IRQ.c ****     *P1_IRQ_INTC_CLR_PD = P1_IRQ__INTC_MASK;
+ 421              		.loc 1 415 0
+ 422 0000 0122     		movs	r2, #1
+ 423 0002 014B     		ldr	r3, .L43
+ 424 0004 1A60     		str	r2, [r3]
+ 425 0006 7047     		bx	lr
+ 426              	.L44:
+ 427              		.align	2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 16
+
+
+ 428              	.L43:
+ 429 0008 80E200E0 		.word	-536812928
+ 430              		.cfi_endproc
+ 431              	.LFE75:
+ 432              		.size	P1_IRQ_ClearPending, .-P1_IRQ_ClearPending
+ 433              		.comm	disable_timer,4,4
+ 434              		.comm	use_timer,4,4
+ 435              		.comm	timer_ready,4,4
+ 436              		.comm	ready,4,4
+ 437              		.comm	input,32768,4
+ 438              		.comm	data,2,2
+ 439              		.comm	buf_ptr,4,4
+ 440              		.comm	input_ptr,4,4
+ 441              		.comm	playing,4,4
+ 442              		.comm	sent,4,4
+ 443              		.text
+ 444              	.Letext0:
+ 445              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 446              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 447              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 448              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 449              		.file 6 "./main.h"
+ 450              		.file 7 "Generated_Source\\PSoC5/P1.h"
+ 451              		.section	.debug_info,"",%progbits
+ 452              	.Ldebug_info0:
+ 453 0000 E5030000 		.4byte	0x3e5
+ 454 0004 0400     		.2byte	0x4
+ 455 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 456 000a 04       		.byte	0x4
+ 457 000b 01       		.uleb128 0x1
+ 458 000c 7A010000 		.4byte	.LASF47
+ 459 0010 01       		.byte	0x1
+ 460 0011 0C030000 		.4byte	.LASF48
+ 461 0015 09010000 		.4byte	.LASF49
+ 462 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 463 001d 00000000 		.4byte	0
+ 464 0021 00000000 		.4byte	.Ldebug_line0
+ 465 0025 02       		.uleb128 0x2
+ 466 0026 04       		.byte	0x4
+ 467 0027 05       		.byte	0x5
+ 468 0028 696E7400 		.ascii	"int\000"
+ 469 002c 03       		.uleb128 0x3
+ 470 002d 04       		.byte	0x4
+ 471 002e 07       		.byte	0x7
+ 472 002f 08020000 		.4byte	.LASF0
+ 473 0033 03       		.uleb128 0x3
+ 474 0034 01       		.byte	0x1
+ 475 0035 06       		.byte	0x6
+ 476 0036 F2020000 		.4byte	.LASF1
+ 477 003a 03       		.uleb128 0x3
+ 478 003b 01       		.byte	0x1
+ 479 003c 08       		.byte	0x8
+ 480 003d A7000000 		.4byte	.LASF2
+ 481 0041 03       		.uleb128 0x3
+ 482 0042 02       		.byte	0x2
+ 483 0043 05       		.byte	0x5
+ 484 0044 B6020000 		.4byte	.LASF3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 17
+
+
+ 485 0048 03       		.uleb128 0x3
+ 486 0049 02       		.byte	0x2
+ 487 004a 07       		.byte	0x7
+ 488 004b D7000000 		.4byte	.LASF4
+ 489 004f 04       		.uleb128 0x4
+ 490 0050 4D000000 		.4byte	.LASF11
+ 491 0054 02       		.byte	0x2
+ 492 0055 3F       		.byte	0x3f
+ 493 0056 5A000000 		.4byte	0x5a
+ 494 005a 03       		.uleb128 0x3
+ 495 005b 04       		.byte	0x4
+ 496 005c 05       		.byte	0x5
+ 497 005d D5020000 		.4byte	.LASF5
+ 498 0061 03       		.uleb128 0x3
+ 499 0062 04       		.byte	0x4
+ 500 0063 07       		.byte	0x7
+ 501 0064 F7000000 		.4byte	.LASF6
+ 502 0068 03       		.uleb128 0x3
+ 503 0069 08       		.byte	0x8
+ 504 006a 05       		.byte	0x5
+ 505 006b 70020000 		.4byte	.LASF7
+ 506 006f 03       		.uleb128 0x3
+ 507 0070 08       		.byte	0x8
+ 508 0071 07       		.byte	0x7
+ 509 0072 2E020000 		.4byte	.LASF8
+ 510 0076 03       		.uleb128 0x3
+ 511 0077 04       		.byte	0x4
+ 512 0078 07       		.byte	0x7
+ 513 0079 62020000 		.4byte	.LASF9
+ 514 007d 05       		.uleb128 0x5
+ 515 007e 04       		.byte	0x4
+ 516 007f 83000000 		.4byte	0x83
+ 517 0083 06       		.uleb128 0x6
+ 518 0084 03       		.uleb128 0x3
+ 519 0085 01       		.byte	0x1
+ 520 0086 08       		.byte	0x8
+ 521 0087 86020000 		.4byte	.LASF10
+ 522 008b 04       		.uleb128 0x4
+ 523 008c 94000000 		.4byte	.LASF12
+ 524 0090 03       		.byte	0x3
+ 525 0091 2C       		.byte	0x2c
+ 526 0092 4F000000 		.4byte	0x4f
+ 527 0096 07       		.uleb128 0x7
+ 528 0097 C0020000 		.4byte	.LASF13
+ 529 009b 04       		.byte	0x4
+ 530 009c 9201     		.2byte	0x192
+ 531 009e 3A000000 		.4byte	0x3a
+ 532 00a2 07       		.uleb128 0x7
+ 533 00a3 60010000 		.4byte	.LASF14
+ 534 00a7 04       		.byte	0x4
+ 535 00a8 9301     		.2byte	0x193
+ 536 00aa 48000000 		.4byte	0x48
+ 537 00ae 07       		.uleb128 0x7
+ 538 00af 73010000 		.4byte	.LASF15
+ 539 00b3 04       		.byte	0x4
+ 540 00b4 9401     		.2byte	0x194
+ 541 00b6 61000000 		.4byte	0x61
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 18
+
+
+ 542 00ba 03       		.uleb128 0x3
+ 543 00bb 04       		.byte	0x4
+ 544 00bc 04       		.byte	0x4
+ 545 00bd 9C000000 		.4byte	.LASF16
+ 546 00c1 03       		.uleb128 0x3
+ 547 00c2 08       		.byte	0x8
+ 548 00c3 04       		.byte	0x4
+ 549 00c4 57000000 		.4byte	.LASF17
+ 550 00c8 07       		.uleb128 0x7
+ 551 00c9 BB000000 		.4byte	.LASF18
+ 552 00cd 04       		.byte	0x4
+ 553 00ce 3C02     		.2byte	0x23c
+ 554 00d0 D4000000 		.4byte	0xd4
+ 555 00d4 08       		.uleb128 0x8
+ 556 00d5 96000000 		.4byte	0x96
+ 557 00d9 08       		.uleb128 0x8
+ 558 00da A2000000 		.4byte	0xa2
+ 559 00de 07       		.uleb128 0x7
+ 560 00df 1F000000 		.4byte	.LASF19
+ 561 00e3 04       		.byte	0x4
+ 562 00e4 3E02     		.2byte	0x23e
+ 563 00e6 EA000000 		.4byte	0xea
+ 564 00ea 08       		.uleb128 0x8
+ 565 00eb AE000000 		.4byte	0xae
+ 566 00ef 07       		.uleb128 0x7
+ 567 00f0 45020000 		.4byte	.LASF20
+ 568 00f4 04       		.byte	0x4
+ 569 00f5 4E02     		.2byte	0x24e
+ 570 00f7 7D000000 		.4byte	0x7d
+ 571 00fb 09       		.uleb128 0x9
+ 572 00fc 93020000 		.4byte	.LASF21
+ 573 0100 01       		.byte	0x1
+ 574 0101 A1       		.byte	0xa1
+ 575 0102 00000000 		.4byte	.LFB66
+ 576 0106 68000000 		.4byte	.LFE66-.LFB66
+ 577 010a 01       		.uleb128 0x1
+ 578 010b 9C       		.byte	0x9c
+ 579 010c 1A010000 		.4byte	0x11a
+ 580 0110 0A       		.uleb128 0xa
+ 581 0111 0C000000 		.4byte	.LVL0
+ 582 0115 DB030000 		.4byte	0x3db
+ 583 0119 00       		.byte	0
+ 584 011a 09       		.uleb128 0x9
+ 585 011b C6000000 		.4byte	.LASF22
+ 586 011f 01       		.byte	0x1
+ 587 0120 D4       		.byte	0xd4
+ 588 0121 00000000 		.4byte	.LFB67
+ 589 0125 0C000000 		.4byte	.LFE67-.LFB67
+ 590 0129 01       		.uleb128 0x1
+ 591 012a 9C       		.byte	0x9c
+ 592 012b 4A010000 		.4byte	0x14a
+ 593 012f 0B       		.uleb128 0xb
+ 594 0130 26020000 		.4byte	.LASF25
+ 595 0134 01       		.byte	0x1
+ 596 0135 D4       		.byte	0xd4
+ 597 0136 EF000000 		.4byte	0xef
+ 598 013a 01       		.uleb128 0x1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 19
+
+
+ 599 013b 50       		.byte	0x50
+ 600 013c 0C       		.uleb128 0xc
+ 601 013d C6020000 		.4byte	.LASF23
+ 602 0141 01       		.byte	0x1
+ 603 0142 D6       		.byte	0xd6
+ 604 0143 4A010000 		.4byte	0x14a
+ 605 0147 01       		.uleb128 0x1
+ 606 0148 53       		.byte	0x53
+ 607 0149 00       		.byte	0
+ 608 014a 05       		.uleb128 0x5
+ 609 014b 04       		.byte	0x4
+ 610 014c EF000000 		.4byte	0xef
+ 611 0150 0D       		.uleb128 0xd
+ 612 0151 0E000000 		.4byte	.LASF27
+ 613 0155 01       		.byte	0x1
+ 614 0156 EC       		.byte	0xec
+ 615 0157 EF000000 		.4byte	0xef
+ 616 015b 00000000 		.4byte	.LFB68
+ 617 015f 0C000000 		.4byte	.LFE68-.LFB68
+ 618 0163 01       		.uleb128 0x1
+ 619 0164 9C       		.byte	0x9c
+ 620 0165 77010000 		.4byte	0x177
+ 621 0169 0C       		.uleb128 0xc
+ 622 016a C6020000 		.4byte	.LASF23
+ 623 016e 01       		.byte	0x1
+ 624 016f EE       		.byte	0xee
+ 625 0170 4A010000 		.4byte	0x14a
+ 626 0174 01       		.uleb128 0x1
+ 627 0175 53       		.byte	0x53
+ 628 0176 00       		.byte	0
+ 629 0177 0E       		.uleb128 0xe
+ 630 0178 44010000 		.4byte	.LASF24
+ 631 017c 01       		.byte	0x1
+ 632 017d 0E01     		.2byte	0x10e
+ 633 017f 00000000 		.4byte	.LFB69
+ 634 0183 10000000 		.4byte	.LFE69-.LFB69
+ 635 0187 01       		.uleb128 0x1
+ 636 0188 9C       		.byte	0x9c
+ 637 0189 9E010000 		.4byte	0x19e
+ 638 018d 0F       		.uleb128 0xf
+ 639 018e 57010000 		.4byte	.LASF26
+ 640 0192 01       		.byte	0x1
+ 641 0193 0E01     		.2byte	0x10e
+ 642 0195 96000000 		.4byte	0x96
+ 643 0199 00000000 		.4byte	.LLST0
+ 644 019d 00       		.byte	0
+ 645 019e 10       		.uleb128 0x10
+ 646 019f 81000000 		.4byte	.LASF28
+ 647 01a3 01       		.byte	0x1
+ 648 01a4 2401     		.2byte	0x124
+ 649 01a6 96000000 		.4byte	0x96
+ 650 01aa 00000000 		.4byte	.LFB70
+ 651 01ae 0C000000 		.4byte	.LFE70-.LFB70
+ 652 01b2 01       		.uleb128 0x1
+ 653 01b3 9C       		.byte	0x9c
+ 654 01b4 C9010000 		.4byte	0x1c9
+ 655 01b8 11       		.uleb128 0x11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 20
+
+
+ 656 01b9 57010000 		.4byte	.LASF26
+ 657 01bd 01       		.byte	0x1
+ 658 01be 2601     		.2byte	0x126
+ 659 01c0 96000000 		.4byte	0x96
+ 660 01c4 21000000 		.4byte	.LLST1
+ 661 01c8 00       		.byte	0
+ 662 01c9 12       		.uleb128 0x12
+ 663 01ca FE020000 		.4byte	.LASF29
+ 664 01ce 01       		.byte	0x1
+ 665 01cf 3F01     		.2byte	0x13f
+ 666 01d1 00000000 		.4byte	.LFB71
+ 667 01d5 0C000000 		.4byte	.LFE71-.LFB71
+ 668 01d9 01       		.uleb128 0x1
+ 669 01da 9C       		.byte	0x9c
+ 670 01db 13       		.uleb128 0x13
+ 671 01dc 52020000 		.4byte	.LASF50
+ 672 01e0 01       		.byte	0x1
+ 673 01e1 5401     		.2byte	0x154
+ 674 01e3 96000000 		.4byte	0x96
+ 675 01e7 00000000 		.4byte	.LFB72
+ 676 01eb 10000000 		.4byte	.LFE72-.LFB72
+ 677 01ef 01       		.uleb128 0x1
+ 678 01f0 9C       		.byte	0x9c
+ 679 01f1 12       		.uleb128 0x12
+ 680 01f2 72000000 		.4byte	.LASF30
+ 681 01f6 01       		.byte	0x1
+ 682 01f7 6901     		.2byte	0x169
+ 683 01f9 00000000 		.4byte	.LFB73
+ 684 01fd 0C000000 		.4byte	.LFE73-.LFB73
+ 685 0201 01       		.uleb128 0x1
+ 686 0202 9C       		.byte	0x9c
+ 687 0203 09       		.uleb128 0x9
+ 688 0204 34000000 		.4byte	.LASF31
+ 689 0208 01       		.byte	0x1
+ 690 0209 3E       		.byte	0x3e
+ 691 020a 00000000 		.4byte	.LFB63
+ 692 020e 1C000000 		.4byte	.LFE63-.LFB63
+ 693 0212 01       		.uleb128 0x1
+ 694 0213 9C       		.byte	0x9c
+ 695 0214 55020000 		.4byte	0x255
+ 696 0218 0A       		.uleb128 0xa
+ 697 0219 06000000 		.4byte	.LVL8
+ 698 021d F1010000 		.4byte	0x1f1
+ 699 0221 14       		.uleb128 0x14
+ 700 0222 0C000000 		.4byte	.LVL9
+ 701 0226 1A010000 		.4byte	0x11a
+ 702 022a 38020000 		.4byte	0x238
+ 703 022e 15       		.uleb128 0x15
+ 704 022f 01       		.uleb128 0x1
+ 705 0230 50       		.byte	0x50
+ 706 0231 05       		.uleb128 0x5
+ 707 0232 03       		.byte	0x3
+ 708 0233 00000000 		.4byte	P1_IRQ_Interrupt
+ 709 0237 00       		.byte	0
+ 710 0238 14       		.uleb128 0x14
+ 711 0239 12000000 		.4byte	.LVL10
+ 712 023d 77010000 		.4byte	0x177
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 21
+
+
+ 713 0241 4B020000 		.4byte	0x24b
+ 714 0245 15       		.uleb128 0x15
+ 715 0246 01       		.uleb128 0x1
+ 716 0247 50       		.byte	0x50
+ 717 0248 01       		.uleb128 0x1
+ 718 0249 30       		.byte	0x30
+ 719 024a 00       		.byte	0
+ 720 024b 0A       		.uleb128 0xa
+ 721 024c 16000000 		.4byte	.LVL11
+ 722 0250 C9010000 		.4byte	0x1c9
+ 723 0254 00       		.byte	0
+ 724 0255 09       		.uleb128 0x9
+ 725 0256 25000000 		.4byte	.LASF32
+ 726 025a 01       		.byte	0x1
+ 727 025b 69       		.byte	0x69
+ 728 025c 00000000 		.4byte	.LFB64
+ 729 0260 1A000000 		.4byte	.LFE64-.LFB64
+ 730 0264 01       		.uleb128 0x1
+ 731 0265 9C       		.byte	0x9c
+ 732 0266 B3020000 		.4byte	0x2b3
+ 733 026a 16       		.uleb128 0x16
+ 734 026b 26020000 		.4byte	.LASF25
+ 735 026f 01       		.byte	0x1
+ 736 0270 69       		.byte	0x69
+ 737 0271 EF000000 		.4byte	0xef
+ 738 0275 38000000 		.4byte	.LLST2
+ 739 0279 0A       		.uleb128 0xa
+ 740 027a 08000000 		.4byte	.LVL13
+ 741 027e F1010000 		.4byte	0x1f1
+ 742 0282 14       		.uleb128 0x14
+ 743 0283 0E000000 		.4byte	.LVL14
+ 744 0287 1A010000 		.4byte	0x11a
+ 745 028b 96020000 		.4byte	0x296
+ 746 028f 15       		.uleb128 0x15
+ 747 0290 01       		.uleb128 0x1
+ 748 0291 50       		.byte	0x50
+ 749 0292 02       		.uleb128 0x2
+ 750 0293 74       		.byte	0x74
+ 751 0294 00       		.sleb128 0
+ 752 0295 00       		.byte	0
+ 753 0296 14       		.uleb128 0x14
+ 754 0297 14000000 		.4byte	.LVL15
+ 755 029b 77010000 		.4byte	0x177
+ 756 029f A9020000 		.4byte	0x2a9
+ 757 02a3 15       		.uleb128 0x15
+ 758 02a4 01       		.uleb128 0x1
+ 759 02a5 50       		.byte	0x50
+ 760 02a6 01       		.uleb128 0x1
+ 761 02a7 30       		.byte	0x30
+ 762 02a8 00       		.byte	0
+ 763 02a9 0A       		.uleb128 0xa
+ 764 02aa 18000000 		.4byte	.LVL16
+ 765 02ae C9010000 		.4byte	0x1c9
+ 766 02b2 00       		.byte	0
+ 767 02b3 09       		.uleb128 0x9
+ 768 02b4 41000000 		.4byte	.LASF33
+ 769 02b8 01       		.byte	0x1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 22
+
+
+ 770 02b9 87       		.byte	0x87
+ 771 02ba 00000000 		.4byte	.LFB65
+ 772 02be 14000000 		.4byte	.LFE65-.LFB65
+ 773 02c2 01       		.uleb128 0x1
+ 774 02c3 9C       		.byte	0x9c
+ 775 02c4 DB020000 		.4byte	0x2db
+ 776 02c8 0A       		.uleb128 0xa
+ 777 02c9 06000000 		.4byte	.LVL17
+ 778 02cd F1010000 		.4byte	0x1f1
+ 779 02d1 0A       		.uleb128 0xa
+ 780 02d2 0C000000 		.4byte	.LVL18
+ 781 02d6 1A010000 		.4byte	0x11a
+ 782 02da 00       		.byte	0
+ 783 02db 12       		.uleb128 0x12
+ 784 02dc A4020000 		.4byte	.LASF34
+ 785 02e0 01       		.byte	0x1
+ 786 02e1 8401     		.2byte	0x184
+ 787 02e3 00000000 		.4byte	.LFB74
+ 788 02e7 0C000000 		.4byte	.LFE74-.LFB74
+ 789 02eb 01       		.uleb128 0x1
+ 790 02ec 9C       		.byte	0x9c
+ 791 02ed 12       		.uleb128 0x12
+ 792 02ee 5E000000 		.4byte	.LASF35
+ 793 02f2 01       		.byte	0x1
+ 794 02f3 9D01     		.2byte	0x19d
+ 795 02f5 00000000 		.4byte	.LFB75
+ 796 02f9 0C000000 		.4byte	.LFE75-.LFB75
+ 797 02fd 01       		.uleb128 0x1
+ 798 02fe 9C       		.byte	0x9c
+ 799 02ff 17       		.uleb128 0x17
+ 800 0300 EA000000 		.4byte	.LASF36
+ 801 0304 05       		.byte	0x5
+ 802 0305 9606     		.2byte	0x696
+ 803 0307 0B030000 		.4byte	0x30b
+ 804 030b 08       		.uleb128 0x8
+ 805 030c 8B000000 		.4byte	0x8b
+ 806 0310 18       		.uleb128 0x18
+ 807 0311 6B020000 		.4byte	.LASF37
+ 808 0315 06       		.byte	0x6
+ 809 0316 10       		.byte	0x10
+ 810 0317 21030000 		.4byte	0x321
+ 811 031b 05       		.uleb128 0x5
+ 812 031c 03       		.byte	0x3
+ 813 031d 00000000 		.4byte	sent
+ 814 0321 08       		.uleb128 0x8
+ 815 0322 25000000 		.4byte	0x25
+ 816 0326 18       		.uleb128 0x18
+ 817 0327 8B020000 		.4byte	.LASF38
+ 818 032b 06       		.byte	0x6
+ 819 032c 11       		.byte	0x11
+ 820 032d 21030000 		.4byte	0x321
+ 821 0331 05       		.uleb128 0x5
+ 822 0332 03       		.byte	0x3
+ 823 0333 00000000 		.4byte	playing
+ 824 0337 18       		.uleb128 0x18
+ 825 0338 E8020000 		.4byte	.LASF39
+ 826 033c 06       		.byte	0x6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 23
+
+
+ 827 033d 12       		.byte	0x12
+ 828 033e 21030000 		.4byte	0x321
+ 829 0342 05       		.uleb128 0x5
+ 830 0343 03       		.byte	0x3
+ 831 0344 00000000 		.4byte	input_ptr
+ 832 0348 18       		.uleb128 0x18
+ 833 0349 7E020000 		.4byte	.LASF40
+ 834 034d 06       		.byte	0x6
+ 835 034e 13       		.byte	0x13
+ 836 034f 21030000 		.4byte	0x321
+ 837 0353 05       		.uleb128 0x5
+ 838 0354 03       		.byte	0x3
+ 839 0355 00000000 		.4byte	buf_ptr
+ 840 0359 18       		.uleb128 0x18
+ 841 035a A2000000 		.4byte	.LASF41
+ 842 035e 06       		.byte	0x6
+ 843 035f 14       		.byte	0x14
+ 844 0360 D9000000 		.4byte	0xd9
+ 845 0364 05       		.uleb128 0x5
+ 846 0365 03       		.byte	0x3
+ 847 0366 00000000 		.4byte	data
+ 848 036a 19       		.uleb128 0x19
+ 849 036b A2000000 		.4byte	0xa2
+ 850 036f 81030000 		.4byte	0x381
+ 851 0373 1A       		.uleb128 0x1a
+ 852 0374 76000000 		.4byte	0x76
+ 853 0378 01       		.byte	0x1
+ 854 0379 1B       		.uleb128 0x1b
+ 855 037a 76000000 		.4byte	0x76
+ 856 037e FF1F     		.2byte	0x1fff
+ 857 0380 00       		.byte	0
+ 858 0381 18       		.uleb128 0x18
+ 859 0382 B5000000 		.4byte	.LASF42
+ 860 0386 06       		.byte	0x6
+ 861 0387 15       		.byte	0x15
+ 862 0388 92030000 		.4byte	0x392
+ 863 038c 05       		.uleb128 0x5
+ 864 038d 03       		.byte	0x3
+ 865 038e 00000000 		.4byte	input
+ 866 0392 08       		.uleb128 0x8
+ 867 0393 6A030000 		.4byte	0x36a
+ 868 0397 18       		.uleb128 0x18
+ 869 0398 C0000000 		.4byte	.LASF43
+ 870 039c 06       		.byte	0x6
+ 871 039d 16       		.byte	0x16
+ 872 039e 21030000 		.4byte	0x321
+ 873 03a2 05       		.uleb128 0x5
+ 874 03a3 03       		.byte	0x3
+ 875 03a4 00000000 		.4byte	ready
+ 876 03a8 18       		.uleb128 0x18
+ 877 03a9 67010000 		.4byte	.LASF44
+ 878 03ad 06       		.byte	0x6
+ 879 03ae 17       		.byte	0x17
+ 880 03af 21030000 		.4byte	0x321
+ 881 03b3 05       		.uleb128 0x5
+ 882 03b4 03       		.byte	0x3
+ 883 03b5 00000000 		.4byte	timer_ready
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 24
+
+
+ 884 03b9 18       		.uleb128 0x18
+ 885 03ba DE020000 		.4byte	.LASF45
+ 886 03be 06       		.byte	0x6
+ 887 03bf 18       		.byte	0x18
+ 888 03c0 21030000 		.4byte	0x321
+ 889 03c4 05       		.uleb128 0x5
+ 890 03c5 03       		.byte	0x3
+ 891 03c6 00000000 		.4byte	use_timer
+ 892 03ca 18       		.uleb128 0x18
+ 893 03cb 00000000 		.4byte	.LASF46
+ 894 03cf 06       		.byte	0x6
+ 895 03d0 19       		.byte	0x19
+ 896 03d1 21030000 		.4byte	0x321
+ 897 03d5 05       		.uleb128 0x5
+ 898 03d6 03       		.byte	0x3
+ 899 03d7 00000000 		.4byte	disable_timer
+ 900 03db 1C       		.uleb128 0x1c
+ 901 03dc 15020000 		.4byte	.LASF51
+ 902 03e0 07       		.byte	0x7
+ 903 03e1 4E       		.byte	0x4e
+ 904 03e2 1D       		.uleb128 0x1d
+ 905 03e3 A2000000 		.4byte	0xa2
+ 906 03e7 00       		.byte	0
+ 907 03e8 00       		.byte	0
+ 908              		.section	.debug_abbrev,"",%progbits
+ 909              	.Ldebug_abbrev0:
+ 910 0000 01       		.uleb128 0x1
+ 911 0001 11       		.uleb128 0x11
+ 912 0002 01       		.byte	0x1
+ 913 0003 25       		.uleb128 0x25
+ 914 0004 0E       		.uleb128 0xe
+ 915 0005 13       		.uleb128 0x13
+ 916 0006 0B       		.uleb128 0xb
+ 917 0007 03       		.uleb128 0x3
+ 918 0008 0E       		.uleb128 0xe
+ 919 0009 1B       		.uleb128 0x1b
+ 920 000a 0E       		.uleb128 0xe
+ 921 000b 55       		.uleb128 0x55
+ 922 000c 17       		.uleb128 0x17
+ 923 000d 11       		.uleb128 0x11
+ 924 000e 01       		.uleb128 0x1
+ 925 000f 10       		.uleb128 0x10
+ 926 0010 17       		.uleb128 0x17
+ 927 0011 00       		.byte	0
+ 928 0012 00       		.byte	0
+ 929 0013 02       		.uleb128 0x2
+ 930 0014 24       		.uleb128 0x24
+ 931 0015 00       		.byte	0
+ 932 0016 0B       		.uleb128 0xb
+ 933 0017 0B       		.uleb128 0xb
+ 934 0018 3E       		.uleb128 0x3e
+ 935 0019 0B       		.uleb128 0xb
+ 936 001a 03       		.uleb128 0x3
+ 937 001b 08       		.uleb128 0x8
+ 938 001c 00       		.byte	0
+ 939 001d 00       		.byte	0
+ 940 001e 03       		.uleb128 0x3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 25
+
+
+ 941 001f 24       		.uleb128 0x24
+ 942 0020 00       		.byte	0
+ 943 0021 0B       		.uleb128 0xb
+ 944 0022 0B       		.uleb128 0xb
+ 945 0023 3E       		.uleb128 0x3e
+ 946 0024 0B       		.uleb128 0xb
+ 947 0025 03       		.uleb128 0x3
+ 948 0026 0E       		.uleb128 0xe
+ 949 0027 00       		.byte	0
+ 950 0028 00       		.byte	0
+ 951 0029 04       		.uleb128 0x4
+ 952 002a 16       		.uleb128 0x16
+ 953 002b 00       		.byte	0
+ 954 002c 03       		.uleb128 0x3
+ 955 002d 0E       		.uleb128 0xe
+ 956 002e 3A       		.uleb128 0x3a
+ 957 002f 0B       		.uleb128 0xb
+ 958 0030 3B       		.uleb128 0x3b
+ 959 0031 0B       		.uleb128 0xb
+ 960 0032 49       		.uleb128 0x49
+ 961 0033 13       		.uleb128 0x13
+ 962 0034 00       		.byte	0
+ 963 0035 00       		.byte	0
+ 964 0036 05       		.uleb128 0x5
+ 965 0037 0F       		.uleb128 0xf
+ 966 0038 00       		.byte	0
+ 967 0039 0B       		.uleb128 0xb
+ 968 003a 0B       		.uleb128 0xb
+ 969 003b 49       		.uleb128 0x49
+ 970 003c 13       		.uleb128 0x13
+ 971 003d 00       		.byte	0
+ 972 003e 00       		.byte	0
+ 973 003f 06       		.uleb128 0x6
+ 974 0040 15       		.uleb128 0x15
+ 975 0041 00       		.byte	0
+ 976 0042 27       		.uleb128 0x27
+ 977 0043 19       		.uleb128 0x19
+ 978 0044 00       		.byte	0
+ 979 0045 00       		.byte	0
+ 980 0046 07       		.uleb128 0x7
+ 981 0047 16       		.uleb128 0x16
+ 982 0048 00       		.byte	0
+ 983 0049 03       		.uleb128 0x3
+ 984 004a 0E       		.uleb128 0xe
+ 985 004b 3A       		.uleb128 0x3a
+ 986 004c 0B       		.uleb128 0xb
+ 987 004d 3B       		.uleb128 0x3b
+ 988 004e 05       		.uleb128 0x5
+ 989 004f 49       		.uleb128 0x49
+ 990 0050 13       		.uleb128 0x13
+ 991 0051 00       		.byte	0
+ 992 0052 00       		.byte	0
+ 993 0053 08       		.uleb128 0x8
+ 994 0054 35       		.uleb128 0x35
+ 995 0055 00       		.byte	0
+ 996 0056 49       		.uleb128 0x49
+ 997 0057 13       		.uleb128 0x13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 26
+
+
+ 998 0058 00       		.byte	0
+ 999 0059 00       		.byte	0
+ 1000 005a 09       		.uleb128 0x9
+ 1001 005b 2E       		.uleb128 0x2e
+ 1002 005c 01       		.byte	0x1
+ 1003 005d 3F       		.uleb128 0x3f
+ 1004 005e 19       		.uleb128 0x19
+ 1005 005f 03       		.uleb128 0x3
+ 1006 0060 0E       		.uleb128 0xe
+ 1007 0061 3A       		.uleb128 0x3a
+ 1008 0062 0B       		.uleb128 0xb
+ 1009 0063 3B       		.uleb128 0x3b
+ 1010 0064 0B       		.uleb128 0xb
+ 1011 0065 27       		.uleb128 0x27
+ 1012 0066 19       		.uleb128 0x19
+ 1013 0067 11       		.uleb128 0x11
+ 1014 0068 01       		.uleb128 0x1
+ 1015 0069 12       		.uleb128 0x12
+ 1016 006a 06       		.uleb128 0x6
+ 1017 006b 40       		.uleb128 0x40
+ 1018 006c 18       		.uleb128 0x18
+ 1019 006d 9742     		.uleb128 0x2117
+ 1020 006f 19       		.uleb128 0x19
+ 1021 0070 01       		.uleb128 0x1
+ 1022 0071 13       		.uleb128 0x13
+ 1023 0072 00       		.byte	0
+ 1024 0073 00       		.byte	0
+ 1025 0074 0A       		.uleb128 0xa
+ 1026 0075 898201   		.uleb128 0x4109
+ 1027 0078 00       		.byte	0
+ 1028 0079 11       		.uleb128 0x11
+ 1029 007a 01       		.uleb128 0x1
+ 1030 007b 31       		.uleb128 0x31
+ 1031 007c 13       		.uleb128 0x13
+ 1032 007d 00       		.byte	0
+ 1033 007e 00       		.byte	0
+ 1034 007f 0B       		.uleb128 0xb
+ 1035 0080 05       		.uleb128 0x5
+ 1036 0081 00       		.byte	0
+ 1037 0082 03       		.uleb128 0x3
+ 1038 0083 0E       		.uleb128 0xe
+ 1039 0084 3A       		.uleb128 0x3a
+ 1040 0085 0B       		.uleb128 0xb
+ 1041 0086 3B       		.uleb128 0x3b
+ 1042 0087 0B       		.uleb128 0xb
+ 1043 0088 49       		.uleb128 0x49
+ 1044 0089 13       		.uleb128 0x13
+ 1045 008a 02       		.uleb128 0x2
+ 1046 008b 18       		.uleb128 0x18
+ 1047 008c 00       		.byte	0
+ 1048 008d 00       		.byte	0
+ 1049 008e 0C       		.uleb128 0xc
+ 1050 008f 34       		.uleb128 0x34
+ 1051 0090 00       		.byte	0
+ 1052 0091 03       		.uleb128 0x3
+ 1053 0092 0E       		.uleb128 0xe
+ 1054 0093 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 27
+
+
+ 1055 0094 0B       		.uleb128 0xb
+ 1056 0095 3B       		.uleb128 0x3b
+ 1057 0096 0B       		.uleb128 0xb
+ 1058 0097 49       		.uleb128 0x49
+ 1059 0098 13       		.uleb128 0x13
+ 1060 0099 02       		.uleb128 0x2
+ 1061 009a 18       		.uleb128 0x18
+ 1062 009b 00       		.byte	0
+ 1063 009c 00       		.byte	0
+ 1064 009d 0D       		.uleb128 0xd
+ 1065 009e 2E       		.uleb128 0x2e
+ 1066 009f 01       		.byte	0x1
+ 1067 00a0 3F       		.uleb128 0x3f
+ 1068 00a1 19       		.uleb128 0x19
+ 1069 00a2 03       		.uleb128 0x3
+ 1070 00a3 0E       		.uleb128 0xe
+ 1071 00a4 3A       		.uleb128 0x3a
+ 1072 00a5 0B       		.uleb128 0xb
+ 1073 00a6 3B       		.uleb128 0x3b
+ 1074 00a7 0B       		.uleb128 0xb
+ 1075 00a8 27       		.uleb128 0x27
+ 1076 00a9 19       		.uleb128 0x19
+ 1077 00aa 49       		.uleb128 0x49
+ 1078 00ab 13       		.uleb128 0x13
+ 1079 00ac 11       		.uleb128 0x11
+ 1080 00ad 01       		.uleb128 0x1
+ 1081 00ae 12       		.uleb128 0x12
+ 1082 00af 06       		.uleb128 0x6
+ 1083 00b0 40       		.uleb128 0x40
+ 1084 00b1 18       		.uleb128 0x18
+ 1085 00b2 9742     		.uleb128 0x2117
+ 1086 00b4 19       		.uleb128 0x19
+ 1087 00b5 01       		.uleb128 0x1
+ 1088 00b6 13       		.uleb128 0x13
+ 1089 00b7 00       		.byte	0
+ 1090 00b8 00       		.byte	0
+ 1091 00b9 0E       		.uleb128 0xe
+ 1092 00ba 2E       		.uleb128 0x2e
+ 1093 00bb 01       		.byte	0x1
+ 1094 00bc 3F       		.uleb128 0x3f
+ 1095 00bd 19       		.uleb128 0x19
+ 1096 00be 03       		.uleb128 0x3
+ 1097 00bf 0E       		.uleb128 0xe
+ 1098 00c0 3A       		.uleb128 0x3a
+ 1099 00c1 0B       		.uleb128 0xb
+ 1100 00c2 3B       		.uleb128 0x3b
+ 1101 00c3 05       		.uleb128 0x5
+ 1102 00c4 27       		.uleb128 0x27
+ 1103 00c5 19       		.uleb128 0x19
+ 1104 00c6 11       		.uleb128 0x11
+ 1105 00c7 01       		.uleb128 0x1
+ 1106 00c8 12       		.uleb128 0x12
+ 1107 00c9 06       		.uleb128 0x6
+ 1108 00ca 40       		.uleb128 0x40
+ 1109 00cb 18       		.uleb128 0x18
+ 1110 00cc 9742     		.uleb128 0x2117
+ 1111 00ce 19       		.uleb128 0x19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 28
+
+
+ 1112 00cf 01       		.uleb128 0x1
+ 1113 00d0 13       		.uleb128 0x13
+ 1114 00d1 00       		.byte	0
+ 1115 00d2 00       		.byte	0
+ 1116 00d3 0F       		.uleb128 0xf
+ 1117 00d4 05       		.uleb128 0x5
+ 1118 00d5 00       		.byte	0
+ 1119 00d6 03       		.uleb128 0x3
+ 1120 00d7 0E       		.uleb128 0xe
+ 1121 00d8 3A       		.uleb128 0x3a
+ 1122 00d9 0B       		.uleb128 0xb
+ 1123 00da 3B       		.uleb128 0x3b
+ 1124 00db 05       		.uleb128 0x5
+ 1125 00dc 49       		.uleb128 0x49
+ 1126 00dd 13       		.uleb128 0x13
+ 1127 00de 02       		.uleb128 0x2
+ 1128 00df 17       		.uleb128 0x17
+ 1129 00e0 00       		.byte	0
+ 1130 00e1 00       		.byte	0
+ 1131 00e2 10       		.uleb128 0x10
+ 1132 00e3 2E       		.uleb128 0x2e
+ 1133 00e4 01       		.byte	0x1
+ 1134 00e5 3F       		.uleb128 0x3f
+ 1135 00e6 19       		.uleb128 0x19
+ 1136 00e7 03       		.uleb128 0x3
+ 1137 00e8 0E       		.uleb128 0xe
+ 1138 00e9 3A       		.uleb128 0x3a
+ 1139 00ea 0B       		.uleb128 0xb
+ 1140 00eb 3B       		.uleb128 0x3b
+ 1141 00ec 05       		.uleb128 0x5
+ 1142 00ed 27       		.uleb128 0x27
+ 1143 00ee 19       		.uleb128 0x19
+ 1144 00ef 49       		.uleb128 0x49
+ 1145 00f0 13       		.uleb128 0x13
+ 1146 00f1 11       		.uleb128 0x11
+ 1147 00f2 01       		.uleb128 0x1
+ 1148 00f3 12       		.uleb128 0x12
+ 1149 00f4 06       		.uleb128 0x6
+ 1150 00f5 40       		.uleb128 0x40
+ 1151 00f6 18       		.uleb128 0x18
+ 1152 00f7 9742     		.uleb128 0x2117
+ 1153 00f9 19       		.uleb128 0x19
+ 1154 00fa 01       		.uleb128 0x1
+ 1155 00fb 13       		.uleb128 0x13
+ 1156 00fc 00       		.byte	0
+ 1157 00fd 00       		.byte	0
+ 1158 00fe 11       		.uleb128 0x11
+ 1159 00ff 34       		.uleb128 0x34
+ 1160 0100 00       		.byte	0
+ 1161 0101 03       		.uleb128 0x3
+ 1162 0102 0E       		.uleb128 0xe
+ 1163 0103 3A       		.uleb128 0x3a
+ 1164 0104 0B       		.uleb128 0xb
+ 1165 0105 3B       		.uleb128 0x3b
+ 1166 0106 05       		.uleb128 0x5
+ 1167 0107 49       		.uleb128 0x49
+ 1168 0108 13       		.uleb128 0x13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 29
+
+
+ 1169 0109 02       		.uleb128 0x2
+ 1170 010a 17       		.uleb128 0x17
+ 1171 010b 00       		.byte	0
+ 1172 010c 00       		.byte	0
+ 1173 010d 12       		.uleb128 0x12
+ 1174 010e 2E       		.uleb128 0x2e
+ 1175 010f 00       		.byte	0
+ 1176 0110 3F       		.uleb128 0x3f
+ 1177 0111 19       		.uleb128 0x19
+ 1178 0112 03       		.uleb128 0x3
+ 1179 0113 0E       		.uleb128 0xe
+ 1180 0114 3A       		.uleb128 0x3a
+ 1181 0115 0B       		.uleb128 0xb
+ 1182 0116 3B       		.uleb128 0x3b
+ 1183 0117 05       		.uleb128 0x5
+ 1184 0118 27       		.uleb128 0x27
+ 1185 0119 19       		.uleb128 0x19
+ 1186 011a 11       		.uleb128 0x11
+ 1187 011b 01       		.uleb128 0x1
+ 1188 011c 12       		.uleb128 0x12
+ 1189 011d 06       		.uleb128 0x6
+ 1190 011e 40       		.uleb128 0x40
+ 1191 011f 18       		.uleb128 0x18
+ 1192 0120 9742     		.uleb128 0x2117
+ 1193 0122 19       		.uleb128 0x19
+ 1194 0123 00       		.byte	0
+ 1195 0124 00       		.byte	0
+ 1196 0125 13       		.uleb128 0x13
+ 1197 0126 2E       		.uleb128 0x2e
+ 1198 0127 00       		.byte	0
+ 1199 0128 3F       		.uleb128 0x3f
+ 1200 0129 19       		.uleb128 0x19
+ 1201 012a 03       		.uleb128 0x3
+ 1202 012b 0E       		.uleb128 0xe
+ 1203 012c 3A       		.uleb128 0x3a
+ 1204 012d 0B       		.uleb128 0xb
+ 1205 012e 3B       		.uleb128 0x3b
+ 1206 012f 05       		.uleb128 0x5
+ 1207 0130 27       		.uleb128 0x27
+ 1208 0131 19       		.uleb128 0x19
+ 1209 0132 49       		.uleb128 0x49
+ 1210 0133 13       		.uleb128 0x13
+ 1211 0134 11       		.uleb128 0x11
+ 1212 0135 01       		.uleb128 0x1
+ 1213 0136 12       		.uleb128 0x12
+ 1214 0137 06       		.uleb128 0x6
+ 1215 0138 40       		.uleb128 0x40
+ 1216 0139 18       		.uleb128 0x18
+ 1217 013a 9742     		.uleb128 0x2117
+ 1218 013c 19       		.uleb128 0x19
+ 1219 013d 00       		.byte	0
+ 1220 013e 00       		.byte	0
+ 1221 013f 14       		.uleb128 0x14
+ 1222 0140 898201   		.uleb128 0x4109
+ 1223 0143 01       		.byte	0x1
+ 1224 0144 11       		.uleb128 0x11
+ 1225 0145 01       		.uleb128 0x1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 30
+
+
+ 1226 0146 31       		.uleb128 0x31
+ 1227 0147 13       		.uleb128 0x13
+ 1228 0148 01       		.uleb128 0x1
+ 1229 0149 13       		.uleb128 0x13
+ 1230 014a 00       		.byte	0
+ 1231 014b 00       		.byte	0
+ 1232 014c 15       		.uleb128 0x15
+ 1233 014d 8A8201   		.uleb128 0x410a
+ 1234 0150 00       		.byte	0
+ 1235 0151 02       		.uleb128 0x2
+ 1236 0152 18       		.uleb128 0x18
+ 1237 0153 9142     		.uleb128 0x2111
+ 1238 0155 18       		.uleb128 0x18
+ 1239 0156 00       		.byte	0
+ 1240 0157 00       		.byte	0
+ 1241 0158 16       		.uleb128 0x16
+ 1242 0159 05       		.uleb128 0x5
+ 1243 015a 00       		.byte	0
+ 1244 015b 03       		.uleb128 0x3
+ 1245 015c 0E       		.uleb128 0xe
+ 1246 015d 3A       		.uleb128 0x3a
+ 1247 015e 0B       		.uleb128 0xb
+ 1248 015f 3B       		.uleb128 0x3b
+ 1249 0160 0B       		.uleb128 0xb
+ 1250 0161 49       		.uleb128 0x49
+ 1251 0162 13       		.uleb128 0x13
+ 1252 0163 02       		.uleb128 0x2
+ 1253 0164 17       		.uleb128 0x17
+ 1254 0165 00       		.byte	0
+ 1255 0166 00       		.byte	0
+ 1256 0167 17       		.uleb128 0x17
+ 1257 0168 34       		.uleb128 0x34
+ 1258 0169 00       		.byte	0
+ 1259 016a 03       		.uleb128 0x3
+ 1260 016b 0E       		.uleb128 0xe
+ 1261 016c 3A       		.uleb128 0x3a
+ 1262 016d 0B       		.uleb128 0xb
+ 1263 016e 3B       		.uleb128 0x3b
+ 1264 016f 05       		.uleb128 0x5
+ 1265 0170 49       		.uleb128 0x49
+ 1266 0171 13       		.uleb128 0x13
+ 1267 0172 3F       		.uleb128 0x3f
+ 1268 0173 19       		.uleb128 0x19
+ 1269 0174 3C       		.uleb128 0x3c
+ 1270 0175 19       		.uleb128 0x19
+ 1271 0176 00       		.byte	0
+ 1272 0177 00       		.byte	0
+ 1273 0178 18       		.uleb128 0x18
+ 1274 0179 34       		.uleb128 0x34
+ 1275 017a 00       		.byte	0
+ 1276 017b 03       		.uleb128 0x3
+ 1277 017c 0E       		.uleb128 0xe
+ 1278 017d 3A       		.uleb128 0x3a
+ 1279 017e 0B       		.uleb128 0xb
+ 1280 017f 3B       		.uleb128 0x3b
+ 1281 0180 0B       		.uleb128 0xb
+ 1282 0181 49       		.uleb128 0x49
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 31
+
+
+ 1283 0182 13       		.uleb128 0x13
+ 1284 0183 3F       		.uleb128 0x3f
+ 1285 0184 19       		.uleb128 0x19
+ 1286 0185 02       		.uleb128 0x2
+ 1287 0186 18       		.uleb128 0x18
+ 1288 0187 00       		.byte	0
+ 1289 0188 00       		.byte	0
+ 1290 0189 19       		.uleb128 0x19
+ 1291 018a 01       		.uleb128 0x1
+ 1292 018b 01       		.byte	0x1
+ 1293 018c 49       		.uleb128 0x49
+ 1294 018d 13       		.uleb128 0x13
+ 1295 018e 01       		.uleb128 0x1
+ 1296 018f 13       		.uleb128 0x13
+ 1297 0190 00       		.byte	0
+ 1298 0191 00       		.byte	0
+ 1299 0192 1A       		.uleb128 0x1a
+ 1300 0193 21       		.uleb128 0x21
+ 1301 0194 00       		.byte	0
+ 1302 0195 49       		.uleb128 0x49
+ 1303 0196 13       		.uleb128 0x13
+ 1304 0197 2F       		.uleb128 0x2f
+ 1305 0198 0B       		.uleb128 0xb
+ 1306 0199 00       		.byte	0
+ 1307 019a 00       		.byte	0
+ 1308 019b 1B       		.uleb128 0x1b
+ 1309 019c 21       		.uleb128 0x21
+ 1310 019d 00       		.byte	0
+ 1311 019e 49       		.uleb128 0x49
+ 1312 019f 13       		.uleb128 0x13
+ 1313 01a0 2F       		.uleb128 0x2f
+ 1314 01a1 05       		.uleb128 0x5
+ 1315 01a2 00       		.byte	0
+ 1316 01a3 00       		.byte	0
+ 1317 01a4 1C       		.uleb128 0x1c
+ 1318 01a5 2E       		.uleb128 0x2e
+ 1319 01a6 01       		.byte	0x1
+ 1320 01a7 3F       		.uleb128 0x3f
+ 1321 01a8 19       		.uleb128 0x19
+ 1322 01a9 03       		.uleb128 0x3
+ 1323 01aa 0E       		.uleb128 0xe
+ 1324 01ab 3A       		.uleb128 0x3a
+ 1325 01ac 0B       		.uleb128 0xb
+ 1326 01ad 3B       		.uleb128 0x3b
+ 1327 01ae 0B       		.uleb128 0xb
+ 1328 01af 27       		.uleb128 0x27
+ 1329 01b0 19       		.uleb128 0x19
+ 1330 01b1 3C       		.uleb128 0x3c
+ 1331 01b2 19       		.uleb128 0x19
+ 1332 01b3 00       		.byte	0
+ 1333 01b4 00       		.byte	0
+ 1334 01b5 1D       		.uleb128 0x1d
+ 1335 01b6 05       		.uleb128 0x5
+ 1336 01b7 00       		.byte	0
+ 1337 01b8 49       		.uleb128 0x49
+ 1338 01b9 13       		.uleb128 0x13
+ 1339 01ba 00       		.byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 32
+
+
+ 1340 01bb 00       		.byte	0
+ 1341 01bc 00       		.byte	0
+ 1342              		.section	.debug_loc,"",%progbits
+ 1343              	.Ldebug_loc0:
+ 1344              	.LLST0:
+ 1345 0000 00000000 		.4byte	.LVL4
+ 1346 0004 02000000 		.4byte	.LVL5
+ 1347 0008 0100     		.2byte	0x1
+ 1348 000a 50       		.byte	0x50
+ 1349 000b 02000000 		.4byte	.LVL5
+ 1350 000f 10000000 		.4byte	.LFE69
+ 1351 0013 0400     		.2byte	0x4
+ 1352 0015 F3       		.byte	0xf3
+ 1353 0016 01       		.uleb128 0x1
+ 1354 0017 50       		.byte	0x50
+ 1355 0018 9F       		.byte	0x9f
+ 1356 0019 00000000 		.4byte	0
+ 1357 001d 00000000 		.4byte	0
+ 1358              	.LLST1:
+ 1359 0021 04000000 		.4byte	.LVL6
+ 1360 0025 06000000 		.4byte	.LVL7
+ 1361 0029 0500     		.2byte	0x5
+ 1362 002b 70       		.byte	0x70
+ 1363 002c 00       		.sleb128 0
+ 1364 002d 35       		.byte	0x35
+ 1365 002e 25       		.byte	0x25
+ 1366 002f 9F       		.byte	0x9f
+ 1367 0030 00000000 		.4byte	0
+ 1368 0034 00000000 		.4byte	0
+ 1369              	.LLST2:
+ 1370 0038 00000000 		.4byte	.LVL12
+ 1371 003c 07000000 		.4byte	.LVL13-1
+ 1372 0040 0100     		.2byte	0x1
+ 1373 0042 50       		.byte	0x50
+ 1374 0043 07000000 		.4byte	.LVL13-1
+ 1375 0047 1A000000 		.4byte	.LFE64
+ 1376 004b 0100     		.2byte	0x1
+ 1377 004d 54       		.byte	0x54
+ 1378 004e 00000000 		.4byte	0
+ 1379 0052 00000000 		.4byte	0
+ 1380              		.section	.debug_aranges,"",%progbits
+ 1381 0000 7C000000 		.4byte	0x7c
+ 1382 0004 0200     		.2byte	0x2
+ 1383 0006 00000000 		.4byte	.Ldebug_info0
+ 1384 000a 04       		.byte	0x4
+ 1385 000b 00       		.byte	0
+ 1386 000c 0000     		.2byte	0
+ 1387 000e 0000     		.2byte	0
+ 1388 0010 00000000 		.4byte	.LFB66
+ 1389 0014 68000000 		.4byte	.LFE66-.LFB66
+ 1390 0018 00000000 		.4byte	.LFB67
+ 1391 001c 0C000000 		.4byte	.LFE67-.LFB67
+ 1392 0020 00000000 		.4byte	.LFB68
+ 1393 0024 0C000000 		.4byte	.LFE68-.LFB68
+ 1394 0028 00000000 		.4byte	.LFB69
+ 1395 002c 10000000 		.4byte	.LFE69-.LFB69
+ 1396 0030 00000000 		.4byte	.LFB70
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 33
+
+
+ 1397 0034 0C000000 		.4byte	.LFE70-.LFB70
+ 1398 0038 00000000 		.4byte	.LFB71
+ 1399 003c 0C000000 		.4byte	.LFE71-.LFB71
+ 1400 0040 00000000 		.4byte	.LFB72
+ 1401 0044 10000000 		.4byte	.LFE72-.LFB72
+ 1402 0048 00000000 		.4byte	.LFB73
+ 1403 004c 0C000000 		.4byte	.LFE73-.LFB73
+ 1404 0050 00000000 		.4byte	.LFB63
+ 1405 0054 1C000000 		.4byte	.LFE63-.LFB63
+ 1406 0058 00000000 		.4byte	.LFB64
+ 1407 005c 1A000000 		.4byte	.LFE64-.LFB64
+ 1408 0060 00000000 		.4byte	.LFB65
+ 1409 0064 14000000 		.4byte	.LFE65-.LFB65
+ 1410 0068 00000000 		.4byte	.LFB74
+ 1411 006c 0C000000 		.4byte	.LFE74-.LFB74
+ 1412 0070 00000000 		.4byte	.LFB75
+ 1413 0074 0C000000 		.4byte	.LFE75-.LFB75
+ 1414 0078 00000000 		.4byte	0
+ 1415 007c 00000000 		.4byte	0
+ 1416              		.section	.debug_ranges,"",%progbits
+ 1417              	.Ldebug_ranges0:
+ 1418 0000 00000000 		.4byte	.LFB66
+ 1419 0004 68000000 		.4byte	.LFE66
+ 1420 0008 00000000 		.4byte	.LFB67
+ 1421 000c 0C000000 		.4byte	.LFE67
+ 1422 0010 00000000 		.4byte	.LFB68
+ 1423 0014 0C000000 		.4byte	.LFE68
+ 1424 0018 00000000 		.4byte	.LFB69
+ 1425 001c 10000000 		.4byte	.LFE69
+ 1426 0020 00000000 		.4byte	.LFB70
+ 1427 0024 0C000000 		.4byte	.LFE70
+ 1428 0028 00000000 		.4byte	.LFB71
+ 1429 002c 0C000000 		.4byte	.LFE71
+ 1430 0030 00000000 		.4byte	.LFB72
+ 1431 0034 10000000 		.4byte	.LFE72
+ 1432 0038 00000000 		.4byte	.LFB73
+ 1433 003c 0C000000 		.4byte	.LFE73
+ 1434 0040 00000000 		.4byte	.LFB63
+ 1435 0044 1C000000 		.4byte	.LFE63
+ 1436 0048 00000000 		.4byte	.LFB64
+ 1437 004c 1A000000 		.4byte	.LFE64
+ 1438 0050 00000000 		.4byte	.LFB65
+ 1439 0054 14000000 		.4byte	.LFE65
+ 1440 0058 00000000 		.4byte	.LFB74
+ 1441 005c 0C000000 		.4byte	.LFE74
+ 1442 0060 00000000 		.4byte	.LFB75
+ 1443 0064 0C000000 		.4byte	.LFE75
+ 1444 0068 00000000 		.4byte	0
+ 1445 006c 00000000 		.4byte	0
+ 1446              		.section	.debug_line,"",%progbits
+ 1447              	.Ldebug_line0:
+ 1448 0000 68020000 		.section	.debug_str,"MS",%progbits,1
+ 1448      02007601 
+ 1448      00000201 
+ 1448      FB0E0D00 
+ 1448      01010101 
+ 1449              	.LASF46:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 34
+
+
+ 1450 0000 64697361 		.ascii	"disable_timer\000"
+ 1450      626C655F 
+ 1450      74696D65 
+ 1450      7200
+ 1451              	.LASF27:
+ 1452 000e 50315F49 		.ascii	"P1_IRQ_GetVector\000"
+ 1452      52515F47 
+ 1452      65745665 
+ 1452      63746F72 
+ 1452      00
+ 1453              	.LASF19:
+ 1454 001f 72656733 		.ascii	"reg32\000"
+ 1454      3200
+ 1455              	.LASF32:
+ 1456 0025 50315F49 		.ascii	"P1_IRQ_StartEx\000"
+ 1456      52515F53 
+ 1456      74617274 
+ 1456      457800
+ 1457              	.LASF31:
+ 1458 0034 50315F49 		.ascii	"P1_IRQ_Start\000"
+ 1458      52515F53 
+ 1458      74617274 
+ 1458      00
+ 1459              	.LASF33:
+ 1460 0041 50315F49 		.ascii	"P1_IRQ_Stop\000"
+ 1460      52515F53 
+ 1460      746F7000 
+ 1461              	.LASF11:
+ 1462 004d 5F5F696E 		.ascii	"__int32_t\000"
+ 1462      7433325F 
+ 1462      7400
+ 1463              	.LASF17:
+ 1464 0057 646F7562 		.ascii	"double\000"
+ 1464      6C6500
+ 1465              	.LASF35:
+ 1466 005e 50315F49 		.ascii	"P1_IRQ_ClearPending\000"
+ 1466      52515F43 
+ 1466      6C656172 
+ 1466      50656E64 
+ 1466      696E6700 
+ 1467              	.LASF30:
+ 1468 0072 50315F49 		.ascii	"P1_IRQ_Disable\000"
+ 1468      52515F44 
+ 1468      69736162 
+ 1468      6C6500
+ 1469              	.LASF28:
+ 1470 0081 50315F49 		.ascii	"P1_IRQ_GetPriority\000"
+ 1470      52515F47 
+ 1470      65745072 
+ 1470      696F7269 
+ 1470      747900
+ 1471              	.LASF12:
+ 1472 0094 696E7433 		.ascii	"int32_t\000"
+ 1472      325F7400 
+ 1473              	.LASF16:
+ 1474 009c 666C6F61 		.ascii	"float\000"
+ 1474      7400
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 35
+
+
+ 1475              	.LASF41:
+ 1476 00a2 64617461 		.ascii	"data\000"
+ 1476      00
+ 1477              	.LASF2:
+ 1478 00a7 756E7369 		.ascii	"unsigned char\000"
+ 1478      676E6564 
+ 1478      20636861 
+ 1478      7200
+ 1479              	.LASF42:
+ 1480 00b5 696E7075 		.ascii	"input\000"
+ 1480      7400
+ 1481              	.LASF18:
+ 1482 00bb 72656738 		.ascii	"reg8\000"
+ 1482      00
+ 1483              	.LASF43:
+ 1484 00c0 72656164 		.ascii	"ready\000"
+ 1484      7900
+ 1485              	.LASF22:
+ 1486 00c6 50315F49 		.ascii	"P1_IRQ_SetVector\000"
+ 1486      52515F53 
+ 1486      65745665 
+ 1486      63746F72 
+ 1486      00
+ 1487              	.LASF4:
+ 1488 00d7 73686F72 		.ascii	"short unsigned int\000"
+ 1488      7420756E 
+ 1488      7369676E 
+ 1488      65642069 
+ 1488      6E7400
+ 1489              	.LASF36:
+ 1490 00ea 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1490      52784275 
+ 1490      66666572 
+ 1490      00
+ 1491              	.LASF6:
+ 1492 00f7 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1492      20756E73 
+ 1492      69676E65 
+ 1492      6420696E 
+ 1492      7400
+ 1493              	.LASF49:
+ 1494 0109 433A5C55 		.ascii	"C:\\Users\\Thomas\\Documents\\PSoC Creator\\TASBot\\"
+ 1494      73657273 
+ 1494      5C54686F 
+ 1494      6D61735C 
+ 1494      446F6375 
+ 1495 0137 54415342 		.ascii	"TASBot.cydsn\000"
+ 1495      6F742E63 
+ 1495      7964736E 
+ 1495      00
+ 1496              	.LASF24:
+ 1497 0144 50315F49 		.ascii	"P1_IRQ_SetPriority\000"
+ 1497      52515F53 
+ 1497      65745072 
+ 1497      696F7269 
+ 1497      747900
+ 1498              	.LASF26:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 36
+
+
+ 1499 0157 7072696F 		.ascii	"priority\000"
+ 1499      72697479 
+ 1499      00
+ 1500              	.LASF14:
+ 1501 0160 75696E74 		.ascii	"uint16\000"
+ 1501      313600
+ 1502              	.LASF44:
+ 1503 0167 74696D65 		.ascii	"timer_ready\000"
+ 1503      725F7265 
+ 1503      61647900 
+ 1504              	.LASF15:
+ 1505 0173 75696E74 		.ascii	"uint32\000"
+ 1505      333200
+ 1506              	.LASF47:
+ 1507 017a 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1507      4320342E 
+ 1507      392E3320 
+ 1507      32303135 
+ 1507      30333033 
+ 1508 01ad 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1508      20726576 
+ 1508      6973696F 
+ 1508      6E203232 
+ 1508      31323230 
+ 1509 01e0 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1509      66756E63 
+ 1509      74696F6E 
+ 1509      2D736563 
+ 1509      74696F6E 
+ 1510              	.LASF0:
+ 1511 0208 756E7369 		.ascii	"unsigned int\000"
+ 1511      676E6564 
+ 1511      20696E74 
+ 1511      00
+ 1512              	.LASF51:
+ 1513 0215 50315F57 		.ascii	"P1_WriteRegValue\000"
+ 1513      72697465 
+ 1513      52656756 
+ 1513      616C7565 
+ 1513      00
+ 1514              	.LASF25:
+ 1515 0226 61646472 		.ascii	"address\000"
+ 1515      65737300 
+ 1516              	.LASF8:
+ 1517 022e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1517      206C6F6E 
+ 1517      6720756E 
+ 1517      7369676E 
+ 1517      65642069 
+ 1518              	.LASF20:
+ 1519 0245 63796973 		.ascii	"cyisraddress\000"
+ 1519      72616464 
+ 1519      72657373 
+ 1519      00
+ 1520              	.LASF50:
+ 1521 0252 50315F49 		.ascii	"P1_IRQ_GetState\000"
+ 1521      52515F47 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 37
+
+
+ 1521      65745374 
+ 1521      61746500 
+ 1522              	.LASF9:
+ 1523 0262 73697A65 		.ascii	"sizetype\000"
+ 1523      74797065 
+ 1523      00
+ 1524              	.LASF37:
+ 1525 026b 73656E74 		.ascii	"sent\000"
+ 1525      00
+ 1526              	.LASF7:
+ 1527 0270 6C6F6E67 		.ascii	"long long int\000"
+ 1527      206C6F6E 
+ 1527      6720696E 
+ 1527      7400
+ 1528              	.LASF40:
+ 1529 027e 6275665F 		.ascii	"buf_ptr\000"
+ 1529      70747200 
+ 1530              	.LASF10:
+ 1531 0286 63686172 		.ascii	"char\000"
+ 1531      00
+ 1532              	.LASF38:
+ 1533 028b 706C6179 		.ascii	"playing\000"
+ 1533      696E6700 
+ 1534              	.LASF21:
+ 1535 0293 50315F49 		.ascii	"P1_IRQ_Interrupt\000"
+ 1535      52515F49 
+ 1535      6E746572 
+ 1535      72757074 
+ 1535      00
+ 1536              	.LASF34:
+ 1537 02a4 50315F49 		.ascii	"P1_IRQ_SetPending\000"
+ 1537      52515F53 
+ 1537      65745065 
+ 1537      6E64696E 
+ 1537      6700
+ 1538              	.LASF3:
+ 1539 02b6 73686F72 		.ascii	"short int\000"
+ 1539      7420696E 
+ 1539      7400
+ 1540              	.LASF13:
+ 1541 02c0 75696E74 		.ascii	"uint8\000"
+ 1541      3800
+ 1542              	.LASF23:
+ 1543 02c6 72616D56 		.ascii	"ramVectorTable\000"
+ 1543      6563746F 
+ 1543      72546162 
+ 1543      6C6500
+ 1544              	.LASF5:
+ 1545 02d5 6C6F6E67 		.ascii	"long int\000"
+ 1545      20696E74 
+ 1545      00
+ 1546              	.LASF45:
+ 1547 02de 7573655F 		.ascii	"use_timer\000"
+ 1547      74696D65 
+ 1547      7200
+ 1548              	.LASF39:
+ 1549 02e8 696E7075 		.ascii	"input_ptr\000"
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccVA8bwJ.s 			page 38
+
+
+ 1549      745F7074 
+ 1549      7200
+ 1550              	.LASF1:
+ 1551 02f2 7369676E 		.ascii	"signed char\000"
+ 1551      65642063 
+ 1551      68617200 
+ 1552              	.LASF29:
+ 1553 02fe 50315F49 		.ascii	"P1_IRQ_Enable\000"
+ 1553      52515F45 
+ 1553      6E61626C 
+ 1553      6500
+ 1554              	.LASF48:
+ 1555 030c 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\P1_IRQ.c\000"
+ 1555      6E657261 
+ 1555      7465645F 
+ 1555      536F7572 
+ 1555      63655C50 
+ 1556              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

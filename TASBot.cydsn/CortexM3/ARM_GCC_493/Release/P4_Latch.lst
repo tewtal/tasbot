@@ -1,0 +1,1545 @@
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"P4_Latch.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.section	.gnu.lto_.profile.be1c17fb,"",%progbits
+  18 0000 789C6366 		.ascii	"x\234cf```a\200\000F\0061!\000\000\262\0001"
+  18      60606061 
+  18      80004606 
+  18      31210000 
+  18      B20031
+  19              		.text
+  20              		.section	.gnu.lto_.jmpfuncs.be1c17fb,"",%progbits
+  21 0000 789C6366 		.ascii	"x\234cf\300\016\204\2404\013\003##c=#\210`b``\006\212"
+  21      C00E84A0 
+  21      340B0323 
+  21      23633D23 
+  21      88606260 
+  22 0017 00000DC0 		.ascii	"\000\000\015\300\001$"
+  22      0124
+  23              		.text
+  24              		.section	.gnu.lto_.inline.be1c17fb,"",%progbits
+  25 0000 789C6366 		.ascii	"x\234cf\300\016\022\2404\013\003\003\007;##\003#\003"
+  25      C00E12A0 
+  25      340B0303 
+  25      073B2323 
+  25      032303
+  26 0013 0333C701 		.ascii	"\0033\307\001;\006\266\005\362L\014L\027\370Y@\222\214"
+  26      3B06B605 
+  26      F24C0C4C 
+  26      17F85940 
+  26      928C
+  27 0025 78E49818 		.ascii	"x\344\230\030XY\030\031\230X\026\310C\304\201\200\031"
+  27      58591819 
+  27      985816C8 
+  27      43C48180 
+  27      19
+  28 0036 53880100 		.ascii	"S\210\001\000\322\320\011("
+  28      D2D00928 
+  29              		.text
+  30              		.section	.gnu.lto_.pureconst.be1c17fb,"",%progbits
+  31 0000 789C6366 		.ascii	"x\234cf``\340d\200\000\026\006)F)&)f)\000\002\305\000"
+  31      6060E064 
+  31      80001606 
+  31      29462926 
+  31      29662900 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 2
+
+
+  32 0017 7F       		.ascii	"\177"
+  33              		.text
+  34              		.section	.gnu.lto_P4_Latch_Write.be1c17fb,"",%progbits
+  35 0000 789C6591 		.ascii	"x\234e\221OHTQ\024\306\317w\356{3\243\266\210\226\263"
+  35      4F485451 
+  35      14C6CF77 
+  35      EE7B33A3 
+  35      B68896B3 
+  36 0014 35198472 		.ascii	"5\031\204r\225\264\215Z\264q1\340v@\206\351AB(\350\263"
+  36      95B48D5A 
+  36      B47131E0 
+  36      764086E9 
+  36      414228E8 
+  37 0029 EDDC67C3 		.ascii	"\355\334g\303,\"A$0\010)\025\251\034S3p#\312S\334\365"
+  37      2C224124 
+  37      30082915 
+  37      A91C5333 
+  37      7023CA53 
+  38 003f 476C5120 		.ascii	"GlQ \346\037\030E\251E\2424M\326<\317}o\223t\341\276"
+  38      E61F1845 
+  38      A945A234 
+  38      4DD63CCF 
+  38      7D6F9374 
+  39 0055 7BEFE1FB 		.ascii	"{\357\341\373\235\363\235\363\024\375\277\222\262\003"
+  39      9DF39DF3 
+  39      14FDBF92 
+  39      B203
+  40 0063 105D9713 		.ascii	"\020]\227\023\212\300\203\037\211\274\004\003\346B\240"
+  40      8AC0831F 
+  40      89BC0403 
+  40      E642A0
+  41 0072 3C238F43 		.ascii	"<#\217C>b\014\372\245'\015\251\011\255\365\217\2415"
+  41      3E620CFA 
+  41      A5270DA9 
+  41      09ADF58F 
+  41      A135
+  42 0084 2FEDA3CA 		.ascii	"/\355\243\312D\307\034\345\301\013\244Ds\\\322\217\225"
+  42      44C71CE5 
+  42      C10BA444 
+  42      735CD28F 
+  42      95
+  43 0095 4A81E43E 		.ascii	"J\201\344>\273\376\241\026o\032\327\272\337_\230\326"
+  43      BBFEA116 
+  43      6F1AD7BA 
+  43      DF5F98D6 
+  44 00a5 37440EBC 		.ascii	"7D\016\274\204\022\002W\222hN\222\004\010\257\320d\304"
+  44      84120257 
+  44      92684E92 
+  44      0408AFD0 
+  44      64C4
+  45 00b7 7303ABF3 		.ascii	"s\003\253\363\254\256\206\340\350\273\335\325\013\215"
+  45      ACAE86E0 
+  45      E8BBDDD5 
+  45      0B8D
+  46 00c5 A302EE9C 		.ascii	"\243\002\356\234\316g|\357\271\256\005A\210O\376\213"
+  46      CE677CEF 
+  46      B9AE0541 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 3
+
+
+  46      884FFE8B 
+  47 00d5 474BF447 		.ascii	"GK\364G\205\277_\032b\0051v\021%4F\2360\205\230\364"
+  47      85BF5F1A 
+  47      62053176 
+  47      11253446 
+  47      9E308598 
+  48 00ea 051399B9 		.ascii	"\005\023\231\271\344\353 x\273\270\374\033\011\226\262"
+  48      E4EB2078 
+  48      BBB8FC1B 
+  48      0996B2
+  49 00f9 2C8D4AD8 		.ascii	",\215J\330\202\251n\233@\314|\210\312\262M\337{\362"
+  49      82A96E9B 
+  49      40CC7C88 
+  49      CAB24DDF 
+  49      7BF2
+  50 010b 90536D60 		.ascii	"\220Sm`\345\347\303\255\341\270IVa3\204\357\325?\237"
+  50      E5E7C3AD 
+  50      E1B84956 
+  50      613384EF 
+  50      D53F9F
+  51 011e EA0FB8CA 		.ascii	"\352\017\270\312J\217y\3322\345\267\313k\353\2110\024"
+  51      4A8F79DA 
+  51      32E5B7CB 
+  51      6BEB8930 
+  51      14
+  52 012f BA597AB4 		.ascii	"\272Yz\264\3745>\202\247^A,[x\215$\246!n1\203\021\320"
+  52      FC353E82 
+  52      A75E412C 
+  52      5B788D24 
+  52      A6216E31 
+  53 0146 061EFC2A 		.ascii	"\006\036\374*n\"J\250\242\234\317\016k\007\226I\200"
+  53      6E224AA8 
+  53      A29CCF0E 
+  53      6B079649 
+  53      80
+  54 0157 3C6156B4 		.ascii	"<aV\264\237\301\241}\361(\"\303l\026\367\207\353\"\310"
+  54      9FC1A17D 
+  54      F12822C3 
+  54      6C16F787 
+  54      EB22C8
+  55 016a AEB02550 		.ascii	"\256\260%Pe|\347\033\014\304q\302\033\201DuR|\317\221"
+  55      657CE71B 
+  55      0CC471C2 
+  55      1B814475 
+  55      527CCF91 
+  56 017e 28D21974 		.ascii	"(\322\031te(,v\316\230\347\333\347\255\315\2115\201"
+  56      65282C76 
+  56      CE98E7DB 
+  56      E7ADCD89 
+  56      3581
+  57 0190 680B9E7F 		.ascii	"h\013\236\177j\033\275\031mY\376\217LAfr\271%s\333\351"
+  57      6A1BBD19 
+  57      6D59FE8F 
+  57      4C416672 
+  57      B92573DB 
+  58 01a5 727AB2AE 		.ascii	"rz\262\256s\247\243\275\273\257'\347d\322\355\335\267"
+  58      73A7A3BD 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 4
+
+
+  58      BBAF27E7 
+  58      64D2EDDD 
+  58      B7
+  59 01b6 5A33E96B 		.ascii	"Z3\351k\035mY7w\267%G\366\375\354\275>\247\276\327\315"
+  59      1D6D5937 
+  59      77B72547 
+  59      F6FDECBD 
+  59      3EA7BED7 
+  60 01cb BA9DB99B 		.ascii	"\272\235\271\233\235n\357\031\326\263\303`"
+  60      9D6EEF19 
+  60      D6B3C360 
+  61              		.text
+  62              		.section	.gnu.lto_P4_Latch_SetDriveMode.be1c17fb,"",%progbits
+  63 0000 789C7D51 		.ascii	"x\234}QKHBA\024\275g\346\371C\212h%\256\013\211\302"
+  63      4B484241 
+  63      14BD67E6 
+  63      F9438A68 
+  63      25AE0B89 
+  64 0015 36B50F82 		.ascii	"6\265\017\202\332\264\020\334\012\022\366\240M\011a"
+  64      DAB410DC 
+  64      0A12F6A0 
+  64      4D0961
+  65 0024 6B9F6504 		.ascii	"k\237e\004APA\020\210\020Eh\332\227\026-\332H\264*("
+  65      41504110 
+  65      88104568 
+  65      DA97162D 
+  65      DA48B42A 
+  66 0039 6A2309D9 		.ascii	"j#\011\331\306\276P$E%\021v\347\331B\010\032\336\334"
+  66      C6BE5024 
+  66      45251176 
+  66      E7D94208 
+  66      1ADEDC
+  67 004c B9E772CE 		.ascii	"\271\347r\316yw\356H\372\273\334\274\037A\324\316'$"
+  67      7977EE48 
+  67      FABBDCBC 
+  67      1F41D4CE 
+  67      2724
+  68 005e 41CC9D12 		.ascii	"A\314\235\022\305\354\002P\011\201\242\002Q<\210\262"
+  68      C5EC0250 
+  68      0981A202 
+  68      513C88B2 
+  69 006e C05C2EBB 		.ascii	"\300\\.\273\344\364\254\031\206\361\262\262\357\232"
+  69      E4F4AC19 
+  69      86F1B2B2 
+  69      EF9A
+  70 007c 725504D1 		.ascii	"rU\004\321\253\250\331 \005\017S\356*\017\251\006\351"
+  70      ABA8D920 
+  70      050F53EE 
+  70      2A0FA906 
+  70      E9
+  71 008d 0171FE3D 		.ascii	"\001q\376=\237\277\020\255\253\2061\221;\3362zPa\317"
+  71      9FBF10AD 
+  71      AB863191 
+  71      3BDE327A 
+  71      5061CF
+  72 00a0 34242BD0 		.ascii	"4$+\320\341F\233\233\270@XG\253\"\227\343\337y\2475"
+  72      E1469B9B 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 5
+
+
+  72      B8405847 
+  72      AB2297E3 
+  72      DF79A735 
+  73 00b4 CEDE4D35 		.ascii	"\316\336M5Od`\345\266h\2739gT\253\257W\363\351N8\005"
+  73      4F6460E5 
+  73      B668BB39 
+  73      6754ABAF 
+  73      57F3E94E 
+  74 00ca 6B84E420 		.ascii	"k\204\344 5\025,Pr\253Jm*\330Up(\016Q\211\267\272\301"
+  74      35152C50 
+  74      72AB4A6D 
+  74      2AD85570 
+  74      280E5189 
+  75 00e1 0D033E65 		.ascii	"\015\003>e\001\207\3573\267\011M\371~\010u\235\335\362"
+  75      0187EF33 
+  75      B7094DF9 
+  75      7E08759D 
+  75      DDF2
+  76 00f3 62C2712F 		.ascii	"b\302q/*B\233^\216\031\232\352\342\272tvn7K\244\340"
+  76      2A429B5E 
+  76      8E199AEA 
+  76      E2BA7476 
+  76      6E374BA4 
+  77 0108 EC42E640 		.ascii	"\354B\346@K\"\021\213s\363\026d\341\306\006x`\330D\022"
+  77      4B22118B 
+  77      73F31664 
+  77      E1C60678 
+  77      60D84412 
+  78 011c 54C044D1 		.ascii	"T\300D\321V\263\223\354\310x\362\323Z\303\032\227X\177"
+  78      56B393EC 
+  78      C878F2D3 
+  78      5AC31A97 
+  78      587F
+  79 012e F9FC7262 		.ascii	"\371\374rb\332\311r\365w\361,\267\330\242N\313\237\245"
+  79      DAC972F5 
+  79      77F12CB7 
+  79      D8A24ECB 
+  79      9FA5
+  80 0140 5E6BE312 		.ascii	"^k\343\022k\317\367\236\216,\246\266\221\260mJ&\337"
+  80      6BCFF79E 
+  80      8E2CA6B6 
+  80      91B06D4A 
+  80      26DF
+  81 0152 7E2976F3 		.ascii	"~)v\363\017\266z\027\007W\031\037.@\341\377z\337\341"
+  81      0FB67A17 
+  81      0757191F 
+  81      2E40E1FF 
+  81      7ADFE1
+  82 0165 DE994F45 		.ascii	"\336\231OE\304r_}\212\255\336\257\304o\301c\342\241"
+  82      C4725F7D 
+  82      8AADDEAF 
+  82      C46FC163 
+  82      E2A1
+  83 0177 B57803FD 		.ascii	"\265x\003\375\372\250>6\030\321\207\202\376\360\370"
+  83      FAA83E36 
+  83      18D18782 
+  83      FEF0F8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 6
+
+
+  84 0186 58480FF8 		.ascii	"XH\017\370\374\341\336\356\200\257+80\030\011\015{C"
+  84      FCE1DEEE 
+  84      80AF2B38 
+  84      3018090D 
+  84      7B43
+  85 0198 A48D8487 		.ascii	"\244\215\204\207\364\037\022\250\267\220"
+  85      F41F12A8 
+  85      B790
+  86              		.text
+  87              		.section	.gnu.lto_P4_Latch_Read.be1c17fb,"",%progbits
+  88 0000 789C6366 		.ascii	"x\234cf\300\004R@\374\007\210\325\200\230\221\231\201"
+  88      C0045240 
+  88      FC0788D5 
+  88      80989199 
+  88      81
+  89 0011 9169C239 		.ascii	"\221i\3029\006\206F\016&FF\020\203\201\221\241\236\211"
+  89      0686460E 
+  89      26464610 
+  89      838191A1 
+  89      9E89
+  90 0023 B19EF125 		.ascii	"\261\236\361%\323G&\3063;\377]fT_\332\320\320\364a\322"
+  90      D34726C6 
+  90      333BFF5D 
+  90      66545FDA 
+  90      D0D0F461 
+  91 0038 DE3BDCAD 		.ascii	"\336;\334\255\022?\231\030\030>310\352H1j\202\314a\\"
+  91      123F9918 
+  91      183E3331 
+  91      30EA4831 
+  91      6A82CC61 
+  92 004d CEA8CE00 		.ascii	"\316\250\316\000T\370\261\345\357un\266\226\206\206"
+  92      54F8B1E5 
+  92      EF756EB6 
+  92      968686
+  93 005c 0601903C 		.ascii	"\006\001\220<Pb\005#\033#\220^/t\240\341\377\377\315"
+  93      50620523 
+  93      1B23905E 
+  93      2F74A0E1 
+  93      FFFFCD
+  94 006f 5F277658 		.ascii	"_'vX3\26201\374d\002\332\0102\204\341\011\220\000\331"
+  94      33B23031 
+  94      FC6402DA 
+  94      083284E1 
+  94      099000D9 
+  95 0083 F7948909 		.ascii	"\367\224\211\011D3\337b<\364\255\353\336<+\220\306\357"
+  95      4433DF62 
+  95      3CF4ADEB 
+  95      DE3C2B90 
+  95      C6EF
+  96 0095 4C20CBE7 		.ascii	"L \313\347\266\317\355d|\301\364\223\211\251qQc\003"
+  96      B6CFED64 
+  96      7CC1F493 
+  96      89A97151 
+  96      6303
+  97 00a7 0BC89AFB 		.ascii	"\013\310\232\373O\316_\344\000\0131\200\270\313\273"
+  97      4FCE5FE4 
+  97      000B3180 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 7
+
+
+  97      B8CBBB
+  98 00b6 667CE79D 		.ascii	"f|\347\235\3138\273\261\205\361'\0233\343JF)\306U\214"
+  98      CB38BBB1 
+  98      85F12713 
+  98      33E34A46 
+  98      29C6558C 
+  99 00ca 406731AE 		.ascii	"@g1\256f\234\313\310p\213\261\371^\233\016\304<f\210"
+  99      669CCBC8 
+  99      708BB1F9 
+  99      5E9B0EC4 
+  99      3C6688
+ 100 00dd 91DF173F 		.ascii	"\221\337\027?x\0156\222\205\235\201q\015P\351=FF\250"
+ 100      780D3692 
+ 100      859D8171 
+ 100      0D50E93D 
+ 100      4646A8
+ 101 00f0 02B09318 		.ascii	"\002\260\223\030AN\001\232\255\242\027\343\236\232\227"
+ 101      414E019A 
+ 101      ADA217E3 
+ 101      9E9A97
+ 102 00ff 5A945892 		.ascii	"Z\224X\222\232\022\037\234_Z\224\234\032\023\020\234"
+ 102      9A121F9C 
+ 102      5F5A949C 
+ 102      1A13109C 
+ 103 010f EF6C1A13 		.ascii	"\357l\032\023`\022\357\223X\222\234\241\227\314\000"
+ 103      6012EF93 
+ 103      58929CA1 
+ 103      97CC00
+ 104 011e 003BCE65 		.ascii	"\000;\316e\306"
+ 104      C6
+ 105              		.text
+ 106              		.section	.gnu.lto_P4_Latch_ReadDataReg.be1c17fb,"",%progbits
+ 107 0000 789C6366 		.ascii	"x\234cf\300\004R@\374\007\210\325\200\230\221\231\201"
+ 107      C0045240 
+ 107      FC0788D5 
+ 107      80989199 
+ 107      81
+ 108 0011 9169C239 		.ascii	"\221i\3029\006\206F\016&FF\020\203\201\221\241\236\211"
+ 108      0686460E 
+ 108      26464610 
+ 108      838191A1 
+ 108      9E89
+ 109 0023 B19EF125 		.ascii	"\261\236\361%\323G&\3063;\377]fT_\332\320\320\364\341"
+ 109      D34726C6 
+ 109      333BFF5D 
+ 109      66545FDA 
+ 109      D0D0F4E1 
+ 110 0037 D2E53BDC 		.ascii	"\322\345;\334\255\022?\231\030\030>310\352H1j\202\314"
+ 110      AD123F99 
+ 110      18183E33 
+ 110      3130EA48 
+ 110      316A82CC 
+ 111 004b 615CCEA8 		.ascii	"a\\\316\250\316\000T\370\261\345\357un\266\226\206\206"
+ 111      CE0054F8 
+ 111      B1E5EF75 
+ 111      6EB69686 
+ 111      86
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 8
+
+
+ 112 005c 0601903C 		.ascii	"\006\001\220<Pb\005#\033#\220^/t\240\341\377\377\315"
+ 112      50620523 
+ 112      1B23905E 
+ 112      2F74A0E1 
+ 112      FFFFCD
+ 113 006f E7277568 		.ascii	"\347'uh1\26101\374d\002\332\0102\204\341\011\220\000"
+ 113      31B13031 
+ 113      FC6402DA 
+ 113      083284E1 
+ 113      099000
+ 114 0082 D9F79489 		.ascii	"\331\367\224\211\011D3\337b<\364\255\353\337J+\220\306"
+ 114      094433DF 
+ 114      623CF4AD 
+ 114      EBDF4A2B 
+ 114      90C6
+ 115 0094 EF4C20CB 		.ascii	"\357L \313\337\374\374s\211\353\005\323O&\246\206E\215"
+ 115      DFFCFC73 
+ 115      89EB05D3 
+ 115      4F26A686 
+ 115      458D
+ 116 00a6 0D2C206B 		.ascii	"\015, k\356?9\177\221\003,\304\000\342\356\3539x\227"
+ 116      EE3F397F 
+ 116      91032CC4 
+ 116      00E2EEEB 
+ 116      397897
+ 117 00b9 7D2EE3EC 		.ascii	"}.\343\354\306\026\306\237L\314\214+\031\245\030W1\002"
+ 117      C616C69F 
+ 117      4CCC8C2B 
+ 117      19A51857 
+ 117      3102
+ 118 00cb 9DC5B89A 		.ascii	"\235\305\270\232q.#\303-\306\346{m:\020\363\230!F~_"
+ 118      712E23C3 
+ 118      2DC6E67B 
+ 118      6D3A10F3 
+ 118      9821467E 
+ 119 00e0 FCE03523 		.ascii	"\374\3405#H?\013;\003\343\032\240\322{\214\214P\005"
+ 119      483F0B3B 
+ 119      03E31AA0 
+ 119      D27B8C8C 
+ 119      5005
+ 120 00f2 60273182 		.ascii	"`'1\202\234\0024[E/\306=5/\265(\261$5%>8\277\264(95"
+ 120      9C02345B 
+ 120      452FC63D 
+ 120      352FB528 
+ 120      B1243525 
+ 121 010d 262038DF 		.ascii	"& 8\337\3314&\300$\336'\261$9C/\231\001\000~jg\245"
+ 121      D93426C0 
+ 121      24DE27B1 
+ 121      2439432F 
+ 121      9901007E 
+ 122              		.text
+ 123              		.section	.gnu.lto_.symbol_nodes.be1c17fb,"",%progbits
+ 124 0000 789C6366 		.ascii	"x\234cf``pb\200\002&\206z\006\206\011\347\030\030\352"
+ 124      60607062 
+ 124      80022686 
+ 124      7A068609 
+ 124      E71818EA 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 9
+
+
+ 125 0014 EB19E62D 		.ascii	"\353\031\346-\340``b\254gD\3413\3253\241\360\231\353"
+ 125      E0606062 
+ 125      AC6744E1 
+ 125      33D533A1 
+ 125      F099EB
+ 126 0027 9991F90C 		.ascii	"\231\221\371\014\0003\356\020\336"
+ 126      0033EE10 
+ 126      DE
+ 127              		.text
+ 128              		.section	.gnu.lto_.refs.be1c17fb,"",%progbits
+ 129 0000 789C6366 		.ascii	"x\234cf```d\200\002\000\000=\000\005"
+ 129      60606064 
+ 129      80020000 
+ 129      3D0005
+ 130              		.text
+ 131              		.section	.gnu.lto_.decls.be1c17fb,"",%progbits
+ 132 0000 789C8D52 		.ascii	"x\234\215R_HSa\024\377\316\276\353\324\353\034=\224"
+ 132      5F485361 
+ 132      14FFCEBE 
+ 132      EBD4EB1C 
+ 132      3D94
+ 133 0012 CA081A14 		.ascii	"\312\010\032\024B \276T\340[\201\202\021\025C\211\036"
+ 133      4220BE54 
+ 133      E05B8182 
+ 133      11154389 
+ 133      1E
+ 134 0023 1464CC8B 		.ascii	"\024d\314\213\372\242\261\256\201\017\321\327\\\250"
+ 134      FAA2B1AE 
+ 134      810FD1D7 
+ 134      5CA8
+ 135 0031 334AA46C 		.ascii	"3J\244lI\331H\315\262\374\223\377\346\226\351\035\025"
+ 135      49D948CD 
+ 135      B2FC93FF 
+ 135      E696E91D 
+ 135      15
+ 136 0042 0861F520 		.ascii	"\010a\365 \206\366\222)\241\366\320\204,\243\350v\356"
+ 136      86F69229 
+ 136      A1F6D084 
+ 136      2CA3E876 
+ 136      EE
+ 137 0053 B7CDAD35 		.ascii	"\267\315\2555\301\003\347\336{\356=\277?\337\271\207"
+ 137      C103E7DE 
+ 137      7BEE3DBF 
+ 137      3FDFB987 
+ 138 0063 1242B280 		.ascii	"\022B\262\200\020\025\243\200\022\322\205u\022\246\205"
+ 138      1015A380 
+ 138      12D28575 
+ 138      12A685
+ 139 0072 4443C01C 		.ascii	"DC\300\034\302\034\301\364b\372\310\3771\024\203\353"
+ 139      C21CC1F4 
+ 139      62FAC8FF 
+ 139      311483EB 
+ 140 0082 C3CCC09C 		.ascii	"\303\314\300\234\304\234\010\177\207pO|h\234\3728\234"
+ 140      C49C087F 
+ 140      87704F7C 
+ 140      689CFA38 
+ 140      9C
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 10
+
+
+ 141 0093 92003B92 		.ascii	"\222\000;\222\000\353\015k\306\353\235\210\301y\023"
+ 141      00EB0D6B 
+ 141      C6EB9D88 
+ 141      C17913
+ 142 00a2 E07C3BC0 		.ascii	"\340|;\300%:\343\272\016|\375\337f\322Vt`\024\315Z\351"
+ 142      253AE3BA 
+ 142      0E7CFDDF 
+ 142      66D25674 
+ 142      6014CD5A 
+ 143 00b7 6F9D76EB 		.ascii	"o\235v\353\2614\210\202V\316M54\244P\035h\317\235\356"
+ 143      B1348882 
+ 143      56CE4D35 
+ 143      34A4501D 
+ 143      68CF9DEE 
+ 144 00cb C55931A7 		.ascii	"\305Y1\247\2271\326\310\024\005\242\024\227\037<\273"
+ 144      9731D6C8 
+ 144      1405A214 
+ 144      971F3CBB 
+ 145 00db 9A8C980C 		.ascii	"\232\214\230\014\221\227\327^\267\007(/U\015\247\233"
+ 145      9197D75E 
+ 145      B707282F 
+ 145      550DA79B 
+ 146 00eb 9FBFF193 		.ascii	"\237\277\361\223\202\230\335\310\230\203\005[\031\315"
+ 146      8298DDC8 
+ 146      9883055B 
+ 146      19CD
+ 147 00f9 22906382 		.ascii	"\"\220c\202\203&\002\375\220\215m\320\0139\004\036\203"
+ 147      832602FD 
+ 147      908D6DD0 
+ 147      0B39041E 
+ 147      83
+ 148 010a 099E8089 		.ascii	"\011\236\200\211t\241@\360\336\354\302^\306\004\350"
+ 148      74A140F0 
+ 148      DEECC25E 
+ 148      C604E8
+ 149 0119 03111E01 		.ascii	"\003\021\036\001\345\035x\014M!,\332r%\320\"\010:|\251"
+ 149      E51D780C 
+ 149      4D212CDA 
+ 149      7225D022 
+ 149      083A7CA9 
+ 150 012d F59470B7 		.ascii	"\365\224p\267\033\352b\267.\363&\022\260\226z\266K\000"
+ 150      1BEA62B7 
+ 150      2EF32612 
+ 150      B0967AB6 
+ 150      4B00
+ 151 013f 4B06F420 		.ascii	"K\006\364 \355C\244%0\010\231x\035\000!D\360\341\276"
+ 151      ED43A425 
+ 151      30089978 
+ 151      1D002144 
+ 151      F0E1BE
+ 152 0152 E34E323D 		.ascii	"\343N2=\304\2176\336\366\366\245\336\334\301<\203AW"
+ 152      C48F36DE 
+ 152      F6F6A5DE 
+ 152      DCC13C83 
+ 152      4157
+ 153 0164 6707BDCD 		.ascii	"g\007\275\315<\016\366GE\373\032\010\236n\031 \332s"
+ 153      3C0EF647 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 11
+
+
+ 153      45FB1A08 
+ 153      9E6E1920 
+ 153      DA73
+ 154 0176 68A24360 		.ascii	"h\242C`F`\360\253s9\215Vp\222\265_k\003\251\234\304"
+ 154      4660F0AB 
+ 154      73398D56 
+ 154      7092B55F 
+ 154      6B03A99C 
+ 155 018b E3EFD44F 		.ascii	"\343\357\324O3EU\217r\374p\014~8\202\037\341\370&\347"
+ 155      3345558F 
+ 155      72FC700C 
+ 155      7E38821F 
+ 155      E1F826E7 
+ 156 019f 208D35AC 		.ascii	" \2155\254\235%\352x\224;.\011\033^Y~\367\005\350E\256"
+ 156      9D25EA78 
+ 156      943B2E09 
+ 156      1B5E597E 
+ 156      F705E845 
+ 157 01b4 F5CAFFE3 		.ascii	"\365\312\377\343\205\300\265>\256.I\212\223\375VU\312"
+ 157      85C0B53E 
+ 157      AE2E498A 
+ 157      93FD5655 
+ 157      CA
+ 158 01c5 013016A3 		.ascii	"\0010\026\2436\026Q\363r\265\365\211\367mF\332\014\234"
+ 158      361651F3 
+ 158      72B5F589 
+ 158      F76D46DA 
+ 158      0C9C
+ 159 01d7 E2F3EAC6 		.ascii	"\342\363\352\306r\330\356\335\356\210]\215`<\206`<B"
+ 159      72D8EEDD 
+ 159      EE885D8D 
+ 159      603C8660 
+ 159      3C42
+ 160 01e9 E0E304EC 		.ascii	"\340\343\004\354VsW\012\365\204\010F\277\273|\351\""
+ 160      5673570A 
+ 160      F5840846 
+ 160      BFBB7CE9 
+ 160      22
+ 161 01fa FED5FA1D 		.ascii	"\376\325\372\035\374U\334\203\3317\256\271\324\320\036"
+ 161      FC55DC83 
+ 161      D937AEB9 
+ 161      D4D01E
+ 162 0209 C4239E6F 		.ascii	"\304#\236o\273\007\233K\307\235\354\030L\340\\\374\321"
+ 162      BB079B4B 
+ 162      C79DEC18 
+ 162      4CE05CFC 
+ 162      D1
+ 163 021a 3D7806D1 		.ascii	"=x\006\321Eh\372\324>c0\270\264\345\302\031\246N\033"
+ 163      4568FAD4 
+ 163      3E6330B8 
+ 163      B4E5C219 
+ 163      A64E1B
+ 164 022d 79737488 		.ascii	"yst\210\223`\340'\300\373\272\216\006z\002\013\"\230"
+ 164      9360E027 
+ 164      C0FBBA8E 
+ 164      067A020B 
+ 164      2298
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 12
+
+
+ 165 023f 44931BB7 		.ascii	"D\223\033\267xs\037(\310\324\250\315?\350`\324m\214"
+ 165      78731F28 
+ 165      C8D4A8CD 
+ 165      3FE860D4 
+ 165      6D8C
+ 166 0251 3822FC03 		.ascii	"8\"\374\003\201\000\322L!\215\326\255\254\250\352%5"
+ 166      8100D24C 
+ 166      218DD6AD 
+ 166      ACA8EA25 
+ 166      35
+ 167 0262 14D79379 		.ascii	"\024\327\223y\003\277$\325VU\313y\372\302\323g\314\371"
+ 167      03BF24D5 
+ 167      5655CB79 
+ 167      FAC2D367 
+ 167      CCF9
+ 168 0274 647F6E69 		.ascii	"d\177ni\241T-\331\255\262T^V\\Sk\267I\245\226\342\232"
+ 168      A1542DD9 
+ 168      ADB2545E 
+ 168      565C536B 
+ 168      B749A596 
+ 169 028a FC23A5B6 		.ascii	"\374#\245\266:\271\356\234t>\267\222\030-\207\313NZ"
+ 169      3AB9EE9C 
+ 169      743EB792 
+ 169      182D87CB 
+ 169      4E5A
+ 170 029c 655B65D9 		.ascii	"e[e\331Y{\225,\035\330\026\022\351\313\265\221=[\230"
+ 170      597B952C 
+ 170      1DD81612 
+ 170      E9CBB591 
+ 170      3D5B98
+ 171 02af 62492EB0 		.ascii	"bI.\260W]\220N\325\224K\351[o\213$k\371\356\177\252"
+ 171      575D904E 
+ 171      D5944BE9 
+ 171      5B6F8B24 
+ 171      6BF9EE7F 
+ 172 02c4 02AB6C2D 		.ascii	"\002\253l-\222*\004\273T\221\367\0277\270PR"
+ 172      922A04BB 
+ 172      5491F717 
+ 172      37B85052 
+ 173              		.text
+ 174              		.section	.gnu.lto_.symtab.be1c17fb,"",%progbits
+ 175 0000 50345F4C 		.ascii	"P4_Latch_Write\000\000\000\000\000\000\000\000\000\000"
+ 175      61746368 
+ 175      5F577269 
+ 175      74650000 
+ 175      00000000 
+ 176 0018 0000B200 		.ascii	"\000\000\262\000\000\000P4_Latch_SetDriveMode\000\000"
+ 176      00005034 
+ 176      5F4C6174 
+ 176      63685F53 
+ 176      65744472 
+ 177 0035 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\000\264\000\000"
+ 177      00000000 
+ 177      0000B400 
+ 177      00
+ 178 0042 0050345F 		.ascii	"\000P4_Latch_Read\000\000\000\000\000\000\000\000\000"
+ 178      4C617463 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 13
+
+
+ 178      685F5265 
+ 178      61640000 
+ 178      00000000 
+ 179 0059 000000B7 		.ascii	"\000\000\000\267\000\000\000P4_Latch_ReadDataReg\000"
+ 179      00000050 
+ 179      345F4C61 
+ 179      7463685F 
+ 179      52656164 
+ 180 0075 00000000 		.ascii	"\000\000\000\000\000\000\000\000\000\000\000\271\000"
+ 180      00000000 
+ 180      000000B9 
+ 180      00
+ 181 0082 0000     		.ascii	"\000\000"
+ 182              		.text
+ 183              		.section	.gnu.lto_.opts,"",%progbits
+ 184 0000 272D666E 		.ascii	"'-fno-trapv' '-mcpu=cortex-m3' '-mthumb' '-g' '-O3'"
+ 184      6F2D7472 
+ 184      61707627 
+ 184      20272D6D 
+ 184      6370753D 
+ 185 0033 20272D66 		.ascii	" '-ffunction-sections' '-finline-functions' '-flto'"
+ 185      66756E63 
+ 185      74696F6E 
+ 185      2D736563 
+ 185      74696F6E 
+ 186 0066 20272D66 		.ascii	" '-ffat-lto-objects'\000"
+ 186      6661742D 
+ 186      6C746F2D 
+ 186      6F626A65 
+ 186      63747327 
+ 187              		.text
+ 188              		.cfi_sections	.debug_frame
+ 189              		.section	.text.P4_Latch_Write,"ax",%progbits
+ 190              		.align	2
+ 191              		.global	P4_Latch_Write
+ 192              		.thumb
+ 193              		.thumb_func
+ 194              		.type	P4_Latch_Write, %function
+ 195              	P4_Latch_Write:
+ 196              	.LFB0:
+ 197              		.file 1 ".\\Generated_Source\\PSoC5\\P4_Latch.c"
+   1:.\Generated_Source\PSoC5/P4_Latch.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/P4_Latch.c **** * File Name: P4_Latch.c  
+   3:.\Generated_Source\PSoC5/P4_Latch.c **** * Version 2.20
+   4:.\Generated_Source\PSoC5/P4_Latch.c **** *
+   5:.\Generated_Source\PSoC5/P4_Latch.c **** * Description:
+   6:.\Generated_Source\PSoC5/P4_Latch.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:.\Generated_Source\PSoC5/P4_Latch.c **** *
+   8:.\Generated_Source\PSoC5/P4_Latch.c **** * Note:
+   9:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  10:.\Generated_Source\PSoC5/P4_Latch.c **** ********************************************************************************
+  11:.\Generated_Source\PSoC5/P4_Latch.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC5/P4_Latch.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:.\Generated_Source\PSoC5/P4_Latch.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:.\Generated_Source\PSoC5/P4_Latch.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC5/P4_Latch.c **** *******************************************************************************/
+  16:.\Generated_Source\PSoC5/P4_Latch.c **** 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 14
+
+
+  17:.\Generated_Source\PSoC5/P4_Latch.c **** #include "cytypes.h"
+  18:.\Generated_Source\PSoC5/P4_Latch.c **** #include "P4_Latch.h"
+  19:.\Generated_Source\PSoC5/P4_Latch.c **** 
+  20:.\Generated_Source\PSoC5/P4_Latch.c **** /* APIs are not generated for P15[7:6] on PSoC 5 */
+  21:.\Generated_Source\PSoC5/P4_Latch.c **** #if !(CY_PSOC5A &&\
+  22:.\Generated_Source\PSoC5/P4_Latch.c **** 	 P4_Latch__PORT == 15 && ((P4_Latch__MASK & 0xC0) != 0))
+  23:.\Generated_Source\PSoC5/P4_Latch.c **** 
+  24:.\Generated_Source\PSoC5/P4_Latch.c **** 
+  25:.\Generated_Source\PSoC5/P4_Latch.c **** /*******************************************************************************
+  26:.\Generated_Source\PSoC5/P4_Latch.c **** * Function Name: P4_Latch_Write
+  27:.\Generated_Source\PSoC5/P4_Latch.c **** ****************************************************************************//**
+  28:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  29:.\Generated_Source\PSoC5/P4_Latch.c **** * \brief Writes the value to the physical port (data output register), masking
+  30:.\Generated_Source\PSoC5/P4_Latch.c **** *  and shifting the bits appropriately. 
+  31:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  32:.\Generated_Source\PSoC5/P4_Latch.c **** * The data output register controls the signal applied to the physical pin in 
+  33:.\Generated_Source\PSoC5/P4_Latch.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  34:.\Generated_Source\PSoC5/P4_Latch.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  35:.\Generated_Source\PSoC5/P4_Latch.c **** * bit banding).
+  36:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  37:.\Generated_Source\PSoC5/P4_Latch.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  38:.\Generated_Source\PSoC5/P4_Latch.c **** * as it is driven by the hardware signal attached to it.
+  39:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  40:.\Generated_Source\PSoC5/P4_Latch.c **** * \param value
+  41:.\Generated_Source\PSoC5/P4_Latch.c **** *  Value to write to the component instance.
+  42:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  43:.\Generated_Source\PSoC5/P4_Latch.c **** * \return 
+  44:.\Generated_Source\PSoC5/P4_Latch.c **** *  None 
+  45:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  46:.\Generated_Source\PSoC5/P4_Latch.c **** * \sideeffect
+  47:.\Generated_Source\PSoC5/P4_Latch.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+  48:.\Generated_Source\PSoC5/P4_Latch.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+  49:.\Generated_Source\PSoC5/P4_Latch.c **** *  interrupts this function and performs writes to the Pins component data 
+  50:.\Generated_Source\PSoC5/P4_Latch.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+  51:.\Generated_Source\PSoC5/P4_Latch.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+  52:.\Generated_Source\PSoC5/P4_Latch.c **** *  this function.
+  53:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  54:.\Generated_Source\PSoC5/P4_Latch.c **** * \funcusage
+  55:.\Generated_Source\PSoC5/P4_Latch.c **** *  \snippet P4_Latch_SUT.c usage_P4_Latch_Write
+  56:.\Generated_Source\PSoC5/P4_Latch.c **** *******************************************************************************/
+  57:.\Generated_Source\PSoC5/P4_Latch.c **** void P4_Latch_Write(uint8 value)
+  58:.\Generated_Source\PSoC5/P4_Latch.c **** {
+ 198              		.loc 1 58 0
+ 199              		.cfi_startproc
+ 200              		@ args = 0, pretend = 0, frame = 0
+ 201              		@ frame_needed = 0, uses_anonymous_args = 0
+ 202              		@ link register save eliminated.
+ 203              	.LVL0:
+  59:.\Generated_Source\PSoC5/P4_Latch.c ****     uint8 staticBits = (P4_Latch_DR & (uint8)(~P4_Latch_MASK));
+ 204              		.loc 1 59 0
+ 205 0000 044A     		ldr	r2, .L2
+ 206 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 207              	.LVL1:
+ 208 0004 03F07F03 		and	r3, r3, #127
+ 209              	.LVL2:
+  60:.\Generated_Source\PSoC5/P4_Latch.c ****     P4_Latch_DR = staticBits | ((uint8)(value << P4_Latch_SHIFT) & P4_Latch_MASK);
+ 210              		.loc 1 60 0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 15
+
+
+ 211 0008 43EAC010 		orr	r0, r3, r0, lsl #7
+ 212              	.LVL3:
+ 213 000c C0B2     		uxtb	r0, r0
+ 214 000e 1070     		strb	r0, [r2]
+ 215 0010 7047     		bx	lr
+ 216              	.L3:
+ 217 0012 00BF     		.align	2
+ 218              	.L2:
+ 219 0014 00510040 		.word	1073762560
+ 220              		.cfi_endproc
+ 221              	.LFE0:
+ 222              		.size	P4_Latch_Write, .-P4_Latch_Write
+ 223              		.section	.text.P4_Latch_SetDriveMode,"ax",%progbits
+ 224              		.align	2
+ 225              		.global	P4_Latch_SetDriveMode
+ 226              		.thumb
+ 227              		.thumb_func
+ 228              		.type	P4_Latch_SetDriveMode, %function
+ 229              	P4_Latch_SetDriveMode:
+ 230              	.LFB1:
+  61:.\Generated_Source\PSoC5/P4_Latch.c **** }
+  62:.\Generated_Source\PSoC5/P4_Latch.c **** 
+  63:.\Generated_Source\PSoC5/P4_Latch.c **** 
+  64:.\Generated_Source\PSoC5/P4_Latch.c **** /*******************************************************************************
+  65:.\Generated_Source\PSoC5/P4_Latch.c **** * Function Name: P4_Latch_SetDriveMode
+  66:.\Generated_Source\PSoC5/P4_Latch.c **** ****************************************************************************//**
+  67:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  68:.\Generated_Source\PSoC5/P4_Latch.c **** * \brief Sets the drive mode for each of the Pins component's pins.
+  69:.\Generated_Source\PSoC5/P4_Latch.c **** * 
+  70:.\Generated_Source\PSoC5/P4_Latch.c **** * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  71:.\Generated_Source\PSoC5/P4_Latch.c **** * Per-Pin APIs if you wish to control individual pin's drive modes.
+  72:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  73:.\Generated_Source\PSoC5/P4_Latch.c **** * \param mode
+  74:.\Generated_Source\PSoC5/P4_Latch.c **** *  Mode for the selected signals. Valid options are documented in 
+  75:.\Generated_Source\PSoC5/P4_Latch.c **** *  \ref driveMode.
+  76:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  77:.\Generated_Source\PSoC5/P4_Latch.c **** * \return
+  78:.\Generated_Source\PSoC5/P4_Latch.c **** *  None
+  79:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  80:.\Generated_Source\PSoC5/P4_Latch.c **** * \sideeffect
+  81:.\Generated_Source\PSoC5/P4_Latch.c **** *  If you use read-modify-write operations that are not atomic, the ISR can
+  82:.\Generated_Source\PSoC5/P4_Latch.c **** *  cause corruption of this function. An ISR that interrupts this function 
+  83:.\Generated_Source\PSoC5/P4_Latch.c **** *  and performs writes to the Pins component Drive Mode registers can cause 
+  84:.\Generated_Source\PSoC5/P4_Latch.c **** *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  85:.\Generated_Source\PSoC5/P4_Latch.c **** *  APIs (primary method) or disable interrupts around this function.
+  86:.\Generated_Source\PSoC5/P4_Latch.c **** *
+  87:.\Generated_Source\PSoC5/P4_Latch.c **** * \funcusage
+  88:.\Generated_Source\PSoC5/P4_Latch.c **** *  \snippet P4_Latch_SUT.c usage_P4_Latch_SetDriveMode
+  89:.\Generated_Source\PSoC5/P4_Latch.c **** *******************************************************************************/
+  90:.\Generated_Source\PSoC5/P4_Latch.c **** void P4_Latch_SetDriveMode(uint8 mode)
+  91:.\Generated_Source\PSoC5/P4_Latch.c **** {
+ 231              		.loc 1 91 0
+ 232              		.cfi_startproc
+ 233              		@ args = 0, pretend = 0, frame = 0
+ 234              		@ frame_needed = 0, uses_anonymous_args = 0
+ 235              		@ link register save eliminated.
+ 236              	.LVL4:
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 16
+
+
+  92:.\Generated_Source\PSoC5/P4_Latch.c **** 	CyPins_SetPinDriveMode(P4_Latch_0, mode);
+ 237              		.loc 1 92 0
+ 238 0000 044A     		ldr	r2, .L5
+ 239 0002 00F00E00 		and	r0, r0, #14
+ 240              	.LVL5:
+ 241 0006 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 242 0008 03F0F103 		and	r3, r3, #241
+ 243 000c 1843     		orrs	r0, r0, r3
+ 244 000e 1070     		strb	r0, [r2]
+ 245 0010 7047     		bx	lr
+ 246              	.L6:
+ 247 0012 00BF     		.align	2
+ 248              	.L5:
+ 249 0014 07500040 		.word	1073762311
+ 250              		.cfi_endproc
+ 251              	.LFE1:
+ 252              		.size	P4_Latch_SetDriveMode, .-P4_Latch_SetDriveMode
+ 253              		.section	.text.P4_Latch_Read,"ax",%progbits
+ 254              		.align	2
+ 255              		.global	P4_Latch_Read
+ 256              		.thumb
+ 257              		.thumb_func
+ 258              		.type	P4_Latch_Read, %function
+ 259              	P4_Latch_Read:
+ 260              	.LFB2:
+  93:.\Generated_Source\PSoC5/P4_Latch.c **** }
+  94:.\Generated_Source\PSoC5/P4_Latch.c **** 
+  95:.\Generated_Source\PSoC5/P4_Latch.c **** 
+  96:.\Generated_Source\PSoC5/P4_Latch.c **** /*******************************************************************************
+  97:.\Generated_Source\PSoC5/P4_Latch.c **** * Function Name: P4_Latch_Read
+  98:.\Generated_Source\PSoC5/P4_Latch.c **** ****************************************************************************//**
+  99:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 100:.\Generated_Source\PSoC5/P4_Latch.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 101:.\Generated_Source\PSoC5/P4_Latch.c **** *  the required bits according to the width and bit position of the component
+ 102:.\Generated_Source\PSoC5/P4_Latch.c **** *  instance. 
+ 103:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 104:.\Generated_Source\PSoC5/P4_Latch.c **** * The pin's status register returns the current logic level present on the 
+ 105:.\Generated_Source\PSoC5/P4_Latch.c **** * physical pin.
+ 106:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 107:.\Generated_Source\PSoC5/P4_Latch.c **** * \return 
+ 108:.\Generated_Source\PSoC5/P4_Latch.c **** *  The current value for the pins in the component as a right justified number.
+ 109:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 110:.\Generated_Source\PSoC5/P4_Latch.c **** * \funcusage
+ 111:.\Generated_Source\PSoC5/P4_Latch.c **** *  \snippet P4_Latch_SUT.c usage_P4_Latch_Read  
+ 112:.\Generated_Source\PSoC5/P4_Latch.c **** *******************************************************************************/
+ 113:.\Generated_Source\PSoC5/P4_Latch.c **** uint8 P4_Latch_Read(void)
+ 114:.\Generated_Source\PSoC5/P4_Latch.c **** {
+ 261              		.loc 1 114 0
+ 262              		.cfi_startproc
+ 263              		@ args = 0, pretend = 0, frame = 0
+ 264              		@ frame_needed = 0, uses_anonymous_args = 0
+ 265              		@ link register save eliminated.
+ 115:.\Generated_Source\PSoC5/P4_Latch.c ****     return (P4_Latch_PS & P4_Latch_MASK) >> P4_Latch_SHIFT;
+ 266              		.loc 1 115 0
+ 267 0000 014B     		ldr	r3, .L8
+ 268 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 116:.\Generated_Source\PSoC5/P4_Latch.c **** }
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 17
+
+
+ 269              		.loc 1 116 0
+ 270 0004 C009     		lsrs	r0, r0, #7
+ 271 0006 7047     		bx	lr
+ 272              	.L9:
+ 273              		.align	2
+ 274              	.L8:
+ 275 0008 01510040 		.word	1073762561
+ 276              		.cfi_endproc
+ 277              	.LFE2:
+ 278              		.size	P4_Latch_Read, .-P4_Latch_Read
+ 279              		.section	.text.P4_Latch_ReadDataReg,"ax",%progbits
+ 280              		.align	2
+ 281              		.global	P4_Latch_ReadDataReg
+ 282              		.thumb
+ 283              		.thumb_func
+ 284              		.type	P4_Latch_ReadDataReg, %function
+ 285              	P4_Latch_ReadDataReg:
+ 286              	.LFB3:
+ 117:.\Generated_Source\PSoC5/P4_Latch.c **** 
+ 118:.\Generated_Source\PSoC5/P4_Latch.c **** 
+ 119:.\Generated_Source\PSoC5/P4_Latch.c **** /*******************************************************************************
+ 120:.\Generated_Source\PSoC5/P4_Latch.c **** * Function Name: P4_Latch_ReadDataReg
+ 121:.\Generated_Source\PSoC5/P4_Latch.c **** ****************************************************************************//**
+ 122:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 123:.\Generated_Source\PSoC5/P4_Latch.c **** * \brief Reads the associated physical port's data output register and masks 
+ 124:.\Generated_Source\PSoC5/P4_Latch.c **** *  the correct bits according to the width and bit position of the component 
+ 125:.\Generated_Source\PSoC5/P4_Latch.c **** *  instance. 
+ 126:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 127:.\Generated_Source\PSoC5/P4_Latch.c **** * The data output register controls the signal applied to the physical pin in 
+ 128:.\Generated_Source\PSoC5/P4_Latch.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 129:.\Generated_Source\PSoC5/P4_Latch.c **** * preferred P4_Latch_Read() API because the 
+ 130:.\Generated_Source\PSoC5/P4_Latch.c **** * P4_Latch_ReadDataReg() reads the data register instead of the status 
+ 131:.\Generated_Source\PSoC5/P4_Latch.c **** * register. For output pins this is a useful function to determine the value 
+ 132:.\Generated_Source\PSoC5/P4_Latch.c **** * just written to the pin.
+ 133:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 134:.\Generated_Source\PSoC5/P4_Latch.c **** * \return 
+ 135:.\Generated_Source\PSoC5/P4_Latch.c **** *  The current value of the data register masked and shifted into a right 
+ 136:.\Generated_Source\PSoC5/P4_Latch.c **** *  justified number for the component instance.
+ 137:.\Generated_Source\PSoC5/P4_Latch.c **** *
+ 138:.\Generated_Source\PSoC5/P4_Latch.c **** * \funcusage
+ 139:.\Generated_Source\PSoC5/P4_Latch.c **** *  \snippet P4_Latch_SUT.c usage_P4_Latch_ReadDataReg 
+ 140:.\Generated_Source\PSoC5/P4_Latch.c **** *******************************************************************************/
+ 141:.\Generated_Source\PSoC5/P4_Latch.c **** uint8 P4_Latch_ReadDataReg(void)
+ 142:.\Generated_Source\PSoC5/P4_Latch.c **** {
+ 287              		.loc 1 142 0
+ 288              		.cfi_startproc
+ 289              		@ args = 0, pretend = 0, frame = 0
+ 290              		@ frame_needed = 0, uses_anonymous_args = 0
+ 291              		@ link register save eliminated.
+ 143:.\Generated_Source\PSoC5/P4_Latch.c ****     return (P4_Latch_DR & P4_Latch_MASK) >> P4_Latch_SHIFT;
+ 292              		.loc 1 143 0
+ 293 0000 014B     		ldr	r3, .L11
+ 294 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 144:.\Generated_Source\PSoC5/P4_Latch.c **** }
+ 295              		.loc 1 144 0
+ 296 0004 C009     		lsrs	r0, r0, #7
+ 297 0006 7047     		bx	lr
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 18
+
+
+ 298              	.L12:
+ 299              		.align	2
+ 300              	.L11:
+ 301 0008 00510040 		.word	1073762560
+ 302              		.cfi_endproc
+ 303              	.LFE3:
+ 304              		.size	P4_Latch_ReadDataReg, .-P4_Latch_ReadDataReg
+ 305              		.text
+ 306              	.Letext0:
+ 307              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 308              		.section	.debug_info,"",%progbits
+ 309              	.Ldebug_info0:
+ 310 0000 1D010000 		.4byte	0x11d
+ 311 0004 0400     		.2byte	0x4
+ 312 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 313 000a 04       		.byte	0x4
+ 314 000b 01       		.uleb128 0x1
+ 315 000c 26010000 		.4byte	.LASF20
+ 316 0010 01       		.byte	0x1
+ 317 0011 EF000000 		.4byte	.LASF21
+ 318 0015 A7000000 		.4byte	.LASF22
+ 319 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 320 001d 00000000 		.4byte	0
+ 321 0021 00000000 		.4byte	.Ldebug_line0
+ 322 0025 02       		.uleb128 0x2
+ 323 0026 01       		.byte	0x1
+ 324 0027 06       		.byte	0x6
+ 325 0028 F9010000 		.4byte	.LASF0
+ 326 002c 02       		.uleb128 0x2
+ 327 002d 01       		.byte	0x1
+ 328 002e 08       		.byte	0x8
+ 329 002f 44000000 		.4byte	.LASF1
+ 330 0033 02       		.uleb128 0x2
+ 331 0034 02       		.byte	0x2
+ 332 0035 05       		.byte	0x5
+ 333 0036 D2010000 		.4byte	.LASF2
+ 334 003a 02       		.uleb128 0x2
+ 335 003b 02       		.byte	0x2
+ 336 003c 07       		.byte	0x7
+ 337 003d 7E000000 		.4byte	.LASF3
+ 338 0041 02       		.uleb128 0x2
+ 339 0042 04       		.byte	0x4
+ 340 0043 05       		.byte	0x5
+ 341 0044 F0010000 		.4byte	.LASF4
+ 342 0048 02       		.uleb128 0x2
+ 343 0049 04       		.byte	0x4
+ 344 004a 07       		.byte	0x7
+ 345 004b 6C000000 		.4byte	.LASF5
+ 346 004f 02       		.uleb128 0x2
+ 347 0050 08       		.byte	0x8
+ 348 0051 05       		.byte	0x5
+ 349 0052 18010000 		.4byte	.LASF6
+ 350 0056 02       		.uleb128 0x2
+ 351 0057 08       		.byte	0x8
+ 352 0058 07       		.byte	0x7
+ 353 0059 2D000000 		.4byte	.LASF7
+ 354 005d 03       		.uleb128 0x3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 19
+
+
+ 355 005e 04       		.byte	0x4
+ 356 005f 05       		.byte	0x5
+ 357 0060 696E7400 		.ascii	"int\000"
+ 358 0064 02       		.uleb128 0x2
+ 359 0065 04       		.byte	0x4
+ 360 0066 07       		.byte	0x7
+ 361 0067 E2000000 		.4byte	.LASF8
+ 362 006b 04       		.uleb128 0x4
+ 363 006c DC010000 		.4byte	.LASF12
+ 364 0070 02       		.byte	0x2
+ 365 0071 9201     		.2byte	0x192
+ 366 0073 2C000000 		.4byte	0x2c
+ 367 0077 02       		.uleb128 0x2
+ 368 0078 04       		.byte	0x4
+ 369 0079 04       		.byte	0x4
+ 370 007a 27000000 		.4byte	.LASF9
+ 371 007e 02       		.uleb128 0x2
+ 372 007f 08       		.byte	0x8
+ 373 0080 04       		.byte	0x4
+ 374 0081 A0000000 		.4byte	.LASF10
+ 375 0085 02       		.uleb128 0x2
+ 376 0086 01       		.byte	0x1
+ 377 0087 08       		.byte	0x8
+ 378 0088 CD010000 		.4byte	.LASF11
+ 379 008c 04       		.uleb128 0x4
+ 380 008d 67000000 		.4byte	.LASF13
+ 381 0091 02       		.byte	0x2
+ 382 0092 3C02     		.2byte	0x23c
+ 383 0094 98000000 		.4byte	0x98
+ 384 0098 05       		.uleb128 0x5
+ 385 0099 6B000000 		.4byte	0x6b
+ 386 009d 06       		.uleb128 0x6
+ 387 009e 91000000 		.4byte	.LASF14
+ 388 00a2 01       		.byte	0x1
+ 389 00a3 39       		.byte	0x39
+ 390 00a4 00000000 		.4byte	.LFB0
+ 391 00a8 18000000 		.4byte	.LFE0-.LFB0
+ 392 00ac 01       		.uleb128 0x1
+ 393 00ad 9C       		.byte	0x9c
+ 394 00ae D1000000 		.4byte	0xd1
+ 395 00b2 07       		.uleb128 0x7
+ 396 00b3 00000000 		.4byte	.LASF16
+ 397 00b7 01       		.byte	0x1
+ 398 00b8 39       		.byte	0x39
+ 399 00b9 6B000000 		.4byte	0x6b
+ 400 00bd 00000000 		.4byte	.LLST0
+ 401 00c1 08       		.uleb128 0x8
+ 402 00c2 06000000 		.4byte	.LASF23
+ 403 00c6 01       		.byte	0x1
+ 404 00c7 3B       		.byte	0x3b
+ 405 00c8 6B000000 		.4byte	0x6b
+ 406 00cc 21000000 		.4byte	.LLST1
+ 407 00d0 00       		.byte	0
+ 408 00d1 06       		.uleb128 0x6
+ 409 00d2 11000000 		.4byte	.LASF15
+ 410 00d6 01       		.byte	0x1
+ 411 00d7 5A       		.byte	0x5a
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 20
+
+
+ 412 00d8 00000000 		.4byte	.LFB1
+ 413 00dc 18000000 		.4byte	.LFE1-.LFB1
+ 414 00e0 01       		.uleb128 0x1
+ 415 00e1 9C       		.byte	0x9c
+ 416 00e2 F6000000 		.4byte	0xf6
+ 417 00e6 07       		.uleb128 0x7
+ 418 00e7 13010000 		.4byte	.LASF17
+ 419 00eb 01       		.byte	0x1
+ 420 00ec 5A       		.byte	0x5a
+ 421 00ed 6B000000 		.4byte	0x6b
+ 422 00f1 39000000 		.4byte	.LLST2
+ 423 00f5 00       		.byte	0
+ 424 00f6 09       		.uleb128 0x9
+ 425 00f7 E2010000 		.4byte	.LASF18
+ 426 00fb 01       		.byte	0x1
+ 427 00fc 71       		.byte	0x71
+ 428 00fd 6B000000 		.4byte	0x6b
+ 429 0101 00000000 		.4byte	.LFB2
+ 430 0105 0C000000 		.4byte	.LFE2-.LFB2
+ 431 0109 01       		.uleb128 0x1
+ 432 010a 9C       		.byte	0x9c
+ 433 010b 09       		.uleb128 0x9
+ 434 010c 52000000 		.4byte	.LASF19
+ 435 0110 01       		.byte	0x1
+ 436 0111 8D       		.byte	0x8d
+ 437 0112 6B000000 		.4byte	0x6b
+ 438 0116 00000000 		.4byte	.LFB3
+ 439 011a 0C000000 		.4byte	.LFE3-.LFB3
+ 440 011e 01       		.uleb128 0x1
+ 441 011f 9C       		.byte	0x9c
+ 442 0120 00       		.byte	0
+ 443              		.section	.debug_abbrev,"",%progbits
+ 444              	.Ldebug_abbrev0:
+ 445 0000 01       		.uleb128 0x1
+ 446 0001 11       		.uleb128 0x11
+ 447 0002 01       		.byte	0x1
+ 448 0003 25       		.uleb128 0x25
+ 449 0004 0E       		.uleb128 0xe
+ 450 0005 13       		.uleb128 0x13
+ 451 0006 0B       		.uleb128 0xb
+ 452 0007 03       		.uleb128 0x3
+ 453 0008 0E       		.uleb128 0xe
+ 454 0009 1B       		.uleb128 0x1b
+ 455 000a 0E       		.uleb128 0xe
+ 456 000b 55       		.uleb128 0x55
+ 457 000c 17       		.uleb128 0x17
+ 458 000d 11       		.uleb128 0x11
+ 459 000e 01       		.uleb128 0x1
+ 460 000f 10       		.uleb128 0x10
+ 461 0010 17       		.uleb128 0x17
+ 462 0011 00       		.byte	0
+ 463 0012 00       		.byte	0
+ 464 0013 02       		.uleb128 0x2
+ 465 0014 24       		.uleb128 0x24
+ 466 0015 00       		.byte	0
+ 467 0016 0B       		.uleb128 0xb
+ 468 0017 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 21
+
+
+ 469 0018 3E       		.uleb128 0x3e
+ 470 0019 0B       		.uleb128 0xb
+ 471 001a 03       		.uleb128 0x3
+ 472 001b 0E       		.uleb128 0xe
+ 473 001c 00       		.byte	0
+ 474 001d 00       		.byte	0
+ 475 001e 03       		.uleb128 0x3
+ 476 001f 24       		.uleb128 0x24
+ 477 0020 00       		.byte	0
+ 478 0021 0B       		.uleb128 0xb
+ 479 0022 0B       		.uleb128 0xb
+ 480 0023 3E       		.uleb128 0x3e
+ 481 0024 0B       		.uleb128 0xb
+ 482 0025 03       		.uleb128 0x3
+ 483 0026 08       		.uleb128 0x8
+ 484 0027 00       		.byte	0
+ 485 0028 00       		.byte	0
+ 486 0029 04       		.uleb128 0x4
+ 487 002a 16       		.uleb128 0x16
+ 488 002b 00       		.byte	0
+ 489 002c 03       		.uleb128 0x3
+ 490 002d 0E       		.uleb128 0xe
+ 491 002e 3A       		.uleb128 0x3a
+ 492 002f 0B       		.uleb128 0xb
+ 493 0030 3B       		.uleb128 0x3b
+ 494 0031 05       		.uleb128 0x5
+ 495 0032 49       		.uleb128 0x49
+ 496 0033 13       		.uleb128 0x13
+ 497 0034 00       		.byte	0
+ 498 0035 00       		.byte	0
+ 499 0036 05       		.uleb128 0x5
+ 500 0037 35       		.uleb128 0x35
+ 501 0038 00       		.byte	0
+ 502 0039 49       		.uleb128 0x49
+ 503 003a 13       		.uleb128 0x13
+ 504 003b 00       		.byte	0
+ 505 003c 00       		.byte	0
+ 506 003d 06       		.uleb128 0x6
+ 507 003e 2E       		.uleb128 0x2e
+ 508 003f 01       		.byte	0x1
+ 509 0040 3F       		.uleb128 0x3f
+ 510 0041 19       		.uleb128 0x19
+ 511 0042 03       		.uleb128 0x3
+ 512 0043 0E       		.uleb128 0xe
+ 513 0044 3A       		.uleb128 0x3a
+ 514 0045 0B       		.uleb128 0xb
+ 515 0046 3B       		.uleb128 0x3b
+ 516 0047 0B       		.uleb128 0xb
+ 517 0048 27       		.uleb128 0x27
+ 518 0049 19       		.uleb128 0x19
+ 519 004a 11       		.uleb128 0x11
+ 520 004b 01       		.uleb128 0x1
+ 521 004c 12       		.uleb128 0x12
+ 522 004d 06       		.uleb128 0x6
+ 523 004e 40       		.uleb128 0x40
+ 524 004f 18       		.uleb128 0x18
+ 525 0050 9742     		.uleb128 0x2117
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 22
+
+
+ 526 0052 19       		.uleb128 0x19
+ 527 0053 01       		.uleb128 0x1
+ 528 0054 13       		.uleb128 0x13
+ 529 0055 00       		.byte	0
+ 530 0056 00       		.byte	0
+ 531 0057 07       		.uleb128 0x7
+ 532 0058 05       		.uleb128 0x5
+ 533 0059 00       		.byte	0
+ 534 005a 03       		.uleb128 0x3
+ 535 005b 0E       		.uleb128 0xe
+ 536 005c 3A       		.uleb128 0x3a
+ 537 005d 0B       		.uleb128 0xb
+ 538 005e 3B       		.uleb128 0x3b
+ 539 005f 0B       		.uleb128 0xb
+ 540 0060 49       		.uleb128 0x49
+ 541 0061 13       		.uleb128 0x13
+ 542 0062 02       		.uleb128 0x2
+ 543 0063 17       		.uleb128 0x17
+ 544 0064 00       		.byte	0
+ 545 0065 00       		.byte	0
+ 546 0066 08       		.uleb128 0x8
+ 547 0067 34       		.uleb128 0x34
+ 548 0068 00       		.byte	0
+ 549 0069 03       		.uleb128 0x3
+ 550 006a 0E       		.uleb128 0xe
+ 551 006b 3A       		.uleb128 0x3a
+ 552 006c 0B       		.uleb128 0xb
+ 553 006d 3B       		.uleb128 0x3b
+ 554 006e 0B       		.uleb128 0xb
+ 555 006f 49       		.uleb128 0x49
+ 556 0070 13       		.uleb128 0x13
+ 557 0071 02       		.uleb128 0x2
+ 558 0072 17       		.uleb128 0x17
+ 559 0073 00       		.byte	0
+ 560 0074 00       		.byte	0
+ 561 0075 09       		.uleb128 0x9
+ 562 0076 2E       		.uleb128 0x2e
+ 563 0077 00       		.byte	0
+ 564 0078 3F       		.uleb128 0x3f
+ 565 0079 19       		.uleb128 0x19
+ 566 007a 03       		.uleb128 0x3
+ 567 007b 0E       		.uleb128 0xe
+ 568 007c 3A       		.uleb128 0x3a
+ 569 007d 0B       		.uleb128 0xb
+ 570 007e 3B       		.uleb128 0x3b
+ 571 007f 0B       		.uleb128 0xb
+ 572 0080 27       		.uleb128 0x27
+ 573 0081 19       		.uleb128 0x19
+ 574 0082 49       		.uleb128 0x49
+ 575 0083 13       		.uleb128 0x13
+ 576 0084 11       		.uleb128 0x11
+ 577 0085 01       		.uleb128 0x1
+ 578 0086 12       		.uleb128 0x12
+ 579 0087 06       		.uleb128 0x6
+ 580 0088 40       		.uleb128 0x40
+ 581 0089 18       		.uleb128 0x18
+ 582 008a 9742     		.uleb128 0x2117
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 23
+
+
+ 583 008c 19       		.uleb128 0x19
+ 584 008d 00       		.byte	0
+ 585 008e 00       		.byte	0
+ 586 008f 00       		.byte	0
+ 587              		.section	.debug_loc,"",%progbits
+ 588              	.Ldebug_loc0:
+ 589              	.LLST0:
+ 590 0000 00000000 		.4byte	.LVL0
+ 591 0004 0C000000 		.4byte	.LVL3
+ 592 0008 0100     		.2byte	0x1
+ 593 000a 50       		.byte	0x50
+ 594 000b 0C000000 		.4byte	.LVL3
+ 595 000f 18000000 		.4byte	.LFE0
+ 596 0013 0400     		.2byte	0x4
+ 597 0015 F3       		.byte	0xf3
+ 598 0016 01       		.uleb128 0x1
+ 599 0017 50       		.byte	0x50
+ 600 0018 9F       		.byte	0x9f
+ 601 0019 00000000 		.4byte	0
+ 602 001d 00000000 		.4byte	0
+ 603              	.LLST1:
+ 604 0021 04000000 		.4byte	.LVL1
+ 605 0025 08000000 		.4byte	.LVL2
+ 606 0029 0600     		.2byte	0x6
+ 607 002b 73       		.byte	0x73
+ 608 002c 00       		.sleb128 0
+ 609 002d 08       		.byte	0x8
+ 610 002e 7F       		.byte	0x7f
+ 611 002f 1A       		.byte	0x1a
+ 612 0030 9F       		.byte	0x9f
+ 613 0031 00000000 		.4byte	0
+ 614 0035 00000000 		.4byte	0
+ 615              	.LLST2:
+ 616 0039 00000000 		.4byte	.LVL4
+ 617 003d 06000000 		.4byte	.LVL5
+ 618 0041 0100     		.2byte	0x1
+ 619 0043 50       		.byte	0x50
+ 620 0044 06000000 		.4byte	.LVL5
+ 621 0048 18000000 		.4byte	.LFE1
+ 622 004c 0400     		.2byte	0x4
+ 623 004e F3       		.byte	0xf3
+ 624 004f 01       		.uleb128 0x1
+ 625 0050 50       		.byte	0x50
+ 626 0051 9F       		.byte	0x9f
+ 627 0052 00000000 		.4byte	0
+ 628 0056 00000000 		.4byte	0
+ 629              		.section	.debug_aranges,"",%progbits
+ 630 0000 34000000 		.4byte	0x34
+ 631 0004 0200     		.2byte	0x2
+ 632 0006 00000000 		.4byte	.Ldebug_info0
+ 633 000a 04       		.byte	0x4
+ 634 000b 00       		.byte	0
+ 635 000c 0000     		.2byte	0
+ 636 000e 0000     		.2byte	0
+ 637 0010 00000000 		.4byte	.LFB0
+ 638 0014 18000000 		.4byte	.LFE0-.LFB0
+ 639 0018 00000000 		.4byte	.LFB1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 24
+
+
+ 640 001c 18000000 		.4byte	.LFE1-.LFB1
+ 641 0020 00000000 		.4byte	.LFB2
+ 642 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 643 0028 00000000 		.4byte	.LFB3
+ 644 002c 0C000000 		.4byte	.LFE3-.LFB3
+ 645 0030 00000000 		.4byte	0
+ 646 0034 00000000 		.4byte	0
+ 647              		.section	.debug_ranges,"",%progbits
+ 648              	.Ldebug_ranges0:
+ 649 0000 00000000 		.4byte	.LFB0
+ 650 0004 18000000 		.4byte	.LFE0
+ 651 0008 00000000 		.4byte	.LFB1
+ 652 000c 18000000 		.4byte	.LFE1
+ 653 0010 00000000 		.4byte	.LFB2
+ 654 0014 0C000000 		.4byte	.LFE2
+ 655 0018 00000000 		.4byte	.LFB3
+ 656 001c 0C000000 		.4byte	.LFE3
+ 657 0020 00000000 		.4byte	0
+ 658 0024 00000000 		.4byte	0
+ 659              		.section	.debug_line,"",%progbits
+ 660              	.Ldebug_line0:
+ 661 0000 93000000 		.section	.debug_str,"MS",%progbits,1
+ 661      02004700 
+ 661      00000201 
+ 661      FB0E0D00 
+ 661      01010101 
+ 662              	.LASF16:
+ 663 0000 76616C75 		.ascii	"value\000"
+ 663      6500
+ 664              	.LASF23:
+ 665 0006 73746174 		.ascii	"staticBits\000"
+ 665      69634269 
+ 665      747300
+ 666              	.LASF15:
+ 667 0011 50345F4C 		.ascii	"P4_Latch_SetDriveMode\000"
+ 667      61746368 
+ 667      5F536574 
+ 667      44726976 
+ 667      654D6F64 
+ 668              	.LASF9:
+ 669 0027 666C6F61 		.ascii	"float\000"
+ 669      7400
+ 670              	.LASF7:
+ 671 002d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 671      206C6F6E 
+ 671      6720756E 
+ 671      7369676E 
+ 671      65642069 
+ 672              	.LASF1:
+ 673 0044 756E7369 		.ascii	"unsigned char\000"
+ 673      676E6564 
+ 673      20636861 
+ 673      7200
+ 674              	.LASF19:
+ 675 0052 50345F4C 		.ascii	"P4_Latch_ReadDataReg\000"
+ 675      61746368 
+ 675      5F526561 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 25
+
+
+ 675      64446174 
+ 675      61526567 
+ 676              	.LASF13:
+ 677 0067 72656738 		.ascii	"reg8\000"
+ 677      00
+ 678              	.LASF5:
+ 679 006c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 679      20756E73 
+ 679      69676E65 
+ 679      6420696E 
+ 679      7400
+ 680              	.LASF3:
+ 681 007e 73686F72 		.ascii	"short unsigned int\000"
+ 681      7420756E 
+ 681      7369676E 
+ 681      65642069 
+ 681      6E7400
+ 682              	.LASF14:
+ 683 0091 50345F4C 		.ascii	"P4_Latch_Write\000"
+ 683      61746368 
+ 683      5F577269 
+ 683      746500
+ 684              	.LASF10:
+ 685 00a0 646F7562 		.ascii	"double\000"
+ 685      6C6500
+ 686              	.LASF22:
+ 687 00a7 433A5C55 		.ascii	"C:\\Users\\Thomas\\Documents\\PSoC Creator\\TASBot\\"
+ 687      73657273 
+ 687      5C54686F 
+ 687      6D61735C 
+ 687      446F6375 
+ 688 00d5 54415342 		.ascii	"TASBot.cydsn\000"
+ 688      6F742E63 
+ 688      7964736E 
+ 688      00
+ 689              	.LASF8:
+ 690 00e2 756E7369 		.ascii	"unsigned int\000"
+ 690      676E6564 
+ 690      20696E74 
+ 690      00
+ 691              	.LASF21:
+ 692 00ef 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\P4_Latch.c\000"
+ 692      6E657261 
+ 692      7465645F 
+ 692      536F7572 
+ 692      63655C50 
+ 693              	.LASF17:
+ 694 0113 6D6F6465 		.ascii	"mode\000"
+ 694      00
+ 695              	.LASF6:
+ 696 0118 6C6F6E67 		.ascii	"long long int\000"
+ 696      206C6F6E 
+ 696      6720696E 
+ 696      7400
+ 697              	.LASF20:
+ 698 0126 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 698      4320342E 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccMCzegW.s 			page 26
+
+
+ 698      392E3320 
+ 698      32303135 
+ 698      30333033 
+ 699 0159 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 699      20726576 
+ 699      6973696F 
+ 699      6E203232 
+ 699      31323230 
+ 700 018c 33202D66 		.ascii	"3 -ffunction-sections -finline-functions -flto -ffa"
+ 700      66756E63 
+ 700      74696F6E 
+ 700      2D736563 
+ 700      74696F6E 
+ 701 01bf 742D6C74 		.ascii	"t-lto-objects\000"
+ 701      6F2D6F62 
+ 701      6A656374 
+ 701      7300
+ 702              	.LASF11:
+ 703 01cd 63686172 		.ascii	"char\000"
+ 703      00
+ 704              	.LASF2:
+ 705 01d2 73686F72 		.ascii	"short int\000"
+ 705      7420696E 
+ 705      7400
+ 706              	.LASF12:
+ 707 01dc 75696E74 		.ascii	"uint8\000"
+ 707      3800
+ 708              	.LASF18:
+ 709 01e2 50345F4C 		.ascii	"P4_Latch_Read\000"
+ 709      61746368 
+ 709      5F526561 
+ 709      6400
+ 710              	.LASF4:
+ 711 01f0 6C6F6E67 		.ascii	"long int\000"
+ 711      20696E74 
+ 711      00
+ 712              	.LASF0:
+ 713 01f9 7369676E 		.ascii	"signed char\000"
+ 713      65642063 
+ 713      68617200 
+ 714              		.comm	__gnu_lto_v1,1,1
+ 715              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
