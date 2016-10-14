@@ -35,9 +35,6 @@
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_Clock_aliases.h" value="NONE;P2_Clock" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_Clock.c" value="ARM_C_FILE;P2_Clock" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_Clock.h" value="NONE;P2_Clock" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Timer_1.h" value="NONE;Timer_1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Timer_1.c" value="ARM_C_FILE;Timer_1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Timer_1_PM.c" value="ARM_C_FILE;Timer_1" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART.c" value="ARM_C_FILE;USBUART" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART.h" value="NONE;USBUART" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART_audio.c" value="ARM_C_FILE;USBUART" />
@@ -74,53 +71,50 @@
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_Latch.h" value="NONE;P1_Latch" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_IRQ.c" value="ARM_C_FILE;P1_IRQ" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_IRQ.h" value="NONE;P1_IRQ" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Timer_2.h" value="NONE;Timer_2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Timer_2.c" value="ARM_C_FILE;Timer_2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Timer_2_PM.c" value="ARM_C_FILE;Timer_2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD0.c" value="ARM_C_FILE;P1_RegD0" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD0.h" value="NONE;P1_RegD0" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD0_PM.c" value="ARM_C_FILE;P1_RegD0" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_D2_aliases.h" value="NONE;P2_D2" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_D2.c" value="ARM_C_FILE;P2_D2" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_D2.h" value="NONE;P2_D2" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_D1_aliases.h" value="NONE;P2_D1" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_D1.c" value="ARM_C_FILE;P2_D1" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_D1.h" value="NONE;P2_D1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_TimerIRQ.c" value="ARM_C_FILE;P1_TimerIRQ" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_TimerIRQ.h" value="NONE;P1_TimerIRQ" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_TimerIRQ.c" value="ARM_C_FILE;P2_TimerIRQ" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_TimerIRQ.h" value="NONE;P2_TimerIRQ" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_WinTimer.c" value="ARM_C_FILE;P1_WinTimer" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_WinTimer.h" value="NONE;P1_WinTimer" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_WinTimer_PM.c" value="ARM_C_FILE;P1_WinTimer" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Clock_2.c" value="ARM_C_FILE;Clock_2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Clock_2.h" value="NONE;Clock_2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD1.c" value="ARM_C_FILE;P1_RegD1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD1.h" value="NONE;P1_RegD1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD1_PM.c" value="ARM_C_FILE;P1_RegD1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD2.c" value="ARM_C_FILE;P1_RegD2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD2.h" value="NONE;P1_RegD2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P1_RegD2_PM.c" value="ARM_C_FILE;P1_RegD2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD0.c" value="ARM_C_FILE;P2_RegD0" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD0.h" value="NONE;P2_RegD0" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD0_PM.c" value="ARM_C_FILE;P2_RegD0" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_WinTimer.c" value="ARM_C_FILE;P2_WinTimer" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_WinTimer.h" value="NONE;P2_WinTimer" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_WinTimer_PM.c" value="ARM_C_FILE;P2_WinTimer" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD1.c" value="ARM_C_FILE;P2_RegD1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD1.h" value="NONE;P2_RegD1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD1_PM.c" value="ARM_C_FILE;P2_RegD1" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD2.c" value="ARM_C_FILE;P2_RegD2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD2.h" value="NONE;P2_RegD2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\P2_RegD2_PM.c" value="ARM_C_FILE;P2_RegD2" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART_Dm_aliases.h" value="NONE;USBUART_Dm" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART_Dm.c" value="ARM_C_FILE;USBUART_Dm" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART_Dm.h" value="NONE;USBUART_Dm" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART_Dp_aliases.h" value="NONE;USBUART_Dp" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART_Dp.c" value="ARM_C_FILE;USBUART_Dp" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\USBUART_Dp.h" value="NONE;USBUART_Dp" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD0.c" value="ARM_C_FILE;ConsolePort_2_RegD0" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD0.h" value="NONE;ConsolePort_2_RegD0" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD0_PM.c" value="ARM_C_FILE;ConsolePort_2_RegD0" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_WinTimer.c" value="ARM_C_FILE;ConsolePort_2_WinTimer" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_WinTimer.h" value="NONE;ConsolePort_2_WinTimer" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_WinTimer_PM.c" value="ARM_C_FILE;ConsolePort_2_WinTimer" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD1.c" value="ARM_C_FILE;ConsolePort_2_RegD1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD1.h" value="NONE;ConsolePort_2_RegD1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD1_PM.c" value="ARM_C_FILE;ConsolePort_2_RegD1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_Clock_1.c" value="ARM_C_FILE;ConsolePort_2_Clock_1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_Clock_1.h" value="NONE;ConsolePort_2_Clock_1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_Clock_2.c" value="ARM_C_FILE;ConsolePort_2_Clock_2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_Clock_2.h" value="NONE;ConsolePort_2_Clock_2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD2.c" value="ARM_C_FILE;ConsolePort_2_RegD2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD2.h" value="NONE;ConsolePort_2_RegD2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD2_PM.c" value="ARM_C_FILE;ConsolePort_2_RegD2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD0.c" value="ARM_C_FILE;ConsolePort_1_RegD0" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD0.h" value="NONE;ConsolePort_1_RegD0" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD0_PM.c" value="ARM_C_FILE;ConsolePort_1_RegD0" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_WinTimer.c" value="ARM_C_FILE;ConsolePort_1_WinTimer" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_WinTimer.h" value="NONE;ConsolePort_1_WinTimer" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_WinTimer_PM.c" value="ARM_C_FILE;ConsolePort_1_WinTimer" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD1.c" value="ARM_C_FILE;ConsolePort_1_RegD1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD1.h" value="NONE;ConsolePort_1_RegD1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD1_PM.c" value="ARM_C_FILE;ConsolePort_1_RegD1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_Clock_1.c" value="ARM_C_FILE;ConsolePort_1_Clock_1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_Clock_1.h" value="NONE;ConsolePort_1_Clock_1" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_Clock_2.c" value="ARM_C_FILE;ConsolePort_1_Clock_2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_Clock_2.h" value="NONE;ConsolePort_1_Clock_2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD2.c" value="ARM_C_FILE;ConsolePort_1_RegD2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD2.h" value="NONE;ConsolePort_1_RegD2" />
-  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_1_RegD2_PM.c" value="ARM_C_FILE;ConsolePort_1_RegD2" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\cycodeshareimport.ld" value="NONE;" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\cycodeshareexport.ld" value="NONE;" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\cycodeshareimport.scat" value="NONE;" />

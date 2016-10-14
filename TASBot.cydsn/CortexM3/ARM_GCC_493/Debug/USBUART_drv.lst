@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
   29:.\Generated_Source\PSoC5/USBUART_drv.c ****  * API.*/
   30:.\Generated_Source\PSoC5/USBUART_drv.c **** volatile uint8 USBUART_configuration;
   31:.\Generated_Source\PSoC5/USBUART_drv.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBUART_drv.c **** /** Contains the current interface number.*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
   86:.\Generated_Source\PSoC5/USBUART_drv.c **** * Function Name: USBUART_ep_0_Interrupt
   87:.\Generated_Source\PSoC5/USBUART_drv.c **** ****************************************************************************//**
   88:.\Generated_Source\PSoC5/USBUART_drv.c **** *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 3
 
 
   89:.\Generated_Source\PSoC5/USBUART_drv.c **** *  This Interrupt Service Routine handles Endpoint 0 (Control Pipe) traffic.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  143:.\Generated_Source\PSoC5/USBUART_drv.c ****             
  144:.\Generated_Source\PSoC5/USBUART_drv.c ****             /* Make sure that SETUP bit is cleared before modification */
  145:.\Generated_Source\PSoC5/USBUART_drv.c ****             if ((tempReg & USBUART_MODE_SETUP_RCVD) == 0u)
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 4
 
 
  146:.\Generated_Source\PSoC5/USBUART_drv.c ****             {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  200:.\Generated_Source\PSoC5/USBUART_drv.c ****     uint8 requestHandled;
  201:.\Generated_Source\PSoC5/USBUART_drv.c ****     
  202:.\Generated_Source\PSoC5/USBUART_drv.c ****     /* Clear register lock by SIE (read register) and clear setup bit 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 5
 
 
  203:.\Generated_Source\PSoC5/USBUART_drv.c ****     * (write any value in register).
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  257:.\Generated_Source\PSoC5/USBUART_drv.c **** *
  258:.\Generated_Source\PSoC5/USBUART_drv.c **** *******************************************************************************/
  259:.\Generated_Source\PSoC5/USBUART_drv.c **** void USBUART_HandleIN(void) 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 6
 
 
  260:.\Generated_Source\PSoC5/USBUART_drv.c **** {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  314:.\Generated_Source\PSoC5/USBUART_drv.c ****             /* We expect no more data, so stall INs and OUTs */
  315:.\Generated_Source\PSoC5/USBUART_drv.c ****             USBUART_ep0Mode = USBUART_MODE_STALL_IN_OUT;
  316:.\Generated_Source\PSoC5/USBUART_drv.c ****             break;
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 7
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 7
 
 
  317:.\Generated_Source\PSoC5/USBUART_drv.c ****             
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
   35 0002 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
   36 0004 1C4A     		ldr	r2, .L8+4
   37 0006 1388     		ldrh	r3, [r2]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 8
 
 
   38 0008 0B44     		add	r3, r3, r1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  373:.\Generated_Source\PSoC5/USBUART_drv.c ****     /* Support zero-length packet */
  374:.\Generated_Source\PSoC5/USBUART_drv.c ****     if ((USBUART_lastPacketSize == 8u) || (ep0Count > 0u))
   79              		.loc 1 374 0 is_stmt 1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 9
 
 
   80 003c 0D4A     		ldr	r2, .L8
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  115 006e 014A     		ldr	r2, .L8
  116 0070 1370     		strb	r3, [r2]
  117 0072 7047     		bx	lr
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 10
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 10
 
 
  118              	.L9:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  426:.\Generated_Source\PSoC5/USBUART_drv.c ****     else
  427:.\Generated_Source\PSoC5/USBUART_drv.c ****     {
  428:.\Generated_Source\PSoC5/USBUART_drv.c ****         /* Set up the state machine */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 11
 
 
  429:.\Generated_Source\PSoC5/USBUART_drv.c ****         USBUART_transferState = USBUART_TRANS_STATE_CONTROL_READ;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  147 0002 074B     		ldr	r3, .L11
  148 0004 1A70     		strb	r2, [r3]
  476:.\Generated_Source\PSoC5/USBUART_drv.c ****     
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 12
 
 
  477:.\Generated_Source\PSoC5/USBUART_drv.c ****     /* Set the data toggle */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  494:.\Generated_Source\PSoC5/USBUART_drv.c **** ****************************************************************************//**
  495:.\Generated_Source\PSoC5/USBUART_drv.c **** *
  496:.\Generated_Source\PSoC5/USBUART_drv.c **** *  Handle the Data Stage of a control read transfer.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 13
 
 
  497:.\Generated_Source\PSoC5/USBUART_drv.c **** *
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  528:.\Generated_Source\PSoC5/USBUART_drv.c ****     /* Update the transfer byte count */
  529:.\Generated_Source\PSoC5/USBUART_drv.c ****     USBUART_transferByteCount += USBUART_lastPacketSize;
  530:.\Generated_Source\PSoC5/USBUART_drv.c ****     
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 14
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 14
 
 
  531:.\Generated_Source\PSoC5/USBUART_drv.c ****     /* Go Idle */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  585:.\Generated_Source\PSoC5/USBUART_drv.c **** 
  586:.\Generated_Source\PSoC5/USBUART_drv.c **** 
  587:.\Generated_Source\PSoC5/USBUART_drv.c **** /*******************************************************************************
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 15
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 15
 
 
  588:.\Generated_Source\PSoC5/USBUART_drv.c **** * Function Name: USBUART_ControlWriteDataStage
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  231              		.loc 1 614 0
  232 0018 0020     		movs	r0, #0
  619:.\Generated_Source\PSoC5/USBUART_drv.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 16
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 16
 
 
  620:.\Generated_Source\PSoC5/USBUART_drv.c ****     while ((USBUART_currentTD.count > 0u) && (ep0Count > 0u))
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  275 004a 0A4B     		ldr	r3, .L20+16
  276 004c 1970     		strb	r1, [r3]
  630:.\Generated_Source\PSoC5/USBUART_drv.c ****     
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 17
 
 
  631:.\Generated_Source\PSoC5/USBUART_drv.c ****     /* Update the data toggle */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  650:.\Generated_Source\PSoC5/USBUART_drv.c **** *  No.
  651:.\Generated_Source\PSoC5/USBUART_drv.c **** *
  652:.\Generated_Source\PSoC5/USBUART_drv.c **** *******************************************************************************/
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 18
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 18
 
 
  653:.\Generated_Source\PSoC5/USBUART_drv.c **** void USBUART_ControlWriteStatusStage(void) 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  328              		.loc 1 690 0
  329 0010 0022     		movs	r2, #0
  330 0012 054B     		ldr	r3, .L23+12
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 19
 
 
  331 0014 1A70     		strb	r2, [r3]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  723:.\Generated_Source\PSoC5/USBUART_drv.c ****     USBUART_transferState = USBUART_TRANS_STATE_IDLE;
  724:.\Generated_Source\PSoC5/USBUART_drv.c ****     
  725:.\Generated_Source\PSoC5/USBUART_drv.c ****     /* Update the completion block. */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 20
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 20
 
 
  726:.\Generated_Source\PSoC5/USBUART_drv.c ****     USBUART_UpdateStatusBlock(USBUART_XFER_STATUS_ACK);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  372              		.loc 1 760 0
  373 0014 0022     		movs	r2, #0
  374 0016 9A60     		str	r2, [r3, #8]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 21
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 21
 
 
  375              	.L25:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  422 001a 0220     		movs	r0, #2
  423 001c FFF7FEFF 		bl	USBUART_UpdateStatusBlock
  424              	.LVL18:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 22
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 22
 
 
  220:.\Generated_Source\PSoC5/USBUART_drv.c ****         {
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  469              	.L39:
  470 0050 28600040 		.word	1073766440
  471 0054 00000000 		.word	USBUART_ep0Mode
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 23
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 23
 
 
  472 0058 00600040 		.word	1073766400
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  521              	.LFE8:
  522              		.size	USBUART_ControlReadStatusStage, .-USBUART_ControlReadStatusStage
  523              		.section	.text.USBUART_HandleOUT,"ax",%progbits
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 24
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 24
 
 
  524              		.align	2
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  570 002c 08BD     		pop	{r3, pc}
  571              	.L52:
  572 002e 00BF     		.align	2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 25
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 25
 
 
  573              	.L51:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  623              	.LFB13:
  715:.\Generated_Source\PSoC5/USBUART_drv.c ****     if (0u != USBUART_deviceAddress)
  624              		.loc 1 715 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 26
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 26
 
 
  625              		.cfi_startproc
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  673              		.thumb
  674              		.thumb_func
  675              		.type	USBUART_HandleIN, %function
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 27
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 27
 
 
  676              	USBUART_HandleIN:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  723              		.thumb
  724              		.thumb_func
  725              		.type	USBUART_EP_0_ISR, %function
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 28
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 28
 
 
  726              	USBUART_EP_0_ISR:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  770 0034 FFF7FEFF 		bl	USBUART_HandleIN
  771              	.LVL40:
  106:.\Generated_Source\PSoC5/USBUART_drv.c ****         if ((tempReg & USBUART_MODE_SETUP_RCVD) != 0u)
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 29
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 29
 
 
  772              		.loc 1 106 0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  816 0068 1343     		orrs	r3, r3, r2
  817              	.LVL48:
  149:.\Generated_Source\PSoC5/USBUART_drv.c ****                
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 30
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 30
 
 
  818              		.loc 1 149 0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  865 00a4 28600040 		.word	1073766440
  866 00a8 00000000 		.word	USBUART_ep0Mode
  867 00ac 00000000 		.word	USBUART_ep0Toggle
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 31
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 31
 
 
  868 00b0 00000000 		.word	USBUART_ep0Count
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  789:.\Generated_Source\PSoC5/USBUART_drv.c ****     {
  790:.\Generated_Source\PSoC5/USBUART_drv.c ****         USBUART_currentTD.pStatusBlock->status = USBUART_XFER_IDLE;
  894              		.loc 1 790 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 32
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 32
 
 
  895 000c 044A     		ldr	r2, .L85+4
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  943 0016 0022     		movs	r2, #0
  944 0018 0B4B     		ldr	r3, .L92+8
  945 001a 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 33
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 33
 
 
  435:.\Generated_Source\PSoC5/USBUART_drv.c ****         
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  993              		@ frame_needed = 0, uses_anonymous_args = 0
  994 0000 08B5     		push	{r3, lr}
  995              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 34
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 34
 
 
  996              		.cfi_offset 3, -8
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1042              	.LFE9:
  1043              		.size	USBUART_InitControlWrite, .-USBUART_InitControlWrite
  1044              		.comm	USBUART_transferByteCount,2,2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 35
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 35
 
 
  1045              		.comm	USBUART_ep0Count,1,1
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1099 0043 05       		.byte	0x5
  1100 0044 64010000 		.4byte	.LASF4
  1101 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 36
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 36
 
 
  1102 0049 04       		.byte	0x4
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1156 00b5 06       		.uleb128 0x6
  1157 00b6 0C       		.byte	0xc
  1158 00b7 03       		.byte	0x3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 37
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 37
 
 
  1159 00b8 8D       		.byte	0x8d
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1213 0124 6B000000 		.4byte	0x6b
  1214 0128 0A       		.byte	0xa
  1215 0129 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 38
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 38
 
 
  1216 012a 08       		.uleb128 0x8
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1270 0190 A4000000 		.4byte	0xa4
  1271 0194 09       		.uleb128 0x9
  1272 0195 04       		.byte	0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 39
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 39
 
 
  1273 0196 56010000 		.4byte	0x156
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1327 0211 9C       		.byte	0x9c
  1328 0212 0C       		.uleb128 0xc
  1329 0213 10020000 		.4byte	.LASF36
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 40
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 40
 
 
  1330 0217 01       		.byte	0x1
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1384 029b F202     		.2byte	0x2f2
  1385 029d 6B000000 		.4byte	0x6b
  1386 02a1 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 41
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 41
 
 
  1387 02a2 50       		.byte	0x50
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1441 031b 00       		.byte	0
  1442 031c 00       		.byte	0
  1443 031d 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 42
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 42
 
 
  1444 031e 6C040000 		.4byte	.LASF46
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1498 0396 7F020000 		.4byte	0x27f
  1499 039a 14       		.uleb128 0x14
  1500 039b 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 43
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 43
 
 
  1501 039c 50       		.byte	0x50
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1555 0421 00       		.byte	0
  1556 0422 16       		.uleb128 0x16
  1557 0423 0D040000 		.4byte	.LASF81
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 44
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 44
 
 
  1558 0427 01       		.byte	0x1
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1612 04b3 01       		.byte	0x1
  1613 04b4 38       		.byte	0x38
  1614 04b5 A4000000 		.4byte	0xa4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 45
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 45
 
 
  1615 04b9 05       		.uleb128 0x5
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1669 052b 35050000 		.4byte	0x535
  1670 052f 05       		.uleb128 0x5
  1671 0530 03       		.byte	0x3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 46
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 46
 
 
  1672 0531 00000000 		.4byte	USBUART_interfaceSetting
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1726 05a9 18       		.byte	0x18
  1727 05aa B4050000 		.4byte	0x5b4
  1728 05ae 05       		.uleb128 0x5
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 47
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 47
 
 
  1729 05af 03       		.byte	0x3
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1783 0624 1A       		.uleb128 0x1a
  1784 0625 2D020000 		.4byte	.LASF74
  1785 0629 04       		.byte	0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 48
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 48
 
 
  1786 062a 4D01     		.2byte	0x14d
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1840 0027 00       		.byte	0
  1841 0028 00       		.byte	0
  1842 0029 04       		.uleb128 0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 49
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 49
 
 
  1843 002a 16       		.uleb128 0x16
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1897 0060 3B       		.uleb128 0x3b
  1898 0061 0B       		.uleb128 0xb
  1899 0062 49       		.uleb128 0x49
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 50
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 50
 
 
  1900 0063 13       		.uleb128 0x13
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  1954 009a 00       		.byte	0
  1955 009b 0D       		.uleb128 0xd
  1956 009c 34       		.uleb128 0x34
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 51
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 51
 
 
  1957 009d 00       		.byte	0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2011 00d6 3B       		.uleb128 0x3b
  2012 00d7 05       		.uleb128 0x5
  2013 00d8 49       		.uleb128 0x49
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 52
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 52
 
 
  2014 00d9 13       		.uleb128 0x13
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2068 0112 00       		.byte	0
  2069 0113 00       		.byte	0
  2070 0114 14       		.uleb128 0x14
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 53
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 53
 
 
  2071 0115 8A8201   		.uleb128 0x410a
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2125 0151 13       		.uleb128 0x13
  2126 0152 11       		.uleb128 0x11
  2127 0153 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 54
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 54
 
 
  2128 0154 12       		.uleb128 0x12
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2182              		.section	.debug_loc,"",%progbits
  2183              	.Ldebug_loc0:
  2184              	.LLST0:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 55
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 55
 
 
  2185 0000 00000000 		.4byte	.LVL0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2239 0092 50       		.byte	0x50
  2240 0093 3C000000 		.4byte	.LVL21
  2241 0097 3E000000 		.4byte	.LVL22
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 56
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 56
 
 
  2242 009b 0100     		.2byte	0x1
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2296 0122 54000000 		.4byte	.LVL44
  2297 0126 58000000 		.4byte	.LVL45
  2298 012a 0100     		.2byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 57
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 57
 
 
  2299 012c 53       		.byte	0x53
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2353 0064 40000000 		.4byte	.LFE13-.LFB13
  2354 0068 00000000 		.4byte	.LFB2
  2355 006c 2C000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 58
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 58
 
 
  2356 0070 00000000 		.4byte	.LFB0
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2406 0000 70537461 		.ascii	"pStatusBlock\000"
  2406      74757342 
  2406      6C6F636B 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 59
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 59
 
 
  2406      00
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2429              	.LASF67:
  2430 00b4 55534255 		.ascii	"USBUART_EP\000"
  2430      4152545F 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 60
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 60
 
 
  2430      455000
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2452 0184 6570546F 		.ascii	"epToggle\000"
  2452      67676C65 
  2452      00
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 61
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 61
 
 
  2453              	.LASF12:
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2475              	.LASF3:
  2476 0248 73686F72 		.ascii	"short unsigned int\000"
  2476      7420756E 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 62
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 62
 
 
  2476      7369676E 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2498      696200
  2499              	.LASF66:
  2500 0308 55534255 		.ascii	"USBUART_interfaceClass\000"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 63
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 63
 
 
  2500      4152545F 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2522      42554152 
  2522      545F5444 
  2522      00
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 64
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 64
 
 
  2523              	.LASF65:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2545              	.LASF58:
  2546 049c 55534255 		.ascii	"USBUART_configuration\000"
  2546      4152545F 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 65
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 65
 
 
  2546      636F6E66 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 1
  2566 05c9 433A5C55 		.ascii	"C:\\Users\\Thomas\\Documents\\PSoC Creator\\TASBot\\"
  2566      73657273 
  2566      5C54686F 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSEAXUj.s 			page 66
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccF764Wd.s 			page 66
 
 
  2566      6D61735C 

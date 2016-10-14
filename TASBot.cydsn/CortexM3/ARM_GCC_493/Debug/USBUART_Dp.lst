@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
   29:.\Generated_Source\PSoC5/USBUART_Dp.c **** * \brief Writes the value to the physical port (data output register), masking
   30:.\Generated_Source\PSoC5/USBUART_Dp.c **** *  and shifting the bits appropriately. 
   31:.\Generated_Source\PSoC5/USBUART_Dp.c **** *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBUART_Dp.c **** * The data output register controls the signal applied to the physical pin in 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
   52              		.section	.text.USBUART_Dp_SetDriveMode,"ax",%progbits
   53              		.align	2
   54              		.global	USBUART_Dp_SetDriveMode
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 3
 
 
   55              		.thumb
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
   77              	.L5:
   78 0014 7E500040 		.word	1073762430
   79              		.cfi_endproc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 4
 
 
   80              	.LFE1:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  110              		.global	USBUART_Dp_ReadDataReg
  111              		.thumb
  112              		.thumb_func
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 5
 
 
  113              		.type	USBUART_Dp_ReadDataReg, %function
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  139              		.type	USBUART_Dp_SetInterruptMode, %function
  140              	USBUART_Dp_SetInterruptMode:
  141              	.LFB4:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 6
 
 
  145:.\Generated_Source\PSoC5/USBUART_Dp.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  151 0004 80B2     		uxth	r0, r0
  152 0006 10B1     		cbz	r0, .L13
  190:.\Generated_Source\PSoC5/USBUART_Dp.c **** 		{ 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 7
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 7
 
 
  191:.\Generated_Source\PSoC5/USBUART_Dp.c **** 			 USBUART_Dp_0_INTTYPE_REG = (uint8)mode; 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  218:.\Generated_Source\PSoC5/USBUART_Dp.c ****         return (USBUART_Dp_INTSTAT & USBUART_Dp_MASK) >> USBUART_Dp_SHIFT;
  180              		.loc 1 218 0
  181 0000 024B     		ldr	r3, .L18
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 8
 
 
  182 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  235 0050 08       		.byte	0x8
  236 0051 05       		.byte	0x5
  237 0052 D8010000 		.4byte	.LASF6
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 9
 
 
  238 0056 02       		.uleb128 0x2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  292 00c5 6B000000 		.4byte	0x6b
  293 00c9 00000000 		.4byte	.LLST0
  294 00cd 08       		.uleb128 0x8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 10
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 10
 
 
  295 00ce 1E000000 		.4byte	.LASF27
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  349 0146 77000000 		.4byte	0x77
  350 014a 42000000 		.4byte	.LLST2
  351 014e 07       		.uleb128 0x7
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 11
 
 
  352 014f B9010000 		.4byte	.LASF18
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  406 0024 0B       		.uleb128 0xb
  407 0025 03       		.uleb128 0x3
  408 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 12
 
 
  409 0027 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  463 005e 3B       		.uleb128 0x3b
  464 005f 0B       		.uleb128 0xb
  465 0060 49       		.uleb128 0x49
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 13
 
 
  466 0061 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  520 000f 18000000 		.4byte	.LFE0
  521 0013 0400     		.2byte	0x4
  522 0015 F3       		.byte	0xf3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 14
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 14
 
 
  523 0016 01       		.uleb128 0x1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  577 000e 0000     		.2byte	0
  578 0010 00000000 		.4byte	.LFB0
  579 0014 18000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 15
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 15
 
 
  580 0018 00000000 		.4byte	.LFB1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  619              	.LASF15:
  620 004f 55534255 		.ascii	"USBUART_Dp_Write\000"
  620      4152545F 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 16
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 16
 
 
  620      44705F57 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  643      4320342E 
  643      392E3320 
  643      32303135 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 17
 
 
  643      30333033 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 1
  665      00
  666              	.LASF21:
  667 0214 55534255 		.ascii	"USBUART_Dp_SetInterruptMode\000"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPMW08b.s 			page 18
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccPWUncc.s 			page 18
 
 
  667      4152545F 

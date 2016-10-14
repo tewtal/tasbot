@@ -125,9 +125,8 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\USBUART_Dp_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\USBUART_Dp.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\USBUART_Dp.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Timer_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Timer_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Timer_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_1.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_Clock_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_Clock.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_Clock.h</File>
@@ -136,59 +135,54 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_Latch.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_IRQ.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_IRQ.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_WinTimer.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_WinTimer.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_WinTimer_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_Clock_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_Clock_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_Clock_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_Clock_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_2.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D0_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D0.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D0.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD0.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD0.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD0_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_WinTimer.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_WinTimer.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_WinTimer_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_Clock_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_Clock_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_Clock_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_Clock_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD0.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD0.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD0_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D0_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D0.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D0.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Timer_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Timer_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Timer_2_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D2_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D2.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_D2.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D2_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D2.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_D2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_2_RegD2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ConsolePort_1_RegD2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_TimerIRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_TimerIRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_TimerIRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_TimerIRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD0.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD0.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD0_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_WinTimer.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_WinTimer.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_WinTimer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P1_RegD2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD0.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD0.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD0_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_WinTimer.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_WinTimer.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_WinTimer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\P2_RegD2_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\Export\ARM_GCC_Generic">

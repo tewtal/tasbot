@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
   29:.\Generated_Source\PSoC5/USBUART_msc.c **** 
   30:.\Generated_Source\PSoC5/USBUART_msc.c **** static uint8 USBUART_lunCount = USBUART_MSC_LUN_NUMBER;
   31:.\Generated_Source\PSoC5/USBUART_msc.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBUART_msc.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
   62:.\Generated_Source\PSoC5/USBUART_msc.c ****         
   63:.\Generated_Source\PSoC5/USBUART_msc.c ****         if (USBUART_MSC_GET_MAX_LUN == USBUART_bRequestReg)
   51              		.loc 1 63 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 3
 
 
   52 001c 134B     		ldr	r3, .L11
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
   85 0048 71B9     		cbnz	r1, .L9
   85:.\Generated_Source\PSoC5/USBUART_msc.c ****                 (dataLength == USBUART_MSC_RESET_WLENGTH))
   86:.\Generated_Source\PSoC5/USBUART_msc.c ****             {
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 4
 
 
   87:.\Generated_Source\PSoC5/USBUART_msc.c ****                 /* Handle to Bulk-Only Reset request: no data control transfer. */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  125              		.align	2
  126              		.global	USBUART_MSC_SetLunCount
  127              		.thumb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 5
 
 
  128              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  124:.\Generated_Source\PSoC5/USBUART_msc.c **** 
  125:.\Generated_Source\PSoC5/USBUART_msc.c **** 
  126:.\Generated_Source\PSoC5/USBUART_msc.c **** /*******************************************************************************
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 6
 
 
  127:.\Generated_Source\PSoC5/USBUART_msc.c **** * Function Name: USBUART_MSC_GetLunCount
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  194 000a 04       		.byte	0x4
  195 000b 01       		.uleb128 0x1
  196 000c 3C010000 		.4byte	.LASF30
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 7
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 7
 
 
  197 0010 01       		.byte	0x1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  251 007d 9301     		.2byte	0x193
  252 007f 3A000000 		.4byte	0x3a
  253 0083 02       		.uleb128 0x2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 8
 
 
  254 0084 04       		.byte	0x4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  308 00ea AD       		.byte	0xad
  309 00eb FD000000 		.4byte	0xfd
  310 00ef 04       		.byte	0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 9
 
 
  311 00f0 07       		.uleb128 0x7
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  365 0162 01       		.byte	0x1
  366 0163 34       		.byte	0x34
  367 0164 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 10
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 10
 
 
  368 0168 00000000 		.4byte	.LLST0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  422 01e9 E8000000 		.4byte	.LASF37
  423 01ed 04       		.byte	0x4
  424 01ee 7A       		.byte	0x7a
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 11
 
 
  425 01ef F3010000 		.4byte	0x1f3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  479 0026 08       		.uleb128 0x8
  480 0027 00       		.byte	0
  481 0028 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 12
 
 
  482 0029 04       		.uleb128 0x4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  536 005f 0B       		.uleb128 0xb
  537 0060 3B       		.uleb128 0x3b
  538 0061 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 13
 
 
  539 0062 49       		.uleb128 0x49
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  593 0099 01       		.uleb128 0x1
  594 009a 13       		.uleb128 0x13
  595 009b 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 14
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 14
 
 
  596 009c 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  650 00d5 0E       		.uleb128 0xe
  651 00d6 3A       		.uleb128 0x3a
  652 00d7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 15
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 15
 
 
  653 00d8 3B       		.uleb128 0x3b
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  707 010f 0B       		.uleb128 0xb
  708 0110 3B       		.uleb128 0x3b
  709 0111 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 16
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 16
 
 
  710 0112 49       		.uleb128 0x49
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  764 003a 6A000000 		.4byte	.LVL8
  765 003e 78000000 		.4byte	.LFE0
  766 0042 0100     		.2byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 17
 
 
  767 0044 50       		.byte	0x50
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  821 000e 0000     		.2byte	0
  822 0010 00000000 		.4byte	.LFB0
  823 0014 78000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 18
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 18
 
 
  824 0018 00000000 		.4byte	.LFB1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  856      757300
  857              	.LASF29:
  858 005c 55534255 		.ascii	"USBUART_InitNoDataControlTransfer\000"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 19
 
 
  858      4152545F 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  881      6F742E63 
  881      7964736E 
  881      00
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 20
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 20
 
 
  882              	.LASF10:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 1
  901      536F7572 
  901      63655C50 
  902              	.LASF28:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccgT4689.s 			page 21
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccpXhah2.s 			page 21
 
 
  903 025d 55534255 		.ascii	"USBUART_InitControlRead\000"

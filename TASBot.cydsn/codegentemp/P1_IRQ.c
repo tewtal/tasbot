@@ -167,18 +167,36 @@ CY_ISR(P1_IRQ_Interrupt)
     /*  Place your Interrupt code here. */
     /* `#START P1_IRQ_Interrupt` */
 
-   ConsolePort_1_RegD0_WriteRegValue(data);
-    
-   if(playing)
-   {
-        input_ptr = (input_ptr+1)%INPUT_BUF_SIZE;
-        data = input[0][input_ptr];
-        latches++;
-        if(disable_timer == 1 || latches == window_off)
+    P1_RegD0_WriteRegValue(data[0]);
+    P1_RegD1_WriteRegValue(data[1]);
+    P1_RegD2_WriteRegValue(data[2]);
+
+    if(!async)
+    {
+        P2_RegD0_WriteRegValue(data[3]);
+        P2_RegD1_WriteRegValue(data[4]);
+        P2_RegD2_WriteRegValue(data[5]);
+    }
+  
+    if(playing)
+    {
+        if(!use_timer[0])
         {
-            disable_timer = 0;
-            Timer_1_Write(0);
+            input_ptr[0] = (input_ptr[0]+1)%INPUT_BUF_SIZE;
+            data[0] = input[0][input_ptr[0]]; 
+            data[1] = input[1][input_ptr[0]]; 
+            data[2] = input[2][input_ptr[0]]; 
+
+            if(!async)
+            {
+                data[3] = input[3][input_ptr[0]]; 
+                data[4] = input[4][input_ptr[0]]; 
+                data[5] = input[5][input_ptr[0]]; 
+            }
+            
+            latches[0]++;
         }
+        sent = 1;
     }
     /* `#END` */
 }

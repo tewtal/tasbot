@@ -1,0 +1,239 @@
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccIUbxgf.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Timer_2.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              	.Letext0:
+  19              		.section	.debug_info,"",%progbits
+  20              	.Ldebug_info0:
+  21 0000 75000000 		.4byte	0x75
+  22 0004 0400     		.2byte	0x4
+  23 0006 00000000 		.4byte	.Ldebug_abbrev0
+  24 000a 04       		.byte	0x4
+  25 000b 01       		.uleb128 0x1
+  26 000c 7B000000 		.4byte	.LASF12
+  27 0010 01       		.byte	0x1
+  28 0011 4A010000 		.4byte	.LASF13
+  29 0015 40000000 		.4byte	.LASF14
+  30 0019 00000000 		.4byte	.Ldebug_line0
+  31 001d 02       		.uleb128 0x2
+  32 001e 01       		.byte	0x1
+  33 001f 06       		.byte	0x6
+  34 0020 76010000 		.4byte	.LASF0
+  35 0024 02       		.uleb128 0x2
+  36 0025 01       		.byte	0x1
+  37 0026 08       		.byte	0x8
+  38 0027 06000000 		.4byte	.LASF1
+  39 002b 02       		.uleb128 0x2
+  40 002c 02       		.byte	0x2
+  41 002d 05       		.byte	0x5
+  42 002e 40010000 		.4byte	.LASF2
+  43 0032 02       		.uleb128 0x2
+  44 0033 02       		.byte	0x2
+  45 0034 07       		.byte	0x7
+  46 0035 26000000 		.4byte	.LASF3
+  47 0039 02       		.uleb128 0x2
+  48 003a 04       		.byte	0x4
+  49 003b 05       		.byte	0x5
+  50 003c 6D010000 		.4byte	.LASF4
+  51 0040 02       		.uleb128 0x2
+  52 0041 04       		.byte	0x4
+  53 0042 07       		.byte	0x7
+  54 0043 14000000 		.4byte	.LASF5
+  55 0047 02       		.uleb128 0x2
+  56 0048 08       		.byte	0x8
+  57 0049 05       		.byte	0x5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccIUbxgf.s 			page 2
+
+
+  58 004a 2D010000 		.4byte	.LASF6
+  59 004e 02       		.uleb128 0x2
+  60 004f 08       		.byte	0x8
+  61 0050 07       		.byte	0x7
+  62 0051 16010000 		.4byte	.LASF7
+  63 0055 03       		.uleb128 0x3
+  64 0056 04       		.byte	0x4
+  65 0057 05       		.byte	0x5
+  66 0058 696E7400 		.ascii	"int\000"
+  67 005c 02       		.uleb128 0x2
+  68 005d 04       		.byte	0x4
+  69 005e 07       		.byte	0x7
+  70 005f 09010000 		.4byte	.LASF8
+  71 0063 02       		.uleb128 0x2
+  72 0064 04       		.byte	0x4
+  73 0065 04       		.byte	0x4
+  74 0066 00000000 		.4byte	.LASF9
+  75 006a 02       		.uleb128 0x2
+  76 006b 08       		.byte	0x8
+  77 006c 04       		.byte	0x4
+  78 006d 39000000 		.4byte	.LASF10
+  79 0071 02       		.uleb128 0x2
+  80 0072 01       		.byte	0x1
+  81 0073 08       		.byte	0x8
+  82 0074 3B010000 		.4byte	.LASF11
+  83 0078 00       		.byte	0
+  84              		.section	.debug_abbrev,"",%progbits
+  85              	.Ldebug_abbrev0:
+  86 0000 01       		.uleb128 0x1
+  87 0001 11       		.uleb128 0x11
+  88 0002 01       		.byte	0x1
+  89 0003 25       		.uleb128 0x25
+  90 0004 0E       		.uleb128 0xe
+  91 0005 13       		.uleb128 0x13
+  92 0006 0B       		.uleb128 0xb
+  93 0007 03       		.uleb128 0x3
+  94 0008 0E       		.uleb128 0xe
+  95 0009 1B       		.uleb128 0x1b
+  96 000a 0E       		.uleb128 0xe
+  97 000b 10       		.uleb128 0x10
+  98 000c 17       		.uleb128 0x17
+  99 000d 00       		.byte	0
+ 100 000e 00       		.byte	0
+ 101 000f 02       		.uleb128 0x2
+ 102 0010 24       		.uleb128 0x24
+ 103 0011 00       		.byte	0
+ 104 0012 0B       		.uleb128 0xb
+ 105 0013 0B       		.uleb128 0xb
+ 106 0014 3E       		.uleb128 0x3e
+ 107 0015 0B       		.uleb128 0xb
+ 108 0016 03       		.uleb128 0x3
+ 109 0017 0E       		.uleb128 0xe
+ 110 0018 00       		.byte	0
+ 111 0019 00       		.byte	0
+ 112 001a 03       		.uleb128 0x3
+ 113 001b 24       		.uleb128 0x24
+ 114 001c 00       		.byte	0
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccIUbxgf.s 			page 3
+
+
+ 115 001d 0B       		.uleb128 0xb
+ 116 001e 0B       		.uleb128 0xb
+ 117 001f 3E       		.uleb128 0x3e
+ 118 0020 0B       		.uleb128 0xb
+ 119 0021 03       		.uleb128 0x3
+ 120 0022 08       		.uleb128 0x8
+ 121 0023 00       		.byte	0
+ 122 0024 00       		.byte	0
+ 123 0025 00       		.byte	0
+ 124              		.section	.debug_aranges,"",%progbits
+ 125 0000 14000000 		.4byte	0x14
+ 126 0004 0200     		.2byte	0x2
+ 127 0006 00000000 		.4byte	.Ldebug_info0
+ 128 000a 04       		.byte	0x4
+ 129 000b 00       		.byte	0
+ 130 000c 0000     		.2byte	0
+ 131 000e 0000     		.2byte	0
+ 132 0010 00000000 		.4byte	0
+ 133 0014 00000000 		.4byte	0
+ 134              		.section	.debug_line,"",%progbits
+ 135              	.Ldebug_line0:
+ 136 0000 19000000 		.section	.debug_str,"MS",%progbits,1
+ 136      02001300 
+ 136      00000201 
+ 136      FB0E0D00 
+ 136      01010101 
+ 137              	.LASF9:
+ 138 0000 666C6F61 		.ascii	"float\000"
+ 138      7400
+ 139              	.LASF1:
+ 140 0006 756E7369 		.ascii	"unsigned char\000"
+ 140      676E6564 
+ 140      20636861 
+ 140      7200
+ 141              	.LASF5:
+ 142 0014 6C6F6E67 		.ascii	"long unsigned int\000"
+ 142      20756E73 
+ 142      69676E65 
+ 142      6420696E 
+ 142      7400
+ 143              	.LASF3:
+ 144 0026 73686F72 		.ascii	"short unsigned int\000"
+ 144      7420756E 
+ 144      7369676E 
+ 144      65642069 
+ 144      6E7400
+ 145              	.LASF10:
+ 146 0039 646F7562 		.ascii	"double\000"
+ 146      6C6500
+ 147              	.LASF14:
+ 148 0040 433A5C55 		.ascii	"C:\\Users\\Thomas\\Documents\\PSoC Creator\\TASBot\\"
+ 148      73657273 
+ 148      5C54686F 
+ 148      6D61735C 
+ 148      446F6375 
+ 149 006e 54415342 		.ascii	"TASBot.cydsn\000"
+ 149      6F742E63 
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccIUbxgf.s 			page 4
+
+
+ 149      7964736E 
+ 149      00
+ 150              	.LASF12:
+ 151 007b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 151      4320342E 
+ 151      392E3320 
+ 151      32303135 
+ 151      30333033 
+ 152 00ae 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 152      20726576 
+ 152      6973696F 
+ 152      6E203232 
+ 152      31323230 
+ 153 00e1 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 153      66756E63 
+ 153      74696F6E 
+ 153      2D736563 
+ 153      74696F6E 
+ 154              	.LASF8:
+ 155 0109 756E7369 		.ascii	"unsigned int\000"
+ 155      676E6564 
+ 155      20696E74 
+ 155      00
+ 156              	.LASF7:
+ 157 0116 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 157      206C6F6E 
+ 157      6720756E 
+ 157      7369676E 
+ 157      65642069 
+ 158              	.LASF6:
+ 159 012d 6C6F6E67 		.ascii	"long long int\000"
+ 159      206C6F6E 
+ 159      6720696E 
+ 159      7400
+ 160              	.LASF11:
+ 161 013b 63686172 		.ascii	"char\000"
+ 161      00
+ 162              	.LASF2:
+ 163 0140 73686F72 		.ascii	"short int\000"
+ 163      7420696E 
+ 163      7400
+ 164              	.LASF13:
+ 165 014a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Timer_2.c\000"
+ 165      6E657261 
+ 165      7465645F 
+ 165      536F7572 
+ 165      63655C50 
+ 166              	.LASF4:
+ 167 016d 6C6F6E67 		.ascii	"long int\000"
+ 167      20696E74 
+ 167      00
+ 168              	.LASF0:
+ 169 0176 7369676E 		.ascii	"signed char\000"
+ 169      65642063 
+ 169      68617200 
+ 170              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

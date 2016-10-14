@@ -1,6 +1,6 @@
 // ======================================================================
 // TASBot.v generated from TopDesign.cysch
-// 10/13/2016 at 17:14
+// 10/14/2016 at 03:37
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -87,17 +87,17 @@
 `define CYDEV_CHIP_FAMILY_USED 3
 `define CYDEV_CHIP_MEMBER_USED 18
 `define CYDEV_CHIP_REVISION_USED 0
-// Component: CyControlReg_v1_80
+// Component: not_v1_0
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
 `endif
 
 // Component: cy_virtualmux_v1_0
@@ -489,7 +489,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\BShiftReg_v2_30\BShiftReg_v2_30.v"
 `endif
 
-// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_2:RegD0, CY_INSTANCE_SHORT_NAME=RegD0, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_2_RegD0, )
+// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P1_RegD0, CY_INSTANCE_SHORT_NAME=P1_RegD0, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P1_RegD0, )
 module ShiftReg_v2_30_1 (
     shift_in,
     shift_out,
@@ -544,32 +544,6 @@ module ShiftReg_v2_30_1 (
 
 endmodule
 
-// Component: mux_v1_10
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\mux_v1_10"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\mux_v1_10\mux_v1_10.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\mux_v1_10"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\mux_v1_10\mux_v1_10.v"
-`endif
-
-// Component: not_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
-`endif
-
 // Component: B_Timer_v2_70
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
@@ -583,7 +557,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v"
 `endif
 
-// Timer_v2_70(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=true, CaptureMode=1, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=true, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=1, NumberOfCaptures=1, param45=1, Period=2499, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=1, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=true, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=Timer_v2_70, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_2:WinTimer, CY_INSTANCE_SHORT_NAME=WinTimer, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=70, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_2_WinTimer, )
+// Timer_v2_70(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=true, CaptureMode=1, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=true, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=1, NumberOfCaptures=1, param45=1, Period=2499, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=1, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=true, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=Timer_v2_70, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P1_WinTimer, CY_INSTANCE_SHORT_NAME=P1_WinTimer, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=70, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P1_WinTimer, )
 module Timer_v2_70_2 (
     clock,
     reset,
@@ -656,7 +630,20 @@ module Timer_v2_70_2 (
 
 endmodule
 
-// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_2:RegD1, CY_INSTANCE_SHORT_NAME=RegD1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_2_RegD1, )
+// Component: GlitchFilter_v2_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0\GlitchFilter_v2_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0\GlitchFilter_v2_0.v"
+`endif
+
+// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P1_RegD1, CY_INSTANCE_SHORT_NAME=P1_RegD1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P1_RegD1, )
 module ShiftReg_v2_30_3 (
     shift_in,
     shift_out,
@@ -711,20 +698,7 @@ module ShiftReg_v2_30_3 (
 
 endmodule
 
-// Component: GlitchFilter_v2_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0\GlitchFilter_v2_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\GlitchFilter_v2_0\GlitchFilter_v2_0.v"
-`endif
-
-// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_2:RegD2, CY_INSTANCE_SHORT_NAME=RegD2, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_2_RegD2, )
+// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P1_RegD2, CY_INSTANCE_SHORT_NAME=P1_RegD2, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P1_RegD2, )
 module ShiftReg_v2_30_4 (
     shift_in,
     shift_out,
@@ -779,182 +753,8 @@ module ShiftReg_v2_30_4 (
 
 endmodule
 
-// ConsolePort(CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ConsolePort, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_2, CY_INSTANCE_SHORT_NAME=ConsolePort_2, CY_MAJOR_VERSION=0, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_2, )
-module ConsolePort_5 (
-    D1,
-    DataReq,
-    D0,
-    TimerEnabled,
-    Clock,
-    Latch,
-    D2);
-    output      D1;
-    output      DataReq;
-    output      D0;
-    input       TimerEnabled;
-    input       Clock;
-    input       Latch;
-    output      D2;
-
-
-          wire  Net_462;
-          wire  Net_457;
-          wire  Net_456;
-          wire  Net_455;
-          wire  Net_454;
-          wire  Net_453;
-          wire  Net_436;
-          wire  Net_326;
-          wire  Net_435;
-          wire  Net_324;
-          wire  Net_323;
-          wire  Net_322;
-          wire  Net_321;
-          wire  Net_320;
-          wire  Net_319;
-          wire  Net_318;
-          wire  Net_317;
-          wire  Net_316;
-          wire  Net_315;
-          wire  Net_314;
-          wire  Net_313;
-          wire  Net_312;
-          wire  Net_311;
-          wire  Net_310;
-          wire  Net_327;
-          wire  Net_441;
-          wire  Net_1926;
-          wire  Net_279;
-          wire  Net_119;
-          wire  Net_831;
-          wire  Net_1672;
-          wire  Net_289;
-
-    ShiftReg_v2_30_1 RegD0 (
-        .shift_in(1'b0),
-        .load(1'b0),
-        .store(1'b0),
-        .clock(Net_1926),
-        .reset(1'b0),
-        .shift_out(Net_289),
-        .interrupt(Net_314));
-    defparam RegD0.Direction = 1;
-    defparam RegD0.FifoSize = 4;
-    defparam RegD0.Length = 16;
-
-    // -- Mux start --
-    if (1)
-    begin : mux_1
-        reg  tmp__mux_1_reg;
-        always @(Net_1672 or Net_119 or TimerEnabled)
-        begin
-            case (TimerEnabled)
-                1'b0 :  tmp__mux_1_reg = Net_1672;
-                1'b1 :  tmp__mux_1_reg = Net_119;
-            endcase
-        end
-        assign DataReq = tmp__mux_1_reg;
-    end
-    // -- Mux end --
-
-
-    assign D0 = ~Net_289;
-
-
-    assign D1 = ~Net_279;
-
-    Timer_v2_70_2 WinTimer (
-        .reset(Net_1672),
-        .interrupt(Net_119),
-        .enable(1'b1),
-        .trigger(1'b1),
-        .capture(1'b0),
-        .capture_out(Net_318),
-        .tc(Net_319),
-        .clock(Net_831));
-    defparam WinTimer.CaptureCount = 2;
-    defparam WinTimer.CaptureCounterEnabled = 0;
-    defparam WinTimer.DeviceFamily = "PSoC5";
-    defparam WinTimer.InterruptOnCapture = 0;
-    defparam WinTimer.InterruptOnTC = 1;
-    defparam WinTimer.Resolution = 16;
-    defparam WinTimer.SiliconRevision = "0";
-
-    ShiftReg_v2_30_3 RegD1 (
-        .shift_in(1'b0),
-        .load(1'b0),
-        .store(1'b0),
-        .clock(Net_1926),
-        .reset(1'b0),
-        .shift_out(Net_279),
-        .interrupt(Net_324));
-    defparam RegD1.Direction = 1;
-    defparam RegD1.FifoSize = 4;
-    defparam RegD1.Length = 16;
-
-
-	cy_clock_v1_0
-		#(.id("a13231ac-50d1-4854-b6ab-d6c4ef1a541f/e886e536-4dd3-4c58-98c4-82d8cdbeb64e"),
-		  .source_clock_id("CEF43CFB-0213-49b9-B980-2FFAB81C5B47"),
-		  .divisor(4),
-		  .period("0"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_1
-		 (.clock_out(Net_831));
-
-
-    GlitchFilter_v2_0 LatchFilter (
-        .d(Latch),
-        .reset(1'b0),
-        .clock(Net_327),
-        .q(Net_1672));
-    defparam LatchFilter.BypassFilter = 0;
-    defparam LatchFilter.GlitchLength = 3;
-    defparam LatchFilter.SignalWidth = 1;
-
-
-	cy_clock_v1_0
-		#(.id("a13231ac-50d1-4854-b6ab-d6c4ef1a541f/7ba21770-e2fc-4447-a313-61ae9ede2150"),
-		  .source_clock_id("61737EF6-3B74-48f9-8B91-F7473A442AE7"),
-		  .divisor(0),
-		  .period("41666666.6666667"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_2
-		 (.clock_out(Net_327));
-
-
-    ShiftReg_v2_30_4 RegD2 (
-        .shift_in(1'b0),
-        .load(1'b0),
-        .store(1'b0),
-        .clock(Net_1926),
-        .reset(1'b0),
-        .shift_out(Net_441),
-        .interrupt(Net_457));
-    defparam RegD2.Direction = 1;
-    defparam RegD2.FifoSize = 4;
-    defparam RegD2.Length = 16;
-
-
-    assign D2 = ~Net_441;
-
-    GlitchFilter_v2_0 ClockFilter (
-        .d(Clock),
-        .reset(1'b0),
-        .clock(Net_327),
-        .q(Net_1926));
-    defparam ClockFilter.BypassFilter = 0;
-    defparam ClockFilter.GlitchLength = 1;
-    defparam ClockFilter.SignalWidth = 1;
-
-
-
-endmodule
-
-// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_1:RegD0, CY_INSTANCE_SHORT_NAME=RegD0, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_1_RegD0, )
-module ShiftReg_v2_30_6 (
+// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P2_RegD0, CY_INSTANCE_SHORT_NAME=P2_RegD0, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P2_RegD0, )
+module ShiftReg_v2_30_5 (
     shift_in,
     shift_out,
     load,
@@ -1008,8 +808,8 @@ module ShiftReg_v2_30_6 (
 
 endmodule
 
-// Timer_v2_70(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=true, CaptureMode=1, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=true, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=1, NumberOfCaptures=1, param45=1, Period=2499, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=1, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=true, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=Timer_v2_70, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_1:WinTimer, CY_INSTANCE_SHORT_NAME=WinTimer, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=70, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_1_WinTimer, )
-module Timer_v2_70_7 (
+// Timer_v2_70(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=true, CaptureMode=1, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=true, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=1, NumberOfCaptures=1, param45=1, Period=2499, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=1, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=true, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=Timer_v2_70, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P2_WinTimer, CY_INSTANCE_SHORT_NAME=P2_WinTimer, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=70, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P2_WinTimer, )
+module Timer_v2_70_6 (
     clock,
     reset,
     interrupt,
@@ -1081,7 +881,62 @@ module Timer_v2_70_7 (
 
 endmodule
 
-// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_1:RegD1, CY_INSTANCE_SHORT_NAME=RegD1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_1_RegD1, )
+// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P2_RegD1, CY_INSTANCE_SHORT_NAME=P2_RegD1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P2_RegD1, )
+module ShiftReg_v2_30_7 (
+    shift_in,
+    shift_out,
+    load,
+    store,
+    clock,
+    reset,
+    interrupt);
+    input       shift_in;
+    output      shift_out;
+    input       load;
+    input       store;
+    input       clock;
+    input       reset;
+    output      interrupt;
+
+    parameter Direction = 1;
+    parameter FifoSize = 4;
+    parameter Length = 16;
+
+          wire  Net_2;
+          wire  Net_1;
+          wire  Net_350;
+
+	// VirtualMux_3 (cy_virtualmux_v1_0)
+	assign Net_350 = Net_1;
+
+    ZeroTerminal ZeroTerminal_3 (
+        .z(Net_1));
+
+    OneTerminal OneTerminal_1 (
+        .o(Net_2));
+
+    BShiftReg_v2_30 bSR (
+        .shiftIn(Net_350),
+        .load(load),
+        .shiftOut(shift_out),
+        .store(store),
+        .clock(clock),
+        .reset(reset),
+        .interrupt(interrupt));
+    defparam bSR.DefSi = 0;
+    defparam bSR.Direction = 1;
+    defparam bSR.FifoSize = 4;
+    defparam bSR.InterruptSource = 1;
+    defparam bSR.Length = 16;
+    defparam bSR.UseInputFifo = 0;
+    defparam bSR.UseInterrupt = 0;
+    defparam bSR.UseOutputFifo = 0;
+
+
+
+endmodule
+
+// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=P2_RegD2, CY_INSTANCE_SHORT_NAME=P2_RegD2, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=P2_RegD2, )
 module ShiftReg_v2_30_8 (
     shift_in,
     shift_out,
@@ -1136,272 +991,81 @@ module ShiftReg_v2_30_8 (
 
 endmodule
 
-// ShiftReg_v2_30(ControlRegUsageReplacemetString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DefSi=0, Direction=1, FifoSize=4, InterruptSource=1, Length=16, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, UseInputFifo=false, UseInterrupt=false, UseOutputFifo=false, UseShiftIn=false, UseShiftOut=true, VerilogSectionReplacementString=sC16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ShiftReg_v2_30, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_1:RegD2, CY_INSTANCE_SHORT_NAME=RegD2, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=30, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_1_RegD2, )
-module ShiftReg_v2_30_9 (
-    shift_in,
-    shift_out,
-    load,
-    store,
-    clock,
-    reset,
-    interrupt);
-    input       shift_in;
-    output      shift_out;
-    input       load;
-    input       store;
-    input       clock;
-    input       reset;
-    output      interrupt;
-
-    parameter Direction = 1;
-    parameter FifoSize = 4;
-    parameter Length = 16;
-
-          wire  Net_2;
-          wire  Net_1;
-          wire  Net_350;
-
-	// VirtualMux_3 (cy_virtualmux_v1_0)
-	assign Net_350 = Net_1;
-
-    ZeroTerminal ZeroTerminal_3 (
-        .z(Net_1));
-
-    OneTerminal OneTerminal_1 (
-        .o(Net_2));
-
-    BShiftReg_v2_30 bSR (
-        .shiftIn(Net_350),
-        .load(load),
-        .shiftOut(shift_out),
-        .store(store),
-        .clock(clock),
-        .reset(reset),
-        .interrupt(interrupt));
-    defparam bSR.DefSi = 0;
-    defparam bSR.Direction = 1;
-    defparam bSR.FifoSize = 4;
-    defparam bSR.InterruptSource = 1;
-    defparam bSR.Length = 16;
-    defparam bSR.UseInputFifo = 0;
-    defparam bSR.UseInterrupt = 0;
-    defparam bSR.UseOutputFifo = 0;
-
-
-
-endmodule
-
-// ConsolePort(CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ConsolePort, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ConsolePort_1, CY_INSTANCE_SHORT_NAME=ConsolePort_1, CY_MAJOR_VERSION=0, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=ConsolePort_1, )
-module ConsolePort_10 (
-    D1,
-    DataReq,
-    D0,
-    TimerEnabled,
-    Clock,
-    Latch,
-    D2);
-    output      D1;
-    output      DataReq;
-    output      D0;
-    input       TimerEnabled;
-    input       Clock;
-    input       Latch;
-    output      D2;
-
-
-          wire  Net_462;
-          wire  Net_457;
-          wire  Net_456;
-          wire  Net_455;
-          wire  Net_454;
-          wire  Net_453;
-          wire  Net_436;
-          wire  Net_326;
-          wire  Net_435;
-          wire  Net_324;
-          wire  Net_323;
-          wire  Net_322;
-          wire  Net_321;
-          wire  Net_320;
-          wire  Net_319;
-          wire  Net_318;
-          wire  Net_317;
-          wire  Net_316;
-          wire  Net_315;
-          wire  Net_314;
-          wire  Net_313;
-          wire  Net_312;
-          wire  Net_311;
-          wire  Net_310;
-          wire  Net_327;
-          wire  Net_441;
-          wire  Net_1926;
-          wire  Net_279;
-          wire  Net_119;
-          wire  Net_831;
-          wire  Net_1672;
-          wire  Net_289;
-
-    ShiftReg_v2_30_6 RegD0 (
-        .shift_in(1'b0),
-        .load(1'b0),
-        .store(1'b0),
-        .clock(Net_1926),
-        .reset(1'b0),
-        .shift_out(Net_289),
-        .interrupt(Net_314));
-    defparam RegD0.Direction = 1;
-    defparam RegD0.FifoSize = 4;
-    defparam RegD0.Length = 16;
-
-    // -- Mux start --
-    if (1)
-    begin : mux_1
-        reg  tmp__mux_1_reg;
-        always @(Net_1672 or Net_119 or TimerEnabled)
-        begin
-            case (TimerEnabled)
-                1'b0 :  tmp__mux_1_reg = Net_1672;
-                1'b1 :  tmp__mux_1_reg = Net_119;
-            endcase
-        end
-        assign DataReq = tmp__mux_1_reg;
-    end
-    // -- Mux end --
-
-
-    assign D0 = ~Net_289;
-
-
-    assign D1 = ~Net_279;
-
-    Timer_v2_70_7 WinTimer (
-        .reset(Net_1672),
-        .interrupt(Net_119),
-        .enable(1'b1),
-        .trigger(1'b1),
-        .capture(1'b0),
-        .capture_out(Net_318),
-        .tc(Net_319),
-        .clock(Net_831));
-    defparam WinTimer.CaptureCount = 2;
-    defparam WinTimer.CaptureCounterEnabled = 0;
-    defparam WinTimer.DeviceFamily = "PSoC5";
-    defparam WinTimer.InterruptOnCapture = 0;
-    defparam WinTimer.InterruptOnTC = 1;
-    defparam WinTimer.Resolution = 16;
-    defparam WinTimer.SiliconRevision = "0";
-
-    ShiftReg_v2_30_8 RegD1 (
-        .shift_in(1'b0),
-        .load(1'b0),
-        .store(1'b0),
-        .clock(Net_1926),
-        .reset(1'b0),
-        .shift_out(Net_279),
-        .interrupt(Net_324));
-    defparam RegD1.Direction = 1;
-    defparam RegD1.FifoSize = 4;
-    defparam RegD1.Length = 16;
-
-
-	cy_clock_v1_0
-		#(.id("08982a33-a9f1-470f-b9bd-0e6f94960949/e886e536-4dd3-4c58-98c4-82d8cdbeb64e"),
-		  .source_clock_id("CEF43CFB-0213-49b9-B980-2FFAB81C5B47"),
-		  .divisor(4),
-		  .period("0"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_1
-		 (.clock_out(Net_831));
-
-
-    GlitchFilter_v2_0 LatchFilter (
-        .d(Latch),
-        .reset(1'b0),
-        .clock(Net_327),
-        .q(Net_1672));
-    defparam LatchFilter.BypassFilter = 0;
-    defparam LatchFilter.GlitchLength = 3;
-    defparam LatchFilter.SignalWidth = 1;
-
-
-	cy_clock_v1_0
-		#(.id("08982a33-a9f1-470f-b9bd-0e6f94960949/7ba21770-e2fc-4447-a313-61ae9ede2150"),
-		  .source_clock_id("61737EF6-3B74-48f9-8B91-F7473A442AE7"),
-		  .divisor(0),
-		  .period("41666666.6666667"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_2
-		 (.clock_out(Net_327));
-
-
-    ShiftReg_v2_30_9 RegD2 (
-        .shift_in(1'b0),
-        .load(1'b0),
-        .store(1'b0),
-        .clock(Net_1926),
-        .reset(1'b0),
-        .shift_out(Net_441),
-        .interrupt(Net_457));
-    defparam RegD2.Direction = 1;
-    defparam RegD2.FifoSize = 4;
-    defparam RegD2.Length = 16;
-
-
-    assign D2 = ~Net_441;
-
-    GlitchFilter_v2_0 ClockFilter (
-        .d(Clock),
-        .reset(1'b0),
-        .clock(Net_327),
-        .q(Net_1926));
-    defparam ClockFilter.BypassFilter = 0;
-    defparam ClockFilter.GlitchLength = 1;
-    defparam ClockFilter.SignalWidth = 1;
-
-
-
-endmodule
-
 // top
 module top ;
 
-          wire  Net_2233;
-          wire  Net_2232;
-          wire  Net_2231;
-          wire  Net_2230;
-          wire  Net_2229;
-          wire  Net_2228;
-          wire  Net_2226;
-          wire  Net_2225;
-          wire  Net_2224;
-          wire  Net_2130;
+          wire  Net_2646;
+          wire  Net_2645;
+          wire  Net_2644;
+          wire  Net_2643;
+          wire  Net_2642;
+          wire  Net_2641;
+          wire  Net_2640;
+          wire  Net_2639;
+          wire  Net_2638;
+          wire  Net_2637;
+          wire  Net_2860;
+          wire  Net_2635;
+          wire  Net_2634;
+          wire  Net_2633;
+          wire  Net_2632;
+          wire  Net_2631;
+          wire  Net_2630;
+          wire  Net_2629;
+          wire  Net_2628;
+          wire  Net_2627;
+          wire  Net_2626;
+          wire  Net_2866;
+          wire  Net_2863;
+          wire  Net_2625;
+          wire  Net_2624;
+          wire  Net_2623;
+          wire  Net_2622;
+          wire  Net_2621;
+          wire  Net_2620;
+          wire  Net_2619;
+          wire  Net_2618;
+          wire  Net_2617;
+          wire  Net_2616;
+          wire  Net_2865;
+          wire  Net_2857;
+          wire  Net_2864;
+          wire  Net_2612;
+          wire  Net_2611;
+          wire  Net_2610;
+          wire  Net_2609;
+          wire  Net_2608;
           wire  Net_2307;
-          wire  Net_2316;
-          wire  Net_2167;
-          wire  Net_2161;
+          wire  Net_2607;
+          wire  Net_2606;
+          wire  Net_2605;
+          wire  Net_2604;
+          wire  Net_2603;
+          wire  Net_2602;
+          wire  Net_2713;
           wire  Net_100;
           wire  Net_99;
-          wire  Net_2223;
-          wire  Net_2222;
-          wire  Net_2221;
-          wire  Net_2220;
-          wire  Net_2219;
-          wire  Net_2218;
-          wire  Net_2216;
-          wire  Net_2215;
-          wire  Net_2214;
-          wire  Net_2162;
-          wire  Net_2315;
+          wire  Net_2719;
+          wire  Net_2601;
           wire  Net_2163;
-          wire  Net_2128;
-          wire  Net_1999;
-          wire  Net_2165;
-          wire  Net_2254;
-          wire  Net_2180;
-          wire  Net_2193;
+          wire  Net_2477;
+          wire  Net_2559;
+          wire  Net_2316;
+          wire  Net_2553;
+          wire  Net_2167;
+          wire  Net_2532;
+          wire  Net_2530;
+          wire  Net_2541;
+          wire  Net_2370;
+          wire  Net_2527;
+          wire  Net_2525;
+          wire  Net_2524;
+          wire  Net_2517;
+          wire  Net_289;
+          wire  Net_2504;
+          wire  Net_2503;
+          wire  Net_2564;
+          wire  Net_2458;
 
 	wire [0:0] tmpOE__P1_D1_net;
 	wire [0:0] tmpFB_0__P1_D1_net;
@@ -1411,9 +1075,9 @@ module top ;
 
 	cy_psoc3_pins_v1_10
 		#(.id("c16e28ed-8ab8-4d86-b9d8-5a923c863a3b"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b111),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -1464,7 +1128,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		P1_D1
 		 (.oe(tmpOE__P1_D1_net),
-		  .y({Net_1999}),
+		  .y({Net_2525}),
 		  .fb({tmpFB_0__P1_D1_net[0:0]}),
 		  .io({tmpIO_0__P1_D1_net[0:0]}),
 		  .siovref(tmpSIOVREF__P1_D1_net),
@@ -1486,9 +1150,9 @@ module top ;
 
 	cy_psoc3_pins_v1_10
 		#(.id("e851a3b9-efb8-48be-bbb8-b303b216c393"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b111),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -1539,7 +1203,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		P1_D0
 		 (.oe(tmpOE__P1_D0_net),
-		  .y({Net_2128}),
+		  .y({Net_2517}),
 		  .fb({tmpFB_0__P1_D0_net[0:0]}),
 		  .io({tmpIO_0__P1_D0_net[0:0]}),
 		  .siovref(tmpSIOVREF__P1_D0_net),
@@ -1635,9 +1299,9 @@ module top ;
 
 	cy_psoc3_pins_v1_10
 		#(.id("9de4c9ab-0474-4a16-a2e5-a61cbae1d88e"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b111),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -1688,7 +1352,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		P1_D2
 		 (.oe(tmpOE__P1_D2_net),
-		  .y({Net_2315}),
+		  .y({Net_2601}),
 		  .fb({tmpFB_0__P1_D2_net[0:0]}),
 		  .io({tmpIO_0__P1_D2_net[0:0]}),
 		  .siovref(tmpSIOVREF__P1_D2_net),
@@ -1763,7 +1427,7 @@ module top ;
 		P2_Clock
 		 (.oe(tmpOE__P2_Clock_net),
 		  .y({1'b0}),
-		  .fb({Net_2162}),
+		  .fb({Net_2719}),
 		  .io({tmpIO_0__P2_Clock_net[0:0]}),
 		  .siovref(tmpSIOVREF__P2_Clock_net),
 		  .interrupt({tmpINTERRUPT_0__P2_Clock_net[0:0]}),
@@ -1776,29 +1440,8 @@ module top ;
 
 	assign tmpOE__P2_Clock_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-    CyControlReg_v1_80 Timer_1 (
-        .control_1(Net_2214),
-        .control_2(Net_2215),
-        .control_3(Net_2216),
-        .control_0(Net_2180),
-        .control_4(Net_2218),
-        .control_5(Net_2219),
-        .control_6(Net_2220),
-        .control_7(Net_2221),
-        .clock(1'b0),
-        .reset(1'b0));
-    defparam Timer_1.Bit0Mode = 0;
-    defparam Timer_1.Bit1Mode = 0;
-    defparam Timer_1.Bit2Mode = 0;
-    defparam Timer_1.Bit3Mode = 0;
-    defparam Timer_1.Bit4Mode = 0;
-    defparam Timer_1.Bit5Mode = 0;
-    defparam Timer_1.Bit6Mode = 0;
-    defparam Timer_1.Bit7Mode = 0;
-    defparam Timer_1.BitValue = 0;
-    defparam Timer_1.BusDisplay = 0;
-    defparam Timer_1.ExtrReset = 0;
-    defparam Timer_1.NumOutputs = 1;
+
+    assign Net_2517 = ~Net_289;
 
     USBFS_v3_0_0 USBUART (
         .sof(Net_99),
@@ -1866,7 +1509,7 @@ module top ;
 		P1_Clock
 		 (.oe(tmpOE__P1_Clock_net),
 		  .y({1'b0}),
-		  .fb({Net_2161}),
+		  .fb({Net_2713}),
 		  .io({tmpIO_0__P1_Clock_net[0:0]}),
 		  .siovref(tmpSIOVREF__P1_Clock_net),
 		  .interrupt({tmpINTERRUPT_0__P1_Clock_net[0:0]}),
@@ -1883,17 +1526,8 @@ module top ;
 	cy_isr_v1_0
 		#(.int_type(2'b10))
 		P2_IRQ
-		 (.int_signal(Net_2165));
+		 (.int_signal(Net_2532));
 
-
-    ConsolePort_5 ConsolePort_2 (
-        .Latch(Net_2162),
-        .Clock(Net_2163),
-        .TimerEnabled(Net_2193),
-        .D0(Net_2167),
-        .DataReq(Net_2165),
-        .D1(Net_2316),
-        .D2(Net_2307));
 
 	wire [0:0] tmpOE__P2_D0_net;
 	wire [0:0] tmpFB_0__P2_D0_net;
@@ -1903,9 +1537,9 @@ module top ;
 
 	cy_psoc3_pins_v1_10
 		#(.id("64656013-0a66-4df0-8943-b95b8eb9d117"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b111),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -2031,7 +1665,7 @@ module top ;
 		P1_Latch
 		 (.oe(tmpOE__P1_Latch_net),
 		  .y({1'b0}),
-		  .fb({Net_2130}),
+		  .fb({Net_2602}),
 		  .io({tmpIO_0__P1_Latch_net[0:0]}),
 		  .siovref(tmpSIOVREF__P1_Latch_net),
 		  .interrupt({tmpINTERRUPT_0__P1_Latch_net[0:0]}),
@@ -2048,41 +1682,20 @@ module top ;
 	cy_isr_v1_0
 		#(.int_type(2'b10))
 		P1_IRQ
-		 (.int_signal(Net_2254));
+		 (.int_signal(Net_2458));
 
 
-    ConsolePort_10 ConsolePort_1 (
-        .Latch(Net_2161),
-        .Clock(Net_2130),
-        .TimerEnabled(Net_2180),
-        .D0(Net_2128),
-        .DataReq(Net_2254),
-        .D1(Net_1999),
-        .D2(Net_2315));
-
-    CyControlReg_v1_80 Timer_2 (
-        .control_1(Net_2224),
-        .control_2(Net_2225),
-        .control_3(Net_2226),
-        .control_0(Net_2193),
-        .control_4(Net_2228),
-        .control_5(Net_2229),
-        .control_6(Net_2230),
-        .control_7(Net_2231),
-        .clock(1'b0),
-        .reset(1'b0));
-    defparam Timer_2.Bit0Mode = 0;
-    defparam Timer_2.Bit1Mode = 0;
-    defparam Timer_2.Bit2Mode = 0;
-    defparam Timer_2.Bit3Mode = 0;
-    defparam Timer_2.Bit4Mode = 0;
-    defparam Timer_2.Bit5Mode = 0;
-    defparam Timer_2.Bit6Mode = 0;
-    defparam Timer_2.Bit7Mode = 0;
-    defparam Timer_2.BitValue = 0;
-    defparam Timer_2.BusDisplay = 0;
-    defparam Timer_2.ExtrReset = 0;
-    defparam Timer_2.NumOutputs = 1;
+    ShiftReg_v2_30_1 P1_RegD0 (
+        .shift_in(1'b0),
+        .load(1'b0),
+        .store(1'b0),
+        .clock(Net_2504),
+        .reset(1'b0),
+        .shift_out(Net_289),
+        .interrupt(Net_2607));
+    defparam P1_RegD0.Direction = 1;
+    defparam P1_RegD0.FifoSize = 4;
+    defparam P1_RegD0.Length = 16;
 
 	wire [0:0] tmpOE__P2_D2_net;
 	wire [0:0] tmpFB_0__P2_D2_net;
@@ -2092,9 +1705,9 @@ module top ;
 
 	cy_psoc3_pins_v1_10
 		#(.id("eaa7e9cc-411b-41d8-888e-306f37d7b617"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b111),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -2167,9 +1780,9 @@ module top ;
 
 	cy_psoc3_pins_v1_10
 		#(.id("d58c20e3-ba2e-4c1c-b077-9dfa3cecf7b7"),
-		  .drive_mode(3'b110),
+		  .drive_mode(3'b111),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -2233,6 +1846,189 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__P2_D1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		P1_TimerIRQ
+		 (.int_signal(Net_2370));
+
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		P2_TimerIRQ
+		 (.int_signal(Net_2564));
+
+
+    Timer_v2_70_2 P1_WinTimer (
+        .reset(Net_2458),
+        .interrupt(Net_2370),
+        .enable(1'b1),
+        .trigger(1'b1),
+        .capture(1'b0),
+        .capture_out(Net_2611),
+        .tc(Net_2612),
+        .clock(Net_2503));
+    defparam P1_WinTimer.CaptureCount = 2;
+    defparam P1_WinTimer.CaptureCounterEnabled = 0;
+    defparam P1_WinTimer.DeviceFamily = "PSoC5";
+    defparam P1_WinTimer.InterruptOnCapture = 0;
+    defparam P1_WinTimer.InterruptOnTC = 1;
+    defparam P1_WinTimer.Resolution = 16;
+    defparam P1_WinTimer.SiliconRevision = "0";
+
+
+	cy_clock_v1_0
+		#(.id("4c831341-1e12-4252-87f6-026818e82f81"),
+		  .source_clock_id("CEF43CFB-0213-49b9-B980-2FFAB81C5B47"),
+		  .divisor(4),
+		  .period("0"),
+		  .is_direct(0),
+		  .is_digital(1))
+		Clock_1
+		 (.clock_out(Net_2503));
+
+
+    GlitchFilter_v2_0 P1_LatchFilter (
+        .d(Net_2602),
+        .reset(1'b0),
+        .clock(Net_2477),
+        .q(Net_2458));
+    defparam P1_LatchFilter.BypassFilter = 0;
+    defparam P1_LatchFilter.GlitchLength = 5;
+    defparam P1_LatchFilter.SignalWidth = 1;
+
+
+	cy_clock_v1_0
+		#(.id("7ba21770-e2fc-4447-a313-61ae9ede2150"),
+		  .source_clock_id("61737EF6-3B74-48f9-8B91-F7473A442AE7"),
+		  .divisor(1),
+		  .period("0"),
+		  .is_direct(0),
+		  .is_digital(1))
+		Clock_2
+		 (.clock_out(Net_2477));
+
+
+    ShiftReg_v2_30_3 P1_RegD1 (
+        .shift_in(1'b0),
+        .load(1'b0),
+        .store(1'b0),
+        .clock(Net_2504),
+        .reset(1'b0),
+        .shift_out(Net_2524),
+        .interrupt(Net_2620));
+    defparam P1_RegD1.Direction = 1;
+    defparam P1_RegD1.FifoSize = 4;
+    defparam P1_RegD1.Length = 16;
+
+
+    assign Net_2525 = ~Net_2524;
+
+    ShiftReg_v2_30_4 P1_RegD2 (
+        .shift_in(1'b0),
+        .load(1'b0),
+        .store(1'b0),
+        .clock(Net_2504),
+        .reset(1'b0),
+        .shift_out(Net_2527),
+        .interrupt(Net_2625));
+    defparam P1_RegD2.Direction = 1;
+    defparam P1_RegD2.FifoSize = 4;
+    defparam P1_RegD2.Length = 16;
+
+
+    assign Net_2601 = ~Net_2527;
+
+    GlitchFilter_v2_0 P1_ClockFilter (
+        .d(Net_2713),
+        .reset(1'b0),
+        .clock(Net_2477),
+        .q(Net_2504));
+    defparam P1_ClockFilter.BypassFilter = 0;
+    defparam P1_ClockFilter.GlitchLength = 8;
+    defparam P1_ClockFilter.SignalWidth = 1;
+
+    GlitchFilter_v2_0 P2_ClockFilter (
+        .d(Net_2719),
+        .reset(1'b0),
+        .clock(Net_2477),
+        .q(Net_2530));
+    defparam P2_ClockFilter.BypassFilter = 0;
+    defparam P2_ClockFilter.GlitchLength = 8;
+    defparam P2_ClockFilter.SignalWidth = 1;
+
+    ShiftReg_v2_30_5 P2_RegD0 (
+        .shift_in(1'b0),
+        .load(1'b0),
+        .store(1'b0),
+        .clock(Net_2530),
+        .reset(1'b0),
+        .shift_out(Net_2541),
+        .interrupt(Net_2630));
+    defparam P2_RegD0.Direction = 1;
+    defparam P2_RegD0.FifoSize = 4;
+    defparam P2_RegD0.Length = 16;
+
+
+    assign Net_2167 = ~Net_2541;
+
+    Timer_v2_70_6 P2_WinTimer (
+        .reset(Net_2532),
+        .interrupt(Net_2564),
+        .enable(1'b1),
+        .trigger(1'b1),
+        .capture(1'b0),
+        .capture_out(Net_2634),
+        .tc(Net_2635),
+        .clock(Net_2503));
+    defparam P2_WinTimer.CaptureCount = 2;
+    defparam P2_WinTimer.CaptureCounterEnabled = 0;
+    defparam P2_WinTimer.DeviceFamily = "PSoC5";
+    defparam P2_WinTimer.InterruptOnCapture = 0;
+    defparam P2_WinTimer.InterruptOnTC = 1;
+    defparam P2_WinTimer.Resolution = 16;
+    defparam P2_WinTimer.SiliconRevision = "0";
+
+    GlitchFilter_v2_0 P2_LatchFilter (
+        .d(Net_2163),
+        .reset(1'b0),
+        .clock(Net_2477),
+        .q(Net_2532));
+    defparam P2_LatchFilter.BypassFilter = 0;
+    defparam P2_LatchFilter.GlitchLength = 5;
+    defparam P2_LatchFilter.SignalWidth = 1;
+
+    ShiftReg_v2_30_7 P2_RegD1 (
+        .shift_in(1'b0),
+        .load(1'b0),
+        .store(1'b0),
+        .clock(Net_2530),
+        .reset(1'b0),
+        .shift_out(Net_2553),
+        .interrupt(Net_2641));
+    defparam P2_RegD1.Direction = 1;
+    defparam P2_RegD1.FifoSize = 4;
+    defparam P2_RegD1.Length = 16;
+
+
+    assign Net_2316 = ~Net_2553;
+
+    ShiftReg_v2_30_8 P2_RegD2 (
+        .shift_in(1'b0),
+        .load(1'b0),
+        .store(1'b0),
+        .clock(Net_2530),
+        .reset(1'b0),
+        .shift_out(Net_2559),
+        .interrupt(Net_2646));
+    defparam P2_RegD2.Direction = 1;
+    defparam P2_RegD2.FifoSize = 4;
+    defparam P2_RegD2.Length = 16;
+
+
+    assign Net_2307 = ~Net_2559;
 
 
 

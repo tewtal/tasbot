@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
   30:.\Generated_Source\PSoC5/CyFlash.c **** *******************************************************************************/
   31:.\Generated_Source\PSoC5/CyFlash.c **** uint8 dieTemperature[CY_FLASH_DIE_TEMP_DATA_SIZE];
   32:.\Generated_Source\PSoC5/CyFlash.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 2
 
 
   33:.\Generated_Source\PSoC5/CyFlash.c **** #if(CYDEV_ECC_ENABLE == 0)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
   87:.\Generated_Source\PSoC5/CyFlash.c ****     while(0u == (CY_FLASH_SPC_FM_EE_CR_REG & CY_FLASH_EE_EE_AWAKE))
   88:.\Generated_Source\PSoC5/CyFlash.c ****     {
   89:.\Generated_Source\PSoC5/CyFlash.c ****         /* Non-zero status denotes that the EEPROM/Flash is awake & powered. */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 3
 
 
   90:.\Generated_Source\PSoC5/CyFlash.c ****     }
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  144:.\Generated_Source\PSoC5/CyFlash.c **** 
  145:.\Generated_Source\PSoC5/CyFlash.c ****     if(CySpcLock() == CYRET_SUCCESS)
  146:.\Generated_Source\PSoC5/CyFlash.c ****     {
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 4
 
 
  147:.\Generated_Source\PSoC5/CyFlash.c ****         /* Write the command. */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  193:.\Generated_Source\PSoC5/CyFlash.c ****     cystatus status;
  194:.\Generated_Source\PSoC5/CyFlash.c **** 
  195:.\Generated_Source\PSoC5/CyFlash.c ****     /* Make sure SPC is powered */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 5
 
 
  196:.\Generated_Source\PSoC5/CyFlash.c ****     CySpcStart();
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  211:.\Generated_Source\PSoC5/CyFlash.c ****             {
  212:.\Generated_Source\PSoC5/CyFlash.c ****                 status = CYRET_SUCCESS;
   72              		.loc 1 212 0 is_stmt 1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 6
 
 
   73 003a 0024     		movs	r4, #0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  114              	.LVL11:
  145:.\Generated_Source\PSoC5/CyFlash.c ****     {
  115              		.loc 1 145 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 7
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 7
 
 
  116 0006 FFF7FEFF 		bl	CySpcLock
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  162 004c FFF7FEFF 		bl	CySpcUnlock
  163              	.LVL17:
  164 0050 00E0     		b	.L12
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 8
 
 
  165              	.LVL18:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  212              		.loc 1 74 0
  213 001a C822     		movs	r2, #200
  214 001c 0A4B     		ldr	r3, .L27+4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 9
 
 
  215 001e 1A70     		strb	r2, [r3]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  263 0002 FFF7FEFF 		bl	CyEnterCriticalSection
  264              	.LVL23:
  113:.\Generated_Source\PSoC5/CyFlash.c ****     CY_FLASH_PM_ALTACT_CFG12_REG &= ((uint8)(~CY_FLASH_PM_ALTACT_CFG12_EN_FM));
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 10
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 10
 
 
  265              		.loc 1 113 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  294              		.loc 1 246 0
  295              		.cfi_startproc
  296              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 11
 
 
  297              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  270:.\Generated_Source\PSoC5/CyFlash.c **** * \return
  271:.\Generated_Source\PSoC5/CyFlash.c **** *  status:
  272:.\Generated_Source\PSoC5/CyFlash.c **** *   CYRET_SUCCESS if successful.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 12
 
 
  273:.\Generated_Source\PSoC5/CyFlash.c **** *   CYRET_BAD_PARAM if the buffer is NULL
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  356 001a 10BD     		pop	{r4, pc}
  357              	.LVL33:
  358              	.L38:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 13
 
 
  287:.\Generated_Source\PSoC5/CyFlash.c ****         }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  324:.\Generated_Source\PSoC5/CyFlash.c **** *  \param rowData:    Array of bytes to write.
  325:.\Generated_Source\PSoC5/CyFlash.c **** *
  326:.\Generated_Source\PSoC5/CyFlash.c **** * \return
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 14
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 14
 
 
  327:.\Generated_Source\PSoC5/CyFlash.c **** *  status:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  381:.\Generated_Source\PSoC5/CyFlash.c **** 
  382:.\Generated_Source\PSoC5/CyFlash.c ****         return (status);
  383:.\Generated_Source\PSoC5/CyFlash.c ****     }
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 15
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 15
 
 
  384:.\Generated_Source\PSoC5/CyFlash.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  414:.\Generated_Source\PSoC5/CyFlash.c ****         status = CYRET_BAD_PARAM;
  408              		.loc 1 414 0
  409 0010 0125     		movs	r5, #1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 16
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 16
 
 
  410              	.L44:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  438 0030 0125     		movs	r5, #1
  439              	.LVL42:
  440              	.L49:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 17
 
 
  441:.\Generated_Source\PSoC5/CyFlash.c ****         }
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  474              		.loc 1 460 0
  475 0056 2046     		mov	r0, r4
  476 0058 3946     		mov	r1, r7
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 18
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 18
 
 
  477 005a 3246     		mov	r2, r6
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  513              	.LVL53:
  514              	.L66:
  515 0092 4FF0FF36 		mov	r6, #-1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 19
 
 
  516              	.LVL54:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  493:.\Generated_Source\PSoC5/CyFlash.c ****                         /* Hide SPC status */
  494:.\Generated_Source\PSoC5/CyFlash.c ****                         if(CY_SPC_STATUS_SUCCESS == CY_SPC_READ_STATUS)
  552              		.loc 1 494 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 20
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 20
 
 
  553 00c2 0B4B     		ldr	r3, .L70
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  587 00f0 22470040 		.word	1073760034
  588 00f4 00000000 		.word	dieTemperature
  589              		.cfi_endproc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 21
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 21
 
 
  590              	.LFE7:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  521:.\Generated_Source\PSoC5/CyFlash.c **** *  Sets the number of clock cycles the cache will wait before it samples data
  522:.\Generated_Source\PSoC5/CyFlash.c **** *  coming back from the Flash. This function must be called before increasing
  523:.\Generated_Source\PSoC5/CyFlash.c **** *  the CPU clock frequency. It can optionally be called after lowering the CPU
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 22
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 22
 
 
  524:.\Generated_Source\PSoC5/CyFlash.c **** *  clock frequency in order to improve the CPU performance.
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  663 001e 202C     		cmp	r4, #32
  664 0020 07D8     		bhi	.L79
  549:.\Generated_Source\PSoC5/CyFlash.c ****     {
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 23
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 23
 
 
  550:.\Generated_Source\PSoC5/CyFlash.c ****         CY_FLASH_CONTROL_REG = (CY_FLASH_CONTROL_REG & (uint8)(~CY_FLASH_CACHE_WS_VALUE_MASK)) |
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  702 0066 1370     		strb	r3, [r2]
  703 0068 02E0     		b	.L78
  704              	.L82:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 24
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 24
 
 
  567:.\Generated_Source\PSoC5/CyFlash.c ****                                     CY_FLASH_CACHE_WS_5_VALUE_MASK;
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  736              		.cfi_def_cfa_offset 8
  737              		.cfi_offset 3, -8
  738              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 25
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 25
 
 
  590:.\Generated_Source\PSoC5/CyFlash.c ****     uint8 interruptState;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  761              		.loc 1 621 0
  762 002a 1032     		adds	r2, r2, #16
  763 002c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 26
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 26
 
 
  764 002e 43F01003 		orr	r3, r3, #16
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  799              		.cfi_def_cfa_offset 8
  800              		.cfi_offset 3, -8
  801              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 27
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 27
 
 
  641:.\Generated_Source\PSoC5/CyFlash.c ****     uint8 interruptState;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  836              		@ args = 0, pretend = 0, frame = 0
  837              		@ frame_needed = 0, uses_anonymous_args = 0
  838              		@ link register save eliminated.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 28
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 28
 
 
  661:.\Generated_Source\PSoC5/CyFlash.c ****     /* Make request for PHUB to have access */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  873 0000 024A     		ldr	r2, .L100
  874 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  875 0004 03F0FE03 		and	r3, r3, #254
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 29
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 29
 
 
  876 0008 1370     		strb	r3, [r2]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  930 0043 05       		.byte	0x5
  931 0044 35030000 		.4byte	.LASF4
  932 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 30
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 30
 
 
  933 0049 04       		.byte	0x4
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  987 00b6 04       		.byte	0x4
  988 00b7 07       		.byte	0x7
  989 00b8 71020000 		.4byte	.LASF16
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 31
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 31
 
 
  990 00bc 06       		.uleb128 0x6
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1044 0140 34000000 		.4byte	.LLST1
  1045 0144 08       		.uleb128 0x8
  1046 0145 06000000 		.4byte	.LVL11
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 32
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 32
 
 
  1047 0149 32050000 		.4byte	0x532
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1101 01b8 D0000000 		.4byte	.LASF20
  1102 01bc 01       		.byte	0x1
  1103 01bd 33       		.byte	0x33
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 33
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 33
 
 
  1104 01be 6B000000 		.4byte	0x6b
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1158 024b 0D       		.uleb128 0xd
  1159 024c 9A000000 		.4byte	.LASF24
  1160 0250 01       		.byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 34
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 34
 
 
  1161 0251 1401     		.2byte	0x114
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1215 02e1 0E       		.uleb128 0xe
  1216 02e2 B9000000 		.4byte	.LASF29
  1217 02e6 01       		.byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 35
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 35
 
 
  1218 02e7 9701     		.2byte	0x197
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1272 0350 01       		.uleb128 0x1
  1273 0351 31       		.byte	0x31
  1274 0352 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 36
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 36
 
 
  1275 0353 09       		.uleb128 0x9
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1329 03c4 01       		.byte	0x1
  1330 03c5 4E01     		.2byte	0x14e
  1331 03c7 77000000 		.4byte	0x77
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 37
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 37
 
 
  1332 03cb 51020000 		.4byte	.LLST13
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1386 0455 50       		.byte	0x50
  1387 0456 01       		.uleb128 0x1
  1388 0457 30       		.byte	0x30
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 38
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 38
 
 
  1389 0458 00       		.byte	0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1443 04d7 A1050000 		.4byte	0x5a1
  1444 04db 00       		.byte	0
  1445 04dc 15       		.uleb128 0x15
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 39
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 39
 
 
  1446 04dd 5C020000 		.4byte	.LASF37
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1500 0554 04       		.byte	0x4
  1501 0555 77       		.byte	0x77
  1502 0556 60050000 		.4byte	0x560
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 40
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 40
 
 
  1503 055a 1D       		.uleb128 0x1d
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1557 05d5 00       		.byte	0
  1558 05d6 1E       		.uleb128 0x1e
  1559 05d7 31000000 		.4byte	.LASF50
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 41
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 41
 
 
  1560 05db 03       		.byte	0x3
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1614 001f 24       		.uleb128 0x24
  1615 0020 00       		.byte	0
  1616 0021 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 42
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 42
 
 
  1617 0022 0B       		.uleb128 0xb
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1671 0059 00       		.byte	0
  1672 005a 03       		.uleb128 0x3
  1673 005b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 43
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 43
 
 
  1674 005c 3A       		.uleb128 0x3a
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1728 0099 12       		.uleb128 0x12
  1729 009a 06       		.uleb128 0x6
  1730 009b 40       		.uleb128 0x40
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 44
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 44
 
 
  1731 009c 18       		.uleb128 0x18
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1785 00d4 18       		.uleb128 0x18
  1786 00d5 9742     		.uleb128 0x2117
  1787 00d7 19       		.uleb128 0x19
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 45
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 45
 
 
  1788 00d8 01       		.uleb128 0x1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1842 010e 0E       		.uleb128 0xe
  1843 010f 3A       		.uleb128 0x3a
  1844 0110 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 46
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 46
 
 
  1845 0111 3B       		.uleb128 0x3b
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1899 014a 19       		.uleb128 0x19
  1900 014b 11       		.uleb128 0x11
  1901 014c 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 47
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 47
 
 
  1902 014d 12       		.uleb128 0x12
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  1956 0184 02       		.uleb128 0x2
  1957 0185 18       		.uleb128 0x18
  1958 0186 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 48
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 48
 
 
  1959 0187 00       		.byte	0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2013 01bd 00       		.byte	0
  2014 01be 00       		.byte	0
  2015 01bf 1D       		.uleb128 0x1d
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 49
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 49
 
 
  2016 01c0 05       		.uleb128 0x5
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2070 0013 0100     		.2byte	0x1
  2071 0015 54       		.byte	0x54
  2072 0016 44000000 		.4byte	.LVL9
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 50
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 50
 
 
  2073 001a 48000000 		.4byte	.LVL10
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2127 00a7 50       		.byte	0x50
  2128 00a8 10000000 		.4byte	.LVL27
  2129 00ac 14000000 		.4byte	.LFE4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 51
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 51
 
 
  2130 00b0 0100     		.2byte	0x1
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2184 0136 F8000000 		.4byte	.LFE7
  2185 013a 0400     		.2byte	0x4
  2186 013c F3       		.byte	0xf3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 52
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 52
 
 
  2187 013d 01       		.uleb128 0x1
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2241 01ba 12000000 		.4byte	.LVL39
  2242 01be 3A000000 		.4byte	.LVL43
  2243 01c2 0100     		.2byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 53
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 53
 
 
  2244 01c4 55       		.byte	0x55
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2298 0251 00000000 		.4byte	.LVL65
  2299 0255 11000000 		.4byte	.LVL67-1
  2300 0259 0100     		.2byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 54
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 54
 
 
  2301 025b 51       		.byte	0x51
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2355 02de 41000000 		.4byte	.LVL75-1
  2356 02e2 0100     		.2byte	0x1
  2357 02e4 50       		.byte	0x50
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 55
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 55
 
 
  2358 02e5 00000000 		.4byte	0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2412 001c 24000000 		.4byte	.LFE1
  2413 0020 00000000 		.4byte	.LFB4
  2414 0024 14000000 		.4byte	.LFE4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 56
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 56
 
 
  2415 0028 00000000 		.4byte	.LFB5
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2449      65642069 
  2449      6E7400
  2450              	.LASF45:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 57
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 57
 
 
  2451 0052 43795370 		.ascii	"CySpcReadData\000"
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2474              	.LASF27:
  2475 00f7 61727261 		.ascii	"arrayId\000"
  2475      79496400 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 58
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 58
 
 
  2476              	.LASF54:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2498              	.LASF46:
  2499 01f6 4379456E 		.ascii	"CyEnterCriticalSection\000"
  2499      74657243 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 59
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 59
 
 
  2499      72697469 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2522              	.LASF41:
  2523 02a1 43795370 		.ascii	"CySpcGetAlgorithm\000"
  2523      63476574 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 60
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 60
 
 
  2523      416C676F 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 1
  2546      6F774675 
  2546      6C6C00
  2547              	.LASF49:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc6q6KRu.s 			page 61
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccReXR1x.s 			page 61
 
 
  2548 0370 43795370 		.ascii	"CySpcLoadRowFull\000"

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
   30:.\Generated_Source\PSoC5/CyLib.c **** 
   31:.\Generated_Source\PSoC5/CyLib.c **** /* Variable Vdda */
   32:.\Generated_Source\PSoC5/CyLib.c **** #if(CYDEV_VARIABLE_VDDA == 1)
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 2
 
 
   33:.\Generated_Source\PSoC5/CyLib.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
   87:.\Generated_Source\PSoC5/CyLib.c **** *  this function.
   88:.\Generated_Source\PSoC5/CyLib.c **** *
   89:.\Generated_Source\PSoC5/CyLib.c **** *  No changes to the setup of the ILO, Fast Time Wheel, Central Time Wheel or
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 3
 
 
   90:.\Generated_Source\PSoC5/CyLib.c **** *  Once Per Second interrupt may be made by interrupt routines during the period
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  144:.\Generated_Source\PSoC5/CyLib.c **** }
  145:.\Generated_Source\PSoC5/CyLib.c **** 
  146:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 4
 
 
  147:.\Generated_Source\PSoC5/CyLib.c **** /*******************************************************************************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  201:.\Generated_Source\PSoC5/CyLib.c ****     }
  202:.\Generated_Source\PSoC5/CyLib.c ****     else
  203:.\Generated_Source\PSoC5/CyLib.c ****     {
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 5
 
 
  204:.\Generated_Source\PSoC5/CyLib.c ****         /***********************************************************************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  258:.\Generated_Source\PSoC5/CyLib.c **** * Function Name: CyIMO_Start
  259:.\Generated_Source\PSoC5/CyLib.c **** ****************************************************************************//**
  260:.\Generated_Source\PSoC5/CyLib.c **** *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 6
 
 
  261:.\Generated_Source\PSoC5/CyLib.c **** *  Enables the IMO. Optionally waits at least 6 us for it to settle.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  315:.\Generated_Source\PSoC5/CyLib.c **** 
  316:.\Generated_Source\PSoC5/CyLib.c **** 
  317:.\Generated_Source\PSoC5/CyLib.c **** /*******************************************************************************
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 7
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 7
 
 
  318:.\Generated_Source\PSoC5/CyLib.c **** * Function Name: CyIMO_Stop
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  347:.\Generated_Source\PSoC5/CyLib.c ****        (0u != (CY_LIB_PM_ACT_CFG5_REG & CY_ACT_USB_ENABLED     )))  ||
   48              		.loc 1 347 0
   49 001c 012B     		cmp	r3, #1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 8
 
 
   50 001e 08D1     		bne	.L5
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  360:.\Generated_Source\PSoC5/CyLib.c **** ****************************************************************************//**
  361:.\Generated_Source\PSoC5/CyLib.c **** *
  362:.\Generated_Source\PSoC5/CyLib.c **** *  Sets the IMO factory trim values.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 9
 
 
  363:.\Generated_Source\PSoC5/CyLib.c **** *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  417:.\Generated_Source\PSoC5/CyLib.c ****         }
  418:.\Generated_Source\PSoC5/CyLib.c ****         break;
  419:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 10
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 10
 
 
  420:.\Generated_Source\PSoC5/CyLib.c ****     default:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  474:.\Generated_Source\PSoC5/CyLib.c ****     switch (currentFreq)
  475:.\Generated_Source\PSoC5/CyLib.c ****     {
  476:.\Generated_Source\PSoC5/CyLib.c ****     case 0u:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 11
 
 
  477:.\Generated_Source\PSoC5/CyLib.c ****         currentFreq = CY_IMO_FREQ_12MHZ;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  531:.\Generated_Source\PSoC5/CyLib.c ****         CY_LIB_FASTCLK_IMO_CR_REG = ((CY_LIB_FASTCLK_IMO_CR_REG & CY_LIB_FASTCLK_IMO_CR_RANGE_MASK)
  532:.\Generated_Source\PSoC5/CyLib.c ****             CY_LIB_IMO_12MHZ_VALUE) & ((uint8)(~CY_LIB_IMO_USBCLK_ON_SET));
  533:.\Generated_Source\PSoC5/CyLib.c ****         break;
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 12
 
 
  534:.\Generated_Source\PSoC5/CyLib.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  588:.\Generated_Source\PSoC5/CyLib.c **** *
  589:.\Generated_Source\PSoC5/CyLib.c **** *  Sets the source of the clock output from the IMO block.
  590:.\Generated_Source\PSoC5/CyLib.c **** *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 13
 
 
  591:.\Generated_Source\PSoC5/CyLib.c **** *  The output from the IMO is by default the IMO itself. Optionally the MHz
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  645:.\Generated_Source\PSoC5/CyLib.c **** }
  646:.\Generated_Source\PSoC5/CyLib.c **** 
  647:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 14
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 14
 
 
  648:.\Generated_Source\PSoC5/CyLib.c **** /*******************************************************************************
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  702:.\Generated_Source\PSoC5/CyLib.c **** * \sideeffect
  703:.\Generated_Source\PSoC5/CyLib.c **** *  If this function execution resulted in the CPU clock frequency increasing,
  704:.\Generated_Source\PSoC5/CyLib.c **** *  then the number of clock cycles the cache will wait before it samples data
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 15
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 15
 
 
  705:.\Generated_Source\PSoC5/CyLib.c **** *  coming back from the Flash must be adjusted by calling
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  109 0018 1370     		strb	r3, [r2]
  740:.\Generated_Source\PSoC5/CyLib.c **** 
  741:.\Generated_Source\PSoC5/CyLib.c ****     /* Update Shadow Divider Value Register with new divider */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 16
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 16
 
 
  742:.\Generated_Source\PSoC5/CyLib.c ****     CY_LIB_CLKDIST_WRK_LSB_REG = LO8(divider);
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  151 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  152 0004 03F0FE03 		and	r3, r3, #254
  153 0008 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 17
 
 
  154 000a 7047     		bx	lr
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  204              		@ frame_needed = 0, uses_anonymous_args = 0
  205              		@ link register save eliminated.
  644:.\Generated_Source\PSoC5/CyLib.c **** }
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 18
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 18
 
 
  206              		.loc 1 644 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  257              		@ link register save eliminated.
  258              	.LVL4:
  687:.\Generated_Source\PSoC5/CyLib.c ****                                 (source & ((uint8)(~MASTER_CLK_SRC_CLEAR)));
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 19
 
 
  259              		.loc 1 687 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  756:.\Generated_Source\PSoC5/CyLib.c **** /*******************************************************************************
  757:.\Generated_Source\PSoC5/CyLib.c **** * Function Name: CyBusClk_SetDivider
  758:.\Generated_Source\PSoC5/CyLib.c **** ****************************************************************************//**
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 20
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 20
 
 
  759:.\Generated_Source\PSoC5/CyLib.c **** *
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  334              		.loc 1 786 0
  335 0016 05B1     		cbz	r5, .L31
  336              		.loc 1 786 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 21
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 21
 
 
  337 0018 EBB9     		cbnz	r3, .L32
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  371 0044 094A     		ldr	r2, .L38+8
  372 0046 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  373 0048 03F0BF03 		and	r3, r3, #191
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 22
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 22
 
 
  374 004c 1370     		strb	r3, [r2]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  824:.\Generated_Source\PSoC5/CyLib.c ****     * Function Name: CyCpuClk_SetDivider
  825:.\Generated_Source\PSoC5/CyLib.c ****     ****************************************************************************//**
  826:.\Generated_Source\PSoC5/CyLib.c ****     *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 23
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 23
 
 
  827:.\Generated_Source\PSoC5/CyLib.c ****     *  Sets the divider value used to generate the CPU Clock. Only applicable for
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  425 0010 7047     		bx	lr
  426              	.L42:
  427 0012 00BF     		.align	2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 24
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 24
 
 
  428              	.L41:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  463              		.thumb_func
  464              		.type	CyILO_Stop1K, %function
  465              	CyILO_Stop1K:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 25
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 25
 
 
  466              	.LFB18:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  913:.\Generated_Source\PSoC5/CyLib.c **** *
  914:.\Generated_Source\PSoC5/CyLib.c **** *  Enables the ILO 100 KHz oscillator.
  915:.\Generated_Source\PSoC5/CyLib.c **** *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 26
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 26
 
 
  916:.\Generated_Source\PSoC5/CyLib.c **** *******************************************************************************/
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  530              	.L54:
  531              		.align	2
  532              	.L53:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 27
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 27
 
 
  533 000c 00430040 		.word	1073758976
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  581              	.LVL28:
  116:.\Generated_Source\PSoC5/CyLib.c **** 
  582              		.loc 1 116 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 28
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 28
 
 
  583 0024 1820     		movs	r0, #24
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  627 0060 00E0     		b	.L56
  628              	.LVL34:
  629              	.L61:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 29
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 29
 
 
   99:.\Generated_Source\PSoC5/CyLib.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  677              		.cfi_offset 5, -12
  678              		.cfi_offset 6, -8
  679              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 30
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 30
 
 
  295:.\Generated_Source\PSoC5/CyLib.c ****         pmFtwCfg0Reg = CY_LIB_PM_TW_CFG0_REG;
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  725              		.cfi_restore 5
  726              		.cfi_restore 6
  727              		.cfi_restore 14
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 31
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 31
 
 
  728 0050 7047     		bx	lr
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  765              		.align	2
  766              		.global	CyILO_Disable33K
  767              		.thumb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 32
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 32
 
 
  768              		.thumb_func
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  974:.\Generated_Source\PSoC5/CyLib.c **** *
  975:.\Generated_Source\PSoC5/CyLib.c **** *  \param source: One of the three available ILO output sources
  976:.\Generated_Source\PSoC5/CyLib.c **** *       Value        Define                Source
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 33
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 33
 
 
  977:.\Generated_Source\PSoC5/CyLib.c **** *       0            CY_ILO_SOURCE_100K    ILO 100 KHz
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1001:.\Generated_Source\PSoC5/CyLib.c **** *
 1002:.\Generated_Source\PSoC5/CyLib.c **** *******************************************************************************/
 1003:.\Generated_Source\PSoC5/CyLib.c **** uint8 CyILO_SetPowerMode(uint8 mode) 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 34
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 34
 
 
 1004:.\Generated_Source\PSoC5/CyLib.c **** {
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  862              		.section	.text.CyXTAL_32KHZ_Stop,"ax",%progbits
  863              		.align	2
  864              		.global	CyXTAL_32KHZ_Stop
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 35
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 35
 
 
  865              		.thumb
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  871              		.cfi_startproc
  872              		@ args = 0, pretend = 0, frame = 0
  873              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 36
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 36
 
 
  874              		@ link register save eliminated.
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1088:.\Generated_Source\PSoC5/CyLib.c **** *
 1089:.\Generated_Source\PSoC5/CyLib.c **** * \return
 1090:.\Generated_Source\PSoC5/CyLib.c **** *  Value     Define                    Source
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 37
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 37
 
 
 1091:.\Generated_Source\PSoC5/CyLib.c **** *  20        CY_XTAL32K_ANA_STAT       Analog measurement
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1119:.\Generated_Source\PSoC5/CyLib.c **** {
 1120:.\Generated_Source\PSoC5/CyLib.c ****     uint8 state = (0u != (CY_CLK_XTAL32_CR_REG & CY_CLK_XTAL32_CR_LPM)) ? 1u : 0u;
 1121:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 38
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 38
 
 
 1122:.\Generated_Source\PSoC5/CyLib.c ****     CY_CLK_XTAL32_TST_REG = CY_CLK_XTAL32_TST_DEFAULT;
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1176:.\Generated_Source\PSoC5/CyLib.c **** *  The current operation of the ILO, Central Timewheel and Once Per Second
 1177:.\Generated_Source\PSoC5/CyLib.c **** *  interrupt are maintained during the operation of this function provided the
 1178:.\Generated_Source\PSoC5/CyLib.c **** *  reading of the Power Manager Interrupt Status Register is only done using the
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 39
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 39
 
 
 1179:.\Generated_Source\PSoC5/CyLib.c **** *  CyPmReadStatus() function.
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  969 001e 1D78     		ldrb	r5, [r3]	@ zero_extendqisi2
  970 0020 EDB2     		uxtb	r5, r5
  971              	.LVL54:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 40
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 40
 
 
 1201:.\Generated_Source\PSoC5/CyLib.c ****         pmTwCfg2Tmp = CY_LIB_PM_TW_CFG2_REG;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1008 005c EED1     		bne	.L96
 1217:.\Generated_Source\PSoC5/CyLib.c ****                 {
 1218:.\Generated_Source\PSoC5/CyLib.c ****                     /* Wait for FTW interrupt event */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 41
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 41
 
 
 1219:.\Generated_Source\PSoC5/CyLib.c ****                 }
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1240:.\Generated_Source\PSoC5/CyLib.c ****         CY_LIB_PM_TW_CFG0_REG = pmTwCfg0Tmp;
  1039              		.loc 1 1240 0
  1040 008e 064B     		ldr	r3, .L103+8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 42
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 42
 
 
  1041 0090 1D70     		strb	r5, [r3]
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1078              		@ args = 0, pretend = 0, frame = 0
  1079              		@ frame_needed = 0, uses_anonymous_args = 0
  1080              		@ link register save eliminated.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 43
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 43
 
 
 1257:.\Generated_Source\PSoC5/CyLib.c ****     /* Disable oscillator. */
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1118              	.LFE31:
  1119              		.size	CyXTAL_EnableErrStatus, .-CyXTAL_EnableErrStatus
  1120              		.section	.text.CyXTAL_DisableErrStatus,"ax",%progbits
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 44
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 44
 
 
  1121              		.align	2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1295:.\Generated_Source\PSoC5/CyLib.c **** *
 1296:.\Generated_Source\PSoC5/CyLib.c **** *  Reads the XERR status bit for the megahertz crystal. This status bit is a
 1297:.\Generated_Source\PSoC5/CyLib.c **** *  sticky, clear on read. This function is not available for PSoC5.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 45
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 45
 
 
 1298:.\Generated_Source\PSoC5/CyLib.c **** *
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1321:.\Generated_Source\PSoC5/CyLib.c **** *  running with the XERR bit at 0, before calling this function to prevent
 1322:.\Generated_Source\PSoC5/CyLib.c **** *  an immediate fault switchover. This function is not available for PSoC5.
 1323:.\Generated_Source\PSoC5/CyLib.c **** *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 46
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 46
 
 
 1324:.\Generated_Source\PSoC5/CyLib.c **** *******************************************************************************/
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1220 0008 1370     		strb	r3, [r2]
  1221 000a 7047     		bx	lr
  1222              	.L124:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 47
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 47
 
 
  1223              		.align	2
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1256              		.cfi_endproc
  1257              	.LFE36:
  1258              		.size	CyXTAL_SetStartup, .-CyXTAL_SetStartup
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 48
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 48
 
 
  1259              		.section	.text.CyXTAL_SetFbVoltage,"ax",%progbits
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1294              		.type	CyXTAL_SetWdVoltage, %function
  1295              	CyXTAL_SetWdVoltage:
  1296              	.LFB38:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 49
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 49
 
 
 1383:.\Generated_Source\PSoC5/CyLib.c ****                             (setting & CY_CLK_XMHZ_CFG1_VREF_FB_MASK));
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1403:.\Generated_Source\PSoC5/CyLib.c **** 
 1404:.\Generated_Source\PSoC5/CyLib.c **** 
 1405:.\Generated_Source\PSoC5/CyLib.c **** /*******************************************************************************
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 50
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 50
 
 
 1406:.\Generated_Source\PSoC5/CyLib.c **** * Function Name: CyHalt
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1364 0002 0546     		mov	r5, r0
  1365 0004 0C46     		mov	r4, r1
  1366 0006 1646     		mov	r6, r2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 51
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 51
 
 
  190:.\Generated_Source\PSoC5/CyLib.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1409 0046 0B70     		strb	r3, [r1]
  1410 0048 70BD     		pop	{r4, r5, r6, pc}
  1411              	.L137:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 52
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 52
 
 
  210:.\Generated_Source\PSoC5/CyLib.c ****     }
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1460 001c 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
  1461 001e 00F0FC00 		and	r0, r0, #252
  1462 0022 2043     		orrs	r0, r0, r4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 53
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 53
 
 
  1463 0024 1870     		strb	r0, [r3]
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1510 0018 3FD8     		bhi	.L152
  1511 001a DFE804F0 		tbb	[pc, r4]
  1512              	.L154:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 54
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 54
 
 
  1513 001e 05       		.byte	(.L153-.L154)/2
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1559              	.L158:
  396:.\Generated_Source\PSoC5/CyLib.c ****         break;
  1560              		.loc 1 396 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 55
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 55
 
 
  1561 0058 184B     		ldr	r3, .L164+24
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1606              	.LVL81:
  1607 009c FFF7FEFF 		bl	CyHalt
  1608              	.LVL82:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 56
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 56
 
 
  1609              	.L150:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1660              	.LVL85:
  474:.\Generated_Source\PSoC5/CyLib.c ****     {
  1661              		.loc 1 474 0 discriminator 4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 57
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 57
 
 
  1662 0016 062C     		cmp	r4, #6
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1707              		.loc 1 518 0
  1708 0042 082E     		cmp	r6, #8
  1709 0044 44D8     		bhi	.L175
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 58
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 58
 
 
  1710 0046 DFE806F0 		tbb	[pc, r6]
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1756 008e 22E0     		b	.L185
  1757              	.L181:
  541:.\Generated_Source\PSoC5/CyLib.c ****             CY_LIB_IMO_48MHZ_VALUE) & ((uint8)(~CY_LIB_IMO_USBCLK_ON_SET));
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 59
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 59
 
 
  1758              		.loc 1 541 0
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1802              		.loc 1 570 0
  1803 00da FFF7FEFF 		bl	CyIMO_EnableDoubler
  1804              	.LVL94:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 60
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 60
 
 
  1805 00de 01E0     		b	.L187
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1853 0010 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  1854 0012 03F0BF03 		and	r3, r3, #191
  1855 0016 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 61
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 61
 
 
  613:.\Generated_Source\PSoC5/CyLib.c ****         break;
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1902              		.thumb_func
  1903              		.type	CySoftwareReset, %function
  1904              	CySoftwareReset:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 62
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 62
 
 
  1905              	.LFB40:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1452:.\Generated_Source\PSoC5/CyLib.c **** *  the instruction cache is disabled on PSoC5, CyDelay will be two times larger.
 1453:.\Generated_Source\PSoC5/CyLib.c **** *  For example, with instruction cache disabled CyDelay(100) would result in
 1454:.\Generated_Source\PSoC5/CyLib.c **** *  about 200 ms delay instead of 100 ms.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 63
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 63
 
 
 1455:.\Generated_Source\PSoC5/CyLib.c **** *
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1968              	.L210:
  1969 0028 00000000 		.word	.LANCHOR0
  1970              		.cfi_endproc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 64
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 64
 
 
  1971              	.LFE41:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  1991 0002 034B     		ldr	r3, .L214
  1992 0004 1B7A     		ldrb	r3, [r3, #8]	@ zero_extendqisi2
  1993 0006 03FB00F0 		mul	r0, r3, r0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 65
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 65
 
 
  1994              	.LVL108:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2043 0022 1A70     		strb	r2, [r3]
 1128:.\Generated_Source\PSoC5/CyLib.c ****         CY_CLK_XTAL32_CFG_REG = (CY_CLK_XTAL32_CFG_REG & ((uint8)(~CY_CLK_XTAL32_CFG_LP_MASK))) |
  2044              		.loc 1 1128 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 66
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 66
 
 
  2045 0024 0A20     		movs	r0, #10
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2091              	.LVL118:
  2092              	.L223:
  2093 0072 00BF     		.align	2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 67
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 67
 
 
  2094              	.L222:
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2142              	.L228:
 1050:.\Generated_Source\PSoC5/CyLib.c ****         {
  2143              		.loc 1 1050 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 68
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 68
 
 
  2144 0034 FFF7FEFF 		bl	CyXTAL_32KHZ_ReadStatus
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1506:.\Generated_Source\PSoC5/CyLib.c ****     }
 1507:.\Generated_Source\PSoC5/CyLib.c **** 
 1508:.\Generated_Source\PSoC5/CyLib.c **** #endif  /* (!CY_PSOC3) */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 69
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 69
 
 
 1509:.\Generated_Source\PSoC5/CyLib.c **** 
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2222 002a 074A     		ldr	r2, .L235+12
  2223 002c A2FB0323 		umull	r2, r3, r2, r3
  2224 0030 9B09     		lsrs	r3, r3, #6
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 70
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 70
 
 
  2225 0032 4B60     		str	r3, [r1, #4]
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1564:.\Generated_Source\PSoC5/CyLib.c **** *
 1565:.\Generated_Source\PSoC5/CyLib.c **** *  \param lpMode: Low power mode configuration. This parameter is ignored for PSoC 5.
 1566:.\Generated_Source\PSoC5/CyLib.c **** *          The WDT always acts as if CYWDT_LPMODE_NOCHANGE is passed.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 71
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 71
 
 
 1567:.\Generated_Source\PSoC5/CyLib.c **** *
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2278 002c 1143     		orrs	r1, r1, r2
  2279 002e 1970     		strb	r1, [r3]
 1590:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 72
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 72
 
 
 1591:.\Generated_Source\PSoC5/CyLib.c ****     /* Enables watchdog reset */
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2319              		.global	CyVdStickyStatus
  2320              		.thumb
  2321              		.thumb_func
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 73
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 73
 
 
  2322              		.type	CyVdStickyStatus, %function
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1657:.\Generated_Source\PSoC5/CyLib.c ****     /* Disable VD interrupt (write 1) to protect against glitches */
 1658:.\Generated_Source\PSoC5/CyLib.c ****     CY_INT_CLEAR_REG = CY_VD_INT_MASK;
 1659:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 74
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 74
 
 
 1660:.\Generated_Source\PSoC5/CyLib.c ****     CY_VD_PRES_CONTROL_REG &= ((uint8)(~CY_VD_PRESD_EN));
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1714:.\Generated_Source\PSoC5/CyLib.c **** *  low-voltage and analog high-voltage) occurs, the RESET_CR1 and RESET_CR3
 1715:.\Generated_Source\PSoC5/CyLib.c **** *  registers are restored to their default values. This means that the voltage
 1716:.\Generated_Source\PSoC5/CyLib.c **** *  monitor circuit is no longer enabled and the device exits reset. If the
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 75
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 75
 
 
 1717:.\Generated_Source\PSoC5/CyLib.c **** *  supply is below the trip level and firmware enables the voltage reset
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1771:.\Generated_Source\PSoC5/CyLib.c **** ****************************************************************************//**
 1772:.\Generated_Source\PSoC5/CyLib.c **** *
 1773:.\Generated_Source\PSoC5/CyLib.c **** *  Disables the digital low-voltage monitor, turns off device reset upon the
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 76
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 76
 
 
 1774:.\Generated_Source\PSoC5/CyLib.c **** *  digital low-voltage event, and clears the associated persistent status bit.
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1828:.\Generated_Source\PSoC5/CyLib.c **** *******************************************************************************/
 1829:.\Generated_Source\PSoC5/CyLib.c **** void CyVdHvAnalogEnable(void) 
 1830:.\Generated_Source\PSoC5/CyLib.c **** {
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 77
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 77
 
 
 1831:.\Generated_Source\PSoC5/CyLib.c ****     uint32 intRegTmp;
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1885:.\Generated_Source\PSoC5/CyLib.c **** ****************************************************************************//**
 1886:.\Generated_Source\PSoC5/CyLib.c **** *
 1887:.\Generated_Source\PSoC5/CyLib.c **** *  Reads and clears the voltage detection status bits in the RESET_SR0 register.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 78
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 78
 
 
 1888:.\Generated_Source\PSoC5/CyLib.c **** *  The bits are set to 1 by the voltage monitor circuit when the supply is
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2348              	.LVL129:
 1919:.\Generated_Source\PSoC5/CyLib.c ****     interruptStatus &= ((uint8)(~mask));
  2349              		.loc 1 1919 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 79
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 79
 
 
  2350 0016 23EA0503 		bic	r3, r3, r5
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2396 000e 1A4B     		ldr	r3, .L251
  2397 0010 1C68     		ldr	r4, [r3]
  2398 0012 04F00104 		and	r4, r4, #1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 80
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 80
 
 
  2399              	.LVL135:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2443 0060 1370     		strb	r3, [r2]
  2444              	.L249:
 1681:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 81
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 81
 
 
  2445              		.loc 1 1681 0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1735:.\Generated_Source\PSoC5/CyLib.c **** 
  2495              		.loc 1 1735 0
  2496 000c 194B     		ldr	r3, .L257
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 82
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 82
 
 
  2497 000e 1D68     		ldr	r5, [r3]
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2542 005e 1370     		strb	r3, [r2]
  2543              	.L255:
 1760:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 83
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 83
 
 
  2544              		.loc 1 1760 0
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2592              		.loc 1 1785 0
  2593 0016 0120     		movs	r0, #1
  2594 0018 FFF7FEFF 		bl	CyVdStickyStatus
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 84
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 84
 
 
  2595              	.LVL148:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2643 001c 10F0020F 		tst	r0, #2
  2644 0020 F9D1     		bne	.L265
 1814:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 85
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 85
 
 
  2645              		.loc 1 1814 0
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2693              		.loc 1 1844 0
  2694 0020 023A     		subs	r2, r2, #2
  2695 0022 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 86
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 86
 
 
  2696 0024 43F00403 		orr	r3, r3, #4
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2743              		.loc 1 1875 0
  2744 0002 064A     		ldr	r2, .L276
  2745 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 87
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 87
 
 
  2746 0006 03F0FB03 		and	r3, r3, #251
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2772              		.loc 1 1950 0
  2773              		.cfi_startproc
  2774              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 88
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 88
 
 
  2775              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 1970:.\Generated_Source\PSoC5/CyLib.c **** *
 1971:.\Generated_Source\PSoC5/CyLib.c **** *******************************************************************************/
 1972:.\Generated_Source\PSoC5/CyLib.c **** uint32 CyDisableInts(void) 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 89
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 89
 
 
 1973:.\Generated_Source\PSoC5/CyLib.c **** {
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2006:.\Generated_Source\PSoC5/CyLib.c ****     return (intState);
 2007:.\Generated_Source\PSoC5/CyLib.c **** }
  2831              		.loc 1 2007 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 90
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 90
 
 
  2832 0014 2046     		mov	r0, r4
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2031:.\Generated_Source\PSoC5/CyLib.c ****         CY_SET_REG8(CY_INT_SET_EN1_PTR, ((uint8) (mask >> 8u )));
 2032:.\Generated_Source\PSoC5/CyLib.c ****         CY_SET_REG8(CY_INT_SET_EN0_PTR, ((uint8) (mask )));
 2033:.\Generated_Source\PSoC5/CyLib.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 91
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 91
 
 
 2034:.\Generated_Source\PSoC5/CyLib.c ****     #else
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2889              		@ frame_needed = 0, uses_anonymous_args = 0
  2890 0000 08B5     		push	{r3, lr}
  2891              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 92
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 92
 
 
  2892              		.cfi_offset 3, -8
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2932              		.loc 1 2075 0
  2933              	@ 2075 ".\Generated_Source\PSoC5\CyLib.c" 1
  2934 0014 00BF     		NOP
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 93
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 93
 
 
  2935              	
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  2978              		.thumb
  2979 0026 064A     		ldr	r2, .L292
  2980 0028 1388     		ldrh	r3, [r2]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 94
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 94
 
 
  2981 002a 9BB2     		uxth	r3, r3
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2111:.\Generated_Source\PSoC5/CyLib.c ****     *    CY_INT_USAGE_FAULT_IRQN        - Usage Fault Interrupt
 2112:.\Generated_Source\PSoC5/CyLib.c ****     *    CY_INT_SVCALL_IRQN             - SV Call Interrupt
 2113:.\Generated_Source\PSoC5/CyLib.c ****     *    CY_INT_DEBUG_MONITOR_IRQN      - Debug Monitor Interrupt
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 95
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 95
 
 
 2114:.\Generated_Source\PSoC5/CyLib.c ****     *    CY_INT_PEND_SV_IRQN            - Pend SV Interrupt
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2136:.\Generated_Source\PSoC5/CyLib.c ****         return (oldIsr);
 2137:.\Generated_Source\PSoC5/CyLib.c ****     }
  3043              		.loc 1 2137 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 96
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 96
 
 
  3044 0020 70BD     		pop	{r4, r5, r6, pc}
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3071              		.cfi_offset 14, -4
  3072 0002 0446     		mov	r4, r0
 2165:.\Generated_Source\PSoC5/CyLib.c ****         cyisraddress *ramVectorTable = *CY_INT_VECT_TABLE;
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 97
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 97
 
 
  3073              		.loc 1 2165 0
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2186:.\Generated_Source\PSoC5/CyLib.c ****     {
  3107              		.loc 1 2186 0
  3108              		.cfi_startproc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 98
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 98
 
 
  3109              		@ args = 0, pretend = 0, frame = 0
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3150              		.section	.text.CyIntGetVector,"ax",%progbits
  3151              		.align	2
  3152              		.global	CyIntGetVector
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 99
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 99
 
 
  3153              		.thumb
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3186              		.loc 1 2220 0
  3187 0018 55F82400 		ldr	r0, [r5, r4, lsl #2]
  3188 001c 38BD     		pop	{r3, r4, r5, pc}
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 100
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 100
 
 
  3189              	.LVL194:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3227              		.loc 1 2236 0 is_stmt 1
  3228 0010 1F2C     		cmp	r4, #31
  3229 0012 02D9     		bls	.L316
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 101
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 101
 
 
  3230              		.loc 1 2236 0 is_stmt 0 discriminator 1
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2257:.\Generated_Source\PSoC5/CyLib.c ****         CYASSERT(number <= CY_INT_NUMBER_MAX);
  3264              		.loc 1 2257 0
  3265 0004 1F28     		cmp	r0, #31
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 102
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 102
 
 
  3266 0006 02D9     		bls	.L319
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3299 0000 10B5     		push	{r4, lr}
  3300              		.cfi_def_cfa_offset 8
  3301              		.cfi_offset 4, -8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 103
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 103
 
 
  3302              		.cfi_offset 14, -4
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2299:.\Generated_Source\PSoC5/CyLib.c ****     *
 2300:.\Generated_Source\PSoC5/CyLib.c ****     * Theory:
 2301:.\Generated_Source\PSoC5/CyLib.c ****     *  Any value other than zero is acceptable.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 104
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 104
 
 
 2302:.\Generated_Source\PSoC5/CyLib.c ****     *
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2356:.\Generated_Source\PSoC5/CyLib.c ****         CYASSERT(number <= CY_INT_NUMBER_MAX);
 2357:.\Generated_Source\PSoC5/CyLib.c **** 
 2358:.\Generated_Source\PSoC5/CyLib.c ****         /* Save old Interrupt service routine. */
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 105
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 105
 
 
 2359:.\Generated_Source\PSoC5/CyLib.c ****         oldIsr = (cyisraddress) \
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2413:.\Generated_Source\PSoC5/CyLib.c ****     ****************************************************************************//**
 2414:.\Generated_Source\PSoC5/CyLib.c ****     *
 2415:.\Generated_Source\PSoC5/CyLib.c ****     *  Gets the Priority of the Interrupt.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 106
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 106
 
 
 2416:.\Generated_Source\PSoC5/CyLib.c ****     *
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2470:.\Generated_Source\PSoC5/CyLib.c ****     *   - if any of the SC blocks are used - enable pumps for the SC blocks and
 2471:.\Generated_Source\PSoC5/CyLib.c ****     *     start boost clock.
 2472:.\Generated_Source\PSoC5/CyLib.c ****     *   - For each enabled SC block set a boost clock index and enable the boost
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 107
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 107
 
 
 2473:.\Generated_Source\PSoC5/CyLib.c ****     *     clock.
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2527:.\Generated_Source\PSoC5/CyLib.c ****             CyScPumpEnabled = 0u;
 2528:.\Generated_Source\PSoC5/CyLib.c ****             /* Disable pumps for all SC blocks and stop boost clock */
 2529:.\Generated_Source\PSoC5/CyLib.c ****             CY_LIB_SC_MISC_REG &= ((uint8)(~CY_LIB_SC_MISC_PUMP_FORCE));
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 108
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 108
 
 
 2530:.\Generated_Source\PSoC5/CyLib.c ****             CyScBoostClk_Stop();
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2584:.\Generated_Source\PSoC5/CyLib.c ****     *  by PSoC Creator at build time. If System clock frequency is changed in
 2585:.\Generated_Source\PSoC5/CyLib.c ****     *  runtime, the CyDelayFreq() with the appropriate parameter should be called.
 2586:.\Generated_Source\PSoC5/CyLib.c ****     *
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 109
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 109
 
 
 2587:.\Generated_Source\PSoC5/CyLib.c ****     *******************************************************************************/
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3342 0000 024A     		ldr	r2, .L327
  3343 0002 1368     		ldr	r3, [r2]
  3344 0004 23F00103 		bic	r3, r3, #1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 110
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 110
 
 
  3345 0008 1360     		str	r3, [r2]
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3383              		.thumb
  3384              		.thumb_func
  3385              		.type	CySysTickEnable, %function
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 111
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 111
 
 
  3386              	CySysTickEnable:
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3422              		@ args = 0, pretend = 0, frame = 0
  3423              		@ frame_needed = 0, uses_anonymous_args = 0
  3424              		@ link register save eliminated.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 112
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 112
 
 
 2666:.\Generated_Source\PSoC5/CyLib.c ****         CY_SYS_SYST_CSR_REG &= ((uint32) ~(CY_SYS_SYST_CSR_ENABLE_INT));
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3461 000c 14E000E0 		.word	-536813548
  3462              		.cfi_endproc
  3463              	.LFE70:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 113
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 113
 
 
  3464              		.size	CySysTickSetReload, .-CySysTickSetReload
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2703:.\Generated_Source\PSoC5/CyLib.c ****     /*******************************************************************************
 2704:.\Generated_Source\PSoC5/CyLib.c ****     * Function Name: CySysTickGetValue
 2705:.\Generated_Source\PSoC5/CyLib.c ****     ****************************************************************************//**
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 114
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 114
 
 
 2706:.\Generated_Source\PSoC5/CyLib.c ****     *
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2734:.\Generated_Source\PSoC5/CyLib.c ****     *  function call will have no effect. After changing clock source to the low
 2735:.\Generated_Source\PSoC5/CyLib.c ****     *  frequency clock the counter and reload register values will remain unchanged
 2736:.\Generated_Source\PSoC5/CyLib.c ****     *  so time to the interrupt will be significantly bigger and vice versa.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 115
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 115
 
 
 2737:.\Generated_Source\PSoC5/CyLib.c ****     *
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2754:.\Generated_Source\PSoC5/CyLib.c ****     ****************************************************************************//**
 2755:.\Generated_Source\PSoC5/CyLib.c ****     *
 2756:.\Generated_Source\PSoC5/CyLib.c ****     *  The count flag is set once SysTick counter reaches zero.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 116
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 116
 
 
 2757:.\Generated_Source\PSoC5/CyLib.c ****     *   The flag cleared on read.
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2786:.\Generated_Source\PSoC5/CyLib.c ****     /*******************************************************************************
 2787:.\Generated_Source\PSoC5/CyLib.c ****     * Function Name: CySysTickSetCallback
 2788:.\Generated_Source\PSoC5/CyLib.c ****     ****************************************************************************//**
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 117
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 117
 
 
 2789:.\Generated_Source\PSoC5/CyLib.c ****     *
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
 2843:.\Generated_Source\PSoC5/CyLib.c **** 
 2844:.\Generated_Source\PSoC5/CyLib.c **** 
 2845:.\Generated_Source\PSoC5/CyLib.c ****     /*******************************************************************************
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 118
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 118
 
 
 2846:.\Generated_Source\PSoC5/CyLib.c ****     * Function Name: CySysTickServiceCallbacks
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3621              		.loc 1 2859 0 is_stmt 0 discriminator 1
  3622 001e 042C     		cmp	r4, #4
  3623 0020 F4D9     		bls	.L360
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 119
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 119
 
 
  3624              	.LVL217:
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3675              	.LVL218:
 2592:.\Generated_Source\PSoC5/CyLib.c ****         {
  3676              		.loc 1 2592 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 120
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 120
 
 
  3677 0002 0023     		movs	r3, #0
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3723 004c 00000000 		.word	.LANCHOR0
  3724 0050 D34D6210 		.word	274877907
  3725 0054 00E100E0 		.word	-536813312
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 121
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 121
 
 
  3726              		.cfi_endproc
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3775              	.LFB76:
 2816:.\Generated_Source\PSoC5/CyLib.c ****         cySysTickCallback retVal;
  3776              		.loc 1 2816 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 122
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 122
 
 
  3777              		.cfi_startproc
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3825              		.size	CySysTickGetCallback, .-CySysTickGetCallback
  3826              		.section	.text.CyGetUniqueId,"ax",%progbits
  3827              		.align	2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 123
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 123
 
 
  3828              		.global	CyGetUniqueId
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3846 0008 124A     		ldr	r2, .L386+4
  3847 000a 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
  3848 000c 43EA0223 		orr	r3, r3, r2, lsl #8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 124
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 124
 
 
  3849 0010 0360     		str	r3, [r0]
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3896              		.global	cydelay_32k_ms
  3897              		.global	cydelay_freq_mhz
  3898              		.global	cydelay_freq_khz
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 125
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 125
 
 
  3899              		.global	cydelay_freq_hz
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  3949 0000 6B130000 		.4byte	0x136b
  3950 0004 0400     		.2byte	0x4
  3951 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 126
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 126
 
 
  3952 000a 04       		.byte	0x4
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4006 0073 04       		.byte	0x4
  4007 0074 78000000 		.4byte	0x78
  4008 0078 05       		.uleb128 0x5
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 127
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 127
 
 
  4009 0079 03       		.uleb128 0x3
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4063 00f2 4A050000 		.4byte	.LASF20
  4064 00f6 02       		.byte	0x2
  4065 00f7 4E02     		.2byte	0x24e
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 128
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 128
 
 
  4066 00f9 72000000 		.4byte	0x72
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4120 017c 9C       		.byte	0x9c
  4121 017d 0E       		.uleb128 0xe
  4122 017e 8F010000 		.4byte	.LASF24
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 129
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 129
 
 
  4123 0182 01       		.byte	0x1
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4177 01fe 9C       		.byte	0x9c
  4178 01ff C0020000 		.4byte	0x2c0
  4179 0203 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 130
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 130
 
 
  4180 0204 D5060000 		.4byte	.LASF26
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4234 0283 02       		.uleb128 0x2
  4235 0284 75       		.byte	0x75
  4236 0285 00       		.sleb128 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 131
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 131
 
 
  4237 0286 00       		.byte	0
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4291 02ef 00000000 		.4byte	.LFB17
  4292 02f3 10000000 		.4byte	.LFE17-.LFB17
  4293 02f7 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 132
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 132
 
 
  4294 02f8 9C       		.byte	0x9c
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4348 0376 3C050000 		.4byte	.LASF43
  4349 037a 01       		.byte	0x1
  4350 037b 66       		.byte	0x66
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 133
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 133
 
 
  4351 037c 80000000 		.4byte	0x80
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4405 03fa 9D090000 		.4byte	.LASF47
  4406 03fe 01       		.byte	0x1
  4407 03ff 1D01     		.2byte	0x11d
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 134
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 134
 
 
  4408 0401 80000000 		.4byte	0x80
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4462 047d 01       		.uleb128 0x1
  4463 047e 9C       		.byte	0x9c
  4464 047f 94040000 		.4byte	0x494
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 135
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 135
 
 
  4465 0483 0C       		.uleb128 0xc
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4519 0505 AC000000 		.4byte	.LFE29-.LFB29
  4520 0509 01       		.uleb128 0x1
  4521 050a 9C       		.byte	0x9c
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 136
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 136
 
 
  4522 050b AD050000 		.4byte	0x5ad
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4576 058d 01       		.uleb128 0x1
  4577 058e 48       		.byte	0x48
  4578 058f 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 137
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 137
 
 
  4579 0590 12       		.uleb128 0x12
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4633 060a 9C       		.byte	0x9c
  4634 060b 0E       		.uleb128 0xe
  4635 060c E9010000 		.4byte	.LASF68
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 138
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 138
 
 
  4636 0610 01       		.byte	0x1
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4690 0692 0F       		.uleb128 0xf
  4691 0693 2C010000 		.4byte	.LASF73
  4692 0697 01       		.byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 139
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 139
 
 
  4693 0698 8605     		.2byte	0x586
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4747 0715 13       		.uleb128 0x13
  4748 0716 01       		.uleb128 0x1
  4749 0717 50       		.byte	0x50
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 140
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 140
 
 
  4750 0718 01       		.uleb128 0x1
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4804 0789 0A       		.uleb128 0xa
  4805 078a 5E060000 		.4byte	.LASF83
  4806 078e 01       		.byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 141
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 141
 
 
  4807 078f 7101     		.2byte	0x171
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4861 080c 42000000 		.4byte	.LVL92
  4862 0810 63070000 		.4byte	0x763
  4863 0814 1F080000 		.4byte	0x81f
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 142
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 142
 
 
  4864 0818 13       		.uleb128 0x13
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4918 0886 50       		.byte	0x50
  4919 0887 01       		.uleb128 0x1
  4920 0888 30       		.byte	0x30
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 143
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 143
 
 
  4921 0889 00       		.byte	0
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  4975 090c 5E04     		.2byte	0x45e
  4976 090e 80000000 		.4byte	0x80
  4977 0912 00000000 		.4byte	.LFB28
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 144
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 144
 
 
  4978 0916 84000000 		.4byte	.LFE28-.LFB28
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5032 0988 C5090000 		.4byte	0x9c5
  5033 098c 1C       		.uleb128 0x1c
  5034 098d 6900     		.ascii	"i\000"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 145
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 145
 
 
  5035 098f 01       		.byte	0x1
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5089 0a02 0C       		.uleb128 0xc
  5090 0a03 EB030000 		.4byte	.LASF97
  5091 0a07 01       		.byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 146
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 146
 
 
  5092 0a08 2A06     		.2byte	0x62a
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5146 0a91 11       		.uleb128 0x11
  5147 0a92 08000000 		.4byte	.LVL128
  5148 0a96 1F130000 		.4byte	0x131f
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 147
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 147
 
 
  5149 0a9a 11       		.uleb128 0x11
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5203 0b20 2B0B0000 		.4byte	0xb2b
  5204 0b24 13       		.uleb128 0x13
  5205 0b25 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 148
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 148
 
 
  5206 0b26 50       		.byte	0x50
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5260 0ba0 D6080000 		.4byte	0x8d6
  5261 0ba4 AE0B0000 		.4byte	0xbae
  5262 0ba8 13       		.uleb128 0x13
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 149
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 149
 
 
  5263 0ba9 01       		.uleb128 0x1
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5317 0c0a 00       		.byte	0
  5318 0c0b 0F       		.uleb128 0xf
  5319 0c0c 4C070000 		.4byte	.LASF110
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 150
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 150
 
 
  5320 0c10 01       		.byte	0x1
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5374 0c89 350A0000 		.4byte	0xa35
  5375 0c8d 970C0000 		.4byte	0xc97
  5376 0c91 13       		.uleb128 0x13
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 151
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 151
 
 
  5377 0c92 01       		.uleb128 0x1
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5431 0cfe A007     		.2byte	0x7a0
  5432 0d00 80000000 		.4byte	0x80
  5433 0d04 0D070000 		.4byte	.LLST58
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 152
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 152
 
 
  5434 0d08 11       		.uleb128 0x11
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5488 0d94 E607     		.2byte	0x7e6
  5489 0d96 80000000 		.4byte	0x80
  5490 0d9a 88070000 		.4byte	.LLST62
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 153
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 153
 
 
  5491 0d9e 11       		.uleb128 0x11
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5545 0e2a 4D08     		.2byte	0x84d
  5546 0e2c F1000000 		.4byte	0xf1
  5547 0e30 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 154
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 154
 
 
  5548 0e31 50       		.byte	0x50
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5602 0ea7 01       		.byte	0x1
  5603 0ea8 8908     		.2byte	0x889
  5604 0eaa F1000000 		.4byte	0xf1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 155
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 155
 
 
  5605 0eae 00000000 		.4byte	.LFB59
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5659 0f2c 80000000 		.4byte	0x80
  5660 0f30 A2080000 		.4byte	.LLST72
  5661 0f34 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 156
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 156
 
 
  5662 0f35 2E080000 		.4byte	.LASF123
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5716 0fab 00       		.byte	0
  5717 0fac 00       		.byte	0
  5718 0fad 18       		.uleb128 0x18
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 157
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 157
 
 
  5719 0fae 5C000000 		.4byte	.LASF129
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5772 1032 14       		.uleb128 0x14
  5773 1033 0E000000 		.4byte	.LVL206
  5774 1037 92060000 		.4byte	0x692
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 158
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 158
 
 
  5775 103b 13       		.uleb128 0x13
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5829 10af 9C       		.byte	0x9c
  5830 10b0 C5100000 		.4byte	0x10c5
  5831 10b4 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 159
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 159
 
 
  5832 10b5 F7090000 		.4byte	.LASF137
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5886 1134 00000000 		.4byte	.LFB78
  5887 1138 28000000 		.4byte	.LFE78-.LFB78
  5888 113c 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 160
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 160
 
 
  5889 113d 9C       		.byte	0x9c
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  5943 11b5 BF110000 		.4byte	0x11bf
  5944 11b9 13       		.uleb128 0x13
  5945 11ba 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 161
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 161
 
 
  5946 11bb 50       		.byte	0x50
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6000 123b FD000000 		.4byte	0xfd
  6001 123f 01       		.uleb128 0x1
  6002 1240 50       		.byte	0x50
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 162
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 162
 
 
  6003 1241 00       		.byte	0
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6057 12ba 16070000 		.4byte	.LASF154
  6058 12be 01       		.byte	0x1
  6059 12bf 1C       		.byte	0x1c
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 163
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 163
 
 
  6060 12c0 80000000 		.4byte	0x80
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6114 1335 26       		.uleb128 0x26
  6115 1336 80000000 		.4byte	0x80
  6116 133a 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 164
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 164
 
 
  6117 133b 25       		.uleb128 0x25
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6171 001b 08       		.uleb128 0x8
  6172 001c 00       		.byte	0
  6173 001d 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 165
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 165
 
 
  6174 001e 03       		.uleb128 0x3
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6228 0054 3B       		.uleb128 0x3b
  6229 0055 0B       		.uleb128 0xb
  6230 0056 49       		.uleb128 0x49
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 166
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 166
 
 
  6231 0057 13       		.uleb128 0x13
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6285 008e 11       		.uleb128 0x11
  6286 008f 01       		.uleb128 0x1
  6287 0090 12       		.uleb128 0x12
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 167
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 167
 
 
  6288 0091 06       		.uleb128 0x6
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6342 00c9 3A       		.uleb128 0x3a
  6343 00ca 0B       		.uleb128 0xb
  6344 00cb 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 168
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 168
 
 
  6345 00cc 05       		.uleb128 0x5
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6399 0104 898201   		.uleb128 0x4109
  6400 0107 00       		.byte	0
  6401 0108 11       		.uleb128 0x11
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 169
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 169
 
 
  6402 0109 01       		.uleb128 0x1
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6456 0146 18       		.uleb128 0x18
  6457 0147 9742     		.uleb128 0x2117
  6458 0149 19       		.uleb128 0x19
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 170
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 170
 
 
  6459 014a 01       		.uleb128 0x1
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6513 0180 18       		.uleb128 0x18
  6514 0181 9742     		.uleb128 0x2117
  6515 0183 19       		.uleb128 0x19
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 171
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 171
 
 
  6516 0184 01       		.uleb128 0x1
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6570 01bb 0B       		.uleb128 0xb
  6571 01bc 27       		.uleb128 0x27
  6572 01bd 19       		.uleb128 0x19
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 172
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 172
 
 
  6573 01be 11       		.uleb128 0x11
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6627 01f5 01       		.uleb128 0x1
  6628 01f6 12       		.uleb128 0x12
  6629 01f7 06       		.uleb128 0x6
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 173
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 173
 
 
  6630 01f8 40       		.uleb128 0x40
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6684 022f 00       		.byte	0
  6685 0230 00       		.byte	0
  6686 0231 23       		.uleb128 0x23
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 174
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 174
 
 
  6687 0232 34       		.uleb128 0x34
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6741 0268 26       		.uleb128 0x26
  6742 0269 05       		.uleb128 0x5
  6743 026a 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 175
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 175
 
 
  6744 026b 49       		.uleb128 0x49
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6798 0016 50       		.byte	0x50
  6799 0017 00000000 		.4byte	0
  6800 001b 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 176
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 176
 
 
  6801              	.LLST1:
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6855 00a0 00       		.sleb128 0
  6856 00a1 38       		.byte	0x38
  6857 00a2 24       		.byte	0x24
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 177
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 177
 
 
  6858 00a3 9F       		.byte	0x9f
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6912 0127 9F       		.byte	0x9f
  6913 0128 00000000 		.4byte	0
  6914 012c 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 178
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 178
 
 
  6915              	.LLST9:
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  6969 01be 0100     		.2byte	0x1
  6970 01c0 50       		.byte	0x50
  6971 01c1 30000000 		.4byte	.LVL41
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 179
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 179
 
 
  6972 01c5 50000000 		.4byte	.LVL45
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7026 024f 0400     		.2byte	0x4
  7027 0251 F3       		.byte	0xf3
  7028 0252 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 180
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 180
 
 
  7029 0253 50       		.byte	0x50
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7083 02d5 AC000000 		.4byte	.LFE29
  7084 02d9 0100     		.2byte	0x1
  7085 02db 50       		.byte	0x50
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 181
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 181
 
 
  7086 02dc 00000000 		.4byte	0
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7140 0367 0100     		.2byte	0x1
  7141 0369 50       		.byte	0x50
  7142 036a 06000000 		.4byte	.LVL69
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 182
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 182
 
 
  7143 036e 18000000 		.4byte	.LFE38
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7197 03ed 50       		.byte	0x50
  7198 03ee 10000000 		.4byte	.LVL76
  7199 03f2 34000000 		.4byte	.LFE3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 183
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 183
 
 
  7200 03f6 0400     		.2byte	0x4
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7254 0478 0200     		.2byte	0x2
  7255 047a 30       		.byte	0x30
  7256 047b 9F       		.byte	0x9f
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 184
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 184
 
 
  7257 047c 32000000 		.4byte	.LVL89
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7311 0506 26000000 		.4byte	.LVL112
  7312 050a 0100     		.2byte	0x1
  7313 050c 50       		.byte	0x50
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 185
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 185
 
 
  7314 050d 26000000 		.4byte	.LVL112
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7368 058d 00000000 		.4byte	0
  7369              	.LLST43:
  7370 0591 00000000 		.4byte	.LVL124
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 186
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 186
 
 
  7371 0595 22000000 		.4byte	.LVL126
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7425 061b 50       		.byte	0x50
  7426 061c 9F       		.byte	0x9f
  7427 061d 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 187
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 187
 
 
  7428 0621 00000000 		.4byte	0
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7482 06a5 9F       		.byte	0x9f
  7483 06a6 00000000 		.4byte	0
  7484 06aa 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 188
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 188
 
 
  7485              	.LLST53:
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7539 0740 50       		.byte	0x50
  7540 0741 00000000 		.4byte	0
  7541 0745 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 189
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 189
 
 
  7542              	.LLST60:
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7596 07cf 00000000 		.4byte	.LVL173
  7597 07d3 13000000 		.4byte	.LVL176-1
  7598 07d7 0100     		.2byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 190
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 190
 
 
  7599 07d9 51       		.byte	0x51
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7653 085b 00000000 		.4byte	0
  7654 085f 00000000 		.4byte	0
  7655              	.LLST70:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 191
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 191
 
 
  7656 0863 00000000 		.4byte	.LVL184
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7710 08ec 01       		.uleb128 0x1
  7711 08ed 50       		.byte	0x50
  7712 08ee 9F       		.byte	0x9f
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 192
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 192
 
 
  7713 08ef 00000000 		.4byte	0
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7767 096d 00000000 		.4byte	0
  7768              	.LLST79:
  7769 0971 00000000 		.4byte	.LVL208
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 193
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 193
 
 
  7770 0975 04000000 		.4byte	.LVL209
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7824 09fb 06000000 		.4byte	.LVL230
  7825 09ff 10000000 		.4byte	.LFE77
  7826 0a03 0400     		.2byte	0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 194
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 194
 
 
  7827 0a05 F3       		.byte	0xf3
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7881 00b0 00000000 		.4byte	.LFB26
  7882 00b4 30000000 		.4byte	.LFE26-.LFB26
  7883 00b8 00000000 		.4byte	.LFB27
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 195
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 195
 
 
  7884 00bc 10000000 		.4byte	.LFE27-.LFB27
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7938 0194 80000000 		.4byte	.LFE47-.LFB47
  7939 0198 00000000 		.4byte	.LFB48
  7940 019c 30000000 		.4byte	.LFE48-.LFB48
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 196
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 196
 
 
  7941 01a0 00000000 		.4byte	.LFB49
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  7995 0278 00000000 		.4byte	.LFB76
  7996 027c 10000000 		.4byte	.LFE76-.LFB76
  7997 0280 00000000 		.4byte	.LFB77
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 197
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 197
 
 
  7998 0284 10000000 		.4byte	.LFE77-.LFB77
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8052 00bc 10000000 		.4byte	.LFE30
  8053 00c0 00000000 		.4byte	.LFB31
  8054 00c4 10000000 		.4byte	.LFE31
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 198
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 198
 
 
  8055 00c8 00000000 		.4byte	.LFB32
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8109 01a0 00000000 		.4byte	.LFB51
  8110 01a4 20000000 		.4byte	.LFE51
  8111 01a8 00000000 		.4byte	.LFB53
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 199
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 199
 
 
  8112 01ac 1C000000 		.4byte	.LFE53
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8166 0284 00000000 		.4byte	0
  8167              		.section	.debug_line,"",%progbits
  8168              	.Ldebug_line0:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 200
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 200
 
 
  8169 0000 02080000 		.section	.debug_str,"MS",%progbits,1
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8189      69736563 
  8189      6F6E6473 
  8189      00
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 201
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 201
 
 
  8190              	.LASF50:
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8213      72727570 
  8213      74537461 
  8213      746500
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 202
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 202
 
 
  8214              	.LASF17:
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8236              	.LASF117:
  8237 01dc 4379456E 		.ascii	"CyEnableInts\000"
  8237      61626C65 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 203
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 203
 
 
  8237      496E7473 
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8261 0287 43794465 		.ascii	"CyDelayUs\000"
  8261      6C617955 
  8261      7300
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 204
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 204
 
 
  8262              	.LASF8:
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8283      73546963 
  8283      6B476574 
  8283      43616C6C 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 205
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 205
 
 
  8283      6261636B 
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8307      7300
  8308              	.LASF21:
  8309 03f1 63795379 		.ascii	"cySysTickCallback\000"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 206
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 206
 
 
  8309      73546963 
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8333 048d 63796465 		.ascii	"cydelay_freq_hz\000"
  8333      6C61795F 
  8333      66726571 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 207
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 207
 
 
  8333      5F687A00 
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8355 053c 706D5477 		.ascii	"pmTwCfg0State\000"
  8355      43666730 
  8355      53746174 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 208
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 208
 
 
  8355      6500
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8377      324B485A 
  8377      5F53746F 
  8377      7000
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 209
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 209
 
 
  8378              	.LASF28:
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8400 06be 54415342 		.ascii	"TASBot.cydsn\000"
  8400      6F742E63 
  8400      7964736E 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 210
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 210
 
 
  8400      00
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8424      6E657261 
  8424      7465645F 
  8424      536F7572 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 211
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 211
 
 
  8424      63655C50 
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8451              	.LASF30:
  8452 080c 43794275 		.ascii	"CyBusClk_SetDivider\000"
  8452      73436C6B 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 212
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 212
 
 
  8452      5F536574 
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8472      53746174 
  8472      757300
  8473              	.LASF103:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 213
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 213
 
 
  8474 0915 746D7053 		.ascii	"tmpStatus\000"
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 1
  8495              	.LASF78:
  8496 09c3 63757272 		.ascii	"current\000"
  8496      656E7400 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccSxGEpA.s 			page 214
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc3WAWuF.s 			page 214
 
 
  8497              	.LASF49:

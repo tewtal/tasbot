@@ -27,7 +27,7 @@
 *  Place your includes, defines and code here 
 ********************************************************************************/
 /* `#START P2_IRQ_intc` */
-
+#include <main.h>
 /* `#END` */
 
 #ifndef CYINT_IRQ_BASE
@@ -165,7 +165,22 @@ CY_ISR(P2_IRQ_Interrupt)
 
     /*  Place your Interrupt code here. */
     /* `#START P2_IRQ_Interrupt` */
+    P2_RegD0_WriteRegValue(data[3]);
+    P2_RegD1_WriteRegValue(data[4]);
+    P2_RegD2_WriteRegValue(data[5]);
 
+    if(playing)
+    {
+        if(!use_timer[1])
+        {
+            input_ptr[1] = (input_ptr[1]+1)%INPUT_BUF_SIZE;
+            data[3] = input[3][input_ptr[1]]; 
+            data[4] = input[4][input_ptr[1]]; 
+            data[5] = input[5][input_ptr[1]]; 
+            latches[1]++;
+        }
+        sent = 1;
+    }
     /* `#END` */
 }
 

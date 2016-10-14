@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 1
 
 
    1              		.syntax unified
@@ -17,7 +17,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   14              		.file	"CySpc.c"
   15              		.text
   16              	.Ltext0:
-  17              		.section	.gnu.lto_.profile.be9c4c2f,"",%progbits
+  17              		.section	.gnu.lto_.profile.c0d68aea,"",%progbits
   18 0000 789C6366 		.ascii	"x\234cf```c\200\000F\206\371\314\177\030\001\005 \001"
   18      60606063 
   18      80004686 
@@ -25,7 +25,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   18      01052001 
   19 0014 AA       		.ascii	"\252"
   20              		.text
-  21              		.section	.gnu.lto_.jmpfuncs.be9c4c2f,"",%progbits
+  21              		.section	.gnu.lto_.jmpfuncs.c0d68aea,"",%progbits
   22 0000 789C7550 		.ascii	"x\234uPK\016\302P\010d\340i\353\367i\352\312\213v\311"
   22      4B0EC250 
   22      0864E069 
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   28      0FC5ED7C 
   28      39D5BB3E 
   28      951B5C71 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 2
 
 
   28      94
@@ -66,7 +66,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   29      0FBC0094 
   29      3E1AF2
   30              		.text
-  31              		.section	.gnu.lto_.inline.be9c4c2f,"",%progbits
+  31              		.section	.gnu.lto_.inline.c0d68aea,"",%progbits
   32 0000 789C7D91 		.ascii	"x\234}\221\277K\034Q\020\307\2773\357\271\267\267\277"
   32      BF4B1C51 
   32      10C7BF33 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   41      9D31E84B 
   41      E634
   42 00b7 01796B05 		.ascii	"\001yk\005\351\342\177c\251\013\335\216\323DC\037\214"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 3
 
 
   42      E9E27F63 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   53      E2FC9B
   54 0188 EE28218A 		.ascii	"\356(!\212\275\305\354\313\022!\234\224|p\265\370$/"
   54      BDC5ECCB 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 4
 
 
   54      12219C94 
@@ -197,7 +197,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   57 01c3 03760B7D 		.ascii	"\003v\013}\000"
   57      00
   58              		.text
-  59              		.section	.gnu.lto_.pureconst.be9c4c2f,"",%progbits
+  59              		.section	.gnu.lto_.pureconst.c0d68aea,"",%progbits
   60 0000 789C25C1 		.ascii	"x\234%\301\313\025\300\020\000E\301\207\210$\376\207"
   60      CB15C010 
   60      0045C187 
@@ -214,7 +214,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   62      03
   63 0033 19       		.ascii	"\031"
   64              		.text
-  65              		.section	.gnu.lto_CySpcLoadMultiByte.part.0.be9c4c2f,"",%progbits
+  65              		.section	.gnu.lto_CySpcLoadMultiByte.part.0.c0d68aea,"",%progbits
   66 0000 789C8D54 		.ascii	"x\234\215T]lTE\024\2363s\377v\357\266\333\370\202\331"
   66      5D6C5445 
   66      149E3373 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   70      EDD29254 
   70      A02D9488 
   70      890DA577 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 5
 
 
   70      6BD4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   82      6CB75FB3 
   82      DE19949B 
   82      D16EC080 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 6
 
 
   83 0131 66FD1CD5 		.ascii	"f\375\034\325\244\200x1\274\264\342\235==\370\247+6"
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   94 01f5 23B81FA7 		.ascii	"#\270\037\247\340\002e)@\371\252\240\255J\265\025d\304"
   94      E0026529 
   94      40F9AAA0 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 7
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 7
 
 
   94      AD4AB515 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  106      6916E836 
  106      A67A6F1E 
  106      E7785F08 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 8
 
 
  106      CA54DB
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  118      70636334 
  118      128B596F 
  118      346FDF1E 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 9
 
 
  118      891AB11D 
@@ -487,7 +487,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  119      063B1E00 
  119      7525E706 
  120              		.text
- 121              		.section	.gnu.lto_CySpcLoadMultiByte.be9c4c2f,"",%progbits
+ 121              		.section	.gnu.lto_CySpcLoadMultiByte.c0d68aea,"",%progbits
  122 0000 789C8D54 		.ascii	"x\234\215T]L\\E\024\2363sw\356]\026\262\253O\272\211"
  122      5D4C5C45 
  122      149E3373 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  132 00b9 DCE20B1C 		.ascii	"\334\342\013\034ZCK\375\256Y\276\312\331S\014\315\213"
  132      5A434BFD 
  132      AE59BECA 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 10
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 10
 
 
  132      D9530CCD 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  143      9562BB3E 
  143      70683C21 
  144 019b 32D6DD93 		.ascii	"2\326\335\223n\367\332e\223\353\353[\260x\360\375\375"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 11
 
 
  144      6EF7DA65 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  155      DC539E1E 
  156 026c B8DE6112 		.ascii	"\270\336a\022X\276\306\240-\005v\260\211L\255|\247\372"
  156      58BEC6A0 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 12
 
 
  156      2D0576B0 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  167      89C1130D 
  167      41353116 
  167      2A5CD50A 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 13
 
 
  168 0346 CB47C743 		.ascii	"\313G\307C\273t!\\\017\253\354\317\377\251\254\211\370"
@@ -778,13 +778,13 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  179      DCF3BE4F 
  179      1616E5
  180 0418 151517C2 		.ascii	"\025\025\027\302\236\177\0015^ \370"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 14
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 14
 
 
  180      9E7F0135 
  180      5E20F8
  181              		.text
- 182              		.section	.gnu.lto_CySpcLoadRow.part.1.be9c4c2f,"",%progbits
+ 182              		.section	.gnu.lto_CySpcLoadRow.part.1.c0d68aea,"",%progbits
  183 0000 789C7593 		.ascii	"x\234u\223ML\023A\024\307\347\315\354n[\250BL\274\364"
  183      4D4C1341 
  183      14C7E7CD 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  193      7D33AE50 
  193      B24009DC 
  193      020BB482 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 15
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 15
 
 
  193      4524BF
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  204      1B322000 
  205 019f A2E058E7 		.ascii	"\242\340X\347\373\330xB\250\210\210\225\216-\234'\223"
  205      FBD87842 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 16
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 16
 
 
  205      A8888895 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  216      5B556440 
  216      45C88D35 
  216      B4B8D2A4 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 17
 
 
  217 0283 20F00881 		.ascii	" \360\010\201q\374\030W\035\306Ei\320\221B\360\333c"
@@ -1004,7 +1004,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  225      001E5169 
  225      AB
  226              		.text
- 227              		.section	.gnu.lto_CySpcLoadRow.be9c4c2f,"",%progbits
+ 227              		.section	.gnu.lto_CySpcLoadRow.c0d68aea,"",%progbits
  228 0000 789C8D54 		.ascii	"x\234\215TYLSA\024\235;\363\336kKk\332\360g?\\\202\004"
  228      594C5341 
  228      149D3BF3 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  230      E00313C3 
  230      94565143 
  230      04B7C43D 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 18
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 18
 
 
  230      EE2B
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  242 0104 5B7C9D16 		.ascii	"[|\235\026\247\032T)^\362}X\"P-\231/\237y>\330\331\012"
  242      A71A5429 
  242      5EF27D58 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 19
 
 
  242      22502D99 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  254 01e4 484D04EE 		.ascii	"HM\004\356\242\277\367\360\360\373\376\301\346\345\002"
  254      A2BFF7F0 
  254      F0FBFEC1 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 20
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 20
 
 
  254      E6E502
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  266      B2D388CF 
  266      C43EC21E 
  267 02c1 877A24FE 		.ascii	"\207z$\376\022\316t\035\360\323]?\371^n\216SK\224\212"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 21
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 21
 
 
  267      12CE741D 
@@ -1246,7 +1246,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  276 035f 0D8E15B7 		.ascii	"\015\216\025\267\320"
  276      D0
  277              		.text
- 278              		.section	.gnu.lto_CySpcLoadRowFull.part.2.be9c4c2f,"",%progbits
+ 278              		.section	.gnu.lto_CySpcLoadRowFull.part.2.c0d68aea,"",%progbits
  279 0000 789C7555 		.ascii	"x\234uU_L[U\030?\3379\267\267\377.-\352\213\351\313"
  279      5F4C5B55 
  279      183FDF39 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  280      69782531 
  280      0C4B820F 
  281 002d 263B850E 		.ascii	"&;\205\016$\231:\221\031\206\240\235N\004\306(\312\230"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 22
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 22
 
 
  281      24993A91 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  292      F33114
  293 00ff 303801A5 		.ascii	"08\001\245\250\033\374h\345]\233x\\\341.\374z\367\216"
  293      A81BFC68 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 23
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 23
 
 
  293      E55D9B78 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  305      317C0125 
  305      3086F738 
  305      DE5FE13D 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 24
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 24
 
 
  306 01e1 25547D2C 		.ascii	"%T},\372\024v!c\266M\251\322 MDD\036\2242\227\273>\363"
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  317      5979FFAF 
  317      5E35B8
  318 02bb 76293179 		.ascii	"v)1y\347\220\031\325>0\265\222\201z\324\270\337\016"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 25
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 25
 
 
  318      E79019D5 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  329      ACE763F0 
  329      600C88
  330 038d BBDCD3DF 		.ascii	"\273\334\323\337\352UA\003\203\330\226,\215Q\226<*\007"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 26
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 26
 
 
  330      EA554103 
@@ -1547,7 +1547,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  339 043b 7F013A9F 		.ascii	"\177\001:\237'\""
  339      2722
  340              		.text
- 341              		.section	.gnu.lto_CySpcLoadRowFull.be9c4c2f,"",%progbits
+ 341              		.section	.gnu.lto_CySpcLoadRowFull.c0d68aea,"",%progbits
  342 0000 789C8D54 		.ascii	"x\234\215T[L\\U\024=\373\334;\367\316\2530%5mIZ5\210"
  342      5B4C5C55 
  342      143DFBDC 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  343      0D1FEA9F 
  343      09BF24
  344 0027 067148F8 		.ascii	"\006qH\370\260\030\036\032L\232\336a\246\005\014)\004"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 27
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 27
 
 
  344      B0181E1A 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  355      C0197C09 
  356 00fa D1701EA2 		.ascii	"\321p\036\242\251\302\005\330\201\320\362\201\306&P"
  356      A9C205D8 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 28
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 28
 
 
  356      81D0F281 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  367      6B37
  368 01d5 CE87E82A 		.ascii	"\316\207\350*4\2545\020\246W\376TwGQ\342\005\375qn\371"
  368      34AC3510 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 29
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 29
 
 
  368      A657FE54 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  379      29B7452A 
  380 02b0 1B52C7D3 		.ascii	"\033R\307\323^E\344(xn\273\267\0071\324\314\345-\005"
  380      5E45E428 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 30
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 30
 
 
  380      786EBBB7 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  392 0386 3CB4CAAD 		.ascii	"<\264\312\255\250\325\202&\321L\365K\237\375\266\001"
  392      A8D58226 
  392      D14CF54B 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 31
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 31
 
 
  392      9FFDB601 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  404      C13F8D3C 
  404      C3BCCCED 
  404      0B1CC7
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 32
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 32
 
 
  405 046c 160CC341 		.ascii	"\026\014\303A\206\006\375|\3632\337 \034Y\203S\305!"
@@ -1904,7 +1904,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  413      F9374B06 
  413      B001
  414              		.text
- 415              		.section	.gnu.lto_CySpcWriteRow.part.3.be9c4c2f,"",%progbits
+ 415              		.section	.gnu.lto_CySpcWriteRow.part.3.c0d68aea,"",%progbits
  416 0000 789C8D53 		.ascii	"x\234\215SYHTa\024\376\317\377\337m\246\251$\010b\036"
  416      59485461 
  416      14FECFFF 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  418 0025 1D42288D 		.ascii	"\035B(\215q|\360\311;:\255\204M\226ce\213\355\233\251"
  418      717CF0C9 
  418      3B3AAD84 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 33
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 33
 
 
  418      4D966365 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  430 0100 793CDC3F 		.ascii	"y<\334?\"d2\234\314\340\261\017\305vK\365m\225\271\021"
  430      2264329C 
  430      CCE0B10F 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 34
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 34
 
 
  430      C5764BF5 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  442 01e2 E7964B26 		.ascii	"\347\226K&{\276\272\376\300\334\223P\352;\3423F\271"
  442      7BBEBAFE 
  442      C0DC9350 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 35
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 35
 
 
  442      EA3BE233 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  454 02ba 283A4699 		.ascii	"(:F\231\251\304C)\241\023<x\250s\372a\265K\274!\361"
  454      A9C44329 
  454      A1133C78 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 36
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 36
 
 
  454      A873FA61 
@@ -2144,7 +2144,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  463 0361 39D97F00 		.ascii	"9\331\177\000#\256\342\253"
  463      23AEE2AB 
  464              		.text
- 465              		.section	.gnu.lto_CySpcWriteRow.be9c4c2f,"",%progbits
+ 465              		.section	.gnu.lto_CySpcWriteRow.c0d68aea,"",%progbits
  466 0000 789C6552 		.ascii	"x\234eR]H\223Q\030>\3579\337\276\375\206\322U\354\302"
  466      5D489351 
  466      183EEF39 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  468 0028 175E8867 		.ascii	"\027^\210g:I\"lX\212\266\264\354\307\3767\3234\377Y"
  468      3A49226C 
  468      588AB6B4 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 37
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 37
 
 
  468      ECC7FE37 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  480 00fd 6D316986 		.ascii	"m1i\206\212\262\245m\245\331\224R]\354\346\371\330W"
  480      8AB2A56D 
  480      A5D99452 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 38
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 38
 
 
  480      5DECE6F9 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  491      FDF3
  492 01d5 8CC06854 		.ascii	"\214\300hTAH\223\377N\\^\025\365~\243\227\313\373\021"
  492      414893FF 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 39
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 39
 
 
  492      4E5C5E15 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  503      9C572A8A 
  504 02b4 CA2FDB5D 		.ascii	"\312/\333]\245\236\252C\242(\264_*+\365T:\234\252\333"
  504      A59EAA43 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 40
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 40
 
 
  504      A228B45F 
@@ -2348,7 +2348,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  505      FF02BB7A 
  505      3CFA
  506              		.text
- 507              		.section	.gnu.lto_CySpcEraseSector.part.4.be9c4c2f,"",%progbits
+ 507              		.section	.gnu.lto_CySpcEraseSector.part.4.c0d68aea,"",%progbits
  508 0000 789C8D52 		.ascii	"x\234\215RKHTQ\030>\3779\367^\307\034QZ\316\242\007"
  508      4B485451 
  508      183EFF39 
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  517      1D5EBF7C 
  517      BDB6
  518 00b8 15BF70F6 		.ascii	"\025\277p\366\2353\270\0076\270\0176\022|\000Y\010m"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 41
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 41
 
 
  518      9D33B807 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  529      F757A5B5 
  530 018d 93A7D663 		.ascii	"\223\247\326cY\343\006\004\320\363\023\362\014O\241"
  530      59E30604 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 42
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 42
 
 
  530      D0F313F2 
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  542 0261 C4F8C648 		.ascii	"\304\370\306HE\232\272Ob\020\004\233\210\254\227\340"
  542      459ABA4F 
  542      6210049B 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 43
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 43
 
 
  542      88AC97E0 
@@ -2542,7 +2542,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  546      5D5CF40B 
  546      D2825C26 
  547              		.text
- 548              		.section	.gnu.lto_CySpcEraseSector.be9c4c2f,"",%progbits
+ 548              		.section	.gnu.lto_CySpcEraseSector.c0d68aea,"",%progbits
  549 0000 789C6552 		.ascii	"x\234eR]H\223Q\030>\3179\237\3376'L\242\213\330\205"
  549      5D489351 
  549      183ECF39 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  555      992C365E 
  555      96315922 
  556 0081 360C4055 		.ascii	"6\014@U\006\326\310\205\201F|\347\013\034\203\261\364"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 44
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 44
 
 
  556      06D6C885 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  568 0152 362BD410 		.ascii	"6+\324\0206hKl\226\024T\302s\024\021U1\205\246\370\253"
  568      36684B6C 
  568      961454C2 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 45
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 45
 
 
  568      73141155 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  580 0237 D1C32E7F 		.ascii	"\321\303.\177]\300\353s\037r\371k\366\270k\352]'\275"
  580      5DC0EB73 
  580      1F72F96B 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 46
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 46
 
 
  580      F6B86BEA 
@@ -2712,7 +2712,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  582      DA7F79DC 
  582      FEE8
  583              		.text
- 584              		.section	.gnu.lto_CySpcGetTemp.part.5.be9c4c2f,"",%progbits
+ 584              		.section	.gnu.lto_CySpcGetTemp.part.5.c0d68aea,"",%progbits
  585 0000 789C8592 		.ascii	"x\234\205\222MHTQ\024\307\357\271\367\2757\243c\215"
  585      4D485451 
  585      14C7EFB9 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  593      305C0E
  594 00a2 061F870C 		.ascii	"\006\037\207\014Z\202F\313\304T(\221UpY\312\206\305"
  594      5A8246CB 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 47
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 47
 
 
  594      C4542891 
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  605      76BF
  606 0177 73851BD0 		.ascii	"s\205\033\320\203\335F\251[\350\205N@At$9\223Cz\243"
  606      83DD46A9 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 48
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 48
 
 
  606      5BE8854E 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  617      5B0104C6 
  617      3BB2B5B0 
  617      749F
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 49
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 49
 
 
  618 025b AFC2575D 		.ascii	"\257\302W]V\353;x\300SYW\355\365\225\356\367T\226\024"
@@ -2896,7 +2896,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  620      FC04737D 
  620      34B5
  621              		.text
- 622              		.section	.gnu.lto_CySpcGetTemp.be9c4c2f,"",%progbits
+ 622              		.section	.gnu.lto_CySpcGetTemp.c0d68aea,"",%progbits
  623 0000 789C6551 		.ascii	"x\234eQ]H\223Q\030>\3179\237\337\346V8\242\253]HabA"
  623      5D489351 
  623      183ECF39 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  630      99B33D8C 
  630      DA17A9
  631 009a F76953B5 		.ascii	"\367iS\2650T[\234K\027\353[nK\031]Me\006wf.\216\321"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 50
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 50
 
 
  631      30545B9C 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  642      E958EB6E 
  642      0C47A4CE 
  642      7271F973 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 51
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 51
 
 
  643 017a AE47DAF5 		.ascii	"\256G\332\365\364\333\334\266s\004W\"qZ\316\304\023"
@@ -3054,11 +3054,11 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  653      3FBFBBE7 
  653      2E
  654              		.text
- 655              		.section	.gnu.lto_CySpcGetAlgorithm.part.6.be9c4c2f,"",%progbits
+ 655              		.section	.gnu.lto_CySpcGetAlgorithm.part.6.c0d68aea,"",%progbits
  656 0000 789C8591 		.ascii	"x\234\205\221KH[A\024\206\347\237\031\257)\032#.\263"
  656      4B485B41 
  656      1486E79F 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 52
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 52
 
 
  656      19AF291A 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  668 00d8 79EF9F5C 		.ascii	"y\357\237\\\205\325k\214\251\306k\004\270\012\301\347"
  668      85D56B8C 
  668      A9C66B04 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 53
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 53
 
 
  668      B80AC1E7 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  680      B6353786 
  680      9ABB
  681 01b8 822FC30D 		.ascii	"\202/\303\015aauD[\243\235\035\177\001\006\211\313\320"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 54
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 54
 
 
  681      61617544 
@@ -3186,7 +3186,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  681      7F010689 
  681      CBD0
  682              		.text
- 683              		.section	.gnu.lto_CySpcGetAlgorithm.be9c4c2f,"",%progbits
+ 683              		.section	.gnu.lto_CySpcGetAlgorithm.c0d68aea,"",%progbits
  684 0000 789C6551 		.ascii	"x\234eQMHTQ\024>\337\275o\336LM\321\020\255f!\205\201"
  684      4D485451 
  684      143EDFBD 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  693      16C10768 
  693      12
  694 00bf 70A66F72 		.ascii	"p\246or\321\325\207a\211\305\271\212n\274\311\304\037"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 55
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 55
 
 
  694      D1D58761 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  706      6ED5DF91 
  706      0AD590F2 
  706      D76E14
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 56
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 56
 
 
  707 0199 0772AA67 		.ascii	"\007r\252g\323\\4\201\252rW\225$4\201\036\016\300o)"
@@ -3330,7 +3330,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  712      0F
  713 0201 93ADD009 		.ascii	"\223\255\320\011"
  714              		.text
- 715              		.section	.gnu.lto_CySpcStart.be9c4c2f,"",%progbits
+ 715              		.section	.gnu.lto_CySpcStart.c0d68aea,"",%progbits
  716 0000 789C7D91 		.ascii	"x\234}\221\315KTQ\030\306\337\347\334{g.\014I\264\262"
  716      CD4B5451 
  716      18C6DFE7 
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  721 0058 1E9EE7F7 		.ascii	"\036\236\347\367>\347=\226\354\377\322\034\236\0229"
  721      3EE73D96 
  721      ECFFD21C 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 57
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 57
 
 
  721      9E1239
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  733      D5B2B64D 
  733      F4371B2F 
  733      56DC
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 58
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 58
 
 
  734 0139 E828BAC9 		.ascii	"\350(\272\311de\271f\215\341N\331G\250\022\230F\032"
@@ -3468,7 +3468,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  743 01e4 AA9FFF33 		.ascii	"\252\237\3773\341\245"
  743      E1A5
  744              		.text
- 745              		.section	.gnu.lto_CySpcStop.be9c4c2f,"",%progbits
+ 745              		.section	.gnu.lto_CySpcStop.c0d68aea,"",%progbits
  746 0000 789C7D91 		.ascii	"x\234}\221\315KTQ\030\306\337\347\334;w.\014I\264\222"
  746      CD4B5451 
  746      18C6DFE7 
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  747      205C14FD 
  747      05B3701B 
  747      CC764062 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 59
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 59
 
 
  747      BA411B1D 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  759      AFF187AB 
  759      B582A160 
  759      6B61
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 60
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 60
 
 
  760 00fa 8F616D2A 		.ascii	"\217am*\213\245&\026/\315\250\201-]\321n\250\230\305"
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  771 01cc 973B91ED 		.ascii	"\227;\221\355\313\034\317e\316f\013\371\256\274\264"
  771      CB1CCF65 
  771      CE660BF9 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 61
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 61
 
 
  771      AEBCB4
@@ -3608,7 +3608,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  772      13CA92E3 
  772      15
  773              		.text
- 774              		.section	.gnu.lto_CySpcReadData.be9c4c2f,"",%progbits
+ 774              		.section	.gnu.lto_CySpcReadData.c0d68aea,"",%progbits
  775 0000 789C6553 		.ascii	"x\234eS]HTA\024\2363\367\356\275W\257\246\005E\354K"
  775      5D485441 
  775      149E33F7 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  784      DFBE774D 
  784      DAE7
  785 00ba B7873963 		.ascii	"\267\2079c\213\234\301>'\354q\222\306}HB\334\314\323"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 62
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 62
 
 
  785      8B9CC13E 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  796      28FB96B1 
  797 018d 39CE71D1 		.ascii	"9\316q\321F\301\023\014\365\305\3124\370\031m\274\237"
  797      46C1130C 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 63
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 63
 
 
  797      F5C5CA34 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  808      AF2CDF
  809 0262 5AABA279 		.ascii	"Z\253\242y\250\347\232\361\317v\373\272\355\016e\333"
  809      A8E79AF1 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 64
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 64
 
 
  809      CF76FBBA 
@@ -3829,7 +3829,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  819      05E52F61 
  819      9E
  820              		.text
- 821              		.section	.gnu.lto_CySpcLock.be9c4c2f,"",%progbits
+ 821              		.section	.gnu.lto_CySpcLock.c0d68aea,"",%progbits
  822 0000 789C7D53 		.ascii	"x\234}SMHTQ\024\276\347\336\367\236\363\243\215D\004"
  822      4D485451 
  822      14BEE7DE 
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  823 0013 BA90C2C0 		.ascii	"\272\220\302\300\242\260Mn\332\004\271hW\202[!\302\006"
  823      A2B04D6E 
  823      DA04B968 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 65
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 65
 
 
  823      57825B21 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  834      03477C
  835 00e6 B2C1E595 		.ascii	"\262\301\345\225\361\370.\300l\270\005b9\001\375(\347"
  835      F1F82EC0 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 66
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 66
 
 
  835      6CB80562 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  846      49280177 
  847 01bd 1AEE91C9 		.ascii	"\032\356\221\311\020\300m6\010\236\367\356\254?\234"
  847      10C06D36 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 67
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 67
 
 
  847      089EF7EE 
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  858      2444
  859 028f 1A3602F2 		.ascii	"\0326\002\362Y<\362R7\223\264\355\324w\274%\313\343"
  859      593CF252 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 68
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 68
 
 
  859      3793B4ED 
@@ -4068,7 +4068,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  868      C27E033B 
  868      7FC2CF
  869              		.text
- 870              		.section	.gnu.lto_CySpcUnlock.be9c4c2f,"",%progbits
+ 870              		.section	.gnu.lto_CySpcUnlock.c0d68aea,"",%progbits
  871 0000 789C7552 		.ascii	"x\234uRMHTQ\024>\337\275of^3\026Q;\301E\030X\020RD\320"
  871      4D485451 
  871      143EDFBD 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  872      254D4BA1 
  872      C26651C4 
  872      28C3B868 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 69
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 69
 
 
  872      3179471F 
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  884      A717532F 
  884      44D3FCEA 
  884      0BE4F8C0 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 70
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 70
 
 
  885 0107 BB9C447B 		.ascii	"\273\234D{\332\3762%\264\320wa\260O\357\233\013\203"
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  896      7FA3EF73 
  896      34C7D047 
  896      A867A942 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 71
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 71
 
 
  896      DEE1
@@ -4239,7 +4239,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  904      E90F94F2 
  904      3F81
  905              		.text
- 906              		.section	.gnu.lto_.symbol_nodes.be9c4c2f,"",%progbits
+ 906              		.section	.gnu.lto_.symbol_nodes.c0d68aea,"",%progbits
  907 0000 789C55D0 		.ascii	"x\234U\320;n\302@\024\205\3413s=~?\3016%\033\311\336"
  907      3B6EC240 
  907      1485E133 
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  910 003d BC8E0069 		.ascii	"\274\216\000i\336\2161\254\243\231\033\357\203\357\025"
  910      DE8E31AC 
  910      A3991BEF 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 72
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 72
 
 
  910      83EF15
@@ -4303,7 +4303,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  919 00da 0391C384 		.ascii	"\003\221\303\204\277"
  919      BF
  920              		.text
- 921              		.section	.gnu.lto_.refs.be9c4c2f,"",%progbits
+ 921              		.section	.gnu.lto_.refs.c0d68aea,"",%progbits
  922 0000 789C6366 		.ascii	"x\234cf``\020g\200\000fA\006!\026F!6FaAf\021F!f\006"
  922      60601067 
  922      80006641 
@@ -4313,12 +4313,12 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  923      1E06000C 
  923      FD00E7
  924              		.text
- 925              		.section	.gnu.lto_.decls.be9c4c2f,"",%progbits
+ 925              		.section	.gnu.lto_.decls.c0d68aea,"",%progbits
  926 0000 789C9D58 		.ascii	"x\234\235XyP\024\351\025\357\257{\006\206a\0007\256"
  926      795014E9 
  926      15EFAF7B 
  926      06866100 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 73
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 73
 
 
  926      37AE
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  938      3E843C3F 
  938      B0BFC07D 
  938      9590
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 74
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 74
 
 
  939 00e3 8B847CDB 		.ascii	"\213\204|\333\013\363w\177\015\246\024o\025X\235\220"
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  950      7D1C7741 
  950      CF66898E 
  950      8FC0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 75
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 75
 
 
  951 01b6 F79E646E 		.ascii	"\367\236dn\377\021\354]!\227\023r\336\027\366&\333\313"
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  962      32E80C5A 
  962      86B2D132 
  962      06E5A3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 76
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 76
 
 
  963 028f 15104162 		.ascii	"\025\020AbQ.8\363\260\023\020\240Z{\315\376\375*n-\222"
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  974 0368 FA96881E 		.ascii	"\372\226\210\036/\316~\311\021\037\304\241\213\2108"
  974      2FCE7EC9 
  974      111FC4A1 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 77
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 77
 
 
  974      8B8838
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  986      CD7CADD9 
  986      5CC3F308 
  986      E7A03609 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 78
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 78
 
 
  987 0453 DF3691EF 		.ascii	"\3376\221\357u'\371\336\260\307\367\246S|o\021\276?"
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  998      0F8884FB 
  998      A28496B9 
  999 0523 1B294AEE 		.ascii	"\033)J\356\016\225p\257\252\343*K\007b&_:\020\220\204"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 79
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 79
 
 
  999      0E9570AF 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1010      FF7379F0 
  1010      2CE66116 
  1011 05f7 79F48597 		.ascii	"y\364\205\227\347r\234\211\362(-\215\336\347\266\240"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 80
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 80
 
 
  1011      E7729C89 
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1022      74B94A5B 
  1022      20473C4C 
  1023 06d6 4D986EAA 		.ascii	"M\230n\252\215\364\342\016pD\301\361\252\370\\%m\302"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 81
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 81
 
 
  1023      8DF4E20E 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1035 07a6 E6238303 		.ascii	"\346#\203\003\006%7G)DO\367M \312\341i\203\225\003\244"
  1035      06253747 
  1035      29444FF7 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 82
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 82
 
 
  1035      4D20CAE1 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1047      78960E19 
  1047      AE6964FB 
  1047      0E0EB6
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 83
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 83
 
 
  1048 0893 8A28A4FB 		.ascii	"\212(\244\373\016\376\306\333\334\213k\031\256\262h"
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1059      7B8AD37D 
  1059      4152AD9D 
  1059      24F28FA0 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 84
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 84
 
 
  1059      F955
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1071      65B549A7 
  1071      FF87EEFB 
  1071      601AB44E 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 85
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 85
 
 
  1072 0a4c BD233E7C 		.ascii	"\275#>|\032\370]\020\240\357\370\236F\255\177k\301\017"
@@ -5078,7 +5078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1079      6B56FF0F 
  1079      7E84FBCF 
  1080              		.text
- 1081              		.section	.gnu.lto_.symtab.be9c4c2f,"",%progbits
+ 1081              		.section	.gnu.lto_.symtab.c0d68aea,"",%progbits
  1082 0000 43795370 		.ascii	"CySpcLoadMultiByte\000\000\000\000\000\000\000\000\000"
  1082      634C6F61 
  1082      644D756C 
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1085      64526F77 
  1085      46756C6C 
  1085      00000000 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 86
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 86
 
 
  1086 0057 000000E2 		.ascii	"\000\000\000\342\000\000\000CySpcWriteRow\000\000\000"
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1097      00000015 
  1097      01
  1098 013f 00005370 		.ascii	"\000\000SpcLockState\000\000\000\000\000\000\000\000"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 87
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 87
 
 
  1098      634C6F63 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1113              		.section	.text.CySpcStart,"ax",%progbits
  1114              		.align	2
  1115              		.global	CySpcStart
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 88
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 88
 
 
  1116              		.thumb
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
   49:.\Generated_Source\PSoC5/CySpc.c **** 
   50:.\Generated_Source\PSoC5/CySpc.c **** 
   51:.\Generated_Source\PSoC5/CySpc.c **** #if(CY_PSOC5)
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 89
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 89
 
 
   52:.\Generated_Source\PSoC5/CySpc.c **** 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1145              		.loc 1 81 0
  1146 001a BDE80840 		pop	{r3, lr}
  1147              		.cfi_restore 14
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 90
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 90
 
 
  1148              		.cfi_restore 3
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1185 000a 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
  1186 000c 03F0F703 		and	r3, r3, #247
  1187 0010 0B70     		strb	r3, [r1]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 91
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 91
 
 
  1188              		.loc 1 96 0
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1217              		.cfi_startproc
  1218              		@ args = 0, pretend = 0, frame = 0
  1219              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 92
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 92
 
 
  1220              	.LVL4:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  131:.\Generated_Source\PSoC5/CySpc.c **** 
  132:.\Generated_Source\PSoC5/CySpc.c ****     return(i);
  133:.\Generated_Source\PSoC5/CySpc.c **** }
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 93
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 93
 
 
  1261              		.loc 1 133 0
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  164:.\Generated_Source\PSoC5/CySpc.c ****     uint8 i;
  165:.\Generated_Source\PSoC5/CySpc.c **** 
  166:.\Generated_Source\PSoC5/CySpc.c ****     /***************************************************************************
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 94
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 94
 
 
  167:.\Generated_Source\PSoC5/CySpc.c ****     * Check if number is correct for array. Number must be less than
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1306              		.loc 1 198 0
  1307 0012 0420     		movs	r0, #4
  1308              	.LVL10:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 95
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 95
 
 
  1309 0014 F0BD     		pop	{r4, r5, r6, r7, pc}
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  207:.\Generated_Source\PSoC5/CySpc.c **** }
  1345              		.loc 1 207 0
  1346 003c F0BD     		pop	{r4, r5, r6, r7, pc}
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 96
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 96
 
 
  1347              	.LVL15:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1388              	.LBE4:
  193:.\Generated_Source\PSoC5/CySpc.c ****             }
  1389              		.loc 1 193 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 97
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 97
 
 
  1390 0060 0720     		movs	r0, #7
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1412              		@ frame_needed = 0, uses_anonymous_args = 0
  1413              		@ link register save eliminated.
  1414              	.LVL23:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 98
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 98
 
 
  1415 0000 F0B4     		push	{r4, r5, r6, r7}
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1451 0020 4AB1     		cbz	r2, .L47
  256:.\Generated_Source\PSoC5/CySpc.c ****             {
  257:.\Generated_Source\PSoC5/CySpc.c ****                 CY_SPC_CPU_DATA_REG = buffer[i];
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 99
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 99
 
 
  1452              		.loc 1 257 0
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  262:.\Generated_Source\PSoC5/CySpc.c ****         }
  1490              		.loc 1 262 0
  1491 003c 0920     		movs	r0, #9
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 100
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 100
 
 
  1492              	.LVL35:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  285:.\Generated_Source\PSoC5/CySpc.c **** *
  286:.\Generated_Source\PSoC5/CySpc.c **** *  \param uint16 row:
  287:.\Generated_Source\PSoC5/CySpc.c **** *   Flash row number to be loaded.
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 101
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 101
 
 
  288:.\Generated_Source\PSoC5/CySpc.c **** *
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  319:.\Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_CMD_LD_ROW;
  1555              		.loc 1 319 0
  1556 0012 0226     		movs	r6, #2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 102
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 102
 
 
  317:.\Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_KEY_TWO(CY_SPC_CMD_LD_ROW);
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1573 0028 B6B2     		uxth	r6, r6
  1574 002a 1644     		add	r6, r6, r2
  1575 002c 013A     		subs	r2, r2, #1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 103
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 103
 
 
  1576              	.LVL41:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  385:.\Generated_Source\PSoC5/CySpc.c **** 
  386:.\Generated_Source\PSoC5/CySpc.c ****                     for (i = 0u; i < CYDEV_ECC_ROW_SIZE; i++)
  387:.\Generated_Source\PSoC5/CySpc.c ****                     {
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 104
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 104
 
 
  388:.\Generated_Source\PSoC5/CySpc.c ****                         CY_SPC_CPU_DATA_REG = CY_GET_XTND_REG8((void CYFAR *)(offset + i));
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1623 0056 4901     		lsls	r1, r1, #5
  1624              	.LVL53:
  388:.\Generated_Source\PSoC5/CySpc.c ****                     }
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 105
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 105
 
 
  1625              		.loc 1 388 0
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  424:.\Generated_Source\PSoC5/CySpc.c **** *   flash/eeprom addrress
  425:.\Generated_Source\PSoC5/CySpc.c **** *
  426:.\Generated_Source\PSoC5/CySpc.c **** *  \param uint8 tempPolarity:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 106
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 106
 
 
  427:.\Generated_Source\PSoC5/CySpc.c **** *   temperature polarity.
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  449:.\Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_KEY_TWO(CY_SPC_CMD_WR_ROW);
  1692              		.loc 1 449 0
  1693 0018 2770     		strb	r7, [r4]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 107
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 107
 
 
  1694              		.loc 1 450 0
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  470:.\Generated_Source\PSoC5/CySpc.c **** 
  471:.\Generated_Source\PSoC5/CySpc.c ****     return(status);
  472:.\Generated_Source\PSoC5/CySpc.c **** }
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 108
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 108
 
 
  1726              		.loc 1 472 0
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  496:.\Generated_Source\PSoC5/CySpc.c ****     /* Make sure the SPC is ready to accept command */
  497:.\Generated_Source\PSoC5/CySpc.c ****     if(CY_SPC_IDLE)
  1756              		.loc 1 497 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 109
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 109
 
 
  1757 0000 0C4A     		ldr	r2, .L80
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  509:.\Generated_Source\PSoC5/CySpc.c ****         else
  510:.\Generated_Source\PSoC5/CySpc.c ****         {
  511:.\Generated_Source\PSoC5/CySpc.c ****             status = CYRET_CANCELED;
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 110
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 110
 
 
  512:.\Generated_Source\PSoC5/CySpc.c ****         }
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1839              		.thumb
  1840              		.thumb_func
  1841              		.type	CySpcGetTemp, %function
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 111
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 111
 
 
  1842              	CySpcGetTemp:
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1863              		.loc 1 552 0
  1864 000a 0A4B     		ldr	r3, .L87+4
  1865 000c B625     		movs	r5, #182
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 112
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 112
 
 
  553:.\Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_KEY_TWO(CY_SPC_CMD_GET_TEMP);
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1897              		.loc 1 572 0
  1898 0024 7047     		bx	lr
  1899              	.LVL76:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 113
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 113
 
 
  1900              	.L85:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  587:.\Generated_Source\PSoC5/CySpc.c **** {
  1938              		.loc 1 587 0
  1939              		.cfi_startproc
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 114
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 114
 
 
  1940              		@ args = 0, pretend = 0, frame = 0
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  1962              	.LVL83:
  619:.\Generated_Source\PSoC5/CySpc.c **** 
  620:.\Generated_Source\PSoC5/CySpc.c ****     return(status);
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 115
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 115
 
 
  621:.\Generated_Source\PSoC5/CySpc.c **** }
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2005 0034 FFF7FEFF 		bl	CyExitCriticalSection
  2006              	.LVL87:
  2007              		.loc 1 621 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 116
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 116
 
 
  2008 0038 2046     		mov	r0, r4
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  643:.\Generated_Source\PSoC5/CySpc.c ****         if(CY_SPC_CPU_WAITPIPE_BYPASS == spcWaitPipeBypass)
  2041              		.loc 1 643 0
  2042 000a 5968     		ldr	r1, [r3, #4]
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 117
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 117
 
 
  639:.\Generated_Source\PSoC5/CySpc.c **** 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2078 0028 FFF7FEBF 		b	CyExitCriticalSection
  2079              	.LVL90:
  2080              	.L101:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 118
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 118
 
 
  2081              		.align	2
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2113              		.loc 1 682 0
  2114 000e 0D22     		movs	r2, #13
  680:.\Generated_Source\PSoC5/CySpc.c ****         CY_SPC_CPU_DATA_REG = CY_SPC_KEY_TWO(CY_SPC_CMD_DWNLD_ALGORITHM);
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 119
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 119
 
 
  2115              		.loc 1 680 0
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2160 0004 0400     		.2byte	0x4
  2161 0006 00000000 		.4byte	.Ldebug_abbrev0
  2162 000a 04       		.byte	0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 120
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 120
 
 
  2163 000b 01       		.uleb128 0x1
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2217 0078 42010000 		.4byte	.LASF10
  2218 007c 02       		.byte	0x2
  2219 007d 9301     		.2byte	0x193
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 121
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 121
 
 
  2220 007f 3A000000 		.4byte	0x3a
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2274 00f5 7E010000 		.4byte	.LASF20
  2275 00f9 01       		.byte	0x1
  2276 00fa A0       		.byte	0xa0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 122
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 122
 
 
  2277 00fb 77000000 		.4byte	0x77
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2331 0171 09       		.uleb128 0x9
  2332 0172 6900     		.ascii	"i\000"
  2333 0174 01       		.byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 123
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 123
 
 
  2334 0175 F1       		.byte	0xf1
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2388 01f1 DF000000 		.4byte	.LASF19
  2389 01f5 01       		.byte	0x1
  2390 01f6 B801     		.2byte	0x1b8
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 124
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 124
 
 
  2391 01f8 6B000000 		.4byte	0x6b
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2445 0279 01       		.byte	0x1
  2446 027a 2102     		.2byte	0x221
  2447 027c 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 125
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 125
 
 
  2448 0280 0F       		.uleb128 0xf
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2502 02fe 6B000000 		.4byte	0x6b
  2503 0302 13000000 		.4byte	.LLST1
  2504 0306 13       		.uleb128 0x13
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 126
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 126
 
 
  2505 0307 06000000 		.4byte	.LVL2
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2559 0386 1B       		.uleb128 0x1b
  2560 0387 E9000000 		.4byte	0xe9
  2561 038b 8F000000 		.4byte	.LLST5
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 127
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 127
 
 
  2562 038f 1B       		.uleb128 0x1b
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2616 0425 5B010000 		.4byte	0x15b
  2617 0429 D2020000 		.4byte	.LLST17
  2618 042d 1C       		.uleb128 0x1c
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 128
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 128
 
 
  2619 042e 66010000 		.4byte	0x166
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2673 04c7 1E       		.uleb128 0x1e
  2674 04c8 4E000000 		.4byte	.LBB12
  2675 04cc 26000000 		.4byte	.LBE12-.LBB12
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 129
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 129
 
 
  2676 04d0 1F       		.uleb128 0x1f
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2730 0552 1E       		.uleb128 0x1e
  2731 0553 0A000000 		.4byte	.LBB16
  2732 0557 2C000000 		.4byte	.LBE16-.LBB16
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 130
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 130
 
 
  2733 055b 1B       		.uleb128 0x1b
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2787 05e5 00000000 		.4byte	.LFB8
  2788 05e9 38000000 		.4byte	.LFE8-.LFB8
  2789 05ed 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 131
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 131
 
 
  2790 05ee 9C       		.byte	0x9c
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2844 067b 01       		.byte	0x1
  2845 067c 7702     		.2byte	0x277
  2846 067e 00000000 		.4byte	.LFB10
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 132
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 132
 
 
  2847 0682 34000000 		.4byte	.LFE10-.LFB10
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2901 0707 7D       		.byte	0x7d
  2902 0708 6B000000 		.4byte	0x6b
  2903 070c 28       		.uleb128 0x28
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 133
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 133
 
 
  2904 070d D9020000 		.4byte	.LASF48
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  2958 0025 03       		.uleb128 0x3
  2959 0026 08       		.uleb128 0x8
  2960 0027 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 134
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 134
 
 
  2961 0028 00       		.byte	0
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3015 005e 00       		.byte	0
  3016 005f 08       		.uleb128 0x8
  3017 0060 34       		.uleb128 0x34
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 135
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 135
 
 
  3018 0061 00       		.byte	0
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3072 0097 13       		.uleb128 0x13
  3073 0098 20       		.uleb128 0x20
  3074 0099 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 136
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 136
 
 
  3075 009a 01       		.uleb128 0x1
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3129 00d0 00       		.byte	0
  3130 00d1 00       		.byte	0
  3131 00d2 11       		.uleb128 0x11
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 137
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 137
 
 
  3132 00d3 2E       		.uleb128 0x2e
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3186 010f 19       		.uleb128 0x19
  3187 0110 31       		.uleb128 0x31
  3188 0111 13       		.uleb128 0x13
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 138
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 138
 
 
  3189 0112 00       		.byte	0
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3243 0149 13       		.uleb128 0x13
  3244 014a 02       		.uleb128 0x2
  3245 014b 17       		.uleb128 0x17
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 139
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 139
 
 
  3246 014c 00       		.byte	0
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3300 0188 00       		.byte	0
  3301 0189 1D       		.uleb128 0x1d
  3302 018a 34       		.uleb128 0x34
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 140
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 140
 
 
  3303 018b 00       		.byte	0
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3357 01c1 11       		.uleb128 0x11
  3358 01c2 01       		.uleb128 0x1
  3359 01c3 12       		.uleb128 0x12
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 141
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 141
 
 
  3360 01c4 06       		.uleb128 0x6
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3414 01fc 3A       		.uleb128 0x3a
  3415 01fd 0B       		.uleb128 0xb
  3416 01fe 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 142
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 142
 
 
  3417 01ff 0B       		.uleb128 0xb
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3471 0235 27       		.uleb128 0x27
  3472 0236 19       		.uleb128 0x19
  3473 0237 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 143
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 143
 
 
  3474 0238 19       		.uleb128 0x19
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3528 003b F3       		.byte	0xf3
  3529 003c 01       		.uleb128 0x1
  3530 003d 50       		.byte	0x50
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 144
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 144
 
 
  3531 003e 9F       		.byte	0x9f
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3585 00b7 22000000 		.4byte	.LVL13
  3586 00bb 0400     		.2byte	0x4
  3587 00bd F3       		.byte	0xf3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 145
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 145
 
 
  3588 00be 01       		.uleb128 0x1
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3642 0139 00000000 		.4byte	0
  3643              	.LLST8:
  3644 013d 00000000 		.4byte	.LVL9
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 146
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 146
 
 
  3645 0141 56000000 		.4byte	.LVL18
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3699 01c2 9F       		.byte	0x9f
  3700 01c3 00000000 		.4byte	0
  3701 01c7 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 147
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 147
 
 
  3702              	.LLST12:
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3756 023b 31       		.byte	0x31
  3757 023c 1C       		.byte	0x1c
  3758 023d 1C       		.byte	0x1c
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 148
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 148
 
 
  3759 023e 9F       		.byte	0x9f
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3813 02bd 51       		.byte	0x51
  3814 02be 9F       		.byte	0x9f
  3815 02bf 3C000000 		.4byte	.LVL34
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 149
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 149
 
 
  3816 02c3 50000000 		.4byte	.LFE4
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3870 034b 1E000000 		.4byte	.LVL25
  3871 034f 26000000 		.4byte	.LVL28
  3872 0353 0100     		.2byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 150
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 150
 
 
  3873 0355 52       		.byte	0x52
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3927 03d2 F3       		.byte	0xf3
  3928 03d3 01       		.uleb128 0x1
  3929 03d4 51       		.byte	0x51
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 151
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 151
 
 
  3930 03d5 31       		.byte	0x31
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  3984 0447 0100     		.2byte	0x1
  3985 0449 50       		.byte	0x50
  3986 044a 52000000 		.4byte	.LVL51
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 152
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 152
 
 
  3987 044e 74000000 		.4byte	.LFE5
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4041 04ca 52       		.byte	0x52
  4042 04cb 9F       		.byte	0x9f
  4043 04cc 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 153
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 153
 
 
  4044 04d0 00000000 		.4byte	0
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4098 0551 F3       		.byte	0xf3
  4099 0552 01       		.uleb128 0x1
  4100 0553 52       		.byte	0x52
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 154
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 154
 
 
  4101 0554 31       		.byte	0x31
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4155 05be 50       		.byte	0x50
  4156 05bf 9F       		.byte	0x9f
  4157 05c0 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 155
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 155
 
 
  4158 05c4 00000000 		.4byte	0
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4212 0637 34000000 		.4byte	.LVL62
  4213 063b 36000000 		.4byte	.LVL63
  4214 063f 0100     		.2byte	0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 156
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 156
 
 
  4215 0641 50       		.byte	0x50
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4269 06c0 00000000 		.4byte	0
  4270 06c4 00000000 		.4byte	0
  4271              	.LLST36:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 157
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 157
 
 
  4272 06c8 0A000000 		.4byte	.LVL59
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4326 074c 00000000 		.4byte	0
  4327 0750 00000000 		.4byte	0
  4328              	.LLST40:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 158
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 158
 
 
  4329 0754 00000000 		.4byte	.LVL66
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4383 07d5 2E000000 		.4byte	.LVL71
  4384 07d9 30000000 		.4byte	.LVL72
  4385 07dd 0200     		.2byte	0x2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 159
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 159
 
 
  4386 07df 37       		.byte	0x37
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4440 0863 28000000 		.4byte	.LVL77
  4441 0867 2C000000 		.4byte	.LVL78
  4442 086b 0400     		.2byte	0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 160
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 160
 
 
  4443 086d F3       		.byte	0xf3
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4497 08f2 0200     		.2byte	0x2
  4498 08f4 73       		.byte	0x73
  4499 08f5 00       		.sleb128 0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 161
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 161
 
 
  4500 08f6 26000000 		.4byte	.LVL76
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4554              	.LLST49:
  4555 0982 06000000 		.4byte	.LVL89
  4556 0986 2B000000 		.4byte	.LVL90-1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 162
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 162
 
 
  4557 098a 0100     		.2byte	0x1
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4611 0068 00000000 		.4byte	.LFB11
  4612 006c 28000000 		.4byte	.LFE11-.LFB11
  4613 0070 00000000 		.4byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 163
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 163
 
 
  4614 0074 00000000 		.4byte	0
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4661      74694279 
  4661      746500
  4662              	.LASF15:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 164
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 164
 
 
  4663 0013 63797374 		.ascii	"cystatus\000"
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4689 00ad 6C6F6E67 		.ascii	"long unsigned int\000"
  4689      20756E73 
  4689      69676E65 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 165
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 165
 
 
  4689      6420696E 
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4714      72697469 
  4714      63616C53 
  4714      65637469 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 166
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 166
 
 
  4715              	.LASF8:
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4736 0252 33202D66 		.ascii	"3 -ffunction-sections -finline-functions -flto -ffa"
  4736      66756E63 
  4736      74696F6E 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 167
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 167
 
 
  4736      2D736563 
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 1
  4760              	.LASF26:
  4761 0316 43795370 		.ascii	"CySpcLoadRowFull\000"
  4761      634C6F61 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\cc2I2Hz9.s 			page 168
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccsku8kb.s 			page 168
 
 
  4761      64526F77 

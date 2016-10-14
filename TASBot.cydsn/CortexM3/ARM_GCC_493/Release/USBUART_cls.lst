@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 1
 
 
    1              		.syntax unified
@@ -17,21 +17,21 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   14              		.file	"USBUART_cls.c"
   15              		.text
   16              	.Ltext0:
-  17              		.section	.gnu.lto_.profile.be9c78d5,"",%progbits
+  17              		.section	.gnu.lto_.profile.c0d683ab,"",%progbits
   18 0000 789C6366 		.ascii	"x\234cf```a\200\000F\006)1\000\000\276\0009"
   18      60606061 
   18      80004606 
   18      29310000 
   18      BE0039
   19              		.text
-  20              		.section	.gnu.lto_.jmpfuncs.be9c78d5,"",%progbits
+  20              		.section	.gnu.lto_.jmpfuncs.c0d683ab,"",%progbits
   21 0000 789C6366 		.ascii	"x\234cf\300\016\330\2404#\230\004\000\000\362\000\013"
   21      C00ED8A0 
   21      34239804 
   21      0000F200 
   21      0B
   22              		.text
-  23              		.section	.gnu.lto_.inline.be9c78d5,"",%progbits
+  23              		.section	.gnu.lto_.inline.c0d683ab,"",%progbits
   24 0000 789C6366 		.ascii	"x\234cf\300\016\244\2414#\003\203\204 #\003\223\332"
   24      C00EA4A1 
   24      34230383 
@@ -44,21 +44,21 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   25      9902
   26 0024 92       		.ascii	"\222"
   27              		.text
-  28              		.section	.gnu.lto_.pureconst.be9c78d5,"",%progbits
+  28              		.section	.gnu.lto_.pureconst.c0d683ab,"",%progbits
   29 0000 789C6366 		.ascii	"x\234cf```f\200\000F\006)\000\000z\000\""
   29      60606066 
   29      80004606 
   29      2900007A 
   29      0022
   30              		.text
-  31              		.section	.gnu.lto_USBUART_DispatchClassRqst.be9c78d5,"",%progbits
+  31              		.section	.gnu.lto_USBUART_DispatchClassRqst.c0d683ab,"",%progbits
   32 0000 789C9554 		.ascii	"x\234\225T]L\\E\024\2363w\357\275\373\303\262\320\307"
   32      5D4C5C45 
   32      149E3377 
   32      EFBDFBC3 
   32      B2D0C7
   33 0013 4DE48507 		.ascii	"M\344\205\007\242\021\210&>\364\241\361\357\301>\325"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 2
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 2
 
 
   33      A2118826 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   45 00e7 ACE4F3C4 		.ascii	"\254\344\363\304\204$h^2}\020\237{\363\354\357\272\266"
   45      8424685E 
   45      327D109F 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 3
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 3
 
 
   45      7BF3ECEF 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   56      5BDE
   57 01c5 BDE853A2 		.ascii	"\275\350S\242\374JW{\337\347\013R\027h\014\016 x\002"
   57      FC4A577B 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 4
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 4
 
 
   57      DFE70B52 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   68      A4B72D0C 
   68      1C044F42 
   68      EB8C
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 5
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 5
 
 
   69 02a1 0B09228A 		.ascii	"\013\011\"\212\224\245\177-S\201\020\022\272G\333\373"
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   80      CFC3FB1E 
   80      32DADF0F 
   81 0373 C220CC05 		.ascii	"\302 \314\005\371 \256\001\307\253\247M\247\"\350\231"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 6
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 6
 
 
   81      F920AE01 
@@ -349,7 +349,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   91 041f 97ADF85F 		.ascii	"\227\255\370_\310=DA"
   91      C83D4441 
   92              		.text
-  93              		.section	.gnu.lto_.symbol_nodes.be9c78d5,"",%progbits
+  93              		.section	.gnu.lto_.symbol_nodes.c0d683ab,"",%progbits
   94 0000 789C6366 		.ascii	"x\234cf``0e\200\002&\206z\006\206\011\347\030\030\352"
   94      60603065 
   94      80022686 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   95 0014 EB19E62D 		.ascii	"\353\031\346-\340``ed\020\250g`eb\004\222\214\314\365"
   95      E0606065 
   95      6410A867 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 7
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 7
 
 
   95      60656204 
@@ -370,7 +370,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   96      00
   97 0039 27710B52 		.ascii	"'q\013R"
   98              		.text
-  99              		.section	.gnu.lto_.refs.be9c78d5,"",%progbits
+  99              		.section	.gnu.lto_.refs.c0d683ab,"",%progbits
  100 0000 789C6366 		.ascii	"x\234cf``\340d\200\000&\006\006Fn\006&\001\006\000\001"
  100      6060E064 
  100      80002606 
@@ -378,7 +378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  100      26010600 
  101 0015 62002D   		.ascii	"b\000-"
  102              		.text
- 103              		.section	.gnu.lto_.decls.be9c78d5,"",%progbits
+ 103              		.section	.gnu.lto_.decls.c0d683ab,"",%progbits
  104 0000 789C9D56 		.ascii	"x\234\235VkL\024W\024\236\263\003\2730\254`!AKL\\1\241"
  104      6B4C1457 
  104      149EB303 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  112 008e 084FC417 		.ascii	"\010O\304\027\210\036\204\034aD\214\"\306\021c\242\366"
  112      881E841C 
  112      61448C22 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 8
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 8
 
 
  112      C61163A2 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  123      2A7891E1 
  123      A8F88D
  124 016d D7961AB3 		.ascii	"\327\226\032\263s\332\331\023\2746\236_0\341:\310\034"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 9
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 9
 
 
  124      73DAD913 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  135      5A568558 
  135      56DA217C 
  135      02EFA873 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 10
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 10
 
 
  135      65A002CB 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  147 0317 FCC0129A 		.ascii	"\374\300\022\232\316\302\273j\207\347k\341\025\037\222"
  147      CEC2BB6A 
  147      87E76BE1 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 11
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 11
 
 
  147      151F92
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  159 03f4 D95A780A 		.ascii	"\331Zx\012\356\320%\324b\221V\227phB7\254\307\331\255"
  159      EED025D4 
  159      62915697 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 12
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 12
 
 
  159      70684237 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  171 04cd 67EB1307 		.ascii	"g\353\023\007vJ\330y\263\035\017\316\310\300\303\307"
  171      764AD879 
  171      B31D0FCE 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 13
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 13
 
 
  171      C8C0C3C7 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  183 05a9 25DE11C0 		.ascii	"%\336\021\300\2263\007\353\030\307\330\210}\232O\245"
  183      963307EB 
  183      18C7D888 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 14
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 14
 
 
  183      7D9A4FA5 
@@ -838,14 +838,14 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  195      D4285799 
  195      4755D17E 
  196 068e 61F84348 		.ascii	"a\370CH\214F\035\033\252\371\033\277\213\307\214"
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 15
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 15
 
 
  196      8C461D1B 
  196      AAF91BBF 
  196      8BC78C
  197              		.text
- 198              		.section	.gnu.lto_.symtab.be9c78d5,"",%progbits
+ 198              		.section	.gnu.lto_.symtab.c0d683ab,"",%progbits
  199 0000 55534255 		.ascii	"USBUART_DispatchClassRqst\000\000\000\000\000\000\000"
  199      4152545F 
  199      44697370 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  212              		.cfi_sections	.debug_frame
  213              		.section	.text.USBUART_DispatchClassRqst,"ax",%progbits
  214              		.align	2
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 16
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 16
 
 
  215              		.global	USBUART_DispatchClassRqst
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   43:.\Generated_Source\PSoC5/USBUART_cls.c ****     uint8 requestHandled;
   44:.\Generated_Source\PSoC5/USBUART_cls.c ****     uint8 interfaceNumber;
   45:.\Generated_Source\PSoC5/USBUART_cls.c **** 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 17
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 17
 
 
   46:.\Generated_Source\PSoC5/USBUART_cls.c ****     /* Get interface to which request is intended. */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
   82:.\Generated_Source\PSoC5/USBUART_cls.c ****             
   83:.\Generated_Source\PSoC5/USBUART_cls.c ****     #if defined(USBUART_ENABLE_AUDIO_CLASS)
   84:.\Generated_Source\PSoC5/USBUART_cls.c ****         case USBUART_CLASS_AUDIO:
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 18
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 18
 
 
   85:.\Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_DispatchAUDIOClassRqst();
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  248              	.LVL1:
  249              	.L4:
   60:.\Generated_Source\PSoC5/USBUART_cls.c ****             break;
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 19
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 19
 
 
  250              		.loc 1 60 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  296 0004 0400     		.2byte	0x4
  297 0006 00000000 		.4byte	.Ldebug_abbrev0
  298 000a 04       		.byte	0x4
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 20
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 20
 
 
  299 000b 01       		.uleb128 0x1
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  353 0078 0A010000 		.4byte	.LASF10
  354 007c 02       		.byte	0x2
  355 007d 9301     		.2byte	0x193
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 21
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 21
 
 
  356 007f 3A000000 		.4byte	0x3a
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  410 00e8 03       		.byte	0x3
  411 00e9 94       		.byte	0x94
  412 00ea 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 22
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 22
 
 
  413 00ee 05       		.byte	0x5
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  467 015a 00000000 		.4byte	.LFB0
  468 015e 58000000 		.4byte	.LFE0-.LFB0
  469 0162 01       		.uleb128 0x1
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 23
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 23
 
 
  470 0163 9C       		.byte	0x9c
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  524 0005 13       		.uleb128 0x13
  525 0006 0B       		.uleb128 0xb
  526 0007 03       		.uleb128 0x3
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 24
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 24
 
 
  527 0008 0E       		.uleb128 0xe
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  581 003e 0B       		.uleb128 0xb
  582 003f 01       		.uleb128 0x1
  583 0040 13       		.uleb128 0x13
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 25
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 25
 
 
  584 0041 00       		.byte	0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  638 0077 0E       		.uleb128 0xe
  639 0078 3A       		.uleb128 0x3a
  640 0079 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 26
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 26
 
 
  641 007a 3B       		.uleb128 0x3b
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  695 00b4 13       		.uleb128 0x13
  696 00b5 00       		.byte	0
  697 00b6 00       		.byte	0
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 27
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 27
 
 
  698 00b7 0E       		.uleb128 0xe
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  752 00ed 13       		.uleb128 0x13
  753 00ee 3C       		.uleb128 0x3c
  754 00ef 19       		.uleb128 0x19
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 28
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 28
 
 
  755 00f0 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  796 0031 72657175 		.ascii	"requestHandled\000"
  796      65737448 
  796      616E646C 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 29
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 29
 
 
  796      656400
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  821      6F742E63 
  821      7964736E 
  821      00
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 30
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 30
 
 
  822              	.LASF10:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 1
  845      4320342E 
  845      392E3320 
  845      32303135 
-ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccHTUjjd.s 			page 31
+ARM GAS  C:\Users\Thomas\AppData\Local\Temp\ccXxXQVh.s 			page 31
 
 
  845      30333033 
