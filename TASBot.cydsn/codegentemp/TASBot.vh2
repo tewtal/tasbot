@@ -2,7 +2,7 @@
 --	Conversion of TASBot.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Oct 14 03:37:36 2016
+--	Fri Oct 14 03:49:09 2016
 --
 
 USE cypress.cypress.all;
@@ -483,8 +483,6 @@ SIGNAL \P1_WinTimer:Net_266\ : bit;
 SIGNAL Net_2477 : bit;
 SIGNAL \P1_LatchFilter:op_clk\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \P1_LatchFilter:genblk1[0]:samples_4\ : bit;
-SIGNAL \P1_LatchFilter:genblk1[0]:samples_3\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:samples_2\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:samples_1\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:samples_0\ : bit;
@@ -820,11 +818,6 @@ ATTRIBUTE port_state_att of \P1_RegD2:bSR:sC16:BShiftRegDp:f1_blk_stat_reg_1\:SI
 SIGNAL Net_2527 : bit;
 SIGNAL \P1_ClockFilter:op_clk\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_7\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_6\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_5\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_4\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_3\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:samples_2\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:samples_1\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:samples_0\ : bit;
@@ -832,11 +825,6 @@ SIGNAL \P1_ClockFilter:genblk1[0]:and_term\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:last_state\ : bit;
 SIGNAL \P2_ClockFilter:op_clk\ : bit;
 SIGNAL \P2_ClockFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_7\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_6\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_5\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_4\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_3\ : bit;
 SIGNAL \P2_ClockFilter:genblk1[0]:samples_2\ : bit;
 SIGNAL \P2_ClockFilter:genblk1[0]:samples_1\ : bit;
 SIGNAL \P2_ClockFilter:genblk1[0]:samples_0\ : bit;
@@ -1199,8 +1187,6 @@ SIGNAL \P2_WinTimer:Net_102\ : bit;
 SIGNAL \P2_WinTimer:Net_266\ : bit;
 SIGNAL \P2_LatchFilter:op_clk\ : bit;
 SIGNAL \P2_LatchFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \P2_LatchFilter:genblk1[0]:samples_4\ : bit;
-SIGNAL \P2_LatchFilter:genblk1[0]:samples_3\ : bit;
 SIGNAL \P2_LatchFilter:genblk1[0]:samples_2\ : bit;
 SIGNAL \P2_LatchFilter:genblk1[0]:samples_1\ : bit;
 SIGNAL \P2_LatchFilter:genblk1[0]:samples_0\ : bit;
@@ -1541,28 +1527,16 @@ SIGNAL \P1_WinTimer:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \P1_WinTimer:TimerUDB:capture_out_reg_i\\D\ : bit;
 SIGNAL \P1_WinTimer:TimerUDB:runmode_enable\\D\ : bit;
 SIGNAL \P1_WinTimer:TimerUDB:trig_disable\\D\ : bit;
-SIGNAL \P1_LatchFilter:genblk1[0]:samples_4\\D\ : bit;
-SIGNAL \P1_LatchFilter:genblk1[0]:samples_3\\D\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:samples_2\\D\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:samples_1\\D\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:samples_0\\D\ : bit;
 SIGNAL \P1_LatchFilter:genblk1[0]:last_state\\D\ : bit;
 SIGNAL \P1_RegD1:bSR:load_reg\\D\ : bit;
 SIGNAL \P1_RegD2:bSR:load_reg\\D\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_7\\D\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_6\\D\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_5\\D\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_4\\D\ : bit;
-SIGNAL \P1_ClockFilter:genblk1[0]:samples_3\\D\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:samples_2\\D\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:samples_1\\D\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:samples_0\\D\ : bit;
 SIGNAL \P1_ClockFilter:genblk1[0]:last_state\\D\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_7\\D\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_6\\D\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_5\\D\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_4\\D\ : bit;
-SIGNAL \P2_ClockFilter:genblk1[0]:samples_3\\D\ : bit;
 SIGNAL \P2_ClockFilter:genblk1[0]:samples_2\\D\ : bit;
 SIGNAL \P2_ClockFilter:genblk1[0]:samples_1\\D\ : bit;
 SIGNAL \P2_ClockFilter:genblk1[0]:samples_0\\D\ : bit;
@@ -1574,8 +1548,6 @@ SIGNAL \P2_WinTimer:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \P2_WinTimer:TimerUDB:capture_out_reg_i\\D\ : bit;
 SIGNAL \P2_WinTimer:TimerUDB:runmode_enable\\D\ : bit;
 SIGNAL \P2_WinTimer:TimerUDB:trig_disable\\D\ : bit;
-SIGNAL \P2_LatchFilter:genblk1[0]:samples_4\\D\ : bit;
-SIGNAL \P2_LatchFilter:genblk1[0]:samples_3\\D\ : bit;
 SIGNAL \P2_LatchFilter:genblk1[0]:samples_2\\D\ : bit;
 SIGNAL \P2_LatchFilter:genblk1[0]:samples_1\\D\ : bit;
 SIGNAL \P2_LatchFilter:genblk1[0]:samples_0\\D\ : bit;
@@ -1599,38 +1571,26 @@ Net_2517 <= (not Net_289);
 \P1_WinTimer:TimerUDB:trig_disable\\D\ <= ((not Net_2458 and \P1_WinTimer:TimerUDB:timer_enable\ and \P1_WinTimer:TimerUDB:run_mode\ and \P1_WinTimer:TimerUDB:per_zero\)
 	OR (not Net_2458 and \P1_WinTimer:TimerUDB:trig_disable\));
 
-\P1_LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_2602 and \P1_LatchFilter:genblk1[0]:samples_4\ and \P1_LatchFilter:genblk1[0]:samples_3\ and \P1_LatchFilter:genblk1[0]:samples_2\ and \P1_LatchFilter:genblk1[0]:samples_1\ and \P1_LatchFilter:genblk1[0]:samples_0\)
+\P1_LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_2602 and \P1_LatchFilter:genblk1[0]:samples_2\ and \P1_LatchFilter:genblk1[0]:samples_1\ and \P1_LatchFilter:genblk1[0]:samples_0\)
 	OR (Net_2458 and \P1_LatchFilter:genblk1[0]:samples_0\)
 	OR (Net_2458 and \P1_LatchFilter:genblk1[0]:samples_1\)
 	OR (Net_2458 and \P1_LatchFilter:genblk1[0]:samples_2\)
-	OR (Net_2458 and \P1_LatchFilter:genblk1[0]:samples_3\)
-	OR (Net_2458 and \P1_LatchFilter:genblk1[0]:samples_4\)
 	OR (Net_2602 and Net_2458));
 
 Net_2525 <= (not Net_2524);
 
 Net_2601 <= (not Net_2527);
 
-\P1_ClockFilter:genblk1[0]:last_state\\D\ <= ((Net_2713 and \P1_ClockFilter:genblk1[0]:samples_7\ and \P1_ClockFilter:genblk1[0]:samples_6\ and \P1_ClockFilter:genblk1[0]:samples_5\ and \P1_ClockFilter:genblk1[0]:samples_4\ and \P1_ClockFilter:genblk1[0]:samples_3\ and \P1_ClockFilter:genblk1[0]:samples_2\ and \P1_ClockFilter:genblk1[0]:samples_1\ and \P1_ClockFilter:genblk1[0]:samples_0\)
+\P1_ClockFilter:genblk1[0]:last_state\\D\ <= ((Net_2713 and \P1_ClockFilter:genblk1[0]:samples_2\ and \P1_ClockFilter:genblk1[0]:samples_1\ and \P1_ClockFilter:genblk1[0]:samples_0\)
 	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_0\)
 	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_1\)
 	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_2\)
-	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_3\)
-	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_4\)
-	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_5\)
-	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_6\)
-	OR (Net_2504 and \P1_ClockFilter:genblk1[0]:samples_7\)
 	OR (Net_2713 and Net_2504));
 
-\P2_ClockFilter:genblk1[0]:last_state\\D\ <= ((Net_2719 and \P2_ClockFilter:genblk1[0]:samples_7\ and \P2_ClockFilter:genblk1[0]:samples_6\ and \P2_ClockFilter:genblk1[0]:samples_5\ and \P2_ClockFilter:genblk1[0]:samples_4\ and \P2_ClockFilter:genblk1[0]:samples_3\ and \P2_ClockFilter:genblk1[0]:samples_2\ and \P2_ClockFilter:genblk1[0]:samples_1\ and \P2_ClockFilter:genblk1[0]:samples_0\)
+\P2_ClockFilter:genblk1[0]:last_state\\D\ <= ((Net_2719 and \P2_ClockFilter:genblk1[0]:samples_2\ and \P2_ClockFilter:genblk1[0]:samples_1\ and \P2_ClockFilter:genblk1[0]:samples_0\)
 	OR (\P2_ClockFilter:genblk1[0]:samples_0\ and Net_2530)
 	OR (\P2_ClockFilter:genblk1[0]:samples_1\ and Net_2530)
 	OR (\P2_ClockFilter:genblk1[0]:samples_2\ and Net_2530)
-	OR (\P2_ClockFilter:genblk1[0]:samples_3\ and Net_2530)
-	OR (\P2_ClockFilter:genblk1[0]:samples_4\ and Net_2530)
-	OR (\P2_ClockFilter:genblk1[0]:samples_5\ and Net_2530)
-	OR (\P2_ClockFilter:genblk1[0]:samples_6\ and Net_2530)
-	OR (\P2_ClockFilter:genblk1[0]:samples_7\ and Net_2530)
 	OR (Net_2719 and Net_2530));
 
 Net_2167 <= (not Net_2541);
@@ -1644,12 +1604,10 @@ Net_2167 <= (not Net_2541);
 \P2_WinTimer:TimerUDB:trig_disable\\D\ <= ((not Net_2532 and \P2_WinTimer:TimerUDB:timer_enable\ and \P2_WinTimer:TimerUDB:run_mode\ and \P2_WinTimer:TimerUDB:per_zero\)
 	OR (not Net_2532 and \P2_WinTimer:TimerUDB:trig_disable\));
 
-\P2_LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_2163 and \P2_LatchFilter:genblk1[0]:samples_4\ and \P2_LatchFilter:genblk1[0]:samples_3\ and \P2_LatchFilter:genblk1[0]:samples_2\ and \P2_LatchFilter:genblk1[0]:samples_1\ and \P2_LatchFilter:genblk1[0]:samples_0\)
+\P2_LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_2163 and \P2_LatchFilter:genblk1[0]:samples_2\ and \P2_LatchFilter:genblk1[0]:samples_1\ and \P2_LatchFilter:genblk1[0]:samples_0\)
 	OR (Net_2532 and \P2_LatchFilter:genblk1[0]:samples_0\)
 	OR (Net_2532 and \P2_LatchFilter:genblk1[0]:samples_1\)
 	OR (Net_2532 and \P2_LatchFilter:genblk1[0]:samples_2\)
-	OR (Net_2532 and \P2_LatchFilter:genblk1[0]:samples_3\)
-	OR (Net_2532 and \P2_LatchFilter:genblk1[0]:samples_4\)
 	OR (Net_2163 and Net_2532));
 
 Net_2316 <= (not Net_2553);
@@ -4192,14 +4150,6 @@ Clock_2:cy_clock_v1_0
 	PORT MAP(d=>\P1_WinTimer:TimerUDB:trig_disable\\D\,
 		clk=>\P1_WinTimer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\P1_WinTimer:TimerUDB:trig_disable\);
-\P1_LatchFilter:genblk1[0]:samples_4\:cy_dff
-	PORT MAP(d=>\P1_LatchFilter:genblk1[0]:samples_3\,
-		clk=>\P1_LatchFilter:op_clk\,
-		q=>\P1_LatchFilter:genblk1[0]:samples_4\);
-\P1_LatchFilter:genblk1[0]:samples_3\:cy_dff
-	PORT MAP(d=>\P1_LatchFilter:genblk1[0]:samples_2\,
-		clk=>\P1_LatchFilter:op_clk\,
-		q=>\P1_LatchFilter:genblk1[0]:samples_3\);
 \P1_LatchFilter:genblk1[0]:samples_2\:cy_dff
 	PORT MAP(d=>\P1_LatchFilter:genblk1[0]:samples_1\,
 		clk=>\P1_LatchFilter:op_clk\,
@@ -4224,26 +4174,6 @@ Clock_2:cy_clock_v1_0
 	PORT MAP(d=>zero,
 		clk=>\P1_RegD2:bSR:clk_fin\,
 		q=>\P1_RegD2:bSR:load_reg\);
-\P1_ClockFilter:genblk1[0]:samples_7\:cy_dff
-	PORT MAP(d=>\P1_ClockFilter:genblk1[0]:samples_6\,
-		clk=>\P1_ClockFilter:op_clk\,
-		q=>\P1_ClockFilter:genblk1[0]:samples_7\);
-\P1_ClockFilter:genblk1[0]:samples_6\:cy_dff
-	PORT MAP(d=>\P1_ClockFilter:genblk1[0]:samples_5\,
-		clk=>\P1_ClockFilter:op_clk\,
-		q=>\P1_ClockFilter:genblk1[0]:samples_6\);
-\P1_ClockFilter:genblk1[0]:samples_5\:cy_dff
-	PORT MAP(d=>\P1_ClockFilter:genblk1[0]:samples_4\,
-		clk=>\P1_ClockFilter:op_clk\,
-		q=>\P1_ClockFilter:genblk1[0]:samples_5\);
-\P1_ClockFilter:genblk1[0]:samples_4\:cy_dff
-	PORT MAP(d=>\P1_ClockFilter:genblk1[0]:samples_3\,
-		clk=>\P1_ClockFilter:op_clk\,
-		q=>\P1_ClockFilter:genblk1[0]:samples_4\);
-\P1_ClockFilter:genblk1[0]:samples_3\:cy_dff
-	PORT MAP(d=>\P1_ClockFilter:genblk1[0]:samples_2\,
-		clk=>\P1_ClockFilter:op_clk\,
-		q=>\P1_ClockFilter:genblk1[0]:samples_3\);
 \P1_ClockFilter:genblk1[0]:samples_2\:cy_dff
 	PORT MAP(d=>\P1_ClockFilter:genblk1[0]:samples_1\,
 		clk=>\P1_ClockFilter:op_clk\,
@@ -4260,26 +4190,6 @@ Clock_2:cy_clock_v1_0
 	PORT MAP(d=>\P1_ClockFilter:genblk1[0]:last_state\\D\,
 		clk=>\P1_ClockFilter:op_clk\,
 		q=>Net_2504);
-\P2_ClockFilter:genblk1[0]:samples_7\:cy_dff
-	PORT MAP(d=>\P2_ClockFilter:genblk1[0]:samples_6\,
-		clk=>\P2_ClockFilter:op_clk\,
-		q=>\P2_ClockFilter:genblk1[0]:samples_7\);
-\P2_ClockFilter:genblk1[0]:samples_6\:cy_dff
-	PORT MAP(d=>\P2_ClockFilter:genblk1[0]:samples_5\,
-		clk=>\P2_ClockFilter:op_clk\,
-		q=>\P2_ClockFilter:genblk1[0]:samples_6\);
-\P2_ClockFilter:genblk1[0]:samples_5\:cy_dff
-	PORT MAP(d=>\P2_ClockFilter:genblk1[0]:samples_4\,
-		clk=>\P2_ClockFilter:op_clk\,
-		q=>\P2_ClockFilter:genblk1[0]:samples_5\);
-\P2_ClockFilter:genblk1[0]:samples_4\:cy_dff
-	PORT MAP(d=>\P2_ClockFilter:genblk1[0]:samples_3\,
-		clk=>\P2_ClockFilter:op_clk\,
-		q=>\P2_ClockFilter:genblk1[0]:samples_4\);
-\P2_ClockFilter:genblk1[0]:samples_3\:cy_dff
-	PORT MAP(d=>\P2_ClockFilter:genblk1[0]:samples_2\,
-		clk=>\P2_ClockFilter:op_clk\,
-		q=>\P2_ClockFilter:genblk1[0]:samples_3\);
 \P2_ClockFilter:genblk1[0]:samples_2\:cy_dff
 	PORT MAP(d=>\P2_ClockFilter:genblk1[0]:samples_1\,
 		clk=>\P2_ClockFilter:op_clk\,
@@ -4324,14 +4234,6 @@ Clock_2:cy_clock_v1_0
 	PORT MAP(d=>\P2_WinTimer:TimerUDB:trig_disable\\D\,
 		clk=>\P2_WinTimer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\P2_WinTimer:TimerUDB:trig_disable\);
-\P2_LatchFilter:genblk1[0]:samples_4\:cy_dff
-	PORT MAP(d=>\P2_LatchFilter:genblk1[0]:samples_3\,
-		clk=>\P2_LatchFilter:op_clk\,
-		q=>\P2_LatchFilter:genblk1[0]:samples_4\);
-\P2_LatchFilter:genblk1[0]:samples_3\:cy_dff
-	PORT MAP(d=>\P2_LatchFilter:genblk1[0]:samples_2\,
-		clk=>\P2_LatchFilter:op_clk\,
-		q=>\P2_LatchFilter:genblk1[0]:samples_3\);
 \P2_LatchFilter:genblk1[0]:samples_2\:cy_dff
 	PORT MAP(d=>\P2_LatchFilter:genblk1[0]:samples_1\,
 		clk=>\P2_LatchFilter:op_clk\,

@@ -1,6 +1,6 @@
 // ======================================================================
 // TASBot.v generated from TopDesign.cysch
-// 10/14/2016 at 03:37
+// 10/14/2016 at 03:49
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1004,7 +1004,7 @@ module top ;
           wire  Net_2639;
           wire  Net_2638;
           wire  Net_2637;
-          wire  Net_2860;
+          wire  Net_2874;
           wire  Net_2635;
           wire  Net_2634;
           wire  Net_2633;
@@ -1015,8 +1015,8 @@ module top ;
           wire  Net_2628;
           wire  Net_2627;
           wire  Net_2626;
-          wire  Net_2866;
-          wire  Net_2863;
+          wire  Net_2880;
+          wire  Net_2877;
           wire  Net_2625;
           wire  Net_2624;
           wire  Net_2623;
@@ -1027,9 +1027,9 @@ module top ;
           wire  Net_2618;
           wire  Net_2617;
           wire  Net_2616;
-          wire  Net_2865;
-          wire  Net_2857;
-          wire  Net_2864;
+          wire  Net_2882;
+          wire  Net_2871;
+          wire  Net_2881;
           wire  Net_2612;
           wire  Net_2611;
           wire  Net_2610;
@@ -1896,7 +1896,7 @@ module top ;
         .clock(Net_2477),
         .q(Net_2458));
     defparam P1_LatchFilter.BypassFilter = 0;
-    defparam P1_LatchFilter.GlitchLength = 5;
+    defparam P1_LatchFilter.GlitchLength = 3;
     defparam P1_LatchFilter.SignalWidth = 1;
 
 
@@ -1947,7 +1947,7 @@ module top ;
         .clock(Net_2477),
         .q(Net_2504));
     defparam P1_ClockFilter.BypassFilter = 0;
-    defparam P1_ClockFilter.GlitchLength = 8;
+    defparam P1_ClockFilter.GlitchLength = 3;
     defparam P1_ClockFilter.SignalWidth = 1;
 
     GlitchFilter_v2_0 P2_ClockFilter (
@@ -1956,7 +1956,7 @@ module top ;
         .clock(Net_2477),
         .q(Net_2530));
     defparam P2_ClockFilter.BypassFilter = 0;
-    defparam P2_ClockFilter.GlitchLength = 8;
+    defparam P2_ClockFilter.GlitchLength = 3;
     defparam P2_ClockFilter.SignalWidth = 1;
 
     ShiftReg_v2_30_5 P2_RegD0 (
@@ -1997,7 +1997,7 @@ module top ;
         .clock(Net_2477),
         .q(Net_2532));
     defparam P2_LatchFilter.BypassFilter = 0;
-    defparam P2_LatchFilter.GlitchLength = 5;
+    defparam P2_LatchFilter.GlitchLength = 3;
     defparam P2_LatchFilter.SignalWidth = 1;
 
     ShiftReg_v2_30_7 P2_RegD1 (

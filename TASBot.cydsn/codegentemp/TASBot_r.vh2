@@ -1,5 +1,5 @@
 -- Project:   TASBot
--- Generated: 10/14/2016 03:37:38
+-- Generated: 10/14/2016 03:49:11
 -- PSoC Creator  3.3 CP3
 
 ENTITY TASBot IS
@@ -39,14 +39,14 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL Net_2163 : bit;
     SIGNAL Net_2167 : bit;
-    ATTRIBUTE placement_force OF Net_2167 : SIGNAL IS "U(3,4,B)2";
+    ATTRIBUTE placement_force OF Net_2167 : SIGNAL IS "U(0,3,A)3";
     SIGNAL Net_2307 : bit;
-    ATTRIBUTE placement_force OF Net_2307 : SIGNAL IS "U(0,5,A)0";
+    ATTRIBUTE placement_force OF Net_2307 : SIGNAL IS "U(0,5,B)3";
     SIGNAL Net_2316 : bit;
-    ATTRIBUTE placement_force OF Net_2316 : SIGNAL IS "U(1,5,B)3";
+    ATTRIBUTE placement_force OF Net_2316 : SIGNAL IS "U(1,5,A)0";
     SIGNAL Net_2370 : bit;
     SIGNAL Net_2458 : bit;
-    ATTRIBUTE placement_force OF Net_2458 : SIGNAL IS "U(1,2,B)0";
+    ATTRIBUTE placement_force OF Net_2458 : SIGNAL IS "U(2,2,B)0";
     SIGNAL Net_2477 : bit;
     ATTRIBUTE udbclken_assigned OF Net_2477 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_2477 : SIGNAL IS true;
@@ -56,23 +56,23 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE global_signal OF Net_2503 : SIGNAL IS true;
     SIGNAL Net_2503_local : bit;
     SIGNAL Net_2504 : bit;
-    ATTRIBUTE placement_force OF Net_2504 : SIGNAL IS "U(2,1,A)2";
+    ATTRIBUTE placement_force OF Net_2504 : SIGNAL IS "U(2,1,A)1";
     SIGNAL Net_2517 : bit;
-    ATTRIBUTE placement_force OF Net_2517 : SIGNAL IS "U(3,0,A)1";
+    ATTRIBUTE placement_force OF Net_2517 : SIGNAL IS "U(3,0,B)1";
     SIGNAL Net_2524 : bit;
     SIGNAL Net_2525 : bit;
-    ATTRIBUTE placement_force OF Net_2525 : SIGNAL IS "U(3,0,B)3";
+    ATTRIBUTE placement_force OF Net_2525 : SIGNAL IS "U(2,0,B)3";
     SIGNAL Net_2527 : bit;
     SIGNAL Net_2530 : bit;
-    ATTRIBUTE placement_force OF Net_2530 : SIGNAL IS "U(1,4,A)3";
+    ATTRIBUTE placement_force OF Net_2530 : SIGNAL IS "U(0,4,A)2";
     SIGNAL Net_2532 : bit;
-    ATTRIBUTE placement_force OF Net_2532 : SIGNAL IS "U(0,3,A)0";
+    ATTRIBUTE placement_force OF Net_2532 : SIGNAL IS "U(0,2,B)0";
     SIGNAL Net_2541 : bit;
     SIGNAL Net_2553 : bit;
     SIGNAL Net_2559 : bit;
     SIGNAL Net_2564 : bit;
     SIGNAL Net_2601 : bit;
-    ATTRIBUTE placement_force OF Net_2601 : SIGNAL IS "U(1,1,B)2";
+    ATTRIBUTE placement_force OF Net_2601 : SIGNAL IS "U(1,3,A)0";
     SIGNAL Net_2602 : bit;
     SIGNAL Net_2713 : bit;
     SIGNAL Net_2719 : bit;
@@ -89,31 +89,17 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL P2_D2(0)__PA : bit;
     SIGNAL P2_Latch(0)__PA : bit;
     SIGNAL \P1_ClockFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(2,4,B)3";
+    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(2,1,A)0";
     SIGNAL \P1_ClockFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(2,4,A)1";
+    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(2,1,A)3";
     SIGNAL \P1_ClockFilter:genblk1[0]:samples_2\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(2,0,A)1";
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_3\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_3\ : SIGNAL IS "U(2,0,A)0";
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_4\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_4\ : SIGNAL IS "U(2,1,B)2";
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_5\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_5\ : SIGNAL IS "U(2,1,B)0";
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_6\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_6\ : SIGNAL IS "U(2,1,B)3";
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_7\ : bit;
-    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_7\ : SIGNAL IS "U(2,1,B)1";
+    ATTRIBUTE placement_force OF \P1_ClockFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(2,1,B)3";
     SIGNAL \P1_LatchFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(1,2,A)3";
+    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(2,2,B)3";
     SIGNAL \P1_LatchFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(1,2,A)1";
+    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(2,2,B)2";
     SIGNAL \P1_LatchFilter:genblk1[0]:samples_2\ : bit;
-    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(1,2,A)2";
-    SIGNAL \P1_LatchFilter:genblk1[0]:samples_3\ : bit;
-    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_3\ : SIGNAL IS "U(1,2,B)1";
-    SIGNAL \P1_LatchFilter:genblk1[0]:samples_4\ : bit;
-    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_4\ : SIGNAL IS "U(1,2,A)0";
+    ATTRIBUTE placement_force OF \P1_LatchFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(2,2,B)1";
     SIGNAL \P1_RegD0:bSR:control_1\ : bit;
     SIGNAL \P1_RegD0:bSR:control_2\ : bit;
     SIGNAL \P1_RegD0:bSR:control_3\ : bit;
@@ -163,42 +149,28 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \P1_WinTimer:TimerUDB:control_7\ : bit;
     SIGNAL \P1_WinTimer:TimerUDB:per_zero\ : bit;
     SIGNAL \P1_WinTimer:TimerUDB:run_mode\ : bit;
-    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(1,1,A)2";
+    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(3,2,B)2";
     SIGNAL \P1_RegD1:bSR:sC16:BShiftRegDp:u0.ce0__sig\ : bit;
     SIGNAL \P1_WinTimer:TimerUDB:status_2\ : bit;
     SIGNAL \P1_WinTimer:TimerUDB:status_3\ : bit;
     SIGNAL \P1_WinTimer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(0,1,B)2";
+    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(3,2,B)1";
     SIGNAL \P1_WinTimer:TimerUDB:timer_enable\ : bit;
-    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(1,1,B)1";
+    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(3,2,A)1";
     SIGNAL \P1_WinTimer:TimerUDB:trig_disable\ : bit;
-    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(1,1,B)0";
+    ATTRIBUTE placement_force OF \P1_WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(3,2,A)0";
     SIGNAL \P2_ClockFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(1,4,B)1";
+    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(0,4,B)1";
     SIGNAL \P2_ClockFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(1,4,B)0";
+    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(0,4,B)3";
     SIGNAL \P2_ClockFilter:genblk1[0]:samples_2\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(1,4,B)2";
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_3\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_3\ : SIGNAL IS "U(1,4,B)3";
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_4\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_4\ : SIGNAL IS "U(1,5,A)0";
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_5\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_5\ : SIGNAL IS "U(1,5,A)2";
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_6\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_6\ : SIGNAL IS "U(1,5,B)0";
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_7\ : bit;
-    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_7\ : SIGNAL IS "U(1,5,A)3";
+    ATTRIBUTE placement_force OF \P2_ClockFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(0,4,A)0";
     SIGNAL \P2_LatchFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(0,3,B)2";
+    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(0,2,A)3";
     SIGNAL \P2_LatchFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(0,3,B)1";
+    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(0,2,A)2";
     SIGNAL \P2_LatchFilter:genblk1[0]:samples_2\ : bit;
-    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(0,3,B)3";
-    SIGNAL \P2_LatchFilter:genblk1[0]:samples_3\ : bit;
-    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_3\ : SIGNAL IS "U(0,3,B)0";
-    SIGNAL \P2_LatchFilter:genblk1[0]:samples_4\ : bit;
-    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_4\ : SIGNAL IS "U(0,3,A)3";
+    ATTRIBUTE placement_force OF \P2_LatchFilter:genblk1[0]:samples_2\ : SIGNAL IS "U(0,2,A)1";
     SIGNAL \P2_RegD0:bSR:control_1\ : bit;
     SIGNAL \P2_RegD0:bSR:control_2\ : bit;
     SIGNAL \P2_RegD0:bSR:control_3\ : bit;
@@ -247,16 +219,16 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \P2_WinTimer:TimerUDB:control_7\ : bit;
     SIGNAL \P2_WinTimer:TimerUDB:per_zero\ : bit;
     SIGNAL \P2_WinTimer:TimerUDB:run_mode\ : bit;
-    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(1,3,A)0";
+    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(0,1,B)2";
     SIGNAL \P2_RegD1:bSR:sC16:BShiftRegDp:u0.ce0__sig\ : bit;
     SIGNAL \P2_WinTimer:TimerUDB:status_2\ : bit;
     SIGNAL \P2_WinTimer:TimerUDB:status_3\ : bit;
     SIGNAL \P2_WinTimer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(1,2,B)3";
+    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(0,2,A)0";
     SIGNAL \P2_WinTimer:TimerUDB:timer_enable\ : bit;
-    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(1,3,B)1";
+    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(0,1,A)1";
     SIGNAL \P2_WinTimer:TimerUDB:trig_disable\ : bit;
-    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(1,3,B)0";
+    ATTRIBUTE placement_force OF \P2_WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(0,1,A)0";
     SIGNAL \\\USBUART:Dm(0)\\__PA\ : bit;
     SIGNAL \\\USBUART:Dp(0)\\__PA\ : bit;
     SIGNAL \USBUART:Net_1010\ : bit;
@@ -415,15 +387,15 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF Net_2517 : LABEL IS "macrocell1";
     ATTRIBUTE Location OF Net_2517 : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:status_tc\ : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:status_tc\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:status_tc\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF Net_2525 : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF Net_2525 : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF Net_2525 : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF Net_2601 : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF Net_2601 : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF Net_2601 : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF Net_2167 : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF Net_2167 : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF Net_2167 : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:status_tc\ : LABEL IS "macrocell6";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:status_tc\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:status_tc\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF Net_2316 : LABEL IS "macrocell7";
     ATTRIBUTE Location OF Net_2316 : LABEL IS "U(1,5)";
     ATTRIBUTE lib_model OF Net_2307 : LABEL IS "macrocell8";
@@ -440,7 +412,7 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE Location OF P2_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
     ATTRIBUTE Location OF P1_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
     ATTRIBUTE lib_model OF \P1_RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \P1_RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \P1_RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF \P1_RegD0:bSR:StsReg\ : LABEL IS "statusicell1";
     ATTRIBUTE Location OF \P1_RegD0:bSR:StsReg\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \P1_RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell1";
@@ -450,13 +422,13 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE Location OF P1_TimerIRQ : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
     ATTRIBUTE Location OF P2_TimerIRQ : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell3";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell4";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \P1_RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell3";
     ATTRIBUTE Location OF \P1_RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \P1_RegD1:bSR:StsReg\ : LABEL IS "statusicell3";
@@ -474,21 +446,21 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF \P1_RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell8";
     ATTRIBUTE Location OF \P1_RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \P2_RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell5";
-    ATTRIBUTE Location OF \P2_RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \P2_RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \P2_RegD0:bSR:StsReg\ : LABEL IS "statusicell5";
-    ATTRIBUTE Location OF \P2_RegD0:bSR:StsReg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \P2_RegD0:bSR:StsReg\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \P2_RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell9";
-    ATTRIBUTE Location OF \P2_RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \P2_RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \P2_RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell10";
-    ATTRIBUTE Location OF \P2_RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \P2_RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell6";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell6";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell11";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell12";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \P2_RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell7";
     ATTRIBUTE Location OF \P2_RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(1,4)";
     ATTRIBUTE lib_model OF \P2_RegD1:bSR:StsReg\ : LABEL IS "statusicell7";
@@ -498,7 +470,7 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF \P2_RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell14";
     ATTRIBUTE Location OF \P2_RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \P2_RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell8";
-    ATTRIBUTE Location OF \P2_RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(1,5)";
+    ATTRIBUTE Location OF \P2_RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(0,5)";
     ATTRIBUTE lib_model OF \P2_RegD2:bSR:StsReg\ : LABEL IS "statusicell8";
     ATTRIBUTE Location OF \P2_RegD2:bSR:StsReg\ : LABEL IS "U(1,5)";
     ATTRIBUTE lib_model OF \P2_RegD2:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell15";
@@ -506,77 +478,49 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF \P2_RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell16";
     ATTRIBUTE Location OF \P2_RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(1,5)";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell9";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:run_mode\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:run_mode\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell10";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell11";
-    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell12";
-    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_4\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_3\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell14";
-    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell15";
-    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell16";
-    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF Net_2458 : LABEL IS "macrocell17";
-    ATTRIBUTE Location OF Net_2458 : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_7\ : LABEL IS "macrocell18";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_7\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_6\ : LABEL IS "macrocell19";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_6\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_5\ : LABEL IS "macrocell20";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_5\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell21";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_4\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell22";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_3\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell25";
-    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF Net_2504 : LABEL IS "macrocell26";
+    ATTRIBUTE Location OF \P1_WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell12";
+    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell13";
+    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell14";
+    ATTRIBUTE Location OF \P1_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF Net_2458 : LABEL IS "macrocell15";
+    ATTRIBUTE Location OF Net_2458 : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell16";
+    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell17";
+    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell18";
+    ATTRIBUTE Location OF \P1_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF Net_2504 : LABEL IS "macrocell19";
     ATTRIBUTE Location OF Net_2504 : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_7\ : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_7\ : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_6\ : LABEL IS "macrocell28";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_6\ : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_5\ : LABEL IS "macrocell29";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_5\ : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell30";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_4\ : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell31";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_3\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell32";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell34";
-    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF Net_2530 : LABEL IS "macrocell35";
-    ATTRIBUTE Location OF Net_2530 : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell36";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:run_mode\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell37";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell38";
-    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell39";
-    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_4\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell40";
-    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_3\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell41";
-    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell42";
-    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell43";
-    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF Net_2532 : LABEL IS "macrocell44";
-    ATTRIBUTE Location OF Net_2532 : LABEL IS "U(0,3)";
+    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell20";
+    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell21";
+    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell22";
+    ATTRIBUTE Location OF \P2_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF Net_2530 : LABEL IS "macrocell23";
+    ATTRIBUTE Location OF Net_2530 : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell24";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:run_mode\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell25";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell26";
+    ATTRIBUTE Location OF \P2_WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell27";
+    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell28";
+    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell29";
+    ATTRIBUTE Location OF \P2_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF Net_2532 : LABEL IS "macrocell30";
+    ATTRIBUTE Location OF Net_2532 : LABEL IS "U(0,2)";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -3341,26 +3285,6 @@ BEGIN
             main_3 => \P1_WinTimer:TimerUDB:per_zero\,
             main_4 => \P1_WinTimer:TimerUDB:trig_disable\);
 
-    \P1_LatchFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_LatchFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P1_LatchFilter:genblk1[0]:samples_3\);
-
-    \P1_LatchFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_LatchFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P1_LatchFilter:genblk1[0]:samples_2\);
-
     \P1_LatchFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
@@ -3393,7 +3317,7 @@ BEGIN
 
     Net_2458:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6) + (main_0 * !main_1 * main_2 * main_3 * main_4 * main_5 * main_6)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3401,61 +3325,9 @@ BEGIN
             clock_0 => Net_2477,
             main_0 => Net_2602,
             main_1 => Net_2458,
-            main_2 => \P1_LatchFilter:genblk1[0]:samples_4\,
-            main_3 => \P1_LatchFilter:genblk1[0]:samples_3\,
-            main_4 => \P1_LatchFilter:genblk1[0]:samples_2\,
-            main_5 => \P1_LatchFilter:genblk1[0]:samples_1\,
-            main_6 => \P1_LatchFilter:genblk1[0]:samples_0\);
-
-    \P1_ClockFilter:genblk1[0]:samples_7\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_7\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_6\);
-
-    \P1_ClockFilter:genblk1[0]:samples_6\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_6\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_5\);
-
-    \P1_ClockFilter:genblk1[0]:samples_5\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_5\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_4\);
-
-    \P1_ClockFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_3\);
-
-    \P1_ClockFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_2\);
+            main_2 => \P1_LatchFilter:genblk1[0]:samples_2\,
+            main_3 => \P1_LatchFilter:genblk1[0]:samples_1\,
+            main_4 => \P1_LatchFilter:genblk1[0]:samples_0\);
 
     \P1_ClockFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
@@ -3489,7 +3361,7 @@ BEGIN
 
     Net_2504:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6 * !main_7 * !main_8 * !main_9) + (main_0 * !main_1 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7 * main_8 * main_9)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3497,64 +3369,9 @@ BEGIN
             clock_0 => Net_2477,
             main_0 => Net_2713,
             main_1 => Net_2504,
-            main_2 => \P1_ClockFilter:genblk1[0]:samples_7\,
-            main_3 => \P1_ClockFilter:genblk1[0]:samples_6\,
-            main_4 => \P1_ClockFilter:genblk1[0]:samples_5\,
-            main_5 => \P1_ClockFilter:genblk1[0]:samples_4\,
-            main_6 => \P1_ClockFilter:genblk1[0]:samples_3\,
-            main_7 => \P1_ClockFilter:genblk1[0]:samples_2\,
-            main_8 => \P1_ClockFilter:genblk1[0]:samples_1\,
-            main_9 => \P1_ClockFilter:genblk1[0]:samples_0\);
-
-    \P2_ClockFilter:genblk1[0]:samples_7\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_7\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_6\);
-
-    \P2_ClockFilter:genblk1[0]:samples_6\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_6\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_5\);
-
-    \P2_ClockFilter:genblk1[0]:samples_5\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_5\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_4\);
-
-    \P2_ClockFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_3\);
-
-    \P2_ClockFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_2\);
+            main_2 => \P1_ClockFilter:genblk1[0]:samples_2\,
+            main_3 => \P1_ClockFilter:genblk1[0]:samples_1\,
+            main_4 => \P1_ClockFilter:genblk1[0]:samples_0\);
 
     \P2_ClockFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
@@ -3588,22 +3405,17 @@ BEGIN
 
     Net_2530:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * !main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6 * !main_7 * !main_8 * main_9) + (main_0 * main_1 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7 * main_8 * !main_9)",
+            eqn_main => "(!main_0 * !main_1 * !main_2 * !main_3 * main_4) + (main_0 * main_1 * main_2 * main_3 * !main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => Net_2530,
             clock_0 => Net_2477,
             main_0 => Net_2719,
-            main_1 => \P2_ClockFilter:genblk1[0]:samples_7\,
-            main_2 => \P2_ClockFilter:genblk1[0]:samples_6\,
-            main_3 => \P2_ClockFilter:genblk1[0]:samples_5\,
-            main_4 => \P2_ClockFilter:genblk1[0]:samples_4\,
-            main_5 => \P2_ClockFilter:genblk1[0]:samples_3\,
-            main_6 => \P2_ClockFilter:genblk1[0]:samples_2\,
-            main_7 => \P2_ClockFilter:genblk1[0]:samples_1\,
-            main_8 => \P2_ClockFilter:genblk1[0]:samples_0\,
-            main_9 => Net_2530);
+            main_1 => \P2_ClockFilter:genblk1[0]:samples_2\,
+            main_2 => \P2_ClockFilter:genblk1[0]:samples_1\,
+            main_3 => \P2_ClockFilter:genblk1[0]:samples_0\,
+            main_4 => Net_2530);
 
     \P2_WinTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
@@ -3644,26 +3456,6 @@ BEGIN
             main_3 => \P2_WinTimer:TimerUDB:per_zero\,
             main_4 => \P2_WinTimer:TimerUDB:trig_disable\);
 
-    \P2_LatchFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_LatchFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P2_LatchFilter:genblk1[0]:samples_3\);
-
-    \P2_LatchFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_LatchFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P2_LatchFilter:genblk1[0]:samples_2\);
-
     \P2_LatchFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
@@ -3696,7 +3488,7 @@ BEGIN
 
     Net_2532:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6) + (main_0 * !main_1 * main_2 * main_3 * main_4 * main_5 * main_6)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3704,10 +3496,8 @@ BEGIN
             clock_0 => Net_2477,
             main_0 => Net_2163,
             main_1 => Net_2532,
-            main_2 => \P2_LatchFilter:genblk1[0]:samples_4\,
-            main_3 => \P2_LatchFilter:genblk1[0]:samples_3\,
-            main_4 => \P2_LatchFilter:genblk1[0]:samples_2\,
-            main_5 => \P2_LatchFilter:genblk1[0]:samples_1\,
-            main_6 => \P2_LatchFilter:genblk1[0]:samples_0\);
+            main_2 => \P2_LatchFilter:genblk1[0]:samples_2\,
+            main_3 => \P2_LatchFilter:genblk1[0]:samples_1\,
+            main_4 => \P2_LatchFilter:genblk1[0]:samples_0\);
 
 END __DEFAULT__;

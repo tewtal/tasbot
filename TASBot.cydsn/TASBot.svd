@@ -19,7 +19,7 @@
         <register>
           <name>P2_WinTimer_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
-          <addressOffset>0x4000640A</addressOffset>
+          <addressOffset>0x40006408</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -28,62 +28,16 @@
         <register>
           <name>P2_WinTimer_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x4000642A</addressOffset>
+          <addressOffset>0x40006428</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>P2_WinTimer_Control_Reg</name>
-          <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x4000647B</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>CTRL_ENABLE</name>
-              <description>Enable the Timer</description>
-              <lsb>7</lsb>
-              <msb>7</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMODE</name>
-              <description>Capture Mode</description>
-              <lsb>5</lsb>
-              <msb>6</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_TEN</name>
-              <description>Trigger Enable Bit</description>
-              <lsb>4</lsb>
-              <msb>4</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_TMODE</name>
-              <description>Trigger Mode</description>
-              <lsb>2</lsb>
-              <msb>3</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_IC</name>
-              <description>Interrupt Count</description>
-              <lsb>0</lsb>
-              <msb>1</msb>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>P2_WinTimer_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006488</addressOffset>
+          <addressOffset>0x4000648A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -122,7 +76,7 @@
         <register>
           <name>P2_WinTimer_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006498</addressOffset>
+          <addressOffset>0x4000649A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -241,6 +195,52 @@
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>P2_WinTimer_Control_Reg</name>
+          <description>UDB Control Register - Assigned Control Register Value</description>
+          <addressOffset>0x40006578</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+          <fields>
+            <field>
+              <name>CTRL_ENABLE</name>
+              <description>Enable the Timer</description>
+              <lsb>7</lsb>
+              <msb>7</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMODE</name>
+              <description>Capture Mode</description>
+              <lsb>5</lsb>
+              <msb>6</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_TEN</name>
+              <description>Trigger Enable Bit</description>
+              <lsb>4</lsb>
+              <msb>4</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_TMODE</name>
+              <description>Trigger Mode</description>
+              <lsb>2</lsb>
+              <msb>3</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_IC</name>
+              <description>Interrupt Count</description>
+              <lsb>0</lsb>
+              <msb>1</msb>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -2117,7 +2117,7 @@
         <register>
           <name>P1_WinTimer_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
-          <addressOffset>0x40006408</addressOffset>
+          <addressOffset>0x40006406</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2126,16 +2126,62 @@
         <register>
           <name>P1_WinTimer_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006428</addressOffset>
+          <addressOffset>0x40006426</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
+          <name>P1_WinTimer_Control_Reg</name>
+          <description>UDB Control Register - Assigned Control Register Value</description>
+          <addressOffset>0x40006476</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+          <fields>
+            <field>
+              <name>CTRL_ENABLE</name>
+              <description>Enable the Timer</description>
+              <lsb>7</lsb>
+              <msb>7</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMODE</name>
+              <description>Capture Mode</description>
+              <lsb>5</lsb>
+              <msb>6</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_TEN</name>
+              <description>Trigger Enable Bit</description>
+              <lsb>4</lsb>
+              <msb>4</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_TMODE</name>
+              <description>Trigger Mode</description>
+              <lsb>2</lsb>
+              <msb>3</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_IC</name>
+              <description>Interrupt Count</description>
+              <lsb>0</lsb>
+              <msb>1</msb>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>P1_WinTimer_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x4000648A</addressOffset>
+          <addressOffset>0x40006487</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2174,7 +2220,7 @@
         <register>
           <name>P1_WinTimer_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x4000649A</addressOffset>
+          <addressOffset>0x40006497</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2293,52 +2339,6 @@
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>P1_WinTimer_Control_Reg</name>
-          <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006578</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>CTRL_ENABLE</name>
-              <description>Enable the Timer</description>
-              <lsb>7</lsb>
-              <msb>7</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMODE</name>
-              <description>Capture Mode</description>
-              <lsb>5</lsb>
-              <msb>6</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_TEN</name>
-              <description>Trigger Enable Bit</description>
-              <lsb>4</lsb>
-              <msb>4</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_TMODE</name>
-              <description>Trigger Mode</description>
-              <lsb>2</lsb>
-              <msb>3</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_IC</name>
-              <description>Interrupt Count</description>
-              <lsb>0</lsb>
-              <msb>1</msb>
-              <access>read-write</access>
             </field>
           </fields>
         </register>

@@ -1,5 +1,5 @@
 -- Project:   TASBot
--- Generated: 10/14/2016 03:37:37
+-- Generated: 10/14/2016 03:49:09
 -- PSoC Creator  3.3 CP3
 
 ENTITY TASBot IS
@@ -81,16 +81,9 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \P1_ClockFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \P1_ClockFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \P1_ClockFilter:genblk1[0]:samples_2\ : bit;
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_3\ : bit;
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_4\ : bit;
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_5\ : bit;
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_6\ : bit;
-    SIGNAL \P1_ClockFilter:genblk1[0]:samples_7\ : bit;
     SIGNAL \P1_LatchFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \P1_LatchFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \P1_LatchFilter:genblk1[0]:samples_2\ : bit;
-    SIGNAL \P1_LatchFilter:genblk1[0]:samples_3\ : bit;
-    SIGNAL \P1_LatchFilter:genblk1[0]:samples_4\ : bit;
     SIGNAL \P1_RegD0:bSR:control_1\ : bit;
     SIGNAL \P1_RegD0:bSR:control_2\ : bit;
     SIGNAL \P1_RegD0:bSR:control_3\ : bit;
@@ -149,16 +142,9 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \P2_ClockFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \P2_ClockFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \P2_ClockFilter:genblk1[0]:samples_2\ : bit;
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_3\ : bit;
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_4\ : bit;
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_5\ : bit;
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_6\ : bit;
-    SIGNAL \P2_ClockFilter:genblk1[0]:samples_7\ : bit;
     SIGNAL \P2_LatchFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \P2_LatchFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \P2_LatchFilter:genblk1[0]:samples_2\ : bit;
-    SIGNAL \P2_LatchFilter:genblk1[0]:samples_3\ : bit;
-    SIGNAL \P2_LatchFilter:genblk1[0]:samples_4\ : bit;
     SIGNAL \P2_RegD0:bSR:control_1\ : bit;
     SIGNAL \P2_RegD0:bSR:control_2\ : bit;
     SIGNAL \P2_RegD0:bSR:control_3\ : bit;
@@ -410,39 +396,25 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell9";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell10";
     ATTRIBUTE lib_model OF \P1_WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell11";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell12";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell13";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell14";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell15";
-    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell16";
-    ATTRIBUTE lib_model OF Net_2458 : LABEL IS "macrocell17";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_7\ : LABEL IS "macrocell18";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_6\ : LABEL IS "macrocell19";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_5\ : LABEL IS "macrocell20";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell21";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell22";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell23";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell24";
-    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell25";
-    ATTRIBUTE lib_model OF Net_2504 : LABEL IS "macrocell26";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_7\ : LABEL IS "macrocell27";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_6\ : LABEL IS "macrocell28";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_5\ : LABEL IS "macrocell29";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell30";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell31";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell32";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell33";
-    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell34";
-    ATTRIBUTE lib_model OF Net_2530 : LABEL IS "macrocell35";
-    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell36";
-    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell37";
-    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell38";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_4\ : LABEL IS "macrocell39";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_3\ : LABEL IS "macrocell40";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell41";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell42";
-    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell43";
-    ATTRIBUTE lib_model OF Net_2532 : LABEL IS "macrocell44";
+    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell12";
+    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell13";
+    ATTRIBUTE lib_model OF \P1_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell14";
+    ATTRIBUTE lib_model OF Net_2458 : LABEL IS "macrocell15";
+    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell16";
+    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell17";
+    ATTRIBUTE lib_model OF \P1_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell18";
+    ATTRIBUTE lib_model OF Net_2504 : LABEL IS "macrocell19";
+    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell20";
+    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell21";
+    ATTRIBUTE lib_model OF \P2_ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell22";
+    ATTRIBUTE lib_model OF Net_2530 : LABEL IS "macrocell23";
+    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell24";
+    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell25";
+    ATTRIBUTE lib_model OF \P2_WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell26";
+    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell27";
+    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell28";
+    ATTRIBUTE lib_model OF \P2_LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell29";
+    ATTRIBUTE lib_model OF Net_2532 : LABEL IS "macrocell30";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -3226,26 +3198,6 @@ BEGIN
             main_3 => \P1_WinTimer:TimerUDB:per_zero\,
             main_4 => \P1_WinTimer:TimerUDB:trig_disable\);
 
-    \P1_LatchFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_LatchFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P1_LatchFilter:genblk1[0]:samples_3\);
-
-    \P1_LatchFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_LatchFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P1_LatchFilter:genblk1[0]:samples_2\);
-
     \P1_LatchFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
@@ -3278,7 +3230,7 @@ BEGIN
 
     Net_2458:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6) + (main_0 * !main_1 * main_2 * main_3 * main_4 * main_5 * main_6)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3286,61 +3238,9 @@ BEGIN
             clock_0 => Net_2477,
             main_0 => Net_2602,
             main_1 => Net_2458,
-            main_2 => \P1_LatchFilter:genblk1[0]:samples_4\,
-            main_3 => \P1_LatchFilter:genblk1[0]:samples_3\,
-            main_4 => \P1_LatchFilter:genblk1[0]:samples_2\,
-            main_5 => \P1_LatchFilter:genblk1[0]:samples_1\,
-            main_6 => \P1_LatchFilter:genblk1[0]:samples_0\);
-
-    \P1_ClockFilter:genblk1[0]:samples_7\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_7\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_6\);
-
-    \P1_ClockFilter:genblk1[0]:samples_6\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_6\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_5\);
-
-    \P1_ClockFilter:genblk1[0]:samples_5\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_5\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_4\);
-
-    \P1_ClockFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_3\);
-
-    \P1_ClockFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P1_ClockFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P1_ClockFilter:genblk1[0]:samples_2\);
+            main_2 => \P1_LatchFilter:genblk1[0]:samples_2\,
+            main_3 => \P1_LatchFilter:genblk1[0]:samples_1\,
+            main_4 => \P1_LatchFilter:genblk1[0]:samples_0\);
 
     \P1_ClockFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
@@ -3374,7 +3274,7 @@ BEGIN
 
     Net_2504:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6 * !main_7 * !main_8 * !main_9) + (main_0 * !main_1 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7 * main_8 * main_9)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3382,64 +3282,9 @@ BEGIN
             clock_0 => Net_2477,
             main_0 => Net_2713,
             main_1 => Net_2504,
-            main_2 => \P1_ClockFilter:genblk1[0]:samples_7\,
-            main_3 => \P1_ClockFilter:genblk1[0]:samples_6\,
-            main_4 => \P1_ClockFilter:genblk1[0]:samples_5\,
-            main_5 => \P1_ClockFilter:genblk1[0]:samples_4\,
-            main_6 => \P1_ClockFilter:genblk1[0]:samples_3\,
-            main_7 => \P1_ClockFilter:genblk1[0]:samples_2\,
-            main_8 => \P1_ClockFilter:genblk1[0]:samples_1\,
-            main_9 => \P1_ClockFilter:genblk1[0]:samples_0\);
-
-    \P2_ClockFilter:genblk1[0]:samples_7\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_7\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_6\);
-
-    \P2_ClockFilter:genblk1[0]:samples_6\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_6\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_5\);
-
-    \P2_ClockFilter:genblk1[0]:samples_5\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_5\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_4\);
-
-    \P2_ClockFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_3\);
-
-    \P2_ClockFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_ClockFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P2_ClockFilter:genblk1[0]:samples_2\);
+            main_2 => \P1_ClockFilter:genblk1[0]:samples_2\,
+            main_3 => \P1_ClockFilter:genblk1[0]:samples_1\,
+            main_4 => \P1_ClockFilter:genblk1[0]:samples_0\);
 
     \P2_ClockFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
@@ -3473,22 +3318,17 @@ BEGIN
 
     Net_2530:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * !main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6 * !main_7 * !main_8 * main_9) + (main_0 * main_1 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7 * main_8 * !main_9)",
+            eqn_main => "(!main_0 * !main_1 * !main_2 * !main_3 * main_4) + (main_0 * main_1 * main_2 * main_3 * !main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => Net_2530,
             clock_0 => Net_2477,
             main_0 => Net_2719,
-            main_1 => \P2_ClockFilter:genblk1[0]:samples_7\,
-            main_2 => \P2_ClockFilter:genblk1[0]:samples_6\,
-            main_3 => \P2_ClockFilter:genblk1[0]:samples_5\,
-            main_4 => \P2_ClockFilter:genblk1[0]:samples_4\,
-            main_5 => \P2_ClockFilter:genblk1[0]:samples_3\,
-            main_6 => \P2_ClockFilter:genblk1[0]:samples_2\,
-            main_7 => \P2_ClockFilter:genblk1[0]:samples_1\,
-            main_8 => \P2_ClockFilter:genblk1[0]:samples_0\,
-            main_9 => Net_2530);
+            main_1 => \P2_ClockFilter:genblk1[0]:samples_2\,
+            main_2 => \P2_ClockFilter:genblk1[0]:samples_1\,
+            main_3 => \P2_ClockFilter:genblk1[0]:samples_0\,
+            main_4 => Net_2530);
 
     \P2_WinTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
@@ -3529,26 +3369,6 @@ BEGIN
             main_3 => \P2_WinTimer:TimerUDB:per_zero\,
             main_4 => \P2_WinTimer:TimerUDB:trig_disable\);
 
-    \P2_LatchFilter:genblk1[0]:samples_4\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_LatchFilter:genblk1[0]:samples_4\,
-            clock_0 => Net_2477,
-            main_0 => \P2_LatchFilter:genblk1[0]:samples_3\);
-
-    \P2_LatchFilter:genblk1[0]:samples_3\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \P2_LatchFilter:genblk1[0]:samples_3\,
-            clock_0 => Net_2477,
-            main_0 => \P2_LatchFilter:genblk1[0]:samples_2\);
-
     \P2_LatchFilter:genblk1[0]:samples_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
@@ -3581,7 +3401,7 @@ BEGIN
 
     Net_2532:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4 * !main_5 * !main_6) + (main_0 * !main_1 * main_2 * main_3 * main_4 * main_5 * main_6)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3589,10 +3409,8 @@ BEGIN
             clock_0 => Net_2477,
             main_0 => Net_2163,
             main_1 => Net_2532,
-            main_2 => \P2_LatchFilter:genblk1[0]:samples_4\,
-            main_3 => \P2_LatchFilter:genblk1[0]:samples_3\,
-            main_4 => \P2_LatchFilter:genblk1[0]:samples_2\,
-            main_5 => \P2_LatchFilter:genblk1[0]:samples_1\,
-            main_6 => \P2_LatchFilter:genblk1[0]:samples_0\);
+            main_2 => \P2_LatchFilter:genblk1[0]:samples_2\,
+            main_3 => \P2_LatchFilter:genblk1[0]:samples_1\,
+            main_4 => \P2_LatchFilter:genblk1[0]:samples_0\);
 
 END __DEFAULT__;

@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.175ms
+Loading plugins phase: Elapsed time ==> 0s.164ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\TASBot.cyprj -d CY8C5888LTI-LP097 -s C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.848ms
+Elaboration phase: Elapsed time ==> 1s.870ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.058ms
+HDL generation phase: Elapsed time ==> 0s.059ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thoma
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Oct 14 03:37:35 2016
+Fri Oct 14 03:49:08 2016
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 TASBot.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Oct 14 03:37:35 2016
+Fri Oct 14 03:49:08 2016
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
@@ -95,7 +95,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thoma
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Oct 14 03:37:35 2016
+Fri Oct 14 03:49:08 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -130,7 +130,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thoma
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Oct 14 03:37:36 2016
+Fri Oct 14 03:49:08 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -303,14 +303,14 @@ Removing Rhs of wire Net_289[35] = \P1_RegD0:bSR:so_16_0\[170]
 Removing Lhs of wire \USBUART:tmpOE__Dm_net_0\[39] = tmpOE__P1_D1_net_0[1]
 Removing Lhs of wire \USBUART:tmpOE__Dp_net_0\[46] = tmpOE__P1_D1_net_0[1]
 Removing Lhs of wire tmpOE__P1_Clock_net_0[98] = tmpOE__P1_D1_net_0[1]
-Removing Rhs of wire Net_2532[104] = \P2_LatchFilter:genblk1[0]:last_state\[924]
+Removing Rhs of wire Net_2532[104] = \P2_LatchFilter:genblk1[0]:last_state\[910]
 Removing Lhs of wire tmpOE__P2_D0_net_0[106] = tmpOE__P1_D1_net_0[1]
 Removing Lhs of wire tmpOE__P1_Latch_net_0[113] = tmpOE__P1_D1_net_0[1]
-Removing Rhs of wire Net_2458[119] = \P1_LatchFilter:genblk1[0]:last_state\[403]
+Removing Rhs of wire Net_2458[119] = \P1_LatchFilter:genblk1[0]:last_state\[401]
 Removing Lhs of wire \P1_RegD0:Net_350\[120] = zero[6]
 Removing Lhs of wire \P1_RegD0:Net_1\[121] = zero[6]
 Removing Rhs of wire \P1_RegD0:bSR:ctrl_clk_enable\[123] = \P1_RegD0:bSR:control_0\[124]
-Removing Rhs of wire Net_2504[128] = \P1_ClockFilter:genblk1[0]:last_state\[647]
+Removing Rhs of wire Net_2504[128] = \P1_ClockFilter:genblk1[0]:last_state\[640]
 Removing Lhs of wire \P1_RegD0:bSR:status_2\[137] = zero[6]
 Removing Lhs of wire \P1_RegD0:bSR:status_0\[138] = zero[6]
 Removing Lhs of wire \P1_RegD0:bSR:final_load\[139] = zero[6]
@@ -328,7 +328,7 @@ Removing Lhs of wire \P1_RegD0:bSR:store\[158] = zero[6]
 Removing Lhs of wire tmpOE__P2_D2_net_0[236] = tmpOE__P1_D1_net_0[1]
 Removing Lhs of wire tmpOE__P2_D1_net_0[243] = tmpOE__P1_D1_net_0[1]
 Removing Rhs of wire Net_2370[250] = \P1_WinTimer:Net_55\[254]
-Removing Rhs of wire Net_2564[252] = \P2_WinTimer:Net_55\[778]
+Removing Rhs of wire Net_2564[252] = \P2_WinTimer:Net_55\[766]
 Removing Lhs of wire \P1_WinTimer:TimerUDB:ctrl_enable\[271] = \P1_WinTimer:TimerUDB:control_7\[263]
 Removing Lhs of wire \P1_WinTimer:TimerUDB:ctrl_cmode_1\[273] = zero[6]
 Removing Rhs of wire \P1_WinTimer:TimerUDB:timer_enable\[282] = \P1_WinTimer:TimerUDB:runmode_enable\[294]
@@ -347,158 +347,144 @@ Removing Rhs of wire \P1_WinTimer:TimerUDB:status_3\[304] = \P1_WinTimer:TimerUD
 Removing Lhs of wire \P1_WinTimer:TimerUDB:cs_addr_2\[307] = Net_2458[119]
 Removing Lhs of wire \P1_WinTimer:TimerUDB:cs_addr_1\[308] = \P1_WinTimer:TimerUDB:trig_reg\[296]
 Removing Lhs of wire \P1_WinTimer:TimerUDB:cs_addr_0\[309] = \P1_WinTimer:TimerUDB:per_zero\[287]
-Removing Lhs of wire \P1_RegD1:Net_350\[405] = zero[6]
-Removing Lhs of wire \P1_RegD1:Net_1\[406] = zero[6]
-Removing Rhs of wire \P1_RegD1:bSR:ctrl_clk_enable\[408] = \P1_RegD1:bSR:control_0\[409]
-Removing Lhs of wire \P1_RegD1:bSR:status_2\[421] = zero[6]
-Removing Lhs of wire \P1_RegD1:bSR:status_0\[422] = zero[6]
-Removing Lhs of wire \P1_RegD1:bSR:final_load\[423] = zero[6]
-Removing Lhs of wire \P1_RegD1:bSR:status_1\[424] = zero[6]
-Removing Rhs of wire \P1_RegD1:bSR:status_3\[425] = \P1_RegD1:bSR:f0_blk_stat_final\[426]
-Removing Rhs of wire \P1_RegD1:bSR:status_3\[425] = \P1_RegD1:bSR:f0_blk_stat_16_1\[436]
-Removing Rhs of wire \P1_RegD1:bSR:status_4\[427] = \P1_RegD1:bSR:f0_bus_stat_final\[428]
-Removing Rhs of wire \P1_RegD1:bSR:status_4\[427] = \P1_RegD1:bSR:f0_bus_stat_16_1\[437]
-Removing Rhs of wire \P1_RegD1:bSR:status_5\[429] = \P1_RegD1:bSR:f1_blk_stat_final\[430]
-Removing Rhs of wire \P1_RegD1:bSR:status_5\[429] = \P1_RegD1:bSR:f1_blk_stat_16_1\[438]
-Removing Rhs of wire \P1_RegD1:bSR:status_6\[431] = \P1_RegD1:bSR:f1_bus_stat_final\[432]
-Removing Rhs of wire \P1_RegD1:bSR:status_6\[431] = \P1_RegD1:bSR:f1_bus_stat_16_1\[439]
-Removing Lhs of wire \P1_RegD1:bSR:reset\[441] = zero[6]
-Removing Lhs of wire \P1_RegD1:bSR:store\[442] = zero[6]
-Removing Rhs of wire Net_2524[519] = \P1_RegD1:bSR:so_16_0\[454]
-Removing Lhs of wire \P1_RegD2:Net_350\[520] = zero[6]
-Removing Lhs of wire \P1_RegD2:Net_1\[521] = zero[6]
-Removing Rhs of wire \P1_RegD2:bSR:ctrl_clk_enable\[523] = \P1_RegD2:bSR:control_0\[524]
-Removing Lhs of wire \P1_RegD2:bSR:status_2\[536] = zero[6]
-Removing Lhs of wire \P1_RegD2:bSR:status_0\[537] = zero[6]
-Removing Lhs of wire \P1_RegD2:bSR:final_load\[538] = zero[6]
-Removing Lhs of wire \P1_RegD2:bSR:status_1\[539] = zero[6]
-Removing Rhs of wire \P1_RegD2:bSR:status_3\[540] = \P1_RegD2:bSR:f0_blk_stat_final\[541]
-Removing Rhs of wire \P1_RegD2:bSR:status_3\[540] = \P1_RegD2:bSR:f0_blk_stat_16_1\[551]
-Removing Rhs of wire \P1_RegD2:bSR:status_4\[542] = \P1_RegD2:bSR:f0_bus_stat_final\[543]
-Removing Rhs of wire \P1_RegD2:bSR:status_4\[542] = \P1_RegD2:bSR:f0_bus_stat_16_1\[552]
-Removing Rhs of wire \P1_RegD2:bSR:status_5\[544] = \P1_RegD2:bSR:f1_blk_stat_final\[545]
-Removing Rhs of wire \P1_RegD2:bSR:status_5\[544] = \P1_RegD2:bSR:f1_blk_stat_16_1\[553]
-Removing Rhs of wire \P1_RegD2:bSR:status_6\[546] = \P1_RegD2:bSR:f1_bus_stat_final\[547]
-Removing Rhs of wire \P1_RegD2:bSR:status_6\[546] = \P1_RegD2:bSR:f1_bus_stat_16_1\[554]
-Removing Lhs of wire \P1_RegD2:bSR:reset\[556] = zero[6]
-Removing Lhs of wire \P1_RegD2:bSR:store\[557] = zero[6]
-Removing Rhs of wire Net_2527[634] = \P1_RegD2:bSR:so_16_0\[569]
-Removing Rhs of wire Net_2530[661] = \P2_ClockFilter:genblk1[0]:last_state\[660]
-Removing Lhs of wire \P2_RegD0:Net_350\[662] = zero[6]
-Removing Lhs of wire \P2_RegD0:Net_1\[663] = zero[6]
-Removing Rhs of wire \P2_RegD0:bSR:ctrl_clk_enable\[665] = \P2_RegD0:bSR:control_0\[666]
-Removing Lhs of wire \P2_RegD0:bSR:status_2\[678] = zero[6]
-Removing Lhs of wire \P2_RegD0:bSR:status_0\[679] = zero[6]
-Removing Lhs of wire \P2_RegD0:bSR:final_load\[680] = zero[6]
-Removing Lhs of wire \P2_RegD0:bSR:status_1\[681] = zero[6]
-Removing Rhs of wire \P2_RegD0:bSR:status_3\[682] = \P2_RegD0:bSR:f0_blk_stat_final\[683]
-Removing Rhs of wire \P2_RegD0:bSR:status_3\[682] = \P2_RegD0:bSR:f0_blk_stat_16_1\[693]
-Removing Rhs of wire \P2_RegD0:bSR:status_4\[684] = \P2_RegD0:bSR:f0_bus_stat_final\[685]
-Removing Rhs of wire \P2_RegD0:bSR:status_4\[684] = \P2_RegD0:bSR:f0_bus_stat_16_1\[694]
-Removing Rhs of wire \P2_RegD0:bSR:status_5\[686] = \P2_RegD0:bSR:f1_blk_stat_final\[687]
-Removing Rhs of wire \P2_RegD0:bSR:status_5\[686] = \P2_RegD0:bSR:f1_blk_stat_16_1\[695]
-Removing Rhs of wire \P2_RegD0:bSR:status_6\[688] = \P2_RegD0:bSR:f1_bus_stat_final\[689]
-Removing Rhs of wire \P2_RegD0:bSR:status_6\[688] = \P2_RegD0:bSR:f1_bus_stat_16_1\[696]
-Removing Lhs of wire \P2_RegD0:bSR:reset\[698] = zero[6]
-Removing Lhs of wire \P2_RegD0:bSR:store\[699] = zero[6]
-Removing Rhs of wire Net_2541[776] = \P2_RegD0:bSR:so_16_0\[711]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:ctrl_enable\[794] = \P2_WinTimer:TimerUDB:control_7\[786]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:ctrl_cmode_1\[796] = zero[6]
-Removing Rhs of wire \P2_WinTimer:TimerUDB:timer_enable\[805] = \P2_WinTimer:TimerUDB:runmode_enable\[817]
-Removing Rhs of wire \P2_WinTimer:TimerUDB:run_mode\[806] = \P2_WinTimer:TimerUDB:hwEnable_reg\[807]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:trigger_enable\[809] = tmpOE__P1_D1_net_0[1]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:tc_i\[811] = \P2_WinTimer:TimerUDB:status_tc\[808]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:hwEnable\[813] = \P2_WinTimer:TimerUDB:control_7\[786]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:capt_fifo_load_int\[816] = \P2_WinTimer:TimerUDB:capt_fifo_load\[804]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:status_6\[820] = zero[6]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:status_5\[821] = zero[6]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:status_4\[822] = zero[6]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:status_0\[823] = \P2_WinTimer:TimerUDB:status_tc\[808]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:status_1\[824] = \P2_WinTimer:TimerUDB:capt_fifo_load\[804]
-Removing Rhs of wire \P2_WinTimer:TimerUDB:status_2\[825] = \P2_WinTimer:TimerUDB:fifo_full\[826]
-Removing Rhs of wire \P2_WinTimer:TimerUDB:status_3\[827] = \P2_WinTimer:TimerUDB:fifo_nempty\[828]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:cs_addr_2\[830] = Net_2532[104]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:cs_addr_1\[831] = \P2_WinTimer:TimerUDB:trig_reg\[819]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:cs_addr_0\[832] = \P2_WinTimer:TimerUDB:per_zero\[810]
-Removing Lhs of wire \P2_RegD1:Net_350\[925] = zero[6]
-Removing Lhs of wire \P2_RegD1:Net_1\[926] = zero[6]
-Removing Rhs of wire \P2_RegD1:bSR:ctrl_clk_enable\[928] = \P2_RegD1:bSR:control_0\[929]
-Removing Lhs of wire \P2_RegD1:bSR:status_2\[941] = zero[6]
-Removing Lhs of wire \P2_RegD1:bSR:status_0\[942] = zero[6]
-Removing Lhs of wire \P2_RegD1:bSR:final_load\[943] = zero[6]
-Removing Lhs of wire \P2_RegD1:bSR:status_1\[944] = zero[6]
-Removing Rhs of wire \P2_RegD1:bSR:status_3\[945] = \P2_RegD1:bSR:f0_blk_stat_final\[946]
-Removing Rhs of wire \P2_RegD1:bSR:status_3\[945] = \P2_RegD1:bSR:f0_blk_stat_16_1\[956]
-Removing Rhs of wire \P2_RegD1:bSR:status_4\[947] = \P2_RegD1:bSR:f0_bus_stat_final\[948]
-Removing Rhs of wire \P2_RegD1:bSR:status_4\[947] = \P2_RegD1:bSR:f0_bus_stat_16_1\[957]
-Removing Rhs of wire \P2_RegD1:bSR:status_5\[949] = \P2_RegD1:bSR:f1_blk_stat_final\[950]
-Removing Rhs of wire \P2_RegD1:bSR:status_5\[949] = \P2_RegD1:bSR:f1_blk_stat_16_1\[958]
-Removing Rhs of wire \P2_RegD1:bSR:status_6\[951] = \P2_RegD1:bSR:f1_bus_stat_final\[952]
-Removing Rhs of wire \P2_RegD1:bSR:status_6\[951] = \P2_RegD1:bSR:f1_bus_stat_16_1\[959]
-Removing Lhs of wire \P2_RegD1:bSR:reset\[961] = zero[6]
-Removing Lhs of wire \P2_RegD1:bSR:store\[962] = zero[6]
-Removing Rhs of wire Net_2553[1039] = \P2_RegD1:bSR:so_16_0\[974]
-Removing Lhs of wire \P2_RegD2:Net_350\[1040] = zero[6]
-Removing Lhs of wire \P2_RegD2:Net_1\[1041] = zero[6]
-Removing Rhs of wire \P2_RegD2:bSR:ctrl_clk_enable\[1043] = \P2_RegD2:bSR:control_0\[1044]
-Removing Lhs of wire \P2_RegD2:bSR:status_2\[1056] = zero[6]
-Removing Lhs of wire \P2_RegD2:bSR:status_0\[1057] = zero[6]
-Removing Lhs of wire \P2_RegD2:bSR:final_load\[1058] = zero[6]
-Removing Lhs of wire \P2_RegD2:bSR:status_1\[1059] = zero[6]
-Removing Rhs of wire \P2_RegD2:bSR:status_3\[1060] = \P2_RegD2:bSR:f0_blk_stat_final\[1061]
-Removing Rhs of wire \P2_RegD2:bSR:status_3\[1060] = \P2_RegD2:bSR:f0_blk_stat_16_1\[1071]
-Removing Rhs of wire \P2_RegD2:bSR:status_4\[1062] = \P2_RegD2:bSR:f0_bus_stat_final\[1063]
-Removing Rhs of wire \P2_RegD2:bSR:status_4\[1062] = \P2_RegD2:bSR:f0_bus_stat_16_1\[1072]
-Removing Rhs of wire \P2_RegD2:bSR:status_5\[1064] = \P2_RegD2:bSR:f1_blk_stat_final\[1065]
-Removing Rhs of wire \P2_RegD2:bSR:status_5\[1064] = \P2_RegD2:bSR:f1_blk_stat_16_1\[1073]
-Removing Rhs of wire \P2_RegD2:bSR:status_6\[1066] = \P2_RegD2:bSR:f1_bus_stat_final\[1067]
-Removing Rhs of wire \P2_RegD2:bSR:status_6\[1066] = \P2_RegD2:bSR:f1_bus_stat_16_1\[1074]
-Removing Lhs of wire \P2_RegD2:bSR:reset\[1076] = zero[6]
-Removing Lhs of wire \P2_RegD2:bSR:store\[1077] = zero[6]
-Removing Rhs of wire Net_2559[1154] = \P2_RegD2:bSR:so_16_0\[1089]
-Removing Lhs of wire \P1_RegD0:bSR:load_reg\\D\[1155] = zero[6]
-Removing Lhs of wire \P1_WinTimer:TimerUDB:capture_last\\D\[1156] = zero[6]
-Removing Lhs of wire \P1_WinTimer:TimerUDB:hwEnable_reg\\D\[1157] = \P1_WinTimer:TimerUDB:control_7\[263]
-Removing Lhs of wire \P1_WinTimer:TimerUDB:tc_reg_i\\D\[1158] = \P1_WinTimer:TimerUDB:status_tc\[285]
-Removing Lhs of wire \P1_WinTimer:TimerUDB:capture_out_reg_i\\D\[1159] = \P1_WinTimer:TimerUDB:capt_fifo_load\[281]
-Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_4\\D\[1162] = \P1_LatchFilter:genblk1[0]:samples_3\[398]
-Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_3\\D\[1163] = \P1_LatchFilter:genblk1[0]:samples_2\[399]
-Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_2\\D\[1164] = \P1_LatchFilter:genblk1[0]:samples_1\[400]
-Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_1\\D\[1165] = \P1_LatchFilter:genblk1[0]:samples_0\[401]
-Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_0\\D\[1166] = Net_2602[114]
-Removing Lhs of wire \P1_RegD1:bSR:load_reg\\D\[1168] = zero[6]
-Removing Lhs of wire \P1_RegD2:bSR:load_reg\\D\[1169] = zero[6]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_7\\D\[1170] = \P1_ClockFilter:genblk1[0]:samples_6\[639]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_6\\D\[1171] = \P1_ClockFilter:genblk1[0]:samples_5\[640]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_5\\D\[1172] = \P1_ClockFilter:genblk1[0]:samples_4\[641]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_4\\D\[1173] = \P1_ClockFilter:genblk1[0]:samples_3\[642]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_3\\D\[1174] = \P1_ClockFilter:genblk1[0]:samples_2\[643]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_2\\D\[1175] = \P1_ClockFilter:genblk1[0]:samples_1\[644]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_1\\D\[1176] = \P1_ClockFilter:genblk1[0]:samples_0\[645]
-Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_0\\D\[1177] = Net_2713[99]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_7\\D\[1179] = \P2_ClockFilter:genblk1[0]:samples_6\[652]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_6\\D\[1180] = \P2_ClockFilter:genblk1[0]:samples_5\[653]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_5\\D\[1181] = \P2_ClockFilter:genblk1[0]:samples_4\[654]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_4\\D\[1182] = \P2_ClockFilter:genblk1[0]:samples_3\[655]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_3\\D\[1183] = \P2_ClockFilter:genblk1[0]:samples_2\[656]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_2\\D\[1184] = \P2_ClockFilter:genblk1[0]:samples_1\[657]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_1\\D\[1185] = \P2_ClockFilter:genblk1[0]:samples_0\[658]
-Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_0\\D\[1186] = Net_2719[31]
-Removing Lhs of wire \P2_RegD0:bSR:load_reg\\D\[1188] = zero[6]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:capture_last\\D\[1189] = zero[6]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:hwEnable_reg\\D\[1190] = \P2_WinTimer:TimerUDB:control_7\[786]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:tc_reg_i\\D\[1191] = \P2_WinTimer:TimerUDB:status_tc\[808]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:capture_out_reg_i\\D\[1192] = \P2_WinTimer:TimerUDB:capt_fifo_load\[804]
-Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_4\\D\[1195] = \P2_LatchFilter:genblk1[0]:samples_3\[919]
-Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_3\\D\[1196] = \P2_LatchFilter:genblk1[0]:samples_2\[920]
-Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_2\\D\[1197] = \P2_LatchFilter:genblk1[0]:samples_1\[921]
-Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_1\\D\[1198] = \P2_LatchFilter:genblk1[0]:samples_0\[922]
-Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_0\\D\[1199] = Net_2163[18]
-Removing Lhs of wire \P2_RegD1:bSR:load_reg\\D\[1201] = zero[6]
-Removing Lhs of wire \P2_RegD2:bSR:load_reg\\D\[1202] = zero[6]
+Removing Lhs of wire \P1_RegD1:Net_350\[403] = zero[6]
+Removing Lhs of wire \P1_RegD1:Net_1\[404] = zero[6]
+Removing Rhs of wire \P1_RegD1:bSR:ctrl_clk_enable\[406] = \P1_RegD1:bSR:control_0\[407]
+Removing Lhs of wire \P1_RegD1:bSR:status_2\[419] = zero[6]
+Removing Lhs of wire \P1_RegD1:bSR:status_0\[420] = zero[6]
+Removing Lhs of wire \P1_RegD1:bSR:final_load\[421] = zero[6]
+Removing Lhs of wire \P1_RegD1:bSR:status_1\[422] = zero[6]
+Removing Rhs of wire \P1_RegD1:bSR:status_3\[423] = \P1_RegD1:bSR:f0_blk_stat_final\[424]
+Removing Rhs of wire \P1_RegD1:bSR:status_3\[423] = \P1_RegD1:bSR:f0_blk_stat_16_1\[434]
+Removing Rhs of wire \P1_RegD1:bSR:status_4\[425] = \P1_RegD1:bSR:f0_bus_stat_final\[426]
+Removing Rhs of wire \P1_RegD1:bSR:status_4\[425] = \P1_RegD1:bSR:f0_bus_stat_16_1\[435]
+Removing Rhs of wire \P1_RegD1:bSR:status_5\[427] = \P1_RegD1:bSR:f1_blk_stat_final\[428]
+Removing Rhs of wire \P1_RegD1:bSR:status_5\[427] = \P1_RegD1:bSR:f1_blk_stat_16_1\[436]
+Removing Rhs of wire \P1_RegD1:bSR:status_6\[429] = \P1_RegD1:bSR:f1_bus_stat_final\[430]
+Removing Rhs of wire \P1_RegD1:bSR:status_6\[429] = \P1_RegD1:bSR:f1_bus_stat_16_1\[437]
+Removing Lhs of wire \P1_RegD1:bSR:reset\[439] = zero[6]
+Removing Lhs of wire \P1_RegD1:bSR:store\[440] = zero[6]
+Removing Rhs of wire Net_2524[517] = \P1_RegD1:bSR:so_16_0\[452]
+Removing Lhs of wire \P1_RegD2:Net_350\[518] = zero[6]
+Removing Lhs of wire \P1_RegD2:Net_1\[519] = zero[6]
+Removing Rhs of wire \P1_RegD2:bSR:ctrl_clk_enable\[521] = \P1_RegD2:bSR:control_0\[522]
+Removing Lhs of wire \P1_RegD2:bSR:status_2\[534] = zero[6]
+Removing Lhs of wire \P1_RegD2:bSR:status_0\[535] = zero[6]
+Removing Lhs of wire \P1_RegD2:bSR:final_load\[536] = zero[6]
+Removing Lhs of wire \P1_RegD2:bSR:status_1\[537] = zero[6]
+Removing Rhs of wire \P1_RegD2:bSR:status_3\[538] = \P1_RegD2:bSR:f0_blk_stat_final\[539]
+Removing Rhs of wire \P1_RegD2:bSR:status_3\[538] = \P1_RegD2:bSR:f0_blk_stat_16_1\[549]
+Removing Rhs of wire \P1_RegD2:bSR:status_4\[540] = \P1_RegD2:bSR:f0_bus_stat_final\[541]
+Removing Rhs of wire \P1_RegD2:bSR:status_4\[540] = \P1_RegD2:bSR:f0_bus_stat_16_1\[550]
+Removing Rhs of wire \P1_RegD2:bSR:status_5\[542] = \P1_RegD2:bSR:f1_blk_stat_final\[543]
+Removing Rhs of wire \P1_RegD2:bSR:status_5\[542] = \P1_RegD2:bSR:f1_blk_stat_16_1\[551]
+Removing Rhs of wire \P1_RegD2:bSR:status_6\[544] = \P1_RegD2:bSR:f1_bus_stat_final\[545]
+Removing Rhs of wire \P1_RegD2:bSR:status_6\[544] = \P1_RegD2:bSR:f1_bus_stat_16_1\[552]
+Removing Lhs of wire \P1_RegD2:bSR:reset\[554] = zero[6]
+Removing Lhs of wire \P1_RegD2:bSR:store\[555] = zero[6]
+Removing Rhs of wire Net_2527[632] = \P1_RegD2:bSR:so_16_0\[567]
+Removing Rhs of wire Net_2530[649] = \P2_ClockFilter:genblk1[0]:last_state\[648]
+Removing Lhs of wire \P2_RegD0:Net_350\[650] = zero[6]
+Removing Lhs of wire \P2_RegD0:Net_1\[651] = zero[6]
+Removing Rhs of wire \P2_RegD0:bSR:ctrl_clk_enable\[653] = \P2_RegD0:bSR:control_0\[654]
+Removing Lhs of wire \P2_RegD0:bSR:status_2\[666] = zero[6]
+Removing Lhs of wire \P2_RegD0:bSR:status_0\[667] = zero[6]
+Removing Lhs of wire \P2_RegD0:bSR:final_load\[668] = zero[6]
+Removing Lhs of wire \P2_RegD0:bSR:status_1\[669] = zero[6]
+Removing Rhs of wire \P2_RegD0:bSR:status_3\[670] = \P2_RegD0:bSR:f0_blk_stat_final\[671]
+Removing Rhs of wire \P2_RegD0:bSR:status_3\[670] = \P2_RegD0:bSR:f0_blk_stat_16_1\[681]
+Removing Rhs of wire \P2_RegD0:bSR:status_4\[672] = \P2_RegD0:bSR:f0_bus_stat_final\[673]
+Removing Rhs of wire \P2_RegD0:bSR:status_4\[672] = \P2_RegD0:bSR:f0_bus_stat_16_1\[682]
+Removing Rhs of wire \P2_RegD0:bSR:status_5\[674] = \P2_RegD0:bSR:f1_blk_stat_final\[675]
+Removing Rhs of wire \P2_RegD0:bSR:status_5\[674] = \P2_RegD0:bSR:f1_blk_stat_16_1\[683]
+Removing Rhs of wire \P2_RegD0:bSR:status_6\[676] = \P2_RegD0:bSR:f1_bus_stat_final\[677]
+Removing Rhs of wire \P2_RegD0:bSR:status_6\[676] = \P2_RegD0:bSR:f1_bus_stat_16_1\[684]
+Removing Lhs of wire \P2_RegD0:bSR:reset\[686] = zero[6]
+Removing Lhs of wire \P2_RegD0:bSR:store\[687] = zero[6]
+Removing Rhs of wire Net_2541[764] = \P2_RegD0:bSR:so_16_0\[699]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:ctrl_enable\[782] = \P2_WinTimer:TimerUDB:control_7\[774]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:ctrl_cmode_1\[784] = zero[6]
+Removing Rhs of wire \P2_WinTimer:TimerUDB:timer_enable\[793] = \P2_WinTimer:TimerUDB:runmode_enable\[805]
+Removing Rhs of wire \P2_WinTimer:TimerUDB:run_mode\[794] = \P2_WinTimer:TimerUDB:hwEnable_reg\[795]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:trigger_enable\[797] = tmpOE__P1_D1_net_0[1]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:tc_i\[799] = \P2_WinTimer:TimerUDB:status_tc\[796]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:hwEnable\[801] = \P2_WinTimer:TimerUDB:control_7\[774]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:capt_fifo_load_int\[804] = \P2_WinTimer:TimerUDB:capt_fifo_load\[792]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:status_6\[808] = zero[6]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:status_5\[809] = zero[6]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:status_4\[810] = zero[6]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:status_0\[811] = \P2_WinTimer:TimerUDB:status_tc\[796]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:status_1\[812] = \P2_WinTimer:TimerUDB:capt_fifo_load\[792]
+Removing Rhs of wire \P2_WinTimer:TimerUDB:status_2\[813] = \P2_WinTimer:TimerUDB:fifo_full\[814]
+Removing Rhs of wire \P2_WinTimer:TimerUDB:status_3\[815] = \P2_WinTimer:TimerUDB:fifo_nempty\[816]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:cs_addr_2\[818] = Net_2532[104]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:cs_addr_1\[819] = \P2_WinTimer:TimerUDB:trig_reg\[807]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:cs_addr_0\[820] = \P2_WinTimer:TimerUDB:per_zero\[798]
+Removing Lhs of wire \P2_RegD1:Net_350\[911] = zero[6]
+Removing Lhs of wire \P2_RegD1:Net_1\[912] = zero[6]
+Removing Rhs of wire \P2_RegD1:bSR:ctrl_clk_enable\[914] = \P2_RegD1:bSR:control_0\[915]
+Removing Lhs of wire \P2_RegD1:bSR:status_2\[927] = zero[6]
+Removing Lhs of wire \P2_RegD1:bSR:status_0\[928] = zero[6]
+Removing Lhs of wire \P2_RegD1:bSR:final_load\[929] = zero[6]
+Removing Lhs of wire \P2_RegD1:bSR:status_1\[930] = zero[6]
+Removing Rhs of wire \P2_RegD1:bSR:status_3\[931] = \P2_RegD1:bSR:f0_blk_stat_final\[932]
+Removing Rhs of wire \P2_RegD1:bSR:status_3\[931] = \P2_RegD1:bSR:f0_blk_stat_16_1\[942]
+Removing Rhs of wire \P2_RegD1:bSR:status_4\[933] = \P2_RegD1:bSR:f0_bus_stat_final\[934]
+Removing Rhs of wire \P2_RegD1:bSR:status_4\[933] = \P2_RegD1:bSR:f0_bus_stat_16_1\[943]
+Removing Rhs of wire \P2_RegD1:bSR:status_5\[935] = \P2_RegD1:bSR:f1_blk_stat_final\[936]
+Removing Rhs of wire \P2_RegD1:bSR:status_5\[935] = \P2_RegD1:bSR:f1_blk_stat_16_1\[944]
+Removing Rhs of wire \P2_RegD1:bSR:status_6\[937] = \P2_RegD1:bSR:f1_bus_stat_final\[938]
+Removing Rhs of wire \P2_RegD1:bSR:status_6\[937] = \P2_RegD1:bSR:f1_bus_stat_16_1\[945]
+Removing Lhs of wire \P2_RegD1:bSR:reset\[947] = zero[6]
+Removing Lhs of wire \P2_RegD1:bSR:store\[948] = zero[6]
+Removing Rhs of wire Net_2553[1025] = \P2_RegD1:bSR:so_16_0\[960]
+Removing Lhs of wire \P2_RegD2:Net_350\[1026] = zero[6]
+Removing Lhs of wire \P2_RegD2:Net_1\[1027] = zero[6]
+Removing Rhs of wire \P2_RegD2:bSR:ctrl_clk_enable\[1029] = \P2_RegD2:bSR:control_0\[1030]
+Removing Lhs of wire \P2_RegD2:bSR:status_2\[1042] = zero[6]
+Removing Lhs of wire \P2_RegD2:bSR:status_0\[1043] = zero[6]
+Removing Lhs of wire \P2_RegD2:bSR:final_load\[1044] = zero[6]
+Removing Lhs of wire \P2_RegD2:bSR:status_1\[1045] = zero[6]
+Removing Rhs of wire \P2_RegD2:bSR:status_3\[1046] = \P2_RegD2:bSR:f0_blk_stat_final\[1047]
+Removing Rhs of wire \P2_RegD2:bSR:status_3\[1046] = \P2_RegD2:bSR:f0_blk_stat_16_1\[1057]
+Removing Rhs of wire \P2_RegD2:bSR:status_4\[1048] = \P2_RegD2:bSR:f0_bus_stat_final\[1049]
+Removing Rhs of wire \P2_RegD2:bSR:status_4\[1048] = \P2_RegD2:bSR:f0_bus_stat_16_1\[1058]
+Removing Rhs of wire \P2_RegD2:bSR:status_5\[1050] = \P2_RegD2:bSR:f1_blk_stat_final\[1051]
+Removing Rhs of wire \P2_RegD2:bSR:status_5\[1050] = \P2_RegD2:bSR:f1_blk_stat_16_1\[1059]
+Removing Rhs of wire \P2_RegD2:bSR:status_6\[1052] = \P2_RegD2:bSR:f1_bus_stat_final\[1053]
+Removing Rhs of wire \P2_RegD2:bSR:status_6\[1052] = \P2_RegD2:bSR:f1_bus_stat_16_1\[1060]
+Removing Lhs of wire \P2_RegD2:bSR:reset\[1062] = zero[6]
+Removing Lhs of wire \P2_RegD2:bSR:store\[1063] = zero[6]
+Removing Rhs of wire Net_2559[1140] = \P2_RegD2:bSR:so_16_0\[1075]
+Removing Lhs of wire \P1_RegD0:bSR:load_reg\\D\[1141] = zero[6]
+Removing Lhs of wire \P1_WinTimer:TimerUDB:capture_last\\D\[1142] = zero[6]
+Removing Lhs of wire \P1_WinTimer:TimerUDB:hwEnable_reg\\D\[1143] = \P1_WinTimer:TimerUDB:control_7\[263]
+Removing Lhs of wire \P1_WinTimer:TimerUDB:tc_reg_i\\D\[1144] = \P1_WinTimer:TimerUDB:status_tc\[285]
+Removing Lhs of wire \P1_WinTimer:TimerUDB:capture_out_reg_i\\D\[1145] = \P1_WinTimer:TimerUDB:capt_fifo_load\[281]
+Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_2\\D\[1148] = \P1_LatchFilter:genblk1[0]:samples_1\[398]
+Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_1\\D\[1149] = \P1_LatchFilter:genblk1[0]:samples_0\[399]
+Removing Lhs of wire \P1_LatchFilter:genblk1[0]:samples_0\\D\[1150] = Net_2602[114]
+Removing Lhs of wire \P1_RegD1:bSR:load_reg\\D\[1152] = zero[6]
+Removing Lhs of wire \P1_RegD2:bSR:load_reg\\D\[1153] = zero[6]
+Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_2\\D\[1154] = \P1_ClockFilter:genblk1[0]:samples_1\[637]
+Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_1\\D\[1155] = \P1_ClockFilter:genblk1[0]:samples_0\[638]
+Removing Lhs of wire \P1_ClockFilter:genblk1[0]:samples_0\\D\[1156] = Net_2713[99]
+Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_2\\D\[1158] = \P2_ClockFilter:genblk1[0]:samples_1\[645]
+Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_1\\D\[1159] = \P2_ClockFilter:genblk1[0]:samples_0\[646]
+Removing Lhs of wire \P2_ClockFilter:genblk1[0]:samples_0\\D\[1160] = Net_2719[31]
+Removing Lhs of wire \P2_RegD0:bSR:load_reg\\D\[1162] = zero[6]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:capture_last\\D\[1163] = zero[6]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:hwEnable_reg\\D\[1164] = \P2_WinTimer:TimerUDB:control_7\[774]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:tc_reg_i\\D\[1165] = \P2_WinTimer:TimerUDB:status_tc\[796]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:capture_out_reg_i\\D\[1166] = \P2_WinTimer:TimerUDB:capt_fifo_load\[792]
+Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_2\\D\[1169] = \P2_LatchFilter:genblk1[0]:samples_1\[907]
+Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_1\\D\[1170] = \P2_LatchFilter:genblk1[0]:samples_0\[908]
+Removing Lhs of wire \P2_LatchFilter:genblk1[0]:samples_0\\D\[1171] = Net_2163[18]
+Removing Lhs of wire \P2_RegD1:bSR:load_reg\\D\[1173] = zero[6]
+Removing Lhs of wire \P2_RegD2:bSR:load_reg\\D\[1174] = zero[6]
 
 ------------------------------------------------------
-Aliased 0 equations, 202 wires.
+Aliased 0 equations, 188 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -519,44 +505,32 @@ Note:  Expanding virtual equation for '\P1_WinTimer:TimerUDB:fifo_load_polarized
 Note:  Expanding virtual equation for '\P1_WinTimer:TimerUDB:status_tc\' (cost = 3):
 \P1_WinTimer:TimerUDB:status_tc\ <= ((\P1_WinTimer:TimerUDB:run_mode\ and \P1_WinTimer:TimerUDB:per_zero\));
 
-Note:  Expanding virtual equation for '\P1_LatchFilter:genblk1[0]:or_term\' (cost = 6):
+Note:  Expanding virtual equation for '\P1_LatchFilter:genblk1[0]:or_term\' (cost = 4):
 \P1_LatchFilter:genblk1[0]:or_term\ <= (\P1_LatchFilter:genblk1[0]:samples_0\
 	OR \P1_LatchFilter:genblk1[0]:samples_1\
 	OR \P1_LatchFilter:genblk1[0]:samples_2\
-	OR \P1_LatchFilter:genblk1[0]:samples_3\
-	OR \P1_LatchFilter:genblk1[0]:samples_4\
 	OR Net_2602);
 
 Note:  Expanding virtual equation for '\P1_LatchFilter:genblk1[0]:and_term\' (cost = 1):
-\P1_LatchFilter:genblk1[0]:and_term\ <= ((Net_2602 and \P1_LatchFilter:genblk1[0]:samples_4\ and \P1_LatchFilter:genblk1[0]:samples_3\ and \P1_LatchFilter:genblk1[0]:samples_2\ and \P1_LatchFilter:genblk1[0]:samples_1\ and \P1_LatchFilter:genblk1[0]:samples_0\));
+\P1_LatchFilter:genblk1[0]:and_term\ <= ((Net_2602 and \P1_LatchFilter:genblk1[0]:samples_2\ and \P1_LatchFilter:genblk1[0]:samples_1\ and \P1_LatchFilter:genblk1[0]:samples_0\));
 
-Note:  Expanding virtual equation for '\P1_ClockFilter:genblk1[0]:or_term\' (cost = 9):
+Note:  Expanding virtual equation for '\P1_ClockFilter:genblk1[0]:or_term\' (cost = 4):
 \P1_ClockFilter:genblk1[0]:or_term\ <= (\P1_ClockFilter:genblk1[0]:samples_0\
 	OR \P1_ClockFilter:genblk1[0]:samples_1\
 	OR \P1_ClockFilter:genblk1[0]:samples_2\
-	OR \P1_ClockFilter:genblk1[0]:samples_3\
-	OR \P1_ClockFilter:genblk1[0]:samples_4\
-	OR \P1_ClockFilter:genblk1[0]:samples_5\
-	OR \P1_ClockFilter:genblk1[0]:samples_6\
-	OR \P1_ClockFilter:genblk1[0]:samples_7\
 	OR Net_2713);
 
 Note:  Expanding virtual equation for '\P1_ClockFilter:genblk1[0]:and_term\' (cost = 1):
-\P1_ClockFilter:genblk1[0]:and_term\ <= ((Net_2713 and \P1_ClockFilter:genblk1[0]:samples_7\ and \P1_ClockFilter:genblk1[0]:samples_6\ and \P1_ClockFilter:genblk1[0]:samples_5\ and \P1_ClockFilter:genblk1[0]:samples_4\ and \P1_ClockFilter:genblk1[0]:samples_3\ and \P1_ClockFilter:genblk1[0]:samples_2\ and \P1_ClockFilter:genblk1[0]:samples_1\ and \P1_ClockFilter:genblk1[0]:samples_0\));
+\P1_ClockFilter:genblk1[0]:and_term\ <= ((Net_2713 and \P1_ClockFilter:genblk1[0]:samples_2\ and \P1_ClockFilter:genblk1[0]:samples_1\ and \P1_ClockFilter:genblk1[0]:samples_0\));
 
-Note:  Expanding virtual equation for '\P2_ClockFilter:genblk1[0]:or_term\' (cost = 9):
+Note:  Expanding virtual equation for '\P2_ClockFilter:genblk1[0]:or_term\' (cost = 4):
 \P2_ClockFilter:genblk1[0]:or_term\ <= (\P2_ClockFilter:genblk1[0]:samples_0\
 	OR \P2_ClockFilter:genblk1[0]:samples_1\
 	OR \P2_ClockFilter:genblk1[0]:samples_2\
-	OR \P2_ClockFilter:genblk1[0]:samples_3\
-	OR \P2_ClockFilter:genblk1[0]:samples_4\
-	OR \P2_ClockFilter:genblk1[0]:samples_5\
-	OR \P2_ClockFilter:genblk1[0]:samples_6\
-	OR \P2_ClockFilter:genblk1[0]:samples_7\
 	OR Net_2719);
 
 Note:  Expanding virtual equation for '\P2_ClockFilter:genblk1[0]:and_term\' (cost = 1):
-\P2_ClockFilter:genblk1[0]:and_term\ <= ((Net_2719 and \P2_ClockFilter:genblk1[0]:samples_7\ and \P2_ClockFilter:genblk1[0]:samples_6\ and \P2_ClockFilter:genblk1[0]:samples_5\ and \P2_ClockFilter:genblk1[0]:samples_4\ and \P2_ClockFilter:genblk1[0]:samples_3\ and \P2_ClockFilter:genblk1[0]:samples_2\ and \P2_ClockFilter:genblk1[0]:samples_1\ and \P2_ClockFilter:genblk1[0]:samples_0\));
+\P2_ClockFilter:genblk1[0]:and_term\ <= ((Net_2719 and \P2_ClockFilter:genblk1[0]:samples_2\ and \P2_ClockFilter:genblk1[0]:samples_1\ and \P2_ClockFilter:genblk1[0]:samples_0\));
 
 Note:  Expanding virtual equation for '\P2_WinTimer:TimerUDB:fifo_load_polarized\' (cost = 0):
 \P2_WinTimer:TimerUDB:fifo_load_polarized\ <=  ('0') ;
@@ -564,16 +538,14 @@ Note:  Expanding virtual equation for '\P2_WinTimer:TimerUDB:fifo_load_polarized
 Note:  Expanding virtual equation for '\P2_WinTimer:TimerUDB:status_tc\' (cost = 3):
 \P2_WinTimer:TimerUDB:status_tc\ <= ((\P2_WinTimer:TimerUDB:run_mode\ and \P2_WinTimer:TimerUDB:per_zero\));
 
-Note:  Expanding virtual equation for '\P2_LatchFilter:genblk1[0]:or_term\' (cost = 6):
+Note:  Expanding virtual equation for '\P2_LatchFilter:genblk1[0]:or_term\' (cost = 4):
 \P2_LatchFilter:genblk1[0]:or_term\ <= (\P2_LatchFilter:genblk1[0]:samples_0\
 	OR \P2_LatchFilter:genblk1[0]:samples_1\
 	OR \P2_LatchFilter:genblk1[0]:samples_2\
-	OR \P2_LatchFilter:genblk1[0]:samples_3\
-	OR \P2_LatchFilter:genblk1[0]:samples_4\
 	OR Net_2163);
 
 Note:  Expanding virtual equation for '\P2_LatchFilter:genblk1[0]:and_term\' (cost = 1):
-\P2_LatchFilter:genblk1[0]:and_term\ <= ((Net_2163 and \P2_LatchFilter:genblk1[0]:samples_4\ and \P2_LatchFilter:genblk1[0]:samples_3\ and \P2_LatchFilter:genblk1[0]:samples_2\ and \P2_LatchFilter:genblk1[0]:samples_1\ and \P2_LatchFilter:genblk1[0]:samples_0\));
+\P2_LatchFilter:genblk1[0]:and_term\ <= ((Net_2163 and \P2_LatchFilter:genblk1[0]:samples_2\ and \P2_LatchFilter:genblk1[0]:samples_1\ and \P2_LatchFilter:genblk1[0]:samples_0\));
 
 
 Substituting virtuals - pass 2:
@@ -594,8 +566,8 @@ Aliasing \P1_WinTimer:TimerUDB:capt_fifo_load\ to zero
 Aliasing \P2_WinTimer:TimerUDB:capt_fifo_load\ to zero
 Removing Lhs of wire \P1_WinTimer:TimerUDB:capt_fifo_load\[281] = zero[6]
 Removing Lhs of wire \P1_WinTimer:TimerUDB:trig_reg\[296] = \P1_WinTimer:TimerUDB:timer_enable\[282]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:capt_fifo_load\[804] = zero[6]
-Removing Lhs of wire \P2_WinTimer:TimerUDB:trig_reg\[819] = \P2_WinTimer:TimerUDB:timer_enable\[805]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:capt_fifo_load\[792] = zero[6]
+Removing Lhs of wire \P2_WinTimer:TimerUDB:trig_reg\[807] = \P2_WinTimer:TimerUDB:timer_enable\[793]
 
 ------------------------------------------------------
 Aliased 0 equations, 4 wires.
@@ -628,14 +600,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\TASBot.cyprj" -dcpsoc3 TASBot.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.050ms
+Warp synthesis phase: Elapsed time ==> 1s.074ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Friday, 14 October 2016 03:37:36
+cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Friday, 14 October 2016 03:49:09
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\TASBot.cyprj -d CY8C5888LTI-LP097 TASBot.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.021ms
+Design parsing phase: Elapsed time ==> 0s.019ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -1348,30 +1320,6 @@ Design Equations
         );
         Output = \P1_WinTimer:TimerUDB:trig_disable\ (fanout=2)
 
-    MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_4\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_LatchFilter:genblk1[0]:samples_3\
-        );
-        Output = \P1_LatchFilter:genblk1[0]:samples_4\ (fanout=1)
-
-    MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_3\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_LatchFilter:genblk1[0]:samples_2\
-        );
-        Output = \P1_LatchFilter:genblk1[0]:samples_3\ (fanout=2)
-
     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_2\, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
@@ -1382,7 +1330,7 @@ Design Equations
         (
               \P1_LatchFilter:genblk1[0]:samples_1\
         );
-        Output = \P1_LatchFilter:genblk1[0]:samples_2\ (fanout=2)
+        Output = \P1_LatchFilter:genblk1[0]:samples_2\ (fanout=1)
 
     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register)
         Total # of inputs        : 1
@@ -1409,85 +1357,21 @@ Design Equations
         Output = \P1_LatchFilter:genblk1[0]:samples_0\ (fanout=2)
 
     MacroCell: Name=Net_2458, Mode=(T-Register)
-        Total # of inputs        : 7
+        Total # of inputs        : 5
         Total # of product terms : 2
         List of special equations: 
             Clock  = (Net_2477) => Global
             Clock Enable: True
         Main Equation            : 2 pterms
         (
-              !Net_2602 * Net_2458 * !\P1_LatchFilter:genblk1[0]:samples_4\ * 
-              !\P1_LatchFilter:genblk1[0]:samples_3\ * 
-              !\P1_LatchFilter:genblk1[0]:samples_2\ * 
+              !Net_2602 * Net_2458 * !\P1_LatchFilter:genblk1[0]:samples_2\ * 
               !\P1_LatchFilter:genblk1[0]:samples_1\ * 
               !\P1_LatchFilter:genblk1[0]:samples_0\
-            + Net_2602 * !Net_2458 * \P1_LatchFilter:genblk1[0]:samples_4\ * 
-              \P1_LatchFilter:genblk1[0]:samples_3\ * 
-              \P1_LatchFilter:genblk1[0]:samples_2\ * 
+            + Net_2602 * !Net_2458 * \P1_LatchFilter:genblk1[0]:samples_2\ * 
               \P1_LatchFilter:genblk1[0]:samples_1\ * 
               \P1_LatchFilter:genblk1[0]:samples_0\
         );
         Output = Net_2458 (fanout=7)
-
-    MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_7\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_6\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_7\ (fanout=1)
-
-    MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_6\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_5\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_6\ (fanout=2)
-
-    MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_5\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_4\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_5\ (fanout=2)
-
-    MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_4\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_3\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_4\ (fanout=2)
-
-    MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_3\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_2\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_3\ (fanout=2)
 
     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_2\, Mode=(D-Register)
         Total # of inputs        : 1
@@ -1499,7 +1383,7 @@ Design Equations
         (
               \P1_ClockFilter:genblk1[0]:samples_1\
         );
-        Output = \P1_ClockFilter:genblk1[0]:samples_2\ (fanout=2)
+        Output = \P1_ClockFilter:genblk1[0]:samples_2\ (fanout=1)
 
     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register)
         Total # of inputs        : 1
@@ -1526,91 +1410,21 @@ Design Equations
         Output = \P1_ClockFilter:genblk1[0]:samples_0\ (fanout=2)
 
     MacroCell: Name=Net_2504, Mode=(T-Register)
-        Total # of inputs        : 10
+        Total # of inputs        : 5
         Total # of product terms : 2
         List of special equations: 
             Clock  = (Net_2477) => Global
             Clock Enable: True
         Main Equation            : 2 pterms
         (
-              !Net_2713 * Net_2504 * !\P1_ClockFilter:genblk1[0]:samples_7\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_6\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_5\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_4\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_3\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_2\ * 
+              !Net_2713 * Net_2504 * !\P1_ClockFilter:genblk1[0]:samples_2\ * 
               !\P1_ClockFilter:genblk1[0]:samples_1\ * 
               !\P1_ClockFilter:genblk1[0]:samples_0\
-            + Net_2713 * !Net_2504 * \P1_ClockFilter:genblk1[0]:samples_7\ * 
-              \P1_ClockFilter:genblk1[0]:samples_6\ * 
-              \P1_ClockFilter:genblk1[0]:samples_5\ * 
-              \P1_ClockFilter:genblk1[0]:samples_4\ * 
-              \P1_ClockFilter:genblk1[0]:samples_3\ * 
-              \P1_ClockFilter:genblk1[0]:samples_2\ * 
+            + Net_2713 * !Net_2504 * \P1_ClockFilter:genblk1[0]:samples_2\ * 
               \P1_ClockFilter:genblk1[0]:samples_1\ * 
               \P1_ClockFilter:genblk1[0]:samples_0\
         );
         Output = Net_2504 (fanout=13)
-
-    MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_7\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_6\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_7\ (fanout=1)
-
-    MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_6\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_5\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_6\ (fanout=2)
-
-    MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_5\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_4\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_5\ (fanout=2)
-
-    MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_4\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_3\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_4\ (fanout=2)
-
-    MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_3\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_2\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_3\ (fanout=2)
 
     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_2\, Mode=(D-Register)
         Total # of inputs        : 1
@@ -1622,7 +1436,7 @@ Design Equations
         (
               \P2_ClockFilter:genblk1[0]:samples_1\
         );
-        Output = \P2_ClockFilter:genblk1[0]:samples_2\ (fanout=2)
+        Output = \P2_ClockFilter:genblk1[0]:samples_2\ (fanout=1)
 
     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register)
         Total # of inputs        : 1
@@ -1649,27 +1463,17 @@ Design Equations
         Output = \P2_ClockFilter:genblk1[0]:samples_0\ (fanout=2)
 
     MacroCell: Name=Net_2530, Mode=(T-Register)
-        Total # of inputs        : 10
+        Total # of inputs        : 5
         Total # of product terms : 2
         List of special equations: 
             Clock  = (Net_2477) => Global
             Clock Enable: True
         Main Equation            : 2 pterms
         (
-              !Net_2719 * !\P2_ClockFilter:genblk1[0]:samples_7\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_6\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_5\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_4\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_3\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_2\ * 
+              !Net_2719 * !\P2_ClockFilter:genblk1[0]:samples_2\ * 
               !\P2_ClockFilter:genblk1[0]:samples_1\ * 
               !\P2_ClockFilter:genblk1[0]:samples_0\ * Net_2530
-            + Net_2719 * \P2_ClockFilter:genblk1[0]:samples_7\ * 
-              \P2_ClockFilter:genblk1[0]:samples_6\ * 
-              \P2_ClockFilter:genblk1[0]:samples_5\ * 
-              \P2_ClockFilter:genblk1[0]:samples_4\ * 
-              \P2_ClockFilter:genblk1[0]:samples_3\ * 
-              \P2_ClockFilter:genblk1[0]:samples_2\ * 
+            + Net_2719 * \P2_ClockFilter:genblk1[0]:samples_2\ * 
               \P2_ClockFilter:genblk1[0]:samples_1\ * 
               \P2_ClockFilter:genblk1[0]:samples_0\ * !Net_2530
         );
@@ -1722,30 +1526,6 @@ Design Equations
         );
         Output = \P2_WinTimer:TimerUDB:trig_disable\ (fanout=2)
 
-    MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_4\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_LatchFilter:genblk1[0]:samples_3\
-        );
-        Output = \P2_LatchFilter:genblk1[0]:samples_4\ (fanout=1)
-
-    MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_3\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_LatchFilter:genblk1[0]:samples_2\
-        );
-        Output = \P2_LatchFilter:genblk1[0]:samples_3\ (fanout=2)
-
     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_2\, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
@@ -1756,7 +1536,7 @@ Design Equations
         (
               \P2_LatchFilter:genblk1[0]:samples_1\
         );
-        Output = \P2_LatchFilter:genblk1[0]:samples_2\ (fanout=2)
+        Output = \P2_LatchFilter:genblk1[0]:samples_2\ (fanout=1)
 
     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register)
         Total # of inputs        : 1
@@ -1783,21 +1563,17 @@ Design Equations
         Output = \P2_LatchFilter:genblk1[0]:samples_0\ (fanout=2)
 
     MacroCell: Name=Net_2532, Mode=(T-Register)
-        Total # of inputs        : 7
+        Total # of inputs        : 5
         Total # of product terms : 2
         List of special equations: 
             Clock  = (Net_2477) => Global
             Clock Enable: True
         Main Equation            : 2 pterms
         (
-              !Net_2163 * Net_2532 * !\P2_LatchFilter:genblk1[0]:samples_4\ * 
-              !\P2_LatchFilter:genblk1[0]:samples_3\ * 
-              !\P2_LatchFilter:genblk1[0]:samples_2\ * 
+              !Net_2163 * Net_2532 * !\P2_LatchFilter:genblk1[0]:samples_2\ * 
               !\P2_LatchFilter:genblk1[0]:samples_1\ * 
               !\P2_LatchFilter:genblk1[0]:samples_0\
-            + Net_2163 * !Net_2532 * \P2_LatchFilter:genblk1[0]:samples_4\ * 
-              \P2_LatchFilter:genblk1[0]:samples_3\ * 
-              \P2_LatchFilter:genblk1[0]:samples_2\ * 
+            + Net_2163 * !Net_2532 * \P2_LatchFilter:genblk1[0]:samples_2\ * 
               \P2_LatchFilter:genblk1[0]:samples_1\ * 
               \P2_LatchFilter:genblk1[0]:samples_0\
         );
@@ -2855,9 +2631,9 @@ USB                           :    1 :    0 :    1 : 100.00 %
 DMA Channels                  :    0 :   24 :   24 :  0.00 %
 Timer                         :    0 :    4 :    4 :  0.00 %
 UDB                           :      :      :      :        
-  Macrocells                  :   44 :  148 :  192 : 22.92 %
-  Unique P-terms              :   54 :  330 :  384 : 14.06 %
-  Total P-terms               :   54 :      :      :        
+  Macrocells                  :   30 :  162 :  192 : 15.63 %
+  Unique P-terms              :   40 :  344 :  384 : 10.42 %
+  Total P-terms               :   40 :      :      :        
   Datapath Cells              :   16 :    8 :   24 : 66.67 %
   Status Cells                :    8 :   16 :   24 : 33.33 %
     StatusI Registers         :    8 :      :      :        
@@ -2872,8 +2648,8 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    0 :    4 :    4 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.066ms
-Tech mapping phase: Elapsed time ==> 0s.115ms
+Technology Mapping: Elapsed time ==> 0s.058ms
+Tech mapping phase: Elapsed time ==> 0s.119ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
@@ -2908,11 +2684,11 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.323ms
+Analog Code Generation phase: Elapsed time ==> 0s.321ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 1.4 sec.
+I2076: Total run-time: 1.3 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -2923,33 +2699,33 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :   22 :   26 :   48 :  45.83%
+                     PLDs :   17 :   31 :   48 :  35.42%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            3.73
-                   Pterms :            2.45
-               Macrocells :            2.00
+                   Inputs :            2.94
+                   Pterms :            2.35
+               Macrocells :            1.76
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.001ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.071ms
+Partitioning: Elapsed time ==> 0s.064ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
 Annealing: Elapsed time ==> 0s.001ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 522, final cost is 522 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 440, final cost is 440 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -2959,7 +2735,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :         16 :       4.00 :       2.75
+                 UDB :         16 :       2.50 :       1.88
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -2968,20 +2744,68 @@ Component Placement Details
 ------------------------------------------------------------
 UDB [UDB=(0,0)] is empty.
 UDB [UDB=(0,1)] contents:
-LAB@[UDB=(0,1)][LB=1] #macrocells=1, #inputs=2, #pterms=1
+LAB@[UDB=(0,1)][LB=0] #macrocells=2, #inputs=6, #pterms=5
+{
+    [McSlotId=0]:     MacroCell: Name=\P2_WinTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_2503) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_2532 * \P2_WinTimer:TimerUDB:timer_enable\ * 
+              \P2_WinTimer:TimerUDB:run_mode\ * 
+              \P2_WinTimer:TimerUDB:per_zero\
+            + !Net_2532 * \P2_WinTimer:TimerUDB:trig_disable\
+        );
+        Output = \P2_WinTimer:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\P2_WinTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=1]
+        Total # of inputs        : 6
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (Net_2503) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !Net_2532 * \P2_WinTimer:TimerUDB:control_7\ * 
+              !\P2_WinTimer:TimerUDB:timer_enable\ * 
+              !\P2_WinTimer:TimerUDB:trig_disable\
+            + !Net_2532 * \P2_WinTimer:TimerUDB:control_7\ * 
+              !\P2_WinTimer:TimerUDB:run_mode\ * 
+              !\P2_WinTimer:TimerUDB:trig_disable\
+            + !Net_2532 * \P2_WinTimer:TimerUDB:control_7\ * 
+              !\P2_WinTimer:TimerUDB:per_zero\ * 
+              !\P2_WinTimer:TimerUDB:trig_disable\
+        );
+        Output = \P2_WinTimer:TimerUDB:timer_enable\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,1)][LB=1] #macrocells=1, #inputs=1, #pterms=1
 {
     [McSlotId=0]: (empty)
     [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=\P1_WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,1)][LB=1][MC=2]
-        Total # of inputs        : 2
+    [McSlotId=2]:     MacroCell: Name=\P2_WinTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=2]
+        Total # of inputs        : 1
         Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2503) => Global
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \P1_WinTimer:TimerUDB:run_mode\ * 
-              \P1_WinTimer:TimerUDB:per_zero\
+              \P2_WinTimer:TimerUDB:control_7\
         );
-        Output = \P1_WinTimer:TimerUDB:status_tc\ (fanout=1)
+        Output = \P2_WinTimer:TimerUDB:run_mode\ (fanout=3)
         Properties               : 
         {
         }
@@ -3068,16 +2892,105 @@ controlcell: Name =\P1_RegD2:bSR:SyncCtl:CtrlReg\
     Clock Enable: PosEdge(Net_2504)
 
 UDB [UDB=(0,2)] contents:
-datapathcell: Name =\P1_WinTimer:TimerUDB:sT16:timerdp:u1\
+LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\P2_WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,2)][LB=0][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \P2_WinTimer:TimerUDB:run_mode\ * 
+              \P2_WinTimer:TimerUDB:per_zero\
+        );
+        Output = \P2_WinTimer:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \P2_LatchFilter:genblk1[0]:samples_1\
+        );
+        Output = \P2_LatchFilter:genblk1[0]:samples_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \P2_LatchFilter:genblk1[0]:samples_0\
+        );
+        Output = \P2_LatchFilter:genblk1[0]:samples_1\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_2163
+        );
+        Output = \P2_LatchFilter:genblk1[0]:samples_0\ (fanout=2)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(0,2)][LB=1] #macrocells=1, #inputs=5, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=Net_2532, Mode=(T-Register) @ [UDB=(0,2)][LB=1][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_2163 * Net_2532 * !\P2_LatchFilter:genblk1[0]:samples_2\ * 
+              !\P2_LatchFilter:genblk1[0]:samples_1\ * 
+              !\P2_LatchFilter:genblk1[0]:samples_0\
+            + Net_2163 * !Net_2532 * \P2_LatchFilter:genblk1[0]:samples_2\ * 
+              \P2_LatchFilter:genblk1[0]:samples_1\ * 
+              \P2_LatchFilter:genblk1[0]:samples_0\
+        );
+        Output = Net_2532 (fanout=7)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u1\
     PORT MAP (
         clock => Net_2503 ,
-        cs_addr_2 => Net_2458 ,
-        cs_addr_1 => \P1_WinTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \P1_WinTimer:TimerUDB:per_zero\ ,
-        z0_comb => \P1_WinTimer:TimerUDB:per_zero\ ,
-        f0_bus_stat_comb => \P1_WinTimer:TimerUDB:status_3\ ,
-        f0_blk_stat_comb => \P1_WinTimer:TimerUDB:status_2\ ,
-        chain_in => \P1_WinTimer:TimerUDB:sT16:timerdp:carry\ );
+        cs_addr_2 => Net_2532 ,
+        cs_addr_1 => \P2_WinTimer:TimerUDB:timer_enable\ ,
+        cs_addr_0 => \P2_WinTimer:TimerUDB:per_zero\ ,
+        z0_comb => \P2_WinTimer:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \P2_WinTimer:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \P2_WinTimer:TimerUDB:status_2\ ,
+        chain_in => \P2_WinTimer:TimerUDB:sT16:timerdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -3104,123 +3017,35 @@ datapathcell: Name =\P1_WinTimer:TimerUDB:sT16:timerdp:u1\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Previous in chain : \P1_WinTimer:TimerUDB:sT16:timerdp:u0\
+    Previous in chain : \P2_WinTimer:TimerUDB:sT16:timerdp:u0\
 
 UDB [UDB=(0,3)] contents:
-LAB@[UDB=(0,3)][LB=0] #macrocells=2, #inputs=7, #pterms=3
+LAB@[UDB=(0,3)][LB=0] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=Net_2532, Mode=(T-Register) @ [UDB=(0,3)][LB=0][MC=0]
-        Total # of inputs        : 7
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_2163 * Net_2532 * !\P2_LatchFilter:genblk1[0]:samples_4\ * 
-              !\P2_LatchFilter:genblk1[0]:samples_3\ * 
-              !\P2_LatchFilter:genblk1[0]:samples_2\ * 
-              !\P2_LatchFilter:genblk1[0]:samples_1\ * 
-              !\P2_LatchFilter:genblk1[0]:samples_0\
-            + Net_2163 * !Net_2532 * \P2_LatchFilter:genblk1[0]:samples_4\ * 
-              \P2_LatchFilter:genblk1[0]:samples_3\ * 
-              \P2_LatchFilter:genblk1[0]:samples_2\ * 
-              \P2_LatchFilter:genblk1[0]:samples_1\ * 
-              \P2_LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = Net_2532 (fanout=7)
-        Properties               : 
-        {
-        }
-
+    [McSlotId=0]: (empty)
     [McSlotId=1]: (empty)
     [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_4\, Mode=(D-Register) @ [UDB=(0,3)][LB=0][MC=3]
+    [McSlotId=3]:     MacroCell: Name=Net_2167, Mode=(Combinatorial) @ [UDB=(0,3)][LB=0][MC=3]
         Total # of inputs        : 1
         Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \P2_LatchFilter:genblk1[0]:samples_3\
+              !Net_2541
         );
-        Output = \P2_LatchFilter:genblk1[0]:samples_4\ (fanout=1)
+        Output = Net_2167 (fanout=1)
         Properties               : 
         {
         }
 }
 
-LAB@[UDB=(0,3)][LB=1] #macrocells=4, #inputs=4, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_3\, Mode=(D-Register) @ [UDB=(0,3)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_LatchFilter:genblk1[0]:samples_2\
-        );
-        Output = \P2_LatchFilter:genblk1[0]:samples_3\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(0,3)][LB=1][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = \P2_LatchFilter:genblk1[0]:samples_1\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(0,3)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              Net_2163
-        );
-        Output = \P2_LatchFilter:genblk1[0]:samples_0\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\P2_LatchFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(0,3)][LB=1][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_LatchFilter:genblk1[0]:samples_1\
-        );
-        Output = \P2_LatchFilter:genblk1[0]:samples_2\ (fanout=2)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u0\
+datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
-        clock => Net_2503 ,
-        cs_addr_2 => Net_2532 ,
-        cs_addr_1 => \P2_WinTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \P2_WinTimer:TimerUDB:per_zero\ ,
-        chain_out => \P2_WinTimer:TimerUDB:sT16:timerdp:carry\ );
+        clock => Net_2477 ,
+        cs_addr_2 => \P2_RegD0:bSR:ctrl_clk_enable\ ,
+        so_comb => Net_2541 ,
+        chain_out => \P2_RegD0:bSR:sC16:BShiftRegDp:carry\ ,
+        clk_en => Net_2530 );
     Properties:
     {
         a0_init = "00000000"
@@ -3231,7 +3056,7 @@ datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u0\
         cl1_sync = 1
         cmsb_sync = 1
         co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010100101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110111101001000011100000000000000011100"
         d0_init = "00000000"
         d1_init = "00000000"
         f0_blk_sync = 1
@@ -3246,17 +3071,17 @@ datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u0\
         z1_sync = 1
     }
     Clock Polarity: Active High
-    Clock Enable: True
-    Next in chain : \P2_WinTimer:TimerUDB:sT16:timerdp:u1\
+    Clock Enable: PosEdge(Net_2530)
+    Next in chain : \P2_RegD0:bSR:sC16:BShiftRegDp:u1\
 
-statusicell: Name =\P1_WinTimer:TimerUDB:rstSts:stsreg\
+statusicell: Name =\P2_WinTimer:TimerUDB:rstSts:stsreg\
     PORT MAP (
-        reset => Net_2458 ,
+        reset => Net_2532 ,
         clock => Net_2503 ,
-        status_3 => \P1_WinTimer:TimerUDB:status_3\ ,
-        status_2 => \P1_WinTimer:TimerUDB:status_2\ ,
-        status_0 => \P1_WinTimer:TimerUDB:status_tc\ ,
-        interrupt => Net_2370 );
+        status_3 => \P2_WinTimer:TimerUDB:status_3\ ,
+        status_2 => \P2_WinTimer:TimerUDB:status_2\ ,
+        status_0 => \P2_WinTimer:TimerUDB:status_tc\ ,
+        interrupt => Net_2564 );
     Properties:
     {
         cy_force_order = 1
@@ -3267,6 +3092,82 @@ statusicell: Name =\P1_WinTimer:TimerUDB:rstSts:stsreg\
     Clock Enable: True
 
 UDB [UDB=(0,4)] contents:
+LAB@[UDB=(0,4)][LB=0] #macrocells=2, #inputs=5, #pterms=3
+{
+    [McSlotId=0]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \P2_ClockFilter:genblk1[0]:samples_1\
+        );
+        Output = \P2_ClockFilter:genblk1[0]:samples_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=Net_2530, Mode=(T-Register) @ [UDB=(0,4)][LB=0][MC=2]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_2719 * !\P2_ClockFilter:genblk1[0]:samples_2\ * 
+              !\P2_ClockFilter:genblk1[0]:samples_1\ * 
+              !\P2_ClockFilter:genblk1[0]:samples_0\ * Net_2530
+            + Net_2719 * \P2_ClockFilter:genblk1[0]:samples_2\ * 
+              \P2_ClockFilter:genblk1[0]:samples_1\ * 
+              \P2_ClockFilter:genblk1[0]:samples_0\ * !Net_2530
+        );
+        Output = Net_2530 (fanout=13)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,4)][LB=1] #macrocells=2, #inputs=2, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(0,4)][LB=1][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_2719
+        );
+        Output = \P2_ClockFilter:genblk1[0]:samples_0\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(0,4)][LB=1][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \P2_ClockFilter:genblk1[0]:samples_0\
+        );
+        Output = \P2_ClockFilter:genblk1[0]:samples_1\ (fanout=2)
+        Properties               : 
+        {
+        }
+}
+
 datapathcell: Name =\P2_RegD1:bSR:sC16:BShiftRegDp:u1\
     PORT MAP (
         clock => Net_2477 ,
@@ -3323,9 +3224,12 @@ statusicell: Name =\P2_RegD1:bSR:StsReg\
     Clock Enable: PosEdge(Net_2530)
 
 UDB [UDB=(0,5)] contents:
-LAB@[UDB=(0,5)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+LAB@[UDB=(0,5)][LB=1] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=Net_2307, Mode=(Combinatorial) @ [UDB=(0,5)][LB=0][MC=0]
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=Net_2307, Mode=(Combinatorial) @ [UDB=(0,5)][LB=1][MC=3]
         Total # of inputs        : 1
         Total # of product terms : 1
             Clock Enable: True
@@ -3337,10 +3241,6 @@ LAB@[UDB=(0,5)][LB=0] #macrocells=1, #inputs=1, #pterms=1
         Properties               : 
         {
         }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
 }
 
 datapathcell: Name =\P2_RegD2:bSR:sC16:BShiftRegDp:u0\
@@ -3378,89 +3278,31 @@ datapathcell: Name =\P2_RegD2:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(Net_2530)
     Next in chain : \P2_RegD2:bSR:sC16:BShiftRegDp:u1\
 
+controlcell: Name =\P2_RegD2:bSR:SyncCtl:CtrlReg\
+    PORT MAP (
+        clock => Net_2477 ,
+        control_7 => \P2_RegD2:bSR:control_7\ ,
+        control_6 => \P2_RegD2:bSR:control_6\ ,
+        control_5 => \P2_RegD2:bSR:control_5\ ,
+        control_4 => \P2_RegD2:bSR:control_4\ ,
+        control_3 => \P2_RegD2:bSR:control_3\ ,
+        control_2 => \P2_RegD2:bSR:control_2\ ,
+        control_1 => \P2_RegD2:bSR:control_1\ ,
+        control_0 => \P2_RegD2:bSR:ctrl_clk_enable\ ,
+        clk_en => Net_2530 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000001"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(Net_2530)
+
 UDB [UDB=(1,0)] is empty.
 UDB [UDB=(1,1)] contents:
-LAB@[UDB=(1,1)][LB=0] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=\P1_WinTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(1,1)][LB=0][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2503) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_WinTimer:TimerUDB:control_7\
-        );
-        Output = \P1_WinTimer:TimerUDB:run_mode\ (fanout=3)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(1,1)][LB=1] #macrocells=3, #inputs=7, #pterms=6
-{
-    [McSlotId=0]:     MacroCell: Name=\P1_WinTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(1,1)][LB=1][MC=0]
-        Total # of inputs        : 5
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_2503) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_2458 * \P1_WinTimer:TimerUDB:timer_enable\ * 
-              \P1_WinTimer:TimerUDB:run_mode\ * 
-              \P1_WinTimer:TimerUDB:per_zero\
-            + !Net_2458 * \P1_WinTimer:TimerUDB:trig_disable\
-        );
-        Output = \P1_WinTimer:TimerUDB:trig_disable\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P1_WinTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(1,1)][LB=1][MC=1]
-        Total # of inputs        : 6
-        Total # of product terms : 3
-        List of special equations: 
-            Clock  = (Net_2503) => Global
-            Clock Enable: True
-        Main Equation            : 3 pterms
-        (
-              !Net_2458 * \P1_WinTimer:TimerUDB:control_7\ * 
-              !\P1_WinTimer:TimerUDB:timer_enable\ * 
-              !\P1_WinTimer:TimerUDB:trig_disable\
-            + !Net_2458 * \P1_WinTimer:TimerUDB:control_7\ * 
-              !\P1_WinTimer:TimerUDB:run_mode\ * 
-              !\P1_WinTimer:TimerUDB:trig_disable\
-            + !Net_2458 * \P1_WinTimer:TimerUDB:control_7\ * 
-              !\P1_WinTimer:TimerUDB:per_zero\ * 
-              !\P1_WinTimer:TimerUDB:trig_disable\
-        );
-        Output = \P1_WinTimer:TimerUDB:timer_enable\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=Net_2601, Mode=(Combinatorial) @ [UDB=(1,1)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !Net_2527
-        );
-        Output = Net_2601 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
 datapathcell: Name =\P1_RegD2:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
         clock => Net_2477 ,
@@ -3496,17 +3338,17 @@ datapathcell: Name =\P1_RegD2:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(Net_2504)
     Next in chain : \P1_RegD2:bSR:sC16:BShiftRegDp:u1\
 
-controlcell: Name =\P1_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+controlcell: Name =\P2_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     PORT MAP (
         clock => Net_2503 ,
-        control_7 => \P1_WinTimer:TimerUDB:control_7\ ,
-        control_6 => \P1_WinTimer:TimerUDB:control_6\ ,
-        control_5 => \P1_WinTimer:TimerUDB:control_5\ ,
-        control_4 => \P1_WinTimer:TimerUDB:control_4\ ,
-        control_3 => \P1_WinTimer:TimerUDB:control_3\ ,
-        control_2 => \P1_WinTimer:TimerUDB:control_2\ ,
-        control_1 => \P1_WinTimer:TimerUDB:control_1\ ,
-        control_0 => \P1_WinTimer:TimerUDB:control_0\ );
+        control_7 => \P2_WinTimer:TimerUDB:control_7\ ,
+        control_6 => \P2_WinTimer:TimerUDB:control_6\ ,
+        control_5 => \P2_WinTimer:TimerUDB:control_5\ ,
+        control_4 => \P2_WinTimer:TimerUDB:control_4\ ,
+        control_3 => \P2_WinTimer:TimerUDB:control_3\ ,
+        control_2 => \P2_WinTimer:TimerUDB:control_2\ ,
+        control_1 => \P2_WinTimer:TimerUDB:control_1\ ,
+        control_0 => \P2_WinTimer:TimerUDB:control_0\ );
     Properties:
     {
         cy_ctrl_mode_0 = "11111111"
@@ -3519,133 +3361,13 @@ controlcell: Name =\P1_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     Clock Enable: True
 
 UDB [UDB=(1,2)] contents:
-LAB@[UDB=(1,2)][LB=0] #macrocells=4, #inputs=4, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_4\, Mode=(D-Register) @ [UDB=(1,2)][LB=0][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_LatchFilter:genblk1[0]:samples_3\
-        );
-        Output = \P1_LatchFilter:genblk1[0]:samples_4\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(1,2)][LB=0][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = \P1_LatchFilter:genblk1[0]:samples_1\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(1,2)][LB=0][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_LatchFilter:genblk1[0]:samples_1\
-        );
-        Output = \P1_LatchFilter:genblk1[0]:samples_2\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(1,2)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              Net_2602
-        );
-        Output = \P1_LatchFilter:genblk1[0]:samples_0\ (fanout=2)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(1,2)][LB=1] #macrocells=3, #inputs=9, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=Net_2458, Mode=(T-Register) @ [UDB=(1,2)][LB=1][MC=0]
-        Total # of inputs        : 7
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_2602 * Net_2458 * !\P1_LatchFilter:genblk1[0]:samples_4\ * 
-              !\P1_LatchFilter:genblk1[0]:samples_3\ * 
-              !\P1_LatchFilter:genblk1[0]:samples_2\ * 
-              !\P1_LatchFilter:genblk1[0]:samples_1\ * 
-              !\P1_LatchFilter:genblk1[0]:samples_0\
-            + Net_2602 * !Net_2458 * \P1_LatchFilter:genblk1[0]:samples_4\ * 
-              \P1_LatchFilter:genblk1[0]:samples_3\ * 
-              \P1_LatchFilter:genblk1[0]:samples_2\ * 
-              \P1_LatchFilter:genblk1[0]:samples_1\ * 
-              \P1_LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = Net_2458 (fanout=7)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_3\, Mode=(D-Register) @ [UDB=(1,2)][LB=1][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_LatchFilter:genblk1[0]:samples_2\
-        );
-        Output = \P1_LatchFilter:genblk1[0]:samples_3\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\P2_WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(1,2)][LB=1][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_WinTimer:TimerUDB:run_mode\ * 
-              \P2_WinTimer:TimerUDB:per_zero\
-        );
-        Output = \P2_WinTimer:TimerUDB:status_tc\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\P1_WinTimer:TimerUDB:sT16:timerdp:u0\
+datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u0\
     PORT MAP (
         clock => Net_2503 ,
-        cs_addr_2 => Net_2458 ,
-        cs_addr_1 => \P1_WinTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \P1_WinTimer:TimerUDB:per_zero\ ,
-        chain_out => \P1_WinTimer:TimerUDB:sT16:timerdp:carry\ );
+        cs_addr_2 => Net_2532 ,
+        cs_addr_1 => \P2_WinTimer:TimerUDB:timer_enable\ ,
+        cs_addr_0 => \P2_WinTimer:TimerUDB:per_zero\ ,
+        chain_out => \P2_WinTimer:TimerUDB:sT16:timerdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -3672,39 +3394,20 @@ datapathcell: Name =\P1_WinTimer:TimerUDB:sT16:timerdp:u0\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Next in chain : \P1_WinTimer:TimerUDB:sT16:timerdp:u1\
-
-statusicell: Name =\P2_WinTimer:TimerUDB:rstSts:stsreg\
-    PORT MAP (
-        reset => Net_2532 ,
-        clock => Net_2503 ,
-        status_3 => \P2_WinTimer:TimerUDB:status_3\ ,
-        status_2 => \P2_WinTimer:TimerUDB:status_2\ ,
-        status_0 => \P2_WinTimer:TimerUDB:status_tc\ ,
-        interrupt => Net_2564 );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_int_mask = "1111111"
-        cy_md_select = "0000011"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
+    Next in chain : \P2_WinTimer:TimerUDB:sT16:timerdp:u1\
 
 UDB [UDB=(1,3)] contents:
 LAB@[UDB=(1,3)][LB=0] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=\P2_WinTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(1,3)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=Net_2601, Mode=(Combinatorial) @ [UDB=(1,3)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2503) => Global
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \P2_WinTimer:TimerUDB:control_7\
+              !Net_2527
         );
-        Output = \P2_WinTimer:TimerUDB:run_mode\ (fanout=3)
+        Output = Net_2601 (fanout=1)
         Properties               : 
         {
         }
@@ -3714,63 +3417,16 @@ LAB@[UDB=(1,3)][LB=0] #macrocells=1, #inputs=1, #pterms=1
     [McSlotId=3]: (empty)
 }
 
-LAB@[UDB=(1,3)][LB=1] #macrocells=2, #inputs=6, #pterms=5
-{
-    [McSlotId=0]:     MacroCell: Name=\P2_WinTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(1,3)][LB=1][MC=0]
-        Total # of inputs        : 5
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_2503) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_2532 * \P2_WinTimer:TimerUDB:timer_enable\ * 
-              \P2_WinTimer:TimerUDB:run_mode\ * 
-              \P2_WinTimer:TimerUDB:per_zero\
-            + !Net_2532 * \P2_WinTimer:TimerUDB:trig_disable\
-        );
-        Output = \P2_WinTimer:TimerUDB:trig_disable\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P2_WinTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(1,3)][LB=1][MC=1]
-        Total # of inputs        : 6
-        Total # of product terms : 3
-        List of special equations: 
-            Clock  = (Net_2503) => Global
-            Clock Enable: True
-        Main Equation            : 3 pterms
-        (
-              !Net_2532 * \P2_WinTimer:TimerUDB:control_7\ * 
-              !\P2_WinTimer:TimerUDB:timer_enable\ * 
-              !\P2_WinTimer:TimerUDB:trig_disable\
-            + !Net_2532 * \P2_WinTimer:TimerUDB:control_7\ * 
-              !\P2_WinTimer:TimerUDB:run_mode\ * 
-              !\P2_WinTimer:TimerUDB:trig_disable\
-            + !Net_2532 * \P2_WinTimer:TimerUDB:control_7\ * 
-              !\P2_WinTimer:TimerUDB:per_zero\ * 
-              !\P2_WinTimer:TimerUDB:trig_disable\
-        );
-        Output = \P2_WinTimer:TimerUDB:timer_enable\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u1\
+datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u1\
     PORT MAP (
-        clock => Net_2503 ,
-        cs_addr_2 => Net_2532 ,
-        cs_addr_1 => \P2_WinTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \P2_WinTimer:TimerUDB:per_zero\ ,
-        z0_comb => \P2_WinTimer:TimerUDB:per_zero\ ,
-        f0_bus_stat_comb => \P2_WinTimer:TimerUDB:status_3\ ,
-        f0_blk_stat_comb => \P2_WinTimer:TimerUDB:status_2\ ,
-        chain_in => \P2_WinTimer:TimerUDB:sT16:timerdp:carry\ );
+        clock => Net_2477 ,
+        cs_addr_2 => \P2_RegD0:bSR:ctrl_clk_enable\ ,
+        f0_bus_stat_comb => \P2_RegD0:bSR:status_4\ ,
+        f0_blk_stat_comb => \P2_RegD0:bSR:status_3\ ,
+        f1_bus_stat_comb => \P2_RegD0:bSR:status_6\ ,
+        f1_blk_stat_comb => \P2_RegD0:bSR:status_5\ ,
+        chain_in => \P2_RegD0:bSR:sC16:BShiftRegDp:carry\ ,
+        clk_en => Net_2530 );
     Properties:
     {
         a0_init = "00000000"
@@ -3781,7 +3437,7 @@ datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u1\
         cl1_sync = 1
         cmsb_sync = 1
         co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010100101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110101001001000111100100000000000011100"
         d0_init = "00000000"
         d1_init = "00000000"
         f0_blk_sync = 1
@@ -3796,131 +3452,50 @@ datapathcell: Name =\P2_WinTimer:TimerUDB:sT16:timerdp:u1\
         z1_sync = 1
     }
     Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \P2_WinTimer:TimerUDB:sT16:timerdp:u0\
+    Clock Enable: PosEdge(Net_2530)
+    Previous in chain : \P2_RegD0:bSR:sC16:BShiftRegDp:u0\
 
-controlcell: Name =\P2_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+statusicell: Name =\P2_RegD0:bSR:StsReg\
     PORT MAP (
-        clock => Net_2503 ,
-        control_7 => \P2_WinTimer:TimerUDB:control_7\ ,
-        control_6 => \P2_WinTimer:TimerUDB:control_6\ ,
-        control_5 => \P2_WinTimer:TimerUDB:control_5\ ,
-        control_4 => \P2_WinTimer:TimerUDB:control_4\ ,
-        control_3 => \P2_WinTimer:TimerUDB:control_3\ ,
-        control_2 => \P2_WinTimer:TimerUDB:control_2\ ,
-        control_1 => \P2_WinTimer:TimerUDB:control_1\ ,
-        control_0 => \P2_WinTimer:TimerUDB:control_0\ );
+        clock => Net_2477 ,
+        status_6 => \P2_RegD0:bSR:status_6\ ,
+        status_5 => \P2_RegD0:bSR:status_5\ ,
+        status_4 => \P2_RegD0:bSR:status_4\ ,
+        status_3 => \P2_RegD0:bSR:status_3\ ,
+        clk_en => Net_2530 );
     Properties:
     {
-        cy_ctrl_mode_0 = "11111111"
+        cy_force_order = 1
+        cy_int_mask = "0000111"
+        cy_md_select = "0000111"
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(Net_2530)
+
+controlcell: Name =\P2_RegD0:bSR:SyncCtl:CtrlReg\
+    PORT MAP (
+        clock => Net_2477 ,
+        control_7 => \P2_RegD0:bSR:control_7\ ,
+        control_6 => \P2_RegD0:bSR:control_6\ ,
+        control_5 => \P2_RegD0:bSR:control_5\ ,
+        control_4 => \P2_RegD0:bSR:control_4\ ,
+        control_3 => \P2_RegD0:bSR:control_3\ ,
+        control_2 => \P2_RegD0:bSR:control_2\ ,
+        control_1 => \P2_RegD0:bSR:control_1\ ,
+        control_0 => \P2_RegD0:bSR:ctrl_clk_enable\ ,
+        clk_en => Net_2530 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000001"
         cy_ctrl_mode_1 = "00000000"
         cy_ext_reset = 0
         cy_force_order = 1
         cy_init_value = "00000000"
     }
     Clock Polarity: Active High
-    Clock Enable: True
+    Clock Enable: PosEdge(Net_2530)
 
 UDB [UDB=(1,4)] contents:
-LAB@[UDB=(1,4)][LB=0] #macrocells=1, #inputs=10, #pterms=2
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=Net_2530, Mode=(T-Register) @ [UDB=(1,4)][LB=0][MC=3]
-        Total # of inputs        : 10
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_2719 * !\P2_ClockFilter:genblk1[0]:samples_7\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_6\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_5\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_4\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_3\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_2\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_1\ * 
-              !\P2_ClockFilter:genblk1[0]:samples_0\ * Net_2530
-            + Net_2719 * \P2_ClockFilter:genblk1[0]:samples_7\ * 
-              \P2_ClockFilter:genblk1[0]:samples_6\ * 
-              \P2_ClockFilter:genblk1[0]:samples_5\ * 
-              \P2_ClockFilter:genblk1[0]:samples_4\ * 
-              \P2_ClockFilter:genblk1[0]:samples_3\ * 
-              \P2_ClockFilter:genblk1[0]:samples_2\ * 
-              \P2_ClockFilter:genblk1[0]:samples_1\ * 
-              \P2_ClockFilter:genblk1[0]:samples_0\ * !Net_2530
-        );
-        Output = Net_2530 (fanout=13)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(1,4)][LB=1] #macrocells=4, #inputs=4, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_0\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_1\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              Net_2719
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_0\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_1\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_2\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_3\, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_2\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_3\ (fanout=2)
-        Properties               : 
-        {
-        }
-}
-
 datapathcell: Name =\P2_RegD1:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
         clock => Net_2477 ,
@@ -3980,75 +3555,9 @@ controlcell: Name =\P2_RegD1:bSR:SyncCtl:CtrlReg\
     Clock Enable: PosEdge(Net_2530)
 
 UDB [UDB=(1,5)] contents:
-LAB@[UDB=(1,5)][LB=0] #macrocells=3, #inputs=3, #pterms=3
+LAB@[UDB=(1,5)][LB=0] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_4\, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_3\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_4\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_5\, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_4\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_5\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_7\, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_6\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_7\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(1,5)][LB=1] #macrocells=2, #inputs=2, #pterms=2
-{
-    [McSlotId=0]:     MacroCell: Name=\P2_ClockFilter:genblk1[0]:samples_6\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P2_ClockFilter:genblk1[0]:samples_5\
-        );
-        Output = \P2_ClockFilter:genblk1[0]:samples_6\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=Net_2316, Mode=(Combinatorial) @ [UDB=(1,5)][LB=1][MC=3]
+    [McSlotId=0]:     MacroCell: Name=Net_2316, Mode=(Combinatorial) @ [UDB=(1,5)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
             Clock Enable: True
@@ -4060,6 +3569,10 @@ LAB@[UDB=(1,5)][LB=1] #macrocells=2, #inputs=2, #pterms=2
         Properties               : 
         {
         }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
 }
 
 datapathcell: Name =\P2_RegD2:bSR:sC16:BShiftRegDp:u1\
@@ -4117,64 +3630,24 @@ statusicell: Name =\P2_RegD2:bSR:StsReg\
     Clock Polarity: Active High
     Clock Enable: PosEdge(Net_2530)
 
-controlcell: Name =\P2_RegD2:bSR:SyncCtl:CtrlReg\
-    PORT MAP (
-        clock => Net_2477 ,
-        control_7 => \P2_RegD2:bSR:control_7\ ,
-        control_6 => \P2_RegD2:bSR:control_6\ ,
-        control_5 => \P2_RegD2:bSR:control_5\ ,
-        control_4 => \P2_RegD2:bSR:control_4\ ,
-        control_3 => \P2_RegD2:bSR:control_3\ ,
-        control_2 => \P2_RegD2:bSR:control_2\ ,
-        control_1 => \P2_RegD2:bSR:control_1\ ,
-        control_0 => \P2_RegD2:bSR:ctrl_clk_enable\ ,
-        clk_en => Net_2530 );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000001"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(Net_2530)
-
 UDB [UDB=(2,0)] contents:
-LAB@[UDB=(2,0)][LB=0] #macrocells=2, #inputs=2, #pterms=2
+LAB@[UDB=(2,0)][LB=1] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_3\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_2\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_3\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_1\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_2\ (fanout=2)
-        Properties               : 
-        {
-        }
-
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
     [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
+    [McSlotId=3]:     MacroCell: Name=Net_2525, Mode=(Combinatorial) @ [UDB=(2,0)][LB=1][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_2524
+        );
+        Output = Net_2525 (fanout=1)
+        Properties               : 
+        {
+        }
 }
 
 datapathcell: Name =\P1_RegD1:bSR:sC16:BShiftRegDp:u0\
@@ -4236,32 +3709,35 @@ controlcell: Name =\P1_RegD1:bSR:SyncCtl:CtrlReg\
     Clock Enable: PosEdge(Net_2504)
 
 UDB [UDB=(2,1)] contents:
-LAB@[UDB=(2,1)][LB=0] #macrocells=1, #inputs=10, #pterms=2
+LAB@[UDB=(2,1)][LB=0] #macrocells=3, #inputs=5, #pterms=4
 {
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=Net_2504, Mode=(T-Register) @ [UDB=(2,1)][LB=0][MC=2]
-        Total # of inputs        : 10
+    [McSlotId=0]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_2713
+        );
+        Output = \P1_ClockFilter:genblk1[0]:samples_0\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=Net_2504, Mode=(T-Register) @ [UDB=(2,1)][LB=0][MC=1]
+        Total # of inputs        : 5
         Total # of product terms : 2
         List of special equations: 
             Clock  = (Net_2477) => Global
             Clock Enable: True
         Main Equation            : 2 pterms
         (
-              !Net_2713 * Net_2504 * !\P1_ClockFilter:genblk1[0]:samples_7\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_6\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_5\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_4\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_3\ * 
-              !\P1_ClockFilter:genblk1[0]:samples_2\ * 
+              !Net_2713 * Net_2504 * !\P1_ClockFilter:genblk1[0]:samples_2\ * 
               !\P1_ClockFilter:genblk1[0]:samples_1\ * 
               !\P1_ClockFilter:genblk1[0]:samples_0\
-            + Net_2713 * !Net_2504 * \P1_ClockFilter:genblk1[0]:samples_7\ * 
-              \P1_ClockFilter:genblk1[0]:samples_6\ * 
-              \P1_ClockFilter:genblk1[0]:samples_5\ * 
-              \P1_ClockFilter:genblk1[0]:samples_4\ * 
-              \P1_ClockFilter:genblk1[0]:samples_3\ * 
-              \P1_ClockFilter:genblk1[0]:samples_2\ * 
+            + Net_2713 * !Net_2504 * \P1_ClockFilter:genblk1[0]:samples_2\ * 
               \P1_ClockFilter:genblk1[0]:samples_1\ * 
               \P1_ClockFilter:genblk1[0]:samples_0\
         );
@@ -4270,12 +3746,29 @@ LAB@[UDB=(2,1)][LB=0] #macrocells=1, #inputs=10, #pterms=2
         {
         }
 
-    [McSlotId=3]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \P1_ClockFilter:genblk1[0]:samples_0\
+        );
+        Output = \P1_ClockFilter:genblk1[0]:samples_1\ (fanout=2)
+        Properties               : 
+        {
+        }
 }
 
-LAB@[UDB=(2,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+LAB@[UDB=(2,1)][LB=1] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_5\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=0]
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=3]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -4283,54 +3776,9 @@ LAB@[UDB=(2,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \P1_ClockFilter:genblk1[0]:samples_4\
+              \P1_ClockFilter:genblk1[0]:samples_1\
         );
-        Output = \P1_ClockFilter:genblk1[0]:samples_5\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_7\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_6\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_7\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_4\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_3\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_4\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_6\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_2477) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \P1_ClockFilter:genblk1[0]:samples_5\
-        );
-        Output = \P1_ClockFilter:genblk1[0]:samples_6\ (fanout=2)
+        Output = \P1_ClockFilter:genblk1[0]:samples_2\ (fanout=1)
         Properties               : 
         {
         }
@@ -4391,36 +3839,30 @@ statusicell: Name =\P1_RegD0:bSR:StsReg\
     Clock Polarity: Active High
     Clock Enable: PosEdge(Net_2504)
 
-controlcell: Name =\P1_RegD0:bSR:SyncCtl:CtrlReg\
-    PORT MAP (
-        clock => Net_2477 ,
-        control_7 => \P1_RegD0:bSR:control_7\ ,
-        control_6 => \P1_RegD0:bSR:control_6\ ,
-        control_5 => \P1_RegD0:bSR:control_5\ ,
-        control_4 => \P1_RegD0:bSR:control_4\ ,
-        control_3 => \P1_RegD0:bSR:control_3\ ,
-        control_2 => \P1_RegD0:bSR:control_2\ ,
-        control_1 => \P1_RegD0:bSR:control_1\ ,
-        control_0 => \P1_RegD0:bSR:ctrl_clk_enable\ ,
-        clk_en => Net_2504 );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000001"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(Net_2504)
-
-UDB [UDB=(2,2)] is empty.
-UDB [UDB=(2,3)] is empty.
-UDB [UDB=(2,4)] contents:
-LAB@[UDB=(2,4)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+UDB [UDB=(2,2)] contents:
+LAB@[UDB=(2,2)][LB=1] #macrocells=4, #inputs=5, #pterms=5
 {
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=1]
+    [McSlotId=0]:     MacroCell: Name=Net_2458, Mode=(T-Register) @ [UDB=(2,2)][LB=1][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_2602 * Net_2458 * !\P1_LatchFilter:genblk1[0]:samples_2\ * 
+              !\P1_LatchFilter:genblk1[0]:samples_1\ * 
+              !\P1_LatchFilter:genblk1[0]:samples_0\
+            + Net_2602 * !Net_2458 * \P1_LatchFilter:genblk1[0]:samples_2\ * 
+              \P1_LatchFilter:genblk1[0]:samples_1\ * 
+              \P1_LatchFilter:genblk1[0]:samples_0\
+        );
+        Output = Net_2458 (fanout=7)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_2\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=1]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -4428,23 +3870,14 @@ LAB@[UDB=(2,4)][LB=0] #macrocells=1, #inputs=1, #pterms=1
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \P1_ClockFilter:genblk1[0]:samples_0\
+              \P1_LatchFilter:genblk1[0]:samples_1\
         );
-        Output = \P1_ClockFilter:genblk1[0]:samples_1\ (fanout=2)
+        Output = \P1_LatchFilter:genblk1[0]:samples_2\ (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(2,4)][LB=1] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\P1_ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=3]
+    [McSlotId=2]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=2]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -4452,24 +3885,39 @@ LAB@[UDB=(2,4)][LB=1] #macrocells=1, #inputs=1, #pterms=1
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              Net_2713
+              \P1_LatchFilter:genblk1[0]:samples_0\
         );
-        Output = \P1_ClockFilter:genblk1[0]:samples_0\ (fanout=2)
+        Output = \P1_LatchFilter:genblk1[0]:samples_1\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\P1_LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2477) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_2602
+        );
+        Output = \P1_LatchFilter:genblk1[0]:samples_0\ (fanout=2)
         Properties               : 
         {
         }
 }
 
-datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u1\
+datapathcell: Name =\P1_WinTimer:TimerUDB:sT16:timerdp:u1\
     PORT MAP (
-        clock => Net_2477 ,
-        cs_addr_2 => \P2_RegD0:bSR:ctrl_clk_enable\ ,
-        f0_bus_stat_comb => \P2_RegD0:bSR:status_4\ ,
-        f0_blk_stat_comb => \P2_RegD0:bSR:status_3\ ,
-        f1_bus_stat_comb => \P2_RegD0:bSR:status_6\ ,
-        f1_blk_stat_comb => \P2_RegD0:bSR:status_5\ ,
-        chain_in => \P2_RegD0:bSR:sC16:BShiftRegDp:carry\ ,
-        clk_en => Net_2530 );
+        clock => Net_2503 ,
+        cs_addr_2 => Net_2458 ,
+        cs_addr_1 => \P1_WinTimer:TimerUDB:timer_enable\ ,
+        cs_addr_0 => \P1_WinTimer:TimerUDB:per_zero\ ,
+        z0_comb => \P1_WinTimer:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \P1_WinTimer:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \P1_WinTimer:TimerUDB:status_2\ ,
+        chain_in => \P1_WinTimer:TimerUDB:sT16:timerdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -4480,7 +3928,7 @@ datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u1\
         cl1_sync = 1
         cmsb_sync = 1
         co_msb_sync = 1
-        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010100101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110101001001000111100100000000000011100"
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
         d0_init = "00000000"
         d1_init = "00000000"
         f0_blk_sync = 1
@@ -4495,32 +3943,34 @@ datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u1\
         z1_sync = 1
     }
     Clock Polarity: Active High
-    Clock Enable: PosEdge(Net_2530)
-    Previous in chain : \P2_RegD0:bSR:sC16:BShiftRegDp:u0\
+    Clock Enable: True
+    Previous in chain : \P1_WinTimer:TimerUDB:sT16:timerdp:u0\
 
-statusicell: Name =\P2_RegD0:bSR:StsReg\
+statusicell: Name =\P1_WinTimer:TimerUDB:rstSts:stsreg\
     PORT MAP (
-        clock => Net_2477 ,
-        status_6 => \P2_RegD0:bSR:status_6\ ,
-        status_5 => \P2_RegD0:bSR:status_5\ ,
-        status_4 => \P2_RegD0:bSR:status_4\ ,
-        status_3 => \P2_RegD0:bSR:status_3\ ,
-        clk_en => Net_2530 );
+        reset => Net_2458 ,
+        clock => Net_2503 ,
+        status_3 => \P1_WinTimer:TimerUDB:status_3\ ,
+        status_2 => \P1_WinTimer:TimerUDB:status_2\ ,
+        status_0 => \P1_WinTimer:TimerUDB:status_tc\ ,
+        interrupt => Net_2370 );
     Properties:
     {
         cy_force_order = 1
-        cy_int_mask = "0000111"
-        cy_md_select = "0000111"
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
     }
     Clock Polarity: Active High
-    Clock Enable: PosEdge(Net_2530)
+    Clock Enable: True
 
+UDB [UDB=(2,3)] is empty.
+UDB [UDB=(2,4)] is empty.
 UDB [UDB=(2,5)] is empty.
 UDB [UDB=(3,0)] contents:
-LAB@[UDB=(3,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+LAB@[UDB=(3,0)][LB=1] #macrocells=1, #inputs=1, #pterms=1
 {
     [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=Net_2517, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=1]
+    [McSlotId=1]:     MacroCell: Name=Net_2517, Mode=(Combinatorial) @ [UDB=(3,0)][LB=1][MC=1]
         Total # of inputs        : 1
         Total # of product terms : 1
             Clock Enable: True
@@ -4535,25 +3985,6 @@ LAB@[UDB=(3,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
 
     [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(3,0)][LB=1] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=Net_2525, Mode=(Combinatorial) @ [UDB=(3,0)][LB=1][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !Net_2524
-        );
-        Output = Net_2525 (fanout=1)
-        Properties               : 
-        {
-        }
 }
 
 datapathcell: Name =\P1_RegD1:bSR:sC16:BShiftRegDp:u1\
@@ -4647,22 +4078,105 @@ datapathcell: Name =\P1_RegD0:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(Net_2504)
     Next in chain : \P1_RegD0:bSR:sC16:BShiftRegDp:u1\
 
-UDB [UDB=(3,2)] is empty.
-UDB [UDB=(3,3)] is empty.
-UDB [UDB=(3,4)] contents:
-LAB@[UDB=(3,4)][LB=1] #macrocells=1, #inputs=1, #pterms=1
+controlcell: Name =\P1_RegD0:bSR:SyncCtl:CtrlReg\
+    PORT MAP (
+        clock => Net_2477 ,
+        control_7 => \P1_RegD0:bSR:control_7\ ,
+        control_6 => \P1_RegD0:bSR:control_6\ ,
+        control_5 => \P1_RegD0:bSR:control_5\ ,
+        control_4 => \P1_RegD0:bSR:control_4\ ,
+        control_3 => \P1_RegD0:bSR:control_3\ ,
+        control_2 => \P1_RegD0:bSR:control_2\ ,
+        control_1 => \P1_RegD0:bSR:control_1\ ,
+        control_0 => \P1_RegD0:bSR:ctrl_clk_enable\ ,
+        clk_en => Net_2504 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000001"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(Net_2504)
+
+UDB [UDB=(3,2)] contents:
+LAB@[UDB=(3,2)][LB=0] #macrocells=2, #inputs=6, #pterms=5
+{
+    [McSlotId=0]:     MacroCell: Name=\P1_WinTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_2503) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_2458 * \P1_WinTimer:TimerUDB:timer_enable\ * 
+              \P1_WinTimer:TimerUDB:run_mode\ * 
+              \P1_WinTimer:TimerUDB:per_zero\
+            + !Net_2458 * \P1_WinTimer:TimerUDB:trig_disable\
+        );
+        Output = \P1_WinTimer:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\P1_WinTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=1]
+        Total # of inputs        : 6
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (Net_2503) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !Net_2458 * \P1_WinTimer:TimerUDB:control_7\ * 
+              !\P1_WinTimer:TimerUDB:timer_enable\ * 
+              !\P1_WinTimer:TimerUDB:trig_disable\
+            + !Net_2458 * \P1_WinTimer:TimerUDB:control_7\ * 
+              !\P1_WinTimer:TimerUDB:run_mode\ * 
+              !\P1_WinTimer:TimerUDB:trig_disable\
+            + !Net_2458 * \P1_WinTimer:TimerUDB:control_7\ * 
+              !\P1_WinTimer:TimerUDB:per_zero\ * 
+              !\P1_WinTimer:TimerUDB:trig_disable\
+        );
+        Output = \P1_WinTimer:TimerUDB:timer_enable\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,2)][LB=1] #macrocells=2, #inputs=3, #pterms=2
 {
     [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=Net_2167, Mode=(Combinatorial) @ [UDB=(3,4)][LB=1][MC=2]
-        Total # of inputs        : 1
+    [McSlotId=1]:     MacroCell: Name=\P1_WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(3,2)][LB=1][MC=1]
+        Total # of inputs        : 2
         Total # of product terms : 1
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !Net_2541
+              \P1_WinTimer:TimerUDB:run_mode\ * 
+              \P1_WinTimer:TimerUDB:per_zero\
         );
-        Output = Net_2167 (fanout=1)
+        Output = \P1_WinTimer:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\P1_WinTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(3,2)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_2503) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \P1_WinTimer:TimerUDB:control_7\
+        );
+        Output = \P1_WinTimer:TimerUDB:run_mode\ (fanout=3)
         Properties               : 
         {
         }
@@ -4670,13 +4184,13 @@ LAB@[UDB=(3,4)][LB=1] #macrocells=1, #inputs=1, #pterms=1
     [McSlotId=3]: (empty)
 }
 
-datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u0\
+datapathcell: Name =\P1_WinTimer:TimerUDB:sT16:timerdp:u0\
     PORT MAP (
-        clock => Net_2477 ,
-        cs_addr_2 => \P2_RegD0:bSR:ctrl_clk_enable\ ,
-        so_comb => Net_2541 ,
-        chain_out => \P2_RegD0:bSR:sC16:BShiftRegDp:carry\ ,
-        clk_en => Net_2530 );
+        clock => Net_2503 ,
+        cs_addr_2 => Net_2458 ,
+        cs_addr_1 => \P1_WinTimer:TimerUDB:timer_enable\ ,
+        cs_addr_0 => \P1_WinTimer:TimerUDB:per_zero\ ,
+        chain_out => \P1_WinTimer:TimerUDB:sT16:timerdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -4687,7 +4201,7 @@ datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u0\
         cl1_sync = 1
         cmsb_sync = 1
         co_msb_sync = 1
-        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010100101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110111101001000011100000000000000011100"
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
         d0_init = "00000000"
         d1_init = "00000000"
         f0_blk_sync = 1
@@ -4702,32 +4216,33 @@ datapathcell: Name =\P2_RegD0:bSR:sC16:BShiftRegDp:u0\
         z1_sync = 1
     }
     Clock Polarity: Active High
-    Clock Enable: PosEdge(Net_2530)
-    Next in chain : \P2_RegD0:bSR:sC16:BShiftRegDp:u1\
+    Clock Enable: True
+    Next in chain : \P1_WinTimer:TimerUDB:sT16:timerdp:u1\
 
-controlcell: Name =\P2_RegD0:bSR:SyncCtl:CtrlReg\
+controlcell: Name =\P1_WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     PORT MAP (
-        clock => Net_2477 ,
-        control_7 => \P2_RegD0:bSR:control_7\ ,
-        control_6 => \P2_RegD0:bSR:control_6\ ,
-        control_5 => \P2_RegD0:bSR:control_5\ ,
-        control_4 => \P2_RegD0:bSR:control_4\ ,
-        control_3 => \P2_RegD0:bSR:control_3\ ,
-        control_2 => \P2_RegD0:bSR:control_2\ ,
-        control_1 => \P2_RegD0:bSR:control_1\ ,
-        control_0 => \P2_RegD0:bSR:ctrl_clk_enable\ ,
-        clk_en => Net_2530 );
+        clock => Net_2503 ,
+        control_7 => \P1_WinTimer:TimerUDB:control_7\ ,
+        control_6 => \P1_WinTimer:TimerUDB:control_6\ ,
+        control_5 => \P1_WinTimer:TimerUDB:control_5\ ,
+        control_4 => \P1_WinTimer:TimerUDB:control_4\ ,
+        control_3 => \P1_WinTimer:TimerUDB:control_3\ ,
+        control_2 => \P1_WinTimer:TimerUDB:control_2\ ,
+        control_1 => \P1_WinTimer:TimerUDB:control_1\ ,
+        control_0 => \P1_WinTimer:TimerUDB:control_0\ );
     Properties:
     {
-        cy_ctrl_mode_0 = "00000001"
+        cy_ctrl_mode_0 = "11111111"
         cy_ctrl_mode_1 = "00000000"
         cy_ext_reset = 0
         cy_force_order = 1
         cy_init_value = "00000000"
     }
     Clock Polarity: Active High
-    Clock Enable: PosEdge(Net_2530)
+    Clock Enable: True
 
+UDB [UDB=(3,3)] is empty.
+UDB [UDB=(3,4)] is empty.
 UDB [UDB=(3,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
   Intr@ [IntrContainer=(0)][IntrId=(0)] 
@@ -5495,31 +5010,31 @@ Port | Pin | Fixed |      Type |       Drive Mode |            Name | Connection
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.002ms
-Digital Placement phase: Elapsed time ==> 1s.702ms
+Digital Placement phase: Elapsed time ==> 1s.619ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.701ms
+Digital Routing phase: Elapsed time ==> 1s.522ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.208ms
+Bitstream and API generation phase: Elapsed time ==> 0s.199ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
 Bitstream verification phase: Elapsed time ==> 0s.027ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in TASBot_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.388ms
+Static timing analysis phase: Elapsed time ==> 0s.390ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.187ms
+Design database save phase: Elapsed time ==> 0s.176ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 4s.702ms
+cydsfit: Elapsed time ==> 4s.422ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 4s.739ms
-API generation phase: Elapsed time ==> 1s.657ms
-Dependency generation phase: Elapsed time ==> 0s.016ms
+Fitter phase: Elapsed time ==> 4s.465ms
+API generation phase: Elapsed time ==> 1s.773ms
+Dependency generation phase: Elapsed time ==> 0s.017ms
 Cleanup phase: Elapsed time ==> 0s.001ms
