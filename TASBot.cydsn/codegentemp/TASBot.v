@@ -1,6 +1,6 @@
 // ======================================================================
 // TASBot.v generated from TopDesign.cysch
-// 10/15/2016 at 08:42
+// 10/15/2016 at 08:53
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -533,25 +533,25 @@ module ConsolePort_5 (
     output      D2;
 
 
-          wire  Net_270;
-          wire  Net_293;
-          wire  Net_292;
-          wire  Net_291;
-          wire  Net_290;
-          wire  Net_289;
-          wire  Net_60;
+          wire  Net_302;
+          wire  Net_301;
+          wire  Net_300;
+          wire  Net_299;
+          wire  Net_298;
+          wire  Net_297;
+          wire  Net_294;
           wire  Net_214;
           wire  Net_213;
           wire  Net_212;
           wire  Net_211;
           wire  Net_210;
           wire  Net_209;
-          wire  Net_269;
-          wire  Net_207;
-          wire  Net_206;
-          wire  Net_205;
-          wire  Net_204;
-          wire  Net_203;
+          wire  Net_303;
+          wire  Net_308;
+          wire  Net_307;
+          wire  Net_306;
+          wire  Net_305;
+          wire  Net_304;
           wire  Net_202;
           wire  Net_201;
           wire  Net_200;
@@ -565,13 +565,13 @@ module ConsolePort_5 (
           wire  Net_192;
           wire  Net_191;
           wire  Net_261;
-          wire  Net_268;
-          wire  Net_243;
+          wire  Net_296;
+          wire  Net_309;
           wire  Net_288;
+          wire  Net_22;
+          wire  Net_61;
           wire  Net_266;
           wire  Net_68;
-          wire  Net_61;
-          wire  Net_22;
 
 
 	cy_clock_v1_0
@@ -585,11 +585,11 @@ module ConsolePort_5 (
 		 (.clock_out(Net_266));
 
 
-    cy_sync_v1_0 Sync_1 (
+    cy_sync_v1_0 ClockSync (
         .s_in(Clock),
         .clock(Net_22),
-        .s_out(Net_243));
-    defparam Sync_1.SignalWidth = 1;
+        .s_out(Net_296));
+    defparam ClockSync.SignalWidth = 1;
 
 
 	cy_clock_v1_0
@@ -642,8 +642,8 @@ module ConsolePort_5 (
         .enable(1'b1),
         .trigger(1'b1),
         .capture(1'b0),
-        .capture_out(Net_206),
-        .tc(Net_207),
+        .capture_out(Net_307),
+        .tc(Net_308),
         .clock(Net_266));
     defparam WinTimer.CaptureCount = 2;
     defparam WinTimer.CaptureCounterEnabled = 0;
@@ -675,15 +675,15 @@ module ConsolePort_5 (
     defparam RegD1.Length = 16;
 
 
-    assign Net_60 = ~Net_288;
+    assign Net_294 = ~Net_288;
 
     Timer_v2_70_4 ClockTimer (
-        .reset(Net_60),
-        .interrupt(Net_289),
+        .reset(Net_294),
+        .interrupt(Net_297),
         .enable(1'b1),
         .trigger(1'b1),
         .capture(1'b0),
-        .capture_out(Net_293),
+        .capture_out(Net_301),
         .tc(Net_61),
         .clock(Net_266));
     defparam ClockTimer.CaptureCount = 2;
@@ -695,7 +695,7 @@ module ConsolePort_5 (
     defparam ClockTimer.SiliconRevision = "0";
 
     GlitchFilter_v2_0 ClockFilter (
-        .d(Net_243),
+        .d(Net_296),
         .reset(1'b0),
         .clock(Net_22),
         .q(Net_288));
@@ -1376,25 +1376,25 @@ module ConsolePort_12 (
     output      D2;
 
 
-          wire  Net_270;
-          wire  Net_293;
-          wire  Net_292;
-          wire  Net_291;
-          wire  Net_290;
-          wire  Net_289;
-          wire  Net_60;
+          wire  Net_302;
+          wire  Net_301;
+          wire  Net_300;
+          wire  Net_299;
+          wire  Net_298;
+          wire  Net_297;
+          wire  Net_294;
           wire  Net_214;
           wire  Net_213;
           wire  Net_212;
           wire  Net_211;
           wire  Net_210;
           wire  Net_209;
-          wire  Net_269;
-          wire  Net_207;
-          wire  Net_206;
-          wire  Net_205;
-          wire  Net_204;
-          wire  Net_203;
+          wire  Net_303;
+          wire  Net_308;
+          wire  Net_307;
+          wire  Net_306;
+          wire  Net_305;
+          wire  Net_304;
           wire  Net_202;
           wire  Net_201;
           wire  Net_200;
@@ -1408,13 +1408,13 @@ module ConsolePort_12 (
           wire  Net_192;
           wire  Net_191;
           wire  Net_261;
-          wire  Net_268;
-          wire  Net_243;
+          wire  Net_296;
+          wire  Net_309;
           wire  Net_288;
+          wire  Net_22;
+          wire  Net_61;
           wire  Net_266;
           wire  Net_68;
-          wire  Net_61;
-          wire  Net_22;
 
 
 	cy_clock_v1_0
@@ -1428,11 +1428,11 @@ module ConsolePort_12 (
 		 (.clock_out(Net_266));
 
 
-    cy_sync_v1_0 Sync_1 (
+    cy_sync_v1_0 ClockSync (
         .s_in(Clock),
         .clock(Net_22),
-        .s_out(Net_243));
-    defparam Sync_1.SignalWidth = 1;
+        .s_out(Net_296));
+    defparam ClockSync.SignalWidth = 1;
 
 
 	cy_clock_v1_0
@@ -1485,8 +1485,8 @@ module ConsolePort_12 (
         .enable(1'b1),
         .trigger(1'b1),
         .capture(1'b0),
-        .capture_out(Net_206),
-        .tc(Net_207),
+        .capture_out(Net_307),
+        .tc(Net_308),
         .clock(Net_266));
     defparam WinTimer.CaptureCount = 2;
     defparam WinTimer.CaptureCounterEnabled = 0;
@@ -1518,15 +1518,15 @@ module ConsolePort_12 (
     defparam RegD1.Length = 16;
 
 
-    assign Net_60 = ~Net_288;
+    assign Net_294 = ~Net_288;
 
     Timer_v2_70_11 ClockTimer (
-        .reset(Net_60),
-        .interrupt(Net_289),
+        .reset(Net_294),
+        .interrupt(Net_297),
         .enable(1'b1),
         .trigger(1'b1),
         .capture(1'b0),
-        .capture_out(Net_293),
+        .capture_out(Net_301),
         .tc(Net_61),
         .clock(Net_266));
     defparam ClockTimer.CaptureCount = 2;
@@ -1538,7 +1538,7 @@ module ConsolePort_12 (
     defparam ClockTimer.SiliconRevision = "0";
 
     GlitchFilter_v2_0 ClockFilter (
-        .d(Net_243),
+        .d(Net_296),
         .reset(1'b0),
         .clock(Net_22),
         .q(Net_288));

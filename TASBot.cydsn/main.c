@@ -229,7 +229,8 @@ int main()
                         input_ptr[1] = 0;
                         
                         while (0u == USBUART_CDCIsReady()) { }
-                        USBUART_PutChar(0xB);                        
+                        USBUART_PutChar(0xB);
+                        
                         data[0] = input[0][0];
                         data[1] = input[1][0];
                         data[2] = input[2][0];

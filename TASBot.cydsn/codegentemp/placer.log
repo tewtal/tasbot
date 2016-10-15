@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 25 2016 12:55:34
 
-#File Generated:     Oct 15 2016 08:42:28
+#File Generated:     Oct 15 2016 08:53:19
 
 #Purpose:            
 
@@ -80,11 +80,11 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 9
-Clock: ConsolePort_1_Clock_1 | Frequency:  46.0 MHz | Target:  24.0 MHz
-Clock: ConsolePort_1_Clock_2 | Frequency:  46.0 MHz | Target:   6.0 MHz
-Clock: ConsolePort_2_Clock_1 | Frequency:  46.0 MHz | Target:  24.0 MHz
-Clock: ConsolePort_2_Clock_2 | Frequency:  46.0 MHz | Target:   6.0 MHz
-Clock: CyBUS_CLK            | Frequency:  52.8 MHz | Target:  24.0 MHz
+Clock: ConsolePort_1_Clock_1 | Frequency:  56.9 MHz | Target:  24.0 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:  56.9 MHz | Target:   6.0 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:  56.9 MHz | Target:  24.0 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:  56.9 MHz | Target:   6.0 MHz
+Clock: CyBUS_CLK            | Frequency:  59.0 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
@@ -101,11 +101,11 @@ Phase 7
                      Clock Summary 
 ======================================================================
 Number of clocks: 9
-Clock: ConsolePort_1_Clock_1 | Frequency:  43.0 MHz | Target:  24.0 MHz
-Clock: ConsolePort_1_Clock_2 | Frequency:  43.0 MHz | Target:   6.0 MHz
-Clock: ConsolePort_2_Clock_1 | Frequency:  43.0 MHz | Target:  24.0 MHz
-Clock: ConsolePort_2_Clock_2 | Frequency:  43.0 MHz | Target:   6.0 MHz
-Clock: CyBUS_CLK            | Frequency:  52.7 MHz | Target:  24.0 MHz
+Clock: ConsolePort_1_Clock_1 | Frequency:  53.6 MHz | Target:  24.0 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:  53.6 MHz | Target:   6.0 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:  53.6 MHz | Target:  24.0 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:  53.6 MHz | Target:   6.0 MHz
+Clock: CyBUS_CLK            | Frequency:  59.6 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
@@ -114,7 +114,7 @@ Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 1.0 (sec)
+D2088: Phase 7, elapsed time : 1.1 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	14
@@ -145,11 +145,11 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 9
-Clock: ConsolePort_1_Clock_1 | Frequency:   1.1 MHz | Target:  26.3 MHz
-Clock: ConsolePort_1_Clock_2 | Frequency:   1.1 MHz | Target:   6.6 MHz
-Clock: ConsolePort_2_Clock_1 | Frequency:   1.1 MHz | Target:  26.3 MHz
-Clock: ConsolePort_2_Clock_2 | Frequency:   1.1 MHz | Target:   6.6 MHz
-Clock: CyBUS_CLK            | Frequency:   1.6 MHz | Target:  26.3 MHz
+Clock: ConsolePort_1_Clock_1 | Frequency:   1.4 MHz | Target:  26.3 MHz
+Clock: ConsolePort_1_Clock_2 | Frequency:   1.4 MHz | Target:   6.6 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:   1.4 MHz | Target:  26.3 MHz
+Clock: ConsolePort_2_Clock_2 | Frequency:   1.4 MHz | Target:   6.6 MHz
+Clock: CyBUS_CLK            | Frequency:   1.8 MHz | Target:  26.3 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
@@ -164,5 +164,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.6 sec.
+I2076: Total run-time: 1.7 sec.
 
