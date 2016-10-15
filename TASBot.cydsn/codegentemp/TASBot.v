@@ -1,6 +1,6 @@
 // ======================================================================
 // TASBot.v generated from TopDesign.cysch
-// 10/15/2016 at 08:53
+// 10/15/2016 at 21:13
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -564,9 +564,9 @@ module ConsolePort_5 (
           wire  Net_193;
           wire  Net_192;
           wire  Net_191;
-          wire  Net_261;
+          wire  Net_313;
           wire  Net_296;
-          wire  Net_309;
+          wire  Net_312;
           wire  Net_288;
           wire  Net_22;
           wire  Net_61;
@@ -1407,9 +1407,9 @@ module ConsolePort_12 (
           wire  Net_193;
           wire  Net_192;
           wire  Net_191;
-          wire  Net_261;
+          wire  Net_313;
           wire  Net_296;
-          wire  Net_309;
+          wire  Net_312;
           wire  Net_288;
           wire  Net_22;
           wire  Net_61;

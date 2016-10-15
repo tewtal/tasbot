@@ -2,36 +2,36 @@ dont_use_io iocell 1 0
 dont_use_io iocell 1 1
 dont_use_io iocell 1 3
 set_location "\ConsolePort_2:WinTimer:TimerUDB:rstSts:stsreg\" statusicell 1 5 4 
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\" macrocell 1 1 0 2
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:status_tc\" macrocell 1 2 1 1
-set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\" macrocell 1 0 0 1
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\" macrocell 1 2 0 1
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:status_tc\" macrocell 1 3 1 1
+set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\" macrocell 0 1 0 1
 set_location "\ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u0\" datapathcell 3 1 2 
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\" macrocell 1 1 1 2
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\" macrocell 2 1 0 1
-set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\" macrocell 0 5 1 2
-set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\" macrocell 1 0 1 1
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:run_mode\" macrocell 1 2 0 2
-set_location "Net_3493" macrocell 0 5 0 0
-set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_2\" macrocell 1 0 1 0
-set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_2\" macrocell 0 5 0 1
-set_location "\ConsolePort_1:Net_61\" macrocell 3 1 1 2
-set_location "\ConsolePort_1:WinTimer:TimerUDB:run_mode\" macrocell 0 4 0 2
-set_location "\ConsolePort_2:Net_68\" macrocell 1 1 1 1
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\" macrocell 1 2 1 1
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\" macrocell 2 1 1 3
+set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\" macrocell 0 4 1 3
+set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\" macrocell 0 1 1 1
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:run_mode\" macrocell 1 3 0 0
+set_location "Net_3493" macrocell 0 4 0 2
+set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_2\" macrocell 0 1 0 3
+set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_2\" macrocell 0 2 0 2
+set_location "\ConsolePort_1:Net_61\" macrocell 2 1 1 2
+set_location "\ConsolePort_1:WinTimer:TimerUDB:run_mode\" macrocell 1 4 1 2
+set_location "\ConsolePort_2:Net_68\" macrocell 1 1 0 3
 set_location "\ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u1\" datapathcell 2 1 2 
 set_location "\ConsolePort_1:WinTimer:TimerUDB:rstSts:stsreg\" statusicell 0 4 4 
 set_location "\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u1\" datapathcell 0 4 2 
 set_location "\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u0\" datapathcell 1 1 2 
-set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_2\" macrocell 1 4 0 1
-set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_2\" macrocell 2 2 0 0
-set_location "\ConsolePort_1:Net_288\" macrocell 2 2 0 3
+set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_2\" macrocell 0 3 1 2
+set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_2\" macrocell 3 1 1 3
+set_location "\ConsolePort_1:Net_288\" macrocell 3 1 1 1
 set_location "Net_3420" macrocell 3 3 0 1
-set_location "Net_2981" macrocell 3 0 0 0
-set_location "Net_3488" macrocell 0 3 0 3
-set_location "Net_3489" macrocell 0 0 0 2
-set_location "Net_3479" macrocell 0 3 0 2
-set_location "Net_3487" macrocell 0 3 1 0
+set_location "Net_2981" macrocell 3 0 1 1
+set_location "Net_3488" macrocell 0 3 0 2
+set_location "Net_3489" macrocell 1 0 1 2
+set_location "Net_3479" macrocell 2 3 0 2
+set_location "Net_3487" macrocell 1 3 0 1
 set_location "\ConsolePort_2:Net_61\" macrocell 1 1 0 0
-set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\" macrocell 2 2 1 3
+set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\" macrocell 3 1 0 2
 set_location "\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u1\" datapathcell 0 1 2 
 set_location "\ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u0\" datapathcell 2 0 2 
 set_location "\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\" datapathcell 0 0 2 
@@ -40,32 +40,32 @@ set_location "\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\" datapathcell 0 3 2
 set_location "\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\" datapathcell 2 3 2 
 set_location "\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u0\" datapathcell 1 2 2 
 set_location "\ConsolePort_1:RegD0:bSR:StsReg\" statusicell 3 0 4 
-set_location "\ConsolePort_2:RegD0:bSR:StsReg\" statusicell 1 0 4 
+set_location "\ConsolePort_2:RegD0:bSR:StsReg\" statusicell 1 2 4 
 set_location "\ConsolePort_1:RegD1:bSR:StsReg\" statusicell 2 2 4 
-set_location "\ConsolePort_2:RegD1:bSR:StsReg\" statusicell 1 1 4 
+set_location "\ConsolePort_2:RegD1:bSR:StsReg\" statusicell 1 0 4 
 set_location "\ConsolePort_1:RegD2:bSR:StsReg\" statusicell 3 3 4 
 set_location "\ConsolePort_2:RegD2:bSR:StsReg\" statusicell 0 2 4 
-set_location "\ConsolePort_1:WinTimer:TimerUDB:trig_disable\" macrocell 0 4 0 0
-set_location "\ConsolePort_2:WinTimer:TimerUDB:timer_enable\" macrocell 1 5 1 0
-set_location "\ConsolePort_2:WinTimer:TimerUDB:status_tc\" macrocell 1 5 1 3
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:status_tc\" macrocell 3 1 0 3
-set_location "\ConsolePort_1:WinTimer:TimerUDB:status_tc\" macrocell 0 4 1 1
-set_location "\ConsolePort_2:WinTimer:TimerUDB:run_mode\" macrocell 1 5 0 3
-set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\" macrocell 1 4 1 0
-set_location "Net_3417" macrocell 1 4 1 3
+set_location "\ConsolePort_1:WinTimer:TimerUDB:trig_disable\" macrocell 1 4 0 2
+set_location "\ConsolePort_2:WinTimer:TimerUDB:timer_enable\" macrocell 1 5 0 3
+set_location "\ConsolePort_2:WinTimer:TimerUDB:status_tc\" macrocell 1 5 0 1
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:status_tc\" macrocell 2 2 1 1
+set_location "\ConsolePort_1:WinTimer:TimerUDB:status_tc\" macrocell 0 4 0 0
+set_location "\ConsolePort_2:WinTimer:TimerUDB:run_mode\" macrocell 1 5 1 2
+set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\" macrocell 0 3 0 0
+set_location "Net_3417" macrocell 0 3 0 1
 set_location "\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\" datapathcell 1 4 2 
-set_location "\ConsolePort_1:WinTimer:TimerUDB:timer_enable\" macrocell 0 4 0 3
+set_location "\ConsolePort_1:WinTimer:TimerUDB:timer_enable\" macrocell 1 4 1 0
 set_location "\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\" datapathcell 0 5 2 
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\" statusicell 1 2 4 
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:run_mode\" macrocell 2 1 1 2
-set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\" macrocell 0 5 0 3
-set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\" macrocell 2 2 1 0
-set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\" macrocell 1 4 0 3
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\" statusicell 0 3 4 
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:run_mode\" macrocell 2 2 1 3
+set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\" macrocell 0 4 1 0
+set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\" macrocell 3 1 0 1
+set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\" macrocell 0 3 1 3
 set_location "\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u1\" datapathcell 1 5 2 
-set_location "\ConsolePort_2:WinTimer:TimerUDB:trig_disable\" macrocell 1 5 0 1
-set_location "\ConsolePort_2:Net_288\" macrocell 1 0 1 2
-set_location "\ConsolePort_2:Net_294\" macrocell 1 0 1 3
-set_location "\ConsolePort_1:Net_294\" macrocell 2 2 0 1
+set_location "\ConsolePort_2:WinTimer:TimerUDB:trig_disable\" macrocell 1 5 1 0
+set_location "\ConsolePort_2:Net_288\" macrocell 0 1 0 2
+set_location "\ConsolePort_2:Net_294\" macrocell 0 1 0 0
+set_location "\ConsolePort_1:Net_294\" macrocell 3 1 1 2
 set_location "\ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u1\" datapathcell 3 0 2 
 set_location "\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u1\" datapathcell 1 0 2 
 set_location "\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\" datapathcell 2 2 2 
@@ -73,8 +73,8 @@ set_location "\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\" datapathcell 1 3 2
 set_location "\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\" datapathcell 3 3 2 
 set_location "\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\" datapathcell 0 2 2 
 set_location "\ConsolePort_1:ClockTimer:TimerUDB:rstSts:stsreg\" statusicell 2 1 4 
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\" macrocell 2 1 1 0
-set_location "\ConsolePort_1:Net_68\" macrocell 3 1 0 1
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\" macrocell 2 1 0 0
+set_location "\ConsolePort_1:Net_68\" macrocell 2 1 1 0
 set_location "P2_IRQ" interrupt -1 -1 2
 set_location "P1_IRQ" interrupt -1 -1 0
 set_io "P1_Clock(0)" iocell 2 0
@@ -94,16 +94,16 @@ set_io "P1_D2(0)" iocell 12 4
 # Note: port 12 is the logical name for port 7
 set_io "P2_D0(1)" iocell 12 7
 set_io "P2_Latch(0)" iocell 2 3
-set_location "\ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 0 4 6 
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 2 1 6 
+set_location "\ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 1 4 6 
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 2 3 6 
 set_location "ClockBlock" clockblockcell -1 -1 0
 set_io "P2_D1(1)" iocell 2 7
 # Note: port 12 is the logical name for port 7
 set_io "P1_D0(1)" iocell 12 1
-set_location "\ConsolePort_2:ClockSync:genblk1[0]:INST\" synccell 1 3 5 0
+set_location "\ConsolePort_2:ClockSync:genblk1[0]:INST\" synccell 0 1 5 0
 set_location "\USBUART:bus_reset\" interrupt -1 -1 23
-set_location "\ConsolePort_1:ClockSync:genblk1[0]:INST\" synccell 2 3 5 0
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 1 2 6 
+set_location "\ConsolePort_1:ClockSync:genblk1[0]:INST\" synccell 1 1 5 0
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 1 3 6 
 # Note: port 12 is the logical name for port 7
 set_io "P1_D2(1)" iocell 12 5
 set_location "\USBUART:arb_int\" interrupt -1 -1 22
@@ -114,9 +114,9 @@ set_io "P1_D0(0)" iocell 12 0
 set_location "\ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\" controlcell 2 2 6 
 set_location "\ConsolePort_2:RegD0:bSR:SyncCtl:CtrlReg\" controlcell 0 0 6 
 set_location "\ConsolePort_1:RegD1:bSR:SyncCtl:CtrlReg\" controlcell 3 2 6 
-set_location "\ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\" controlcell 0 2 6 
+set_location "\ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\" controlcell 1 0 6 
 set_location "\ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\" controlcell 3 0 6 
-set_location "\ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\" controlcell 1 1 6 
+set_location "\ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\" controlcell 1 2 6 
 set_location "\USBUART:USB\" usbcell -1 -1 0
 set_io "P2_D1(0)" iocell 2 6
 set_location "\ConsolePort_2:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 1 5 6 
