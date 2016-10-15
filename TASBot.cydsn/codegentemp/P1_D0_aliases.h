@@ -28,7 +28,10 @@
 #define P1_D0_0			(P1_D0__0__PC)
 #define P1_D0_0_INTR	((uint16)((uint16)0x0001u << P1_D0__0__SHIFT))
 
-#define P1_D0_INTR_ALL	 ((uint16)(P1_D0_0_INTR))
+#define P1_D0_1			(P1_D0__1__PC)
+#define P1_D0_1_INTR	((uint16)((uint16)0x0001u << P1_D0__1__SHIFT))
+
+#define P1_D0_INTR_ALL	 ((uint16)(P1_D0_0_INTR| P1_D0_1_INTR))
 
 #endif /* End Pins P1_D0_ALIASES_H */
 

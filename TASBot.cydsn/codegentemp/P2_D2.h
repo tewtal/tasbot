@@ -68,7 +68,7 @@ uint8   P2_D2_ClearInterrupt(void);
 /* Digital Port Constants */
 #define P2_D2_MASK               P2_D2__MASK
 #define P2_D2_SHIFT              P2_D2__SHIFT
-#define P2_D2_WIDTH              1u
+#define P2_D2_WIDTH              2u
 
 /* Interrupt constants */
 #if defined(P2_D2__INTSTAT)
@@ -155,6 +155,7 @@ uint8   P2_D2_ClearInterrupt(void);
     #define P2_D2_SNAP               (* (reg8 *) P2_D2__SNAP)
     
 	#define P2_D2_0_INTTYPE_REG 		(* (reg8 *) P2_D2__0__INTTYPE)
+	#define P2_D2_1_INTTYPE_REG 		(* (reg8 *) P2_D2__1__INTTYPE)
 #endif /* (P2_D2__INTSTAT) */
 
 #endif /* CY_PSOC5A... */

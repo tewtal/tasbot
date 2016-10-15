@@ -167,15 +167,15 @@ CY_ISR(P1_IRQ_Interrupt)
     /*  Place your Interrupt code here. */
     /* `#START P1_IRQ_Interrupt` */
 
-    P1_RegD0_WriteRegValue(data[0]);
-    P1_RegD1_WriteRegValue(data[1]);
-    P1_RegD2_WriteRegValue(data[2]);
+    ConsolePort_1_RegD0_WriteRegValue(data[0]);
+    ConsolePort_1_RegD1_WriteRegValue(data[1]);
+    ConsolePort_1_RegD2_WriteRegValue(data[2]);
 
     if(!async)
     {
-        P2_RegD0_WriteRegValue(data[3]);
-        P2_RegD1_WriteRegValue(data[4]);
-        P2_RegD2_WriteRegValue(data[5]);
+        ConsolePort_2_RegD0_WriteRegValue(data[3]);
+        ConsolePort_2_RegD1_WriteRegValue(data[4]);
+        ConsolePort_2_RegD2_WriteRegValue(data[5]);
     }
   
     if(playing)
@@ -195,8 +195,8 @@ CY_ISR(P1_IRQ_Interrupt)
             }
             
             latches[0]++;
+            sent = 1;
         }
-        sent = 1;
     }
     /* `#END` */
 }

@@ -165,9 +165,9 @@ CY_ISR(P2_IRQ_Interrupt)
 
     /*  Place your Interrupt code here. */
     /* `#START P2_IRQ_Interrupt` */
-    P2_RegD0_WriteRegValue(data[3]);
-    P2_RegD1_WriteRegValue(data[4]);
-    P2_RegD2_WriteRegValue(data[5]);
+    ConsolePort_2_RegD0_WriteRegValue(data[3]);
+    ConsolePort_2_RegD1_WriteRegValue(data[4]);
+    ConsolePort_2_RegD2_WriteRegValue(data[5]);
 
     if(playing)
     {

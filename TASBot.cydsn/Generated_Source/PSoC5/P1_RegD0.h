@@ -133,7 +133,7 @@ extern uint8 P1_RegD0_initVar;
 
 #define P1_RegD0_SR_MASK    (0xFFFFu) /* Unsigned is added to parameter */
 #define P1_RegD0_INT_SRC    (1u)
-#define P1_RegD0_DIRECTION  (1u)
+#define P1_RegD0_DIRECTION  (0u)
 
 
 /***************************************

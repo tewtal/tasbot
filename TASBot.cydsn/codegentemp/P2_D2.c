@@ -90,6 +90,7 @@ void P2_D2_Write(uint8 value)
 void P2_D2_SetDriveMode(uint8 mode)
 {
 	CyPins_SetPinDriveMode(P2_D2_0, mode);
+	CyPins_SetPinDriveMode(P2_D2_1, mode);
 }
 
 
@@ -189,6 +190,10 @@ uint8 P2_D2_ReadDataReg(void)
 		if((position & P2_D2_0_INTR) != 0u) 
 		{ 
 			 P2_D2_0_INTTYPE_REG = (uint8)mode; 
+		} 
+		if((position & P2_D2_1_INTR) != 0u) 
+		{ 
+			 P2_D2_1_INTTYPE_REG = (uint8)mode; 
 		}
     }
     

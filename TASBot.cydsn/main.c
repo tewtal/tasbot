@@ -31,7 +31,7 @@ int main()
     uint8 buffer[USBUART_BUFFER_SIZE];
     uint8 cmd;
     uint16 tmp = 0;
-    int i = 0, j = 0, k = 0, p = 0, d = 0;
+    int i = 0, j = 0, k = 0, p = 0, d = 0, blocksize = 0;
     
     CyGlobalIntEnable; /* Enable global interrupts. */
 
@@ -40,54 +40,73 @@ int main()
     
 
     /* Start registers and timers */
-    P1_RegD0_Start();
-    P1_RegD0_WriteRegValue(1);
-    P1_RegD1_Start();
-    P1_RegD1_WriteRegValue(1);
-    P1_RegD2_Start();
-    P1_RegD2_WriteRegValue(1);
+    ConsolePort_1_RegD0_Start();
+    ConsolePort_1_RegD0_WriteRegValue(1);
+    ConsolePort_1_RegD1_Start();
+    ConsolePort_1_RegD1_WriteRegValue(1);
+    ConsolePort_1_RegD2_Start();
+    ConsolePort_1_RegD2_WriteRegValue(1);
     
-    P1_WinTimer_Start();
+    ConsolePort_1_WinTimer_Start();
+    ConsolePort_1_ClockTimer_Start();
     P1_TimerIRQ_Start();
 
-    P2_RegD0_Start();
-    P2_RegD0_WriteRegValue(1);
-    P2_RegD1_Start();
-    P2_RegD1_WriteRegValue(1);
-    P2_RegD2_Start();
-    P2_RegD2_WriteRegValue(1);
-    
-    P2_WinTimer_Start();
-    P2_TimerIRQ_Start();
+    ConsolePort_2_RegD0_Start();
+    ConsolePort_2_RegD0_WriteRegValue(1);
+    ConsolePort_2_RegD1_Start();
+    ConsolePort_2_RegD1_WriteRegValue(1);
+    ConsolePort_2_RegD2_Start();
+    ConsolePort_2_RegD2_WriteRegValue(1);
 
-    for(;;)
-    {           
-        if(playing && request[0] == 0)
-		{
-        	i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[0] - input_ptr[0])&(INPUT_BUF_SIZE - 1));
-			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
-			{
-                if (0u != USBUART_GetConfiguration())
-                {
-                    while (0u == USBUART_CDCIsReady()) { }
-                    USBUART_PutChar(0xF0);
-                    request[0] = 1;
+    ConsolePort_2_ClockTimer_Start();
+
+    for(;;)    
+    {      
+        if(async)
+        {
+            if(playing && request[0] == 0)
+    		{
+            	i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[0] - input_ptr[0])&(INPUT_BUF_SIZE - 1));
+    			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
+    			{
+                    if (0u != USBUART_GetConfiguration())
+                    {
+                        while (0u == USBUART_CDCIsReady()) { }
+                        USBUART_PutChar(0xF0);
+                        request[0] = 1;
+                    }
+                }
+            }
+            
+            if(playing && request[1] == 0)
+            {
+                i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[1] - input_ptr[1])&(INPUT_BUF_SIZE - 1));
+    			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
+    			{
+                    if (0u != USBUART_GetConfiguration())
+                    {
+                        while (0u == USBUART_CDCIsReady()) { }
+                        USBUART_PutChar(0xF1);
+                        request[1] = 1;
+                    }
                 }
             }
         }
-        
-        if(playing && request[1] == 0)
+        else
         {
-            i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[1] - input_ptr[1])&(INPUT_BUF_SIZE - 1));
-			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
-			{
-                if (0u != USBUART_GetConfiguration())
-                {
-                    while (0u == USBUART_CDCIsReady()) { }
-                    USBUART_PutChar(0xF1);
-                    request[1] = 1;
+            if(playing && request[0] == 0)
+            {
+                i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[0] - input_ptr[0])&(INPUT_BUF_SIZE - 1));
+    			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
+    			{
+                    if (0u != USBUART_GetConfiguration())
+                    {
+                        while (0u == USBUART_CDCIsReady()) { }
+                        USBUART_PutChar(0xF);
+                        request[0] = 1;
+                    }
                 }
-            }
+            }           
         }
         
         if (0u != USBUART_IsConfigurationChanged())
@@ -119,9 +138,29 @@ int main()
                         latches[0] = 0;
                         latches[1] = 0;
                         async = 0;
+                        blocksize = 0;
                         P1_IRQ_Stop();
-                        P2_IRQ_Stop();
                         
+                        P2_IRQ_Stop();
+                        P2_TimerIRQ_Stop();
+                        ConsolePort_2_WinTimer_Stop();
+
+                        /* Reset timers to default */
+                        ConsolePort_1_ClockTimer_WritePeriod(2);
+                        ConsolePort_2_ClockTimer_WritePeriod(2);                        
+                        ConsolePort_1_WinTimer_WritePeriod(2500);
+                        ConsolePort_2_WinTimer_WritePeriod(2500);
+                        
+                        disable_timer[0] = 0;
+                        use_timer[0] = 0;
+                        timer_ready[0] = 0;
+                        window_off[0] = -1;
+
+                        disable_timer[1] = 0;
+                        use_timer[1] = 0;
+                        timer_ready[1] = 0;
+                        window_off[1] = -1;
+
                         for(i = 0; i < INPUT_BUF_SIZE; i++)
                         {
                             for(j = 0; j < 6; j++)
@@ -148,25 +187,36 @@ int main()
                         latches[0] = 0;
                         latches[1] = 0;
                         
-                        for(k = 0; k < 4*ports*databits*lines; k++)
+                        blocksize = ports * databits * lines;
+                        
+                        for(k = 0; k < 4 * blocksize; k++)
                         {
                             while (0u == USBUART_CDCIsReady()) { }
-                            USBUART_PutChar(0xF2);
+                            USBUART_PutChar(0x0F);
                             
                             while(USBUART_DataIsReady() == 0) { }
                             bytes = USBUART_GetAll(buffer);
                             
-                            for(j = 1; j < 61; j+= (databits * lines) * ports)
+                            for(j = 1; j < 61; j+= blocksize)
                             {
                                 for(p = 0; p < ports; p++)
                                 {
                                     for(d = 0; d < lines; d++)
                                     {
+                                        
                                         tmp = 0;
-                                        for(i = 0; i < databits; i++)
+                                        if(databits > 1)
                                         {
-                                            tmp = (tmp<<8) + buffer[j+(p*(databits*lines))+(d*databits)+i];
+                                            for(i = 0; i < databits; i++)
+                                            {
+                                                tmp = (tmp<<8) + buffer[j+(p*(databits*lines))+(d*databits)+i];
+                                            }
+                                        } 
+                                        else 
+                                        {
+                                            tmp = buffer[j+(p*(databits*lines))+(d*databits)] << 8;
                                         }
+                                        
                                         input[(p*3) + d][buf_ptr[p]] = tmp;
                                     }
                                 }
@@ -196,6 +246,8 @@ int main()
                         
                         if(async && ports > 1)
                         {
+                            ConsolePort_2_WinTimer_Start();
+                            P2_TimerIRQ_Start();
                             P2_IRQ_Start();
                             request[1] = 0;
                         }
@@ -240,21 +292,29 @@ int main()
                         request[1] = 0;
                         break;
                     }
-                    case 0xF2:
+                    case 0xF:
                     {
                         /* synchronous send to both ports with interleaved data */
-                        for(j = 1; j < 61; j+= (databits * lines) * ports)
+                        for(j = 1; j < 61; j+= blocksize)
                         {
                             for(p = 0; p < ports; p++)
                             {
                                 for(d = 0; d < lines; d++)
                                 {
                                     tmp = 0;
-                                    for(i = 0; i < databits; i++)
+                                    if(databits > 1)
                                     {
-                                        tmp = (tmp<<8) + buffer[j+(p*(databits*lines))+(d*databits)+i];
+                                        for(i = 0; i < databits; i++)
+                                        {
+                                            tmp = (tmp<<8) + buffer[j+(p*(databits*lines))+(d*databits)+i];
+                                        }
+                                    } 
+                                    else 
+                                    {
+                                        tmp = buffer[j+(p*(databits*lines))+(d*databits)] << 8;
                                     }
-                                    input[(p*3) + d][buf_ptr[0]] = tmp;
+                                    input[(p*3) + d][buf_ptr[p]] = tmp;
+                                    
                                 }
                             }
         					buf_ptr[0] = (buf_ptr[0]+1)%INPUT_BUF_SIZE;
@@ -265,7 +325,7 @@ int main()
                     }
                     case 0xA0:
                     {                        
-                        P1_WinTimer_WritePeriod((buffer[1]<<8) + (buffer[2]&0xFF));
+                        ConsolePort_1_WinTimer_WritePeriod((buffer[1]<<8) + (buffer[2]&0xFF));
                         break;
                     }
                     case 0xA1:
@@ -285,9 +345,14 @@ int main()
                         timer_ready[0] = 1;
                         break;
                     }
+                    case 0xA4:
+                    {
+                        ConsolePort_1_ClockTimer_WritePeriod(buffer[1]);
+                        break;
+                    }
                     case 0xB0:
                     {                        
-                        P2_WinTimer_WritePeriod((buffer[1]<<8) + (buffer[2]&0xFF));
+                        ConsolePort_2_WinTimer_WritePeriod((buffer[1]<<8) + (buffer[2]&0xFF));
                         break;
                     }
                     case 0xB1:
@@ -307,6 +372,11 @@ int main()
                         timer_ready[1] = 1;
                         break;
                     }
+                    case 0xB4:
+                    {
+                        ConsolePort_2_ClockTimer_WritePeriod(buffer[1]);
+                        break;
+                    }                    
                     case 0xFF:
                     {
                         while (0u == USBUART_CDCIsReady()) { }

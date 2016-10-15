@@ -68,7 +68,7 @@ uint8   P1_D1_ClearInterrupt(void);
 /* Digital Port Constants */
 #define P1_D1_MASK               P1_D1__MASK
 #define P1_D1_SHIFT              P1_D1__SHIFT
-#define P1_D1_WIDTH              1u
+#define P1_D1_WIDTH              2u
 
 /* Interrupt constants */
 #if defined(P1_D1__INTSTAT)
@@ -155,6 +155,7 @@ uint8   P1_D1_ClearInterrupt(void);
     #define P1_D1_SNAP               (* (reg8 *) P1_D1__SNAP)
     
 	#define P1_D1_0_INTTYPE_REG 		(* (reg8 *) P1_D1__0__INTTYPE)
+	#define P1_D1_1_INTTYPE_REG 		(* (reg8 *) P1_D1__1__INTTYPE)
 #endif /* (P1_D1__INTSTAT) */
 
 #endif /* CY_PSOC5A... */
