@@ -47,7 +47,7 @@ ser.write(b'\x01\x02\x02\x03\x00\x00\x00') # command 1 (play), 16-bits, 2 port, 
 
 latches = 0
 extra = 0
-skip = 1
+skip = 0
 
 for n in range(0, skip):
 	f.read(16)
