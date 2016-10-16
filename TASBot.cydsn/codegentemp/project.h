@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: project.h
 * 
-* PSoC Creator  3.3 CP3
+* PSoC Creator  4.0
 *
 * Description:
 * It contains references to all generated header files and should not be modified.
@@ -51,7 +51,6 @@
 #include "P2_D2.h"
 #include "P2_D0_aliases.h"
 #include "P2_D0.h"
-#include "ConsolePort_2_Clock_2.h"
 #include "ConsolePort_2_Clock_1.h"
 #include "ConsolePort_2_RegD2.h"
 #include "ConsolePort_2_RegD0.h"
@@ -62,7 +61,6 @@
 #include "USBUART_Dm.h"
 #include "USBUART_Dp_aliases.h"
 #include "USBUART_Dp.h"
-#include "ConsolePort_1_Clock_2.h"
 #include "ConsolePort_1_Clock_1.h"
 #include "ConsolePort_1_RegD2.h"
 #include "ConsolePort_1_RegD0.h"

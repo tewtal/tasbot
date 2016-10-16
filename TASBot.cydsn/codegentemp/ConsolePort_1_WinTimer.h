@@ -168,7 +168,7 @@ void ConsolePort_1_WinTimer_Wakeup(void)        ;
 *    Initialial Parameter Constants
 ***************************************/
 
-#define ConsolePort_1_WinTimer_INIT_PERIOD             2499u
+#define ConsolePort_1_WinTimer_INIT_PERIOD             4999u
 #define ConsolePort_1_WinTimer_INIT_CAPTURE_MODE       ((uint8)((uint8)1u << ConsolePort_1_WinTimer_CTRL_CAP_MODE_SHIFT))
 #define ConsolePort_1_WinTimer_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << ConsolePort_1_WinTimer_CTRL_TRIG_MODE_SHIFT))
 #if (ConsolePort_1_WinTimer_UsingFixedFunction)

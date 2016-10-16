@@ -1,6 +1,6 @@
 -- Project:   TASBot
--- Generated: 10/15/2016 21:13:37
--- PSoC Creator  3.3 CP3
+-- Generated: 10/16/2016 15:16:35
+-- PSoC Creator  4.0
 
 ENTITY TASBot IS
     PORT(
@@ -35,7 +35,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL ClockBlock_1k : bit;
     SIGNAL ClockBlock_32k : bit;
     SIGNAL ClockBlock_BUS_CLK : bit;
-    ATTRIBUTE udbclken_assigned OF ClockBlock_BUS_CLK : SIGNAL IS "True";
     ATTRIBUTE global_signal OF ClockBlock_BUS_CLK : SIGNAL IS true;
     SIGNAL ClockBlock_BUS_CLK_local : bit;
     SIGNAL ClockBlock_ILO : bit;
@@ -46,7 +45,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL Net_2981 : bit;
     SIGNAL Net_3415 : bit;
-    SIGNAL Net_3416 : bit;
     SIGNAL Net_3417 : bit;
     SIGNAL Net_3419 : bit;
     SIGNAL Net_3420 : bit;
@@ -54,11 +52,12 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL Net_3487 : bit;
     SIGNAL Net_3488 : bit;
     SIGNAL Net_3489 : bit;
-    SIGNAL Net_3491 : bit;
-    SIGNAL Net_3492 : bit;
     SIGNAL Net_3493 : bit;
     SIGNAL Net_3494 : bit;
-    SIGNAL Net_99 : bit;
+    SIGNAL Net_3500 : bit;
+    SIGNAL Net_3503 : bit;
+    SIGNAL Net_3520 : bit;
+    SIGNAL Net_3521 : bit;
     SIGNAL P1_Clock(0)__PA : bit;
     SIGNAL P1_D0(0)__PA : bit;
     SIGNAL P1_D0(1)__PA : bit;
@@ -77,7 +76,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL P2_Latch(0)__PA : bit;
     SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : bit;
-    SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_2\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_0\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_1\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_2\ : bit;
@@ -95,7 +93,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : bit;
     SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : bit;
-    SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_2\ : bit;
     SIGNAL \ConsolePort_1:Net_191\ : bit;
     SIGNAL \ConsolePort_1:Net_201\ : bit;
     SIGNAL \ConsolePort_1:Net_213\ : bit;
@@ -103,10 +100,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE udbclken_assigned OF \ConsolePort_1:Net_22\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \ConsolePort_1:Net_22\ : SIGNAL IS true;
     SIGNAL \ConsolePort_1:Net_22_local\ : bit;
-    SIGNAL \ConsolePort_1:Net_266\ : bit;
-    ATTRIBUTE udbclken_assigned OF \ConsolePort_1:Net_266\ : SIGNAL IS "True";
-    ATTRIBUTE global_signal OF \ConsolePort_1:Net_266\ : SIGNAL IS true;
-    SIGNAL \ConsolePort_1:Net_266_local\ : bit;
     SIGNAL \ConsolePort_1:Net_288\ : bit;
     SIGNAL \ConsolePort_1:Net_294\ : bit;
     SIGNAL \ConsolePort_1:Net_296\ : bit;
@@ -169,7 +162,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : bit;
     SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : bit;
-    SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_2\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_0\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_1\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_2\ : bit;
@@ -188,7 +180,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : bit;
     SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : bit;
     SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : bit;
-    SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_2\ : bit;
     SIGNAL \ConsolePort_2:Net_191\ : bit;
     SIGNAL \ConsolePort_2:Net_201\ : bit;
     SIGNAL \ConsolePort_2:Net_213\ : bit;
@@ -196,10 +187,6 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE udbclken_assigned OF \ConsolePort_2:Net_22\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \ConsolePort_2:Net_22\ : SIGNAL IS true;
     SIGNAL \ConsolePort_2:Net_22_local\ : bit;
-    SIGNAL \ConsolePort_2:Net_266\ : bit;
-    ATTRIBUTE udbclken_assigned OF \ConsolePort_2:Net_266\ : SIGNAL IS "True";
-    ATTRIBUTE global_signal OF \ConsolePort_2:Net_266\ : SIGNAL IS true;
-    SIGNAL \ConsolePort_2:Net_266_local\ : bit;
     SIGNAL \ConsolePort_2:Net_288\ : bit;
     SIGNAL \ConsolePort_2:Net_294\ : bit;
     SIGNAL \ConsolePort_2:Net_296\ : bit;
@@ -507,33 +494,29 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell15";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell16";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell17";
-    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell18";
-    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell19";
-    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell20";
-    ATTRIBUTE lib_model OF Net_3493 : LABEL IS "macrocell21";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell22";
-    ATTRIBUTE lib_model OF \ConsolePort_2:Net_61\ : LABEL IS "macrocell23";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell24";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell25";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell26";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell27";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell28";
-    ATTRIBUTE lib_model OF \ConsolePort_2:Net_288\ : LABEL IS "macrocell29";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell30";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell31";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell32";
-    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell33";
-    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell34";
-    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell35";
-    ATTRIBUTE lib_model OF Net_3417 : LABEL IS "macrocell36";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell37";
-    ATTRIBUTE lib_model OF \ConsolePort_1:Net_61\ : LABEL IS "macrocell38";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell39";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell40";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_2\ : LABEL IS "macrocell41";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell42";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell43";
-    ATTRIBUTE lib_model OF \ConsolePort_1:Net_288\ : LABEL IS "macrocell44";
+    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell18";
+    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell19";
+    ATTRIBUTE lib_model OF Net_3493 : LABEL IS "macrocell20";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell21";
+    ATTRIBUTE lib_model OF \ConsolePort_2:Net_61\ : LABEL IS "macrocell22";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell23";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell24";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell25";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell26";
+    ATTRIBUTE lib_model OF \ConsolePort_2:Net_288\ : LABEL IS "macrocell27";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell28";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell29";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell30";
+    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell31";
+    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell32";
+    ATTRIBUTE lib_model OF Net_3417 : LABEL IS "macrocell33";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell34";
+    ATTRIBUTE lib_model OF \ConsolePort_1:Net_61\ : LABEL IS "macrocell35";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell36";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell37";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell38";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell39";
+    ATTRIBUTE lib_model OF \ConsolePort_1:Net_288\ : LABEL IS "macrocell40";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -893,11 +876,7 @@ BEGIN
             dclk_glb_0 => \ConsolePort_2:Net_22\,
             dclk_0 => \ConsolePort_2:Net_22_local\,
             dclk_glb_1 => \ConsolePort_1:Net_22\,
-            dclk_1 => \ConsolePort_1:Net_22_local\,
-            dclk_glb_2 => \ConsolePort_2:Net_266\,
-            dclk_2 => \ConsolePort_2:Net_266_local\,
-            dclk_glb_3 => \ConsolePort_1:Net_266\,
-            dclk_3 => \ConsolePort_1:Net_266_local\);
+            dclk_1 => \ConsolePort_1:Net_22_local\);
 
     P1_D1:logicalport
         GENERIC MAP(
@@ -1094,7 +1073,7 @@ BEGIN
         PORT MAP(
             pa_out => P2_Latch(0)__PA,
             oe => open,
-            fb => Net_3491,
+            fb => Net_3500,
             pad_in => P2_Latch(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -1298,7 +1277,7 @@ BEGIN
         PORT MAP(
             pa_out => P2_Clock(0)__PA,
             oe => open,
-            fb => Net_3492,
+            fb => Net_3520,
             pad_in => P2_Clock(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -1569,7 +1548,7 @@ BEGIN
         PORT MAP(
             pa_out => P1_Clock(0)__PA,
             oe => open,
-            fb => Net_3416,
+            fb => Net_3503,
             pad_in => P1_Clock(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2124,6 +2103,7 @@ BEGIN
     Net_3488:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => Net_3488,
@@ -2132,15 +2112,17 @@ BEGIN
     \ConsolePort_2:Net_68\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:Net_68\,
-            main_0 => \ConsolePort_2:Net_61\,
-            main_1 => \ConsolePort_2:Net_288\);
+            main_0 => \ConsolePort_2:Net_288\,
+            main_1 => \ConsolePort_2:Net_61\);
 
     Net_3489:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => Net_3489,
@@ -2149,6 +2131,7 @@ BEGIN
     \ConsolePort_2:WinTimer:TimerUDB:status_tc\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:WinTimer:TimerUDB:status_tc\,
@@ -2158,6 +2141,7 @@ BEGIN
     \ConsolePort_2:Net_294\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:Net_294\,
@@ -2166,6 +2150,7 @@ BEGIN
     \ConsolePort_2:ClockTimer:TimerUDB:status_tc\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:ClockTimer:TimerUDB:status_tc\,
@@ -2175,6 +2160,7 @@ BEGIN
     Net_3487:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => Net_3487,
@@ -2183,6 +2169,7 @@ BEGIN
     Net_3479:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => Net_3479,
@@ -2191,15 +2178,17 @@ BEGIN
     \ConsolePort_1:Net_68\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:Net_68\,
-            main_0 => \ConsolePort_1:Net_61\,
-            main_1 => \ConsolePort_1:Net_288\);
+            main_0 => \ConsolePort_1:Net_288\,
+            main_1 => \ConsolePort_1:Net_61\);
 
     Net_2981:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => Net_2981,
@@ -2208,6 +2197,7 @@ BEGIN
     \ConsolePort_1:WinTimer:TimerUDB:status_tc\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:WinTimer:TimerUDB:status_tc\,
@@ -2217,6 +2207,7 @@ BEGIN
     \ConsolePort_1:Net_294\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:Net_294\,
@@ -2225,6 +2216,7 @@ BEGIN
     \ConsolePort_1:ClockTimer:TimerUDB:status_tc\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:ClockTimer:TimerUDB:status_tc\,
@@ -2234,6 +2226,7 @@ BEGIN
     Net_3420:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => Net_3420,
@@ -2245,7 +2238,7 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => \ConsolePort_2:Net_22\,
-            in => Net_3492,
+            in => Net_3520,
             out => \ConsolePort_2:Net_296\);
 
     \ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\:controlcell
@@ -2259,7 +2252,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             control_7 => \ConsolePort_2:RegD2:bSR:control_7\,
             control_6 => \ConsolePort_2:RegD2:bSR:control_6\,
             control_5 => \ConsolePort_2:RegD2:bSR:control_5\,
@@ -2280,7 +2273,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             status_6 => \ConsolePort_2:RegD2:bSR:status_6\,
             status_5 => \ConsolePort_2:RegD2:bSR:status_5\,
             status_4 => \ConsolePort_2:RegD2:bSR:status_4\,
@@ -2319,7 +2312,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:RegD2:bSR:ctrl_clk_enable\,
             clk_en => \ConsolePort_2:Net_68\,
             busclk => ClockBlock_BUS_CLK,
@@ -2366,7 +2359,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:RegD2:bSR:ctrl_clk_enable\,
             so_comb => \ConsolePort_2:Net_191\,
             f0_bus_stat_comb => \ConsolePort_2:RegD2:bSR:status_4\,
@@ -2400,7 +2393,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             control_7 => \ConsolePort_2:RegD0:bSR:control_7\,
             control_6 => \ConsolePort_2:RegD0:bSR:control_6\,
             control_5 => \ConsolePort_2:RegD0:bSR:control_5\,
@@ -2421,7 +2414,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             status_6 => \ConsolePort_2:RegD0:bSR:status_6\,
             status_5 => \ConsolePort_2:RegD0:bSR:status_5\,
             status_4 => \ConsolePort_2:RegD0:bSR:status_4\,
@@ -2460,7 +2453,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:RegD0:bSR:ctrl_clk_enable\,
             clk_en => \ConsolePort_2:Net_68\,
             busclk => ClockBlock_BUS_CLK,
@@ -2507,7 +2500,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:RegD0:bSR:ctrl_clk_enable\,
             so_comb => \ConsolePort_2:Net_201\,
             f0_bus_stat_comb => \ConsolePort_2:RegD0:bSR:status_4\,
@@ -2540,7 +2533,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             control_7 => \ConsolePort_2:WinTimer:TimerUDB:control_7\,
             control_6 => \ConsolePort_2:WinTimer:TimerUDB:control_6\,
             control_5 => \ConsolePort_2:WinTimer:TimerUDB:control_5\,
@@ -2561,7 +2554,7 @@ BEGIN
             reset_inv => '0')
         PORT MAP(
             reset => Net_3493,
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             status_6 => open,
             status_5 => open,
             status_4 => open,
@@ -2599,7 +2592,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => Net_3493,
             cs_addr_1 => \ConsolePort_2:WinTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_2:WinTimer:TimerUDB:per_zero\,
@@ -2646,7 +2639,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => Net_3493,
             cs_addr_1 => \ConsolePort_2:WinTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_2:WinTimer:TimerUDB:per_zero\,
@@ -2679,7 +2672,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             control_7 => \ConsolePort_2:RegD1:bSR:control_7\,
             control_6 => \ConsolePort_2:RegD1:bSR:control_6\,
             control_5 => \ConsolePort_2:RegD1:bSR:control_5\,
@@ -2700,7 +2693,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             status_6 => \ConsolePort_2:RegD1:bSR:status_6\,
             status_5 => \ConsolePort_2:RegD1:bSR:status_5\,
             status_4 => \ConsolePort_2:RegD1:bSR:status_4\,
@@ -2739,7 +2732,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:RegD1:bSR:ctrl_clk_enable\,
             clk_en => \ConsolePort_2:Net_68\,
             busclk => ClockBlock_BUS_CLK,
@@ -2786,7 +2779,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:RegD1:bSR:ctrl_clk_enable\,
             so_comb => \ConsolePort_2:Net_213\,
             f0_bus_stat_comb => \ConsolePort_2:RegD1:bSR:status_4\,
@@ -2819,7 +2812,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             control_7 => \ConsolePort_2:ClockTimer:TimerUDB:control_7\,
             control_6 => \ConsolePort_2:ClockTimer:TimerUDB:control_6\,
             control_5 => \ConsolePort_2:ClockTimer:TimerUDB:control_5\,
@@ -2840,7 +2833,7 @@ BEGIN
             reset_inv => '1')
         PORT MAP(
             reset => \ConsolePort_2:Net_288\,
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             status_6 => open,
             status_5 => open,
             status_4 => open,
@@ -2877,7 +2870,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:Net_294\,
             cs_addr_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\,
@@ -2924,7 +2917,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_2:Net_266\,
+            clock => \ConsolePort_2:Net_22\,
             cs_addr_2 => \ConsolePort_2:Net_294\,
             cs_addr_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\,
@@ -2948,7 +2941,8 @@ BEGIN
 
     \USBUART:dp_int\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => \USBUART:Net_1010\,
             clock => ClockBlock_BUS_CLK);
@@ -2957,7 +2951,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            sof_int => Net_99,
+            sof_int => Net_3521,
             arb_int => \USBUART:Net_1889\,
             usb_int => \USBUART:Net_1876\,
             ept_int_8 => \USBUART:ep_int_8\,
@@ -2982,77 +2976,88 @@ BEGIN
 
     \USBUART:ep_3\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => \USBUART:ep_int_3\,
             clock => ClockBlock_BUS_CLK);
 
     \USBUART:ep_2\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => \USBUART:ep_int_2\,
             clock => ClockBlock_BUS_CLK);
 
     \USBUART:ep_1\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => \USBUART:ep_int_1\,
             clock => ClockBlock_BUS_CLK);
 
     \USBUART:ep_0\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => \USBUART:ep_int_0\,
             clock => ClockBlock_BUS_CLK);
 
     \USBUART:bus_reset\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => \USBUART:Net_1876\,
             clock => ClockBlock_BUS_CLK);
 
     \USBUART:arb_int\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => \USBUART:Net_1889\,
             clock => ClockBlock_BUS_CLK);
 
     \USBUART:sof_int\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
-            interrupt => Net_99,
+            interrupt => Net_3521,
             clock => ClockBlock_BUS_CLK);
 
     P2_IRQ:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => Net_3493,
             clock => ClockBlock_BUS_CLK);
 
     P1_IRQ:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => Net_3417,
             clock => ClockBlock_BUS_CLK);
 
     P1_TimerIRQ:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => Net_3419,
             clock => ClockBlock_BUS_CLK);
 
     P2_TimerIRQ:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => Net_3494,
             clock => ClockBlock_BUS_CLK);
@@ -3063,7 +3068,7 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => \ConsolePort_1:Net_22\,
-            in => Net_3416,
+            in => Net_3503,
             out => \ConsolePort_1:Net_296\);
 
     \ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\:controlcell
@@ -3077,7 +3082,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             control_7 => \ConsolePort_1:RegD2:bSR:control_7\,
             control_6 => \ConsolePort_1:RegD2:bSR:control_6\,
             control_5 => \ConsolePort_1:RegD2:bSR:control_5\,
@@ -3098,7 +3103,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             status_6 => \ConsolePort_1:RegD2:bSR:status_6\,
             status_5 => \ConsolePort_1:RegD2:bSR:status_5\,
             status_4 => \ConsolePort_1:RegD2:bSR:status_4\,
@@ -3137,7 +3142,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:RegD2:bSR:ctrl_clk_enable\,
             clk_en => \ConsolePort_1:Net_68\,
             busclk => ClockBlock_BUS_CLK,
@@ -3184,7 +3189,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:RegD2:bSR:ctrl_clk_enable\,
             so_comb => \ConsolePort_1:Net_191\,
             f0_bus_stat_comb => \ConsolePort_1:RegD2:bSR:status_4\,
@@ -3218,7 +3223,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             control_7 => \ConsolePort_1:RegD0:bSR:control_7\,
             control_6 => \ConsolePort_1:RegD0:bSR:control_6\,
             control_5 => \ConsolePort_1:RegD0:bSR:control_5\,
@@ -3239,7 +3244,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             status_6 => \ConsolePort_1:RegD0:bSR:status_6\,
             status_5 => \ConsolePort_1:RegD0:bSR:status_5\,
             status_4 => \ConsolePort_1:RegD0:bSR:status_4\,
@@ -3278,7 +3283,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:RegD0:bSR:ctrl_clk_enable\,
             clk_en => \ConsolePort_1:Net_68\,
             busclk => ClockBlock_BUS_CLK,
@@ -3325,7 +3330,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:RegD0:bSR:ctrl_clk_enable\,
             so_comb => \ConsolePort_1:Net_201\,
             f0_bus_stat_comb => \ConsolePort_1:RegD0:bSR:status_4\,
@@ -3358,7 +3363,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             control_7 => \ConsolePort_1:WinTimer:TimerUDB:control_7\,
             control_6 => \ConsolePort_1:WinTimer:TimerUDB:control_6\,
             control_5 => \ConsolePort_1:WinTimer:TimerUDB:control_5\,
@@ -3379,7 +3384,7 @@ BEGIN
             reset_inv => '0')
         PORT MAP(
             reset => Net_3417,
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             status_6 => open,
             status_5 => open,
             status_4 => open,
@@ -3417,7 +3422,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => Net_3417,
             cs_addr_1 => \ConsolePort_1:WinTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_1:WinTimer:TimerUDB:per_zero\,
@@ -3464,7 +3469,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => Net_3417,
             cs_addr_1 => \ConsolePort_1:WinTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_1:WinTimer:TimerUDB:per_zero\,
@@ -3497,7 +3502,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             control_7 => \ConsolePort_1:RegD1:bSR:control_7\,
             control_6 => \ConsolePort_1:RegD1:bSR:control_6\,
             control_5 => \ConsolePort_1:RegD1:bSR:control_5\,
@@ -3518,7 +3523,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             status_6 => \ConsolePort_1:RegD1:bSR:status_6\,
             status_5 => \ConsolePort_1:RegD1:bSR:status_5\,
             status_4 => \ConsolePort_1:RegD1:bSR:status_4\,
@@ -3557,7 +3562,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\,
             clk_en => \ConsolePort_1:Net_68\,
             busclk => ClockBlock_BUS_CLK,
@@ -3604,7 +3609,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 2)
         PORT MAP(
-            clock => ClockBlock_BUS_CLK,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\,
             so_comb => \ConsolePort_1:Net_213\,
             f0_bus_stat_comb => \ConsolePort_1:RegD1:bSR:status_4\,
@@ -3637,7 +3642,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             control_7 => \ConsolePort_1:ClockTimer:TimerUDB:control_7\,
             control_6 => \ConsolePort_1:ClockTimer:TimerUDB:control_6\,
             control_5 => \ConsolePort_1:ClockTimer:TimerUDB:control_5\,
@@ -3658,7 +3663,7 @@ BEGIN
             reset_inv => '1')
         PORT MAP(
             reset => \ConsolePort_1:Net_288\,
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             status_6 => open,
             status_5 => open,
             status_4 => open,
@@ -3695,7 +3700,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:Net_294\,
             cs_addr_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\,
@@ -3742,7 +3747,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => \ConsolePort_1:Net_266\,
+            clock => \ConsolePort_1:Net_22\,
             cs_addr_2 => \ConsolePort_1:Net_294\,
             cs_addr_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\,
             cs_addr_0 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\,
@@ -3767,21 +3772,23 @@ BEGIN
     \ConsolePort_2:WinTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:WinTimer:TimerUDB:run_mode\,
-            clock_0 => \ConsolePort_2:Net_266\,
+            clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:WinTimer:TimerUDB:control_7\);
 
     \ConsolePort_2:WinTimer:TimerUDB:timer_enable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * !main_1 * !main_4 * !main_5) + (main_0 * !main_2 * !main_4 * !main_5) + (main_0 * !main_3 * !main_4 * !main_5)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:WinTimer:TimerUDB:timer_enable\,
-            clock_0 => \ConsolePort_2:Net_266\,
+            clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:WinTimer:TimerUDB:control_7\,
             main_1 => \ConsolePort_2:WinTimer:TimerUDB:timer_enable\,
             main_2 => \ConsolePort_2:WinTimer:TimerUDB:run_mode\,
@@ -3792,30 +3799,22 @@ BEGIN
     \ConsolePort_2:WinTimer:TimerUDB:trig_disable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1 * main_2 * !main_3) + (!main_3 * main_4)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:WinTimer:TimerUDB:trig_disable\,
-            clock_0 => \ConsolePort_2:Net_266\,
+            clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:WinTimer:TimerUDB:timer_enable\,
             main_1 => \ConsolePort_2:WinTimer:TimerUDB:run_mode\,
             main_2 => \ConsolePort_2:WinTimer:TimerUDB:per_zero\,
             main_3 => Net_3493,
             main_4 => \ConsolePort_2:WinTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_2:LatchFilter:genblk1[0]:samples_2\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \ConsolePort_2:LatchFilter:genblk1[0]:samples_2\,
-            clock_0 => \ConsolePort_2:Net_22\,
-            main_0 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\);
-
     \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3826,56 +3825,60 @@ BEGIN
     \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\,
             clock_0 => \ConsolePort_2:Net_22\,
-            main_0 => Net_3491);
+            main_0 => Net_3500);
 
     Net_3493:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
+            regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => Net_3493,
             clock_0 => \ConsolePort_2:Net_22\,
-            main_0 => Net_3491,
+            main_0 => Net_3500,
             main_1 => Net_3493,
-            main_2 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_2\,
-            main_3 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\,
-            main_4 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\);
+            main_2 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\);
 
     \ConsolePort_2:ClockTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:ClockTimer:TimerUDB:run_mode\,
-            clock_0 => \ConsolePort_2:Net_266\,
+            clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:ClockTimer:TimerUDB:control_7\);
 
     \ConsolePort_2:Net_61\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:Net_61\,
-            clock_0 => \ConsolePort_2:Net_266\,
+            clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:ClockTimer:TimerUDB:run_mode\,
             main_1 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\);
 
     \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1 * !main_2 * !main_5) + (main_0 * main_1 * !main_3 * !main_5) + (main_0 * main_1 * !main_4 * !main_5)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\,
-            clock_0 => \ConsolePort_2:Net_266\,
+            clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:Net_288\,
             main_1 => \ConsolePort_2:ClockTimer:TimerUDB:control_7\,
             main_2 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\,
@@ -3886,30 +3889,22 @@ BEGIN
     \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1 * main_2 * main_3) + (main_0 * main_4)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\,
-            clock_0 => \ConsolePort_2:Net_266\,
+            clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:Net_288\,
             main_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\,
             main_2 => \ConsolePort_2:ClockTimer:TimerUDB:run_mode\,
             main_3 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\,
             main_4 => \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_2:ClockFilter:genblk1[0]:samples_2\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \ConsolePort_2:ClockFilter:genblk1[0]:samples_2\,
-            clock_0 => \ConsolePort_2:Net_22\,
-            main_0 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\);
-
     \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3920,6 +3915,7 @@ BEGIN
     \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3929,7 +3925,8 @@ BEGIN
 
     \ConsolePort_2:Net_288\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
+            regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -3937,28 +3934,29 @@ BEGIN
             clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:Net_296\,
             main_1 => \ConsolePort_2:Net_288\,
-            main_2 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_2\,
-            main_3 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\,
-            main_4 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\);
+            main_2 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\);
 
     \ConsolePort_1:WinTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:WinTimer:TimerUDB:run_mode\,
-            clock_0 => \ConsolePort_1:Net_266\,
+            clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:WinTimer:TimerUDB:control_7\);
 
     \ConsolePort_1:WinTimer:TimerUDB:timer_enable\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * !main_2 * !main_5) + (!main_0 * main_1 * !main_3 * !main_5) + (!main_0 * main_1 * !main_4 * !main_5)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:WinTimer:TimerUDB:timer_enable\,
-            clock_0 => \ConsolePort_1:Net_266\,
+            clock_0 => \ConsolePort_1:Net_22\,
             main_0 => Net_3417,
             main_1 => \ConsolePort_1:WinTimer:TimerUDB:control_7\,
             main_2 => \ConsolePort_1:WinTimer:TimerUDB:timer_enable\,
@@ -3969,30 +3967,22 @@ BEGIN
     \ConsolePort_1:WinTimer:TimerUDB:trig_disable\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * main_2 * main_3) + (!main_0 * main_4)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:WinTimer:TimerUDB:trig_disable\,
-            clock_0 => \ConsolePort_1:Net_266\,
+            clock_0 => \ConsolePort_1:Net_22\,
             main_0 => Net_3417,
             main_1 => \ConsolePort_1:WinTimer:TimerUDB:timer_enable\,
             main_2 => \ConsolePort_1:WinTimer:TimerUDB:run_mode\,
             main_3 => \ConsolePort_1:WinTimer:TimerUDB:per_zero\,
             main_4 => \ConsolePort_1:WinTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_1:LatchFilter:genblk1[0]:samples_2\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \ConsolePort_1:LatchFilter:genblk1[0]:samples_2\,
-            clock_0 => \ConsolePort_1:Net_22\,
-            main_0 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\);
-
     \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -4003,6 +3993,7 @@ BEGIN
     \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -4012,7 +4003,8 @@ BEGIN
 
     Net_3417:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
+            regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -4020,39 +4012,41 @@ BEGIN
             clock_0 => \ConsolePort_1:Net_22\,
             main_0 => Net_3415,
             main_1 => Net_3417,
-            main_2 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_2\,
-            main_3 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\,
-            main_4 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\);
+            main_2 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\);
 
     \ConsolePort_1:ClockTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:ClockTimer:TimerUDB:run_mode\,
-            clock_0 => \ConsolePort_1:Net_266\,
+            clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:ClockTimer:TimerUDB:control_7\);
 
     \ConsolePort_1:Net_61\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:Net_61\,
-            clock_0 => \ConsolePort_1:Net_266\,
+            clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:ClockTimer:TimerUDB:run_mode\,
             main_1 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\);
 
     \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1 * !main_2 * !main_5) + (main_0 * main_1 * !main_3 * !main_5) + (main_0 * main_1 * !main_4 * !main_5)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\,
-            clock_0 => \ConsolePort_1:Net_266\,
+            clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:Net_288\,
             main_1 => \ConsolePort_1:ClockTimer:TimerUDB:control_7\,
             main_2 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\,
@@ -4063,30 +4057,22 @@ BEGIN
     \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1 * main_2 * main_3) + (main_0 * main_4)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
             q => \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\,
-            clock_0 => \ConsolePort_1:Net_266\,
+            clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:Net_288\,
             main_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\,
             main_2 => \ConsolePort_1:ClockTimer:TimerUDB:run_mode\,
             main_3 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\,
             main_4 => \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_1:ClockFilter:genblk1[0]:samples_2\:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => \ConsolePort_1:ClockFilter:genblk1[0]:samples_2\,
-            clock_0 => \ConsolePort_1:Net_22\,
-            main_0 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\);
-
     \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -4097,6 +4083,7 @@ BEGIN
     \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -4106,7 +4093,8 @@ BEGIN
 
     \ConsolePort_1:Net_288\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3 * !main_4) + (main_0 * !main_1 * main_2 * main_3 * main_4)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
+            regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
@@ -4114,8 +4102,7 @@ BEGIN
             clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:Net_296\,
             main_1 => \ConsolePort_1:Net_288\,
-            main_2 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_2\,
-            main_3 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\,
-            main_4 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\);
+            main_2 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\);
 
 END __DEFAULT__;
