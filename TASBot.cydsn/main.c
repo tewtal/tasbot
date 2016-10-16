@@ -49,7 +49,6 @@ int main()
     
     ConsolePort_1_WinTimer_Start();
     ConsolePort_1_ClockTimer_Start();
-    P1_TimerIRQ_Start();
 
     ConsolePort_2_RegD0_Start();
     ConsolePort_2_RegD0_WriteRegValue(1);
@@ -140,6 +139,7 @@ int main()
                         async = 0;
                         blocksize = 0;
                         P1_IRQ_Stop();
+                        P1_TimerIRQ_Stop();
                         
                         P2_IRQ_Stop();
                         P2_TimerIRQ_Stop();
@@ -244,6 +244,7 @@ int main()
                         request[0] = 0;
                         request[1] = 1;
                         P1_IRQ_Start();
+                        P1_TimerIRQ_Start();
                         
                         if(async && ports > 1)
                         {

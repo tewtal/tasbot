@@ -1,12 +1,12 @@
-Loading plugins phase: Elapsed time ==> 0s.309ms
+Loading plugins phase: Elapsed time ==> 0s.219ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\TASBot.cyprj -d CY8C5888LTI-LP097 -s C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 2s.005ms
+Elaboration phase: Elapsed time ==> 1s.586ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.107ms
+HDL generation phase: Elapsed time ==> 0s.064ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -40,7 +40,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thoma
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Sun Oct 16 15:16:32 2016
+Sun Oct 16 17:42:14 2016
 
 
 ======================================================================
@@ -50,7 +50,7 @@ Options  :    -yv2 -q10 TASBot.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Sun Oct 16 15:16:32 2016
+Sun Oct 16 17:42:14 2016
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0\cy_sync_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
@@ -97,7 +97,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thoma
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Sun Oct 16 15:16:32 2016
+Sun Oct 16 17:42:14 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -134,7 +134,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thoma
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Sun Oct 16 15:16:33 2016
+Sun Oct 16 17:42:15 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -195,8 +195,6 @@ Detecting unused logic.
 	\ConsolePort_2:ClockTimer:TimerUDB:ctrl_ic_1\
 	\ConsolePort_2:ClockTimer:TimerUDB:ctrl_ic_0\
 	\ConsolePort_2:Net_301\
-	\ConsolePort_2:ClockTimer:TimerUDB:zeros_3\
-	\ConsolePort_2:ClockTimer:TimerUDB:zeros_2\
 	\ConsolePort_2:ClockTimer:Net_102\
 	\ConsolePort_2:ClockTimer:Net_266\
 	\USBUART:dma_complete_0\
@@ -244,13 +242,11 @@ Detecting unused logic.
 	\ConsolePort_1:ClockTimer:TimerUDB:ctrl_ic_1\
 	\ConsolePort_1:ClockTimer:TimerUDB:ctrl_ic_0\
 	\ConsolePort_1:Net_301\
-	\ConsolePort_1:ClockTimer:TimerUDB:zeros_3\
-	\ConsolePort_1:ClockTimer:TimerUDB:zeros_2\
 	\ConsolePort_1:ClockTimer:Net_102\
 	\ConsolePort_1:ClockTimer:Net_266\
 
 
-Deleted 82 User equations/components.
+Deleted 78 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -372,9 +368,9 @@ Removing Rhs of wire \ConsolePort_2:RegD2:bSR:status_6\[67] = \ConsolePort_2:Reg
 Removing Rhs of wire \ConsolePort_2:RegD2:bSR:status_6\[67] = \ConsolePort_2:RegD2:bSR:f1_bus_stat_16_1\[75]
 Removing Lhs of wire \ConsolePort_2:RegD2:bSR:reset\[77] = zero[9]
 Removing Lhs of wire \ConsolePort_2:RegD2:bSR:store\[78] = zero[9]
-Removing Rhs of wire \ConsolePort_2:Net_288\[155] = \ConsolePort_2:ClockFilter:genblk1[0]:last_state\[680]
-Removing Rhs of wire \ConsolePort_2:Net_61\[156] = \ConsolePort_2:ClockTimer:Net_53\[539]
-Removing Rhs of wire \ConsolePort_2:Net_61\[156] = \ConsolePort_2:ClockTimer:TimerUDB:tc_reg_i\[571]
+Removing Rhs of wire \ConsolePort_2:Net_288\[155] = \ConsolePort_2:ClockFilter:genblk1[0]:last_state\[628]
+Removing Rhs of wire \ConsolePort_2:Net_61\[156] = \ConsolePort_2:ClockTimer:Net_53\[538]
+Removing Rhs of wire \ConsolePort_2:Net_61\[156] = \ConsolePort_2:ClockTimer:TimerUDB:tc_reg_i\[570]
 Removing Lhs of wire \ConsolePort_2:RegD0:Net_350\[157] = zero[9]
 Removing Lhs of wire \ConsolePort_2:RegD0:Net_1\[158] = zero[9]
 Removing Rhs of wire \ConsolePort_2:RegD0:bSR:ctrl_clk_enable\[160] = \ConsolePort_2:RegD0:bSR:control_0\[161]
@@ -402,7 +398,7 @@ Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:trigger_enable\[306] = tmp
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:tc_i\[308] = \ConsolePort_2:WinTimer:TimerUDB:status_tc\[305]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:hwEnable\[310] = \ConsolePort_2:WinTimer:TimerUDB:control_7\[283]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:capt_fifo_load_int\[313] = \ConsolePort_2:WinTimer:TimerUDB:capt_fifo_load\[301]
-Removing Rhs of wire Net_3493[315] = \ConsolePort_2:LatchFilter:genblk1[0]:last_state\[419]
+Removing Rhs of wire Net_3493[315] = \ConsolePort_2:LatchFilter:genblk1[0]:last_state\[418]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:status_6\[318] = zero[9]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:status_5\[319] = zero[9]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:status_4\[320] = zero[9]
@@ -413,182 +409,178 @@ Removing Rhs of wire \ConsolePort_2:WinTimer:TimerUDB:status_3\[325] = \ConsoleP
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:cs_addr_2\[328] = Net_3493[315]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:cs_addr_1\[329] = \ConsolePort_2:WinTimer:TimerUDB:trig_reg\[317]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:cs_addr_0\[330] = \ConsolePort_2:WinTimer:TimerUDB:per_zero\[307]
-Removing Lhs of wire \ConsolePort_2:RegD1:Net_350\[420] = zero[9]
-Removing Lhs of wire \ConsolePort_2:RegD1:Net_1\[421] = zero[9]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:ctrl_clk_enable\[423] = \ConsolePort_2:RegD1:bSR:control_0\[424]
-Removing Lhs of wire \ConsolePort_2:RegD1:bSR:status_2\[436] = zero[9]
-Removing Lhs of wire \ConsolePort_2:RegD1:bSR:status_0\[437] = zero[9]
-Removing Lhs of wire \ConsolePort_2:RegD1:bSR:final_load\[438] = zero[9]
-Removing Lhs of wire \ConsolePort_2:RegD1:bSR:status_1\[439] = zero[9]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_3\[440] = \ConsolePort_2:RegD1:bSR:f0_blk_stat_final\[441]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_3\[440] = \ConsolePort_2:RegD1:bSR:f0_blk_stat_16_1\[451]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_4\[442] = \ConsolePort_2:RegD1:bSR:f0_bus_stat_final\[443]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_4\[442] = \ConsolePort_2:RegD1:bSR:f0_bus_stat_16_1\[452]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_5\[444] = \ConsolePort_2:RegD1:bSR:f1_blk_stat_final\[445]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_5\[444] = \ConsolePort_2:RegD1:bSR:f1_blk_stat_16_1\[453]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_6\[446] = \ConsolePort_2:RegD1:bSR:f1_bus_stat_final\[447]
-Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_6\[446] = \ConsolePort_2:RegD1:bSR:f1_bus_stat_16_1\[454]
-Removing Lhs of wire \ConsolePort_2:RegD1:bSR:reset\[456] = zero[9]
-Removing Lhs of wire \ConsolePort_2:RegD1:bSR:store\[457] = zero[9]
-Removing Rhs of wire \ConsolePort_2:Net_213\[534] = \ConsolePort_2:RegD1:bSR:so_16_1\[517]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:ctrl_enable\[553] = \ConsolePort_2:ClockTimer:TimerUDB:control_7\[545]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:ctrl_cmode_1\[555] = zero[9]
-Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\[564] = \ConsolePort_2:ClockTimer:TimerUDB:runmode_enable\[576]
-Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:run_mode\[565] = \ConsolePort_2:ClockTimer:TimerUDB:hwEnable_reg\[566]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:trigger_enable\[568] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:tc_i\[570] = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\[567]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:hwEnable\[572] = \ConsolePort_2:ClockTimer:TimerUDB:control_7\[545]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load_int\[575] = \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[563]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_6\[579] = zero[9]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_5\[580] = zero[9]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_4\[581] = zero[9]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_0\[582] = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\[567]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_1\[583] = \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[563]
-Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_2\[584] = \ConsolePort_2:ClockTimer:TimerUDB:fifo_full\[585]
-Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_3\[586] = \ConsolePort_2:ClockTimer:TimerUDB:fifo_nempty\[587]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:cs_addr_2\[589] = \ConsolePort_2:Net_294\[535]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:cs_addr_1\[590] = \ConsolePort_2:ClockTimer:TimerUDB:trig_reg\[578]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:cs_addr_0\[591] = \ConsolePort_2:ClockTimer:TimerUDB:per_zero\[569]
-Removing Lhs of wire \USBUART:tmpOE__Dm_net_0\[685] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire \USBUART:tmpOE__Dp_net_0\[692] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P1_Clock_net_0[744] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P2_D1_net_1[751] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P2_D1_net_0[752] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P1_Latch_net_0[760] = tmpOE__P1_D1_net_1[1]
-Removing Rhs of wire Net_3417[766] = \ConsolePort_1:LatchFilter:genblk1[0]:last_state\[1152]
-Removing Rhs of wire Net_3419[768] = \ConsolePort_1:WinTimer:Net_55\[1009]
-Removing Rhs of wire \ConsolePort_1:Net_191\[774] = \ConsolePort_1:RegD2:bSR:so_16_1\[873]
-Removing Lhs of wire \ConsolePort_1:RegD2:Net_350\[775] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD2:Net_1\[776] = zero[9]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:ctrl_clk_enable\[778] = \ConsolePort_1:RegD2:bSR:control_0\[779]
-Removing Lhs of wire \ConsolePort_1:RegD2:bSR:status_2\[792] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD2:bSR:status_0\[793] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD2:bSR:final_load\[794] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD2:bSR:status_1\[795] = zero[9]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_3\[796] = \ConsolePort_1:RegD2:bSR:f0_blk_stat_final\[797]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_3\[796] = \ConsolePort_1:RegD2:bSR:f0_blk_stat_16_1\[807]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_4\[798] = \ConsolePort_1:RegD2:bSR:f0_bus_stat_final\[799]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_4\[798] = \ConsolePort_1:RegD2:bSR:f0_bus_stat_16_1\[808]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_5\[800] = \ConsolePort_1:RegD2:bSR:f1_blk_stat_final\[801]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_5\[800] = \ConsolePort_1:RegD2:bSR:f1_blk_stat_16_1\[809]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_6\[802] = \ConsolePort_1:RegD2:bSR:f1_bus_stat_final\[803]
-Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_6\[802] = \ConsolePort_1:RegD2:bSR:f1_bus_stat_16_1\[810]
-Removing Lhs of wire \ConsolePort_1:RegD2:bSR:reset\[812] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD2:bSR:store\[813] = zero[9]
-Removing Rhs of wire \ConsolePort_1:Net_288\[890] = \ConsolePort_1:ClockFilter:genblk1[0]:last_state\[1413]
-Removing Rhs of wire \ConsolePort_1:Net_61\[891] = \ConsolePort_1:ClockTimer:Net_53\[1272]
-Removing Rhs of wire \ConsolePort_1:Net_61\[891] = \ConsolePort_1:ClockTimer:TimerUDB:tc_reg_i\[1304]
-Removing Lhs of wire \ConsolePort_1:RegD0:Net_350\[892] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD0:Net_1\[893] = zero[9]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:ctrl_clk_enable\[895] = \ConsolePort_1:RegD0:bSR:control_0\[896]
-Removing Lhs of wire \ConsolePort_1:RegD0:bSR:status_2\[908] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD0:bSR:status_0\[909] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD0:bSR:final_load\[910] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD0:bSR:status_1\[911] = zero[9]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_3\[912] = \ConsolePort_1:RegD0:bSR:f0_blk_stat_final\[913]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_3\[912] = \ConsolePort_1:RegD0:bSR:f0_blk_stat_16_1\[923]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_4\[914] = \ConsolePort_1:RegD0:bSR:f0_bus_stat_final\[915]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_4\[914] = \ConsolePort_1:RegD0:bSR:f0_bus_stat_16_1\[924]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_5\[916] = \ConsolePort_1:RegD0:bSR:f1_blk_stat_final\[917]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_5\[916] = \ConsolePort_1:RegD0:bSR:f1_blk_stat_16_1\[925]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_6\[918] = \ConsolePort_1:RegD0:bSR:f1_bus_stat_final\[919]
-Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_6\[918] = \ConsolePort_1:RegD0:bSR:f1_bus_stat_16_1\[926]
-Removing Lhs of wire \ConsolePort_1:RegD0:bSR:reset\[928] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD0:bSR:store\[929] = zero[9]
-Removing Rhs of wire \ConsolePort_1:Net_201\[1006] = \ConsolePort_1:RegD0:bSR:so_16_1\[989]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:ctrl_enable\[1025] = \ConsolePort_1:WinTimer:TimerUDB:control_7\[1017]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:ctrl_cmode_1\[1027] = zero[9]
-Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:timer_enable\[1036] = \ConsolePort_1:WinTimer:TimerUDB:runmode_enable\[1048]
-Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:run_mode\[1037] = \ConsolePort_1:WinTimer:TimerUDB:hwEnable_reg\[1038]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:trigger_enable\[1040] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:tc_i\[1042] = \ConsolePort_1:WinTimer:TimerUDB:status_tc\[1039]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:hwEnable\[1044] = \ConsolePort_1:WinTimer:TimerUDB:control_7\[1017]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load_int\[1047] = \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[1035]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_6\[1051] = zero[9]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_5\[1052] = zero[9]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_4\[1053] = zero[9]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_0\[1054] = \ConsolePort_1:WinTimer:TimerUDB:status_tc\[1039]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_1\[1055] = \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[1035]
-Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_2\[1056] = \ConsolePort_1:WinTimer:TimerUDB:fifo_full\[1057]
-Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_3\[1058] = \ConsolePort_1:WinTimer:TimerUDB:fifo_nempty\[1059]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:cs_addr_2\[1061] = Net_3417[766]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:cs_addr_1\[1062] = \ConsolePort_1:WinTimer:TimerUDB:trig_reg\[1050]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:cs_addr_0\[1063] = \ConsolePort_1:WinTimer:TimerUDB:per_zero\[1041]
-Removing Lhs of wire \ConsolePort_1:RegD1:Net_350\[1153] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD1:Net_1\[1154] = zero[9]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\[1156] = \ConsolePort_1:RegD1:bSR:control_0\[1157]
-Removing Lhs of wire \ConsolePort_1:RegD1:bSR:status_2\[1169] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD1:bSR:status_0\[1170] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD1:bSR:final_load\[1171] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD1:bSR:status_1\[1172] = zero[9]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_3\[1173] = \ConsolePort_1:RegD1:bSR:f0_blk_stat_final\[1174]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_3\[1173] = \ConsolePort_1:RegD1:bSR:f0_blk_stat_16_1\[1184]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_4\[1175] = \ConsolePort_1:RegD1:bSR:f0_bus_stat_final\[1176]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_4\[1175] = \ConsolePort_1:RegD1:bSR:f0_bus_stat_16_1\[1185]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_5\[1177] = \ConsolePort_1:RegD1:bSR:f1_blk_stat_final\[1178]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_5\[1177] = \ConsolePort_1:RegD1:bSR:f1_blk_stat_16_1\[1186]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_6\[1179] = \ConsolePort_1:RegD1:bSR:f1_bus_stat_final\[1180]
-Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_6\[1179] = \ConsolePort_1:RegD1:bSR:f1_bus_stat_16_1\[1187]
-Removing Lhs of wire \ConsolePort_1:RegD1:bSR:reset\[1189] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD1:bSR:store\[1190] = zero[9]
-Removing Rhs of wire \ConsolePort_1:Net_213\[1267] = \ConsolePort_1:RegD1:bSR:so_16_1\[1250]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:ctrl_enable\[1286] = \ConsolePort_1:ClockTimer:TimerUDB:control_7\[1278]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:ctrl_cmode_1\[1288] = zero[9]
-Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\[1297] = \ConsolePort_1:ClockTimer:TimerUDB:runmode_enable\[1309]
-Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:run_mode\[1298] = \ConsolePort_1:ClockTimer:TimerUDB:hwEnable_reg\[1299]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:trigger_enable\[1301] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:tc_i\[1303] = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\[1300]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:hwEnable\[1305] = \ConsolePort_1:ClockTimer:TimerUDB:control_7\[1278]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load_int\[1308] = \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1296]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_6\[1312] = zero[9]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_5\[1313] = zero[9]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_4\[1314] = zero[9]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_0\[1315] = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\[1300]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_1\[1316] = \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1296]
-Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_2\[1317] = \ConsolePort_1:ClockTimer:TimerUDB:fifo_full\[1318]
-Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_3\[1319] = \ConsolePort_1:ClockTimer:TimerUDB:fifo_nempty\[1320]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:cs_addr_2\[1322] = \ConsolePort_1:Net_294\[1268]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:cs_addr_1\[1323] = \ConsolePort_1:ClockTimer:TimerUDB:trig_reg\[1311]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:cs_addr_0\[1324] = \ConsolePort_1:ClockTimer:TimerUDB:per_zero\[1302]
-Removing Lhs of wire tmpOE__P1_D0_net_1[1415] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P1_D0_net_0[1416] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P2_D2_net_1[1424] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P2_D2_net_0[1425] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P2_D0_net_1[1433] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire tmpOE__P2_D0_net_0[1434] = tmpOE__P1_D1_net_1[1]
-Removing Lhs of wire \ConsolePort_2:RegD2:bSR:load_reg\\D\[1441] = zero[9]
-Removing Lhs of wire \ConsolePort_2:RegD0:bSR:load_reg\\D\[1442] = zero[9]
-Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:capture_last\\D\[1443] = zero[9]
-Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:hwEnable_reg\\D\[1444] = \ConsolePort_2:WinTimer:TimerUDB:control_7\[283]
-Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:tc_reg_i\\D\[1445] = \ConsolePort_2:WinTimer:TimerUDB:status_tc\[305]
-Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:capture_out_reg_i\\D\[1446] = \ConsolePort_2:WinTimer:TimerUDB:capt_fifo_load\[301]
-Removing Lhs of wire \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\\D\[1449] = \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\[417]
-Removing Lhs of wire \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\\D\[1450] = Net_3500[14]
-Removing Lhs of wire \ConsolePort_2:RegD1:bSR:load_reg\\D\[1452] = zero[9]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capture_last\\D\[1453] = zero[9]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:hwEnable_reg\\D\[1454] = \ConsolePort_2:ClockTimer:TimerUDB:control_7\[545]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:tc_reg_i\\D\[1455] = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\[567]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capture_out_reg_i\\D\[1456] = \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[563]
-Removing Lhs of wire \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\\D\[1459] = \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\[678]
-Removing Lhs of wire \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\\D\[1460] = \ConsolePort_2:Net_296\[36]
-Removing Lhs of wire \ConsolePort_1:RegD2:bSR:load_reg\\D\[1462] = zero[9]
-Removing Lhs of wire \ConsolePort_1:RegD0:bSR:load_reg\\D\[1463] = zero[9]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capture_last\\D\[1464] = zero[9]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:hwEnable_reg\\D\[1465] = \ConsolePort_1:WinTimer:TimerUDB:control_7\[1017]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:tc_reg_i\\D\[1466] = \ConsolePort_1:WinTimer:TimerUDB:status_tc\[1039]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capture_out_reg_i\\D\[1467] = \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[1035]
-Removing Lhs of wire \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\\D\[1470] = \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\[1150]
-Removing Lhs of wire \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\\D\[1471] = Net_3415[761]
-Removing Lhs of wire \ConsolePort_1:RegD1:bSR:load_reg\\D\[1473] = zero[9]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capture_last\\D\[1474] = zero[9]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:hwEnable_reg\\D\[1475] = \ConsolePort_1:ClockTimer:TimerUDB:control_7\[1278]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:tc_reg_i\\D\[1476] = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\[1300]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capture_out_reg_i\\D\[1477] = \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1296]
-Removing Lhs of wire \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\\D\[1480] = \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\[1411]
-Removing Lhs of wire \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\\D\[1481] = \ConsolePort_1:Net_296\[772]
+Removing Lhs of wire \ConsolePort_2:RegD1:Net_350\[419] = zero[9]
+Removing Lhs of wire \ConsolePort_2:RegD1:Net_1\[420] = zero[9]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:ctrl_clk_enable\[422] = \ConsolePort_2:RegD1:bSR:control_0\[423]
+Removing Lhs of wire \ConsolePort_2:RegD1:bSR:status_2\[435] = zero[9]
+Removing Lhs of wire \ConsolePort_2:RegD1:bSR:status_0\[436] = zero[9]
+Removing Lhs of wire \ConsolePort_2:RegD1:bSR:final_load\[437] = zero[9]
+Removing Lhs of wire \ConsolePort_2:RegD1:bSR:status_1\[438] = zero[9]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_3\[439] = \ConsolePort_2:RegD1:bSR:f0_blk_stat_final\[440]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_3\[439] = \ConsolePort_2:RegD1:bSR:f0_blk_stat_16_1\[450]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_4\[441] = \ConsolePort_2:RegD1:bSR:f0_bus_stat_final\[442]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_4\[441] = \ConsolePort_2:RegD1:bSR:f0_bus_stat_16_1\[451]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_5\[443] = \ConsolePort_2:RegD1:bSR:f1_blk_stat_final\[444]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_5\[443] = \ConsolePort_2:RegD1:bSR:f1_blk_stat_16_1\[452]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_6\[445] = \ConsolePort_2:RegD1:bSR:f1_bus_stat_final\[446]
+Removing Rhs of wire \ConsolePort_2:RegD1:bSR:status_6\[445] = \ConsolePort_2:RegD1:bSR:f1_bus_stat_16_1\[453]
+Removing Lhs of wire \ConsolePort_2:RegD1:bSR:reset\[455] = zero[9]
+Removing Lhs of wire \ConsolePort_2:RegD1:bSR:store\[456] = zero[9]
+Removing Rhs of wire \ConsolePort_2:Net_213\[533] = \ConsolePort_2:RegD1:bSR:so_16_1\[516]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:ctrl_enable\[552] = \ConsolePort_2:ClockTimer:TimerUDB:control_7\[544]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:ctrl_cmode_1\[554] = zero[9]
+Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\[563] = \ConsolePort_2:ClockTimer:TimerUDB:runmode_enable\[575]
+Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:run_mode\[564] = \ConsolePort_2:ClockTimer:TimerUDB:hwEnable_reg\[565]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:trigger_enable\[567] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:tc_i\[569] = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\[566]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:hwEnable\[571] = \ConsolePort_2:ClockTimer:TimerUDB:control_7\[544]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load_int\[574] = \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[562]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_6\[578] = zero[9]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_5\[579] = zero[9]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_4\[580] = zero[9]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_0\[581] = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\[566]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_1\[582] = \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[562]
+Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_2\[583] = \ConsolePort_2:ClockTimer:TimerUDB:fifo_full\[584]
+Removing Rhs of wire \ConsolePort_2:ClockTimer:TimerUDB:status_3\[585] = \ConsolePort_2:ClockTimer:TimerUDB:fifo_nempty\[586]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:cs_addr_2\[588] = \ConsolePort_2:Net_294\[534]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:cs_addr_1\[589] = \ConsolePort_2:ClockTimer:TimerUDB:trig_reg\[577]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:cs_addr_0\[590] = \ConsolePort_2:ClockTimer:TimerUDB:per_zero\[568]
+Removing Lhs of wire \USBUART:tmpOE__Dm_net_0\[633] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire \USBUART:tmpOE__Dp_net_0\[640] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P1_Clock_net_0[692] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P2_D1_net_1[699] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P2_D1_net_0[700] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P1_Latch_net_0[708] = tmpOE__P1_D1_net_1[1]
+Removing Rhs of wire Net_3417[714] = \ConsolePort_1:LatchFilter:genblk1[0]:last_state\[1099]
+Removing Rhs of wire Net_3419[716] = \ConsolePort_1:WinTimer:Net_55\[957]
+Removing Rhs of wire \ConsolePort_1:Net_191\[722] = \ConsolePort_1:RegD2:bSR:so_16_1\[821]
+Removing Lhs of wire \ConsolePort_1:RegD2:Net_350\[723] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD2:Net_1\[724] = zero[9]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:ctrl_clk_enable\[726] = \ConsolePort_1:RegD2:bSR:control_0\[727]
+Removing Lhs of wire \ConsolePort_1:RegD2:bSR:status_2\[740] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD2:bSR:status_0\[741] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD2:bSR:final_load\[742] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD2:bSR:status_1\[743] = zero[9]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_3\[744] = \ConsolePort_1:RegD2:bSR:f0_blk_stat_final\[745]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_3\[744] = \ConsolePort_1:RegD2:bSR:f0_blk_stat_16_1\[755]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_4\[746] = \ConsolePort_1:RegD2:bSR:f0_bus_stat_final\[747]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_4\[746] = \ConsolePort_1:RegD2:bSR:f0_bus_stat_16_1\[756]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_5\[748] = \ConsolePort_1:RegD2:bSR:f1_blk_stat_final\[749]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_5\[748] = \ConsolePort_1:RegD2:bSR:f1_blk_stat_16_1\[757]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_6\[750] = \ConsolePort_1:RegD2:bSR:f1_bus_stat_final\[751]
+Removing Rhs of wire \ConsolePort_1:RegD2:bSR:status_6\[750] = \ConsolePort_1:RegD2:bSR:f1_bus_stat_16_1\[758]
+Removing Lhs of wire \ConsolePort_1:RegD2:bSR:reset\[760] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD2:bSR:store\[761] = zero[9]
+Removing Rhs of wire \ConsolePort_1:Net_288\[838] = \ConsolePort_1:ClockFilter:genblk1[0]:last_state\[1309]
+Removing Rhs of wire \ConsolePort_1:Net_61\[839] = \ConsolePort_1:ClockTimer:Net_53\[1219]
+Removing Rhs of wire \ConsolePort_1:Net_61\[839] = \ConsolePort_1:ClockTimer:TimerUDB:tc_reg_i\[1251]
+Removing Lhs of wire \ConsolePort_1:RegD0:Net_350\[840] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD0:Net_1\[841] = zero[9]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:ctrl_clk_enable\[843] = \ConsolePort_1:RegD0:bSR:control_0\[844]
+Removing Lhs of wire \ConsolePort_1:RegD0:bSR:status_2\[856] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD0:bSR:status_0\[857] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD0:bSR:final_load\[858] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD0:bSR:status_1\[859] = zero[9]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_3\[860] = \ConsolePort_1:RegD0:bSR:f0_blk_stat_final\[861]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_3\[860] = \ConsolePort_1:RegD0:bSR:f0_blk_stat_16_1\[871]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_4\[862] = \ConsolePort_1:RegD0:bSR:f0_bus_stat_final\[863]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_4\[862] = \ConsolePort_1:RegD0:bSR:f0_bus_stat_16_1\[872]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_5\[864] = \ConsolePort_1:RegD0:bSR:f1_blk_stat_final\[865]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_5\[864] = \ConsolePort_1:RegD0:bSR:f1_blk_stat_16_1\[873]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_6\[866] = \ConsolePort_1:RegD0:bSR:f1_bus_stat_final\[867]
+Removing Rhs of wire \ConsolePort_1:RegD0:bSR:status_6\[866] = \ConsolePort_1:RegD0:bSR:f1_bus_stat_16_1\[874]
+Removing Lhs of wire \ConsolePort_1:RegD0:bSR:reset\[876] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD0:bSR:store\[877] = zero[9]
+Removing Rhs of wire \ConsolePort_1:Net_201\[954] = \ConsolePort_1:RegD0:bSR:so_16_1\[937]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:ctrl_enable\[973] = \ConsolePort_1:WinTimer:TimerUDB:control_7\[965]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:ctrl_cmode_1\[975] = zero[9]
+Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:timer_enable\[984] = \ConsolePort_1:WinTimer:TimerUDB:runmode_enable\[996]
+Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:run_mode\[985] = \ConsolePort_1:WinTimer:TimerUDB:hwEnable_reg\[986]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:trigger_enable\[988] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:tc_i\[990] = \ConsolePort_1:WinTimer:TimerUDB:status_tc\[987]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:hwEnable\[992] = \ConsolePort_1:WinTimer:TimerUDB:control_7\[965]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load_int\[995] = \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[983]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_6\[999] = zero[9]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_5\[1000] = zero[9]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_4\[1001] = zero[9]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_0\[1002] = \ConsolePort_1:WinTimer:TimerUDB:status_tc\[987]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_1\[1003] = \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[983]
+Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_2\[1004] = \ConsolePort_1:WinTimer:TimerUDB:fifo_full\[1005]
+Removing Rhs of wire \ConsolePort_1:WinTimer:TimerUDB:status_3\[1006] = \ConsolePort_1:WinTimer:TimerUDB:fifo_nempty\[1007]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:cs_addr_2\[1009] = Net_3417[714]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:cs_addr_1\[1010] = \ConsolePort_1:WinTimer:TimerUDB:trig_reg\[998]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:cs_addr_0\[1011] = \ConsolePort_1:WinTimer:TimerUDB:per_zero\[989]
+Removing Lhs of wire \ConsolePort_1:RegD1:Net_350\[1100] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD1:Net_1\[1101] = zero[9]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\[1103] = \ConsolePort_1:RegD1:bSR:control_0\[1104]
+Removing Lhs of wire \ConsolePort_1:RegD1:bSR:status_2\[1116] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD1:bSR:status_0\[1117] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD1:bSR:final_load\[1118] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD1:bSR:status_1\[1119] = zero[9]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_3\[1120] = \ConsolePort_1:RegD1:bSR:f0_blk_stat_final\[1121]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_3\[1120] = \ConsolePort_1:RegD1:bSR:f0_blk_stat_16_1\[1131]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_4\[1122] = \ConsolePort_1:RegD1:bSR:f0_bus_stat_final\[1123]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_4\[1122] = \ConsolePort_1:RegD1:bSR:f0_bus_stat_16_1\[1132]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_5\[1124] = \ConsolePort_1:RegD1:bSR:f1_blk_stat_final\[1125]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_5\[1124] = \ConsolePort_1:RegD1:bSR:f1_blk_stat_16_1\[1133]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_6\[1126] = \ConsolePort_1:RegD1:bSR:f1_bus_stat_final\[1127]
+Removing Rhs of wire \ConsolePort_1:RegD1:bSR:status_6\[1126] = \ConsolePort_1:RegD1:bSR:f1_bus_stat_16_1\[1134]
+Removing Lhs of wire \ConsolePort_1:RegD1:bSR:reset\[1136] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD1:bSR:store\[1137] = zero[9]
+Removing Rhs of wire \ConsolePort_1:Net_213\[1214] = \ConsolePort_1:RegD1:bSR:so_16_1\[1197]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:ctrl_enable\[1233] = \ConsolePort_1:ClockTimer:TimerUDB:control_7\[1225]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:ctrl_cmode_1\[1235] = zero[9]
+Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\[1244] = \ConsolePort_1:ClockTimer:TimerUDB:runmode_enable\[1256]
+Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:run_mode\[1245] = \ConsolePort_1:ClockTimer:TimerUDB:hwEnable_reg\[1246]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:trigger_enable\[1248] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:tc_i\[1250] = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\[1247]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:hwEnable\[1252] = \ConsolePort_1:ClockTimer:TimerUDB:control_7\[1225]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load_int\[1255] = \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1243]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_6\[1259] = zero[9]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_5\[1260] = zero[9]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_4\[1261] = zero[9]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_0\[1262] = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\[1247]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_1\[1263] = \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1243]
+Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_2\[1264] = \ConsolePort_1:ClockTimer:TimerUDB:fifo_full\[1265]
+Removing Rhs of wire \ConsolePort_1:ClockTimer:TimerUDB:status_3\[1266] = \ConsolePort_1:ClockTimer:TimerUDB:fifo_nempty\[1267]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:cs_addr_2\[1269] = \ConsolePort_1:Net_294\[1215]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:cs_addr_1\[1270] = \ConsolePort_1:ClockTimer:TimerUDB:trig_reg\[1258]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:cs_addr_0\[1271] = \ConsolePort_1:ClockTimer:TimerUDB:per_zero\[1249]
+Removing Lhs of wire tmpOE__P1_D0_net_1[1311] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P1_D0_net_0[1312] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P2_D2_net_1[1320] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P2_D2_net_0[1321] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P2_D0_net_1[1329] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire tmpOE__P2_D0_net_0[1330] = tmpOE__P1_D1_net_1[1]
+Removing Lhs of wire \ConsolePort_2:RegD2:bSR:load_reg\\D\[1337] = zero[9]
+Removing Lhs of wire \ConsolePort_2:RegD0:bSR:load_reg\\D\[1338] = zero[9]
+Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:capture_last\\D\[1339] = zero[9]
+Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:hwEnable_reg\\D\[1340] = \ConsolePort_2:WinTimer:TimerUDB:control_7\[283]
+Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:tc_reg_i\\D\[1341] = \ConsolePort_2:WinTimer:TimerUDB:status_tc\[305]
+Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:capture_out_reg_i\\D\[1342] = \ConsolePort_2:WinTimer:TimerUDB:capt_fifo_load\[301]
+Removing Lhs of wire \ConsolePort_2:LatchFilter:genblk1[0]:sample\\D\[1345] = Net_3500[14]
+Removing Lhs of wire \ConsolePort_2:RegD1:bSR:load_reg\\D\[1347] = zero[9]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capture_last\\D\[1348] = zero[9]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:hwEnable_reg\\D\[1349] = \ConsolePort_2:ClockTimer:TimerUDB:control_7\[544]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:tc_reg_i\\D\[1350] = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\[566]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capture_out_reg_i\\D\[1351] = \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[562]
+Removing Lhs of wire \ConsolePort_2:ClockFilter:genblk1[0]:sample\\D\[1354] = \ConsolePort_2:Net_296\[36]
+Removing Lhs of wire \ConsolePort_1:RegD2:bSR:load_reg\\D\[1356] = zero[9]
+Removing Lhs of wire \ConsolePort_1:RegD0:bSR:load_reg\\D\[1357] = zero[9]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capture_last\\D\[1358] = zero[9]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:hwEnable_reg\\D\[1359] = \ConsolePort_1:WinTimer:TimerUDB:control_7\[965]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:tc_reg_i\\D\[1360] = \ConsolePort_1:WinTimer:TimerUDB:status_tc\[987]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capture_out_reg_i\\D\[1361] = \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[983]
+Removing Lhs of wire \ConsolePort_1:LatchFilter:genblk1[0]:sample\\D\[1364] = Net_3415[709]
+Removing Lhs of wire \ConsolePort_1:RegD1:bSR:load_reg\\D\[1366] = zero[9]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capture_last\\D\[1367] = zero[9]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:hwEnable_reg\\D\[1368] = \ConsolePort_1:ClockTimer:TimerUDB:control_7\[1225]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:tc_reg_i\\D\[1369] = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\[1247]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capture_out_reg_i\\D\[1370] = \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1243]
+Removing Lhs of wire \ConsolePort_1:ClockFilter:genblk1[0]:sample\\D\[1373] = \ConsolePort_1:Net_296\[720]
 
 ------------------------------------------------------
-Aliased 0 equations, 238 wires.
+Aliased 0 equations, 234 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -609,13 +601,12 @@ Note:  Expanding virtual equation for '\ConsolePort_2:WinTimer:TimerUDB:fifo_loa
 Note:  Expanding virtual equation for '\ConsolePort_2:WinTimer:TimerUDB:status_tc\' (cost = 3):
 \ConsolePort_2:WinTimer:TimerUDB:status_tc\ <= ((\ConsolePort_2:WinTimer:TimerUDB:run_mode\ and \ConsolePort_2:WinTimer:TimerUDB:per_zero\));
 
-Note:  Expanding virtual equation for '\ConsolePort_2:LatchFilter:genblk1[0]:or_term\' (cost = 3):
-\ConsolePort_2:LatchFilter:genblk1[0]:or_term\ <= (\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\
-	OR \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\
+Note:  Expanding virtual equation for '\ConsolePort_2:LatchFilter:genblk1[0]:or_term\' (cost = 2):
+\ConsolePort_2:LatchFilter:genblk1[0]:or_term\ <= (\ConsolePort_2:LatchFilter:genblk1[0]:sample\
 	OR Net_3500);
 
 Note:  Expanding virtual equation for '\ConsolePort_2:LatchFilter:genblk1[0]:and_term\' (cost = 1):
-\ConsolePort_2:LatchFilter:genblk1[0]:and_term\ <= ((Net_3500 and \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ and \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\));
+\ConsolePort_2:LatchFilter:genblk1[0]:and_term\ <= ((Net_3500 and \ConsolePort_2:LatchFilter:genblk1[0]:sample\));
 
 Note:  Expanding virtual equation for '\ConsolePort_2:Net_294\' (cost = 0):
 \ConsolePort_2:Net_294\ <= (not \ConsolePort_2:Net_288\);
@@ -626,13 +617,12 @@ Note:  Expanding virtual equation for '\ConsolePort_2:ClockTimer:TimerUDB:fifo_l
 Note:  Expanding virtual equation for '\ConsolePort_2:ClockTimer:TimerUDB:status_tc\' (cost = 3):
 \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ <= ((\ConsolePort_2:ClockTimer:TimerUDB:run_mode\ and \ConsolePort_2:ClockTimer:TimerUDB:per_zero\));
 
-Note:  Expanding virtual equation for '\ConsolePort_2:ClockFilter:genblk1[0]:or_term\' (cost = 3):
-\ConsolePort_2:ClockFilter:genblk1[0]:or_term\ <= (\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\
-	OR \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\
+Note:  Expanding virtual equation for '\ConsolePort_2:ClockFilter:genblk1[0]:or_term\' (cost = 2):
+\ConsolePort_2:ClockFilter:genblk1[0]:or_term\ <= (\ConsolePort_2:ClockFilter:genblk1[0]:sample\
 	OR \ConsolePort_2:Net_296\);
 
 Note:  Expanding virtual equation for '\ConsolePort_2:ClockFilter:genblk1[0]:and_term\' (cost = 1):
-\ConsolePort_2:ClockFilter:genblk1[0]:and_term\ <= ((\ConsolePort_2:Net_296\ and \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ and \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\));
+\ConsolePort_2:ClockFilter:genblk1[0]:and_term\ <= ((\ConsolePort_2:Net_296\ and \ConsolePort_2:ClockFilter:genblk1[0]:sample\));
 
 Note:  Expanding virtual equation for '\ConsolePort_1:WinTimer:TimerUDB:fifo_load_polarized\' (cost = 0):
 \ConsolePort_1:WinTimer:TimerUDB:fifo_load_polarized\ <=  ('0') ;
@@ -640,13 +630,12 @@ Note:  Expanding virtual equation for '\ConsolePort_1:WinTimer:TimerUDB:fifo_loa
 Note:  Expanding virtual equation for '\ConsolePort_1:WinTimer:TimerUDB:status_tc\' (cost = 3):
 \ConsolePort_1:WinTimer:TimerUDB:status_tc\ <= ((\ConsolePort_1:WinTimer:TimerUDB:run_mode\ and \ConsolePort_1:WinTimer:TimerUDB:per_zero\));
 
-Note:  Expanding virtual equation for '\ConsolePort_1:LatchFilter:genblk1[0]:or_term\' (cost = 3):
-\ConsolePort_1:LatchFilter:genblk1[0]:or_term\ <= (\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\
-	OR \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\
+Note:  Expanding virtual equation for '\ConsolePort_1:LatchFilter:genblk1[0]:or_term\' (cost = 2):
+\ConsolePort_1:LatchFilter:genblk1[0]:or_term\ <= (\ConsolePort_1:LatchFilter:genblk1[0]:sample\
 	OR Net_3415);
 
 Note:  Expanding virtual equation for '\ConsolePort_1:LatchFilter:genblk1[0]:and_term\' (cost = 1):
-\ConsolePort_1:LatchFilter:genblk1[0]:and_term\ <= ((Net_3415 and \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ and \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\));
+\ConsolePort_1:LatchFilter:genblk1[0]:and_term\ <= ((Net_3415 and \ConsolePort_1:LatchFilter:genblk1[0]:sample\));
 
 Note:  Expanding virtual equation for '\ConsolePort_1:Net_294\' (cost = 0):
 \ConsolePort_1:Net_294\ <= (not \ConsolePort_1:Net_288\);
@@ -657,13 +646,12 @@ Note:  Expanding virtual equation for '\ConsolePort_1:ClockTimer:TimerUDB:fifo_l
 Note:  Expanding virtual equation for '\ConsolePort_1:ClockTimer:TimerUDB:status_tc\' (cost = 3):
 \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ <= ((\ConsolePort_1:ClockTimer:TimerUDB:run_mode\ and \ConsolePort_1:ClockTimer:TimerUDB:per_zero\));
 
-Note:  Expanding virtual equation for '\ConsolePort_1:ClockFilter:genblk1[0]:or_term\' (cost = 3):
-\ConsolePort_1:ClockFilter:genblk1[0]:or_term\ <= (\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\
-	OR \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\
+Note:  Expanding virtual equation for '\ConsolePort_1:ClockFilter:genblk1[0]:or_term\' (cost = 2):
+\ConsolePort_1:ClockFilter:genblk1[0]:or_term\ <= (\ConsolePort_1:ClockFilter:genblk1[0]:sample\
 	OR \ConsolePort_1:Net_296\);
 
 Note:  Expanding virtual equation for '\ConsolePort_1:ClockFilter:genblk1[0]:and_term\' (cost = 1):
-\ConsolePort_1:ClockFilter:genblk1[0]:and_term\ <= ((\ConsolePort_1:Net_296\ and \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ and \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\));
+\ConsolePort_1:ClockFilter:genblk1[0]:and_term\ <= ((\ConsolePort_1:Net_296\ and \ConsolePort_1:ClockFilter:genblk1[0]:sample\));
 
 
 Substituting virtuals - pass 2:
@@ -686,12 +674,12 @@ Aliasing \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\ to zero
 Aliasing \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\ to zero
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:capt_fifo_load\[301] = zero[9]
 Removing Lhs of wire \ConsolePort_2:WinTimer:TimerUDB:trig_reg\[317] = \ConsolePort_2:WinTimer:TimerUDB:timer_enable\[302]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[563] = zero[9]
-Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:trig_reg\[578] = \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\[564]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[1035] = zero[9]
-Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:trig_reg\[1050] = \ConsolePort_1:WinTimer:TimerUDB:timer_enable\[1036]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1296] = zero[9]
-Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:trig_reg\[1311] = \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\[1297]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:capt_fifo_load\[562] = zero[9]
+Removing Lhs of wire \ConsolePort_2:ClockTimer:TimerUDB:trig_reg\[577] = \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\[563]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:capt_fifo_load\[983] = zero[9]
+Removing Lhs of wire \ConsolePort_1:WinTimer:TimerUDB:trig_reg\[998] = \ConsolePort_1:WinTimer:TimerUDB:timer_enable\[984]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:capt_fifo_load\[1243] = zero[9]
+Removing Lhs of wire \ConsolePort_1:ClockTimer:TimerUDB:trig_reg\[1258] = \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\[1244]
 
 ------------------------------------------------------
 Aliased 0 equations, 8 wires.
@@ -724,14 +712,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\TASBot.cyprj" -dcpsoc3 TASBot.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.378ms
+Warp synthesis phase: Elapsed time ==> 1s.322ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Sunday, 16 October 2016 15:16:33
+cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Sunday, 16 October 2016 17:42:15
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\TASBot.cyprj -d CY8C5888LTI-LP097 TASBot.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.091ms
+Design parsing phase: Elapsed time ==> 0s.026ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -1624,7 +1612,7 @@ Design Equations
         (
               !\ConsolePort_2:Net_288\
         );
-        Output = \ConsolePort_2:Net_294\ (fanout=2)
+        Output = \ConsolePort_2:Net_294\ (fanout=1)
 
     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:status_tc\, Mode=(Combinatorial)
         Total # of inputs        : 2
@@ -1696,7 +1684,7 @@ Design Equations
         (
               !\ConsolePort_1:Net_288\
         );
-        Output = \ConsolePort_1:Net_294\ (fanout=2)
+        Output = \ConsolePort_1:Net_294\ (fanout=1)
 
     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:status_tc\, Mode=(Combinatorial)
         Total # of inputs        : 2
@@ -1766,19 +1754,7 @@ Design Equations
         );
         Output = \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ (fanout=2)
 
-    MacroCell: Name=\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ (fanout=1)
-
-    MacroCell: Name=\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register)
+    MacroCell: Name=\ConsolePort_2:LatchFilter:genblk1[0]:sample\, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -1788,10 +1764,10 @@ Design Equations
         (
               Net_3500
         );
-        Output = \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ (fanout=2)
+        Output = \ConsolePort_2:LatchFilter:genblk1[0]:sample\ (fanout=1)
 
     MacroCell: Name=Net_3493, Mode=(T-Register)
-        Total # of inputs        : 4
+        Total # of inputs        : 3
         Total # of product terms : 2
         List of special equations: 
             Clock  = (\ConsolePort_2:Net_22\) => Global
@@ -1799,11 +1775,9 @@ Design Equations
         Main Equation            : 2 pterms
         (
               !Net_3500 * Net_3493 * 
-              !\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\
+              !\ConsolePort_2:LatchFilter:genblk1[0]:sample\
             + Net_3500 * !Net_3493 * 
-              \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\
+              \ConsolePort_2:LatchFilter:genblk1[0]:sample\
         );
         Output = Net_3493 (fanout=7)
 
@@ -1853,7 +1827,7 @@ Design Equations
               !\ConsolePort_2:ClockTimer:TimerUDB:per_zero\ * 
               !\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
         );
-        Output = \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ (fanout=4)
+        Output = \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ (fanout=3)
 
     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\, Mode=(D-Register)
         Total # of inputs        : 5
@@ -1872,19 +1846,7 @@ Design Equations
         );
         Output = \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ (fanout=2)
 
-    MacroCell: Name=\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ (fanout=1)
-
-    MacroCell: Name=\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register)
+    MacroCell: Name=\ConsolePort_2:ClockFilter:genblk1[0]:sample\, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -1894,10 +1856,10 @@ Design Equations
         (
               \ConsolePort_2:Net_296\
         );
-        Output = \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ (fanout=2)
+        Output = \ConsolePort_2:ClockFilter:genblk1[0]:sample\ (fanout=1)
 
     MacroCell: Name=\ConsolePort_2:Net_288\, Mode=(T-Register)
-        Total # of inputs        : 4
+        Total # of inputs        : 3
         Total # of product terms : 2
         List of special equations: 
             Clock  = (\ConsolePort_2:Net_22\) => Global
@@ -1905,11 +1867,9 @@ Design Equations
         Main Equation            : 2 pterms
         (
               !\ConsolePort_2:Net_296\ * \ConsolePort_2:Net_288\ * 
-              !\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\
+              !\ConsolePort_2:ClockFilter:genblk1[0]:sample\
             + \ConsolePort_2:Net_296\ * !\ConsolePort_2:Net_288\ * 
-              \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\
+              \ConsolePort_2:ClockFilter:genblk1[0]:sample\
         );
         Output = \ConsolePort_2:Net_288\ (fanout=6)
 
@@ -1960,19 +1920,7 @@ Design Equations
         );
         Output = \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ (fanout=2)
 
-    MacroCell: Name=\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ (fanout=1)
-
-    MacroCell: Name=\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register)
+    MacroCell: Name=\ConsolePort_1:LatchFilter:genblk1[0]:sample\, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -1982,10 +1930,10 @@ Design Equations
         (
               Net_3415
         );
-        Output = \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ (fanout=2)
+        Output = \ConsolePort_1:LatchFilter:genblk1[0]:sample\ (fanout=1)
 
     MacroCell: Name=Net_3417, Mode=(T-Register)
-        Total # of inputs        : 4
+        Total # of inputs        : 3
         Total # of product terms : 2
         List of special equations: 
             Clock  = (\ConsolePort_1:Net_22\) => Global
@@ -1993,11 +1941,9 @@ Design Equations
         Main Equation            : 2 pterms
         (
               !Net_3415 * Net_3417 * 
-              !\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\
+              !\ConsolePort_1:LatchFilter:genblk1[0]:sample\
             + Net_3415 * !Net_3417 * 
-              \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\
+              \ConsolePort_1:LatchFilter:genblk1[0]:sample\
         );
         Output = Net_3417 (fanout=7)
 
@@ -2047,7 +1993,7 @@ Design Equations
               !\ConsolePort_1:ClockTimer:TimerUDB:per_zero\ * 
               !\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
         );
-        Output = \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ (fanout=4)
+        Output = \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ (fanout=3)
 
     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\, Mode=(D-Register)
         Total # of inputs        : 5
@@ -2066,19 +2012,7 @@ Design Equations
         );
         Output = \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ (fanout=2)
 
-    MacroCell: Name=\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ (fanout=1)
-
-    MacroCell: Name=\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register)
+    MacroCell: Name=\ConsolePort_1:ClockFilter:genblk1[0]:sample\, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -2088,10 +2022,10 @@ Design Equations
         (
               \ConsolePort_1:Net_296\
         );
-        Output = \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ (fanout=2)
+        Output = \ConsolePort_1:ClockFilter:genblk1[0]:sample\ (fanout=1)
 
     MacroCell: Name=\ConsolePort_1:Net_288\, Mode=(T-Register)
-        Total # of inputs        : 4
+        Total # of inputs        : 3
         Total # of product terms : 2
         List of special equations: 
             Clock  = (\ConsolePort_1:Net_22\) => Global
@@ -2099,11 +2033,9 @@ Design Equations
         Main Equation            : 2 pterms
         (
               !\ConsolePort_1:Net_296\ * \ConsolePort_1:Net_288\ * 
-              !\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\
+              !\ConsolePort_1:ClockFilter:genblk1[0]:sample\
             + \ConsolePort_1:Net_296\ * !\ConsolePort_1:Net_288\ * 
-              \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\
+              \ConsolePort_1:ClockFilter:genblk1[0]:sample\
         );
         Output = \ConsolePort_1:Net_288\ (fanout=6)
     </CYPRESSTAG>
@@ -2405,13 +2337,15 @@ Design Equations
         Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
         Previous in chain : \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\
 
-    datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u0\
+    datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT8:timerdp:u0\
         PORT MAP (
             clock => \ConsolePort_2:Net_22\ ,
             cs_addr_2 => \ConsolePort_2:Net_294\ ,
             cs_addr_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ ,
             cs_addr_0 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
-            chain_out => \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
+            z0_comb => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_2\ );
         Properties:
         {
             a0_init = "00000000"
@@ -2438,45 +2372,6 @@ Design Equations
         }
         Clock Polarity: Active High
         Clock Enable: True
-        Next in chain : \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u1\
-
-    datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u1\
-        PORT MAP (
-            clock => \ConsolePort_2:Net_22\ ,
-            cs_addr_2 => \ConsolePort_2:Net_294\ ,
-            cs_addr_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ ,
-            cs_addr_0 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
-            z0_comb => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
-            f0_bus_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_3\ ,
-            f0_blk_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_2\ ,
-            chain_in => \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
-        Properties:
-        {
-            a0_init = "00000000"
-            a1_init = "00000000"
-            ce0_sync = 1
-            ce1_sync = 1
-            cl0_sync = 1
-            cl1_sync = 1
-            cmsb_sync = 1
-            co_msb_sync = 1
-            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
-            d0_init = "00000000"
-            d1_init = "00000000"
-            f0_blk_sync = 1
-            f0_bus_sync = 1
-            f1_blk_sync = 1
-            f1_bus_sync = 1
-            ff0_sync = 1
-            ff1_sync = 1
-            ov_msb_sync = 1
-            so_sync = 1
-            z0_sync = 1
-            z1_sync = 1
-        }
-        Clock Polarity: Active High
-        Clock Enable: True
-        Previous in chain : \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u0\
 
     datapathcell: Name =\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\
         PORT MAP (
@@ -2770,13 +2665,15 @@ Design Equations
         Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
         Previous in chain : \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\
 
-    datapathcell: Name =\ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u0\
+    datapathcell: Name =\ConsolePort_1:ClockTimer:TimerUDB:sT8:timerdp:u0\
         PORT MAP (
             clock => \ConsolePort_1:Net_22\ ,
             cs_addr_2 => \ConsolePort_1:Net_294\ ,
             cs_addr_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ ,
             cs_addr_0 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
-            chain_out => \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
+            z0_comb => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
+            f0_bus_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_3\ ,
+            f0_blk_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_2\ );
         Properties:
         {
             a0_init = "00000000"
@@ -2803,45 +2700,6 @@ Design Equations
         }
         Clock Polarity: Active High
         Clock Enable: True
-        Next in chain : \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u1\
-
-    datapathcell: Name =\ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u1\
-        PORT MAP (
-            clock => \ConsolePort_1:Net_22\ ,
-            cs_addr_2 => \ConsolePort_1:Net_294\ ,
-            cs_addr_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ ,
-            cs_addr_0 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
-            z0_comb => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
-            f0_bus_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_3\ ,
-            f0_blk_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_2\ ,
-            chain_in => \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
-        Properties:
-        {
-            a0_init = "00000000"
-            a1_init = "00000000"
-            ce0_sync = 1
-            ce1_sync = 1
-            cl0_sync = 1
-            cl1_sync = 1
-            cmsb_sync = 1
-            co_msb_sync = 1
-            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
-            d0_init = "00000000"
-            d1_init = "00000000"
-            f0_blk_sync = 1
-            f0_bus_sync = 1
-            f1_blk_sync = 1
-            f1_bus_sync = 1
-            ff0_sync = 1
-            ff1_sync = 1
-            ov_msb_sync = 1
-            so_sync = 1
-            z0_sync = 1
-            z1_sync = 1
-        }
-        Clock Polarity: Active High
-        Clock Enable: True
-        Previous in chain : \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u0\
     </CYPRESSTAG>
     <CYPRESSTAG name="Status register listing">
     </CYPRESSTAG>
@@ -3413,10 +3271,10 @@ USB                           :    1 :    0 :    1 : 100.00 %
 DMA Channels                  :    0 :   24 :   24 :  0.00 %
 Timer                         :    0 :    4 :    4 :  0.00 %
 UDB                           :      :      :      :        
-  Macrocells                  :   40 :  152 :  192 : 20.83 %
-  Unique P-terms              :   54 :  330 :  384 : 14.06 %
-  Total P-terms               :   56 :      :      :        
-  Datapath Cells              :   20 :    4 :   24 : 83.33 %
+  Macrocells                  :   36 :  156 :  192 : 18.75 %
+  Unique P-terms              :   50 :  334 :  384 : 13.02 %
+  Total P-terms               :   52 :      :      :        
+  Datapath Cells              :   18 :    6 :   24 : 75.00 %
   Status Cells                :   11 :   13 :   24 : 45.83 %
     StatusI Registers         :   10 :      :      :        
     Sync Cells (x2)           :    1 :      :      :        
@@ -3431,8 +3289,8 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    0 :    4 :    4 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.241ms
-Tech Mapping phase: Elapsed time ==> 0s.418ms
+Technology Mapping: Elapsed time ==> 0s.043ms
+Tech Mapping phase: Elapsed time ==> 0s.112ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
@@ -3455,10 +3313,10 @@ IO_3@[IOP=(2)][IoId=(3)] : P2_Latch(0) (fixed)
 IO_7@[IOP=(15)][IoId=(7)] : \USBUART:Dm(0)\ (fixed)
 IO_6@[IOP=(15)][IoId=(6)] : \USBUART:Dp(0)\ (fixed)
 USB[0]@[FFB(USB,0)] : \USBUART:USB\
-Analog Placement phase: Elapsed time ==> 0s.122ms
+Analog Placement phase: Elapsed time ==> 0s.030ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
-Analog Routing phase: Elapsed time ==> 0s.002ms
+Analog Routing phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -3473,11 +3331,11 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.255ms
+Analog Code Generation phase: Elapsed time ==> 0s.218ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 1.3 sec.
+I2076: Total run-time: 1.2 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -3488,27 +3346,27 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :   17 :   31 :   48 :  35.42%
+                     PLDs :   23 :   25 :   48 :  47.92%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            3.88
-                   Pterms :            3.29
-               Macrocells :            2.35
+                   Inputs :            3.39
+                   Pterms :            2.26
+               Macrocells :            1.57
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.027ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.251ms
+Partitioning: Elapsed time ==> 0s.104ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -3518,7 +3376,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :         20 :       2.45 :       2.00
+                 UDB :         18 :       3.06 :       2.00
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -3526,6 +3384,26 @@ Final Placement Summary
 Component Placement Details
 ------------------------------------------------------------
 UDB [UDB=(0,0)] contents:
+LAB@[UDB=(0,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_3489, Mode=(Combinatorial) @ [UDB=(0,0)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\ConsolePort_2:Net_201\
+        );
+        Output = Net_3489 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
 datapathcell: Name =\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
         clock => \ConsolePort_2:Net_22\ ,
@@ -3560,160 +3438,35 @@ datapathcell: Name =\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
     Next in chain : \ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u1\
 
-UDB [UDB=(0,1)] contents:
-LAB@[UDB=(0,1)][LB=0] #macrocells=4, #inputs=7, #pterms=5
-{
-    [McSlotId=0]:     MacroCell: Name=\ConsolePort_2:Net_68\, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=0]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:Net_288\ * \ConsolePort_2:Net_61\
-        );
-        Output = \ConsolePort_2:Net_68\ (fanout=12)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\ConsolePort_2:Net_61\, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:per_zero\
-        );
-        Output = \ConsolePort_2:Net_61\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_2:Net_288\, Mode=(T-Register) @ [UDB=(0,1)][LB=0][MC=2]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !\ConsolePort_2:Net_296\ * \ConsolePort_2:Net_288\ * 
-              !\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\
-            + \ConsolePort_2:Net_296\ * !\ConsolePort_2:Net_288\ * 
-              \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_2:Net_288\ (fanout=6)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\ConsolePort_2:Net_294\, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\ConsolePort_2:Net_288\
-        );
-        Output = \ConsolePort_2:Net_294\ (fanout=2)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(0,1)][LB=1] #macrocells=4, #inputs=7, #pterms=7
-{
-    [McSlotId=0]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,1)][LB=1][MC=0]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:per_zero\
-        );
-        Output = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=1]
-        Total # of inputs        : 5
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \ConsolePort_2:Net_288\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:per_zero\
-            + \ConsolePort_2:Net_288\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
-        );
-        Output = \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=2]
-        Total # of inputs        : 6
-        Total # of product terms : 3
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 3 pterms
-        (
-              \ConsolePort_2:Net_288\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ * 
-              !\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
-            + \ConsolePort_2:Net_288\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
-              !\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
-            + \ConsolePort_2:Net_288\ * 
-              \ConsolePort_2:ClockTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_2:ClockTimer:TimerUDB:per_zero\ * 
-              !\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
-        );
-        Output = \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u1\
+statusicell: Name =\ConsolePort_1:RegD1:bSR:StsReg\
     PORT MAP (
-        clock => \ConsolePort_2:Net_22\ ,
-        cs_addr_2 => \ConsolePort_2:Net_294\ ,
-        cs_addr_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
-        z0_comb => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
-        f0_bus_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_3\ ,
-        f0_blk_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_2\ ,
-        chain_in => \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
+        clock => \ConsolePort_1:Net_22\ ,
+        status_6 => \ConsolePort_1:RegD1:bSR:status_6\ ,
+        status_5 => \ConsolePort_1:RegD1:bSR:status_5\ ,
+        status_4 => \ConsolePort_1:RegD1:bSR:status_4\ ,
+        status_3 => \ConsolePort_1:RegD1:bSR:status_3\ ,
+        clk_en => \ConsolePort_1:Net_68\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "0000111"
+        cy_md_select = "0000111"
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
+
+UDB [UDB=(0,1)] contents:
+datapathcell: Name =\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\
+    PORT MAP (
+        clock => \ConsolePort_1:Net_22\ ,
+        cs_addr_2 => \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\ ,
+        so_comb => \ConsolePort_1:Net_213\ ,
+        f0_bus_stat_comb => \ConsolePort_1:RegD1:bSR:status_4\ ,
+        f0_blk_stat_comb => \ConsolePort_1:RegD1:bSR:status_3\ ,
+        f1_bus_stat_comb => \ConsolePort_1:RegD1:bSR:status_6\ ,
+        f1_blk_stat_comb => \ConsolePort_1:RegD1:bSR:status_5\ ,
+        chain_in => \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:carry\ ,
+        clk_en => \ConsolePort_1:Net_68\ );
     Properties:
     {
         a0_init = "00000000"
@@ -3724,7 +3477,7 @@ datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u1\
         cl1_sync = 1
         cmsb_sync = 1
         co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010010101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110111100001000111100100000000000011100"
         d0_init = "00000000"
         d1_init = "00000000"
         f0_blk_sync = 1
@@ -3739,91 +3492,10 @@ datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u1\
         z1_sync = 1
     }
     Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u0\
-
-statusicell: Name =\ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\
-    PORT MAP (
-        reset => \ConsolePort_2:Net_288\ ,
-        clock => \ConsolePort_2:Net_22\ ,
-        status_3 => \ConsolePort_2:ClockTimer:TimerUDB:status_3\ ,
-        status_2 => \ConsolePort_2:ClockTimer:TimerUDB:status_2\ ,
-        status_0 => \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_int_mask = "1111111"
-        cy_md_select = "0000011"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-controlcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
-    PORT MAP (
-        clock => \ConsolePort_2:Net_22\ ,
-        control_7 => \ConsolePort_2:ClockTimer:TimerUDB:control_7\ ,
-        control_6 => \ConsolePort_2:ClockTimer:TimerUDB:control_6\ ,
-        control_5 => \ConsolePort_2:ClockTimer:TimerUDB:control_5\ ,
-        control_4 => \ConsolePort_2:ClockTimer:TimerUDB:control_4\ ,
-        control_3 => \ConsolePort_2:ClockTimer:TimerUDB:control_3\ ,
-        control_2 => \ConsolePort_2:ClockTimer:TimerUDB:control_2\ ,
-        control_1 => \ConsolePort_2:ClockTimer:TimerUDB:control_1\ ,
-        control_0 => \ConsolePort_2:ClockTimer:TimerUDB:control_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
+    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
+    Previous in chain : \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\
 
 UDB [UDB=(0,2)] contents:
-LAB@[UDB=(0,2)][LB=0] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:Net_296\
-        );
-        Output = \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(0,2)][LB=1] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:ClockTimer:TimerUDB:control_7\
-        );
-        Output = \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ (fanout=4)
-        Properties               : 
-        {
-        }
-}
-
 datapathcell: Name =\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\
     PORT MAP (
         clock => \ConsolePort_2:Net_22\ ,
@@ -3904,22 +3576,9 @@ controlcell: Name =\ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\
     Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
 
 UDB [UDB=(0,3)] contents:
-LAB@[UDB=(0,3)][LB=1] #macrocells=2, #inputs=2, #pterms=2
+LAB@[UDB=(0,3)][LB=0] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=Net_3488, Mode=(Combinatorial) @ [UDB=(0,3)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\ConsolePort_2:Net_191\
-        );
-        Output = Net_3488 (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=Net_3487, Mode=(Combinatorial) @ [UDB=(0,3)][LB=1][MC=1]
+    [McSlotId=0]:     MacroCell: Name=Net_3487, Mode=(Combinatorial) @ [UDB=(0,3)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
             Clock Enable: True
@@ -3932,6 +3591,7 @@ LAB@[UDB=(0,3)][LB=1] #macrocells=2, #inputs=2, #pterms=2
         {
         }
 
+    [McSlotId=1]: (empty)
     [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
 }
@@ -3970,100 +3630,10 @@ datapathcell: Name =\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
     Next in chain : \ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\
 
-synccell: Name =\ConsolePort_2:ClockSync:genblk1[0]:INST\
-    PORT MAP (
-        clock => \ConsolePort_2:Net_22\ ,
-        in => Net_3520 ,
-        out => \ConsolePort_2:Net_296\ );
-    Properties:
-    {
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
 UDB [UDB=(0,4)] contents:
-LAB@[UDB=(0,4)][LB=0] #macrocells=4, #inputs=9, #pterms=8
+LAB@[UDB=(0,4)][LB=0] #macrocells=2, #inputs=3, #pterms=2
 {
-    [McSlotId=0]:     MacroCell: Name=Net_3417, Mode=(T-Register) @ [UDB=(0,4)][LB=0][MC=0]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_3415 * Net_3417 * 
-              !\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\
-            + Net_3415 * !Net_3417 * 
-              \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = Net_3417 (fanout=7)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:WinTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=1]
-        Total # of inputs        : 6
-        Total # of product terms : 3
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 3 pterms
-        (
-              !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_1:WinTimer:TimerUDB:timer_enable\ * 
-              !\ConsolePort_1:WinTimer:TimerUDB:trig_disable\
-            + !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_1:WinTimer:TimerUDB:run_mode\ * 
-              !\ConsolePort_1:WinTimer:TimerUDB:trig_disable\
-            + !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_1:WinTimer:TimerUDB:per_zero\ * 
-              !\ConsolePort_1:WinTimer:TimerUDB:trig_disable\
-        );
-        Output = \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_1:WinTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=2]
-        Total # of inputs        : 5
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ * 
-              \ConsolePort_1:WinTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_1:WinTimer:TimerUDB:per_zero\
-            + !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:trig_disable\
-        );
-        Output = \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(0,4)][LB=1] #macrocells=3, #inputs=4, #pterms=3
-{
-    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(0,4)][LB=1][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:LatchFilter:genblk1[0]:sample\, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -4073,7 +3643,45 @@ LAB@[UDB=(0,4)][LB=1] #macrocells=3, #inputs=4, #pterms=3
         (
               Net_3415
         );
-        Output = \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ (fanout=2)
+        Output = \ConsolePort_1:LatchFilter:genblk1[0]:sample\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,4)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_1:WinTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_1:WinTimer:TimerUDB:per_zero\
+        );
+        Output = \ConsolePort_1:WinTimer:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,4)][LB=1] #macrocells=2, #inputs=4, #pterms=3
+{
+    [McSlotId=0]:     MacroCell: Name=Net_3417, Mode=(T-Register) @ [UDB=(0,4)][LB=1][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_3415 * Net_3417 * 
+              !\ConsolePort_1:LatchFilter:genblk1[0]:sample\
+            + Net_3415 * !Net_3417 * 
+              \ConsolePort_1:LatchFilter:genblk1[0]:sample\
+        );
+        Output = Net_3417 (fanout=7)
         Properties               : 
         {
         }
@@ -4093,20 +3701,7 @@ LAB@[UDB=(0,4)][LB=1] #macrocells=3, #inputs=4, #pterms=3
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_1:WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,4)][LB=1][MC=2]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:WinTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_1:WinTimer:TimerUDB:per_zero\
-        );
-        Output = \ConsolePort_1:WinTimer:TimerUDB:status_tc\ (fanout=1)
-        Properties               : 
-        {
-        }
-
+    [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
 }
 
@@ -4188,6 +3783,53 @@ controlcell: Name =\ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     Clock Enable: True
 
 UDB [UDB=(0,5)] contents:
+LAB@[UDB=(0,5)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\ConsolePort_2:LatchFilter:genblk1[0]:sample\, Mode=(D-Register) @ [UDB=(0,5)][LB=0][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_3500
+        );
+        Output = \ConsolePort_2:LatchFilter:genblk1[0]:sample\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,5)][LB=1] #macrocells=1, #inputs=3, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_3493, Mode=(T-Register) @ [UDB=(0,5)][LB=1][MC=1]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_3500 * Net_3493 * 
+              !\ConsolePort_2:LatchFilter:genblk1[0]:sample\
+            + Net_3500 * !Net_3493 * 
+              \ConsolePort_2:LatchFilter:genblk1[0]:sample\
+        );
+        Output = Net_3493 (fanout=7)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
 datapathcell: Name =\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\
     PORT MAP (
         clock => \ConsolePort_2:Net_22\ ,
@@ -4224,23 +3866,62 @@ datapathcell: Name =\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\
     Next in chain : \ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u1\
 
 UDB [UDB=(1,0)] contents:
-LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=5, #pterms=2
 {
-    [McSlotId=0]:     MacroCell: Name=Net_3489, Mode=(Combinatorial) @ [UDB=(1,0)][LB=0][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=3]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
             Clock Enable: True
-        Main Equation            : 1 pterm
+        Main Equation            : 2 pterms
         (
-              !\ConsolePort_2:Net_201\
+              \ConsolePort_2:Net_288\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:per_zero\
+            + \ConsolePort_2:Net_288\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
         );
-        Output = Net_3489 (fanout=2)
+        Output = \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(1,0)][LB=1] #macrocells=1, #inputs=6, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=2]
+        Total # of inputs        : 6
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              \ConsolePort_2:Net_288\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ * 
+              !\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
+            + \ConsolePort_2:Net_288\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
+              !\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
+            + \ConsolePort_2:Net_288\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_2:ClockTimer:TimerUDB:per_zero\ * 
+              !\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\
+        );
+        Output = \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ (fanout=3)
         Properties               : 
         {
         }
 
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
 }
 
@@ -4324,13 +4005,99 @@ controlcell: Name =\ConsolePort_2:RegD0:bSR:SyncCtl:CtrlReg\
     Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
 
 UDB [UDB=(1,1)] contents:
-datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u0\
+LAB@[UDB=(1,1)][LB=0] #macrocells=3, #inputs=6, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_2:Net_68\, Mode=(Combinatorial) @ [UDB=(1,1)][LB=0][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_2:Net_288\ * \ConsolePort_2:Net_61\
+        );
+        Output = \ConsolePort_2:Net_68\ (fanout=12)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\ConsolePort_2:Net_61\, Mode=(D-Register) @ [UDB=(1,1)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:per_zero\
+        );
+        Output = \ConsolePort_2:Net_61\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\ConsolePort_2:Net_288\, Mode=(T-Register) @ [UDB=(1,1)][LB=0][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\ConsolePort_2:Net_296\ * \ConsolePort_2:Net_288\ * 
+              !\ConsolePort_2:ClockFilter:genblk1[0]:sample\
+            + \ConsolePort_2:Net_296\ * !\ConsolePort_2:Net_288\ * 
+              \ConsolePort_2:ClockFilter:genblk1[0]:sample\
+        );
+        Output = \ConsolePort_2:Net_288\ (fanout=6)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(1,1)][LB=1] #macrocells=2, #inputs=2, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_2:ClockFilter:genblk1[0]:sample\, Mode=(D-Register) @ [UDB=(1,1)][LB=1][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_2:Net_296\
+        );
+        Output = \ConsolePort_2:ClockFilter:genblk1[0]:sample\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(1,1)][LB=1][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\ConsolePort_2:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_2:ClockTimer:TimerUDB:control_7\
+        );
+        Output = \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ (fanout=4)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
-        clock => \ConsolePort_2:Net_22\ ,
-        cs_addr_2 => \ConsolePort_2:Net_294\ ,
-        cs_addr_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
-        chain_out => \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
+        clock => \ConsolePort_1:Net_22\ ,
+        cs_addr_2 => \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\ ,
+        chain_out => \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:carry\ ,
+        clk_en => \ConsolePort_1:Net_68\ );
     Properties:
     {
         a0_init = "00000000"
@@ -4341,7 +4108,7 @@ datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u0\
         cl1_sync = 1
         cmsb_sync = 1
         co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010010101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110101000001000011100000000000000011100"
         d0_init = "00000000"
         d1_init = "00000000"
         f0_blk_sync = 1
@@ -4356,10 +4123,52 @@ datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u0\
         z1_sync = 1
     }
     Clock Polarity: Active High
+    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
+    Next in chain : \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\
+
+controlcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => \ConsolePort_2:Net_22\ ,
+        control_7 => \ConsolePort_2:ClockTimer:TimerUDB:control_7\ ,
+        control_6 => \ConsolePort_2:ClockTimer:TimerUDB:control_6\ ,
+        control_5 => \ConsolePort_2:ClockTimer:TimerUDB:control_5\ ,
+        control_4 => \ConsolePort_2:ClockTimer:TimerUDB:control_4\ ,
+        control_3 => \ConsolePort_2:ClockTimer:TimerUDB:control_3\ ,
+        control_2 => \ConsolePort_2:ClockTimer:TimerUDB:control_2\ ,
+        control_1 => \ConsolePort_2:ClockTimer:TimerUDB:control_1\ ,
+        control_0 => \ConsolePort_2:ClockTimer:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
     Clock Enable: True
-    Next in chain : \ConsolePort_2:ClockTimer:TimerUDB:sT16:timerdp:u1\
 
 UDB [UDB=(1,2)] contents:
+LAB@[UDB=(1,2)][LB=1] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=Net_3479, Mode=(Combinatorial) @ [UDB=(1,2)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\ConsolePort_1:Net_191\
+        );
+        Output = Net_3479 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
 datapathcell: Name =\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
         clock => \ConsolePort_2:Net_22\ ,
@@ -4394,7 +4203,38 @@ datapathcell: Name =\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
     Next in chain : \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\
 
+synccell: Name =\ConsolePort_2:ClockSync:genblk1[0]:INST\
+    PORT MAP (
+        clock => \ConsolePort_2:Net_22\ ,
+        in => Net_3520 ,
+        out => \ConsolePort_2:Net_296\ );
+    Properties:
+    {
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
 UDB [UDB=(1,3)] contents:
+LAB@[UDB=(1,3)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=Net_3488, Mode=(Combinatorial) @ [UDB=(1,3)][LB=0][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\ConsolePort_2:Net_191\
+        );
+        Output = Net_3488 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
 datapathcell: Name =\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\
     PORT MAP (
         clock => \ConsolePort_2:Net_22\ ,
@@ -4451,30 +4291,62 @@ statusicell: Name =\ConsolePort_2:RegD2:bSR:StsReg\
     Clock Polarity: Active High
     Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
 
-controlcell: Name =\ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\
-    PORT MAP (
-        clock => \ConsolePort_2:Net_22\ ,
-        control_7 => \ConsolePort_2:RegD2:bSR:control_7\ ,
-        control_6 => \ConsolePort_2:RegD2:bSR:control_6\ ,
-        control_5 => \ConsolePort_2:RegD2:bSR:control_5\ ,
-        control_4 => \ConsolePort_2:RegD2:bSR:control_4\ ,
-        control_3 => \ConsolePort_2:RegD2:bSR:control_3\ ,
-        control_2 => \ConsolePort_2:RegD2:bSR:control_2\ ,
-        control_1 => \ConsolePort_2:RegD2:bSR:control_1\ ,
-        control_0 => \ConsolePort_2:RegD2:bSR:ctrl_clk_enable\ ,
-        clk_en => \ConsolePort_2:Net_68\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000001"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
-
 UDB [UDB=(1,4)] contents:
+LAB@[UDB=(1,4)][LB=0] #macrocells=1, #inputs=6, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:WinTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(1,4)][LB=0][MC=1]
+        Total # of inputs        : 6
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_1:WinTimer:TimerUDB:timer_enable\ * 
+              !\ConsolePort_1:WinTimer:TimerUDB:trig_disable\
+            + !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_1:WinTimer:TimerUDB:run_mode\ * 
+              !\ConsolePort_1:WinTimer:TimerUDB:trig_disable\
+            + !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_1:WinTimer:TimerUDB:per_zero\ * 
+              !\ConsolePort_1:WinTimer:TimerUDB:trig_disable\
+        );
+        Output = \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(1,4)][LB=1] #macrocells=1, #inputs=5, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:WinTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ * 
+              \ConsolePort_1:WinTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_1:WinTimer:TimerUDB:per_zero\
+            + !Net_3417 * \ConsolePort_1:WinTimer:TimerUDB:trig_disable\
+        );
+        Output = \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
 datapathcell: Name =\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\
     PORT MAP (
         clock => \ConsolePort_1:Net_22\ ,
@@ -4510,29 +4382,33 @@ datapathcell: Name =\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\
     Clock Enable: True
     Next in chain : \ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u1\
 
-UDB [UDB=(1,5)] contents:
-LAB@[UDB=(1,5)][LB=0] #macrocells=4, #inputs=9, #pterms=8
-{
-    [McSlotId=0]:     MacroCell: Name=Net_3493, Mode=(T-Register) @ [UDB=(1,5)][LB=0][MC=0]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !Net_3500 * Net_3493 * 
-              !\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\
-            + Net_3500 * !Net_3493 * 
-              \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = Net_3493 (fanout=7)
-        Properties               : 
-        {
-        }
+controlcell: Name =\ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\
+    PORT MAP (
+        clock => \ConsolePort_2:Net_22\ ,
+        control_7 => \ConsolePort_2:RegD2:bSR:control_7\ ,
+        control_6 => \ConsolePort_2:RegD2:bSR:control_6\ ,
+        control_5 => \ConsolePort_2:RegD2:bSR:control_5\ ,
+        control_4 => \ConsolePort_2:RegD2:bSR:control_4\ ,
+        control_3 => \ConsolePort_2:RegD2:bSR:control_3\ ,
+        control_2 => \ConsolePort_2:RegD2:bSR:control_2\ ,
+        control_1 => \ConsolePort_2:RegD2:bSR:control_1\ ,
+        control_0 => \ConsolePort_2:RegD2:bSR:ctrl_clk_enable\ ,
+        clk_en => \ConsolePort_2:Net_68\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000001"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(\ConsolePort_2:Net_68\)
 
+UDB [UDB=(1,5)] contents:
+LAB@[UDB=(1,5)][LB=0] #macrocells=2, #inputs=6, #pterms=5
+{
+    [McSlotId=0]: (empty)
     [McSlotId=1]:     MacroCell: Name=\ConsolePort_2:WinTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=1]
         Total # of inputs        : 6
         Total # of product terms : 3
@@ -4574,40 +4450,12 @@ LAB@[UDB=(1,5)][LB=0] #macrocells=4, #inputs=9, #pterms=8
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ (fanout=1)
-        Properties               : 
-        {
-        }
+    [McSlotId=3]: (empty)
 }
 
-LAB@[UDB=(1,5)][LB=1] #macrocells=3, #inputs=4, #pterms=3
+LAB@[UDB=(1,5)][LB=1] #macrocells=2, #inputs=3, #pterms=2
 {
-    [McSlotId=0]:     MacroCell: Name=\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_2:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              Net_3500
-        );
-        Output = \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\ConsolePort_2:WinTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=1]
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_2:WinTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -4622,7 +4470,7 @@ LAB@[UDB=(1,5)][LB=1] #macrocells=3, #inputs=4, #pterms=3
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_2:WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(1,5)][LB=1][MC=2]
+    [McSlotId=1]:     MacroCell: Name=\ConsolePort_2:WinTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(1,5)][LB=1][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
             Clock Enable: True
@@ -4636,6 +4484,7 @@ LAB@[UDB=(1,5)][LB=1] #macrocells=3, #inputs=4, #pterms=3
         {
         }
 
+    [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
 }
 
@@ -4716,25 +4565,248 @@ controlcell: Name =\ConsolePort_2:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(2,0)] is empty.
-UDB [UDB=(2,1)] contents:
-LAB@[UDB=(2,1)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+UDB [UDB=(2,0)] contents:
+LAB@[UDB=(2,0)][LB=0] #macrocells=4, #inputs=6, #pterms=5
 {
-    [McSlotId=0]:     MacroCell: Name=Net_2981, Mode=(Combinatorial) @ [UDB=(2,1)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:Net_68\, Mode=(Combinatorial) @ [UDB=(2,0)][LB=0][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_1:Net_288\ * \ConsolePort_1:Net_61\
+        );
+        Output = \ConsolePort_1:Net_68\ (fanout=12)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:Net_61\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:per_zero\
+        );
+        Output = \ConsolePort_1:Net_61\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\ConsolePort_1:Net_288\, Mode=(T-Register) @ [UDB=(2,0)][LB=0][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\ConsolePort_1:Net_296\ * \ConsolePort_1:Net_288\ * 
+              !\ConsolePort_1:ClockFilter:genblk1[0]:sample\
+            + \ConsolePort_1:Net_296\ * !\ConsolePort_1:Net_288\ * 
+              \ConsolePort_1:ClockFilter:genblk1[0]:sample\
+        );
+        Output = \ConsolePort_1:Net_288\ (fanout=6)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\ConsolePort_1:Net_294\, Mode=(Combinatorial) @ [UDB=(2,0)][LB=0][MC=3]
         Total # of inputs        : 1
         Total # of product terms : 1
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !\ConsolePort_1:Net_201\
+              !\ConsolePort_1:Net_288\
         );
-        Output = Net_2981 (fanout=2)
+        Output = \ConsolePort_1:Net_294\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(2,0)][LB=1] #macrocells=2, #inputs=3, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:ClockFilter:genblk1[0]:sample\, Mode=(D-Register) @ [UDB=(2,0)][LB=1][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_1:Net_296\
+        );
+        Output = \ConsolePort_1:ClockFilter:genblk1[0]:sample\ (fanout=1)
         Properties               : 
         {
         }
 
     [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\ConsolePort_2:ClockTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(2,0)][LB=1][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_2:ClockTimer:TimerUDB:per_zero\
+        );
+        Output = \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\ConsolePort_1:ClockTimer:TimerUDB:sT8:timerdp:u0\
+    PORT MAP (
+        clock => \ConsolePort_1:Net_22\ ,
+        cs_addr_2 => \ConsolePort_1:Net_294\ ,
+        cs_addr_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ ,
+        cs_addr_0 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
+        z0_comb => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_2\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\
+    PORT MAP (
+        clock => \ConsolePort_1:Net_22\ ,
+        control_7 => \ConsolePort_1:RegD0:bSR:control_7\ ,
+        control_6 => \ConsolePort_1:RegD0:bSR:control_6\ ,
+        control_5 => \ConsolePort_1:RegD0:bSR:control_5\ ,
+        control_4 => \ConsolePort_1:RegD0:bSR:control_4\ ,
+        control_3 => \ConsolePort_1:RegD0:bSR:control_3\ ,
+        control_2 => \ConsolePort_1:RegD0:bSR:control_2\ ,
+        control_1 => \ConsolePort_1:RegD0:bSR:control_1\ ,
+        control_0 => \ConsolePort_1:RegD0:bSR:ctrl_clk_enable\ ,
+        clk_en => \ConsolePort_1:Net_68\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000001"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
+
+UDB [UDB=(2,1)] contents:
+LAB@[UDB=(2,1)][LB=0] #macrocells=2, #inputs=6, #pterms=4
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:per_zero\
+        );
+        Output = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
     [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=3]
+        Total # of inputs        : 6
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              \ConsolePort_1:Net_288\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ * 
+              !\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
+            + \ConsolePort_1:Net_288\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
+              !\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
+            + \ConsolePort_1:Net_288\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:control_7\ * 
+              !\ConsolePort_1:ClockTimer:TimerUDB:per_zero\ * 
+              !\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
+        );
+        Output = \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ (fanout=3)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(2,1)][LB=1] #macrocells=2, #inputs=6, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=1]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \ConsolePort_1:Net_288\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:per_zero\
+            + \ConsolePort_1:Net_288\ * 
+              \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
+        );
+        Output = \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\ConsolePort_1:Net_22\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \ConsolePort_1:ClockTimer:TimerUDB:control_7\
+        );
+        Output = \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ (fanout=4)
+        Properties               : 
+        {
+        }
+
     [McSlotId=3]: (empty)
 }
 
@@ -4777,204 +4849,6 @@ datapathcell: Name =\ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u1\
     Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
     Previous in chain : \ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u0\
 
-statusicell: Name =\ConsolePort_1:RegD0:bSR:StsReg\
-    PORT MAP (
-        clock => \ConsolePort_1:Net_22\ ,
-        status_6 => \ConsolePort_1:RegD0:bSR:status_6\ ,
-        status_5 => \ConsolePort_1:RegD0:bSR:status_5\ ,
-        status_4 => \ConsolePort_1:RegD0:bSR:status_4\ ,
-        status_3 => \ConsolePort_1:RegD0:bSR:status_3\ ,
-        clk_en => \ConsolePort_1:Net_68\ );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_int_mask = "0000111"
-        cy_md_select = "0000111"
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
-
-UDB [UDB=(2,2)] contents:
-LAB@[UDB=(2,2)][LB=0] #macrocells=4, #inputs=7, #pterms=5
-{
-    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:Net_68\, Mode=(Combinatorial) @ [UDB=(2,2)][LB=0][MC=0]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:Net_288\ * \ConsolePort_1:Net_61\
-        );
-        Output = \ConsolePort_1:Net_68\ (fanout=12)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(2,2)][LB=0][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:per_zero\
-        );
-        Output = \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_1:Net_288\, Mode=(T-Register) @ [UDB=(2,2)][LB=0][MC=2]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !\ConsolePort_1:Net_296\ * \ConsolePort_1:Net_288\ * 
-              !\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ * 
-              !\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\
-            + \ConsolePort_1:Net_296\ * !\ConsolePort_1:Net_288\ * 
-              \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ * 
-              \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_1:Net_288\ (fanout=6)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\ConsolePort_1:Net_294\, Mode=(Combinatorial) @ [UDB=(2,2)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\ConsolePort_1:Net_288\
-        );
-        Output = \ConsolePort_1:Net_294\ (fanout=2)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(2,2)][LB=1] #macrocells=4, #inputs=8, #pterms=7
-{
-    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\
-        );
-        Output = \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=1]
-        Total # of inputs        : 5
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \ConsolePort_1:Net_288\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:per_zero\
-            + \ConsolePort_1:Net_288\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
-        );
-        Output = \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=2]
-        Total # of inputs        : 6
-        Total # of product terms : 3
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 3 pterms
-        (
-              \ConsolePort_1:Net_288\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ * 
-              !\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
-            + \ConsolePort_1:Net_288\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
-              !\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
-            + \ConsolePort_1:Net_288\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:control_7\ * 
-              !\ConsolePort_1:ClockTimer:TimerUDB:per_zero\ * 
-              !\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\
-        );
-        Output = \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:Net_296\
-        );
-        Output = \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ (fanout=2)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u1\
-    PORT MAP (
-        clock => \ConsolePort_1:Net_22\ ,
-        cs_addr_2 => \ConsolePort_1:Net_294\ ,
-        cs_addr_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
-        z0_comb => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
-        f0_bus_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_3\ ,
-        f0_blk_stat_comb => \ConsolePort_1:ClockTimer:TimerUDB:status_2\ ,
-        chain_in => \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u0\
-
 statusicell: Name =\ConsolePort_1:ClockTimer:TimerUDB:rstSts:stsreg\
     PORT MAP (
         reset => \ConsolePort_1:Net_288\ ,
@@ -5013,71 +4887,24 @@ controlcell: Name =\ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(2,3)] contents:
-datapathcell: Name =\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\
-    PORT MAP (
-        clock => \ConsolePort_1:Net_22\ ,
-        cs_addr_2 => \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\ ,
-        chain_out => \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:carry\ ,
-        clk_en => \ConsolePort_1:Net_68\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010010101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110101000001000011100000000000000011100"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
-    Next in chain : \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\
-
-synccell: Name =\ConsolePort_1:ClockSync:genblk1[0]:INST\
-    PORT MAP (
-        clock => \ConsolePort_1:Net_22\ ,
-        in => Net_3503 ,
-        out => \ConsolePort_1:Net_296\ );
-    Properties:
-    {
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(2,4)] contents:
-LAB@[UDB=(2,4)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+UDB [UDB=(2,2)] contents:
+LAB@[UDB=(2,2)][LB=1] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=Net_3479, Mode=(Combinatorial) @ [UDB=(2,4)][LB=0][MC=0]
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=Net_3420, Mode=(Combinatorial) @ [UDB=(2,2)][LB=1][MC=3]
         Total # of inputs        : 1
         Total # of product terms : 1
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !\ConsolePort_1:Net_191\
+              !\ConsolePort_1:Net_213\
         );
-        Output = Net_3479 (fanout=2)
+        Output = Net_3420 (fanout=2)
         Properties               : 
         {
         }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
 }
 
 datapathcell: Name =\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\
@@ -5159,9 +4986,103 @@ controlcell: Name =\ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\
     Clock Polarity: Active High
     Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
 
+UDB [UDB=(2,3)] is empty.
+UDB [UDB=(2,4)] is empty.
 UDB [UDB=(2,5)] is empty.
-UDB [UDB=(3,0)] is empty.
+UDB [UDB=(3,0)] contents:
+LAB@[UDB=(3,0)][LB=1] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=Net_2981, Mode=(Combinatorial) @ [UDB=(3,0)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\ConsolePort_1:Net_201\
+        );
+        Output = Net_2981 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\ConsolePort_2:ClockTimer:TimerUDB:sT8:timerdp:u0\
+    PORT MAP (
+        clock => \ConsolePort_2:Net_22\ ,
+        cs_addr_2 => \ConsolePort_2:Net_294\ ,
+        cs_addr_1 => \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ ,
+        cs_addr_0 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
+        z0_comb => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \ConsolePort_2:ClockTimer:TimerUDB:status_2\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+statusicell: Name =\ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        reset => \ConsolePort_2:Net_288\ ,
+        clock => \ConsolePort_2:Net_22\ ,
+        status_3 => \ConsolePort_2:ClockTimer:TimerUDB:status_3\ ,
+        status_2 => \ConsolePort_2:ClockTimer:TimerUDB:status_2\ ,
+        status_0 => \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
 UDB [UDB=(3,1)] contents:
+LAB@[UDB=(3,1)][LB=1] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=\ConsolePort_2:Net_294\, Mode=(Combinatorial) @ [UDB=(3,1)][LB=1][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\ConsolePort_2:Net_288\
+        );
+        Output = \ConsolePort_2:Net_294\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
 datapathcell: Name =\ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
         clock => \ConsolePort_1:Net_22\ ,
@@ -5196,176 +5117,13 @@ datapathcell: Name =\ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
     Next in chain : \ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u1\
 
-controlcell: Name =\ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\
+statusicell: Name =\ConsolePort_1:RegD0:bSR:StsReg\
     PORT MAP (
         clock => \ConsolePort_1:Net_22\ ,
-        control_7 => \ConsolePort_1:RegD0:bSR:control_7\ ,
-        control_6 => \ConsolePort_1:RegD0:bSR:control_6\ ,
-        control_5 => \ConsolePort_1:RegD0:bSR:control_5\ ,
-        control_4 => \ConsolePort_1:RegD0:bSR:control_4\ ,
-        control_3 => \ConsolePort_1:RegD0:bSR:control_3\ ,
-        control_2 => \ConsolePort_1:RegD0:bSR:control_2\ ,
-        control_1 => \ConsolePort_1:RegD0:bSR:control_1\ ,
-        control_0 => \ConsolePort_1:RegD0:bSR:ctrl_clk_enable\ ,
-        clk_en => \ConsolePort_1:Net_68\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000001"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
-
-UDB [UDB=(3,2)] contents:
-LAB@[UDB=(3,2)][LB=0] #macrocells=1, #inputs=2, #pterms=1
-{
-    [McSlotId=0]:     MacroCell: Name=\ConsolePort_1:Net_61\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=0]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ * 
-              \ConsolePort_1:ClockTimer:TimerUDB:per_zero\
-        );
-        Output = \ConsolePort_1:Net_61\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(3,2)][LB=1] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=\ConsolePort_1:ClockTimer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(3,2)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\ConsolePort_1:Net_22\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \ConsolePort_1:ClockTimer:TimerUDB:control_7\
-        );
-        Output = \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
-datapathcell: Name =\ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u0\
-    PORT MAP (
-        clock => \ConsolePort_1:Net_22\ ,
-        cs_addr_2 => \ConsolePort_1:Net_294\ ,
-        cs_addr_1 => \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ ,
-        chain_out => \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Next in chain : \ConsolePort_1:ClockTimer:TimerUDB:sT16:timerdp:u1\
-
-UDB [UDB=(3,3)] contents:
-LAB@[UDB=(3,3)][LB=0] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=Net_3420, Mode=(Combinatorial) @ [UDB=(3,3)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\ConsolePort_1:Net_213\
-        );
-        Output = Net_3420 (fanout=2)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\
-    PORT MAP (
-        clock => \ConsolePort_1:Net_22\ ,
-        cs_addr_2 => \ConsolePort_1:RegD1:bSR:ctrl_clk_enable\ ,
-        so_comb => \ConsolePort_1:Net_213\ ,
-        f0_bus_stat_comb => \ConsolePort_1:RegD1:bSR:status_4\ ,
-        f0_blk_stat_comb => \ConsolePort_1:RegD1:bSR:status_3\ ,
-        f1_bus_stat_comb => \ConsolePort_1:RegD1:bSR:status_6\ ,
-        f1_blk_stat_comb => \ConsolePort_1:RegD1:bSR:status_5\ ,
-        chain_in => \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:carry\ ,
-        clk_en => \ConsolePort_1:Net_68\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000100000000000000010000000000000001000000000000000100000000000000010010101000010101000010000000000000011000000101010000100000011111111000000001111111111111111010101011110111100001000111100100000000000011100"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
-    Previous in chain : \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\
-
-statusicell: Name =\ConsolePort_1:RegD1:bSR:StsReg\
-    PORT MAP (
-        clock => \ConsolePort_1:Net_22\ ,
-        status_6 => \ConsolePort_1:RegD1:bSR:status_6\ ,
-        status_5 => \ConsolePort_1:RegD1:bSR:status_5\ ,
-        status_4 => \ConsolePort_1:RegD1:bSR:status_4\ ,
-        status_3 => \ConsolePort_1:RegD1:bSR:status_3\ ,
+        status_6 => \ConsolePort_1:RegD0:bSR:status_6\ ,
+        status_5 => \ConsolePort_1:RegD0:bSR:status_5\ ,
+        status_4 => \ConsolePort_1:RegD0:bSR:status_4\ ,
+        status_3 => \ConsolePort_1:RegD0:bSR:status_3\ ,
         clk_en => \ConsolePort_1:Net_68\ );
     Properties:
     {
@@ -5399,7 +5157,7 @@ controlcell: Name =\ConsolePort_1:RegD1:bSR:SyncCtl:CtrlReg\
     Clock Polarity: Active High
     Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
 
-UDB [UDB=(3,4)] contents:
+UDB [UDB=(3,2)] contents:
 datapathcell: Name =\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\
     PORT MAP (
         clock => \ConsolePort_1:Net_22\ ,
@@ -5434,6 +5192,19 @@ datapathcell: Name =\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\
     Clock Enable: PosEdge(\ConsolePort_1:Net_68\)
     Next in chain : \ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\
 
+synccell: Name =\ConsolePort_1:ClockSync:genblk1[0]:INST\
+    PORT MAP (
+        clock => \ConsolePort_1:Net_22\ ,
+        in => Net_3503 ,
+        out => \ConsolePort_1:Net_296\ );
+    Properties:
+    {
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,3)] is empty.
+UDB [UDB=(3,4)] is empty.
 UDB [UDB=(3,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
   Intr@ [IntrContainer=(0)][IntrId=(0)] 
@@ -6465,32 +6236,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |            Name | Connection
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.017ms
-Digital Placement phase: Elapsed time ==> 2s.031ms
+Digital component placer commit/Report: Elapsed time ==> 0s.002ms
+Digital Placement phase: Elapsed time ==> 1s.583ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.779ms
+Digital Routing phase: Elapsed time ==> 1s.805ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.348ms
+Bitstream Generation phase: Elapsed time ==> 0s.173ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.080ms
+Bitstream Verification phase: Elapsed time ==> 0s.034ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in TASBot_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.462ms
+Static timing analysis phase: Elapsed time ==> 0s.393ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.005ms
+Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.194ms
+Design database save phase: Elapsed time ==> 0s.184ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 5s.843ms
+cydsfit: Elapsed time ==> 4s.593ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 5s.853ms
-API generation phase: Elapsed time ==> 1s.825ms
-Dependency generation phase: Elapsed time ==> 0s.027ms
-Cleanup phase: Elapsed time ==> 0s.002ms
+Fitter phase: Elapsed time ==> 4s.594ms
+API generation phase: Elapsed time ==> 1s.737ms
+Dependency generation phase: Elapsed time ==> 0s.019ms
+Cleanup phase: Elapsed time ==> 0s.000ms

@@ -402,12 +402,12 @@ void ConsolePort_2_ClockTimer_WriteControlRegister(uint8 control)
 *  The present value of the counter.
 *
 *******************************************************************************/
-uint16 ConsolePort_2_ClockTimer_ReadPeriod(void) 
+uint8 ConsolePort_2_ClockTimer_ReadPeriod(void) 
 {
    #if(ConsolePort_2_ClockTimer_UsingFixedFunction)
-       return ((uint16)CY_GET_REG16(ConsolePort_2_ClockTimer_PERIOD_LSB_PTR));
+       return ((uint8)CY_GET_REG16(ConsolePort_2_ClockTimer_PERIOD_LSB_PTR));
    #else
-       return (CY_GET_REG16(ConsolePort_2_ClockTimer_PERIOD_LSB_PTR));
+       return (CY_GET_REG8(ConsolePort_2_ClockTimer_PERIOD_LSB_PTR));
    #endif /* (ConsolePort_2_ClockTimer_UsingFixedFunction) */
 }
 
@@ -428,13 +428,13 @@ uint16 ConsolePort_2_ClockTimer_ReadPeriod(void)
 *  void
 *
 *******************************************************************************/
-void ConsolePort_2_ClockTimer_WritePeriod(uint16 period) 
+void ConsolePort_2_ClockTimer_WritePeriod(uint8 period) 
 {
     #if(ConsolePort_2_ClockTimer_UsingFixedFunction)
         uint16 period_temp = (uint16)period;
         CY_SET_REG16(ConsolePort_2_ClockTimer_PERIOD_LSB_PTR, period_temp);
     #else
-        CY_SET_REG16(ConsolePort_2_ClockTimer_PERIOD_LSB_PTR, period);
+        CY_SET_REG8(ConsolePort_2_ClockTimer_PERIOD_LSB_PTR, period);
     #endif /*Write Period value with appropriate resolution suffix depending on UDB or fixed function implementation */
 }
 
@@ -453,12 +453,12 @@ void ConsolePort_2_ClockTimer_WritePeriod(uint16 period)
 *  Present Capture value.
 *
 *******************************************************************************/
-uint16 ConsolePort_2_ClockTimer_ReadCapture(void) 
+uint8 ConsolePort_2_ClockTimer_ReadCapture(void) 
 {
    #if(ConsolePort_2_ClockTimer_UsingFixedFunction)
-       return ((uint16)CY_GET_REG16(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
+       return ((uint8)CY_GET_REG16(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
    #else
-       return (CY_GET_REG16(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
+       return (CY_GET_REG8(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
    #endif /* (ConsolePort_2_ClockTimer_UsingFixedFunction) */
 }
 
@@ -477,7 +477,7 @@ uint16 ConsolePort_2_ClockTimer_ReadCapture(void)
 *  void
 *
 *******************************************************************************/
-void ConsolePort_2_ClockTimer_WriteCounter(uint16 counter) 
+void ConsolePort_2_ClockTimer_WriteCounter(uint8 counter) 
 {
    #if(ConsolePort_2_ClockTimer_UsingFixedFunction)
         /* This functionality is removed until a FixedFunction HW update to
@@ -486,7 +486,7 @@ void ConsolePort_2_ClockTimer_WriteCounter(uint16 counter)
         CY_SET_REG16(ConsolePort_2_ClockTimer_COUNTER_LSB_PTR, (uint16)counter);
         
     #else
-        CY_SET_REG16(ConsolePort_2_ClockTimer_COUNTER_LSB_PTR, counter);
+        CY_SET_REG8(ConsolePort_2_ClockTimer_COUNTER_LSB_PTR, counter);
     #endif /* Set Write Counter only for the UDB implementation (Write Counter not available in fixed function Timer */
 }
 
@@ -505,7 +505,7 @@ void ConsolePort_2_ClockTimer_WriteCounter(uint16 counter)
 *  Present compare value.
 *
 *******************************************************************************/
-uint16 ConsolePort_2_ClockTimer_ReadCounter(void) 
+uint8 ConsolePort_2_ClockTimer_ReadCounter(void) 
 {
     /* Force capture by reading Accumulator */
     /* Must first do a software capture to be able to read the counter */
@@ -518,9 +518,9 @@ uint16 ConsolePort_2_ClockTimer_ReadCounter(void)
 
     /* Read the data from the FIFO (or capture register for Fixed Function)*/
     #if(ConsolePort_2_ClockTimer_UsingFixedFunction)
-        return ((uint16)CY_GET_REG16(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
+        return ((uint8)CY_GET_REG16(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
     #else
-        return (CY_GET_REG16(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
+        return (CY_GET_REG8(ConsolePort_2_ClockTimer_CAPTURE_LSB_PTR));
     #endif /* (ConsolePort_2_ClockTimer_UsingFixedFunction) */
 }
 

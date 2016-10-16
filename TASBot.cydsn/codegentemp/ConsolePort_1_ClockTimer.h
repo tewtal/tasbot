@@ -36,7 +36,7 @@ extern uint8 ConsolePort_1_ClockTimer_initVar;
 *           Parameter Defaults
 **************************************/
 
-#define ConsolePort_1_ClockTimer_Resolution                 16u
+#define ConsolePort_1_ClockTimer_Resolution                 8u
 #define ConsolePort_1_ClockTimer_UsingFixedFunction         0u
 #define ConsolePort_1_ClockTimer_UsingHWCaptureCounter      0u
 #define ConsolePort_1_ClockTimer_SoftwareCaptureMode        0u
@@ -69,7 +69,7 @@ typedef struct
     uint8 TimerEnableState;
     #if(!ConsolePort_1_ClockTimer_UsingFixedFunction)
 
-        uint16 TimerUdb;
+        uint8 TimerUdb;
         uint8 InterruptMaskValue;
         #if (ConsolePort_1_ClockTimer_UsingHWCaptureCounter)
             uint8 TimerCaptureCounter;
@@ -100,11 +100,11 @@ uint8   ConsolePort_1_ClockTimer_ReadStatusRegister(void) ;
     void    ConsolePort_1_ClockTimer_WriteControlRegister(uint8 control) ;
 #endif /* (!ConsolePort_1_ClockTimer_UDB_CONTROL_REG_REMOVED) */
 
-uint16  ConsolePort_1_ClockTimer_ReadPeriod(void) ;
-void    ConsolePort_1_ClockTimer_WritePeriod(uint16 period) ;
-uint16  ConsolePort_1_ClockTimer_ReadCounter(void) ;
-void    ConsolePort_1_ClockTimer_WriteCounter(uint16 counter) ;
-uint16  ConsolePort_1_ClockTimer_ReadCapture(void) ;
+uint8  ConsolePort_1_ClockTimer_ReadPeriod(void) ;
+void    ConsolePort_1_ClockTimer_WritePeriod(uint8 period) ;
+uint8  ConsolePort_1_ClockTimer_ReadCounter(void) ;
+void    ConsolePort_1_ClockTimer_WriteCounter(uint8 counter) ;
+uint8  ConsolePort_1_ClockTimer_ReadCapture(void) ;
 void    ConsolePort_1_ClockTimer_SoftwareCapture(void) ;
 
 #if(!ConsolePort_1_ClockTimer_UsingFixedFunction) /* UDB Prototypes */
@@ -313,54 +313,54 @@ void ConsolePort_1_ClockTimer_Wakeup(void)        ;
     #define ConsolePort_1_ClockTimer_CONTROL             (* (reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_REG )
     
     #if(ConsolePort_1_ClockTimer_Resolution <= 8u) /* 8-bit Timer */
-        #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-        #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+        #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+        #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+        #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+        #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+        #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
+        #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
     #elif(ConsolePort_1_ClockTimer_Resolution <= 16u) /* 8-bit Timer */
         #if(CY_PSOC3) /* 8-bit addres space */
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
         #else /* 16-bit address space */
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__16BIT_F0_REG )
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__16BIT_F0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__16BIT_D0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__16BIT_D0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__16BIT_A0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__16BIT_A0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__16BIT_F0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__16BIT_F0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__16BIT_D0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__16BIT_D0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__16BIT_A0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__16BIT_A0_REG )
         #endif /* CY_PSOC3 */
     #elif(ConsolePort_1_ClockTimer_Resolution <= 24u)/* 24-bit Timer */
-        #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-        #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+        #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+        #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+        #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+        #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+        #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
+        #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
     #else /* 32-bit Timer */
         #if(CY_PSOC3 || CY_PSOC5) /* 8-bit address space */
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__F0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__D0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
         #else /* 32-bit address space */
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__32BIT_F0_REG )
-            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__32BIT_F0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__32BIT_D0_REG )
-            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__32BIT_D0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__32BIT_A0_REG )
-            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__32BIT_A0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__32BIT_F0_REG )
+            #define ConsolePort_1_ClockTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__32BIT_F0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__32BIT_D0_REG )
+            #define ConsolePort_1_ClockTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__32BIT_D0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__32BIT_A0_REG )
+            #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__32BIT_A0_REG )
         #endif /* CY_PSOC3 || CY_PSOC5 */ 
     #endif
 
-    #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR_8BIT       ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+    #define ConsolePort_1_ClockTimer_COUNTER_LSB_PTR_8BIT       ((reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sT8_timerdp_u0__A0_REG )
     
     #if (ConsolePort_1_ClockTimer_UsingHWCaptureCounter)
         #define ConsolePort_1_ClockTimer_CAP_COUNT              (*(reg8 *) ConsolePort_1_ClockTimer_TimerUDB_sCapCount_counter__PERIOD_REG )
