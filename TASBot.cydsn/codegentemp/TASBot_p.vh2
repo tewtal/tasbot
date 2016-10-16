@@ -1,5 +1,5 @@
 -- Project:   TASBot
--- Generated: 10/16/2016 17:42:16
+-- Generated: 10/16/2016 18:05:53
 -- PSoC Creator  4.0
 
 ENTITY TASBot IS
@@ -74,7 +74,8 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL P2_D2(0)__PA : bit;
     SIGNAL P2_D2(1)__PA : bit;
     SIGNAL P2_Latch(0)__PA : bit;
-    SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:sample\ : bit;
+    SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : bit;
+    SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_0\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_1\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_2\ : bit;
@@ -90,7 +91,8 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : bit;
-    SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:sample\ : bit;
+    SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : bit;
+    SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \ConsolePort_1:Net_191\ : bit;
     SIGNAL \ConsolePort_1:Net_201\ : bit;
     SIGNAL \ConsolePort_1:Net_213\ : bit;
@@ -157,7 +159,8 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:status_tc\ : bit;
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : bit;
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : bit;
-    SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:sample\ : bit;
+    SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : bit;
+    SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_0\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_1\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_2\ : bit;
@@ -173,7 +176,8 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : bit;
-    SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:sample\ : bit;
+    SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : bit;
+    SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : bit;
     SIGNAL \ConsolePort_2:Net_191\ : bit;
     SIGNAL \ConsolePort_2:Net_201\ : bit;
     SIGNAL \ConsolePort_2:Net_213\ : bit;
@@ -462,25 +466,29 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell15";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell16";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell17";
-    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:sample\ : LABEL IS "macrocell18";
-    ATTRIBUTE lib_model OF Net_3493 : LABEL IS "macrocell19";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell20";
-    ATTRIBUTE lib_model OF \ConsolePort_2:Net_61\ : LABEL IS "macrocell21";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell22";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell23";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:sample\ : LABEL IS "macrocell24";
-    ATTRIBUTE lib_model OF \ConsolePort_2:Net_288\ : LABEL IS "macrocell25";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell26";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell27";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell28";
-    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:sample\ : LABEL IS "macrocell29";
-    ATTRIBUTE lib_model OF Net_3417 : LABEL IS "macrocell30";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell31";
-    ATTRIBUTE lib_model OF \ConsolePort_1:Net_61\ : LABEL IS "macrocell32";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell33";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell34";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:sample\ : LABEL IS "macrocell35";
-    ATTRIBUTE lib_model OF \ConsolePort_1:Net_288\ : LABEL IS "macrocell36";
+    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell18";
+    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell19";
+    ATTRIBUTE lib_model OF Net_3493 : LABEL IS "macrocell20";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell21";
+    ATTRIBUTE lib_model OF \ConsolePort_2:Net_61\ : LABEL IS "macrocell22";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell23";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell24";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell25";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell26";
+    ATTRIBUTE lib_model OF \ConsolePort_2:Net_288\ : LABEL IS "macrocell27";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell28";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell29";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell30";
+    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell31";
+    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell32";
+    ATTRIBUTE lib_model OF Net_3417 : LABEL IS "macrocell33";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell34";
+    ATTRIBUTE lib_model OF \ConsolePort_1:Net_61\ : LABEL IS "macrocell35";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell36";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell37";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell38";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell39";
+    ATTRIBUTE lib_model OF \ConsolePort_1:Net_288\ : LABEL IS "macrocell40";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -3655,20 +3663,31 @@ BEGIN
             main_3 => Net_3493,
             main_4 => \ConsolePort_2:WinTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_2:LatchFilter:genblk1[0]:sample\:macrocell
+    \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \ConsolePort_2:LatchFilter:genblk1[0]:sample\,
+            q => \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\,
+            clock_0 => \ConsolePort_2:Net_22\,
+            main_0 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\);
+
+    \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\,
             clock_0 => \ConsolePort_2:Net_22\,
             main_0 => Net_3500);
 
     Net_3493:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2) + (main_0 * !main_1 * main_2)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -3677,7 +3696,8 @@ BEGIN
             clock_0 => \ConsolePort_2:Net_22\,
             main_0 => Net_3500,
             main_1 => Net_3493,
-            main_2 => \ConsolePort_2:LatchFilter:genblk1[0]:sample\);
+            main_2 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\);
 
     \ConsolePort_2:ClockTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
@@ -3733,20 +3753,31 @@ BEGIN
             main_3 => \ConsolePort_2:ClockTimer:TimerUDB:per_zero\,
             main_4 => \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_2:ClockFilter:genblk1[0]:sample\:macrocell
+    \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \ConsolePort_2:ClockFilter:genblk1[0]:sample\,
+            q => \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\,
+            clock_0 => \ConsolePort_2:Net_22\,
+            main_0 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\);
+
+    \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\,
             clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:Net_296\);
 
     \ConsolePort_2:Net_288\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2) + (main_0 * !main_1 * main_2)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -3755,7 +3786,8 @@ BEGIN
             clock_0 => \ConsolePort_2:Net_22\,
             main_0 => \ConsolePort_2:Net_296\,
             main_1 => \ConsolePort_2:Net_288\,
-            main_2 => \ConsolePort_2:ClockFilter:genblk1[0]:sample\);
+            main_2 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\);
 
     \ConsolePort_1:WinTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
@@ -3799,20 +3831,31 @@ BEGIN
             main_3 => \ConsolePort_1:WinTimer:TimerUDB:per_zero\,
             main_4 => \ConsolePort_1:WinTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_1:LatchFilter:genblk1[0]:sample\:macrocell
+    \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \ConsolePort_1:LatchFilter:genblk1[0]:sample\,
+            q => \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\,
+            clock_0 => \ConsolePort_1:Net_22\,
+            main_0 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\);
+
+    \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\,
             clock_0 => \ConsolePort_1:Net_22\,
             main_0 => Net_3415);
 
     Net_3417:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2) + (main_0 * !main_1 * main_2)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -3821,7 +3864,8 @@ BEGIN
             clock_0 => \ConsolePort_1:Net_22\,
             main_0 => Net_3415,
             main_1 => Net_3417,
-            main_2 => \ConsolePort_1:LatchFilter:genblk1[0]:sample\);
+            main_2 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\);
 
     \ConsolePort_1:ClockTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
@@ -3877,20 +3921,31 @@ BEGIN
             main_3 => \ConsolePort_1:ClockTimer:TimerUDB:per_zero\,
             main_4 => \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\);
 
-    \ConsolePort_1:ClockFilter:genblk1[0]:sample\:macrocell
+    \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \ConsolePort_1:ClockFilter:genblk1[0]:sample\,
+            q => \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\,
+            clock_0 => \ConsolePort_1:Net_22\,
+            main_0 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\);
+
+    \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\,
             clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:Net_296\);
 
     \ConsolePort_1:Net_288\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * !main_2) + (main_0 * !main_1 * main_2)",
+            eqn_main => "(!main_0 * main_1 * !main_2 * !main_3) + (main_0 * !main_1 * main_2 * main_3)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -3899,6 +3954,7 @@ BEGIN
             clock_0 => \ConsolePort_1:Net_22\,
             main_0 => \ConsolePort_1:Net_296\,
             main_1 => \ConsolePort_1:Net_288\,
-            main_2 => \ConsolePort_1:ClockFilter:genblk1[0]:sample\);
+            main_2 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\,
+            main_3 => \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\);
 
 END __DEFAULT__;

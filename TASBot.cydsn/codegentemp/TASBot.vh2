@@ -2,7 +2,7 @@
 --	Conversion of TASBot.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Oct 16 17:42:15 2016
+--	Sun Oct 16 18:05:52 2016
 --
 
 USE cypress.cypress.all;
@@ -571,7 +571,8 @@ SIGNAL \ConsolePort_2:WinTimer:Net_102\ : bit;
 SIGNAL \ConsolePort_2:WinTimer:Net_266\ : bit;
 SIGNAL \ConsolePort_2:LatchFilter:op_clk\ : bit;
 SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:sample\ : bit;
+SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : bit;
+SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : bit;
 SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:and_term\ : bit;
 SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:last_state\ : bit;
 SIGNAL \ConsolePort_2:RegD1:Net_350\ : bit;
@@ -853,7 +854,8 @@ SIGNAL \ConsolePort_2:ClockTimer:Net_102\ : bit;
 SIGNAL \ConsolePort_2:ClockTimer:Net_266\ : bit;
 SIGNAL \ConsolePort_2:ClockFilter:op_clk\ : bit;
 SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:sample\ : bit;
+SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : bit;
+SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : bit;
 SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:and_term\ : bit;
 SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:last_state\ : bit;
 SIGNAL Net_3487 : bit;
@@ -1453,7 +1455,8 @@ SIGNAL \ConsolePort_1:WinTimer:Net_102\ : bit;
 SIGNAL \ConsolePort_1:WinTimer:Net_266\ : bit;
 SIGNAL \ConsolePort_1:LatchFilter:op_clk\ : bit;
 SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:sample\ : bit;
+SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : bit;
+SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : bit;
 SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:and_term\ : bit;
 SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:last_state\ : bit;
 SIGNAL \ConsolePort_1:RegD1:Net_350\ : bit;
@@ -1735,7 +1738,8 @@ SIGNAL \ConsolePort_1:ClockTimer:Net_102\ : bit;
 SIGNAL \ConsolePort_1:ClockTimer:Net_266\ : bit;
 SIGNAL \ConsolePort_1:ClockFilter:op_clk\ : bit;
 SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:or_term\ : bit;
-SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:sample\ : bit;
+SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : bit;
+SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : bit;
 SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:and_term\ : bit;
 SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:last_state\ : bit;
 SIGNAL tmpOE__P1_D0_net_1 : bit;
@@ -1770,7 +1774,8 @@ SIGNAL \ConsolePort_2:WinTimer:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_2:WinTimer:TimerUDB:capture_out_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_2:WinTimer:TimerUDB:runmode_enable\\D\ : bit;
 SIGNAL \ConsolePort_2:WinTimer:TimerUDB:trig_disable\\D\ : bit;
-SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:sample\\D\ : bit;
+SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\\D\ : bit;
+SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\\D\ : bit;
 SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:last_state\\D\ : bit;
 SIGNAL \ConsolePort_2:RegD1:bSR:load_reg\\D\ : bit;
 SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:capture_last\\D\ : bit;
@@ -1779,7 +1784,8 @@ SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:capture_out_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:runmode_enable\\D\ : bit;
 SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\\D\ : bit;
-SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:sample\\D\ : bit;
+SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\\D\ : bit;
+SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\\D\ : bit;
 SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:last_state\\D\ : bit;
 SIGNAL \ConsolePort_1:RegD2:bSR:load_reg\\D\ : bit;
 SIGNAL \ConsolePort_1:RegD0:bSR:load_reg\\D\ : bit;
@@ -1789,7 +1795,8 @@ SIGNAL \ConsolePort_1:WinTimer:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_1:WinTimer:TimerUDB:capture_out_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_1:WinTimer:TimerUDB:runmode_enable\\D\ : bit;
 SIGNAL \ConsolePort_1:WinTimer:TimerUDB:trig_disable\\D\ : bit;
-SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:sample\\D\ : bit;
+SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\\D\ : bit;
+SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\\D\ : bit;
 SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:last_state\\D\ : bit;
 SIGNAL \ConsolePort_1:RegD1:bSR:load_reg\\D\ : bit;
 SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:capture_last\\D\ : bit;
@@ -1798,7 +1805,8 @@ SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:tc_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:capture_out_reg_i\\D\ : bit;
 SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:runmode_enable\\D\ : bit;
 SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\\D\ : bit;
-SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:sample\\D\ : bit;
+SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\\D\ : bit;
+SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\\D\ : bit;
 SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:last_state\\D\ : bit;
 BEGIN
 
@@ -1821,8 +1829,9 @@ Net_3489 <= (not \ConsolePort_2:Net_201\);
 \ConsolePort_2:WinTimer:TimerUDB:trig_disable\\D\ <= ((not Net_3493 and \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ and \ConsolePort_2:WinTimer:TimerUDB:run_mode\ and \ConsolePort_2:WinTimer:TimerUDB:per_zero\)
 	OR (not Net_3493 and \ConsolePort_2:WinTimer:TimerUDB:trig_disable\));
 
-\ConsolePort_2:LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_3493 and \ConsolePort_2:LatchFilter:genblk1[0]:sample\)
-	OR (Net_3500 and \ConsolePort_2:LatchFilter:genblk1[0]:sample\)
+\ConsolePort_2:LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_3500 and \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ and \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\)
+	OR (Net_3493 and \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\)
+	OR (Net_3493 and \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\)
 	OR (Net_3500 and Net_3493));
 
 \ConsolePort_2:Net_294\ <= (not \ConsolePort_2:Net_288\);
@@ -1836,8 +1845,9 @@ Net_3489 <= (not \ConsolePort_2:Net_201\);
 \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\\D\ <= ((\ConsolePort_2:Net_288\ and \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ and \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ and \ConsolePort_2:ClockTimer:TimerUDB:per_zero\)
 	OR (\ConsolePort_2:Net_288\ and \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\));
 
-\ConsolePort_2:ClockFilter:genblk1[0]:last_state\\D\ <= ((\ConsolePort_2:Net_288\ and \ConsolePort_2:ClockFilter:genblk1[0]:sample\)
-	OR (\ConsolePort_2:Net_296\ and \ConsolePort_2:ClockFilter:genblk1[0]:sample\)
+\ConsolePort_2:ClockFilter:genblk1[0]:last_state\\D\ <= ((\ConsolePort_2:Net_296\ and \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ and \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\)
+	OR (\ConsolePort_2:Net_288\ and \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\)
+	OR (\ConsolePort_2:Net_288\ and \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\)
 	OR (\ConsolePort_2:Net_296\ and \ConsolePort_2:Net_288\));
 
 Net_3487 <= (not \ConsolePort_2:Net_213\);
@@ -1857,8 +1867,9 @@ Net_2981 <= (not \ConsolePort_1:Net_201\);
 \ConsolePort_1:WinTimer:TimerUDB:trig_disable\\D\ <= ((not Net_3417 and \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ and \ConsolePort_1:WinTimer:TimerUDB:run_mode\ and \ConsolePort_1:WinTimer:TimerUDB:per_zero\)
 	OR (not Net_3417 and \ConsolePort_1:WinTimer:TimerUDB:trig_disable\));
 
-\ConsolePort_1:LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_3417 and \ConsolePort_1:LatchFilter:genblk1[0]:sample\)
-	OR (Net_3415 and \ConsolePort_1:LatchFilter:genblk1[0]:sample\)
+\ConsolePort_1:LatchFilter:genblk1[0]:last_state\\D\ <= ((Net_3415 and \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ and \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\)
+	OR (Net_3417 and \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\)
+	OR (Net_3417 and \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\)
 	OR (Net_3415 and Net_3417));
 
 \ConsolePort_1:Net_294\ <= (not \ConsolePort_1:Net_288\);
@@ -1872,8 +1883,9 @@ Net_2981 <= (not \ConsolePort_1:Net_201\);
 \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\\D\ <= ((\ConsolePort_1:Net_288\ and \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ and \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ and \ConsolePort_1:ClockTimer:TimerUDB:per_zero\)
 	OR (\ConsolePort_1:Net_288\ and \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\));
 
-\ConsolePort_1:ClockFilter:genblk1[0]:last_state\\D\ <= ((\ConsolePort_1:Net_288\ and \ConsolePort_1:ClockFilter:genblk1[0]:sample\)
-	OR (\ConsolePort_1:Net_296\ and \ConsolePort_1:ClockFilter:genblk1[0]:sample\)
+\ConsolePort_1:ClockFilter:genblk1[0]:last_state\\D\ <= ((\ConsolePort_1:Net_296\ and \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ and \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\)
+	OR (\ConsolePort_1:Net_288\ and \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\)
+	OR (\ConsolePort_1:Net_288\ and \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\)
 	OR (\ConsolePort_1:Net_296\ and \ConsolePort_1:Net_288\));
 
 Net_3420 <= (not \ConsolePort_1:Net_213\);
@@ -2167,7 +2179,7 @@ P2_Clock:cy_psoc3_pins_v1_10
 		id=>"5f0da0ba-69a3-4c7a-a7ac-762d0d02bb7a/fa7d2b21-7458-43b1-ab5c-f9a9fcaacd0b",
 		source_clock_id=>"61737EF6-3B74-48f9-8B91-F7473A442AE7",
 		divisor=>0,
-		period=>"83333333.3333333",
+		period=>"41666666.6666667",
 		is_direct=>'0',
 		is_digital=>'1')
 	PORT MAP(clock_out=>\ConsolePort_2:Net_22\,
@@ -3507,7 +3519,7 @@ P2_TimerIRQ:cy_isr_v1_0
 		id=>"b5675301-1a3d-48cf-a075-b757f3c45982/fa7d2b21-7458-43b1-ab5c-f9a9fcaacd0b",
 		source_clock_id=>"61737EF6-3B74-48f9-8B91-F7473A442AE7",
 		divisor=>0,
-		period=>"83333333.3333333",
+		period=>"41666666.6666667",
 		is_direct=>'0',
 		is_digital=>'1')
 	PORT MAP(clock_out=>\ConsolePort_1:Net_22\,
@@ -4668,10 +4680,14 @@ P2_D0:cy_psoc3_pins_v1_10
 	PORT MAP(d=>\ConsolePort_2:WinTimer:TimerUDB:trig_disable\\D\,
 		clk=>\ConsolePort_2:WinTimer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\ConsolePort_2:WinTimer:TimerUDB:trig_disable\);
-\ConsolePort_2:LatchFilter:genblk1[0]:sample\:cy_dff
+\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\:cy_dff
+	PORT MAP(d=>\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\,
+		clk=>\ConsolePort_2:LatchFilter:op_clk\,
+		q=>\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\);
+\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\:cy_dff
 	PORT MAP(d=>Net_3500,
 		clk=>\ConsolePort_2:LatchFilter:op_clk\,
-		q=>\ConsolePort_2:LatchFilter:genblk1[0]:sample\);
+		q=>\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\);
 \ConsolePort_2:LatchFilter:genblk1[0]:last_state\:cy_dff
 	PORT MAP(d=>\ConsolePort_2:LatchFilter:genblk1[0]:last_state\\D\,
 		clk=>\ConsolePort_2:LatchFilter:op_clk\,
@@ -4704,10 +4720,14 @@ P2_D0:cy_psoc3_pins_v1_10
 	PORT MAP(d=>\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\\D\,
 		clk=>\ConsolePort_2:ClockTimer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\);
-\ConsolePort_2:ClockFilter:genblk1[0]:sample\:cy_dff
+\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\:cy_dff
+	PORT MAP(d=>\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\,
+		clk=>\ConsolePort_2:ClockFilter:op_clk\,
+		q=>\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\);
+\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\:cy_dff
 	PORT MAP(d=>\ConsolePort_2:Net_296\,
 		clk=>\ConsolePort_2:ClockFilter:op_clk\,
-		q=>\ConsolePort_2:ClockFilter:genblk1[0]:sample\);
+		q=>\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\);
 \ConsolePort_2:ClockFilter:genblk1[0]:last_state\:cy_dff
 	PORT MAP(d=>\ConsolePort_2:ClockFilter:genblk1[0]:last_state\\D\,
 		clk=>\ConsolePort_2:ClockFilter:op_clk\,
@@ -4744,10 +4764,14 @@ P2_D0:cy_psoc3_pins_v1_10
 	PORT MAP(d=>\ConsolePort_1:WinTimer:TimerUDB:trig_disable\\D\,
 		clk=>\ConsolePort_1:WinTimer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\ConsolePort_1:WinTimer:TimerUDB:trig_disable\);
-\ConsolePort_1:LatchFilter:genblk1[0]:sample\:cy_dff
+\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\:cy_dff
+	PORT MAP(d=>\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\,
+		clk=>\ConsolePort_1:LatchFilter:op_clk\,
+		q=>\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\);
+\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\:cy_dff
 	PORT MAP(d=>Net_3415,
 		clk=>\ConsolePort_1:LatchFilter:op_clk\,
-		q=>\ConsolePort_1:LatchFilter:genblk1[0]:sample\);
+		q=>\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\);
 \ConsolePort_1:LatchFilter:genblk1[0]:last_state\:cy_dff
 	PORT MAP(d=>\ConsolePort_1:LatchFilter:genblk1[0]:last_state\\D\,
 		clk=>\ConsolePort_1:LatchFilter:op_clk\,
@@ -4780,10 +4804,14 @@ P2_D0:cy_psoc3_pins_v1_10
 	PORT MAP(d=>\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\\D\,
 		clk=>\ConsolePort_1:ClockTimer:TimerUDB:ClockOutFromEnBlock\,
 		q=>\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\);
-\ConsolePort_1:ClockFilter:genblk1[0]:sample\:cy_dff
+\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\:cy_dff
+	PORT MAP(d=>\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\,
+		clk=>\ConsolePort_1:ClockFilter:op_clk\,
+		q=>\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\);
+\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\:cy_dff
 	PORT MAP(d=>\ConsolePort_1:Net_296\,
 		clk=>\ConsolePort_1:ClockFilter:op_clk\,
-		q=>\ConsolePort_1:ClockFilter:genblk1[0]:sample\);
+		q=>\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\);
 \ConsolePort_1:ClockFilter:genblk1[0]:last_state\:cy_dff
 	PORT MAP(d=>\ConsolePort_1:ClockFilter:genblk1[0]:last_state\\D\,
 		clk=>\ConsolePort_1:ClockFilter:op_clk\,
