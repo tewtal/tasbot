@@ -1,5 +1,5 @@
 /* ========================================
- * TAS NES/NES Replay Device for CY8CKIT-059
+ * TAS NES/NES Replay Device for the PSoC5
  * ========================================
  */
 
@@ -228,21 +228,20 @@ int main()
                         input_ptr[0] = 0;
                         input_ptr[1] = 0;
                         
-                        while (0u == USBUART_CDCIsReady()) { }
-                        USBUART_PutChar(0xB);
-                        
                         data[0] = input[0][0];
                         data[1] = input[1][0];
                         data[2] = input[2][0];
                         data[3] = input[3][0];
                         data[4] = input[4][0];
                         data[5] = input[5][0];
+                        
                         timer_ready[0] = 1;
                         timer_ready[1] = 1;
                         ready = 1;
                         playing = 1;
                         request[0] = 0;
                         request[1] = 1;
+
                         P1_IRQ_Start();
                         P1_TimerIRQ_Start();
                         
@@ -252,8 +251,7 @@ int main()
                             P2_TimerIRQ_Start();
                             P2_IRQ_Start();
                             request[1] = 0;
-                        }
-                        
+                        }                        
                         break;
                     }
                     case 0xF0:
@@ -351,7 +349,7 @@ int main()
                     {
                         ConsolePort_1_ClockTimer_WritePeriod(buffer[1]);
                         break;
-                    }
+                    }                    
                     case 0xB0:
                     {                        
                         ConsolePort_2_WinTimer_WritePeriod((buffer[1]<<8) + (buffer[2]&0xFF));

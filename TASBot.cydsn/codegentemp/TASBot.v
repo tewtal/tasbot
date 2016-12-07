@@ -1,6 +1,6 @@
 // ======================================================================
 // TASBot.v generated from TopDesign.cysch
-// 10/16/2016 at 18:05
+// 12/07/2016 at 02:45
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1548,19 +1548,144 @@ module ConsolePort_12 (
 
 endmodule
 
+// Component: CyControlReg_v1_80
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v"
+`endif
+
+// Component: visualization
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\visualization"
+`include "C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\visualization\visualization.v"
+`else
+`define CY_BLK_DIR "C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\visualization"
+`include "C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\visualization\visualization.v"
+`endif
+
 // top
 module top ;
 
+          wire  Net_4044;
+          wire  Net_4043;
+          wire  Net_4042;
+          wire  Net_4041;
+          wire  Net_4040;
+          wire  Net_4039;
+          wire  Net_4038;
+          wire  Net_4037;
+          wire  Net_4036;
+          wire  Net_4035;
+          wire  Net_4033;
+          wire  Net_4032;
+          wire  Net_4031;
+          wire  Net_4030;
+          wire  Net_4029;
+          wire  Net_4028;
+          wire  Net_4027;
+          wire  Net_4026;
+          wire  Net_4025;
+          wire  Net_4024;
+          wire  Net_4022;
+          wire  Net_4021;
+          wire  Net_4020;
+          wire  Net_4019;
+          wire  Net_4018;
+          wire  Net_4017;
+          wire  Net_4016;
+          wire  Net_4015;
+          wire  Net_4014;
+          wire  Net_4013;
+          wire  Net_4011;
+          wire  Net_4010;
+          wire  Net_4009;
+          wire  Net_4008;
+          wire  Net_4007;
+          wire  Net_4006;
+          wire  Net_4005;
+          wire  Net_4004;
+          wire  Net_4003;
+          wire  Net_4002;
+          wire  Net_3900;
+          wire  Net_3899;
+          wire  Net_4000;
+          wire  Net_3999;
+          wire  Net_3998;
+          wire  Net_3997;
+          wire  Net_3996;
+          wire  Net_3995;
+          wire  Net_3994;
+          wire  Net_3993;
+          wire  Net_3992;
+          wire  Net_3991;
+          wire  Net_3978;
+          wire  Net_3977;
+          wire  Net_3976;
+          wire  Net_3975;
+          wire  Net_3974;
+          wire  Net_3973;
+          wire  Net_3972;
+          wire  Net_3971;
+          wire  Net_3970;
+          wire  Net_3969;
+          wire  Net_3924;
+          wire  Net_3923;
+          wire  Net_3922;
+          wire  Net_3921;
+          wire  Net_3920;
+          wire  Net_3919;
+          wire  Net_3918;
+          wire  Net_3917;
+          wire  Net_3916;
+          wire  Net_3915;
+          wire  Net_4073;
+          wire  Net_3845;
+          wire  Net_3785;
+          wire  Net_3893;
+          wire  Net_3894;
+          wire  Net_3895;
+          wire  Net_3905;
+          wire  Net_3780;
+          wire  Net_3989;
+          wire  Net_3988;
+          wire  Net_3987;
+          wire  Net_3986;
+          wire  Net_3985;
+          wire  Net_3984;
+          wire  Net_3983;
+          wire  Net_3982;
+          wire  Net_3981;
+          wire  Net_3980;
           wire  Net_3419;
           wire  Net_3417;
           wire  Net_3415;
+          wire  Net_3503;
           wire  Net_3522;
           wire  Net_3521;
           wire  Net_3494;
           wire  Net_3493;
-          wire  Net_3503;
           wire  Net_3520;
           wire  Net_3500;
+          wire  Net_3903;
+          wire [7:0] Net_4071;
+          wire [7:0] Net_4045;
+          wire [7:0] Net_4069;
+          wire [7:0] Net_4067;
+          wire [7:0] Net_4068;
+          wire [7:0] Net_4072;
+          wire [7:0] Net_4070;
+          wire [7:0] Net_3914;
           wire  Net_3487;
           wire  Net_3488;
           wire  Net_3489;
@@ -2364,6 +2489,703 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__P2_D0_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{2'b11} : {2'b11};
+
+    CyControlReg_v1_80 Vis_L_1 (
+        .control_1(Net_3980),
+        .control_2(Net_3981),
+        .control_3(Net_3982),
+        .control_0(Net_3983),
+        .control_4(Net_3984),
+        .control_5(Net_3985),
+        .control_6(Net_3986),
+        .control_7(Net_3987),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_4072[7:0]));
+    defparam Vis_L_1.Bit0Mode = 0;
+    defparam Vis_L_1.Bit1Mode = 0;
+    defparam Vis_L_1.Bit2Mode = 0;
+    defparam Vis_L_1.Bit3Mode = 0;
+    defparam Vis_L_1.Bit4Mode = 0;
+    defparam Vis_L_1.Bit5Mode = 0;
+    defparam Vis_L_1.Bit6Mode = 0;
+    defparam Vis_L_1.Bit7Mode = 0;
+    defparam Vis_L_1.BitValue = 0;
+    defparam Vis_L_1.BusDisplay = 1;
+    defparam Vis_L_1.ExtrReset = 0;
+    defparam Vis_L_1.NumOutputs = 8;
+
+    visualization visualization_1 (
+        .clk(Net_3903),
+        .input0_l(Net_3914[7:0]),
+        .input0_h(Net_4070[7:0]),
+        .input1_l(Net_4072[7:0]),
+        .input1_h(Net_4071[7:0]),
+        .latch(Net_3780),
+        .clock(Net_3905),
+        .d0(Net_3895),
+        .d1(Net_3894),
+        .d2(Net_3893),
+        .d3(Net_3785),
+        .input2_l(Net_4045[7:0]),
+        .input2_h(Net_4068[7:0]),
+        .input3_l(Net_4067[7:0]),
+        .input3_h(Net_4069[7:0]));
+
+	wire [0:0] tmpOE__Vis_Latch_net;
+	wire [0:0] tmpFB_0__Vis_Latch_net;
+	wire [0:0] tmpIO_0__Vis_Latch_net;
+	wire [0:0] tmpINTERRUPT_0__Vis_Latch_net;
+	electrical [0:0] tmpSIOVREF__Vis_Latch_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("e851a3b9-efb8-48be-bbb8-b303b216c393"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Vis_Latch
+		 (.oe(tmpOE__Vis_Latch_net),
+		  .y({Net_3780}),
+		  .fb({tmpFB_0__Vis_Latch_net[0:0]}),
+		  .io({tmpIO_0__Vis_Latch_net[0:0]}),
+		  .siovref(tmpSIOVREF__Vis_Latch_net),
+		  .interrupt({tmpINTERRUPT_0__Vis_Latch_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Vis_Latch_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+	wire [0:0] tmpOE__Vis_Clock_net;
+	wire [0:0] tmpFB_0__Vis_Clock_net;
+	wire [0:0] tmpIO_0__Vis_Clock_net;
+	wire [0:0] tmpINTERRUPT_0__Vis_Clock_net;
+	electrical [0:0] tmpSIOVREF__Vis_Clock_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("d36ede1c-fd01-40bd-99ef-3408dcd496d4"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Vis_Clock
+		 (.oe(tmpOE__Vis_Clock_net),
+		  .y({Net_3905}),
+		  .fb({tmpFB_0__Vis_Clock_net[0:0]}),
+		  .io({tmpIO_0__Vis_Clock_net[0:0]}),
+		  .siovref(tmpSIOVREF__Vis_Clock_net),
+		  .interrupt({tmpINTERRUPT_0__Vis_Clock_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Vis_Clock_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+	wire [0:0] tmpOE__Vis_D0_net;
+	wire [0:0] tmpFB_0__Vis_D0_net;
+	wire [0:0] tmpIO_0__Vis_D0_net;
+	wire [0:0] tmpINTERRUPT_0__Vis_D0_net;
+	electrical [0:0] tmpSIOVREF__Vis_D0_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("ac8e2d9a-11ca-4f0e-ab79-f37848fceafb"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Vis_D0
+		 (.oe(tmpOE__Vis_D0_net),
+		  .y({Net_3895}),
+		  .fb({tmpFB_0__Vis_D0_net[0:0]}),
+		  .io({tmpIO_0__Vis_D0_net[0:0]}),
+		  .siovref(tmpSIOVREF__Vis_D0_net),
+		  .interrupt({tmpINTERRUPT_0__Vis_D0_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Vis_D0_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+	wire [0:0] tmpOE__Vis_D1_net;
+	wire [0:0] tmpFB_0__Vis_D1_net;
+	wire [0:0] tmpIO_0__Vis_D1_net;
+	wire [0:0] tmpINTERRUPT_0__Vis_D1_net;
+	electrical [0:0] tmpSIOVREF__Vis_D1_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("5b9d18a5-7024-46c7-844c-1fb1a6cd9ad2"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Vis_D1
+		 (.oe(tmpOE__Vis_D1_net),
+		  .y({Net_3894}),
+		  .fb({tmpFB_0__Vis_D1_net[0:0]}),
+		  .io({tmpIO_0__Vis_D1_net[0:0]}),
+		  .siovref(tmpSIOVREF__Vis_D1_net),
+		  .interrupt({tmpINTERRUPT_0__Vis_D1_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Vis_D1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+	wire [0:0] tmpOE__Vis_D2_net;
+	wire [0:0] tmpFB_0__Vis_D2_net;
+	wire [0:0] tmpIO_0__Vis_D2_net;
+	wire [0:0] tmpINTERRUPT_0__Vis_D2_net;
+	electrical [0:0] tmpSIOVREF__Vis_D2_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("debce457-3fc7-4568-99f9-871ef15d1a26"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Vis_D2
+		 (.oe(tmpOE__Vis_D2_net),
+		  .y({Net_3893}),
+		  .fb({tmpFB_0__Vis_D2_net[0:0]}),
+		  .io({tmpIO_0__Vis_D2_net[0:0]}),
+		  .siovref(tmpSIOVREF__Vis_D2_net),
+		  .interrupt({tmpINTERRUPT_0__Vis_D2_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Vis_D2_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+	wire [0:0] tmpOE__Vis_D3_net;
+	wire [0:0] tmpFB_0__Vis_D3_net;
+	wire [0:0] tmpIO_0__Vis_D3_net;
+	wire [0:0] tmpINTERRUPT_0__Vis_D3_net;
+	electrical [0:0] tmpSIOVREF__Vis_D3_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("022467f7-d11d-430a-8818-b6b60b68892f"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Vis_D3
+		 (.oe(tmpOE__Vis_D3_net),
+		  .y({Net_3785}),
+		  .fb({tmpFB_0__Vis_D3_net[0:0]}),
+		  .io({tmpIO_0__Vis_D3_net[0:0]}),
+		  .siovref(tmpSIOVREF__Vis_D3_net),
+		  .interrupt({tmpINTERRUPT_0__Vis_D3_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Vis_D3_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_clock_v1_0
+		#(.id("da73d078-6b44-4aba-befd-b60d0e234c26"),
+		  .source_clock_id(""),
+		  .divisor(0),
+		  .period("100000000000"),
+		  .is_direct(0),
+		  .is_digital(1))
+		VisClock
+		 (.clock_out(Net_3845));
+
+
+    CyControlReg_v1_80 Vis_L (
+        .control_1(Net_3915),
+        .control_2(Net_3916),
+        .control_3(Net_3917),
+        .control_0(Net_3918),
+        .control_4(Net_3919),
+        .control_5(Net_3920),
+        .control_6(Net_3921),
+        .control_7(Net_3922),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_3914[7:0]));
+    defparam Vis_L.Bit0Mode = 0;
+    defparam Vis_L.Bit1Mode = 0;
+    defparam Vis_L.Bit2Mode = 0;
+    defparam Vis_L.Bit3Mode = 0;
+    defparam Vis_L.Bit4Mode = 0;
+    defparam Vis_L.Bit5Mode = 0;
+    defparam Vis_L.Bit6Mode = 0;
+    defparam Vis_L.Bit7Mode = 0;
+    defparam Vis_L.BitValue = 0;
+    defparam Vis_L.BusDisplay = 1;
+    defparam Vis_L.ExtrReset = 0;
+    defparam Vis_L.NumOutputs = 8;
+
+    CyControlReg_v1_80 Vis_H (
+        .control_1(Net_3969),
+        .control_2(Net_3970),
+        .control_3(Net_3971),
+        .control_0(Net_3972),
+        .control_4(Net_3973),
+        .control_5(Net_3974),
+        .control_6(Net_3975),
+        .control_7(Net_3976),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_4070[7:0]));
+    defparam Vis_H.Bit0Mode = 0;
+    defparam Vis_H.Bit1Mode = 0;
+    defparam Vis_H.Bit2Mode = 0;
+    defparam Vis_H.Bit3Mode = 0;
+    defparam Vis_H.Bit4Mode = 0;
+    defparam Vis_H.Bit5Mode = 0;
+    defparam Vis_H.Bit6Mode = 0;
+    defparam Vis_H.Bit7Mode = 0;
+    defparam Vis_H.BitValue = 0;
+    defparam Vis_H.BusDisplay = 1;
+    defparam Vis_H.ExtrReset = 0;
+    defparam Vis_H.NumOutputs = 8;
+
+    CyControlReg_v1_80 Vis_H_1 (
+        .control_1(Net_3991),
+        .control_2(Net_3992),
+        .control_3(Net_3993),
+        .control_0(Net_3994),
+        .control_4(Net_3995),
+        .control_5(Net_3996),
+        .control_6(Net_3997),
+        .control_7(Net_3998),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_4071[7:0]));
+    defparam Vis_H_1.Bit0Mode = 0;
+    defparam Vis_H_1.Bit1Mode = 0;
+    defparam Vis_H_1.Bit2Mode = 0;
+    defparam Vis_H_1.Bit3Mode = 0;
+    defparam Vis_H_1.Bit4Mode = 0;
+    defparam Vis_H_1.Bit5Mode = 0;
+    defparam Vis_H_1.Bit6Mode = 0;
+    defparam Vis_H_1.Bit7Mode = 0;
+    defparam Vis_H_1.BitValue = 0;
+    defparam Vis_H_1.BusDisplay = 1;
+    defparam Vis_H_1.ExtrReset = 0;
+    defparam Vis_H_1.NumOutputs = 8;
+
+
+	cy_clock_v1_0
+		#(.id("7ee82cc2-2fd8-40da-b1a3-34231508222d"),
+		  .source_clock_id(""),
+		  .divisor(0),
+		  .period("41666666.6666667"),
+		  .is_direct(0),
+		  .is_digital(1))
+		Clock_1
+		 (.clock_out(Net_3899));
+
+
+    cy_sync_v1_0 VisClockSync (
+        .s_in(Net_3845),
+        .clock(Net_3899),
+        .s_out(Net_3903));
+    defparam VisClockSync.SignalWidth = 1;
+
+    CyControlReg_v1_80 Vis_L_2 (
+        .control_1(Net_4002),
+        .control_2(Net_4003),
+        .control_3(Net_4004),
+        .control_0(Net_4005),
+        .control_4(Net_4006),
+        .control_5(Net_4007),
+        .control_6(Net_4008),
+        .control_7(Net_4009),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_4045[7:0]));
+    defparam Vis_L_2.Bit0Mode = 0;
+    defparam Vis_L_2.Bit1Mode = 0;
+    defparam Vis_L_2.Bit2Mode = 0;
+    defparam Vis_L_2.Bit3Mode = 0;
+    defparam Vis_L_2.Bit4Mode = 0;
+    defparam Vis_L_2.Bit5Mode = 0;
+    defparam Vis_L_2.Bit6Mode = 0;
+    defparam Vis_L_2.Bit7Mode = 0;
+    defparam Vis_L_2.BitValue = 0;
+    defparam Vis_L_2.BusDisplay = 1;
+    defparam Vis_L_2.ExtrReset = 0;
+    defparam Vis_L_2.NumOutputs = 8;
+
+    CyControlReg_v1_80 Vis_H_2 (
+        .control_1(Net_4013),
+        .control_2(Net_4014),
+        .control_3(Net_4015),
+        .control_0(Net_4016),
+        .control_4(Net_4017),
+        .control_5(Net_4018),
+        .control_6(Net_4019),
+        .control_7(Net_4020),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_4068[7:0]));
+    defparam Vis_H_2.Bit0Mode = 0;
+    defparam Vis_H_2.Bit1Mode = 0;
+    defparam Vis_H_2.Bit2Mode = 0;
+    defparam Vis_H_2.Bit3Mode = 0;
+    defparam Vis_H_2.Bit4Mode = 0;
+    defparam Vis_H_2.Bit5Mode = 0;
+    defparam Vis_H_2.Bit6Mode = 0;
+    defparam Vis_H_2.Bit7Mode = 0;
+    defparam Vis_H_2.BitValue = 0;
+    defparam Vis_H_2.BusDisplay = 1;
+    defparam Vis_H_2.ExtrReset = 0;
+    defparam Vis_H_2.NumOutputs = 8;
+
+    CyControlReg_v1_80 Vis_L_3 (
+        .control_1(Net_4024),
+        .control_2(Net_4025),
+        .control_3(Net_4026),
+        .control_0(Net_4027),
+        .control_4(Net_4028),
+        .control_5(Net_4029),
+        .control_6(Net_4030),
+        .control_7(Net_4031),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_4067[7:0]));
+    defparam Vis_L_3.Bit0Mode = 0;
+    defparam Vis_L_3.Bit1Mode = 0;
+    defparam Vis_L_3.Bit2Mode = 0;
+    defparam Vis_L_3.Bit3Mode = 0;
+    defparam Vis_L_3.Bit4Mode = 0;
+    defparam Vis_L_3.Bit5Mode = 0;
+    defparam Vis_L_3.Bit6Mode = 0;
+    defparam Vis_L_3.Bit7Mode = 0;
+    defparam Vis_L_3.BitValue = 0;
+    defparam Vis_L_3.BusDisplay = 1;
+    defparam Vis_L_3.ExtrReset = 0;
+    defparam Vis_L_3.NumOutputs = 8;
+
+    CyControlReg_v1_80 Vis_H_3 (
+        .control_1(Net_4035),
+        .control_2(Net_4036),
+        .control_3(Net_4037),
+        .control_0(Net_4038),
+        .control_4(Net_4039),
+        .control_5(Net_4040),
+        .control_6(Net_4041),
+        .control_7(Net_4042),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_4069[7:0]));
+    defparam Vis_H_3.Bit0Mode = 0;
+    defparam Vis_H_3.Bit1Mode = 0;
+    defparam Vis_H_3.Bit2Mode = 0;
+    defparam Vis_H_3.Bit3Mode = 0;
+    defparam Vis_H_3.Bit4Mode = 0;
+    defparam Vis_H_3.Bit5Mode = 0;
+    defparam Vis_H_3.Bit6Mode = 0;
+    defparam Vis_H_3.Bit7Mode = 0;
+    defparam Vis_H_3.BitValue = 0;
+    defparam Vis_H_3.BusDisplay = 1;
+    defparam Vis_H_3.ExtrReset = 0;
+    defparam Vis_H_3.NumOutputs = 8;
 
 
 

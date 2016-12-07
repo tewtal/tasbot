@@ -125,6 +125,8 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\USBUART_Dp_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\USBUART_Dp.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\USBUART_Dp.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\P2_Clock_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\P2_Clock.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\P2_Clock.h</File>
@@ -189,6 +191,50 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ConsolePort_1_ClockTimer.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ConsolePort_1_ClockTimer.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ConsolePort_1_ClockTimer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VisClock.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VisClock.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_L_3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_H_3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_Latch_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_Latch.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_Latch.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_Clock_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_Clock.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_Clock.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D0_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D0.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D0.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vis_D3.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\Export\ARM_GCC_Generic">
