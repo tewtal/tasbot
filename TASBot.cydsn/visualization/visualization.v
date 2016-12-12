@@ -66,14 +66,14 @@ module visualization (
                 end
             1:
                 begin
-                    if(pos == 15)
+                    if(pos == 0)
                     begin
-                        pos <= 0;
+                        pos <= 15;
                         state <= 2;
                     end
                     else
                     begin
-                        pos <= pos + 1;
+                        pos <= pos - 1;
                     end
                 end
             2:
@@ -91,7 +91,7 @@ module visualization (
 
     initial begin
         state <= 0;
-        pos <= 0;
+        pos <= 15;
         latched_data0 <= 0;
         latched_data1 <= 0;
         latched_data2 <= 0;

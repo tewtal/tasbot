@@ -1,5 +1,5 @@
 -- Project:   TASBot
--- Generated: 12/07/2016 02:45:02
+-- Generated: 12/12/2016 03:11:51
 -- PSoC Creator  4.0
 
 ENTITY TASBot IS
@@ -5173,7 +5173,7 @@ BEGIN
 
     \visualization_1:state_1\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * main_2) + (!main_0 * main_2 * main_3 * main_4 * main_5 * main_6)",
+            eqn_main => "(!main_0 * main_1 * main_2) + (!main_0 * main_2 * !main_3 * !main_4 * !main_5 * !main_6)",
             regmode => 2,
             clk_inv => '0',
             clken_inv => '0',
@@ -5192,7 +5192,7 @@ BEGIN
 
     \visualization_1:state_0\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1 * main_2) + (!main_0 * main_2 * main_3 * main_4 * main_5 * main_6) + (main_0 * !main_2)",
+            eqn_main => "(!main_0 * main_1 * main_2) + (!main_0 * main_2 * !main_3 * !main_4 * !main_5 * !main_6) + (main_0 * !main_2)",
             regmode => 1,
             clk_inv => '0',
             clken_inv => '0',
@@ -5211,7 +5211,7 @@ BEGIN
 
     \visualization_1:pos_3\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * !main_1 * main_2 * main_3 * main_4 * main_5)",
+            eqn_main => "(!main_0 * !main_1 * main_2 * !main_3 * !main_4 * !main_5)",
             regmode => 2,
             clk_inv => '0',
             clken_inv => '0',
@@ -5229,7 +5229,7 @@ BEGIN
 
     \visualization_1:pos_2\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * !main_1 * main_2 * main_3 * main_4)",
+            eqn_main => "(!main_0 * !main_1 * main_2 * !main_3 * !main_4)",
             regmode => 2,
             clk_inv => '0',
             clken_inv => '0',
@@ -5246,7 +5246,7 @@ BEGIN
 
     \visualization_1:pos_1\:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * !main_1 * main_2 * main_3)",
+            eqn_main => "(!main_0 * !main_1 * main_2 * !main_3)",
             regmode => 2,
             clk_inv => '0',
             clken_inv => '0',

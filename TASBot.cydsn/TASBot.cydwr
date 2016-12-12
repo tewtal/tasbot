@@ -348,6 +348,20 @@
       <Data key="b5675301-1a3d-48cf-a075-b757f3c45982/cdf23350-3702-42d8-97bf-528ed2005238" value="ConsolePort_1_Clock_2" />
       <Data key="b5675301-1a3d-48cf-a075-b757f3c45982/fa7d2b21-7458-43b1-ab5c-f9a9fcaacd0b" value="ConsolePort_1_Clock_1" />
     </Group>
+    <Group key="Interrupt">
+      <Data key="1392f868-40e5-49ab-ad93-7f5197ed0bbe" value="P2_IRQ" />
+      <Data key="b9403999-0b7a-4f5e-8969-f028ff322617" value="P1_TimerIRQ" />
+      <Data key="bebd912c-3fff-4655-965a-0fbbf3803b72" value="P1_IRQ" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/8c70c28a-acdf-4af1-b803-ce0c58edb918" value="USBUART_ep_3" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/13a8975c-7fb7-4bb9-91f3-189a6b7c1d86" value="USBUART_ep_1" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/52c66e35-efb9-4cb3-a434-6304eda17cd2" value="USBUART_ep_2" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/70277391-b927-4e50-8d12-6874a5c53f72" value="USBUART_bus_reset" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/bbb6a482-c3d6-4d33-a3c3-aff5d704e3be" value="USBUART_sof_int" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/d91ea660-bc91-4817-b29b-2fe86c305500" value="USBUART_arb_int" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/dc6da32b-30f7-48b3-b8a1-dbf0214d8c83" value="USBUART_dp_int" />
+      <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/ef9224ec-f8a6-4df0-8a49-e09ce75cefa7" value="USBUART_ep_0" />
+      <Data key="d26e26b7-dc38-42f3-a0d1-3e6e7edfe0af" value="P2_TimerIRQ" />
+    </Group>
     <Group key="Pin">
       <Data key="2bf0bbcf-f09a-49c8-b405-4de519296faf" value="P1_D0" />
       <Data key="3ac89069-ae62-41f7-82dd-41ead62f06e0" value="P2_D1" />
@@ -368,6 +382,12 @@
       <Data key="debce457-3fc7-4568-99f9-871ef15d1a26" value="Pin_5" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="Pin_1" />
     </Group>
+  </Group>
+  <Group key="Interrupt">
+    <Data key="1392f868-40e5-49ab-ad93-7f5197ed0bbe" value="1" />
+    <Data key="b9403999-0b7a-4f5e-8969-f028ff322617" value="2" />
+    <Data key="bebd912c-3fff-4655-965a-0fbbf3803b72" value="0" />
+    <Data key="d26e26b7-dc38-42f3-a0d1-3e6e7edfe0af" value="3" />
   </Group>
   <Group key="Pin2">
     <Group key="2bf0bbcf-f09a-49c8-b405-4de519296faf">

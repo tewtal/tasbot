@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 29 2016 09:00:55
 
-#File Generated:     Dec 7 2016 02:45:02
+#File Generated:     Dec 12 2016 03:11:51
 
 #Purpose:            
 
@@ -80,10 +80,10 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 10
-Clock: Clock_1              | Frequency:  58.3 MHz | Target:  24.0 MHz
+Clock: Clock_1              | Frequency:  61.2 MHz | Target:  24.0 MHz
 Clock: ConsolePort_1_Clock_1 | Frequency:  57.2 MHz | Target:  24.0 MHz
-Clock: ConsolePort_2_Clock_1 | Frequency:  54.6 MHz | Target:  24.0 MHz
-Clock: CyBUS_CLK            | Frequency:  72.1 MHz | Target:  72.0 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:  43.5 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:  87.7 MHz | Target:  72.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  72.0 MHz
@@ -102,10 +102,10 @@ Phase 7
                      Clock Summary 
 ======================================================================
 Number of clocks: 10
-Clock: Clock_1              | Frequency:   6.3 MHz | Target:  24.0 MHz
-Clock: ConsolePort_1_Clock_1 | Frequency:  57.2 MHz | Target:  24.0 MHz
-Clock: ConsolePort_2_Clock_1 | Frequency:  50.8 MHz | Target:  24.0 MHz
-Clock: CyBUS_CLK            | Frequency:   6.3 MHz | Target:  72.0 MHz
+Clock: Clock_1              | Frequency:   6.8 MHz | Target:  24.0 MHz
+Clock: ConsolePort_1_Clock_1 | Frequency:  48.2 MHz | Target:  24.0 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:  45.7 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:   6.8 MHz | Target:  72.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  72.0 MHz
@@ -116,7 +116,7 @@ Clock: VisClock(routed)     | Frequency: N/A       | Target:   0.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 2.8 (sec)
+D2088: Phase 7, elapsed time : 2.7 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	27
@@ -147,10 +147,10 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 10
-Clock: Clock_1              | Frequency:  11.7 MHz | Target:  24.0 MHz
-Clock: ConsolePort_1_Clock_1 | Frequency:  53.7 MHz | Target:  24.0 MHz
-Clock: ConsolePort_2_Clock_1 | Frequency:  54.0 MHz | Target:  24.0 MHz
-Clock: CyBUS_CLK            | Frequency:  11.7 MHz | Target:  72.0 MHz
+Clock: Clock_1              | Frequency:  10.7 MHz | Target:  24.0 MHz
+Clock: ConsolePort_1_Clock_1 | Frequency:  46.4 MHz | Target:  24.0 MHz
+Clock: ConsolePort_2_Clock_1 | Frequency:  47.5 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:  10.7 MHz | Target:  72.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  72.0 MHz
@@ -167,5 +167,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 3.8 sec.
+I2076: Total run-time: 3.6 sec.
 
