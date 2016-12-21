@@ -197,7 +197,7 @@ int main()
                             while(USBUART_DataIsReady() == 0) { }
                             bytes = USBUART_GetAll(buffer);
                             
-                            for(j = 1; j < 61; j+= blocksize)
+                            for(j = 1; j < bytes; j+= blocksize)
                             {
                                 for(p = 0; p < ports; p++)
                                 {
@@ -257,7 +257,7 @@ int main()
                     case 0xF0:
                     {
                         tmp = 0;
-                        for(j = 1; j < 61; j+= databits * lines)
+                        for(j = 1; j < bytes; j+= databits * lines)
                         {
                             for(d = 0; d < lines; d++)
                             {
@@ -276,7 +276,7 @@ int main()
                     case 0xF1:
                     {
                         tmp = 0;
-                        for(j = 1; j < 61; j+= databits * lines)
+                        for(j = 1; j < bytes; j+= databits * lines)
                         {
                             for(d = 0; d < lines; d++)
                             {
@@ -294,8 +294,8 @@ int main()
                     }
                     case 0xF:
                     {
-                        /* synchronous send to both ports with interleaved data */
-                        for(j = 1; j < 61; j+= blocksize)
+                        /* synchronous send to both ports with interleaved data */                        
+                        for(j = 1; j < bytes; j+= blocksize)
                         {
                             for(p = 0; p < ports; p++)
                             {
