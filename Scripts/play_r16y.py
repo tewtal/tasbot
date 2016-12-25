@@ -8,7 +8,7 @@ p = psutil.Process(os.getpid())
 p.nice(psutil.REALTIME_PRIORITY_CLASS)
 	
 # connect to device
-ser = serial.Serial('COM3', 2000000, timeout=0.1)
+ser = serial.Serial('COM8', 2000000, timeout=0.1)
 
 # send "ping" command to make sure device is there
 ser.write(b'\xFF')
@@ -40,6 +40,10 @@ time.sleep(0.1)
 # set clock filter timers (DPCM fix)
 #ser.write(bytes([0xA4, 128])) # Port 1 timer (128 = 5us)
 #ser.write(bytes([0xB4, 128])) # Port 2 timer (128 = 5us)
+
+# autolatcher (automatically triggers a latch every n'th clock of the selected controller)
+#ser.write(bytes([0xC0, 1, 1]))  # set autolatch on controller port 2
+#ser.write(bytes([0xC1, 16])) 	# 16-bit autolatching
 
 # start run
 print("--- Sending start command to device")

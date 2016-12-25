@@ -25,6 +25,9 @@ volatile int bytes = 0;
 volatile int window_off[2] = {-1, -1};
 volatile int latches[2] = {0, 0};
 volatile int async = 0;
+volatile int autolatch = 0;
+volatile int autofilled = 0;
+volatile int autobits = 16;
 
 int main()
 {
@@ -41,24 +44,73 @@ int main()
 
     /* Start registers and timers */
     ConsolePort_1_RegD0_Start();
-    ConsolePort_1_RegD0_WriteRegValue(1);
     ConsolePort_1_RegD1_Start();
-    ConsolePort_1_RegD1_WriteRegValue(1);
     ConsolePort_1_RegD2_Start();
-    ConsolePort_1_RegD2_WriteRegValue(1);
-    
     ConsolePort_1_WinTimer_Start();
     ConsolePort_1_ClockTimer_Start();
 
     ConsolePort_2_RegD0_Start();
-    ConsolePort_2_RegD0_WriteRegValue(1);
     ConsolePort_2_RegD1_Start();
-    ConsolePort_2_RegD1_WriteRegValue(1);
     ConsolePort_2_RegD2_Start();
-    ConsolePort_2_RegD2_WriteRegValue(1);
+    ConsolePort_2_ClockTimer_Start();    
 
-    ConsolePort_2_ClockTimer_Start();
+    input_ptr[0] = 0;
+    input_ptr[1] = 0;
+    buf_ptr[0] = 0;
+    buf_ptr[1] = 0;
+    playing = 0;
+    count = 0;
+    latches[0] = 0;
+    latches[1] = 0;
+    async = 0;
+    blocksize = 0;
+    autofilled = 0;
+    autolatch = 0;
+    
+    P1_IRQ_Stop();
+    P1_TimerIRQ_Stop();
+    
+    P2_IRQ_Stop();
+    P2_TimerIRQ_Stop();
+    ConsolePort_2_WinTimer_Stop();
 
+    /* reset autolatcher */
+    ClockCounter_Stop();
+    ClockCounter_IRQ_Stop();
+    ClockCounter_WritePeriod(16);
+    ClockCountSel_Write(0);
+    
+    /* Reset timers to default */
+    ConsolePort_1_ClockTimer_WritePeriod(2);
+    ConsolePort_2_ClockTimer_WritePeriod(2);                        
+    ConsolePort_1_WinTimer_WritePeriod(2500);
+    ConsolePort_2_WinTimer_WritePeriod(2500);
+    
+    disable_timer[0] = 0;
+    use_timer[0] = 0;
+    timer_ready[0] = 0;
+    window_off[0] = -1;
+
+    disable_timer[1] = 0;
+    use_timer[1] = 0;
+    timer_ready[1] = 0;
+    window_off[1] = -1;
+
+    for(i = 0; i < INPUT_BUF_SIZE; i++)
+    {
+        for(j = 0; j < 6; j++)
+        {
+            input[j][i] = 0;
+        }
+    }
+    
+    ConsolePort_1_RegD0_WriteRegValue(0xFFFF);
+    ConsolePort_1_RegD1_WriteRegValue(0xFFFF);
+    ConsolePort_1_RegD2_WriteRegValue(0xFFFF);
+    ConsolePort_2_RegD0_WriteRegValue(0xFFFF);
+    ConsolePort_2_RegD1_WriteRegValue(0xFFFF);
+    ConsolePort_2_RegD2_WriteRegValue(0xFFFF);
+    
     for(;;)    
     {      
         if(async)
@@ -108,6 +160,7 @@ int main()
             }           
         }
         
+        
         if (0u != USBUART_IsConfigurationChanged())
         {
             if (0u != USBUART_GetConfiguration())
@@ -138,6 +191,9 @@ int main()
                         latches[1] = 0;
                         async = 0;
                         blocksize = 0;
+                        autofilled = 0;
+                        autolatch = 0;
+                        
                         P1_IRQ_Stop();
                         P1_TimerIRQ_Stop();
                         
@@ -145,6 +201,12 @@ int main()
                         P2_TimerIRQ_Stop();
                         ConsolePort_2_WinTimer_Stop();
 
+                        /* reset autolatcher */
+                        ClockCounter_Stop();
+                        ClockCounter_IRQ_Stop();
+                        ClockCounter_WritePeriod(16);
+                        ClockCountSel_Write(0);
+                        
                         /* Reset timers to default */
                         ConsolePort_1_ClockTimer_WritePeriod(2);
                         ConsolePort_2_ClockTimer_WritePeriod(2);                        
@@ -168,6 +230,14 @@ int main()
                                 input[j][i] = 0;
                             }
                         }
+                        
+                        ConsolePort_1_RegD0_WriteRegValue(0xFFFF);
+                        ConsolePort_1_RegD1_WriteRegValue(0xFFFF);
+                        ConsolePort_1_RegD2_WriteRegValue(0xFFFF);
+                        ConsolePort_2_RegD0_WriteRegValue(0xFFFF);
+                        ConsolePort_2_RegD1_WriteRegValue(0xFFFF);
+                        ConsolePort_2_RegD2_WriteRegValue(0xFFFF);
+                        
                         break;
                     }
                     case 1:
@@ -186,6 +256,7 @@ int main()
                         count = 0;
                         latches[0] = 0;
                         latches[1] = 0;
+                        autofilled = 0;
                         
                         blocksize = ports * databits * lines;
                         
@@ -234,6 +305,17 @@ int main()
                         data[3] = input[3][0];
                         data[4] = input[4][0];
                         data[5] = input[5][0];
+
+                        ConsolePort_1_RegD0_WriteRegValue(data[0]);
+                        ConsolePort_1_RegD1_WriteRegValue(data[1]);
+                        ConsolePort_1_RegD2_WriteRegValue(data[2]);
+                        
+                        if(!async)
+                        {
+                            ConsolePort_2_RegD0_WriteRegValue(data[3]);
+                            ConsolePort_2_RegD1_WriteRegValue(data[4]);
+                            ConsolePort_2_RegD2_WriteRegValue(data[5]);
+                        }                        
                         
                         timer_ready[0] = 1;
                         timer_ready[1] = 1;
@@ -244,6 +326,12 @@ int main()
 
                         P1_IRQ_Start();
                         P1_TimerIRQ_Start();
+
+                        if(autolatch)
+                        {
+                            ClockCounter_Start();
+                            ClockCounter_IRQ_Start();
+                        }
                         
                         if(async && ports > 1)
                         {
@@ -376,7 +464,19 @@ int main()
                     {
                         ConsolePort_2_ClockTimer_WritePeriod(buffer[1]);
                         break;
-                    }                    
+                    }      
+                    case 0xC0:
+                    {
+                        autolatch = buffer[1];
+                        ClockCountSel_Write(buffer[2]);
+                        break;
+                    }
+                    case 0xC1:
+                    {
+                        autobits = buffer[1];
+                        ClockCounter_WritePeriod(buffer[1]);
+                        break;
+                    }
                     case 0xFF:
                     {
                         while (0u == USBUART_CDCIsReady()) { }

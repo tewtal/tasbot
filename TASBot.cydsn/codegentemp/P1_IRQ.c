@@ -167,49 +167,59 @@ CY_ISR(P1_IRQ_Interrupt)
     /*  Place your Interrupt code here. */
     /* `#START P1_IRQ_Interrupt` */
 
-    ConsolePort_1_RegD0_WriteRegValue(data[0]);
-    ConsolePort_1_RegD1_WriteRegValue(data[1]);
-    ConsolePort_1_RegD2_WriteRegValue(data[2]);
-    
-    if(!async)
+    if(autofilled == 0)
     {
-        ConsolePort_2_RegD0_WriteRegValue(data[3]);
-        ConsolePort_2_RegD1_WriteRegValue(data[4]);
-        ConsolePort_2_RegD2_WriteRegValue(data[5]);
-    }
-  
-    if(playing)
-    {
-        Vis_L_Write(data[0] & 0xFF);
-        Vis_H_Write(data[0] >> 8);
-
-        Vis_L_1_Write(data[1] & 0xFF);
-        Vis_H_1_Write(data[1] >> 8);
-
-        Vis_L_2_Write(data[3] & 0xFF);
-        Vis_H_2_Write(data[3] >> 8);
-
-        Vis_L_3_Write(data[4] & 0xFF);
-        Vis_H_3_Write(data[4] >> 8);
-
-        if(!use_timer[0])
+        ConsolePort_1_RegD0_WriteRegValue(data[0]);
+        ConsolePort_1_RegD1_WriteRegValue(data[1]);
+        ConsolePort_1_RegD2_WriteRegValue(data[2]);
+        
+        if(!async)
         {
-            input_ptr[0] = (input_ptr[0]+1)%INPUT_BUF_SIZE;
-            data[0] = input[0][input_ptr[0]]; 
-            data[1] = input[1][input_ptr[0]]; 
-            data[2] = input[2][input_ptr[0]]; 
+            ConsolePort_2_RegD0_WriteRegValue(data[3]);
+            ConsolePort_2_RegD1_WriteRegValue(data[4]);
+            ConsolePort_2_RegD2_WriteRegValue(data[5]);
+        }
+      
+        if(playing)
+        {
+            Vis_L_Write(data[0] & 0xFF);
+            Vis_H_Write(data[0] >> 8);
 
-            if(!async)
+            Vis_L_1_Write(data[1] & 0xFF);
+            Vis_H_1_Write(data[1] >> 8);
+
+            Vis_L_2_Write(data[3] & 0xFF);
+            Vis_H_2_Write(data[3] >> 8);
+
+            Vis_L_3_Write(data[4] & 0xFF);
+            Vis_H_3_Write(data[4] >> 8);
+
+            if(!use_timer[0])
             {
-                data[3] = input[3][input_ptr[0]]; 
-                data[4] = input[4][input_ptr[0]]; 
-                data[5] = input[5][input_ptr[0]]; 
+                input_ptr[0] = (input_ptr[0]+1)%INPUT_BUF_SIZE;
+                data[0] = input[0][input_ptr[0]]; 
+                data[1] = input[1][input_ptr[0]]; 
+                data[2] = input[2][input_ptr[0]]; 
+
+                if(!async)
+                {
+                    data[3] = input[3][input_ptr[0]]; 
+                    data[4] = input[4][input_ptr[0]]; 
+                    data[5] = input[5][input_ptr[0]]; 
+                }
+                
+                latches[0]++;
+                sent = 1;
             }
             
-            latches[0]++;
-            sent = 1;
         }
-        
+    } else {
+        autofilled = 0;
+    }
+    
+    if(autolatch)
+    {
+        ClockCounter_WriteCounter(autobits);
     }
     /* `#END` */
 }

@@ -127,6 +127,16 @@
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Vis_H_3.h" value="HEADER;;;;;Vis_H_3" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Vis_H_3.c" value="SOURCE_C;CortexM3;;;;Vis_H_3" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Vis_H_3_PM.c" value="SOURCE_C;CortexM3;;;;Vis_H_3" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCounter.c" value="SOURCE_C;CortexM3;;;;ClockCounter" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCounter.h" value="HEADER;;;;;ClockCounter" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCounter_PM.c" value="SOURCE_C;CortexM3;;;;ClockCounter" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCounter_IRQ.c" value="SOURCE_C;CortexM3;;;;ClockCounter_IRQ" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCounter_IRQ.h" value="HEADER;;;;;ClockCounter_IRQ" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Clock_2.c" value="SOURCE_C;CortexM3;;;;Clock_2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\Clock_2.h" value="HEADER;;;;;Clock_2" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCountSel.h" value="HEADER;;;;;ClockCountSel" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCountSel.c" value="SOURCE_C;CortexM3;;;;ClockCountSel" />
+  <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ClockCountSel_PM.c" value="SOURCE_C;CortexM3;;;;ClockCountSel" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_Clock_1.c" value="SOURCE_C;CortexM3;;;;ConsolePort_2_Clock_1" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_Clock_1.h" value="HEADER;;;;;ConsolePort_2_Clock_1" />
   <file name="C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\codegentemp\ConsolePort_2_RegD2.c" value="SOURCE_C;CortexM3;;;;ConsolePort_2_RegD2" />

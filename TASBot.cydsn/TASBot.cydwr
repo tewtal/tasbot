@@ -349,6 +349,7 @@
       <Data key="b5675301-1a3d-48cf-a075-b757f3c45982/fa7d2b21-7458-43b1-ab5c-f9a9fcaacd0b" value="ConsolePort_1_Clock_1" />
     </Group>
     <Group key="Interrupt">
+      <Data key="8ab2d9ca-cc93-4b94-8431-1b4df19bec35" value="ClockCounter_IRQ" />
       <Data key="1392f868-40e5-49ab-ad93-7f5197ed0bbe" value="P2_IRQ" />
       <Data key="b9403999-0b7a-4f5e-8969-f028ff322617" value="P1_TimerIRQ" />
       <Data key="bebd912c-3fff-4655-965a-0fbbf3803b72" value="P1_IRQ" />
@@ -363,33 +364,40 @@
       <Data key="d26e26b7-dc38-42f3-a0d1-3e6e7edfe0af" value="P2_TimerIRQ" />
     </Group>
     <Group key="Pin">
+      <Data key="2a870650-1b4a-4447-bae5-a0dbdfb04993" value="CC_TC" />
       <Data key="2bf0bbcf-f09a-49c8-b405-4de519296faf" value="P1_D0" />
       <Data key="3ac89069-ae62-41f7-82dd-41ead62f06e0" value="P2_D1" />
-      <Data key="5b9d18a5-7024-46c7-844c-1fb1a6cd9ad2" value="Pin_4" />
+      <Data key="5b9d18a5-7024-46c7-844c-1fb1a6cd9ad2" value="Vis_D1" />
       <Data key="6b70201b-2912-4358-8469-5d3f3c69198a" value="P2_Latch" />
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="P1_Clock" />
       <Data key="9de4c9ab-0474-4a16-a2e5-a61cbae1d88e" value="P1_D2" />
       <Data key="4866e61e-55e2-40c8-a247-444096a1130b" value="P1_Latch" />
-      <Data key="022467f7-d11d-430a-8818-b6b60b68892f" value="Pin_6" />
+      <Data key="022467f7-d11d-430a-8818-b6b60b68892f" value="Vis_D3" />
       <Data key="06371071-8061-4ab5-8e26-2e8021ba7a47" value="P2_D0" />
       <Data key="a7d21776-9d04-4147-8305-beefb1c9eaf7" value="P2_D2" />
-      <Data key="ac8e2d9a-11ca-4f0e-ab79-f37848fceafb" value="Pin_3" />
+      <Data key="ac8e2d9a-11ca-4f0e-ab79-f37848fceafb" value="Vis_D0" />
       <Data key="aef6bb17-7da9-46e2-a4aa-f45b81e63512" value="P2_Clock" />
       <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/8b77a6c4-10a0-4390-971c-672353e2a49c" value="USBUART_Dm" />
       <Data key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/618a72fc-5ddd-4df5-958f-a3d55102db42" value="USBUART_Dp" />
       <Data key="c16e28ed-8ab8-4d86-b9d8-5a923c863a3b" value="P1_D1" />
-      <Data key="d36ede1c-fd01-40bd-99ef-3408dcd496d4" value="Pin_2" />
-      <Data key="debce457-3fc7-4568-99f9-871ef15d1a26" value="Pin_5" />
-      <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="Pin_1" />
+      <Data key="d36ede1c-fd01-40bd-99ef-3408dcd496d4" value="Vis_Clock" />
+      <Data key="debce457-3fc7-4568-99f9-871ef15d1a26" value="Vis_D2" />
+      <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="Vis_Latch" />
     </Group>
   </Group>
   <Group key="Interrupt">
+    <Data key="8ab2d9ca-cc93-4b94-8431-1b4df19bec35" value="0" />
     <Data key="1392f868-40e5-49ab-ad93-7f5197ed0bbe" value="1" />
     <Data key="b9403999-0b7a-4f5e-8969-f028ff322617" value="2" />
-    <Data key="bebd912c-3fff-4655-965a-0fbbf3803b72" value="0" />
+    <Data key="bebd912c-3fff-4655-965a-0fbbf3803b72" value="1" />
     <Data key="d26e26b7-dc38-42f3-a0d1-3e6e7edfe0af" value="3" />
   </Group>
   <Group key="Pin2">
+    <Group key="2a870650-1b4a-4447-bae5-a0dbdfb04993">
+      <Group key="0">
+        <Data key="Port Format" value="1,2" />
+      </Group>
+    </Group>
     <Group key="2bf0bbcf-f09a-49c8-b405-4de519296faf">
       <Group key="0">
         <Data key="Port Format" value="12,0" />
@@ -462,7 +470,7 @@
     </Group>
     <Group key="aef6bb17-7da9-46e2-a4aa-f45b81e63512">
       <Group key="0">
-        <Data key="Port Format" value="15,0" />
+        <Data key="Port Format" value="2,2" />
       </Group>
     </Group>
     <Group key="beca5e2d-f70f-4900-a4db-7eca1ed3126e/8b77a6c4-10a0-4390-971c-672353e2a49c">
@@ -495,7 +503,7 @@
     </Group>
     <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
       <Group key="0">
-        <Data key="Port Format" value="1,2" />
+        <Data key="Port Format" value="15,4" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins" />

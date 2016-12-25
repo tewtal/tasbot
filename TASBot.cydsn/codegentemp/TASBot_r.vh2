@@ -1,5 +1,5 @@
 -- Project:   TASBot
--- Generated: 12/12/2016 03:11:55
+-- Generated: 12/25/2016 02:08:05
 -- PSoC Creator  4.0
 
 ENTITY TASBot IS
@@ -50,63 +50,53 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL ClockBlock_XTAL : bit;
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL Net_2981 : bit;
-    ATTRIBUTE placement_force OF Net_2981 : SIGNAL IS "U(3,1,B)1";
-    SIGNAL Net_3415 : bit;
+    ATTRIBUTE placement_force OF Net_2981 : SIGNAL IS "U(2,2,A)3";
     SIGNAL Net_3417 : bit;
-    ATTRIBUTE placement_force OF Net_3417 : SIGNAL IS "U(0,5,A)0";
+    ATTRIBUTE placement_force OF Net_3417 : SIGNAL IS "U(0,2,A)0";
     SIGNAL Net_3419 : bit;
     SIGNAL Net_3420 : bit;
-    ATTRIBUTE placement_force OF Net_3420 : SIGNAL IS "U(3,3,B)0";
+    ATTRIBUTE placement_force OF Net_3420 : SIGNAL IS "U(0,5,B)2";
     SIGNAL Net_3479 : bit;
-    ATTRIBUTE placement_force OF Net_3479 : SIGNAL IS "U(0,5,B)0";
+    ATTRIBUTE placement_force OF Net_3479 : SIGNAL IS "U(0,5,B)3";
     SIGNAL Net_3487 : bit;
-    ATTRIBUTE placement_force OF Net_3487 : SIGNAL IS "U(2,4,A)2";
+    ATTRIBUTE placement_force OF Net_3487 : SIGNAL IS "U(1,0,B)2";
     SIGNAL Net_3488 : bit;
-    ATTRIBUTE placement_force OF Net_3488 : SIGNAL IS "U(0,0,B)3";
+    ATTRIBUTE placement_force OF Net_3488 : SIGNAL IS "U(1,4,B)3";
     SIGNAL Net_3489 : bit;
-    ATTRIBUTE placement_force OF Net_3489 : SIGNAL IS "U(2,1,A)3";
+    ATTRIBUTE placement_force OF Net_3489 : SIGNAL IS "U(0,1,B)3";
     SIGNAL Net_3493 : bit;
-    ATTRIBUTE placement_force OF Net_3493 : SIGNAL IS "U(3,0,A)2";
+    ATTRIBUTE placement_force OF Net_3493 : SIGNAL IS "U(1,3,A)0";
     SIGNAL Net_3494 : bit;
-    SIGNAL Net_3500 : bit;
-    SIGNAL Net_3503 : bit;
-    SIGNAL Net_3520 : bit;
     SIGNAL Net_3521 : bit;
     SIGNAL Net_3780 : bit;
-    ATTRIBUTE placement_force OF Net_3780 : SIGNAL IS "U(0,0,B)0";
+    ATTRIBUTE placement_force OF Net_3780 : SIGNAL IS "U(2,3,B)2";
     SIGNAL Net_3785 : bit;
-    ATTRIBUTE placement_force OF Net_3785 : SIGNAL IS "U(3,1,A)1";
+    ATTRIBUTE placement_force OF Net_3785 : SIGNAL IS "U(2,1,B)0";
     SIGNAL Net_3785_split : bit;
-    ATTRIBUTE placement_force OF Net_3785_split : SIGNAL IS "U(1,1,B)0";
+    ATTRIBUTE placement_force OF Net_3785_split : SIGNAL IS "U(2,1,A)3";
     SIGNAL Net_3785_split_1 : bit;
-    ATTRIBUTE placement_force OF Net_3785_split_1 : SIGNAL IS "U(0,0,A)0";
-    SIGNAL Net_3845 : bit;
-    ATTRIBUTE global_signal OF Net_3845 : SIGNAL IS true;
-    SIGNAL Net_3845_local : bit;
+    ATTRIBUTE placement_force OF Net_3785_split_1 : SIGNAL IS "U(3,3,B)0";
     SIGNAL Net_3893 : bit;
-    ATTRIBUTE placement_force OF Net_3893 : SIGNAL IS "U(1,1,A)1";
+    ATTRIBUTE placement_force OF Net_3893 : SIGNAL IS "U(0,5,B)1";
     SIGNAL Net_3893_split : bit;
-    ATTRIBUTE placement_force OF Net_3893_split : SIGNAL IS "U(2,2,A)0";
+    ATTRIBUTE placement_force OF Net_3893_split : SIGNAL IS "U(1,2,A)2";
     SIGNAL Net_3893_split_1 : bit;
-    ATTRIBUTE placement_force OF Net_3893_split_1 : SIGNAL IS "U(1,5,A)0";
+    ATTRIBUTE placement_force OF Net_3893_split_1 : SIGNAL IS "U(2,5,B)0";
     SIGNAL Net_3894 : bit;
-    ATTRIBUTE placement_force OF Net_3894 : SIGNAL IS "U(3,1,A)3";
+    ATTRIBUTE placement_force OF Net_3894 : SIGNAL IS "U(0,1,B)0";
     SIGNAL Net_3894_split : bit;
-    ATTRIBUTE placement_force OF Net_3894_split : SIGNAL IS "U(3,5,B)0";
+    ATTRIBUTE placement_force OF Net_3894_split : SIGNAL IS "U(0,1,A)0";
     SIGNAL Net_3894_split_1 : bit;
-    ATTRIBUTE placement_force OF Net_3894_split_1 : SIGNAL IS "U(3,2,B)2";
+    ATTRIBUTE placement_force OF Net_3894_split_1 : SIGNAL IS "U(0,3,A)0";
     SIGNAL Net_3895 : bit;
-    ATTRIBUTE placement_force OF Net_3895 : SIGNAL IS "U(0,2,A)0";
+    ATTRIBUTE placement_force OF Net_3895 : SIGNAL IS "U(2,1,B)2";
     SIGNAL Net_3895_split : bit;
-    ATTRIBUTE placement_force OF Net_3895_split : SIGNAL IS "U(2,2,B)0";
+    ATTRIBUTE placement_force OF Net_3895_split : SIGNAL IS "U(2,5,A)0";
     SIGNAL Net_3895_split_1 : bit;
-    ATTRIBUTE placement_force OF Net_3895_split_1 : SIGNAL IS "U(0,2,B)0";
-    SIGNAL Net_3899 : bit;
-    ATTRIBUTE global_signal OF Net_3899 : SIGNAL IS true;
-    SIGNAL Net_3899_local : bit;
+    ATTRIBUTE placement_force OF Net_3895_split_1 : SIGNAL IS "U(2,0,B)0";
     SIGNAL Net_3903 : bit;
     SIGNAL Net_3905 : bit;
-    ATTRIBUTE placement_force OF Net_3905 : SIGNAL IS "U(0,4,A)3";
+    ATTRIBUTE placement_force OF Net_3905 : SIGNAL IS "U(1,0,A)0";
     SIGNAL Net_3914_0 : bit;
     SIGNAL Net_3914_1 : bit;
     SIGNAL Net_3914_2 : bit;
@@ -171,6 +161,25 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL Net_4072_5 : bit;
     SIGNAL Net_4072_6 : bit;
     SIGNAL Net_4072_7 : bit;
+    SIGNAL Net_4107 : bit;
+    SIGNAL Net_4116 : bit;
+    ATTRIBUTE global_signal OF Net_4116 : SIGNAL IS true;
+    SIGNAL Net_4116_local : bit;
+    SIGNAL Net_4170 : bit;
+    SIGNAL Net_4184 : bit;
+    ATTRIBUTE global_signal OF Net_4184 : SIGNAL IS true;
+    SIGNAL Net_4184_local : bit;
+    SIGNAL Net_4189 : bit;
+    SIGNAL Net_4200 : bit;
+    SIGNAL Net_4201 : bit;
+    SIGNAL Net_4238 : bit;
+    ATTRIBUTE placement_force OF Net_4238 : SIGNAL IS "U(2,3,A)0";
+    SIGNAL Net_4260 : bit;
+    SIGNAL Net_4274 : bit;
+    SIGNAL Net_4275 : bit;
+    ATTRIBUTE udbclken_assigned OF Net_4275 : SIGNAL IS "True";
+    ATTRIBUTE global_signal OF Net_4275 : SIGNAL IS true;
+    SIGNAL Net_4275_local : bit;
     SIGNAL P1_Clock(0)__PA : bit;
     SIGNAL P1_D0(0)__PA : bit;
     SIGNAL P1_D0(1)__PA : bit;
@@ -193,10 +202,45 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL Vis_D2(0)__PA : bit;
     SIGNAL Vis_D3(0)__PA : bit;
     SIGNAL Vis_Latch(0)__PA : bit;
+    SIGNAL \ClockCountFilter:genblk1[0]:samples_0\ : bit;
+    ATTRIBUTE placement_force OF \ClockCountFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(2,3,A)2";
+    SIGNAL \ClockCountFilter:genblk1[0]:samples_1\ : bit;
+    ATTRIBUTE placement_force OF \ClockCountFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(2,3,A)1";
+    SIGNAL \ClockCountSel:control_1\ : bit;
+    SIGNAL \ClockCountSel:control_2\ : bit;
+    SIGNAL \ClockCountSel:control_3\ : bit;
+    SIGNAL \ClockCountSel:control_4\ : bit;
+    SIGNAL \ClockCountSel:control_5\ : bit;
+    SIGNAL \ClockCountSel:control_6\ : bit;
+    SIGNAL \ClockCountSel:control_7\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:cmp_out_i\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_0\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_1\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_2\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_3\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_4\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_5\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_6\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:control_7\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:count_enable\ : bit;
+    ATTRIBUTE placement_force OF \ClockCounter:CounterUDB:count_enable\ : SIGNAL IS "U(3,4,A)1";
+    SIGNAL \ClockCounter:CounterUDB:count_stored_i\ : bit;
+    ATTRIBUTE placement_force OF \ClockCounter:CounterUDB:count_stored_i\ : SIGNAL IS "U(3,4,A)3";
+    SIGNAL \ClockCounter:CounterUDB:prevCompare\ : bit;
+    ATTRIBUTE placement_force OF \ClockCounter:CounterUDB:prevCompare\ : SIGNAL IS "U(3,5,A)1";
+    SIGNAL \ClockCounter:CounterUDB:reload\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:status_0\ : bit;
+    ATTRIBUTE placement_force OF \ClockCounter:CounterUDB:status_0\ : SIGNAL IS "U(3,5,A)0";
+    SIGNAL \ClockCounter:CounterUDB:status_3\ : bit;
+    ATTRIBUTE placement_force OF \ClockCounter:CounterUDB:status_3\ : SIGNAL IS "U(3,5,B)1";
+    SIGNAL \ClockCounter:CounterUDB:status_5\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:status_6\ : bit;
+    SIGNAL \ClockCounter:CounterUDB:underflow_reg_i\ : bit;
+    ATTRIBUTE placement_force OF \ClockCounter:CounterUDB:underflow_reg_i\ : SIGNAL IS "U(3,5,A)2";
     SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(2,0,B)3";
+    ATTRIBUTE placement_force OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(1,4,A)1";
     SIGNAL \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(2,0,B)2";
+    ATTRIBUTE placement_force OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(1,4,A)0";
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_0\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_1\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_2\ : bit;
@@ -207,19 +251,19 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:control_7\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:per_zero\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : SIGNAL IS "U(1,0,A)1";
+    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : SIGNAL IS "U(3,4,B)0";
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:status_2\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:status_3\ : bit;
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ : SIGNAL IS "U(1,0,B)2";
+    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ : SIGNAL IS "U(3,3,A)0";
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(1,0,A)3";
+    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(3,3,A)3";
     SIGNAL \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(1,0,A)2";
+    ATTRIBUTE placement_force OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(3,3,A)2";
     SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(0,5,B)3";
+    ATTRIBUTE placement_force OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(0,2,A)2";
     SIGNAL \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(0,5,A)3";
+    ATTRIBUTE placement_force OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(0,2,A)1";
     SIGNAL \ConsolePort_1:Net_191\ : bit;
     SIGNAL \ConsolePort_1:Net_201\ : bit;
     SIGNAL \ConsolePort_1:Net_213\ : bit;
@@ -228,14 +272,14 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE global_signal OF \ConsolePort_1:Net_22\ : SIGNAL IS true;
     SIGNAL \ConsolePort_1:Net_22_local\ : bit;
     SIGNAL \ConsolePort_1:Net_288\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:Net_288\ : SIGNAL IS "U(2,0,B)0";
+    ATTRIBUTE placement_force OF \ConsolePort_1:Net_288\ : SIGNAL IS "U(1,4,A)2";
     SIGNAL \ConsolePort_1:Net_294\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:Net_294\ : SIGNAL IS "U(1,0,A)0";
+    ATTRIBUTE placement_force OF \ConsolePort_1:Net_294\ : SIGNAL IS "U(1,4,A)3";
     SIGNAL \ConsolePort_1:Net_296\ : bit;
     SIGNAL \ConsolePort_1:Net_61\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:Net_61\ : SIGNAL IS "U(1,0,B)3";
+    ATTRIBUTE placement_force OF \ConsolePort_1:Net_61\ : SIGNAL IS "U(3,3,A)1";
     SIGNAL \ConsolePort_1:Net_68\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:Net_68\ : SIGNAL IS "U(2,0,B)1";
+    ATTRIBUTE placement_force OF \ConsolePort_1:Net_68\ : SIGNAL IS "U(3,5,B)3";
     SIGNAL \ConsolePort_1:RegD0:bSR:control_1\ : bit;
     SIGNAL \ConsolePort_1:RegD0:bSR:control_2\ : bit;
     SIGNAL \ConsolePort_1:RegD0:bSR:control_3\ : bit;
@@ -284,20 +328,20 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:control_7\ : bit;
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:per_zero\ : bit;
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(0,5,B)1";
+    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(0,2,B)2";
     SIGNAL \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0.ce0__sig\ : bit;
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:status_2\ : bit;
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:status_3\ : bit;
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(0,5,B)2";
+    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(0,2,B)1";
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(0,5,A)1";
+    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(0,2,A)3";
     SIGNAL \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(0,5,A)2";
+    ATTRIBUTE placement_force OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(0,2,B)0";
     SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(3,1,B)3";
+    ATTRIBUTE placement_force OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(0,3,B)0";
     SIGNAL \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(3,1,B)2";
+    ATTRIBUTE placement_force OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(0,3,B)1";
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_0\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_1\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_2\ : bit;
@@ -308,19 +352,19 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:control_7\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:per_zero\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : SIGNAL IS "U(2,1,A)2";
+    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : SIGNAL IS "U(2,2,A)1";
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:status_2\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:status_3\ : bit;
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ : SIGNAL IS "U(2,1,B)0";
+    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ : SIGNAL IS "U(2,2,A)0";
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(2,1,B)3";
+    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(2,2,B)3";
     SIGNAL \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(2,1,B)2";
+    ATTRIBUTE placement_force OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(2,2,B)2";
     SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(3,0,A)0";
+    ATTRIBUTE placement_force OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : SIGNAL IS "U(1,3,A)1";
     SIGNAL \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(3,0,A)3";
+    ATTRIBUTE placement_force OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : SIGNAL IS "U(1,3,B)2";
     SIGNAL \ConsolePort_2:Net_191\ : bit;
     SIGNAL \ConsolePort_2:Net_201\ : bit;
     SIGNAL \ConsolePort_2:Net_213\ : bit;
@@ -329,14 +373,14 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE global_signal OF \ConsolePort_2:Net_22\ : SIGNAL IS true;
     SIGNAL \ConsolePort_2:Net_22_local\ : bit;
     SIGNAL \ConsolePort_2:Net_288\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:Net_288\ : SIGNAL IS "U(3,1,B)0";
+    ATTRIBUTE placement_force OF \ConsolePort_2:Net_288\ : SIGNAL IS "U(0,3,B)3";
     SIGNAL \ConsolePort_2:Net_294\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:Net_294\ : SIGNAL IS "U(2,1,A)1";
+    ATTRIBUTE placement_force OF \ConsolePort_2:Net_294\ : SIGNAL IS "U(2,2,B)1";
     SIGNAL \ConsolePort_2:Net_296\ : bit;
     SIGNAL \ConsolePort_2:Net_61\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:Net_61\ : SIGNAL IS "U(2,1,B)1";
+    ATTRIBUTE placement_force OF \ConsolePort_2:Net_61\ : SIGNAL IS "U(2,2,B)0";
     SIGNAL \ConsolePort_2:Net_68\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:Net_68\ : SIGNAL IS "U(2,1,A)0";
+    ATTRIBUTE placement_force OF \ConsolePort_2:Net_68\ : SIGNAL IS "U(2,3,A)3";
     SIGNAL \ConsolePort_2:RegD0:bSR:control_1\ : bit;
     SIGNAL \ConsolePort_2:RegD0:bSR:control_2\ : bit;
     SIGNAL \ConsolePort_2:RegD0:bSR:control_3\ : bit;
@@ -386,16 +430,16 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:control_7\ : bit;
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:per_zero\ : bit;
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(3,0,A)1";
+    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : SIGNAL IS "U(1,3,A)2";
     SIGNAL \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0.ce0__sig\ : bit;
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:status_2\ : bit;
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:status_3\ : bit;
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(3,0,B)0";
+    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:status_tc\ : SIGNAL IS "U(1,3,B)1";
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(3,0,B)1";
+    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : SIGNAL IS "U(1,3,A)3";
     SIGNAL \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : bit;
-    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(3,0,B)2";
+    ATTRIBUTE placement_force OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : SIGNAL IS "U(1,3,B)0";
     SIGNAL \\\USBUART:Dm(0)\\__PA\ : bit;
     SIGNAL \\\USBUART:Dp(0)\\__PA\ : bit;
     SIGNAL \USBUART:Net_1010\ : bit;
@@ -421,147 +465,147 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \USBUART:ep_int_7\ : bit;
     SIGNAL \USBUART:ep_int_8\ : bit;
     SIGNAL \visualization_1:latched_data0_0\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_0\ : SIGNAL IS "U(0,4,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_0\ : SIGNAL IS "U(3,0,B)1";
     SIGNAL \visualization_1:latched_data0_10\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_10\ : SIGNAL IS "U(2,3,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_10\ : SIGNAL IS "U(2,4,A)2";
     SIGNAL \visualization_1:latched_data0_11\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_11\ : SIGNAL IS "U(2,3,B)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_11\ : SIGNAL IS "U(2,4,B)2";
     SIGNAL \visualization_1:latched_data0_12\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_12\ : SIGNAL IS "U(2,3,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_12\ : SIGNAL IS "U(2,4,B)3";
     SIGNAL \visualization_1:latched_data0_13\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_13\ : SIGNAL IS "U(2,3,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_13\ : SIGNAL IS "U(2,4,A)3";
     SIGNAL \visualization_1:latched_data0_14\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_14\ : SIGNAL IS "U(2,3,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_14\ : SIGNAL IS "U(2,4,A)1";
     SIGNAL \visualization_1:latched_data0_15\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_15\ : SIGNAL IS "U(2,3,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_15\ : SIGNAL IS "U(2,3,B)1";
     SIGNAL \visualization_1:latched_data0_1\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_1\ : SIGNAL IS "U(0,3,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_1\ : SIGNAL IS "U(3,0,A)2";
     SIGNAL \visualization_1:latched_data0_2\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_2\ : SIGNAL IS "U(0,3,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_2\ : SIGNAL IS "U(3,0,B)2";
     SIGNAL \visualization_1:latched_data0_3\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_3\ : SIGNAL IS "U(0,4,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_3\ : SIGNAL IS "U(3,0,B)3";
     SIGNAL \visualization_1:latched_data0_4\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_4\ : SIGNAL IS "U(0,4,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_4\ : SIGNAL IS "U(3,0,A)1";
     SIGNAL \visualization_1:latched_data0_5\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_5\ : SIGNAL IS "U(0,3,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_5\ : SIGNAL IS "U(3,0,B)0";
     SIGNAL \visualization_1:latched_data0_6\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_6\ : SIGNAL IS "U(1,3,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_6\ : SIGNAL IS "U(3,0,A)0";
     SIGNAL \visualization_1:latched_data0_7\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_7\ : SIGNAL IS "U(0,3,B)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_7\ : SIGNAL IS "U(3,0,A)3";
     SIGNAL \visualization_1:latched_data0_8\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_8\ : SIGNAL IS "U(2,3,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_8\ : SIGNAL IS "U(2,4,A)0";
     SIGNAL \visualization_1:latched_data0_9\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data0_9\ : SIGNAL IS "U(2,3,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data0_9\ : SIGNAL IS "U(2,4,B)1";
     SIGNAL \visualization_1:latched_data1_0\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_0\ : SIGNAL IS "U(3,4,B)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_0\ : SIGNAL IS "U(0,4,A)2";
     SIGNAL \visualization_1:latched_data1_10\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_10\ : SIGNAL IS "U(2,5,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_10\ : SIGNAL IS "U(0,0,B)0";
     SIGNAL \visualization_1:latched_data1_11\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_11\ : SIGNAL IS "U(3,4,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_11\ : SIGNAL IS "U(0,0,B)2";
     SIGNAL \visualization_1:latched_data1_12\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_12\ : SIGNAL IS "U(3,5,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_12\ : SIGNAL IS "U(0,0,B)1";
     SIGNAL \visualization_1:latched_data1_13\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_13\ : SIGNAL IS "U(3,5,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_13\ : SIGNAL IS "U(0,0,A)3";
     SIGNAL \visualization_1:latched_data1_14\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_14\ : SIGNAL IS "U(3,5,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_14\ : SIGNAL IS "U(0,0,A)2";
     SIGNAL \visualization_1:latched_data1_15\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_15\ : SIGNAL IS "U(2,5,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_15\ : SIGNAL IS "U(0,0,A)0";
     SIGNAL \visualization_1:latched_data1_1\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_1\ : SIGNAL IS "U(3,4,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_1\ : SIGNAL IS "U(0,4,B)1";
     SIGNAL \visualization_1:latched_data1_2\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_2\ : SIGNAL IS "U(2,4,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_2\ : SIGNAL IS "U(0,4,B)2";
     SIGNAL \visualization_1:latched_data1_3\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_3\ : SIGNAL IS "U(3,4,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_3\ : SIGNAL IS "U(0,4,A)1";
     SIGNAL \visualization_1:latched_data1_4\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_4\ : SIGNAL IS "U(3,4,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_4\ : SIGNAL IS "U(0,4,B)3";
     SIGNAL \visualization_1:latched_data1_5\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_5\ : SIGNAL IS "U(3,4,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_5\ : SIGNAL IS "U(0,4,B)0";
     SIGNAL \visualization_1:latched_data1_6\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_6\ : SIGNAL IS "U(3,4,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_6\ : SIGNAL IS "U(0,4,A)0";
     SIGNAL \visualization_1:latched_data1_7\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_7\ : SIGNAL IS "U(3,4,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_7\ : SIGNAL IS "U(0,4,A)3";
     SIGNAL \visualization_1:latched_data1_8\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_8\ : SIGNAL IS "U(2,5,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_8\ : SIGNAL IS "U(0,0,A)1";
     SIGNAL \visualization_1:latched_data1_9\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data1_9\ : SIGNAL IS "U(3,5,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data1_9\ : SIGNAL IS "U(0,0,B)3";
     SIGNAL \visualization_1:latched_data2_0\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_0\ : SIGNAL IS "U(1,4,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_0\ : SIGNAL IS "U(1,5,A)0";
     SIGNAL \visualization_1:latched_data2_10\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_10\ : SIGNAL IS "U(1,3,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_10\ : SIGNAL IS "U(1,1,B)1";
     SIGNAL \visualization_1:latched_data2_11\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_11\ : SIGNAL IS "U(1,3,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_11\ : SIGNAL IS "U(1,1,A)1";
     SIGNAL \visualization_1:latched_data2_12\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_12\ : SIGNAL IS "U(1,3,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_12\ : SIGNAL IS "U(1,1,A)2";
     SIGNAL \visualization_1:latched_data2_13\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_13\ : SIGNAL IS "U(1,3,B)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_13\ : SIGNAL IS "U(1,1,B)0";
     SIGNAL \visualization_1:latched_data2_14\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_14\ : SIGNAL IS "U(1,3,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_14\ : SIGNAL IS "U(1,1,B)2";
     SIGNAL \visualization_1:latched_data2_15\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_15\ : SIGNAL IS "U(1,3,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_15\ : SIGNAL IS "U(1,1,B)3";
     SIGNAL \visualization_1:latched_data2_1\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_1\ : SIGNAL IS "U(1,4,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_1\ : SIGNAL IS "U(1,5,B)3";
     SIGNAL \visualization_1:latched_data2_2\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_2\ : SIGNAL IS "U(1,5,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_2\ : SIGNAL IS "U(1,5,A)2";
     SIGNAL \visualization_1:latched_data2_3\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_3\ : SIGNAL IS "U(1,4,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_3\ : SIGNAL IS "U(1,5,A)1";
     SIGNAL \visualization_1:latched_data2_4\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_4\ : SIGNAL IS "U(1,4,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_4\ : SIGNAL IS "U(1,5,B)1";
     SIGNAL \visualization_1:latched_data2_5\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_5\ : SIGNAL IS "U(1,4,B)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_5\ : SIGNAL IS "U(1,5,B)0";
     SIGNAL \visualization_1:latched_data2_6\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_6\ : SIGNAL IS "U(1,4,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_6\ : SIGNAL IS "U(1,5,B)2";
     SIGNAL \visualization_1:latched_data2_7\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_7\ : SIGNAL IS "U(1,4,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_7\ : SIGNAL IS "U(1,5,A)3";
     SIGNAL \visualization_1:latched_data2_8\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_8\ : SIGNAL IS "U(1,3,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_8\ : SIGNAL IS "U(1,1,A)3";
     SIGNAL \visualization_1:latched_data2_9\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data2_9\ : SIGNAL IS "U(1,4,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data2_9\ : SIGNAL IS "U(1,1,A)0";
     SIGNAL \visualization_1:latched_data3_0\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_0\ : SIGNAL IS "U(0,1,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_0\ : SIGNAL IS "U(3,2,B)0";
     SIGNAL \visualization_1:latched_data3_10\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_10\ : SIGNAL IS "U(1,2,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_10\ : SIGNAL IS "U(3,1,B)3";
     SIGNAL \visualization_1:latched_data3_11\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_11\ : SIGNAL IS "U(1,2,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_11\ : SIGNAL IS "U(3,1,B)0";
     SIGNAL \visualization_1:latched_data3_12\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_12\ : SIGNAL IS "U(1,2,B)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_12\ : SIGNAL IS "U(3,1,A)1";
     SIGNAL \visualization_1:latched_data3_13\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_13\ : SIGNAL IS "U(1,2,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_13\ : SIGNAL IS "U(3,1,B)1";
     SIGNAL \visualization_1:latched_data3_14\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_14\ : SIGNAL IS "U(1,2,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_14\ : SIGNAL IS "U(3,1,A)3";
     SIGNAL \visualization_1:latched_data3_15\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_15\ : SIGNAL IS "U(1,2,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_15\ : SIGNAL IS "U(3,1,A)0";
     SIGNAL \visualization_1:latched_data3_1\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_1\ : SIGNAL IS "U(0,1,B)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_1\ : SIGNAL IS "U(3,2,A)3";
     SIGNAL \visualization_1:latched_data3_2\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_2\ : SIGNAL IS "U(0,1,B)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_2\ : SIGNAL IS "U(3,2,B)1";
     SIGNAL \visualization_1:latched_data3_3\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_3\ : SIGNAL IS "U(0,1,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_3\ : SIGNAL IS "U(3,2,A)1";
     SIGNAL \visualization_1:latched_data3_4\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_4\ : SIGNAL IS "U(0,1,B)3";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_4\ : SIGNAL IS "U(3,2,B)2";
     SIGNAL \visualization_1:latched_data3_5\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_5\ : SIGNAL IS "U(0,1,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_5\ : SIGNAL IS "U(3,2,A)2";
     SIGNAL \visualization_1:latched_data3_6\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_6\ : SIGNAL IS "U(0,1,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_6\ : SIGNAL IS "U(3,2,A)0";
     SIGNAL \visualization_1:latched_data3_7\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_7\ : SIGNAL IS "U(0,1,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_7\ : SIGNAL IS "U(3,2,B)3";
     SIGNAL \visualization_1:latched_data3_8\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_8\ : SIGNAL IS "U(1,2,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_8\ : SIGNAL IS "U(3,1,B)2";
     SIGNAL \visualization_1:latched_data3_9\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:latched_data3_9\ : SIGNAL IS "U(1,2,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:latched_data3_9\ : SIGNAL IS "U(3,1,A)2";
     SIGNAL \visualization_1:pos_0\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:pos_0\ : SIGNAL IS "U(2,0,A)1";
+    ATTRIBUTE placement_force OF \visualization_1:pos_0\ : SIGNAL IS "U(1,2,B)0";
     SIGNAL \visualization_1:pos_1\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:pos_1\ : SIGNAL IS "U(2,0,A)0";
+    ATTRIBUTE placement_force OF \visualization_1:pos_1\ : SIGNAL IS "U(2,0,A)3";
     SIGNAL \visualization_1:pos_2\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:pos_2\ : SIGNAL IS "U(2,0,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:pos_2\ : SIGNAL IS "U(1,2,B)1";
     SIGNAL \visualization_1:pos_3\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:pos_3\ : SIGNAL IS "U(1,5,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:pos_3\ : SIGNAL IS "U(2,0,A)1";
     SIGNAL \visualization_1:state_0\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:state_0\ : SIGNAL IS "U(0,0,B)2";
+    ATTRIBUTE placement_force OF \visualization_1:state_0\ : SIGNAL IS "U(2,0,A)2";
     SIGNAL \visualization_1:state_1\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:state_1\ : SIGNAL IS "U(2,0,A)2";
+    ATTRIBUTE placement_force OF \visualization_1:state_1\ : SIGNAL IS "U(1,2,B)2";
     SIGNAL \visualization_1:state_2\ : bit;
-    ATTRIBUTE placement_force OF \visualization_1:state_2\ : SIGNAL IS "U(2,4,A)3";
+    ATTRIBUTE placement_force OF \visualization_1:state_2\ : SIGNAL IS "U(1,0,A)3";
     SIGNAL __ONE__ : bit;
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
@@ -668,7 +712,7 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     SIGNAL \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1.sor__sig\ : bit;
     SIGNAL \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE lib_model OF Net_3895_split : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF Net_3895_split : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF Net_3895_split : LABEL IS "U(2,5)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF P1_D1(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF P1_D1(0) : LABEL IS "P12[2]";
@@ -681,7 +725,7 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF P1_D2(1) : LABEL IS "iocell5";
     ATTRIBUTE Location OF P1_D2(1) : LABEL IS "P12[5]";
     ATTRIBUTE lib_model OF P2_Clock(0) : LABEL IS "iocell6";
-    ATTRIBUTE Location OF P2_Clock(0) : LABEL IS "P15[0]";
+    ATTRIBUTE Location OF P2_Clock(0) : LABEL IS "P2[2]";
     ATTRIBUTE lib_model OF \USBUART:Dm(0)\ : LABEL IS "iocell7";
     ATTRIBUTE Location OF \USBUART:Dm(0)\ : LABEL IS "P15[7]";
     ATTRIBUTE Location OF \USBUART:Dp\ : LABEL IS "F(PICU,8)";
@@ -708,7 +752,7 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF P2_D0(1) : LABEL IS "iocell18";
     ATTRIBUTE Location OF P2_D0(1) : LABEL IS "P12[7]";
     ATTRIBUTE lib_model OF Vis_Latch(0) : LABEL IS "iocell19";
-    ATTRIBUTE Location OF Vis_Latch(0) : LABEL IS "P1[2]";
+    ATTRIBUTE Location OF Vis_Latch(0) : LABEL IS "P15[4]";
     ATTRIBUTE lib_model OF Vis_Clock(0) : LABEL IS "iocell20";
     ATTRIBUTE Location OF Vis_Clock(0) : LABEL IS "P1[4]";
     ATTRIBUTE lib_model OF Vis_D0(0) : LABEL IS "iocell21";
@@ -720,361 +764,389 @@ ARCHITECTURE __DEFAULT__ OF TASBot IS
     ATTRIBUTE lib_model OF Vis_D3(0) : LABEL IS "iocell24";
     ATTRIBUTE Location OF Vis_D3(0) : LABEL IS "P3[0]";
     ATTRIBUTE lib_model OF Net_3488 : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF Net_3488 : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF Net_3488 : LABEL IS "U(1,4)";
     ATTRIBUTE lib_model OF \ConsolePort_2:Net_68\ : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF \ConsolePort_2:Net_68\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:Net_68\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF Net_3489 : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF Net_3489 : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF Net_3489 : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:status_tc\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:status_tc\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:status_tc\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \ConsolePort_2:Net_294\ : LABEL IS "macrocell6";
-    ATTRIBUTE Location OF \ConsolePort_2:Net_294\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:Net_294\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ : LABEL IS "macrocell7";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:status_tc\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF Net_3487 : LABEL IS "macrocell8";
-    ATTRIBUTE Location OF Net_3487 : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF Net_3487 : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF Net_3479 : LABEL IS "macrocell9";
     ATTRIBUTE Location OF Net_3479 : LABEL IS "U(0,5)";
     ATTRIBUTE lib_model OF \ConsolePort_1:Net_68\ : LABEL IS "macrocell10";
-    ATTRIBUTE Location OF \ConsolePort_1:Net_68\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \ConsolePort_1:Net_68\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF Net_2981 : LABEL IS "macrocell11";
-    ATTRIBUTE Location OF Net_2981 : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF Net_2981 : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:status_tc\ : LABEL IS "macrocell12";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:status_tc\ : LABEL IS "U(0,5)";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:status_tc\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:Net_294\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \ConsolePort_1:Net_294\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \ConsolePort_1:Net_294\ : LABEL IS "U(1,4)";
     ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ : LABEL IS "macrocell14";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:status_tc\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF Net_3420 : LABEL IS "macrocell15";
-    ATTRIBUTE Location OF Net_3420 : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF Net_3420 : LABEL IS "U(0,5)";
     ATTRIBUTE lib_model OF Net_3905 : LABEL IS "macrocell16";
-    ATTRIBUTE Location OF Net_3905 : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF Net_3905 : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF Net_3895 : LABEL IS "macrocell17";
-    ATTRIBUTE Location OF Net_3895 : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF Net_3895 : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF Net_3894 : LABEL IS "macrocell18";
-    ATTRIBUTE Location OF Net_3894 : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF Net_3894 : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF Net_3893 : LABEL IS "macrocell19";
-    ATTRIBUTE Location OF Net_3893 : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF Net_3893 : LABEL IS "U(0,5)";
     ATTRIBUTE lib_model OF Net_3785 : LABEL IS "macrocell20";
-    ATTRIBUTE Location OF Net_3785 : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF Net_3785 : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF Net_3785_split_1 : LABEL IS "macrocell21";
-    ATTRIBUTE Location OF Net_3785_split_1 : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF Net_3785_split_1 : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF Net_3785_split : LABEL IS "macrocell22";
-    ATTRIBUTE Location OF Net_3785_split : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF Net_3785_split : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF Net_3893_split_1 : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF Net_3893_split_1 : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF Net_3893_split : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF Net_3893_split : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF Net_3894_split_1 : LABEL IS "macrocell25";
-    ATTRIBUTE Location OF Net_3894_split_1 : LABEL IS "U(3,2)";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockSync:genblk1[0]:INST\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF Net_3894_split : LABEL IS "macrocell26";
-    ATTRIBUTE Location OF Net_3894_split : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF Net_3893_split_1 : LABEL IS "U(2,5)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:status_0\ : LABEL IS "macrocell24";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:status_0\ : LABEL IS "U(3,5)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:status_3\ : LABEL IS "macrocell25";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:status_3\ : LABEL IS "U(3,5)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:count_enable\ : LABEL IS "macrocell26";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:count_enable\ : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF Net_3893_split : LABEL IS "macrocell27";
+    ATTRIBUTE Location OF Net_3893_split : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF Net_3894_split_1 : LABEL IS "macrocell28";
+    ATTRIBUTE Location OF Net_3894_split_1 : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockSync:genblk1[0]:INST\ : LABEL IS "U(0,3)";
+    ATTRIBUTE lib_model OF Net_3894_split : LABEL IS "macrocell29";
+    ATTRIBUTE Location OF Net_3894_split : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF Net_3895_split_1 : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF Net_3895_split_1 : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE lib_model OF Net_3895_split_1 : LABEL IS "macrocell30";
+    ATTRIBUTE Location OF Net_3895_split_1 : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD2:bSR:StsReg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:StsReg\ : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:StsReg\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD0:bSR:StsReg\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:StsReg\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:StsReg\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell3";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell4";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell3";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell3";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell5";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell6";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell4";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD1:bSR:StsReg\ : LABEL IS "statusicell4";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:StsReg\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:StsReg\ : LABEL IS "U(1,5)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell7";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(0,5)";
     ATTRIBUTE lib_model OF \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell8";
-    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(1,5)";
     ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell5";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell5";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:sT8:timerdp:u0\ : LABEL IS "datapathcell9";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:sT8:timerdp:u0\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:sT8:timerdp:u0\ : LABEL IS "U(2,1)";
     ATTRIBUTE Location OF \USBUART:dp_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
     ATTRIBUTE Location OF \USBUART:USB\ : LABEL IS "F(USB,0)";
-    ATTRIBUTE Location OF \USBUART:ep_3\ : LABEL IS "[IntrContainer=(0)][IntrId=(6)]";
-    ATTRIBUTE Location OF \USBUART:ep_2\ : LABEL IS "[IntrContainer=(0)][IntrId=(5)]";
-    ATTRIBUTE Location OF \USBUART:ep_1\ : LABEL IS "[IntrContainer=(0)][IntrId=(4)]";
+    ATTRIBUTE Location OF \USBUART:ep_3\ : LABEL IS "[IntrContainer=(0)][IntrId=(7)]";
+    ATTRIBUTE Location OF \USBUART:ep_2\ : LABEL IS "[IntrContainer=(0)][IntrId=(6)]";
+    ATTRIBUTE Location OF \USBUART:ep_1\ : LABEL IS "[IntrContainer=(0)][IntrId=(5)]";
     ATTRIBUTE Location OF \USBUART:ep_0\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
     ATTRIBUTE Location OF \USBUART:bus_reset\ : LABEL IS "[IntrContainer=(0)][IntrId=(23)]";
     ATTRIBUTE Location OF \USBUART:arb_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(22)]";
     ATTRIBUTE Location OF \USBUART:sof_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(21)]";
-    ATTRIBUTE Location OF P2_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
-    ATTRIBUTE Location OF P1_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
-    ATTRIBUTE Location OF P1_TimerIRQ : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
-    ATTRIBUTE Location OF P2_TimerIRQ : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
+    ATTRIBUTE Location OF P2_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
+    ATTRIBUTE Location OF P1_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
+    ATTRIBUTE Location OF P1_TimerIRQ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
+    ATTRIBUTE Location OF P2_TimerIRQ : LABEL IS "[IntrContainer=(0)][IntrId=(4)]";
     ATTRIBUTE Location OF \ConsolePort_1:ClockSync:genblk1[0]:INST\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell6";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD2:bSR:StsReg\ : LABEL IS "statusicell6";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:StsReg\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:StsReg\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell10";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(1,4)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell11";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell7";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD0:bSR:StsReg\ : LABEL IS "statusicell7";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD0:bSR:StsReg\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD0:bSR:StsReg\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell12";
     ATTRIBUTE Location OF \ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell13";
     ATTRIBUTE Location OF \ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell8";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(0,5)";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell8";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,5)";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell14";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(0,5)";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell15";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(1,5)";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "controlcell9";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:SyncCtl:CtrlReg\ : LABEL IS "U(0,5)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD1:bSR:StsReg\ : LABEL IS "statusicell9";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:StsReg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:StsReg\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "datapathcell16";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\ : LABEL IS "U(1,4)";
     ATTRIBUTE lib_model OF \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "datapathcell17";
-    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell10";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell10";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:sT8:timerdp:u0\ : LABEL IS "datapathcell18";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:sT8:timerdp:u0\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:sT8:timerdp:u0\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \Vis_L_1:Sync:ctrl_reg\ : LABEL IS "controlcell11";
-    ATTRIBUTE Location OF \Vis_L_1:Sync:ctrl_reg\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \Vis_L_1:Sync:ctrl_reg\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \Vis_L:Sync:ctrl_reg\ : LABEL IS "controlcell12";
-    ATTRIBUTE Location OF \Vis_L:Sync:ctrl_reg\ : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \Vis_L:Sync:ctrl_reg\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \Vis_H:Sync:ctrl_reg\ : LABEL IS "controlcell13";
-    ATTRIBUTE Location OF \Vis_H:Sync:ctrl_reg\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \Vis_H:Sync:ctrl_reg\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \Vis_H_1:Sync:ctrl_reg\ : LABEL IS "controlcell14";
-    ATTRIBUTE Location OF \Vis_H_1:Sync:ctrl_reg\ : LABEL IS "U(3,5)";
-    ATTRIBUTE Location OF \VisClockSync:genblk1[0]:INST\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \Vis_H_1:Sync:ctrl_reg\ : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF \VisClockSync:genblk1[0]:INST\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \Vis_L_2:Sync:ctrl_reg\ : LABEL IS "controlcell15";
-    ATTRIBUTE Location OF \Vis_L_2:Sync:ctrl_reg\ : LABEL IS "U(1,4)";
+    ATTRIBUTE Location OF \Vis_L_2:Sync:ctrl_reg\ : LABEL IS "U(1,5)";
     ATTRIBUTE lib_model OF \Vis_H_2:Sync:ctrl_reg\ : LABEL IS "controlcell16";
-    ATTRIBUTE Location OF \Vis_H_2:Sync:ctrl_reg\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \Vis_H_2:Sync:ctrl_reg\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \Vis_L_3:Sync:ctrl_reg\ : LABEL IS "controlcell17";
-    ATTRIBUTE Location OF \Vis_L_3:Sync:ctrl_reg\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \Vis_L_3:Sync:ctrl_reg\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \Vis_H_3:Sync:ctrl_reg\ : LABEL IS "controlcell18";
-    ATTRIBUTE Location OF \Vis_H_3:Sync:ctrl_reg\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell28";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell29";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell30";
-    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell31";
-    ATTRIBUTE Location OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell32";
-    ATTRIBUTE Location OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF Net_3493 : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF Net_3493 : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell34";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:Net_61\ : LABEL IS "macrocell35";
-    ATTRIBUTE Location OF \ConsolePort_2:Net_61\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell36";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell37";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell38";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell39";
-    ATTRIBUTE Location OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \ConsolePort_2:Net_288\ : LABEL IS "macrocell40";
-    ATTRIBUTE Location OF \ConsolePort_2:Net_288\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell41";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "U(0,5)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell42";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(0,5)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell43";
-    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(0,5)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell44";
-    ATTRIBUTE Location OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(0,5)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell45";
-    ATTRIBUTE Location OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(0,5)";
-    ATTRIBUTE lib_model OF Net_3417 : LABEL IS "macrocell46";
-    ATTRIBUTE Location OF Net_3417 : LABEL IS "U(0,5)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell47";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "U(1,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:Net_61\ : LABEL IS "macrocell48";
-    ATTRIBUTE Location OF \ConsolePort_1:Net_61\ : LABEL IS "U(1,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell49";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "U(1,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell50";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "U(1,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell51";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell52";
-    ATTRIBUTE Location OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \ConsolePort_1:Net_288\ : LABEL IS "macrocell53";
-    ATTRIBUTE Location OF \ConsolePort_1:Net_288\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \visualization_1:state_2\ : LABEL IS "macrocell54";
-    ATTRIBUTE Location OF \visualization_1:state_2\ : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF \visualization_1:state_1\ : LABEL IS "macrocell55";
-    ATTRIBUTE Location OF \visualization_1:state_1\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \visualization_1:state_0\ : LABEL IS "macrocell56";
-    ATTRIBUTE Location OF \visualization_1:state_0\ : LABEL IS "U(0,0)";
-    ATTRIBUTE lib_model OF \visualization_1:pos_3\ : LABEL IS "macrocell57";
-    ATTRIBUTE Location OF \visualization_1:pos_3\ : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF \visualization_1:pos_2\ : LABEL IS "macrocell58";
-    ATTRIBUTE Location OF \visualization_1:pos_2\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \visualization_1:pos_1\ : LABEL IS "macrocell59";
+    ATTRIBUTE Location OF \Vis_H_3:Sync:ctrl_reg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "controlcell19";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "U(1,4)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:sSTSReg:stsreg\ : LABEL IS "statusicell11";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:sSTSReg:stsreg\ : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:sC8:counterdp:u0\ : LABEL IS "datapathcell19";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:sC8:counterdp:u0\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF ClockCounter_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
+    ATTRIBUTE Location OF \CounterSync:genblk1[0]:INST\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \ClockCountSel:Sync:ctrl_reg\ : LABEL IS "controlcell20";
+    ATTRIBUTE Location OF \ClockCountSel:Sync:ctrl_reg\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell31";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:run_mode\ : LABEL IS "U(1,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell32";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(1,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell33";
+    ATTRIBUTE Location OF \ConsolePort_2:WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(1,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell34";
+    ATTRIBUTE Location OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(1,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell35";
+    ATTRIBUTE Location OF \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(1,3)";
+    ATTRIBUTE lib_model OF Net_3493 : LABEL IS "macrocell36";
+    ATTRIBUTE Location OF Net_3493 : LABEL IS "U(1,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell37";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:run_mode\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:Net_61\ : LABEL IS "macrocell38";
+    ATTRIBUTE Location OF \ConsolePort_2:Net_61\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell39";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell40";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell41";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(0,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell42";
+    ATTRIBUTE Location OF \ConsolePort_2:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(0,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_2:Net_288\ : LABEL IS "macrocell43";
+    ATTRIBUTE Location OF \ConsolePort_2:Net_288\ : LABEL IS "U(0,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "macrocell44";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:run_mode\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell45";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:timer_enable\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell46";
+    ATTRIBUTE Location OF \ConsolePort_1:WinTimer:TimerUDB:trig_disable\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell47";
+    ATTRIBUTE Location OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell48";
+    ATTRIBUTE Location OF \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF Net_3417 : LABEL IS "macrocell49";
+    ATTRIBUTE Location OF Net_3417 : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "macrocell50";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:run_mode\ : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:Net_61\ : LABEL IS "macrocell51";
+    ATTRIBUTE Location OF \ConsolePort_1:Net_61\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "macrocell52";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:timer_enable\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "macrocell53";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockTimer:TimerUDB:trig_disable\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell54";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_1\ : LABEL IS "U(1,4)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell55";
+    ATTRIBUTE Location OF \ConsolePort_1:ClockFilter:genblk1[0]:samples_0\ : LABEL IS "U(1,4)";
+    ATTRIBUTE lib_model OF \ConsolePort_1:Net_288\ : LABEL IS "macrocell56";
+    ATTRIBUTE Location OF \ConsolePort_1:Net_288\ : LABEL IS "U(1,4)";
+    ATTRIBUTE lib_model OF \visualization_1:state_2\ : LABEL IS "macrocell57";
+    ATTRIBUTE Location OF \visualization_1:state_2\ : LABEL IS "U(1,0)";
+    ATTRIBUTE lib_model OF \visualization_1:state_1\ : LABEL IS "macrocell58";
+    ATTRIBUTE Location OF \visualization_1:state_1\ : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF \visualization_1:state_0\ : LABEL IS "macrocell59";
+    ATTRIBUTE Location OF \visualization_1:state_0\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \visualization_1:pos_3\ : LABEL IS "macrocell60";
+    ATTRIBUTE Location OF \visualization_1:pos_3\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \visualization_1:pos_2\ : LABEL IS "macrocell61";
+    ATTRIBUTE Location OF \visualization_1:pos_2\ : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF \visualization_1:pos_1\ : LABEL IS "macrocell62";
     ATTRIBUTE Location OF \visualization_1:pos_1\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \visualization_1:pos_0\ : LABEL IS "macrocell60";
-    ATTRIBUTE Location OF \visualization_1:pos_0\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_15\ : LABEL IS "macrocell61";
+    ATTRIBUTE lib_model OF \visualization_1:pos_0\ : LABEL IS "macrocell63";
+    ATTRIBUTE Location OF \visualization_1:pos_0\ : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_15\ : LABEL IS "macrocell64";
     ATTRIBUTE Location OF \visualization_1:latched_data0_15\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_14\ : LABEL IS "macrocell62";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_14\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_13\ : LABEL IS "macrocell63";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_13\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_12\ : LABEL IS "macrocell64";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_12\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_11\ : LABEL IS "macrocell65";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_11\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_10\ : LABEL IS "macrocell66";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_10\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_9\ : LABEL IS "macrocell67";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_9\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_8\ : LABEL IS "macrocell68";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_8\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_7\ : LABEL IS "macrocell69";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_7\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_6\ : LABEL IS "macrocell70";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_6\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_5\ : LABEL IS "macrocell71";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_5\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_4\ : LABEL IS "macrocell72";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_4\ : LABEL IS "U(0,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_3\ : LABEL IS "macrocell73";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_3\ : LABEL IS "U(0,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_2\ : LABEL IS "macrocell74";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_2\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_1\ : LABEL IS "macrocell75";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_1\ : LABEL IS "U(0,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data0_0\ : LABEL IS "macrocell76";
-    ATTRIBUTE Location OF \visualization_1:latched_data0_0\ : LABEL IS "U(0,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_15\ : LABEL IS "macrocell77";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_15\ : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_14\ : LABEL IS "macrocell78";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_14\ : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_13\ : LABEL IS "macrocell79";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_13\ : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_12\ : LABEL IS "macrocell80";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_12\ : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_11\ : LABEL IS "macrocell81";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_11\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_10\ : LABEL IS "macrocell82";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_10\ : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_9\ : LABEL IS "macrocell83";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_9\ : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_8\ : LABEL IS "macrocell84";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_8\ : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_7\ : LABEL IS "macrocell85";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_7\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_6\ : LABEL IS "macrocell86";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_6\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_5\ : LABEL IS "macrocell87";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_5\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_4\ : LABEL IS "macrocell88";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_4\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_3\ : LABEL IS "macrocell89";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_3\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_2\ : LABEL IS "macrocell90";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_2\ : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_1\ : LABEL IS "macrocell91";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_1\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data1_0\ : LABEL IS "macrocell92";
-    ATTRIBUTE Location OF \visualization_1:latched_data1_0\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_15\ : LABEL IS "macrocell93";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_15\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_14\ : LABEL IS "macrocell94";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_14\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_13\ : LABEL IS "macrocell95";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_13\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_12\ : LABEL IS "macrocell96";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_12\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_11\ : LABEL IS "macrocell97";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_11\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_10\ : LABEL IS "macrocell98";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_10\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_9\ : LABEL IS "macrocell99";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_9\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_8\ : LABEL IS "macrocell100";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_8\ : LABEL IS "U(1,3)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_7\ : LABEL IS "macrocell101";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_7\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_6\ : LABEL IS "macrocell102";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_6\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_5\ : LABEL IS "macrocell103";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_5\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_4\ : LABEL IS "macrocell104";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_4\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_3\ : LABEL IS "macrocell105";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_3\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_2\ : LABEL IS "macrocell106";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_14\ : LABEL IS "macrocell65";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_14\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_13\ : LABEL IS "macrocell66";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_13\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_12\ : LABEL IS "macrocell67";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_12\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_11\ : LABEL IS "macrocell68";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_11\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_10\ : LABEL IS "macrocell69";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_10\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_9\ : LABEL IS "macrocell70";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_9\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_8\ : LABEL IS "macrocell71";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_8\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_7\ : LABEL IS "macrocell72";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_7\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_6\ : LABEL IS "macrocell73";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_6\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_5\ : LABEL IS "macrocell74";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_5\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_4\ : LABEL IS "macrocell75";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_4\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_3\ : LABEL IS "macrocell76";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_3\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_2\ : LABEL IS "macrocell77";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_2\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_1\ : LABEL IS "macrocell78";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_1\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data0_0\ : LABEL IS "macrocell79";
+    ATTRIBUTE Location OF \visualization_1:latched_data0_0\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_15\ : LABEL IS "macrocell80";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_15\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_14\ : LABEL IS "macrocell81";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_14\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_13\ : LABEL IS "macrocell82";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_13\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_12\ : LABEL IS "macrocell83";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_12\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_11\ : LABEL IS "macrocell84";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_11\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_10\ : LABEL IS "macrocell85";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_10\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_9\ : LABEL IS "macrocell86";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_9\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_8\ : LABEL IS "macrocell87";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_8\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_7\ : LABEL IS "macrocell88";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_7\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_6\ : LABEL IS "macrocell89";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_6\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_5\ : LABEL IS "macrocell90";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_5\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_4\ : LABEL IS "macrocell91";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_4\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_3\ : LABEL IS "macrocell92";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_3\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_2\ : LABEL IS "macrocell93";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_2\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_1\ : LABEL IS "macrocell94";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_1\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data1_0\ : LABEL IS "macrocell95";
+    ATTRIBUTE Location OF \visualization_1:latched_data1_0\ : LABEL IS "U(0,4)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_15\ : LABEL IS "macrocell96";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_15\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_14\ : LABEL IS "macrocell97";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_14\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_13\ : LABEL IS "macrocell98";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_13\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_12\ : LABEL IS "macrocell99";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_12\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_11\ : LABEL IS "macrocell100";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_11\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_10\ : LABEL IS "macrocell101";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_10\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_9\ : LABEL IS "macrocell102";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_9\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_8\ : LABEL IS "macrocell103";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_8\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_7\ : LABEL IS "macrocell104";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_7\ : LABEL IS "U(1,5)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_6\ : LABEL IS "macrocell105";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_6\ : LABEL IS "U(1,5)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_5\ : LABEL IS "macrocell106";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_5\ : LABEL IS "U(1,5)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_4\ : LABEL IS "macrocell107";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_4\ : LABEL IS "U(1,5)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_3\ : LABEL IS "macrocell108";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_3\ : LABEL IS "U(1,5)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_2\ : LABEL IS "macrocell109";
     ATTRIBUTE Location OF \visualization_1:latched_data2_2\ : LABEL IS "U(1,5)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_1\ : LABEL IS "macrocell107";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_1\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data2_0\ : LABEL IS "macrocell108";
-    ATTRIBUTE Location OF \visualization_1:latched_data2_0\ : LABEL IS "U(1,4)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_15\ : LABEL IS "macrocell109";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_15\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_14\ : LABEL IS "macrocell110";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_14\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_13\ : LABEL IS "macrocell111";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_13\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_12\ : LABEL IS "macrocell112";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_12\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_11\ : LABEL IS "macrocell113";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_11\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_10\ : LABEL IS "macrocell114";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_10\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_9\ : LABEL IS "macrocell115";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_9\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_8\ : LABEL IS "macrocell116";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_8\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_7\ : LABEL IS "macrocell117";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_7\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_6\ : LABEL IS "macrocell118";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_6\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_5\ : LABEL IS "macrocell119";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_5\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_4\ : LABEL IS "macrocell120";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_4\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_3\ : LABEL IS "macrocell121";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_3\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_2\ : LABEL IS "macrocell122";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_2\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_1\ : LABEL IS "macrocell123";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_1\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \visualization_1:latched_data3_0\ : LABEL IS "macrocell124";
-    ATTRIBUTE Location OF \visualization_1:latched_data3_0\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF Net_3780 : LABEL IS "macrocell125";
-    ATTRIBUTE Location OF Net_3780 : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_1\ : LABEL IS "macrocell110";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_1\ : LABEL IS "U(1,5)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data2_0\ : LABEL IS "macrocell111";
+    ATTRIBUTE Location OF \visualization_1:latched_data2_0\ : LABEL IS "U(1,5)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_15\ : LABEL IS "macrocell112";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_15\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_14\ : LABEL IS "macrocell113";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_14\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_13\ : LABEL IS "macrocell114";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_13\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_12\ : LABEL IS "macrocell115";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_12\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_11\ : LABEL IS "macrocell116";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_11\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_10\ : LABEL IS "macrocell117";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_10\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_9\ : LABEL IS "macrocell118";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_9\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_8\ : LABEL IS "macrocell119";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_8\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_7\ : LABEL IS "macrocell120";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_7\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_6\ : LABEL IS "macrocell121";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_6\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_5\ : LABEL IS "macrocell122";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_5\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_4\ : LABEL IS "macrocell123";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_4\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_3\ : LABEL IS "macrocell124";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_3\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_2\ : LABEL IS "macrocell125";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_2\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_1\ : LABEL IS "macrocell126";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_1\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \visualization_1:latched_data3_0\ : LABEL IS "macrocell127";
+    ATTRIBUTE Location OF \visualization_1:latched_data3_0\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF Net_3780 : LABEL IS "macrocell128";
+    ATTRIBUTE Location OF Net_3780 : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell129";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:underflow_reg_i\ : LABEL IS "U(3,5)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:prevCompare\ : LABEL IS "macrocell130";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:prevCompare\ : LABEL IS "U(3,5)";
+    ATTRIBUTE lib_model OF \ClockCounter:CounterUDB:count_stored_i\ : LABEL IS "macrocell131";
+    ATTRIBUTE Location OF \ClockCounter:CounterUDB:count_stored_i\ : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF \ClockCountFilter:genblk1[0]:samples_1\ : LABEL IS "macrocell132";
+    ATTRIBUTE Location OF \ClockCountFilter:genblk1[0]:samples_1\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \ClockCountFilter:genblk1[0]:samples_0\ : LABEL IS "macrocell133";
+    ATTRIBUTE Location OF \ClockCountFilter:genblk1[0]:samples_0\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF Net_4238 : LABEL IS "macrocell134";
+    ATTRIBUTE Location OF Net_4238 : LABEL IS "U(2,3)";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -1432,12 +1504,14 @@ BEGIN
             dsi_glb_div => open,
             dclk_glb_0 => \ConsolePort_2:Net_22\,
             dclk_0 => \ConsolePort_2:Net_22_local\,
-            dclk_glb_1 => Net_3899,
-            dclk_1 => Net_3899_local,
-            dclk_glb_2 => \ConsolePort_1:Net_22\,
-            dclk_2 => \ConsolePort_1:Net_22_local\,
-            dclk_glb_3 => Net_3845,
-            dclk_3 => Net_3845_local);
+            dclk_glb_1 => Net_4275,
+            dclk_1 => Net_4275_local,
+            dclk_glb_2 => Net_4184,
+            dclk_2 => Net_4184_local,
+            dclk_glb_3 => \ConsolePort_1:Net_22\,
+            dclk_3 => \ConsolePort_1:Net_22_local\,
+            dclk_glb_4 => Net_4116,
+            dclk_4 => Net_4116_local);
 
     P1_D1:logicalport
         GENERIC MAP(
@@ -1634,7 +1708,7 @@ BEGIN
         PORT MAP(
             pa_out => P2_Latch(0)__PA,
             oe => open,
-            fb => Net_3500,
+            fb => Net_4200,
             pad_in => P2_Latch(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -1838,7 +1912,7 @@ BEGIN
         PORT MAP(
             pa_out => P2_Clock(0)__PA,
             oe => open,
-            fb => Net_3520,
+            fb => Net_4260,
             pad_in => P2_Clock(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2109,7 +2183,7 @@ BEGIN
         PORT MAP(
             pa_out => P1_Clock(0)__PA,
             oe => open,
-            fb => Net_3503,
+            fb => Net_4201,
             pad_in => P1_Clock(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2313,7 +2387,7 @@ BEGIN
         PORT MAP(
             pa_out => P1_Latch(0)__PA,
             oe => open,
-            fb => Net_3415,
+            fb => Net_4170,
             pad_in => P1_Latch(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -3457,6 +3531,37 @@ BEGIN
             main_10 => \visualization_1:latched_data2_1\,
             main_11 => \visualization_1:latched_data2_0\);
 
+    \ClockCounter:CounterUDB:status_0\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * !main_1)",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCounter:CounterUDB:status_0\,
+            main_0 => \ClockCounter:CounterUDB:cmp_out_i\,
+            main_1 => \ClockCounter:CounterUDB:prevCompare\);
+
+    \ClockCounter:CounterUDB:status_3\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * !main_1)",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCounter:CounterUDB:status_3\,
+            main_0 => \ClockCounter:CounterUDB:reload\,
+            main_1 => \ClockCounter:CounterUDB:underflow_reg_i\);
+
+    \ClockCounter:CounterUDB:count_enable\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * !main_1 * main_2)",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCounter:CounterUDB:count_enable\,
+            main_0 => \ClockCounter:CounterUDB:control_7\,
+            main_1 => \ClockCounter:CounterUDB:count_stored_i\,
+            main_2 => Net_4189);
+
     Net_3893_split:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * !main_1 * !main_2 * !main_3 * main_11) + (main_0 * !main_1 * !main_2 * main_3 * main_10) + (main_0 * !main_1 * main_2 * !main_3 * main_9) + (main_0 * !main_1 * main_2 * main_3 * main_8) + (main_0 * main_1 * !main_2 * !main_3 * main_7) + (main_0 * main_1 * !main_2 * main_3 * main_6) + (main_0 * main_1 * main_2 * !main_3 * main_5) + (main_0 * main_1 * main_2 * main_3 * main_4)",
@@ -3503,7 +3608,7 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => \ConsolePort_2:Net_22\,
-            in => Net_3520,
+            in => Net_4260,
             out => \ConsolePort_2:Net_296\);
 
     Net_3894_split:macrocell
@@ -4313,7 +4418,7 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => \ConsolePort_1:Net_22\,
-            in => Net_3503,
+            in => Net_4201,
             out => \ConsolePort_1:Net_296\);
 
     \ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\:controlcell
@@ -5035,8 +5140,8 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_3899,
-            in => Net_3845_local,
+            clock => Net_4184,
+            in => Net_4116_local,
             out => Net_3903);
 
     \Vis_L_2:Sync:ctrl_reg\:controlcell
@@ -5115,6 +5220,118 @@ BEGIN
             control_0 => Net_4069_0,
             busclk => ClockBlock_BUS_CLK);
 
+    \ClockCounter:CounterUDB:sCTRLReg:ctrlreg\:controlcell
+        GENERIC MAP(
+            cy_ctrl_mode_0 => "11111111",
+            cy_ctrl_mode_1 => "00000000",
+            cy_ext_reset => 0,
+            cy_force_order => 1,
+            cy_init_value => "00000000",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_4275,
+            control_7 => \ClockCounter:CounterUDB:control_7\,
+            control_6 => \ClockCounter:CounterUDB:control_6\,
+            control_5 => \ClockCounter:CounterUDB:control_5\,
+            control_4 => \ClockCounter:CounterUDB:control_4\,
+            control_3 => \ClockCounter:CounterUDB:control_3\,
+            control_2 => \ClockCounter:CounterUDB:control_2\,
+            control_1 => \ClockCounter:CounterUDB:control_1\,
+            control_0 => \ClockCounter:CounterUDB:control_0\,
+            busclk => ClockBlock_BUS_CLK);
+
+    \ClockCounter:CounterUDB:sSTSReg:stsreg\:statusicell
+        GENERIC MAP(
+            cy_force_order => 1,
+            cy_int_mask => "1111111",
+            cy_md_select => "0011111",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_4275,
+            status_6 => \ClockCounter:CounterUDB:status_6\,
+            status_5 => \ClockCounter:CounterUDB:status_5\,
+            status_4 => open,
+            status_3 => \ClockCounter:CounterUDB:status_3\,
+            status_2 => open,
+            status_1 => \ClockCounter:CounterUDB:reload\,
+            status_0 => \ClockCounter:CounterUDB:status_0\,
+            interrupt => Net_4107);
+
+    \ClockCounter:CounterUDB:sC8:counterdp:u0\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000001000000001000000010000000000000010000000000000000100000010101000010100000010000001000000101010000101000011111111000000001111111111111111101000000000000000000001000000000000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_4275,
+            cs_addr_1 => \ClockCounter:CounterUDB:count_enable\,
+            cs_addr_0 => \ClockCounter:CounterUDB:reload\,
+            z0_comb => \ClockCounter:CounterUDB:reload\,
+            ce1_comb => \ClockCounter:CounterUDB:cmp_out_i\,
+            f0_bus_stat_comb => \ClockCounter:CounterUDB:status_6\,
+            f0_blk_stat_comb => \ClockCounter:CounterUDB:status_5\,
+            busclk => ClockBlock_BUS_CLK);
+
+    ClockCounter_IRQ:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_4107,
+            clock => ClockBlock_BUS_CLK);
+
+    \CounterSync:genblk1[0]:INST\:synccell
+        GENERIC MAP(
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_4275,
+            in => Net_4238,
+            out => Net_4189);
+
+    \ClockCountSel:Sync:ctrl_reg\:controlcell
+        GENERIC MAP(
+            cy_ctrl_mode_0 => "00000000",
+            cy_ctrl_mode_1 => "00000000",
+            cy_ext_reset => 0,
+            cy_force_order => 1,
+            cy_init_value => "00000000",
+            clken_mode => 1)
+        PORT MAP(
+            control_7 => \ClockCountSel:control_7\,
+            control_6 => \ClockCountSel:control_6\,
+            control_5 => \ClockCountSel:control_5\,
+            control_4 => \ClockCountSel:control_4\,
+            control_3 => \ClockCountSel:control_3\,
+            control_2 => \ClockCountSel:control_2\,
+            control_1 => \ClockCountSel:control_1\,
+            control_0 => Net_4274,
+            busclk => ClockBlock_BUS_CLK);
+
     \ConsolePort_2:WinTimer:TimerUDB:run_mode\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
@@ -5177,7 +5394,7 @@ BEGIN
         PORT MAP(
             q => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\,
             clock_0 => \ConsolePort_2:Net_22\,
-            main_0 => Net_3500);
+            main_0 => Net_4200);
 
     Net_3493:macrocell
         GENERIC MAP(
@@ -5188,7 +5405,7 @@ BEGIN
         PORT MAP(
             q => Net_3493,
             clock_0 => \ConsolePort_2:Net_22\,
-            main_0 => Net_3500,
+            main_0 => Net_4200,
             main_1 => Net_3493,
             main_2 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_1\,
             main_3 => \ConsolePort_2:LatchFilter:genblk1[0]:samples_0\);
@@ -5345,7 +5562,7 @@ BEGIN
         PORT MAP(
             q => \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\,
             clock_0 => \ConsolePort_1:Net_22\,
-            main_0 => Net_3415);
+            main_0 => Net_4170);
 
     Net_3417:macrocell
         GENERIC MAP(
@@ -5356,7 +5573,7 @@ BEGIN
         PORT MAP(
             q => Net_3417,
             clock_0 => \ConsolePort_1:Net_22\,
-            main_0 => Net_3415,
+            main_0 => Net_4170,
             main_1 => Net_3417,
             main_2 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_1\,
             main_3 => \ConsolePort_1:LatchFilter:genblk1[0]:samples_0\);
@@ -5461,7 +5678,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:state_2\,
             clk_en => Net_3903,
-            clock_0 => Net_3899);
+            clock_0 => Net_4184);
 
     \visualization_1:state_1\:macrocell
         GENERIC MAP(
@@ -5473,7 +5690,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:state_1\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5492,7 +5709,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:state_0\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5511,7 +5728,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:pos_3\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5529,7 +5746,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:pos_2\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5546,7 +5763,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:pos_1\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5562,7 +5779,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:pos_0\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\);
@@ -5577,7 +5794,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_15\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5594,7 +5811,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_14\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5611,7 +5828,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_13\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5628,7 +5845,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_12\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5645,7 +5862,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_11\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5662,7 +5879,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_10\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5679,7 +5896,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_9\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5696,7 +5913,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_8\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5713,7 +5930,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_7\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5730,7 +5947,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_6\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5747,7 +5964,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_5\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5764,7 +5981,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_4\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5781,7 +5998,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_3\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5798,7 +6015,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_2\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5815,7 +6032,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_1\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5832,7 +6049,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data0_0\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5849,7 +6066,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_15\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5866,7 +6083,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_14\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5883,7 +6100,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_13\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5900,7 +6117,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_12\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5917,7 +6134,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_11\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5934,7 +6151,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_10\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5951,7 +6168,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_9\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5968,7 +6185,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_8\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -5985,7 +6202,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_7\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_7,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6002,7 +6219,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_6\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_6,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6019,7 +6236,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_5\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_5,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6036,7 +6253,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_4\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_4,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6053,7 +6270,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_3\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_3,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6070,7 +6287,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_2\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_2,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6087,7 +6304,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_1\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_1,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6104,7 +6321,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data1_0\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => Net_4072_0,
             main_1 => \visualization_1:state_2\,
             main_2 => \visualization_1:state_1\,
@@ -6121,7 +6338,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_15\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6138,7 +6355,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_14\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6155,7 +6372,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_13\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6172,7 +6389,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_12\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6189,7 +6406,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_11\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6206,7 +6423,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_10\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6223,7 +6440,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_9\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6240,7 +6457,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_8\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6257,7 +6474,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_7\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6274,7 +6491,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_6\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6291,7 +6508,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_5\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6308,7 +6525,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_4\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6325,7 +6542,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_3\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6342,7 +6559,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_2\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6359,7 +6576,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_1\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6376,7 +6593,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data2_0\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6393,7 +6610,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_15\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6410,7 +6627,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_14\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6427,7 +6644,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_13\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6444,7 +6661,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_12\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6461,7 +6678,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_11\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6478,7 +6695,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_10\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6495,7 +6712,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_9\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6512,7 +6729,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_8\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6529,7 +6746,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_7\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6546,7 +6763,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_6\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6563,7 +6780,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_5\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6580,7 +6797,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_4\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6597,7 +6814,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_3\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6614,7 +6831,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_2\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6631,7 +6848,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_1\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6648,7 +6865,7 @@ BEGIN
         PORT MAP(
             q => \visualization_1:latched_data3_0\,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
@@ -6665,10 +6882,83 @@ BEGIN
         PORT MAP(
             q => Net_3780,
             clk_en => Net_3903,
-            clock_0 => Net_3899,
+            clock_0 => Net_4184,
             main_0 => \visualization_1:state_2\,
             main_1 => \visualization_1:state_1\,
             main_2 => \visualization_1:state_0\,
             main_3 => Net_3780);
+
+    \ClockCounter:CounterUDB:underflow_reg_i\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCounter:CounterUDB:underflow_reg_i\,
+            clock_0 => Net_4275,
+            main_0 => \ClockCounter:CounterUDB:reload\);
+
+    \ClockCounter:CounterUDB:prevCompare\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCounter:CounterUDB:prevCompare\,
+            clock_0 => Net_4275,
+            main_0 => \ClockCounter:CounterUDB:cmp_out_i\);
+
+    \ClockCounter:CounterUDB:count_stored_i\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCounter:CounterUDB:count_stored_i\,
+            clock_0 => Net_4275,
+            main_0 => Net_4189);
+
+    \ClockCountFilter:genblk1[0]:samples_1\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCountFilter:genblk1[0]:samples_1\,
+            clock_0 => Net_4275,
+            main_0 => \ClockCountFilter:genblk1[0]:samples_0\);
+
+    \ClockCountFilter:genblk1[0]:samples_0\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * main_2) + (main_1 * !main_2)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \ClockCountFilter:genblk1[0]:samples_0\,
+            clock_0 => Net_4275,
+            main_0 => Net_4260,
+            main_1 => Net_4201,
+            main_2 => Net_4274);
+
+    Net_4238:macrocell
+        GENERIC MAP(
+            eqn_main => "(!main_0 * main_2 * main_3 * !main_4 * !main_5) + (main_0 * !main_2 * main_3 * main_4 * main_5) + (!main_1 * main_2 * !main_3 * !main_4 * !main_5) + (main_1 * !main_2 * !main_3 * main_4 * main_5)",
+            regmode => 2,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => Net_4238,
+            clock_0 => Net_4275,
+            main_0 => Net_4260,
+            main_1 => Net_4201,
+            main_2 => Net_4238,
+            main_3 => Net_4274,
+            main_4 => \ClockCountFilter:genblk1[0]:samples_1\,
+            main_5 => \ClockCountFilter:genblk1[0]:samples_0\);
 
 END __DEFAULT__;

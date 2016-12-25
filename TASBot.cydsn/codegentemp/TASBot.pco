@@ -1,5 +1,5 @@
 # TASBot
-# 2016-12-12 02:11:55Z
+# 2016-12-25 01:08:05Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -7,14 +7,14 @@ dont_use_io iocell 1 0
 dont_use_io iocell 1 1
 # IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 3
-set_location "Net_3895_split" 2 2 1 0
+set_location "Net_3895_split" 2 5 0 0
 set_location "ClockBlock" clockblockcell -1 -1 0
 set_io "P1_D1(0)" iocell 12 2
 set_io "P1_D1(1)" iocell 12 3
 set_io "P2_Latch(0)" iocell 2 3
 set_io "P1_D2(0)" iocell 12 4
 set_io "P1_D2(1)" iocell 12 5
-set_io "P2_Clock(0)" iocell 15 0
+set_io "P2_Clock(0)" iocell 2 2
 set_io "\USBUART:Dm(0)\" iocell 15 7
 set_location "\USBUART:Dp\" logicalport -1 -1 15
 set_io "\USBUART:Dp(0)\" iocell 15 6
@@ -28,195 +28,210 @@ set_io "P2_D2(0)" iocell 2 4
 set_io "P2_D2(1)" iocell 2 5
 set_io "P2_D0(0)" iocell 12 6
 set_io "P2_D0(1)" iocell 12 7
-set_io "Vis_Latch(0)" iocell 1 2
+set_io "Vis_Latch(0)" iocell 15 4
 set_io "Vis_Clock(0)" iocell 1 4
 set_io "Vis_D0(0)" iocell 1 5
 set_io "Vis_D1(0)" iocell 1 6
 set_io "Vis_D2(0)" iocell 1 7
 set_io "Vis_D3(0)" iocell 3 0
-set_location "Net_3488" 0 0 1 3
-set_location "\ConsolePort_2:Net_68\" 2 1 0 0
-set_location "Net_3489" 2 1 0 3
-set_location "\ConsolePort_2:WinTimer:TimerUDB:status_tc\" 3 0 1 0
-set_location "\ConsolePort_2:Net_294\" 2 1 0 1
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:status_tc\" 2 1 1 0
-set_location "Net_3487" 2 4 0 2
-set_location "Net_3479" 0 5 1 0
-set_location "\ConsolePort_1:Net_68\" 2 0 1 1
-set_location "Net_2981" 3 1 1 1
-set_location "\ConsolePort_1:WinTimer:TimerUDB:status_tc\" 0 5 1 2
-set_location "\ConsolePort_1:Net_294\" 1 0 0 0
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:status_tc\" 1 0 1 2
-set_location "Net_3420" 3 3 1 0
-set_location "Net_3905" 0 4 0 3
-set_location "Net_3895" 0 2 0 0
-set_location "Net_3894" 3 1 0 3
-set_location "Net_3893" 1 1 0 1
-set_location "Net_3785" 3 1 0 1
-set_location "Net_3785_split_1" 0 0 0 0
-set_location "Net_3785_split" 1 1 1 0
-set_location "Net_3893_split_1" 1 5 0 0
-set_location "Net_3893_split" 2 2 0 0
-set_location "Net_3894_split_1" 3 2 1 2
-set_location "\ConsolePort_2:ClockSync:genblk1[0]:INST\" 3 2 5 0
-set_location "Net_3894_split" 3 5 1 0
-set_location "\ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\" 1 5 6
-set_location "Net_3895_split_1" 0 2 1 0
-set_location "\ConsolePort_2:RegD2:bSR:StsReg\" 0 0 4
-set_location "\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u0\" 0 1 2
-set_location "\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\" 0 0 2
-set_location "\ConsolePort_2:RegD0:bSR:SyncCtl:CtrlReg\" 2 1 6
-set_location "\ConsolePort_2:RegD0:bSR:StsReg\" 2 1 4
-set_location "\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\" 3 1 2
-set_location "\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u1\" 2 1 2
-set_location "\ConsolePort_2:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 0 6
-set_location "\ConsolePort_2:WinTimer:TimerUDB:rstSts:stsreg\" 3 0 4
-set_location "\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\" 2 0 2
-set_location "\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u1\" 3 0 2
-set_location "\ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\" 2 5 6
-set_location "\ConsolePort_2:RegD1:bSR:StsReg\" 3 5 4
-set_location "\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\" 2 5 2
-set_location "\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\" 3 5 2
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 0 6
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\" 2 3 4
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:sT8:timerdp:u0\" 2 4 2
+set_location "Net_3488" 1 4 1 3
+set_location "\ConsolePort_2:Net_68\" 2 3 0 3
+set_location "Net_3489" 0 1 1 3
+set_location "\ConsolePort_2:WinTimer:TimerUDB:status_tc\" 1 3 1 1
+set_location "\ConsolePort_2:Net_294\" 2 2 1 1
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:status_tc\" 2 2 0 0
+set_location "Net_3487" 1 0 1 2
+set_location "Net_3479" 0 5 1 3
+set_location "\ConsolePort_1:Net_68\" 3 5 1 3
+set_location "Net_2981" 2 2 0 3
+set_location "\ConsolePort_1:WinTimer:TimerUDB:status_tc\" 0 2 1 1
+set_location "\ConsolePort_1:Net_294\" 1 4 0 3
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:status_tc\" 3 3 0 0
+set_location "Net_3420" 0 5 1 2
+set_location "Net_3905" 1 0 0 0
+set_location "Net_3895" 2 1 1 2
+set_location "Net_3894" 0 1 1 0
+set_location "Net_3893" 0 5 1 1
+set_location "Net_3785" 2 1 1 0
+set_location "Net_3785_split_1" 3 3 1 0
+set_location "Net_3785_split" 2 1 0 3
+set_location "Net_3893_split_1" 2 5 1 0
+set_location "\ClockCounter:CounterUDB:status_0\" 3 5 0 0
+set_location "\ClockCounter:CounterUDB:status_3\" 3 5 1 1
+set_location "\ClockCounter:CounterUDB:count_enable\" 3 4 0 1
+set_location "Net_3893_split" 1 2 0 2
+set_location "Net_3894_split_1" 0 3 0 0
+set_location "\ConsolePort_2:ClockSync:genblk1[0]:INST\" 0 3 5 0
+set_location "Net_3894_split" 0 1 0 0
+set_location "\ConsolePort_2:RegD2:bSR:SyncCtl:CtrlReg\" 1 0 6
+set_location "Net_3895_split_1" 2 0 1 0
+set_location "\ConsolePort_2:RegD2:bSR:StsReg\" 1 0 4
+set_location "\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u0\" 0 0 2
+set_location "\ConsolePort_2:RegD2:bSR:sC16:BShiftRegDp:u1\" 1 0 2
+set_location "\ConsolePort_2:RegD0:bSR:SyncCtl:CtrlReg\" 3 5 6
+set_location "\ConsolePort_2:RegD0:bSR:StsReg\" 3 5 4
+set_location "\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u0\" 2 5 2
+set_location "\ConsolePort_2:RegD0:bSR:sC16:BShiftRegDp:u1\" 3 5 2
+set_location "\ConsolePort_2:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 3 6
+set_location "\ConsolePort_2:WinTimer:TimerUDB:rstSts:stsreg\" 1 3 4
+set_location "\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u0\" 0 3 2
+set_location "\ConsolePort_2:WinTimer:TimerUDB:sT16:timerdp:u1\" 1 3 2
+set_location "\ConsolePort_2:RegD1:bSR:SyncCtl:CtrlReg\" 0 1 6
+set_location "\ConsolePort_2:RegD1:bSR:StsReg\" 1 5 4
+set_location "\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u0\" 0 5 2
+set_location "\ConsolePort_2:RegD1:bSR:sC16:BShiftRegDp:u1\" 1 5 2
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 3 6
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:rstSts:stsreg\" 2 1 4
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:sT8:timerdp:u0\" 2 1 2
 set_location "\USBUART:dp_int\" interrupt -1 -1 12
 set_location "\USBUART:USB\" usbcell -1 -1 0
-set_location "\USBUART:ep_3\" interrupt -1 -1 6
-set_location "\USBUART:ep_2\" interrupt -1 -1 5
-set_location "\USBUART:ep_1\" interrupt -1 -1 4
+set_location "\USBUART:ep_3\" interrupt -1 -1 7
+set_location "\USBUART:ep_2\" interrupt -1 -1 6
+set_location "\USBUART:ep_1\" interrupt -1 -1 5
 set_location "\USBUART:ep_0\" interrupt -1 -1 24
 set_location "\USBUART:bus_reset\" interrupt -1 -1 23
 set_location "\USBUART:arb_int\" interrupt -1 -1 22
 set_location "\USBUART:sof_int\" interrupt -1 -1 21
-set_location "P2_IRQ" interrupt -1 -1 2
-set_location "P1_IRQ" interrupt -1 -1 0
-set_location "P1_TimerIRQ" interrupt -1 -1 1
-set_location "P2_TimerIRQ" interrupt -1 -1 3
+set_location "P2_IRQ" interrupt -1 -1 3
+set_location "P1_IRQ" interrupt -1 -1 1
+set_location "P1_TimerIRQ" interrupt -1 -1 2
+set_location "P2_TimerIRQ" interrupt -1 -1 4
 set_location "\ConsolePort_1:ClockSync:genblk1[0]:INST\" 1 2 5 0
-set_location "\ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\" 2 2 6
-set_location "\ConsolePort_1:RegD2:bSR:StsReg\" 0 4 4
-set_location "\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\" 1 4 2
-set_location "\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\" 0 4 2
-set_location "\ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\" 2 4 6
-set_location "\ConsolePort_1:RegD0:bSR:StsReg\" 2 2 4
+set_location "\ConsolePort_1:RegD2:bSR:SyncCtl:CtrlReg\" 2 5 6
+set_location "\ConsolePort_1:RegD2:bSR:StsReg\" 2 5 4
+set_location "\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u0\" 3 4 2
+set_location "\ConsolePort_1:RegD2:bSR:sC16:BShiftRegDp:u1\" 2 4 2
+set_location "\ConsolePort_1:RegD0:bSR:SyncCtl:CtrlReg\" 2 2 6
+set_location "\ConsolePort_1:RegD0:bSR:StsReg\" 2 4 4
 set_location "\ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u0\" 3 2 2
 set_location "\ConsolePort_1:RegD0:bSR:sC16:BShiftRegDp:u1\" 2 2 2
-set_location "\ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 5 6
-set_location "\ConsolePort_1:WinTimer:TimerUDB:rstSts:stsreg\" 0 5 4
-set_location "\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\" 0 5 2
-set_location "\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u1\" 1 5 2
-set_location "\ConsolePort_1:RegD1:bSR:SyncCtl:CtrlReg\" 3 1 6
-set_location "\ConsolePort_1:RegD1:bSR:StsReg\" 3 1 4
-set_location "\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\" 2 3 2
-set_location "\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\" 3 3 2
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 0 6
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:rstSts:stsreg\" 1 0 4
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:sT8:timerdp:u0\" 1 0 2
-set_location "\Vis_L_1:Sync:ctrl_reg\" 3 4 6
-set_location "\Vis_L:Sync:ctrl_reg\" 0 3 6
-set_location "\Vis_H:Sync:ctrl_reg\" 2 3 6
-set_location "\Vis_H_1:Sync:ctrl_reg\" 3 5 6
-set_location "\VisClockSync:genblk1[0]:INST\" 3 3 5 0
-set_location "\Vis_L_2:Sync:ctrl_reg\" 1 4 6
-set_location "\Vis_H_2:Sync:ctrl_reg\" 1 3 6
-set_location "\Vis_L_3:Sync:ctrl_reg\" 0 1 6
-set_location "\Vis_H_3:Sync:ctrl_reg\" 1 2 6
-set_location "\ConsolePort_2:WinTimer:TimerUDB:run_mode\" 3 0 0 1
-set_location "\ConsolePort_2:WinTimer:TimerUDB:timer_enable\" 3 0 1 1
-set_location "\ConsolePort_2:WinTimer:TimerUDB:trig_disable\" 3 0 1 2
-set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\" 3 0 0 3
-set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\" 3 0 0 0
-set_location "Net_3493" 3 0 0 2
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:run_mode\" 2 1 0 2
-set_location "\ConsolePort_2:Net_61\" 2 1 1 1
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\" 2 1 1 3
-set_location "\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\" 2 1 1 2
-set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\" 3 1 1 2
-set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\" 3 1 1 3
-set_location "\ConsolePort_2:Net_288\" 3 1 1 0
-set_location "\ConsolePort_1:WinTimer:TimerUDB:run_mode\" 0 5 1 1
-set_location "\ConsolePort_1:WinTimer:TimerUDB:timer_enable\" 0 5 0 1
-set_location "\ConsolePort_1:WinTimer:TimerUDB:trig_disable\" 0 5 0 2
-set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\" 0 5 0 3
-set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\" 0 5 1 3
-set_location "Net_3417" 0 5 0 0
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:run_mode\" 1 0 0 1
-set_location "\ConsolePort_1:Net_61\" 1 0 1 3
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\" 1 0 0 3
-set_location "\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\" 1 0 0 2
-set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\" 2 0 1 2
-set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\" 2 0 1 3
-set_location "\ConsolePort_1:Net_288\" 2 0 1 0
-set_location "\visualization_1:state_2\" 2 4 0 3
-set_location "\visualization_1:state_1\" 2 0 0 2
-set_location "\visualization_1:state_0\" 0 0 1 2
-set_location "\visualization_1:pos_3\" 1 5 1 2
-set_location "\visualization_1:pos_2\" 2 0 0 3
-set_location "\visualization_1:pos_1\" 2 0 0 0
-set_location "\visualization_1:pos_0\" 2 0 0 1
-set_location "\visualization_1:latched_data0_15\" 2 3 1 2
-set_location "\visualization_1:latched_data0_14\" 2 3 1 0
-set_location "\visualization_1:latched_data0_13\" 2 3 0 0
-set_location "\visualization_1:latched_data0_12\" 2 3 0 3
-set_location "\visualization_1:latched_data0_11\" 2 3 1 3
-set_location "\visualization_1:latched_data0_10\" 2 3 1 1
-set_location "\visualization_1:latched_data0_9\" 2 3 0 1
-set_location "\visualization_1:latched_data0_8\" 2 3 0 2
-set_location "\visualization_1:latched_data0_7\" 0 3 1 3
-set_location "\visualization_1:latched_data0_6\" 1 3 0 1
-set_location "\visualization_1:latched_data0_5\" 0 3 1 2
-set_location "\visualization_1:latched_data0_4\" 0 4 0 0
-set_location "\visualization_1:latched_data0_3\" 0 4 0 2
-set_location "\visualization_1:latched_data0_2\" 0 3 1 1
-set_location "\visualization_1:latched_data0_1\" 0 3 1 0
-set_location "\visualization_1:latched_data0_0\" 0 4 0 1
-set_location "\visualization_1:latched_data1_15\" 2 5 1 0
-set_location "\visualization_1:latched_data1_14\" 3 5 0 1
-set_location "\visualization_1:latched_data1_13\" 3 5 0 3
-set_location "\visualization_1:latched_data1_12\" 3 5 0 0
-set_location "\visualization_1:latched_data1_11\" 3 4 0 2
-set_location "\visualization_1:latched_data1_10\" 2 5 1 1
-set_location "\visualization_1:latched_data1_9\" 3 5 0 2
-set_location "\visualization_1:latched_data1_8\" 2 5 1 2
-set_location "\visualization_1:latched_data1_7\" 3 4 0 3
-set_location "\visualization_1:latched_data1_6\" 3 4 1 2
-set_location "\visualization_1:latched_data1_5\" 3 4 0 0
-set_location "\visualization_1:latched_data1_4\" 3 4 0 1
-set_location "\visualization_1:latched_data1_3\" 3 4 1 0
-set_location "\visualization_1:latched_data1_2\" 2 4 0 0
-set_location "\visualization_1:latched_data1_1\" 3 4 1 1
-set_location "\visualization_1:latched_data1_0\" 3 4 1 3
-set_location "\visualization_1:latched_data2_15\" 1 3 1 0
-set_location "\visualization_1:latched_data2_14\" 1 3 0 2
-set_location "\visualization_1:latched_data2_13\" 1 3 1 3
-set_location "\visualization_1:latched_data2_12\" 1 3 1 2
-set_location "\visualization_1:latched_data2_11\" 1 3 0 0
-set_location "\visualization_1:latched_data2_10\" 1 3 1 1
-set_location "\visualization_1:latched_data2_9\" 1 4 0 1
-set_location "\visualization_1:latched_data2_8\" 1 3 0 3
-set_location "\visualization_1:latched_data2_7\" 1 4 1 2
-set_location "\visualization_1:latched_data2_6\" 1 4 0 0
-set_location "\visualization_1:latched_data2_5\" 1 4 1 3
-set_location "\visualization_1:latched_data2_4\" 1 4 1 0
-set_location "\visualization_1:latched_data2_3\" 1 4 0 2
-set_location "\visualization_1:latched_data2_2\" 1 5 1 0
-set_location "\visualization_1:latched_data2_1\" 1 4 0 3
-set_location "\visualization_1:latched_data2_0\" 1 4 1 1
-set_location "\visualization_1:latched_data3_15\" 1 2 0 3
-set_location "\visualization_1:latched_data3_14\" 1 2 1 1
-set_location "\visualization_1:latched_data3_13\" 1 2 0 1
-set_location "\visualization_1:latched_data3_12\" 1 2 1 3
-set_location "\visualization_1:latched_data3_11\" 1 2 0 2
-set_location "\visualization_1:latched_data3_10\" 1 2 1 0
-set_location "\visualization_1:latched_data3_9\" 1 2 0 0
-set_location "\visualization_1:latched_data3_8\" 1 2 1 2
-set_location "\visualization_1:latched_data3_7\" 0 1 0 1
-set_location "\visualization_1:latched_data3_6\" 0 1 0 2
-set_location "\visualization_1:latched_data3_5\" 0 1 0 0
-set_location "\visualization_1:latched_data3_4\" 0 1 1 3
-set_location "\visualization_1:latched_data3_3\" 0 1 0 3
-set_location "\visualization_1:latched_data3_2\" 0 1 1 1
-set_location "\visualization_1:latched_data3_1\" 0 1 1 0
-set_location "\visualization_1:latched_data3_0\" 0 1 1 2
-set_location "Net_3780" 0 0 1 0
+set_location "\ConsolePort_1:WinTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 0 6
+set_location "\ConsolePort_1:WinTimer:TimerUDB:rstSts:stsreg\" 0 2 4
+set_location "\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u0\" 1 2 2
+set_location "\ConsolePort_1:WinTimer:TimerUDB:sT16:timerdp:u1\" 0 2 2
+set_location "\ConsolePort_1:RegD1:bSR:SyncCtl:CtrlReg\" 0 5 6
+set_location "\ConsolePort_1:RegD1:bSR:StsReg\" 0 4 4
+set_location "\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u0\" 1 4 2
+set_location "\ConsolePort_1:RegD1:bSR:sC16:BShiftRegDp:u1\" 0 4 2
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 3 6
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:rstSts:stsreg\" 2 3 4
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:sT8:timerdp:u0\" 2 3 2
+set_location "\Vis_L_1:Sync:ctrl_reg\" 0 4 6
+set_location "\Vis_L:Sync:ctrl_reg\" 3 0 6
+set_location "\Vis_H:Sync:ctrl_reg\" 2 4 6
+set_location "\Vis_H_1:Sync:ctrl_reg\" 0 0 6
+set_location "\VisClockSync:genblk1[0]:INST\" 1 1 5 0
+set_location "\Vis_L_2:Sync:ctrl_reg\" 1 5 6
+set_location "\Vis_H_2:Sync:ctrl_reg\" 1 1 6
+set_location "\Vis_L_3:Sync:ctrl_reg\" 3 2 6
+set_location "\Vis_H_3:Sync:ctrl_reg\" 3 1 6
+set_location "\ClockCounter:CounterUDB:sCTRLReg:ctrlreg\" 1 4 6
+set_location "\ClockCounter:CounterUDB:sSTSReg:stsreg\" 3 4 4
+set_location "\ClockCounter:CounterUDB:sC8:counterdp:u0\" 3 3 2
+set_location "ClockCounter_IRQ" interrupt -1 -1 0
+set_location "\CounterSync:genblk1[0]:INST\" 3 3 5 0
+set_location "\ClockCountSel:Sync:ctrl_reg\" 3 3 6
+set_location "\ConsolePort_2:WinTimer:TimerUDB:run_mode\" 1 3 0 2
+set_location "\ConsolePort_2:WinTimer:TimerUDB:timer_enable\" 1 3 0 3
+set_location "\ConsolePort_2:WinTimer:TimerUDB:trig_disable\" 1 3 1 0
+set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_1\" 1 3 1 2
+set_location "\ConsolePort_2:LatchFilter:genblk1[0]:samples_0\" 1 3 0 1
+set_location "Net_3493" 1 3 0 0
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:run_mode\" 2 2 0 1
+set_location "\ConsolePort_2:Net_61\" 2 2 1 0
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:timer_enable\" 2 2 1 3
+set_location "\ConsolePort_2:ClockTimer:TimerUDB:trig_disable\" 2 2 1 2
+set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_1\" 0 3 1 1
+set_location "\ConsolePort_2:ClockFilter:genblk1[0]:samples_0\" 0 3 1 0
+set_location "\ConsolePort_2:Net_288\" 0 3 1 3
+set_location "\ConsolePort_1:WinTimer:TimerUDB:run_mode\" 0 2 1 2
+set_location "\ConsolePort_1:WinTimer:TimerUDB:timer_enable\" 0 2 0 3
+set_location "\ConsolePort_1:WinTimer:TimerUDB:trig_disable\" 0 2 1 0
+set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_1\" 0 2 0 1
+set_location "\ConsolePort_1:LatchFilter:genblk1[0]:samples_0\" 0 2 0 2
+set_location "Net_3417" 0 2 0 0
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:run_mode\" 3 4 1 0
+set_location "\ConsolePort_1:Net_61\" 3 3 0 1
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:timer_enable\" 3 3 0 3
+set_location "\ConsolePort_1:ClockTimer:TimerUDB:trig_disable\" 3 3 0 2
+set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_1\" 1 4 0 0
+set_location "\ConsolePort_1:ClockFilter:genblk1[0]:samples_0\" 1 4 0 1
+set_location "\ConsolePort_1:Net_288\" 1 4 0 2
+set_location "\visualization_1:state_2\" 1 0 0 3
+set_location "\visualization_1:state_1\" 1 2 1 2
+set_location "\visualization_1:state_0\" 2 0 0 2
+set_location "\visualization_1:pos_3\" 2 0 0 1
+set_location "\visualization_1:pos_2\" 1 2 1 1
+set_location "\visualization_1:pos_1\" 2 0 0 3
+set_location "\visualization_1:pos_0\" 1 2 1 0
+set_location "\visualization_1:latched_data0_15\" 2 3 1 1
+set_location "\visualization_1:latched_data0_14\" 2 4 0 1
+set_location "\visualization_1:latched_data0_13\" 2 4 0 3
+set_location "\visualization_1:latched_data0_12\" 2 4 1 3
+set_location "\visualization_1:latched_data0_11\" 2 4 1 2
+set_location "\visualization_1:latched_data0_10\" 2 4 0 2
+set_location "\visualization_1:latched_data0_9\" 2 4 1 1
+set_location "\visualization_1:latched_data0_8\" 2 4 0 0
+set_location "\visualization_1:latched_data0_7\" 3 0 0 3
+set_location "\visualization_1:latched_data0_6\" 3 0 0 0
+set_location "\visualization_1:latched_data0_5\" 3 0 1 0
+set_location "\visualization_1:latched_data0_4\" 3 0 0 1
+set_location "\visualization_1:latched_data0_3\" 3 0 1 3
+set_location "\visualization_1:latched_data0_2\" 3 0 1 2
+set_location "\visualization_1:latched_data0_1\" 3 0 0 2
+set_location "\visualization_1:latched_data0_0\" 3 0 1 1
+set_location "\visualization_1:latched_data1_15\" 0 0 0 0
+set_location "\visualization_1:latched_data1_14\" 0 0 0 2
+set_location "\visualization_1:latched_data1_13\" 0 0 0 3
+set_location "\visualization_1:latched_data1_12\" 0 0 1 1
+set_location "\visualization_1:latched_data1_11\" 0 0 1 2
+set_location "\visualization_1:latched_data1_10\" 0 0 1 0
+set_location "\visualization_1:latched_data1_9\" 0 0 1 3
+set_location "\visualization_1:latched_data1_8\" 0 0 0 1
+set_location "\visualization_1:latched_data1_7\" 0 4 0 3
+set_location "\visualization_1:latched_data1_6\" 0 4 0 0
+set_location "\visualization_1:latched_data1_5\" 0 4 1 0
+set_location "\visualization_1:latched_data1_4\" 0 4 1 3
+set_location "\visualization_1:latched_data1_3\" 0 4 0 1
+set_location "\visualization_1:latched_data1_2\" 0 4 1 2
+set_location "\visualization_1:latched_data1_1\" 0 4 1 1
+set_location "\visualization_1:latched_data1_0\" 0 4 0 2
+set_location "\visualization_1:latched_data2_15\" 1 1 1 3
+set_location "\visualization_1:latched_data2_14\" 1 1 1 2
+set_location "\visualization_1:latched_data2_13\" 1 1 1 0
+set_location "\visualization_1:latched_data2_12\" 1 1 0 2
+set_location "\visualization_1:latched_data2_11\" 1 1 0 1
+set_location "\visualization_1:latched_data2_10\" 1 1 1 1
+set_location "\visualization_1:latched_data2_9\" 1 1 0 0
+set_location "\visualization_1:latched_data2_8\" 1 1 0 3
+set_location "\visualization_1:latched_data2_7\" 1 5 0 3
+set_location "\visualization_1:latched_data2_6\" 1 5 1 2
+set_location "\visualization_1:latched_data2_5\" 1 5 1 0
+set_location "\visualization_1:latched_data2_4\" 1 5 1 1
+set_location "\visualization_1:latched_data2_3\" 1 5 0 1
+set_location "\visualization_1:latched_data2_2\" 1 5 0 2
+set_location "\visualization_1:latched_data2_1\" 1 5 1 3
+set_location "\visualization_1:latched_data2_0\" 1 5 0 0
+set_location "\visualization_1:latched_data3_15\" 3 1 0 0
+set_location "\visualization_1:latched_data3_14\" 3 1 0 3
+set_location "\visualization_1:latched_data3_13\" 3 1 1 1
+set_location "\visualization_1:latched_data3_12\" 3 1 0 1
+set_location "\visualization_1:latched_data3_11\" 3 1 1 0
+set_location "\visualization_1:latched_data3_10\" 3 1 1 3
+set_location "\visualization_1:latched_data3_9\" 3 1 0 2
+set_location "\visualization_1:latched_data3_8\" 3 1 1 2
+set_location "\visualization_1:latched_data3_7\" 3 2 1 3
+set_location "\visualization_1:latched_data3_6\" 3 2 0 0
+set_location "\visualization_1:latched_data3_5\" 3 2 0 2
+set_location "\visualization_1:latched_data3_4\" 3 2 1 2
+set_location "\visualization_1:latched_data3_3\" 3 2 0 1
+set_location "\visualization_1:latched_data3_2\" 3 2 1 1
+set_location "\visualization_1:latched_data3_1\" 3 2 0 3
+set_location "\visualization_1:latched_data3_0\" 3 2 1 0
+set_location "Net_3780" 2 3 1 2
+set_location "\ClockCounter:CounterUDB:underflow_reg_i\" 3 5 0 2
+set_location "\ClockCounter:CounterUDB:prevCompare\" 3 5 0 1
+set_location "\ClockCounter:CounterUDB:count_stored_i\" 3 4 0 3
+set_location "\ClockCountFilter:genblk1[0]:samples_1\" 2 3 0 1
+set_location "\ClockCountFilter:genblk1[0]:samples_0\" 2 3 0 2
+set_location "Net_4238" 2 3 0 0

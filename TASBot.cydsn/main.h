@@ -30,5 +30,8 @@ volatile int ports;
 volatile int lines;
 volatile int request[2];
 volatile int async;
+volatile int autolatch;
+volatile int autofilled;
+volatile int autobits;
 
 /* [] END OF FILE */
