@@ -167,28 +167,24 @@ CY_ISR(P1_TimerIRQ_Interrupt)
     /* `#START P1_TimerIRQ_Interrupt` */
     if(autofilled == 0)
     {
-        if(playing && use_timer[0])
+        if(playing && use_timer)
         {
-            input_ptr[0] = (input_ptr[0]+1)%INPUT_BUF_SIZE;
+            input_ptr = (input_ptr+1)%INPUT_BUF_SIZE;
             
-            data[0] = input[0][input_ptr[0]];        
-            data[1] = input[1][input_ptr[0]]; 
-            data[2] = input[2][input_ptr[0]];         
-
-            if(!async)
-            {
-                data[3] = input[3][input_ptr[0]]; 
-                data[4] = input[4][input_ptr[0]]; 
-                data[5] = input[5][input_ptr[0]]; 
-            }
+            data[0] = input[0][input_ptr];        
+            data[1] = input[1][input_ptr]; 
+            data[2] = input[2][input_ptr];         
+            data[3] = input[3][input_ptr]; 
+            data[4] = input[4][input_ptr]; 
+            data[5] = input[5][input_ptr]; 
             
-            latches[0]++;
+            latches++;
             sent = 1;
 
-            if(disable_timer[0] == 1 || latches[0] == window_off[0])
+            if(disable_timer == 1 || latches == window_off)
             {
-                use_timer[0] = 0;
-                disable_timer[0] = 0;
+                use_timer = 0;
+                disable_timer = 0;
             }
         }
     }

@@ -172,13 +172,9 @@ CY_ISR(P1_IRQ_Interrupt)
         ConsolePort_1_RegD0_WriteRegValue(data[0]);
         ConsolePort_1_RegD1_WriteRegValue(data[1]);
         ConsolePort_1_RegD2_WriteRegValue(data[2]);
-        
-        if(!async)
-        {
-            ConsolePort_2_RegD0_WriteRegValue(data[3]);
-            ConsolePort_2_RegD1_WriteRegValue(data[4]);
-            ConsolePort_2_RegD2_WriteRegValue(data[5]);
-        }
+        ConsolePort_2_RegD0_WriteRegValue(data[3]);
+        ConsolePort_2_RegD1_WriteRegValue(data[4]);
+        ConsolePort_2_RegD2_WriteRegValue(data[5]);
       
         if(playing)
         {
@@ -194,21 +190,21 @@ CY_ISR(P1_IRQ_Interrupt)
             Vis_L_3_Write(data[4] & 0xFF);
             Vis_H_3_Write(data[4] >> 8);
 
-            if(!use_timer[0])
+            if(!use_timer)
             {
-                input_ptr[0] = (input_ptr[0]+1)%INPUT_BUF_SIZE;
-                data[0] = input[0][input_ptr[0]]; 
-                data[1] = input[1][input_ptr[0]]; 
-                data[2] = input[2][input_ptr[0]]; 
+                input_ptr = (input_ptr+1)%INPUT_BUF_SIZE;
+                data[0] = input[0][input_ptr]; 
+                data[1] = input[1][input_ptr]; 
+                data[2] = input[2][input_ptr]; 
 
                 if(!async)
                 {
-                    data[3] = input[3][input_ptr[0]]; 
-                    data[4] = input[4][input_ptr[0]]; 
-                    data[5] = input[5][input_ptr[0]]; 
+                    data[3] = input[3][input_ptr]; 
+                    data[4] = input[4][input_ptr]; 
+                    data[5] = input[5][input_ptr]; 
                 }
                 
-                latches[0]++;
+                latches++;
                 sent = 1;
             }
             

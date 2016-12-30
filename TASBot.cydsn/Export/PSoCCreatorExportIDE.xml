@@ -6,21 +6,21 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -Wall -ffunction-sections -finline-functions -O3 -flto -ffat-lto-objects" />
-      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -finline-functions -O3 -flto -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T &quot;C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\Generated_Source\PSoC5\cm3gcc.ld&quot; -specs=nano.specs -Wl,--gc-sections" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -Og -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T &quot;C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\Generated_Source\PSoC5\cm3gcc.ld&quot; -specs=nano.specs -Wl,--gc-sections" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM MDK Generic" Selected="False">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="armasm.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --thumb -i. -iGenerated_Source\PSoC5 -g --list=${OutputDir}/${CompileFile}.lst" />
-      <Tool Name="compiler" Command="armcc.exe" Options="--cpu=Cortex-M3 --diag_style=gnu -I. -IGenerated_Source\PSoC5 --list --signed_chars -g -D NDEBUG -Ospace --split_sections" />
+      <Tool Name="compiler" Command="armcc.exe" Options="--cpu=Cortex-M3 --diag_style=gnu -I. -IGenerated_Source\PSoC5 --list --signed_chars -g -D DEBUG -O0 --split_sections" />
       <Tool Name="linker" Command="armlink.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --no_startup --library_type=microlib --map --list ${OutputDir}/${ProjectShortName}.map --scatter &quot;C:\Users\Thomas\Documents\PSoC Creator\TASBot\TASBot.cydsn\Generated_Source\PSoC5\Cm3RealView.scat&quot;" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM IAR Generic" Selected="False">
       <Tool Name="prebuild" Command="" Options="" />
-      <Tool Name="assembler" Command="iasmarm.exe" Options="--cpu Cortex-M3 -I. -IGenerated_Source\PSoC5 -s+ -M&lt;&gt; -w+ -r -DNDEBUG --fpu None" />
-      <Tool Name="compiler" Command="iccarm.exe" Options="--cpu Cortex-M3 -I. -IGenerated_Source\PSoC5 -D NDEBUG --debug --endian=little -e --fpu=None --no_wrap_diagnostics" />
+      <Tool Name="assembler" Command="iasmarm.exe" Options="--cpu Cortex-M3 -I. -IGenerated_Source\PSoC5 -s+ -M&lt;&gt; -w+ -r -DDEBUG --fpu None" />
+      <Tool Name="compiler" Command="iccarm.exe" Options="--cpu Cortex-M3 -I. -IGenerated_Source\PSoC5 -D DEBUG --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little -e --fpu=None -On --no_wrap_diagnostics" />
       <Tool Name="linker" Command="ilinkarm.exe" Options="--semihosting --entry __iar_program_start --config Generated_Source\PSoC5\Generated_Source\PSoC5\Cm3Iar.icf" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>

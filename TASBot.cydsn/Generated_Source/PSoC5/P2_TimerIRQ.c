@@ -27,7 +27,6 @@
 *  Place your includes, defines and code here 
 ********************************************************************************/
 /* `#START P2_TimerIRQ_intc` */
-#include <main.h>
 /* `#END` */
 
 #ifndef CYINT_IRQ_BASE
@@ -165,19 +164,6 @@ CY_ISR(P2_TimerIRQ_Interrupt)
 
     /*  Place your Interrupt code here. */
     /* `#START P2_TimerIRQ_Interrupt` */
-    if(playing && use_timer[1])
-    {
-        input_ptr[1] = (input_ptr[1]+1)%INPUT_BUF_SIZE;
-        data[3] = input[3][input_ptr[1]];
-        data[4] = input[4][input_ptr[1]];
-        data[5] = input[5][input_ptr[1]];
-        latches[1]++;
-        if(disable_timer[1] == 1 || latches[1] == window_off[1])
-        {
-            use_timer[1] = 0;
-            disable_timer[1] = 0;
-        }
-    }
     /* `#END` */
 }
 

@@ -188,21 +188,17 @@ CY_ISR(ClockCounter_IRQ_Interrupt)
             Vis_L_3_Write(data[4] & 0xFF);
             Vis_H_3_Write(data[4] >> 8);
 
-            if(!use_timer[0])
+            if(!use_timer)
             {
-                input_ptr[0] = (input_ptr[0]+1)%INPUT_BUF_SIZE;
-                data[0] = input[0][input_ptr[0]]; 
-                data[1] = input[1][input_ptr[0]]; 
-                data[2] = input[2][input_ptr[0]]; 
-
-                if(!async)
-                {
-                    data[3] = input[3][input_ptr[0]]; 
-                    data[4] = input[4][input_ptr[0]]; 
-                    data[5] = input[5][input_ptr[0]]; 
-                }
+                input_ptr = (input_ptr+1)%INPUT_BUF_SIZE;
+                data[0] = input[0][input_ptr]; 
+                data[1] = input[1][input_ptr]; 
+                data[2] = input[2][input_ptr]; 
+                data[3] = input[3][input_ptr]; 
+                data[4] = input[4][input_ptr]; 
+                data[5] = input[5][input_ptr]; 
                 
-                latches[0]++;
+                latches++;
                 sent = 1;
             }
             autofilled = 1;

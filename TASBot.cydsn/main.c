@@ -10,20 +10,20 @@ volatile int sent = 0;
 volatile int playing = 0;
 volatile uint16 data[6] = {0, 0, 0, 0, 0, 0};
 volatile uint16 input[6][INPUT_BUF_SIZE];
-volatile int input_ptr[2];
-volatile int buf_ptr[2] = {0, 0};
+volatile int input_ptr = 0;
+volatile int buf_ptr = 0;
 volatile int count = 0;
 volatile int ready = 0;
-volatile int timer_ready[2] = {0, 0};
-volatile int use_timer[2] = {0, 0};
+volatile int timer_ready = 0;
+volatile int use_timer = 0;
 volatile int ports = 0;
 volatile int lines = 0;
 volatile int databits = 0;
-volatile int request[2] = {0, 0};
-volatile int disable_timer[2] = {0, 0};
+volatile int request = 0;
+volatile int disable_timer = 0;
 volatile int bytes = 0;
-volatile int window_off[2] = {-1, -1};
-volatile int latches[2] = {0, 0};
+volatile int window_off = -1;
+volatile int latches = 0;
 volatile int async = 0;
 volatile int autolatch = 0;
 volatile int autofilled = 0;
@@ -54,14 +54,11 @@ int main()
     ConsolePort_2_RegD2_Start();
     ConsolePort_2_ClockTimer_Start();    
 
-    input_ptr[0] = 0;
-    input_ptr[1] = 0;
-    buf_ptr[0] = 0;
-    buf_ptr[1] = 0;
+    input_ptr = 0;
+    buf_ptr = 0;
     playing = 0;
     count = 0;
-    latches[0] = 0;
-    latches[1] = 0;
+    latches = 0;
     async = 0;
     blocksize = 0;
     autofilled = 0;
@@ -70,10 +67,6 @@ int main()
     P1_IRQ_Stop();
     P1_TimerIRQ_Stop();
     
-    P2_IRQ_Stop();
-    P2_TimerIRQ_Stop();
-    ConsolePort_2_WinTimer_Stop();
-
     /* reset autolatcher */
     ClockCounter_Stop();
     ClockCounter_IRQ_Stop();
@@ -86,15 +79,10 @@ int main()
     ConsolePort_1_WinTimer_WritePeriod(2500);
     ConsolePort_2_WinTimer_WritePeriod(2500);
     
-    disable_timer[0] = 0;
-    use_timer[0] = 0;
-    timer_ready[0] = 0;
-    window_off[0] = -1;
-
-    disable_timer[1] = 0;
-    use_timer[1] = 0;
-    timer_ready[1] = 0;
-    window_off[1] = -1;
+    disable_timer = 0;
+    use_timer = 0;
+    timer_ready = 0;
+    window_off = -1;
 
     for(i = 0; i < INPUT_BUF_SIZE; i++)
     {
@@ -113,53 +101,20 @@ int main()
     
     for(;;)    
     {      
-        if(async)
+
+        if(playing && request == 0)
         {
-            if(playing && request[0] == 0)
-    		{
-            	i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[0] - input_ptr[0])&(INPUT_BUF_SIZE - 1));
-    			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
-    			{
-                    if (0u != USBUART_GetConfiguration())
-                    {
-                        while (0u == USBUART_CDCIsReady()) { }
-                        USBUART_PutChar(0xF0);
-                        request[0] = 1;
-                    }
+            i = (INPUT_BUF_SIZE - 1) - ((buf_ptr - input_ptr)&(INPUT_BUF_SIZE - 1));
+			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
+			{
+                if (0u != USBUART_GetConfiguration())
+                {
+                    while (0u == USBUART_CDCIsReady()) { }
+                    USBUART_PutChar(0xF);
+                    request = 1;
                 }
             }
-            
-            if(playing && request[1] == 0)
-            {
-                i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[1] - input_ptr[1])&(INPUT_BUF_SIZE - 1));
-    			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
-    			{
-                    if (0u != USBUART_GetConfiguration())
-                    {
-                        while (0u == USBUART_CDCIsReady()) { }
-                        USBUART_PutChar(0xF1);
-                        request[1] = 1;
-                    }
-                }
-            }
-        }
-        else
-        {
-            if(playing && request[0] == 0)
-            {
-                i = (INPUT_BUF_SIZE - 1) - ((buf_ptr[0] - input_ptr[0])&(INPUT_BUF_SIZE - 1));
-    			if(i != (INPUT_BUF_SIZE - 1) && i > 65)
-    			{
-                    if (0u != USBUART_GetConfiguration())
-                    {
-                        while (0u == USBUART_CDCIsReady()) { }
-                        USBUART_PutChar(0xF);
-                        request[0] = 1;
-                    }
-                }
-            }           
-        }
-        
+        }           
         
         if (0u != USBUART_IsConfigurationChanged())
         {
@@ -181,14 +136,11 @@ int main()
                 {
                     case 0:
                     {
-                        input_ptr[0] = 0;
-                        input_ptr[1] = 0;
-                        buf_ptr[0] = 0;
-                        buf_ptr[1] = 0;
+                        input_ptr = 0;
+                        buf_ptr = 0;
                         playing = 0;
                         count = 0;
-                        latches[0] = 0;
-                        latches[1] = 0;
+                        latches = 0;
                         async = 0;
                         blocksize = 0;
                         autofilled = 0;
@@ -196,10 +148,6 @@ int main()
                         
                         P1_IRQ_Stop();
                         P1_TimerIRQ_Stop();
-                        
-                        P2_IRQ_Stop();
-                        P2_TimerIRQ_Stop();
-                        ConsolePort_2_WinTimer_Stop();
 
                         /* reset autolatcher */
                         ClockCounter_Stop();
@@ -213,15 +161,10 @@ int main()
                         ConsolePort_1_WinTimer_WritePeriod(2500);
                         ConsolePort_2_WinTimer_WritePeriod(2500);
                         
-                        disable_timer[0] = 0;
-                        use_timer[0] = 0;
-                        timer_ready[0] = 0;
-                        window_off[0] = -1;
-
-                        disable_timer[1] = 0;
-                        use_timer[1] = 0;
-                        timer_ready[1] = 0;
-                        window_off[1] = -1;
+                        disable_timer = 0;
+                        use_timer = 0;
+                        timer_ready= 0;
+                        window_off = -1;
 
                         for(i = 0; i < INPUT_BUF_SIZE; i++)
                         {
@@ -245,17 +188,13 @@ int main()
                         databits = buffer[1];
                         ports = buffer[2];
                         lines = buffer[3];
-                        async = buffer[4];
-                        use_timer[0] = buffer[5];
-                        use_timer[1] = buffer[6];
+                        use_timer = buffer[4];
                         
-                        buf_ptr[0] = 0;
-                        buf_ptr[1] = 0;
+                        buf_ptr = 0;
                         playing = 0;
                         sent = 0;
                         count = 0;
-                        latches[0] = 0;
-                        latches[1] = 0;
+                        latches = 0;
                         autofilled = 0;
                         
                         blocksize = ports * databits * lines;
@@ -288,16 +227,14 @@ int main()
                                             tmp = buffer[j+(p*(databits*lines))+(d*databits)] << 8;
                                         }
                                         
-                                        input[(p*3) + d][buf_ptr[p]] = tmp;
+                                        input[(p*3) + d][buf_ptr] = tmp;
                                     }
                                 }
-            					buf_ptr[0] = (buf_ptr[0]+1)%INPUT_BUF_SIZE;
-                                buf_ptr[1] = (buf_ptr[1]+1)%INPUT_BUF_SIZE;
+            					buf_ptr = (buf_ptr+1) % INPUT_BUF_SIZE;
                             }
                         }
                         
-                        input_ptr[0] = 0;
-                        input_ptr[1] = 0;
+                        input_ptr = 0;
                         
                         data[0] = input[0][0];
                         data[1] = input[1][0];
@@ -309,20 +246,14 @@ int main()
                         ConsolePort_1_RegD0_WriteRegValue(data[0]);
                         ConsolePort_1_RegD1_WriteRegValue(data[1]);
                         ConsolePort_1_RegD2_WriteRegValue(data[2]);
+                        ConsolePort_2_RegD0_WriteRegValue(data[3]);
+                        ConsolePort_2_RegD1_WriteRegValue(data[4]);
+                        ConsolePort_2_RegD2_WriteRegValue(data[5]);
                         
-                        if(!async)
-                        {
-                            ConsolePort_2_RegD0_WriteRegValue(data[3]);
-                            ConsolePort_2_RegD1_WriteRegValue(data[4]);
-                            ConsolePort_2_RegD2_WriteRegValue(data[5]);
-                        }                        
-                        
-                        timer_ready[0] = 1;
-                        timer_ready[1] = 1;
+                        timer_ready = 1;
                         ready = 1;
                         playing = 1;
-                        request[0] = 0;
-                        request[1] = 1;
+                        request = 0;
 
                         P1_IRQ_Start();
                         P1_TimerIRQ_Start();
@@ -332,52 +263,7 @@ int main()
                             ClockCounter_Start();
                             ClockCounter_IRQ_Start();
                         }
-                        
-                        if(async && ports > 1)
-                        {
-                            ConsolePort_2_WinTimer_Start();
-                            P2_TimerIRQ_Start();
-                            P2_IRQ_Start();
-                            request[1] = 0;
-                        }                        
-                        break;
-                    }
-                    case 0xF0:
-                    {
-                        tmp = 0;
-                        for(j = 1; j < bytes; j+= databits * lines)
-                        {
-                            for(d = 0; d < lines; d++)
-                            {
-                                tmp = 0;
-                                for(i = 0; i < databits; i++)
-                                {
-                                    tmp = (tmp<<8) + buffer[j+(d*databits)+i];
-                                }
-                                input[d][buf_ptr[0]] = tmp;
-                            }
-        					buf_ptr[0] = (buf_ptr[0]+1)%INPUT_BUF_SIZE;
-                        }
-                        request[0] = 0;
-                        break;
-                    }
-                    case 0xF1:
-                    {
-                        tmp = 0;
-                        for(j = 1; j < bytes; j+= databits * lines)
-                        {
-                            for(d = 0; d < lines; d++)
-                            {
-                                tmp = 0;
-                                for(i = 0; i < databits; i++)
-                                {
-                                    tmp = (tmp<<8) + buffer[j+(d*databits)+i];
-                                }
-                                input[3 + d][buf_ptr[1]] = tmp;
-                            }
-        					buf_ptr[1] = (buf_ptr[1]+1)%INPUT_BUF_SIZE;
-                        }
-                        request[1] = 0;
+
                         break;
                     }
                     case 0xF:
@@ -401,14 +287,13 @@ int main()
                                     {
                                         tmp = buffer[j+(p*(databits*lines))+(d*databits)] << 8;
                                     }
-                                    input[(p*3) + d][buf_ptr[p]] = tmp;
+                                    input[(p*3) + d][buf_ptr] = tmp;
                                     
                                 }
                             }
-        					buf_ptr[0] = (buf_ptr[0]+1)%INPUT_BUF_SIZE;
-                            buf_ptr[1] = (buf_ptr[1]+1)%INPUT_BUF_SIZE;
+        					buf_ptr = (buf_ptr+1)%INPUT_BUF_SIZE;
                         }
-                        request[0] = 0;
+                        request = 0;
                         break;
                     }
                     case 0xA0:
@@ -418,19 +303,19 @@ int main()
                     }
                     case 0xA1:
                     {
-                        window_off[0] = (buffer[1]<<8) + (buffer[2]&0xFF);
+                        window_off = (buffer[1]<<8) + (buffer[2]&0xFF);
                         break;
                     }
                     case 0xA2:
                     {
-                        disable_timer[0] = 1;
+                        disable_timer = 1;
                         break;
                     }
                     case 0xA3:
                     {
-                        disable_timer[0] = 0;
-                        use_timer[0] = 1;
-                        timer_ready[0] = 1;
+                        disable_timer = 0;
+                        use_timer = 1;
+                        timer_ready= 1;
                         break;
                     }
                     case 0xA4:
@@ -438,28 +323,6 @@ int main()
                         ConsolePort_1_ClockTimer_WritePeriod(buffer[1]);
                         break;
                     }                    
-                    case 0xB0:
-                    {                        
-                        ConsolePort_2_WinTimer_WritePeriod((buffer[1]<<8) + (buffer[2]&0xFF));
-                        break;
-                    }
-                    case 0xB1:
-                    {
-                        window_off[1] = (buffer[1]<<8) + (buffer[2]&0xFF);
-                        break;
-                    }
-                    case 0xB2:
-                    {
-                        disable_timer[1] = 1;
-                        break;
-                    }
-                    case 0xB3:
-                    {
-                        disable_timer[1] = 0;
-                        use_timer[1] = 1;
-                        timer_ready[1] = 1;
-                        break;
-                    }
                     case 0xB4:
                     {
                         ConsolePort_2_ClockTimer_WritePeriod(buffer[1]);
