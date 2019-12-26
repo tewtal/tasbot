@@ -36,7 +36,7 @@ extern uint8 ConsolePort_2_WinTimer_initVar;
 *           Parameter Defaults
 **************************************/
 
-#define ConsolePort_2_WinTimer_Resolution                 16u
+#define ConsolePort_2_WinTimer_Resolution                 24u
 #define ConsolePort_2_WinTimer_UsingFixedFunction         0u
 #define ConsolePort_2_WinTimer_UsingHWCaptureCounter      0u
 #define ConsolePort_2_WinTimer_SoftwareCaptureMode        0u
@@ -69,7 +69,7 @@ typedef struct
     uint8 TimerEnableState;
     #if(!ConsolePort_2_WinTimer_UsingFixedFunction)
 
-        uint16 TimerUdb;
+        uint32 TimerUdb;
         uint8 InterruptMaskValue;
         #if (ConsolePort_2_WinTimer_UsingHWCaptureCounter)
             uint8 TimerCaptureCounter;
@@ -100,11 +100,11 @@ uint8   ConsolePort_2_WinTimer_ReadStatusRegister(void) ;
     void    ConsolePort_2_WinTimer_WriteControlRegister(uint8 control) ;
 #endif /* (!ConsolePort_2_WinTimer_UDB_CONTROL_REG_REMOVED) */
 
-uint16  ConsolePort_2_WinTimer_ReadPeriod(void) ;
-void    ConsolePort_2_WinTimer_WritePeriod(uint16 period) ;
-uint16  ConsolePort_2_WinTimer_ReadCounter(void) ;
-void    ConsolePort_2_WinTimer_WriteCounter(uint16 counter) ;
-uint16  ConsolePort_2_WinTimer_ReadCapture(void) ;
+uint32  ConsolePort_2_WinTimer_ReadPeriod(void) ;
+void    ConsolePort_2_WinTimer_WritePeriod(uint32 period) ;
+uint32  ConsolePort_2_WinTimer_ReadCounter(void) ;
+void    ConsolePort_2_WinTimer_WriteCounter(uint32 counter) ;
+uint32  ConsolePort_2_WinTimer_ReadCapture(void) ;
 void    ConsolePort_2_WinTimer_SoftwareCapture(void) ;
 
 #if(!ConsolePort_2_WinTimer_UsingFixedFunction) /* UDB Prototypes */
@@ -313,54 +313,54 @@ void ConsolePort_2_WinTimer_Wakeup(void)        ;
     #define ConsolePort_2_WinTimer_CONTROL             (* (reg8 *) ConsolePort_2_WinTimer_TimerUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_REG )
     
     #if(ConsolePort_2_WinTimer_Resolution <= 8u) /* 8-bit Timer */
-        #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-        #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+        #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+        #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+        #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+        #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+        #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
+        #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
     #elif(ConsolePort_2_WinTimer_Resolution <= 16u) /* 8-bit Timer */
         #if(CY_PSOC3) /* 8-bit addres space */
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
         #else /* 16-bit address space */
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__16BIT_F0_REG )
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__16BIT_F0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__16BIT_D0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__16BIT_D0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__16BIT_A0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__16BIT_A0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__16BIT_F0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__16BIT_F0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__16BIT_D0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__16BIT_D0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__16BIT_A0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg16 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__16BIT_A0_REG )
         #endif /* CY_PSOC3 */
     #elif(ConsolePort_2_WinTimer_Resolution <= 24u)/* 24-bit Timer */
-        #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-        #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-        #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-        #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+        #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+        #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+        #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+        #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+        #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
+        #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
     #else /* 32-bit Timer */
         #if(CY_PSOC3 || CY_PSOC5) /* 8-bit address space */
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__F0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__D0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__F0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__D0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
         #else /* 32-bit address space */
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__32BIT_F0_REG )
-            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__32BIT_F0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__32BIT_D0_REG )
-            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__32BIT_D0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__32BIT_A0_REG )
-            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__32BIT_A0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__32BIT_F0_REG )
+            #define ConsolePort_2_WinTimer_CAPTURE_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__32BIT_F0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB          (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__32BIT_D0_REG )
+            #define ConsolePort_2_WinTimer_PERIOD_LSB_PTR        ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__32BIT_D0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB         (* (reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__32BIT_A0_REG )
+            #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR       ((reg32 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__32BIT_A0_REG )
         #endif /* CY_PSOC3 || CY_PSOC5 */ 
     #endif
 
-    #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR_8BIT       ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT16_timerdp_u0__A0_REG )
+    #define ConsolePort_2_WinTimer_COUNTER_LSB_PTR_8BIT       ((reg8 *) ConsolePort_2_WinTimer_TimerUDB_sT24_timerdp_u0__A0_REG )
     
     #if (ConsolePort_2_WinTimer_UsingHWCaptureCounter)
         #define ConsolePort_2_WinTimer_CAP_COUNT              (*(reg8 *) ConsolePort_2_WinTimer_TimerUDB_sCapCount_counter__PERIOD_REG )

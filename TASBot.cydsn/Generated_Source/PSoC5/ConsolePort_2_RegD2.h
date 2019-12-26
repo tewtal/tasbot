@@ -23,12 +23,6 @@
 #include "cytypes.h"
 #include "CyLib.h"
 
-/* Check to see if required defines such as CY_PSOC5A are available */
-/* They are defined starting with cy_boot v3.0 */
-#if !defined (CY_PSOC5A)
-    #error Component ShiftReg_v2_30 requires cy_boot v3.0 or later
-#endif /* (CY_PSOC5A) */
-
 
 /***************************************
 *   Conditional Compilation Parameters

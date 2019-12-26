@@ -9,7 +9,7 @@
     <peripheral>
       <name>Vis_H_1</name>
       <description>No description available</description>
-      <baseAddress>0x4000657A</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -19,70 +19,7 @@
         <register>
           <name>Vis_H_1_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>Vis_H</name>
-      <description>No description available</description>
-      <baseAddress>0x40006473</baseAddress>
-      <addressBlock>
-        <offset>0</offset>
-        <size>0x0</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <registers>
-        <register>
-          <name>Vis_H_CONTROL_REG</name>
-          <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>Vis_L_2</name>
-      <description>No description available</description>
-      <baseAddress>0x4000647F</baseAddress>
-      <addressBlock>
-        <offset>0</offset>
-        <size>0x0</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <registers>
-        <register>
-          <name>Vis_L_2_CONTROL_REG</name>
-          <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>Vis_L</name>
-      <description>No description available</description>
-      <baseAddress>0x40006575</baseAddress>
-      <addressBlock>
-        <offset>0</offset>
-        <size>0x0</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <registers>
-        <register>
-          <name>Vis_L_CONTROL_REG</name>
-          <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006575</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -93,7 +30,7 @@
     <peripheral>
       <name>Vis_H_2</name>
       <description>No description available</description>
-      <baseAddress>0x40006578</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -103,7 +40,70 @@
         <register>
           <name>Vis_H_2_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006576</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>Vis_L_2</name>
+      <description>No description available</description>
+      <baseAddress>0x0</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x0</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>Vis_L_2_CONTROL_REG</name>
+          <description>No description available</description>
+          <addressOffset>0x40006475</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>Vis_H</name>
+      <description>No description available</description>
+      <baseAddress>0x0</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x0</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>Vis_H_CONTROL_REG</name>
+          <description>No description available</description>
+          <addressOffset>0x40006578</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>Vis_L</name>
+      <description>No description available</description>
+      <baseAddress>0x0</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x0</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>Vis_L_CONTROL_REG</name>
+          <description>No description available</description>
+          <addressOffset>0x40006476</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -114,7 +114,7 @@
     <peripheral>
       <name>ClockCountSel</name>
       <description>No description available</description>
-      <baseAddress>0x40006475</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -124,7 +124,7 @@
         <register>
           <name>ClockCountSel_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x4000647E</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -135,7 +135,7 @@
     <peripheral>
       <name>Vis_H_3</name>
       <description>No description available</description>
-      <baseAddress>0x40006576</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -145,7 +145,7 @@
         <register>
           <name>Vis_H_3_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006473</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -156,7 +156,7 @@
     <peripheral>
       <name>Vis_L_3</name>
       <description>No description available</description>
-      <baseAddress>0x40006476</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -166,7 +166,7 @@
         <register>
           <name>Vis_L_3_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006470</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -187,7 +187,7 @@
         <register>
           <name>ClockCounter_COUNTER</name>
           <description>UDB.A0 - Current Counter Value</description>
-          <addressOffset>0x40006405</addressOffset>
+          <addressOffset>0x40006407</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -196,7 +196,7 @@
         <register>
           <name>ClockCounter_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006425</addressOffset>
+          <addressOffset>0x40006427</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -205,48 +205,16 @@
         <register>
           <name>ClockCounter_COMPARE</name>
           <description>UDB.D1 - Assigned Compare Value</description>
-          <addressOffset>0x40006435</addressOffset>
+          <addressOffset>0x40006437</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
-        </register>
-        <register>
-          <name>ClockCounter_Control_Reg</name>
-          <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x4000647C</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>CTRL_ENABLE</name>
-              <description>Enable Counter</description>
-              <lsb>7</lsb>
-              <msb>7</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CAPMODE</name>
-              <description>Capture mode</description>
-              <lsb>3</lsb>
-              <msb>4</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMPMODE</name>
-              <description>Compare mode</description>
-              <lsb>0</lsb>
-              <msb>2</msb>
-              <access>read-write</access>
-            </field>
-          </fields>
         </register>
         <register>
           <name>ClockCounter_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006482</addressOffset>
+          <addressOffset>0x40006487</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -306,7 +274,7 @@
         <register>
           <name>ClockCounter_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006492</addressOffset>
+          <addressOffset>0x40006497</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -425,6 +393,38 @@
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ClockCounter_Control_Reg</name>
+          <description>UDB Control Register - Assigned Control Register Value</description>
+          <addressOffset>0x40006577</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+          <fields>
+            <field>
+              <name>CTRL_ENABLE</name>
+              <description>Enable Counter</description>
+              <lsb>7</lsb>
+              <msb>7</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CAPMODE</name>
+              <description>Capture mode</description>
+              <lsb>3</lsb>
+              <msb>4</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMPMODE</name>
+              <description>Compare mode</description>
+              <lsb>0</lsb>
+              <msb>2</msb>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -2289,7 +2289,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>ConsolePort_2_WinTimer</name>
+      <name>ConsolePort_2_ClockTimer</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -2299,27 +2299,27 @@
       </addressBlock>
       <registers>
         <register>
-          <name>ConsolePort_2_WinTimer_COUNTER</name>
+          <name>ConsolePort_2_ClockTimer_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
-          <addressOffset>0x4000640A</addressOffset>
-          <size>16</size>
+          <addressOffset>0x40006408</addressOffset>
+          <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_2_WinTimer_PERIOD</name>
+          <name>ConsolePort_2_ClockTimer_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x4000642A</addressOffset>
-          <size>16</size>
+          <addressOffset>0x40006428</addressOffset>
+          <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_2_WinTimer_Control_Reg</name>
+          <name>ConsolePort_2_ClockTimer_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x4000647B</addressOffset>
+          <addressOffset>0x40006478</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2363,9 +2363,9 @@
           </fields>
         </register>
         <register>
-          <name>ConsolePort_2_WinTimer_STATUS_MASK</name>
+          <name>ConsolePort_2_ClockTimer_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x4000648B</addressOffset>
+          <addressOffset>0x40006488</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2402,9 +2402,9 @@
           </fields>
         </register>
         <register>
-          <name>ConsolePort_2_WinTimer_STATUS_AUX_CTRL</name>
+          <name>ConsolePort_2_ClockTimer_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x4000649B</addressOffset>
+          <addressOffset>0x40006498</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2529,7 +2529,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>ConsolePort_2_ClockTimer</name>
+      <name>ConsolePort_2_Control_Reg_1</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -2539,7 +2539,28 @@
       </addressBlock>
       <registers>
         <register>
-          <name>ConsolePort_2_ClockTimer_Control_Reg</name>
+          <name>ConsolePort_2_Control_Reg_1_CONTROL_REG</name>
+          <description>No description available</description>
+          <addressOffset>0x40006474</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>ConsolePort_2_WinTimer</name>
+      <description>No description available</description>
+      <baseAddress>0x0</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x0</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>ConsolePort_2_WinTimer_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
           <addressOffset>0x4000647A</addressOffset>
           <size>8</size>
@@ -2585,27 +2606,27 @@
           </fields>
         </register>
         <register>
-          <name>ConsolePort_2_ClockTimer_COUNTER</name>
+          <name>ConsolePort_2_WinTimer_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
           <addressOffset>0x40006507</addressOffset>
-          <size>8</size>
+          <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_2_ClockTimer_PERIOD</name>
+          <name>ConsolePort_2_WinTimer_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
           <addressOffset>0x40006527</addressOffset>
-          <size>8</size>
+          <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_2_ClockTimer_STATUS_MASK</name>
+          <name>ConsolePort_2_WinTimer_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006587</addressOffset>
+          <addressOffset>0x4000658A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2642,9 +2663,9 @@
           </fields>
         </register>
         <register>
-          <name>ConsolePort_2_ClockTimer_STATUS_AUX_CTRL</name>
+          <name>ConsolePort_2_WinTimer_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006597</addressOffset>
+          <addressOffset>0x4000659A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2771,7 +2792,7 @@
     <peripheral>
       <name>Vis_L_1</name>
       <description>No description available</description>
-      <baseAddress>0x4000647D</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -2781,7 +2802,7 @@
         <register>
           <name>Vis_L_1_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x4000647B</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2790,7 +2811,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>ConsolePort_1_WinTimer</name>
+      <name>ConsolePort_1_ClockTimer</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -2800,25 +2821,71 @@
       </addressBlock>
       <registers>
         <register>
-          <name>ConsolePort_1_WinTimer_COUNTER</name>
+          <name>ConsolePort_1_ClockTimer_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
-          <addressOffset>0x40006408</addressOffset>
-          <size>16</size>
+          <addressOffset>0x40006409</addressOffset>
+          <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_1_WinTimer_PERIOD</name>
+          <name>ConsolePort_1_ClockTimer_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006428</addressOffset>
-          <size>16</size>
+          <addressOffset>0x40006429</addressOffset>
+          <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_1_WinTimer_STATUS_MASK</name>
+          <name>ConsolePort_1_ClockTimer_Control_Reg</name>
+          <description>UDB Control Register - Assigned Control Register Value</description>
+          <addressOffset>0x40006479</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+          <fields>
+            <field>
+              <name>CTRL_ENABLE</name>
+              <description>Enable the Timer</description>
+              <lsb>7</lsb>
+              <msb>7</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMODE</name>
+              <description>Capture Mode</description>
+              <lsb>5</lsb>
+              <msb>6</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_TEN</name>
+              <description>Trigger Enable Bit</description>
+              <lsb>4</lsb>
+              <msb>4</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_TMODE</name>
+              <description>Trigger Mode</description>
+              <lsb>2</lsb>
+              <msb>3</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_IC</name>
+              <description>Interrupt Count</description>
+              <lsb>0</lsb>
+              <msb>1</msb>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ConsolePort_1_ClockTimer_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
           <addressOffset>0x40006489</addressOffset>
           <size>8</size>
@@ -2857,7 +2924,7 @@
           </fields>
         </register>
         <register>
-          <name>ConsolePort_1_WinTimer_STATUS_AUX_CTRL</name>
+          <name>ConsolePort_1_ClockTimer_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
           <addressOffset>0x40006499</addressOffset>
           <size>8</size>
@@ -2981,56 +3048,10 @@
             </field>
           </fields>
         </register>
-        <register>
-          <name>ConsolePort_1_WinTimer_Control_Reg</name>
-          <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006574</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>CTRL_ENABLE</name>
-              <description>Enable the Timer</description>
-              <lsb>7</lsb>
-              <msb>7</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMODE</name>
-              <description>Capture Mode</description>
-              <lsb>5</lsb>
-              <msb>6</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_TEN</name>
-              <description>Trigger Enable Bit</description>
-              <lsb>4</lsb>
-              <msb>4</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_TMODE</name>
-              <description>Trigger Mode</description>
-              <lsb>2</lsb>
-              <msb>3</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_IC</name>
-              <description>Interrupt Count</description>
-              <lsb>0</lsb>
-              <msb>1</msb>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
       </registers>
     </peripheral>
     <peripheral>
-      <name>ConsolePort_1_ClockTimer</name>
+      <name>ConsolePort_1_Control_Reg_1</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -3040,27 +3061,48 @@
       </addressBlock>
       <registers>
         <register>
-          <name>ConsolePort_1_ClockTimer_COUNTER</name>
+          <name>ConsolePort_1_Control_Reg_1_CONTROL_REG</name>
+          <description>No description available</description>
+          <addressOffset>0x40006574</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>ConsolePort_1_WinTimer</name>
+      <description>No description available</description>
+      <baseAddress>0x0</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x0</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>ConsolePort_1_WinTimer_COUNTER</name>
           <description>UDB.A0 - Current Down Counter Value</description>
-          <addressOffset>0x40006404</addressOffset>
-          <size>8</size>
+          <addressOffset>0x40006504</addressOffset>
+          <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_1_ClockTimer_PERIOD</name>
+          <name>ConsolePort_1_WinTimer_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006424</addressOffset>
-          <size>8</size>
+          <addressOffset>0x40006524</addressOffset>
+          <size>24</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>ConsolePort_1_ClockTimer_Control_Reg</name>
+          <name>ConsolePort_1_WinTimer_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006474</addressOffset>
+          <addressOffset>0x40006579</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3104,9 +3146,9 @@
           </fields>
         </register>
         <register>
-          <name>ConsolePort_1_ClockTimer_STATUS_MASK</name>
+          <name>ConsolePort_1_WinTimer_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006484</addressOffset>
+          <addressOffset>0x40006585</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3143,9 +3185,9 @@
           </fields>
         </register>
         <register>
-          <name>ConsolePort_1_ClockTimer_STATUS_AUX_CTRL</name>
+          <name>ConsolePort_1_WinTimer_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006494</addressOffset>
+          <addressOffset>0x40006595</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

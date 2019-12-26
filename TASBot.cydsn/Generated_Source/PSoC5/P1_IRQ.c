@@ -208,6 +208,11 @@ CY_ISR(P1_IRQ_Interrupt)
                 sent = 1;
             }
             
+            if(!timer_running)
+            {
+                timer_running = 1;
+                ConsolePort_1_Control_Reg_1_Write(1);
+            }
         }
     } else {
         autofilled = 0;

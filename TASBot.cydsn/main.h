@@ -33,5 +33,6 @@ volatile int async;
 volatile int autolatch;
 volatile int autofilled;
 volatile int autobits;
+volatile int timer_running;
 
 /* [] END OF FILE */

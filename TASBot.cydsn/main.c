@@ -28,6 +28,7 @@ volatile int async = 0;
 volatile int autolatch = 0;
 volatile int autofilled = 0;
 volatile int autobits = 16;
+volatile int timer_running = 0;
 
 int main()
 {
@@ -145,6 +146,7 @@ int main()
                         blocksize = 0;
                         autofilled = 0;
                         autolatch = 0;
+                        timer_running = 0;
                         
                         P1_IRQ_Stop();
                         P1_TimerIRQ_Stop();
@@ -255,6 +257,8 @@ int main()
                         playing = 1;
                         request = 0;
 
+                        ConsolePort_1_WinTimer_WriteCounter(0);
+                        
                         P1_IRQ_Start();
                         P1_TimerIRQ_Start();
 
@@ -298,7 +302,7 @@ int main()
                     }
                     case 0xA0:
                     {                        
-                        ConsolePort_1_WinTimer_WritePeriod((buffer[1]<<8) + (buffer[2]&0xFF));
+                        ConsolePort_1_WinTimer_WritePeriod(((buffer[1] << 8) + (buffer[2]&0xFF)) << 8);
                         break;
                     }
                     case 0xA1:
@@ -315,7 +319,7 @@ int main()
                     {
                         disable_timer = 0;
                         use_timer = 1;
-                        timer_ready= 1;
+                        timer_ready = 1;
                         break;
                     }
                     case 0xA4:

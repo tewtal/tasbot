@@ -186,6 +186,8 @@ CY_ISR(P1_TimerIRQ_Interrupt)
                 use_timer = 0;
                 disable_timer = 0;
             }
+            
+            timer_running = 0;
         }
     }
     /* `#END` */
